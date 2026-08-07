@@ -326,14 +326,22 @@ async function load() {
   render()
 }
 
+// Trainer-owned Pokémon (e.g. "Erika's Oddish") print the same flavor text
+// as the plain species — Bulbapedia only has a page for the species itself,
+// not "Erika's Oddish", so strip the possessive prefix before looking it up.
+function speciesName(cardName) {
+  return cardName.replace(/^.*'s\\s+/, '')
+}
+
 // A card counts as "unmatched" if it's blank, or its saved text isn't a
 // verbatim hit against any of its species' Bulbapedia candidates.
 async function computeMatch(c) {
   if (!c.flavorText) return false
-  if (!candidateCache[c.name]) {
-    candidateCache[c.name] = fetch('/api/flavor-candidates?name=' + encodeURIComponent(c.name)).then(r => r.json())
+  const species = speciesName(c.name)
+  if (!candidateCache[species]) {
+    candidateCache[species] = fetch('/api/flavor-candidates?name=' + encodeURIComponent(species)).then(r => r.json())
   }
-  const cands = await candidateCache[c.name]
+  const cands = await candidateCache[species]
   const current = normalize(c.flavorText)
   return cands.some(cand => normalize(cand.text) === current)
 }
@@ -393,7 +401,7 @@ document.getElementById('filterBtn').onclick = async () => {
 }
 
 function normalize(s) {
-  return s.replace(/\s+/g, ' ').trim().toLowerCase()
+  return s.replace(/\\s+/g, ' ').trim().toLowerCase()
 }
 
 async function render() {
@@ -413,10 +421,11 @@ async function render() {
   currentCandidates = []
   renderCandidates()
   const name = c.name
-  if (!candidateCache[name]) {
-    candidateCache[name] = fetch('/api/flavor-candidates?name=' + encodeURIComponent(name)).then(r => r.json())
+  const species = speciesName(name)
+  if (!candidateCache[species]) {
+    candidateCache[species] = fetch('/api/flavor-candidates?name=' + encodeURIComponent(species)).then(r => r.json())
   }
-  const result = await candidateCache[name]
+  const result = await candidateCache[species]
   if (cards[i].name === name) { currentCandidates = result; renderCandidates() }
 }
 
@@ -527,7 +536,7 @@ const server = createServer(async (req, res) => {
       localId: c.localId,
       number: c.number,
       name: c.name,
-      image: `/card-image/${c.localId}`,
+      image: `/card-image/${setCode}/${c.localId}`,
       flavorText: overlay[c.localId] ?? "",
     }))
     res.writeHead(200, { "content-type": "application/json" })
@@ -535,8 +544,8 @@ const server = createServer(async (req, res) => {
     return
   }
 
-  if (url.pathname.startsWith("/card-image/") && req.method === "GET") {
-    const localId = url.pathname.slice("/card-image/".length)
+  if (url.pathname.startsWith(`/card-image/${setCode}/`) && req.method === "GET") {
+    const localId = url.pathname.slice(`/card-image/${setCode}/`.length)
     const card = candidates.find((c) => c.localId === localId)
     if (!card?.images?.large) {
       res.writeHead(404)
