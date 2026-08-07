@@ -16,13 +16,13 @@ Ground truth is [`types/card.ts`](types/card.ts) (`CardSet`/`Card`, plus
 `PrimaryCard`/`PrimarySetMeta` for pokemon-tcg-data's raw input shape) — not the
 README, and not this file. `scripts/fetch-set.mjs` is checked against it via JSDoc
 `@type` casts; run `npm run typecheck` after touching that script, and definitely
-before trusting a new set's output. Both the *output* (`Card`) and the *input*
+before trusting a new set's output. Both the _output_ (`Card`) and the _input_
 (`PrimaryCard`) are typed — typing only the output would let a value copied straight
 from pokemon-tcg-data (e.g. `card.hp = primary.hp`, a string) flow through as `any`
 and bypass checking entirely.
 
 Note the incremental-build pattern in `fetch-set.mjs`: `card` is cast to `Card` via an
-`any` bridge at its *initial* declaration (not annotated there, and not cast only at
+`any` bridge at its _initial_ declaration (not annotated there, and not cast only at
 return) specifically so the field-by-field `card.x = ...` assignments that follow
 still typecheck. Annotating the declaration directly would make TS infer the
 narrower initial-literal shape and reject every later assignment; casting only at
@@ -37,10 +37,31 @@ still be inferred from that narrow initial shape.
   resistances, official rules text, rarity, regulation mark, national Pokédex numbers,
   images.
 - **limitlesstcg.com** — scraped per card for the illustrator credit and for
-  `printGroup` (which printings across *any* set, including later ones, are legal
+  `printGroup` (which printings across _any_ set, including later ones, are legal
   substitutes for this card in a decklist).
 - **pokeapi.co** — species genus/height/weight for the Pokédex info box. Only attached
   to regular (non-ex/non-MEGA) prints, matching what's actually printed on the card.
+
+### `printGroup` goes stale, and that's fine
+
+A card's stored `printGroup` is a snapshot of Limitless's prints table from whenever
+_that card's set_ was fetched. If a later set reprints it, the later card's own
+snapshot correctly includes the earlier one (Limitless always shows full history), but
+the earlier card's stored array doesn't retroactively gain the new one — sets, once
+fetched and verified, are never edited again to keep it current.
+
+That's handled by not depending on any single card's copy being current:
+`scripts/lib/print-groups.mjs` derives the _actual_ up-to-date group for any card as
+the connected component over every card's stored `printGroup`, across every set in
+`data/sets/`. As long as one member of a group has the up-to-date list — which the
+most recently fetched member always does — the union recovers the full group
+regardless of how stale any other member's own array is.
+
+`scripts/refresh-print-groups.mjs` runs that derivation and rewrites every set file's
+`printGroup` fields to match, so sets read in isolation stay current too — but this is
+a convenience, not a correctness requirement. Run it whenever a set is added (the
+`add-set` skill does this as its last step) or skip it; nothing downstream should ever
+need to assume a stored `printGroup` is complete on its own.
 
 ## Flavor text has no structured source — but there's a shortcut
 
@@ -123,12 +144,15 @@ on the actual Bulbapedia page before guessing.
 
 ## Adding the next set
 
+The `add-set` skill (`.claude/skills/add-set/skill.md`) covers this end-to-end. Steps:
+
 ```sh
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>
 # e.g. node scripts/fetch-set.mjs me2 PFL
 node scripts/flavor-text-editor.mjs <LimitlessCode>
 # ...fill in flavor text, then toggle "Show unmatched only" and clear it to 0...
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>   # re-run to merge flavor text in
+node scripts/refresh-print-groups.mjs                        # propagate reprints into older sets' printGroup
 npm run typecheck
 ```
 
