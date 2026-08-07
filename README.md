@@ -23,6 +23,35 @@ Three sources, merged per card:
   is game Pokédex data (same for every card of that species), looked up by
   national dex number rather than scraped per card.
 
+## How this differs from other databases
+
+No single upstream source combines everything here into one record — checked
+directly against live data, not assumption:
+
+- **pokemon-tcg-data** has attacks, rules text, rarity, and images, but no
+  `artist`, no `flavorText`, and no concept of `printGroup` at all (its raw
+  card record has neither). It does carry a `legalities` object, which isn't
+  used here — `printGroup` covers deck-legality instead.
+- **limitlesstcg.com** is a per-card webpage, not a downloadable dataset — no
+  bulk API. Its prints-table HTML is the only place `printGroup` exists at
+  all, and its card pages don't show attack/ability text.
+- **pokeapi.co** has no notion of a "TCG card" — it's mainline-game species
+  data. It's bound here to the specific printed card it actually appears on
+  (regular prints only, not ex/MEGA).
+- **Bulbapedia** has the raw per-game Pokédex text, but nowhere records which
+  entry got reused for which TCG card — that match is done and verified by
+  hand (see `CLAUDE.md`).
+- **[TCGdex](https://tcgdex.dev)**, the closest existing all-in-one
+  alternative (not used as a source here) — has `illustrator` and
+  attack/rules text like this database does, but its live API has no flavor
+  text and no genus/height/weight, and its "variants" field tracks same-set
+  foil/holo variants, not cross-set deck-legal substitutes. It also carries
+  live pricing, which is deliberately out of scope here.
+
+The differentiator isn't any one field — it's that flavor text, full rules
+text, the Pokédex info box, cross-set `printGroup`, and artist all live on
+the same record here, which no upstream source does.
+
 ## Schema
 
 Ground truth is [`types/card.ts`](types/card.ts) (`CardSet` / `Card`), not this
