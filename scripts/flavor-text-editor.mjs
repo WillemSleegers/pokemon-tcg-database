@@ -10,7 +10,8 @@
 // next run.
 
 import { createServer } from "node:http"
-import { mkdir, readFile, writeFile } from "node:fs/promises"
+import { createReadStream } from "node:fs"
+import { mkdir, readFile, stat, writeFile } from "node:fs/promises"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -25,6 +26,28 @@ if (!setCode) {
 
 const SET_PATH = resolve(ROOT, "data/sets", `${setCode}.json`)
 const OVERLAY_PATH = resolve(ROOT, "data/flavor-text", `${setCode}.json`)
+const IMAGE_CACHE_DIR = resolve(ROOT, ".local/card-images", setCode)
+await mkdir(IMAGE_CACHE_DIR, { recursive: true })
+
+// Card images are large and never change once printed, so cache them on
+// disk (gitignored — see .gitignore) instead of re-fetching from
+// images.pokemontcg.io on every page load while paging through a set.
+function extFromUrl(url) {
+  return /\.jpe?g(?:$|\?)/i.test(url) ? "jpg" : "png"
+}
+
+async function ensureCachedImage(localId, remoteUrl) {
+  const ext = extFromUrl(remoteUrl)
+  const filePath = resolve(IMAGE_CACHE_DIR, `${localId}.${ext}`)
+  try {
+    await stat(filePath)
+  } catch {
+    const res = await fetch(remoteUrl)
+    if (!res.ok) throw new Error(`Failed to fetch image: ${remoteUrl}`)
+    await writeFile(filePath, Buffer.from(await res.arrayBuffer()))
+  }
+  return filePath
+}
 
 async function loadOverlay() {
   try {
@@ -504,11 +527,31 @@ const server = createServer(async (req, res) => {
       localId: c.localId,
       number: c.number,
       name: c.name,
-      image: c.images?.large,
+      image: `/card-image/${c.localId}`,
       flavorText: overlay[c.localId] ?? "",
     }))
     res.writeHead(200, { "content-type": "application/json" })
     res.end(JSON.stringify(data))
+    return
+  }
+
+  if (url.pathname.startsWith("/card-image/") && req.method === "GET") {
+    const localId = url.pathname.slice("/card-image/".length)
+    const card = candidates.find((c) => c.localId === localId)
+    if (!card?.images?.large) {
+      res.writeHead(404)
+      res.end("not found")
+      return
+    }
+    try {
+      const filePath = await ensureCachedImage(localId, card.images.large)
+      const contentType = filePath.endsWith(".jpg") ? "image/jpeg" : "image/png"
+      res.writeHead(200, { "content-type": contentType, "cache-control": "public, max-age=31536000, immutable" })
+      createReadStream(filePath).pipe(res)
+    } catch (err) {
+      res.writeHead(502)
+      res.end(String(err))
+    }
     return
   }
 

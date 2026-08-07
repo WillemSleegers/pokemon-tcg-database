@@ -6,9 +6,10 @@ picking the work back up.
 
 ## Status
 
-`data/sets/MEG.json` (Mega Evolution, 188 cards) is complete, including flavor text —
-verified against Bulbapedia via the flavor-text editor's "Show unmatched only" filter
-(see below), not just eyeballed. No other sets have been built yet.
+`data/sets/MEG.json` (Mega Evolution, 188 cards) and `data/sets/PFL.json` (Phantasmal
+Flames, 130 cards) are complete, including flavor text — verified against Bulbapedia
+via the flavor-text editor's "Show unmatched only" filter (see below), not just
+eyeballed. No other sets have been built yet.
 
 ## Schema
 
@@ -132,7 +133,7 @@ text kept), `sup/N` (dropped). If a new set's candidates show stray `{{`/`}}`/`[
 in the text, it's almost certainly an unhandled template — check what it renders to
 on the actual Bulbapedia page before guessing.
 
-## Lessons from building MEG
+## Lessons from building MEG and PFL
 
 - **Don't reach for subagents on bulk image-transcription work.** Spawning parallel
   agents to read card images one by one stalled repeatedly (10-minute idle watchdog,
@@ -141,6 +142,15 @@ on the actual Bulbapedia page before guessing.
 - Rarity names, dex numbers, and rules text are trustworthy from pokemon-tcg-data.
   Artist and print-group data only exist on Limitless. Flavor text has no reliable
   structured source — see above.
+- **Default division of labor for flavor text: the user does the bulk pass in the
+  browser, Claude only touches the leftovers.** Reading a card image costs Claude
+  roughly 1,000–1,600 tokens, so having Claude transcribe an entire ~100-card set
+  runs six figures in tokens for work a human can do by eye for free. Instead: the
+  user fills in cards by hand at `http://localhost:5173`, then Claude runs the
+  "Show unmatched only" sweep (or the equivalent `fetch("/api/cards")` +
+  `fetch("/api/flavor-candidates?name=...")` loop from the shell) and only reads
+  images for whatever's still flagged — a handful of cards, not the whole set. Only
+  do the full-set read-through yourself if the user explicitly asks for it.
 
 ## Adding the next set
 
@@ -148,15 +158,16 @@ The `add-set` skill (`.claude/skills/add-set/skill.md`) covers this end-to-end. 
 
 ```sh
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>
-# e.g. node scripts/fetch-set.mjs me2 PFL
+# e.g. node scripts/fetch-set.mjs sv10 ASC
 node scripts/flavor-text-editor.mjs <LimitlessCode>
-# ...fill in flavor text, then toggle "Show unmatched only" and clear it to 0...
+# ...user fills in flavor text by hand, then Claude runs the "Show unmatched only"
+# sweep and only reads images for whatever's still flagged (see "Lessons" above)...
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>   # re-run to merge flavor text in
 node scripts/refresh-print-groups.mjs                        # propagate reprints into older sets' printGroup
 npm run typecheck
 ```
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). Sets
-still to do, in release order: Phantasmal Flames (PFL), Ascended Heroes (ASC), Perfect
-Order (POR), Chaos Rising (CRI), Pitch Black (PBL) — codes and release dates are in
-the sibling `my-pokemon-card-collection` repo's `src/config/megaEvolution.ts`.
+still to do, in release order: Ascended Heroes (ASC), Perfect Order (POR), Chaos
+Rising (CRI), Pitch Black (PBL) — codes and release dates are in the sibling
+`my-pokemon-card-collection` repo's `src/config/megaEvolution.ts`.

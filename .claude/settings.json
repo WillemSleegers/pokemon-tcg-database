@@ -1,10 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node scripts/fetch-set.mjs MEG \"Mega Evolution\" 132 2025-10-10)",
-      "Bash(echo \"\\(exit: $?\\)\")",
       "WebFetch(domain:bulbapedia.bulbagarden.net)",
-      "Bash(python3 -c ' *)"
-    ]
+      "Bash(node scripts/fetch-set.mjs *)",
+      "Bash(node scripts/flavor-text-editor.mjs *)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:5173/api/cards)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s \"http://localhost:5173/api/flavor-candidates?name=Oddish\")",
+      "Bash(pkill -f \"flavor-text-editor.mjs PFL\")",
+      "Bash(npm run typecheck)",
+      "Bash(curl -s \"http://localhost:5173/*)",
+      "Bash(curl -s http://localhost:5173/*)",
+      "Bash(curl -s \"https://bulbapedia.bulbagarden.net/*)"
+    ],
+    "additionalDirectories": ["/private/tmp"]
   }
 }
