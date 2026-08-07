@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/fetch-set.mjs MEG \"Mega Evolution\" 132 2025-10-10)",
+      "Bash(echo \"\\(exit: $?\\)\")",
+      "WebFetch(domain:bulbapedia.bulbagarden.net)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pokemon-tcg-database",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A structured JSON database of Pokémon TCG cards, built set by set.",
+  "scripts": {
+    "fetch-set": "node scripts/fetch-set.mjs",
+    "flavor-text": "node scripts/flavor-text-editor.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "typescript": "^7.0.2"
+  }
+}
