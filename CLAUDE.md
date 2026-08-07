@@ -151,6 +151,13 @@ on the actual Bulbapedia page before guessing.
   `fetch("/api/flavor-candidates?name=...")` loop from the shell) and only reads
   images for whatever's still flagged — a handful of cards, not the whole set. Only
   do the full-set read-through yourself if the user explicitly asks for it.
+- **Don't improvise one-off shell pipelines for simple lookups.** Chaining a new
+  `curl | python3 -c ...`, `curl | grep`, `find`, etc. together for something like
+  "what's this field in a remote JSON file" triggers a fresh permission prompt for
+  every slightly different command, which is friction for no reason. Reach for a
+  dedicated tool instead — e.g. `WebFetch` for a URL — since it's already permitted
+  and doesn't require inventing a new shell one-liner per query. Save Bash for things
+  that actually need a shell (running scripts, git, checking running processes).
 
 ## Adding the next set
 
