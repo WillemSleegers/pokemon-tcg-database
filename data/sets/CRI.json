@@ -1,0 +1,6847 @@
+{
+  "set": {
+    "code": "CRI",
+    "ptcgDataId": "me4",
+    "name": "Chaos Rising",
+    "series": "Mega Evolution",
+    "printedTotal": 86,
+    "secretTotal": 36,
+    "total": 122,
+    "releaseDate": "2026-05-22",
+    "copyright": "©2026 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.scrydex.com/pokemon/me4-symbol/symbol",
+      "logo": "https://images.scrydex.com/pokemon/me4-logo/logo"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/86",
+      "localId": "1",
+      "name": "Weedle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Surprise Attack",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "sowsow",
+      "pokedex": {
+        "number": 13,
+        "genus": "Hairy Bug Pokémon",
+        "height": "1'0\"",
+        "weight": "7.1 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 1",
+      "printGroup": [
+        "CRI 1"
+      ],
+      "limitless": {
+        "id": 40030,
+        "url": "https://limitlesstcg.com/cards/CRI/1"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-1/small",
+        "large": "https://images.scrydex.com/pokemon/me4-1/large"
+      }
+    },
+    {
+      "number": "02/86",
+      "localId": "2",
+      "name": "Kakuna",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Weedle",
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Exoskeleton",
+          "text": "This Pokémon takes 20 less damage from attacks (after applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Hang Down",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Mugi Hamada",
+      "pokedex": {
+        "number": 14,
+        "genus": "Cocoon Pokémon",
+        "height": "2'0\"",
+        "weight": "22.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 2",
+      "printGroup": [
+        "CRI 2"
+      ],
+      "limitless": {
+        "id": 40031,
+        "url": "https://limitlesstcg.com/cards/CRI/2"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-2/small",
+        "large": "https://images.scrydex.com/pokemon/me4-2/large"
+      }
+    },
+    {
+      "number": "03/86",
+      "localId": "3",
+      "name": "Beedrill ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Kakuna",
+      "types": [
+        "Grass"
+      ],
+      "hp": 310,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Rumbling Bees",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "110×",
+          "text": "This attack does 110 damage for each of your Beedrill and Beedrill ex in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "toriyufu",
+      "secret": false,
+      "deckCode": "CRI 3",
+      "printGroup": [
+        "CRI 3",
+        "CRI 98"
+      ],
+      "limitless": {
+        "id": 40032,
+        "url": "https://limitlesstcg.com/cards/CRI/3"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-3/small",
+        "large": "https://images.scrydex.com/pokemon/me4-3/large"
+      }
+    },
+    {
+      "number": "04/86",
+      "localId": "4",
+      "name": "Carnivine",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Chomp Whole",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "If your opponent's Active Pokémon has no Retreat Cost, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Heisuke Kitazawa",
+      "pokedex": {
+        "number": 455,
+        "genus": "Bug Catcher Pokémon",
+        "height": "4'7\"",
+        "weight": "59.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 4",
+      "printGroup": [
+        "CRI 4"
+      ],
+      "limitless": {
+        "id": 40033,
+        "url": "https://limitlesstcg.com/cards/CRI/4"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-4/small",
+        "large": "https://images.scrydex.com/pokemon/me4-4/large"
+      }
+    },
+    {
+      "number": "05/86",
+      "localId": "5",
+      "name": "Chespin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Beat",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Spike Sting",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "HACCAN",
+      "pokedex": {
+        "number": 650,
+        "genus": "Spiny Nut Pokémon",
+        "height": "1'4\"",
+        "weight": "19.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 5",
+      "printGroup": [
+        "CRI 5",
+        "CRI 87"
+      ],
+      "limitless": {
+        "id": 40034,
+        "url": "https://limitlesstcg.com/cards/CRI/5"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-5/small",
+        "large": "https://images.scrydex.com/pokemon/me4-5/large"
+      }
+    },
+    {
+      "number": "06/86",
+      "localId": "6",
+      "name": "Quilladin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Chespin",
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Leafy Charge",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Search your deck for a Basic Grass Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Hideki Ishikawa",
+      "pokedex": {
+        "number": 651,
+        "genus": "Spiny Armor Pokémon",
+        "height": "2'4\"",
+        "weight": "63.9 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 6",
+      "printGroup": [
+        "CRI 6"
+      ],
+      "limitless": {
+        "id": 40035,
+        "url": "https://limitlesstcg.com/cards/CRI/6"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-6/small",
+        "large": "https://images.scrydex.com/pokemon/me4-6/large"
+      }
+    },
+    {
+      "number": "07/86",
+      "localId": "7",
+      "name": "Chesnaught",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Quilladin",
+      "types": [
+        "Grass"
+      ],
+      "hp": 180,
+      "abilities": [
+        {
+          "name": "Needly Armor",
+          "text": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 3 damage counters on the Attacking Pokémon for each Grass Energy attached to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Impound",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160",
+          "text": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "Uta",
+      "pokedex": {
+        "number": 652,
+        "genus": "Spiny Armor Pokémon",
+        "height": "5'3\"",
+        "weight": "198.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 7",
+      "printGroup": [
+        "CRI 7"
+      ],
+      "limitless": {
+        "id": 40036,
+        "url": "https://limitlesstcg.com/cards/CRI/7"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-7/small",
+        "large": "https://images.scrydex.com/pokemon/me4-7/large"
+      }
+    },
+    {
+      "number": "08/86",
+      "localId": "8",
+      "name": "Vulpix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Singe",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Yoshimoto Yoshimon",
+      "pokedex": {
+        "number": 37,
+        "genus": "Fox Pokémon",
+        "height": "2'0\"",
+        "weight": "21.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 8",
+      "printGroup": [
+        "CRI 8"
+      ],
+      "limitless": {
+        "id": 40037,
+        "url": "https://limitlesstcg.com/cards/CRI/8"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-8/small",
+        "large": "https://images.scrydex.com/pokemon/me4-8/large"
+      }
+    },
+    {
+      "number": "09/86",
+      "localId": "9",
+      "name": "Ninetales",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Vulpix",
+      "types": [
+        "Fire"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Nine-Tailed Transfer",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Move all damage counters from 1 of your Benched Pokémon to your opponent's Active Pokémon."
+        },
+        {
+          "name": "Will-O-Wisp",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Ryuta Fuse",
+      "pokedex": {
+        "number": 38,
+        "genus": "Fox Pokémon",
+        "height": "3'7\"",
+        "weight": "43.9 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 9",
+      "printGroup": [
+        "CRI 9"
+      ],
+      "limitless": {
+        "id": 40038,
+        "url": "https://limitlesstcg.com/cards/CRI/9"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-9/small",
+        "large": "https://images.scrydex.com/pokemon/me4-9/large"
+      }
+    },
+    {
+      "number": "10/86",
+      "localId": "10",
+      "name": "Ho-Oh",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Flames of Revival",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put up to 3 Basic Pokémon from your discard pile onto your Bench."
+        },
+        {
+          "name": "Bright Wing",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "Discard a Fire Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "Takumi Wada",
+      "pokedex": {
+        "number": 250,
+        "genus": "Rainbow Pokémon",
+        "height": "12'6\"",
+        "weight": "438.7 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 10",
+      "printGroup": [
+        "CRI 10"
+      ],
+      "limitless": {
+        "id": 40039,
+        "url": "https://limitlesstcg.com/cards/CRI/10"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-10/small",
+        "large": "https://images.scrydex.com/pokemon/me4-10/large"
+      }
+    },
+    {
+      "number": "11/86",
+      "localId": "11",
+      "name": "Fennekin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Steady Firebreathing",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "saino misaki",
+      "pokedex": {
+        "number": 653,
+        "genus": "Fox Pokémon",
+        "height": "1'4\"",
+        "weight": "20.7 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 11",
+      "printGroup": [
+        "MEP 80",
+        "CRI 11"
+      ],
+      "limitless": {
+        "id": 40040,
+        "url": "https://limitlesstcg.com/cards/CRI/11"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-11/small",
+        "large": "https://images.scrydex.com/pokemon/me4-11/large"
+      }
+    },
+    {
+      "number": "12/86",
+      "localId": "12",
+      "name": "Braixen",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Fennekin",
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Taiga Kasai",
+      "pokedex": {
+        "number": 654,
+        "genus": "Fox Pokémon",
+        "height": "3'3\"",
+        "weight": "32.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 12",
+      "printGroup": [
+        "CRI 12"
+      ],
+      "limitless": {
+        "id": 40041,
+        "url": "https://limitlesstcg.com/cards/CRI/12"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-12/small",
+        "large": "https://images.scrydex.com/pokemon/me4-12/large"
+      }
+    },
+    {
+      "number": "13/86",
+      "localId": "13",
+      "name": "Delphox",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Braixen",
+      "types": [
+        "Fire"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Flaring Magic",
+          "text": "Once during your turn, you may discard a Basic Fire Energy card from your hand in order to use this Ability. Draw cards until you have 7 cards in your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energized Storm",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each Energy attached to all Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "Gemi",
+      "pokedex": {
+        "number": 655,
+        "genus": "Fox Pokémon",
+        "height": "4'11\"",
+        "weight": "86.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 13",
+      "printGroup": [
+        "MEP 74",
+        "CRI 13"
+      ],
+      "limitless": {
+        "id": 40042,
+        "url": "https://limitlesstcg.com/cards/CRI/13"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-13/small",
+        "large": "https://images.scrydex.com/pokemon/me4-13/large"
+      }
+    },
+    {
+      "number": "14/86",
+      "localId": "14",
+      "name": "Litleo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Mina Nakai",
+      "pokedex": {
+        "number": 667,
+        "genus": "Lion Cub Pokémon",
+        "height": "2'0\"",
+        "weight": "29.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 14",
+      "printGroup": [
+        "CRI 14"
+      ],
+      "limitless": {
+        "id": 40043,
+        "url": "https://limitlesstcg.com/cards/CRI/14"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-14/small",
+        "large": "https://images.scrydex.com/pokemon/me4-14/large"
+      }
+    },
+    {
+      "number": "15/86",
+      "localId": "15",
+      "name": "Mega Pyroar ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Litleo",
+      "types": [
+        "Fire"
+      ],
+      "hp": 340,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Ferocious Bellow",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "During your opponent's next turn, attacks used by the Defending Pokémon do 50 less damage (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Fiery Big Bang",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "290-",
+          "text": "This attack does 10 less damage for each damage counter on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "Keisuke Azuma",
+      "secret": false,
+      "deckCode": "CRI 15",
+      "printGroup": [
+        "CRI 15",
+        "CRI 99"
+      ],
+      "limitless": {
+        "id": 40044,
+        "url": "https://limitlesstcg.com/cards/CRI/15"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-15/small",
+        "large": "https://images.scrydex.com/pokemon/me4-15/large"
+      }
+    },
+    {
+      "number": "16/86",
+      "localId": "16",
+      "name": "Remoraid",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Sharp Fin",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Mori Yuu",
+      "pokedex": {
+        "number": 223,
+        "genus": "Jet Pokémon",
+        "height": "2'0\"",
+        "weight": "26.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 16",
+      "printGroup": [
+        "CRI 16"
+      ],
+      "limitless": {
+        "id": 40045,
+        "url": "https://limitlesstcg.com/cards/CRI/16"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-16/small",
+        "large": "https://images.scrydex.com/pokemon/me4-16/large"
+      }
+    },
+    {
+      "number": "17/86",
+      "localId": "17",
+      "name": "Octillery",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Remoraid",
+      "types": [
+        "Water"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Jet of Ink",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "During your opponent's next turn, if the Defending Pokémon tries to use an attack, your opponent flips 2 coins. If either of them is tails, that attack doesn't happen."
+        },
+        {
+          "name": "Tantrum",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "This Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "matazo",
+      "pokedex": {
+        "number": 224,
+        "genus": "Jet Pokémon",
+        "height": "2'11\"",
+        "weight": "62.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 17",
+      "printGroup": [
+        "CRI 17"
+      ],
+      "limitless": {
+        "id": 40046,
+        "url": "https://limitlesstcg.com/cards/CRI/17"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-17/small",
+        "large": "https://images.scrydex.com/pokemon/me4-17/large"
+      }
+    },
+    {
+      "number": "18/86",
+      "localId": "18",
+      "name": "Delibird",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Pleasing Present",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Each player may attach up to 3 Basic Energy cards from their hand to their Pokémon in any way they like. Your opponent does this first."
+        },
+        {
+          "name": "Flap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Saboteri",
+      "pokedex": {
+        "number": 225,
+        "genus": "Delivery Pokémon",
+        "height": "2'11\"",
+        "weight": "35.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 18",
+      "printGroup": [
+        "CRI 18"
+      ],
+      "limitless": {
+        "id": 40047,
+        "url": "https://limitlesstcg.com/cards/CRI/18"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-18/small",
+        "large": "https://images.scrydex.com/pokemon/me4-18/large"
+      }
+    },
+    {
+      "number": "19/86",
+      "localId": "19",
+      "name": "Keldeo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Shoot Through",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Reflect Energy",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": "Move an Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 647,
+        "genus": "Colt Pokémon",
+        "height": "4'7\"",
+        "weight": "106.9 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 19",
+      "printGroup": [
+        "CRI 19"
+      ],
+      "limitless": {
+        "id": 40048,
+        "url": "https://limitlesstcg.com/cards/CRI/19"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-19/small",
+        "large": "https://images.scrydex.com/pokemon/me4-19/large"
+      }
+    },
+    {
+      "number": "20/86",
+      "localId": "20",
+      "name": "Froakie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Kariya",
+      "pokedex": {
+        "number": 656,
+        "genus": "Bubble Frog Pokémon",
+        "height": "1'0\"",
+        "weight": "15.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 20",
+      "printGroup": [
+        "CRI 20",
+        "CRI 88"
+      ],
+      "limitless": {
+        "id": 40049,
+        "url": "https://limitlesstcg.com/cards/CRI/20"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-20/small",
+        "large": "https://images.scrydex.com/pokemon/me4-20/large"
+      }
+    },
+    {
+      "number": "21/86",
+      "localId": "21",
+      "name": "Frogadier",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Froakie",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Summoning Jutsu",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Pokémon, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Aqua Edge",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Nelnal",
+      "pokedex": {
+        "number": 657,
+        "genus": "Bubble Frog Pokémon",
+        "height": "2'0\"",
+        "weight": "24.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 21",
+      "printGroup": [
+        "CRI 21",
+        "CRI 89"
+      ],
+      "limitless": {
+        "id": 40050,
+        "url": "https://limitlesstcg.com/cards/CRI/21"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-21/small",
+        "large": "https://images.scrydex.com/pokemon/me4-21/large"
+      }
+    },
+    {
+      "number": "22/86",
+      "localId": "22",
+      "name": "Mega Greninja ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Frogadier",
+      "types": [
+        "Water"
+      ],
+      "hp": 350,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Mortal Shuriken",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Ninja Spinner",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120+",
+          "text": "You may put a Water Energy attached to this Pokémon into your hand and have this attack do 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "takuyoa",
+      "secret": false,
+      "deckCode": "CRI 22",
+      "printGroup": [
+        "MEP 81",
+        "CRI 22",
+        "CRI 100",
+        "CRI 116",
+        "CRI 122"
+      ],
+      "limitless": {
+        "id": 40051,
+        "url": "https://limitlesstcg.com/cards/CRI/22"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-22/small",
+        "large": "https://images.scrydex.com/pokemon/me4-22/large"
+      }
+    },
+    {
+      "number": "23/86",
+      "localId": "23",
+      "name": "Bergmite",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Chilly",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Frost Breath",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Anesaki Dynamic",
+      "pokedex": {
+        "number": 712,
+        "genus": "Ice Chunk Pokémon",
+        "height": "3'3\"",
+        "weight": "219.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 23",
+      "printGroup": [
+        "CRI 23"
+      ],
+      "limitless": {
+        "id": 40052,
+        "url": "https://limitlesstcg.com/cards/CRI/23"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-23/small",
+        "large": "https://images.scrydex.com/pokemon/me4-23/large"
+      }
+    },
+    {
+      "number": "24/86",
+      "localId": "24",
+      "name": "Avalugg",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Bergmite",
+      "types": [
+        "Water"
+      ],
+      "hp": 160,
+      "attacks": [
+        {
+          "name": "Iceberg Breaker",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "60×",
+          "text": "Discard the top 6 cards of your deck, and this attack does 60 damage for each Basic Water Energy card you discarded in this way."
+        },
+        {
+          "name": "Frost Stamp",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "160",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Tomoki Sone",
+      "pokedex": {
+        "number": 713,
+        "genus": "Iceberg Pokémon",
+        "height": "6'7\"",
+        "weight": "1113.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 24",
+      "printGroup": [
+        "CRI 24"
+      ],
+      "limitless": {
+        "id": 40053,
+        "url": "https://limitlesstcg.com/cards/CRI/24"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-24/small",
+        "large": "https://images.scrydex.com/pokemon/me4-24/large"
+      }
+    },
+    {
+      "number": "25/86",
+      "localId": "25",
+      "name": "Wimpod",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Corkscrew Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "0313",
+      "pokedex": {
+        "number": 767,
+        "genus": "Turn Tail Pokémon",
+        "height": "1'8\"",
+        "weight": "26.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 25",
+      "printGroup": [
+        "CRI 25"
+      ],
+      "limitless": {
+        "id": 40054,
+        "url": "https://limitlesstcg.com/cards/CRI/25"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-25/small",
+        "large": "https://images.scrydex.com/pokemon/me4-25/large"
+      }
+    },
+    {
+      "number": "26/86",
+      "localId": "26",
+      "name": "Golisopod",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Wimpod",
+      "types": [
+        "Water"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Critical Slash",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "If your opponent's Pokémon is Knocked Out by damage from this attack, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon."
+        },
+        {
+          "name": "Boundless Power",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "150",
+          "text": "During your next turn, this Pokémon can't use attacks."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Takeshi Nakamura",
+      "pokedex": {
+        "number": 768,
+        "genus": "Hard Scale Pokémon",
+        "height": "6'7\"",
+        "weight": "238.1 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 26",
+      "printGroup": [
+        "CRI 26"
+      ],
+      "limitless": {
+        "id": 40055,
+        "url": "https://limitlesstcg.com/cards/CRI/26"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-26/small",
+        "large": "https://images.scrydex.com/pokemon/me4-26/large"
+      }
+    },
+    {
+      "number": "27/86",
+      "localId": "27",
+      "name": "Mareep",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Thunder Wave",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "UKUMO uiti",
+      "pokedex": {
+        "number": 179,
+        "genus": "Wool Pokémon",
+        "height": "2'0\"",
+        "weight": "17.2 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 27",
+      "printGroup": [
+        "CRI 27"
+      ],
+      "limitless": {
+        "id": 40056,
+        "url": "https://limitlesstcg.com/cards/CRI/27"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-27/small",
+        "large": "https://images.scrydex.com/pokemon/me4-27/large"
+      }
+    },
+    {
+      "number": "28/86",
+      "localId": "28",
+      "name": "Flaaffy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Mareep",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Disconnect",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "During your opponent's next turn, they can't play any Item cards from their hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "miki kudo",
+      "pokedex": {
+        "number": 180,
+        "genus": "Wool Pokémon",
+        "height": "2'7\"",
+        "weight": "29.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 28",
+      "printGroup": [
+        "CRI 28"
+      ],
+      "limitless": {
+        "id": 40057,
+        "url": "https://limitlesstcg.com/cards/CRI/28"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-28/small",
+        "large": "https://images.scrydex.com/pokemon/me4-28/large"
+      }
+    },
+    {
+      "number": "29/86",
+      "localId": "29",
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Synchro Pulse",
+          "text": "If you have the same number of cards in your hand as your opponent, attacks used by this Pokémon do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flashing Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "140",
+          "text": "During your next turn, this Pokémon can't use Flashing Bolt."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "CHORISO",
+      "pokedex": {
+        "number": 181,
+        "genus": "Light Pokémon",
+        "height": "4'7\"",
+        "weight": "135.6 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 29",
+      "printGroup": [
+        "MEP 75",
+        "CRI 29",
+        "CRI 90"
+      ],
+      "limitless": {
+        "id": 40058,
+        "url": "https://limitlesstcg.com/cards/CRI/29"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-29/small",
+        "large": "https://images.scrydex.com/pokemon/me4-29/large"
+      }
+    },
+    {
+      "number": "30/86",
+      "localId": "30",
+      "name": "Emolga",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Minor Errand-Running",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Energy cards, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Sky Return",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Put this Pokémon and all attached cards into your hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Kazumasa Yasukuni",
+      "pokedex": {
+        "number": 587,
+        "genus": "Sky Squirrel Pokémon",
+        "height": "1'4\"",
+        "weight": "11.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 30",
+      "printGroup": [
+        "CRI 30"
+      ],
+      "limitless": {
+        "id": 40059,
+        "url": "https://limitlesstcg.com/cards/CRI/30"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-30/small",
+        "large": "https://images.scrydex.com/pokemon/me4-30/large"
+      }
+    },
+    {
+      "number": "31/86",
+      "localId": "31",
+      "name": "Deoxys",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Genome Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Psychic Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Psychic",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Shiburingaru",
+      "pokedex": {
+        "number": 386,
+        "genus": "DNA Pokémon",
+        "height": "5'7\"",
+        "weight": "134.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 31",
+      "printGroup": [
+        "CRI 31"
+      ],
+      "limitless": {
+        "id": 40060,
+        "url": "https://limitlesstcg.com/cards/CRI/31"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-31/small",
+        "large": "https://images.scrydex.com/pokemon/me4-31/large"
+      }
+    },
+    {
+      "number": "32/86",
+      "localId": "32",
+      "name": "Deoxys",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Psyspear",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "If this Pokémon has at least 2 extra Energy attached (in addition to this attack's cost), this attack also does 120 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "nagimiso",
+      "pokedex": {
+        "number": 386,
+        "genus": "DNA Pokémon",
+        "height": "5'7\"",
+        "weight": "134.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 32",
+      "printGroup": [
+        "CRI 32"
+      ],
+      "limitless": {
+        "id": 40061,
+        "url": "https://limitlesstcg.com/cards/CRI/32"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-32/small",
+        "large": "https://images.scrydex.com/pokemon/me4-32/large"
+      }
+    },
+    {
+      "number": "33/86",
+      "localId": "33",
+      "name": "Deoxys",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Psy Protection",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Pokémon that have an Ability."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "GOSSAN",
+      "pokedex": {
+        "number": 386,
+        "genus": "DNA Pokémon",
+        "height": "5'7\"",
+        "weight": "134.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 33",
+      "printGroup": [
+        "CRI 33"
+      ],
+      "limitless": {
+        "id": 40062,
+        "url": "https://limitlesstcg.com/cards/CRI/33"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-33/small",
+        "large": "https://images.scrydex.com/pokemon/me4-33/large"
+      }
+    },
+    {
+      "number": "34/86",
+      "localId": "34",
+      "name": "Deoxys",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Psyspeed",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "You may draw cards until you have 5 cards in your hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "hncl",
+      "pokedex": {
+        "number": 386,
+        "genus": "DNA Pokémon",
+        "height": "5'7\"",
+        "weight": "134.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 34",
+      "printGroup": [
+        "CRI 34"
+      ],
+      "limitless": {
+        "id": 40063,
+        "url": "https://limitlesstcg.com/cards/CRI/34"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-34/small",
+        "large": "https://images.scrydex.com/pokemon/me4-34/large"
+      }
+    },
+    {
+      "number": "35/86",
+      "localId": "35",
+      "name": "Mega Floette ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "MEGA",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 250,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Gentle Light",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 30 damage from each Pokémon (both yours and your opponent's)."
+        },
+        {
+          "name": "Eternity Bloom",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Search your deck for up to 4 Basic Psychic Energy cards and attach them to your Benched Pokémon in any way you like. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "aky CG Works",
+      "secret": false,
+      "deckCode": "CRI 35",
+      "printGroup": [
+        "CRI 35",
+        "CRI 101",
+        "CRI 117"
+      ],
+      "limitless": {
+        "id": 40064,
+        "url": "https://limitlesstcg.com/cards/CRI/35"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-35/small",
+        "large": "https://images.scrydex.com/pokemon/me4-35/large"
+      }
+    },
+    {
+      "number": "36/86",
+      "localId": "36",
+      "name": "Espurr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Buddy Attack",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If you played Emma from your hand during this turn, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "sowsow",
+      "pokedex": {
+        "number": 677,
+        "genus": "Restraint Pokémon",
+        "height": "1'0\"",
+        "weight": "7.7 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 36",
+      "printGroup": [
+        "CRI 36"
+      ],
+      "limitless": {
+        "id": 40065,
+        "url": "https://limitlesstcg.com/cards/CRI/36"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-36/small",
+        "large": "https://images.scrydex.com/pokemon/me4-36/large"
+      }
+    },
+    {
+      "number": "37/86",
+      "localId": "37",
+      "name": "Meowstic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Espurr",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Tricky Steps",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "You may move an Energy from your opponent's Active Pokémon to 1 of their Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "mingo",
+      "pokedex": {
+        "number": 678,
+        "genus": "Constraint Pokémon",
+        "height": "2'0\"",
+        "weight": "18.7 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 37",
+      "printGroup": [
+        "CRI 37"
+      ],
+      "limitless": {
+        "id": 40066,
+        "url": "https://limitlesstcg.com/cards/CRI/37"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-37/small",
+        "large": "https://images.scrydex.com/pokemon/me4-37/large"
+      }
+    },
+    {
+      "number": "38/86",
+      "localId": "38",
+      "name": "Phantump",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Spiteful Evolution",
+          "text": "Once during your turn, you may use this Ability. Choose a card in your hand that evolves from this Pokémon and put it onto this Pokémon to evolve it. If you do, place 2 damage counters on the Pokémon you evolved in this way. You can't use this Ability during your first turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mumble",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Taiga Kasai",
+      "pokedex": {
+        "number": 708,
+        "genus": "Stump Pokémon",
+        "height": "1'4\"",
+        "weight": "15.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 38",
+      "printGroup": [
+        "CRI 38"
+      ],
+      "limitless": {
+        "id": 40067,
+        "url": "https://limitlesstcg.com/cards/CRI/38"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-38/small",
+        "large": "https://images.scrydex.com/pokemon/me4-38/large"
+      }
+    },
+    {
+      "number": "39/86",
+      "localId": "39",
+      "name": "Trevenant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Phantump",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Cursed Roots",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "During your opponent's next turn, Energy can't be attached from your opponent's hand to the Defending Pokémon."
+        },
+        {
+          "name": "Overwhelming Pain",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60+",
+          "text": "This attack does 10 more damage for each damage counter on all of your opponent's Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "Uninori",
+      "pokedex": {
+        "number": 709,
+        "genus": "Elder Tree Pokémon",
+        "height": "4'11\"",
+        "weight": "156.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 39",
+      "printGroup": [
+        "CRI 39"
+      ],
+      "limitless": {
+        "id": 40068,
+        "url": "https://limitlesstcg.com/cards/CRI/39"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-39/small",
+        "large": "https://images.scrydex.com/pokemon/me4-39/large"
+      }
+    },
+    {
+      "number": "40/86",
+      "localId": "40",
+      "name": "Pumpkaboo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Stampede",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Jerky",
+      "pokedex": {
+        "number": 710,
+        "genus": "Pumpkin Pokémon",
+        "height": "1'4\"",
+        "weight": "11.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 40",
+      "printGroup": [
+        "CRI 40"
+      ],
+      "limitless": {
+        "id": 40069,
+        "url": "https://limitlesstcg.com/cards/CRI/40"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-40/small",
+        "large": "https://images.scrydex.com/pokemon/me4-40/large"
+      }
+    },
+    {
+      "number": "41/86",
+      "localId": "41",
+      "name": "Gourgeist ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Pumpkaboo",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 270,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Horrifying Rondo",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30+",
+          "text": "This attack does 50 more damage for each of your Benched Pokémon that has any damage counters on it."
+        },
+        {
+          "name": "Ghostly Touch",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "140",
+          "text": "Discard a random card from your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "CRI 41",
+      "printGroup": [
+        "CRI 41",
+        "CRI 102"
+      ],
+      "limitless": {
+        "id": 40070,
+        "url": "https://limitlesstcg.com/cards/CRI/41"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-41/small",
+        "large": "https://images.scrydex.com/pokemon/me4-41/large"
+      }
+    },
+    {
+      "number": "42/86",
+      "localId": "42",
+      "name": "Xerneas",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Geo Storm",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "KEIICHIRO ITO",
+      "pokedex": {
+        "number": 716,
+        "genus": "Life Pokémon",
+        "height": "9'10\"",
+        "weight": "474.0 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 42",
+      "printGroup": [
+        "CRI 42",
+        "CRI 91"
+      ],
+      "limitless": {
+        "id": 40071,
+        "url": "https://limitlesstcg.com/cards/CRI/42"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-42/small",
+        "large": "https://images.scrydex.com/pokemon/me4-42/large"
+      }
+    },
+    {
+      "number": "43/86",
+      "localId": "43",
+      "name": "Sudowoodo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Trials and Trip-ulations",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Transformation Tome cards, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Rock Hurl",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "GOTO minori",
+      "pokedex": {
+        "number": 185,
+        "genus": "Imitation Pokémon",
+        "height": "3'11\"",
+        "weight": "83.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 43",
+      "printGroup": [
+        "CRI 43"
+      ],
+      "limitless": {
+        "id": 40072,
+        "url": "https://limitlesstcg.com/cards/CRI/43"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-43/small",
+        "large": "https://images.scrydex.com/pokemon/me4-43/large"
+      }
+    },
+    {
+      "number": "44/86",
+      "localId": "44",
+      "name": "Phanpy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Mud-Slap",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rollout",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Akino Fukuji",
+      "pokedex": {
+        "number": 231,
+        "genus": "Long Nose Pokémon",
+        "height": "1'8\"",
+        "weight": "73.9 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 44",
+      "printGroup": [
+        "CRI 44"
+      ],
+      "limitless": {
+        "id": 40073,
+        "url": "https://limitlesstcg.com/cards/CRI/44"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-44/small",
+        "large": "https://images.scrydex.com/pokemon/me4-44/large"
+      }
+    },
+    {
+      "number": "45/86",
+      "localId": "45",
+      "name": "Donphan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Phanpy",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "No Reprieve",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "During your next turn, attacks used by this Pokémon do 120 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Smashing Headbutt",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "180",
+          "text": "Discard 2 Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Julie Hang",
+      "pokedex": {
+        "number": 232,
+        "genus": "Armor Pokémon",
+        "height": "3'7\"",
+        "weight": "264.6 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 45",
+      "printGroup": [
+        "CRI 45"
+      ],
+      "limitless": {
+        "id": 40074,
+        "url": "https://limitlesstcg.com/cards/CRI/45"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-45/small",
+        "large": "https://images.scrydex.com/pokemon/me4-45/large"
+      }
+    },
+    {
+      "number": "46/86",
+      "localId": "46",
+      "name": "Baltoy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Continuous Spin",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "Flip a coin until you get tails. This attack does 30 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Tomomi Ozaki",
+      "pokedex": {
+        "number": 343,
+        "genus": "Clay Doll Pokémon",
+        "height": "1'8\"",
+        "weight": "47.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 46",
+      "printGroup": [
+        "CRI 46"
+      ],
+      "limitless": {
+        "id": 40075,
+        "url": "https://limitlesstcg.com/cards/CRI/46"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-46/small",
+        "large": "https://images.scrydex.com/pokemon/me4-46/large"
+      }
+    },
+    {
+      "number": "47/86",
+      "localId": "47",
+      "name": "Claydol",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Baltoy",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Devolution Ray",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": "If your opponent's Active Pokémon is an evolved Pokémon, devolve it by putting the highest Stage Evolution card on it into your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Oswaldo KATO",
+      "pokedex": {
+        "number": 344,
+        "genus": "Clay Doll Pokémon",
+        "height": "4'11\"",
+        "weight": "238.1 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 47",
+      "printGroup": [
+        "CRI 47",
+        "CRI 92"
+      ],
+      "limitless": {
+        "id": 40076,
+        "url": "https://limitlesstcg.com/cards/CRI/47"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-47/small",
+        "large": "https://images.scrydex.com/pokemon/me4-47/large"
+      }
+    },
+    {
+      "number": "48/86",
+      "localId": "48",
+      "name": "Mega Gallade ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Kirlia",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 350,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Gale Slash",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50+",
+          "text": "If this Pokémon has no damage counters on it, this attack does 150 more damage."
+        },
+        {
+          "name": "Marvelous Edge",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "240",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "CRI 48",
+      "printGroup": [
+        "CRI 48"
+      ],
+      "limitless": {
+        "id": 40077,
+        "url": "https://limitlesstcg.com/cards/CRI/48"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-48/small",
+        "large": "https://images.scrydex.com/pokemon/me4-48/large"
+      }
+    },
+    {
+      "number": "49/86",
+      "localId": "49",
+      "name": "Zubat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Supersonic",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Mékayu",
+      "pokedex": {
+        "number": 41,
+        "genus": "Bat Pokémon",
+        "height": "2'7\"",
+        "weight": "16.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 49",
+      "printGroup": [
+        "CRI 49"
+      ],
+      "limitless": {
+        "id": 40078,
+        "url": "https://limitlesstcg.com/cards/CRI/49"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-49/small",
+        "large": "https://images.scrydex.com/pokemon/me4-49/large"
+      }
+    },
+    {
+      "number": "50/86",
+      "localId": "50",
+      "name": "Golbat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Zubat",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Covert Flight",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Basic Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Mousho",
+      "pokedex": {
+        "number": 42,
+        "genus": "Bat Pokémon",
+        "height": "5'3\"",
+        "weight": "121.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 50",
+      "printGroup": [
+        "CRI 50"
+      ],
+      "limitless": {
+        "id": 40079,
+        "url": "https://limitlesstcg.com/cards/CRI/50"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-50/small",
+        "large": "https://images.scrydex.com/pokemon/me4-50/large"
+      }
+    },
+    {
+      "number": "51/86",
+      "localId": "51",
+      "name": "Crobat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Golbat",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Nighttime Maneuvers",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Search your deck for a card. Shuffle your deck, then put that card on top of it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Poison Sound Wave",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "80",
+          "text": "Your opponent's Active Pokémon is now Confused and Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "IKEDA Saki",
+      "pokedex": {
+        "number": 169,
+        "genus": "Bat Pokémon",
+        "height": "5'11\"",
+        "weight": "165.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 51",
+      "printGroup": [
+        "MEP 76",
+        "CRI 51",
+        "CRI 93"
+      ],
+      "limitless": {
+        "id": 40080,
+        "url": "https://limitlesstcg.com/cards/CRI/51"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-51/small",
+        "large": "https://images.scrydex.com/pokemon/me4-51/large"
+      }
+    },
+    {
+      "number": "52/86",
+      "localId": "52",
+      "name": "Qwilfish",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Poison Point",
+          "text": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), the Attacking Pokémon is now Poisoned.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Venoshock",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30+",
+          "text": "If your opponent's Active Pokémon is Poisoned, this attack does 50 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "nisimono",
+      "pokedex": {
+        "number": 211,
+        "genus": "Balloon Pokémon",
+        "height": "1'8\"",
+        "weight": "8.6 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 52",
+      "printGroup": [
+        "CRI 52"
+      ],
+      "limitless": {
+        "id": 40081,
+        "url": "https://limitlesstcg.com/cards/CRI/52"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-52/small",
+        "large": "https://images.scrydex.com/pokemon/me4-52/large"
+      }
+    },
+    {
+      "number": "53/86",
+      "localId": "53",
+      "name": "Stunky",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Nobuhiro Imagawa",
+      "pokedex": {
+        "number": 434,
+        "genus": "Skunk Pokémon",
+        "height": "1'4\"",
+        "weight": "42.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 53",
+      "printGroup": [
+        "CRI 53"
+      ],
+      "limitless": {
+        "id": 40082,
+        "url": "https://limitlesstcg.com/cards/CRI/53"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-53/small",
+        "large": "https://images.scrydex.com/pokemon/me4-53/large"
+      }
+    },
+    {
+      "number": "54/86",
+      "localId": "54",
+      "name": "Skuntank",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Stunky",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Rear Kick",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Smash Turn",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Yuriko Akase",
+      "pokedex": {
+        "number": 435,
+        "genus": "Skunk Pokémon",
+        "height": "3'3\"",
+        "weight": "83.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 54",
+      "printGroup": [
+        "CRI 54"
+      ],
+      "limitless": {
+        "id": 40083,
+        "url": "https://limitlesstcg.com/cards/CRI/54"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-54/small",
+        "large": "https://images.scrydex.com/pokemon/me4-54/large"
+      }
+    },
+    {
+      "number": "55/86",
+      "localId": "55",
+      "name": "Krookodile ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Krokorok",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 320,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corner",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        },
+        {
+          "name": "Strong Bite",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "140+",
+          "text": "If this Pokémon has a Pokémon Tool attached, this attack does 140 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "I",
+      "rarity": "Double Rare",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "CRI 55",
+      "printGroup": [
+        "CRI 55"
+      ],
+      "limitless": {
+        "id": 40084,
+        "url": "https://limitlesstcg.com/cards/CRI/55"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-55/small",
+        "large": "https://images.scrydex.com/pokemon/me4-55/large"
+      }
+    },
+    {
+      "number": "56/86",
+      "localId": "56",
+      "name": "Trubbish",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Acid Spray",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Souichirou Gunjima",
+      "pokedex": {
+        "number": 568,
+        "genus": "Trash Bag Pokémon",
+        "height": "2'0\"",
+        "weight": "68.3 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 56",
+      "printGroup": [
+        "CRI 56"
+      ],
+      "limitless": {
+        "id": 40085,
+        "url": "https://limitlesstcg.com/cards/CRI/56"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-56/small",
+        "large": "https://images.scrydex.com/pokemon/me4-56/large"
+      }
+    },
+    {
+      "number": "57/86",
+      "localId": "57",
+      "name": "Garbodor",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Trubbish",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 140,
+      "abilities": [
+        {
+          "name": "Gloomy Garbage",
+          "text": "Attacks used by your opponent's Active Pokémon that has a Pokémon Tool attached do 20 less damage (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sludge Bomb",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "HYOGONOSUKE",
+      "pokedex": {
+        "number": 569,
+        "genus": "Trash Heap Pokémon",
+        "height": "6'3\"",
+        "weight": "236.6 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 57",
+      "printGroup": [
+        "CRI 57"
+      ],
+      "limitless": {
+        "id": 40086,
+        "url": "https://limitlesstcg.com/cards/CRI/57"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-57/small",
+        "large": "https://images.scrydex.com/pokemon/me4-57/large"
+      }
+    },
+    {
+      "number": "58/86",
+      "localId": "58",
+      "name": "Skrelp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Hook",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Shimaris Yukichi",
+      "pokedex": {
+        "number": 690,
+        "genus": "Mock Kelp Pokémon",
+        "height": "1'8\"",
+        "weight": "16.1 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 58",
+      "printGroup": [
+        "CRI 58"
+      ],
+      "limitless": {
+        "id": 40087,
+        "url": "https://limitlesstcg.com/cards/CRI/58"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-58/small",
+        "large": "https://images.scrydex.com/pokemon/me4-58/large"
+      }
+    },
+    {
+      "number": "59/86",
+      "localId": "59",
+      "name": "Beldum",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Beam",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "toi8",
+      "pokedex": {
+        "number": 374,
+        "genus": "Iron Ball Pokémon",
+        "height": "2'0\"",
+        "weight": "209.9 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 59",
+      "printGroup": [
+        "CRI 59"
+      ],
+      "limitless": {
+        "id": 40088,
+        "url": "https://limitlesstcg.com/cards/CRI/59"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-59/small",
+        "large": "https://images.scrydex.com/pokemon/me4-59/large"
+      }
+    },
+    {
+      "number": "60/86",
+      "localId": "60",
+      "name": "Metang",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Beldum",
+      "types": [
+        "Metal"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Guard Press",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Kazumasa Yasukuni",
+      "pokedex": {
+        "number": 375,
+        "genus": "Iron Claw Pokémon",
+        "height": "3'11\"",
+        "weight": "446.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 60",
+      "printGroup": [
+        "CRI 60",
+        "CRI 94"
+      ],
+      "limitless": {
+        "id": 40089,
+        "url": "https://limitlesstcg.com/cards/CRI/60"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-60/small",
+        "large": "https://images.scrydex.com/pokemon/me4-60/large"
+      }
+    },
+    {
+      "number": "61/86",
+      "localId": "61",
+      "name": "Metagross",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Metang",
+      "types": [
+        "Metal"
+      ],
+      "hp": 180,
+      "attacks": [
+        {
+          "name": "Bounce Back",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "60",
+          "text": "Switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+        },
+        {
+          "name": "Metallic Hammer",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150+",
+          "text": "You may discard 3 Metal Energy from this Pokémon and have this attack do 150 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Bun Toujo",
+      "pokedex": {
+        "number": 376,
+        "genus": "Iron Leg Pokémon",
+        "height": "5'3\"",
+        "weight": "1212.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 61",
+      "printGroup": [
+        "CRI 61"
+      ],
+      "limitless": {
+        "id": 40090,
+        "url": "https://limitlesstcg.com/cards/CRI/61"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-61/small",
+        "large": "https://images.scrydex.com/pokemon/me4-61/large"
+      }
+    },
+    {
+      "number": "62/86",
+      "localId": "62",
+      "name": "Ferroseed",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Rolling Tackle",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "OKUBO",
+      "pokedex": {
+        "number": 597,
+        "genus": "Thorn Seed Pokémon",
+        "height": "2'0\"",
+        "weight": "41.4 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 62",
+      "printGroup": [
+        "CRI 62"
+      ],
+      "limitless": {
+        "id": 40091,
+        "url": "https://limitlesstcg.com/cards/CRI/62"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-62/small",
+        "large": "https://images.scrydex.com/pokemon/me4-62/large"
+      }
+    },
+    {
+      "number": "63/86",
+      "localId": "63",
+      "name": "Ferrothorn",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ferroseed",
+      "types": [
+        "Metal"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Startling Drop",
+          "text": "During your opponent's turn, if this Pokémon is discarded from your deck by an effect of an attack or Ability from your opponent's Pokémon, or by an effect of your opponent's Item or Supporter cards, discard the top 8 cards of your opponent's deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Special Whip",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70+",
+          "text": "If this Pokémon has any Special Energy attached, this attack does 70 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Haru Akasaka",
+      "pokedex": {
+        "number": 598,
+        "genus": "Thorn Pod Pokémon",
+        "height": "3'3\"",
+        "weight": "242.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 63",
+      "printGroup": [
+        "CRI 63"
+      ],
+      "limitless": {
+        "id": 40092,
+        "url": "https://limitlesstcg.com/cards/CRI/63"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-63/small",
+        "large": "https://images.scrydex.com/pokemon/me4-63/large"
+      }
+    },
+    {
+      "number": "64/86",
+      "localId": "64",
+      "name": "Cobalion ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Metal Road",
+          "text": "Once during your turn, when this Pokémon moves from your Bench to the Active Spot, you may use this Ability. Move any amount of Metal Energy from your other Pokémon to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Power Tackle",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "During your next turn, this Pokémon can't use attacks."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "CRI 64",
+      "printGroup": [
+        "CRI 64",
+        "CRI 103"
+      ],
+      "limitless": {
+        "id": 40093,
+        "url": "https://limitlesstcg.com/cards/CRI/64"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-64/small",
+        "large": "https://images.scrydex.com/pokemon/me4-64/large"
+      }
+    },
+    {
+      "number": "65/86",
+      "localId": "65",
+      "name": "Mega Dragalge ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Skrelp",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 330,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corrosive Liquid",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard all Pokémon Tools and Special Energy from all of your opponent's Pokémon."
+        },
+        {
+          "name": "Pernicious Poison",
+          "cost": [
+            "Water",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, place 16 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "CRI 65",
+      "printGroup": [
+        "CRI 65",
+        "CRI 104",
+        "CRI 118"
+      ],
+      "limitless": {
+        "id": 40094,
+        "url": "https://limitlesstcg.com/cards/CRI/65"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-65/small",
+        "large": "https://images.scrydex.com/pokemon/me4-65/large"
+      }
+    },
+    {
+      "number": "66/86",
+      "localId": "66",
+      "name": "Goomy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Absorb",
+          "cost": [
+            "Water",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Heal 30 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Anesaki Dynamic",
+      "pokedex": {
+        "number": 704,
+        "genus": "Soft Tissue Pokémon",
+        "height": "1'0\"",
+        "weight": "6.2 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 66",
+      "printGroup": [
+        "CRI 66"
+      ],
+      "limitless": {
+        "id": 40095,
+        "url": "https://limitlesstcg.com/cards/CRI/66"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-66/small",
+        "large": "https://images.scrydex.com/pokemon/me4-66/large"
+      }
+    },
+    {
+      "number": "67/86",
+      "localId": "67",
+      "name": "Sliggoo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Goomy",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Gentle Slap",
+          "cost": [
+            "Water",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Yoriyuki Ikegami",
+      "pokedex": {
+        "number": 705,
+        "genus": "Soft Tissue Pokémon",
+        "height": "2'7\"",
+        "weight": "38.6 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 67",
+      "printGroup": [
+        "CRI 67",
+        "CRI 95"
+      ],
+      "limitless": {
+        "id": 40096,
+        "url": "https://limitlesstcg.com/cards/CRI/67"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-67/small",
+        "large": "https://images.scrydex.com/pokemon/me4-67/large"
+      }
+    },
+    {
+      "number": "68/86",
+      "localId": "68",
+      "name": "Goodra",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Sliggoo",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Slimy Sliding",
+          "text": "When your opponent's Active Pokémon retreats, your opponent flips a coin. If tails, Energy for its Retreat Cost is not discarded, and they don't switch Pokémon. The effect of Slimy Sliding doesn't stack.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Water",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "160",
+          "text": "Discard the top card of your deck."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": "Tonji Matsuno",
+      "pokedex": {
+        "number": 706,
+        "genus": "Dragon Pokémon",
+        "height": "6'7\"",
+        "weight": "331.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 68",
+      "printGroup": [
+        "MEP 77",
+        "CRI 68"
+      ],
+      "limitless": {
+        "id": 40097,
+        "url": "https://limitlesstcg.com/cards/CRI/68"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-68/small",
+        "large": "https://images.scrydex.com/pokemon/me4-68/large"
+      }
+    },
+    {
+      "number": "69/86",
+      "localId": "69",
+      "name": "Tauros",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Target Together",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon and flip a coin for each of your Pokémon in play that has \"Tauros\" in its name. This attack does 50 damage to the chosen Pokémon for each heads. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Satoshi Ito",
+      "pokedex": {
+        "number": 128,
+        "genus": "Wild Bull Pokémon",
+        "height": "4'7\"",
+        "weight": "194.9 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 69",
+      "printGroup": [
+        "CRI 69",
+        "CRI 96"
+      ],
+      "limitless": {
+        "id": 40098,
+        "url": "https://limitlesstcg.com/cards/CRI/69"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-69/small",
+        "large": "https://images.scrydex.com/pokemon/me4-69/large"
+      }
+    },
+    {
+      "number": "70/86",
+      "localId": "70",
+      "name": "Patrat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Watchful Eye",
+          "text": "Damage counters on each Pokémon (both yours and your opponent's) can't be moved to other Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Souichirou Gunjima",
+      "pokedex": {
+        "number": 504,
+        "genus": "Scout Pokémon",
+        "height": "1'8\"",
+        "weight": "25.6 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 70",
+      "printGroup": [
+        "CRI 70"
+      ],
+      "limitless": {
+        "id": 40099,
+        "url": "https://limitlesstcg.com/cards/CRI/70"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-70/small",
+        "large": "https://images.scrydex.com/pokemon/me4-70/large"
+      }
+    },
+    {
+      "number": "71/86",
+      "localId": "71",
+      "name": "Watchog",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Patrat",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Snap Inspection",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip 3 coins. If any of them are heads, your opponent reveals their hand. For each heads, choose a card you find there and shuffle it into your opponent's deck."
+        },
+        {
+          "name": "Low Kick",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 505,
+        "genus": "Lookout Pokémon",
+        "height": "3'7\"",
+        "weight": "59.5 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 71",
+      "printGroup": [
+        "CRI 71",
+        "CRI 97"
+      ],
+      "limitless": {
+        "id": 40100,
+        "url": "https://limitlesstcg.com/cards/CRI/71"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-71/small",
+        "large": "https://images.scrydex.com/pokemon/me4-71/large"
+      }
+    },
+    {
+      "number": "72/86",
+      "localId": "72",
+      "name": "Minccino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "This Pokémon also does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Common",
+      "artist": "ryoma uratsuka",
+      "pokedex": {
+        "number": 572,
+        "genus": "Chinchilla Pokémon",
+        "height": "1'4\"",
+        "weight": "12.8 lbs"
+      },
+      "secret": false,
+      "deckCode": "CRI 72",
+      "printGroup": [
+        "CRI 72"
+      ],
+      "limitless": {
+        "id": 40101,
+        "url": "https://limitlesstcg.com/cards/CRI/72"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-72/small",
+        "large": "https://images.scrydex.com/pokemon/me4-72/large"
+      }
+    },
+    {
+      "number": "73/86",
+      "localId": "73",
+      "name": "Cinccino ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Minccino",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 240,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Smooth Coat",
+          "text": "If any damage is done to this Pokémon by attacks, flip a coin. If heads, prevent that damage.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energized Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40×",
+          "text": "This attack does 40 damage for each Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Double Rare",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "CRI 73",
+      "printGroup": [
+        "CRI 73",
+        "CRI 105",
+        "CRI 119"
+      ],
+      "limitless": {
+        "id": 40102,
+        "url": "https://limitlesstcg.com/cards/CRI/73"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-73/small",
+        "large": "https://images.scrydex.com/pokemon/me4-73/large"
+      }
+    },
+    {
+      "number": "74/86",
+      "localId": "74",
+      "name": "Adversity Policy",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "If the Pokémon this card is attached to has Weakness to your opponent's Active Pokémon's type, is in the Active Spot, and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), draw 3 cards."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Uncommon",
+      "artist": "Ayaka Yoshida",
+      "secret": false,
+      "deckCode": "CRI 74",
+      "printGroup": [
+        "CRI 74"
+      ],
+      "limitless": {
+        "id": 40103,
+        "url": "https://limitlesstcg.com/cards/CRI/74"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-74/small",
+        "large": "https://images.scrydex.com/pokemon/me4-74/large"
+      }
+    },
+    {
+      "number": "75/86",
+      "localId": "75",
+      "name": "Ange Floette",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "You can put this card into play only if you discard a Prism Tower in play, and you can put this card into play during the same turn you play Prism Tower.\nEach Mega Floette ex in play (both yours and your opponent's) gets +150 HP."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "MARINA Chikazawa",
+      "secret": false,
+      "deckCode": "CRI 75",
+      "printGroup": [
+        "CRI 75"
+      ],
+      "limitless": {
+        "id": 40104,
+        "url": "https://limitlesstcg.com/cards/CRI/75"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-75/small",
+        "large": "https://images.scrydex.com/pokemon/me4-75/large"
+      }
+    },
+    {
+      "number": "76/86",
+      "localId": "76",
+      "name": "AZ's Tranquility",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Switch your Active Pokémon with 1 of your Benched Pokémon. If you moved a Pokémon ex to your Bench in this way, heal 80 damage from that Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "GIDORA",
+      "secret": false,
+      "deckCode": "CRI 76",
+      "printGroup": [
+        "CRI 76",
+        "CRI 106",
+        "CRI 120"
+      ],
+      "limitless": {
+        "id": 40105,
+        "url": "https://limitlesstcg.com/cards/CRI/76"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-76/small",
+        "large": "https://images.scrydex.com/pokemon/me4-76/large"
+      }
+    },
+    {
+      "number": "77/86",
+      "localId": "77",
+      "name": "Emma",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent reveals their hand, and you draw a card for each Pokémon you find there."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "secret": false,
+      "deckCode": "CRI 77",
+      "printGroup": [
+        "CRI 77",
+        "CRI 107"
+      ],
+      "limitless": {
+        "id": 40106,
+        "url": "https://limitlesstcg.com/cards/CRI/77"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-77/small",
+        "large": "https://images.scrydex.com/pokemon/me4-77/large"
+      }
+    },
+    {
+      "number": "78/86",
+      "localId": "78",
+      "name": "Great Haul Net",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Choose 1 or both:\n• Shuffle up to 3 Water Pokémon from your discard pile into your deck.\n• Shuffle up to 3 Basic Water Energy cards from your discard pile into your deck."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "CRI 78",
+      "printGroup": [
+        "CRI 78"
+      ],
+      "limitless": {
+        "id": 40107,
+        "url": "https://limitlesstcg.com/cards/CRI/78"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-78/small",
+        "large": "https://images.scrydex.com/pokemon/me4-78/large"
+      }
+    },
+    {
+      "number": "79/86",
+      "localId": "79",
+      "name": "Philippe",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Attach up to 2 Basic Metal Energy cards from your discard pile to 1 of your Metal Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Souichirou Gunjima",
+      "secret": false,
+      "deckCode": "CRI 79",
+      "printGroup": [
+        "CRI 79",
+        "CRI 110"
+      ],
+      "limitless": {
+        "id": 40108,
+        "url": "https://limitlesstcg.com/cards/CRI/79"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-79/small",
+        "large": "https://images.scrydex.com/pokemon/me4-79/large"
+      }
+    },
+    {
+      "number": "80/86",
+      "localId": "80",
+      "name": "Prism Tower",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may discard 2 cards from their hand in order to draw a card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "MARINA Chikazawa",
+      "secret": false,
+      "deckCode": "CRI 80",
+      "printGroup": [
+        "CRI 80",
+        "CRI 111"
+      ],
+      "limitless": {
+        "id": 40109,
+        "url": "https://limitlesstcg.com/cards/CRI/80"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-80/small",
+        "large": "https://images.scrydex.com/pokemon/me4-80/large"
+      }
+    },
+    {
+      "number": "81/86",
+      "localId": "81",
+      "name": "Roxie's Performance",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "During your opponent's next turn, their Poisoned Pokémon can't retreat. (This includes newly Poisoned Pokémon.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Nobusawa/Mochipuyo",
+      "secret": false,
+      "deckCode": "CRI 81",
+      "printGroup": [
+        "CRI 81",
+        "CRI 112",
+        "CRI 121"
+      ],
+      "limitless": {
+        "id": 40110,
+        "url": "https://limitlesstcg.com/cards/CRI/81"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-81/small",
+        "large": "https://images.scrydex.com/pokemon/me4-81/large"
+      }
+    },
+    {
+      "number": "82/86",
+      "localId": "82",
+      "name": "Special Red Card",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You can use this card only if your opponent has 3 or fewer Prize cards remaining.\n\nYour opponent shuffles their hand and puts it on the bottom of their deck. If they put any cards on the bottom of their deck in this way, they draw 3 cards."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Studio Bora Inc.",
+      "secret": false,
+      "deckCode": "CRI 82",
+      "printGroup": [
+        "CRI 82",
+        "CRI 113"
+      ],
+      "limitless": {
+        "id": 40111,
+        "url": "https://limitlesstcg.com/cards/CRI/82"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-82/small",
+        "large": "https://images.scrydex.com/pokemon/me4-82/large"
+      }
+    },
+    {
+      "number": "83/86",
+      "localId": "83",
+      "name": "Transformation Tome",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You must play 2 Transformation Tome cards at once. (This effect works one time for 2 cards.)\n \nChoose a Basic Pokémon in your discard pile and switch it with 1 of your Basic Pokémon in play. Any attached cards, damage counters, Special Conditions, turns in play, and any other effects remain on the new Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "CRI 83",
+      "printGroup": [
+        "CRI 83"
+      ],
+      "limitless": {
+        "id": 40112,
+        "url": "https://limitlesstcg.com/cards/CRI/83"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-83/small",
+        "large": "https://images.scrydex.com/pokemon/me4-83/large"
+      }
+    },
+    {
+      "number": "84/86",
+      "localId": "84",
+      "name": "Bubbly Water Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Water Energy.\n\nThe Water Pokémon this card is attached to recovers from all Special Conditions and can't be affected by any Special Conditions."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": null,
+      "secret": false,
+      "deckCode": "CRI 84",
+      "printGroup": [
+        "CRI 84"
+      ],
+      "limitless": {
+        "id": 40113,
+        "url": "https://limitlesstcg.com/cards/CRI/84"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-84/small",
+        "large": "https://images.scrydex.com/pokemon/me4-84/large"
+      }
+    },
+    {
+      "number": "85/86",
+      "localId": "85",
+      "name": "Magnetic Metal Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Metal Energy.\n\nThe Metal Pokémon this card is attached to has no Retreat Cost."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": null,
+      "secret": false,
+      "deckCode": "CRI 85",
+      "printGroup": [
+        "CRI 85"
+      ],
+      "limitless": {
+        "id": 40114,
+        "url": "https://limitlesstcg.com/cards/CRI/85"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-85/small",
+        "large": "https://images.scrydex.com/pokemon/me4-85/large"
+      }
+    },
+    {
+      "number": "86/86",
+      "localId": "86",
+      "name": "Nitro Fire Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Fire Energy.\n \nIf this card is discarded by an effect of an attack used by the Fire Pokémon this card is attached to, put this card into your hand after attack damage and effects."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Rare",
+      "artist": null,
+      "secret": false,
+      "deckCode": "CRI 86",
+      "printGroup": [
+        "CRI 86"
+      ],
+      "limitless": {
+        "id": 40115,
+        "url": "https://limitlesstcg.com/cards/CRI/86"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-86/small",
+        "large": "https://images.scrydex.com/pokemon/me4-86/large"
+      }
+    },
+    {
+      "number": "87/86",
+      "localId": "87",
+      "name": "Chespin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Beat",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Spike Sting",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "Atsushi Furusawa",
+      "pokedex": {
+        "number": 650,
+        "genus": "Spiny Nut Pokémon",
+        "height": "1'4\"",
+        "weight": "19.8 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 87",
+      "printGroup": [
+        "CRI 5",
+        "CRI 87"
+      ],
+      "limitless": {
+        "id": 40116,
+        "url": "https://limitlesstcg.com/cards/CRI/87"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-87/small",
+        "large": "https://images.scrydex.com/pokemon/me4-87/large"
+      }
+    },
+    {
+      "number": "88/86",
+      "localId": "88",
+      "name": "Froakie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "Susumu Maeya",
+      "pokedex": {
+        "number": 656,
+        "genus": "Bubble Frog Pokémon",
+        "height": "1'0\"",
+        "weight": "15.4 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 88",
+      "printGroup": [
+        "CRI 20",
+        "CRI 88"
+      ],
+      "limitless": {
+        "id": 40117,
+        "url": "https://limitlesstcg.com/cards/CRI/88"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-88/small",
+        "large": "https://images.scrydex.com/pokemon/me4-88/large"
+      }
+    },
+    {
+      "number": "89/86",
+      "localId": "89",
+      "name": "Frogadier",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Froakie",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Summoning Jutsu",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Pokémon, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Aqua Edge",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "Susumu Maeya",
+      "pokedex": {
+        "number": 657,
+        "genus": "Bubble Frog Pokémon",
+        "height": "2'0\"",
+        "weight": "24.0 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 89",
+      "printGroup": [
+        "CRI 21",
+        "CRI 89"
+      ],
+      "limitless": {
+        "id": 40118,
+        "url": "https://limitlesstcg.com/cards/CRI/89"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-89/small",
+        "large": "https://images.scrydex.com/pokemon/me4-89/large"
+      }
+    },
+    {
+      "number": "90/86",
+      "localId": "90",
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Synchro Pulse",
+          "text": "If you have the same number of cards in your hand as your opponent, attacks used by this Pokémon do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flashing Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "140",
+          "text": "During your next turn, this Pokémon can't use Flashing Bolt."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "saino misaki",
+      "pokedex": {
+        "number": 181,
+        "genus": "Light Pokémon",
+        "height": "4'7\"",
+        "weight": "135.6 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 90",
+      "printGroup": [
+        "MEP 75",
+        "CRI 29",
+        "CRI 90"
+      ],
+      "limitless": {
+        "id": 40119,
+        "url": "https://limitlesstcg.com/cards/CRI/90"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-90/small",
+        "large": "https://images.scrydex.com/pokemon/me4-90/large"
+      }
+    },
+    {
+      "number": "91/86",
+      "localId": "91",
+      "name": "Xerneas",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Geo Storm",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "YASHIRO Nanaco",
+      "pokedex": {
+        "number": 716,
+        "genus": "Life Pokémon",
+        "height": "9'10\"",
+        "weight": "474.0 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 91",
+      "printGroup": [
+        "CRI 42",
+        "CRI 91"
+      ],
+      "limitless": {
+        "id": 40120,
+        "url": "https://limitlesstcg.com/cards/CRI/91"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-91/small",
+        "large": "https://images.scrydex.com/pokemon/me4-91/large"
+      }
+    },
+    {
+      "number": "92/86",
+      "localId": "92",
+      "name": "Claydol",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Baltoy",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Devolution Ray",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": "If your opponent's Active Pokémon is an evolved Pokémon, devolve it by putting the highest Stage Evolution card on it into your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "matazo",
+      "pokedex": {
+        "number": 344,
+        "genus": "Clay Doll Pokémon",
+        "height": "4'11\"",
+        "weight": "238.1 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 92",
+      "printGroup": [
+        "CRI 47",
+        "CRI 92"
+      ],
+      "limitless": {
+        "id": 40121,
+        "url": "https://limitlesstcg.com/cards/CRI/92"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-92/small",
+        "large": "https://images.scrydex.com/pokemon/me4-92/large"
+      }
+    },
+    {
+      "number": "93/86",
+      "localId": "93",
+      "name": "Crobat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Golbat",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Nighttime Maneuvers",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Search your deck for a card. Shuffle your deck, then put that card on top of it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Poison Sound Wave",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "80",
+          "text": "Your opponent's Active Pokémon is now Confused and Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "Kazuhisa Uragami",
+      "pokedex": {
+        "number": 169,
+        "genus": "Bat Pokémon",
+        "height": "5'11\"",
+        "weight": "165.3 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 93",
+      "printGroup": [
+        "MEP 76",
+        "CRI 51",
+        "CRI 93"
+      ],
+      "limitless": {
+        "id": 40122,
+        "url": "https://limitlesstcg.com/cards/CRI/93"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-93/small",
+        "large": "https://images.scrydex.com/pokemon/me4-93/large"
+      }
+    },
+    {
+      "number": "94/86",
+      "localId": "94",
+      "name": "Metang",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Beldum",
+      "types": [
+        "Metal"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Guard Press",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "Kurata So",
+      "pokedex": {
+        "number": 375,
+        "genus": "Iron Claw Pokémon",
+        "height": "3'11\"",
+        "weight": "446.4 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 94",
+      "printGroup": [
+        "CRI 60",
+        "CRI 94"
+      ],
+      "limitless": {
+        "id": 40123,
+        "url": "https://limitlesstcg.com/cards/CRI/94"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-94/small",
+        "large": "https://images.scrydex.com/pokemon/me4-94/large"
+      }
+    },
+    {
+      "number": "95/86",
+      "localId": "95",
+      "name": "Sliggoo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Goomy",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Gentle Slap",
+          "cost": [
+            "Water",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "aspara",
+      "pokedex": {
+        "number": 705,
+        "genus": "Soft Tissue Pokémon",
+        "height": "2'7\"",
+        "weight": "38.6 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 95",
+      "printGroup": [
+        "CRI 67",
+        "CRI 95"
+      ],
+      "limitless": {
+        "id": 40124,
+        "url": "https://limitlesstcg.com/cards/CRI/95"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-95/small",
+        "large": "https://images.scrydex.com/pokemon/me4-95/large"
+      }
+    },
+    {
+      "number": "96/86",
+      "localId": "96",
+      "name": "Tauros",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Target Together",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon and flip a coin for each of your Pokémon in play that has \"Tauros\" in its name. This attack does 50 damage to the chosen Pokémon for each heads. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "Tsuyoshi Nagano",
+      "pokedex": {
+        "number": 128,
+        "genus": "Wild Bull Pokémon",
+        "height": "4'7\"",
+        "weight": "194.9 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 96",
+      "printGroup": [
+        "CRI 69",
+        "CRI 96"
+      ],
+      "limitless": {
+        "id": 40125,
+        "url": "https://limitlesstcg.com/cards/CRI/96"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-96/small",
+        "large": "https://images.scrydex.com/pokemon/me4-96/large"
+      }
+    },
+    {
+      "number": "97/86",
+      "localId": "97",
+      "name": "Watchog",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Patrat",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Snap Inspection",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip 3 coins. If any of them are heads, your opponent reveals their hand. For each heads, choose a card you find there and shuffle it into your opponent's deck."
+        },
+        {
+          "name": "Low Kick",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Illustration Rare",
+      "artist": "MARINA Chikazawa",
+      "pokedex": {
+        "number": 505,
+        "genus": "Lookout Pokémon",
+        "height": "3'7\"",
+        "weight": "59.5 lbs"
+      },
+      "secret": true,
+      "deckCode": "CRI 97",
+      "printGroup": [
+        "CRI 71",
+        "CRI 97"
+      ],
+      "limitless": {
+        "id": 40126,
+        "url": "https://limitlesstcg.com/cards/CRI/97"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-97/small",
+        "large": "https://images.scrydex.com/pokemon/me4-97/large"
+      }
+    },
+    {
+      "number": "98/86",
+      "localId": "98",
+      "name": "Beedrill ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Kakuna",
+      "types": [
+        "Grass"
+      ],
+      "hp": 310,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Rumbling Bees",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "110×",
+          "text": "This attack does 110 damage for each of your Beedrill and Beedrill ex in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "CRI 98",
+      "printGroup": [
+        "CRI 3",
+        "CRI 98"
+      ],
+      "limitless": {
+        "id": 40127,
+        "url": "https://limitlesstcg.com/cards/CRI/98"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-98/small",
+        "large": "https://images.scrydex.com/pokemon/me4-98/large"
+      }
+    },
+    {
+      "number": "99/86",
+      "localId": "99",
+      "name": "Mega Pyroar ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Litleo",
+      "types": [
+        "Fire"
+      ],
+      "hp": 340,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Ferocious Bellow",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "During your opponent's next turn, attacks used by the Defending Pokémon do 50 less damage (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Fiery Big Bang",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "290-",
+          "text": "This attack does 10 less damage for each damage counter on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "Keisuke Azuma",
+      "secret": true,
+      "deckCode": "CRI 99",
+      "printGroup": [
+        "CRI 15",
+        "CRI 99"
+      ],
+      "limitless": {
+        "id": 40128,
+        "url": "https://limitlesstcg.com/cards/CRI/99"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-99/small",
+        "large": "https://images.scrydex.com/pokemon/me4-99/large"
+      }
+    },
+    {
+      "number": "100/86",
+      "localId": "100",
+      "name": "Mega Greninja ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Frogadier",
+      "types": [
+        "Water"
+      ],
+      "hp": 350,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Mortal Shuriken",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Ninja Spinner",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120+",
+          "text": "You may put a Water Energy attached to this Pokémon into your hand and have this attack do 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "takuyoa",
+      "secret": true,
+      "deckCode": "CRI 100",
+      "printGroup": [
+        "MEP 81",
+        "CRI 22",
+        "CRI 100",
+        "CRI 116",
+        "CRI 122"
+      ],
+      "limitless": {
+        "id": 40129,
+        "url": "https://limitlesstcg.com/cards/CRI/100"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-100/small",
+        "large": "https://images.scrydex.com/pokemon/me4-100/large"
+      }
+    },
+    {
+      "number": "101/86",
+      "localId": "101",
+      "name": "Mega Floette ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "MEGA",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 250,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Gentle Light",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 30 damage from each Pokémon (both yours and your opponent's)."
+        },
+        {
+          "name": "Eternity Bloom",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Search your deck for up to 4 Basic Psychic Energy cards and attach them to your Benched Pokémon in any way you like. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "aky CG Works",
+      "secret": true,
+      "deckCode": "CRI 101",
+      "printGroup": [
+        "CRI 35",
+        "CRI 101",
+        "CRI 117"
+      ],
+      "limitless": {
+        "id": 40130,
+        "url": "https://limitlesstcg.com/cards/CRI/101"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-101/small",
+        "large": "https://images.scrydex.com/pokemon/me4-101/large"
+      }
+    },
+    {
+      "number": "102/86",
+      "localId": "102",
+      "name": "Gourgeist ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Pumpkaboo",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 270,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Horrifying Rondo",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30+",
+          "text": "This attack does 50 more damage for each of your Benched Pokémon that has any damage counters on it."
+        },
+        {
+          "name": "Ghostly Touch",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "140",
+          "text": "Discard a random card from your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "CRI 102",
+      "printGroup": [
+        "CRI 41",
+        "CRI 102"
+      ],
+      "limitless": {
+        "id": 40131,
+        "url": "https://limitlesstcg.com/cards/CRI/102"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-102/small",
+        "large": "https://images.scrydex.com/pokemon/me4-102/large"
+      }
+    },
+    {
+      "number": "103/86",
+      "localId": "103",
+      "name": "Cobalion ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Metal Road",
+          "text": "Once during your turn, when this Pokémon moves from your Bench to the Active Spot, you may use this Ability. Move any amount of Metal Energy from your other Pokémon to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Power Tackle",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "During your next turn, this Pokémon can't use attacks."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "CRI 103",
+      "printGroup": [
+        "CRI 64",
+        "CRI 103"
+      ],
+      "limitless": {
+        "id": 40132,
+        "url": "https://limitlesstcg.com/cards/CRI/103"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-103/small",
+        "large": "https://images.scrydex.com/pokemon/me4-103/large"
+      }
+    },
+    {
+      "number": "104/86",
+      "localId": "104",
+      "name": "Mega Dragalge ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Skrelp",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 330,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corrosive Liquid",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard all Pokémon Tools and Special Energy from all of your opponent's Pokémon."
+        },
+        {
+          "name": "Pernicious Poison",
+          "cost": [
+            "Water",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, place 16 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "CRI 104",
+      "printGroup": [
+        "CRI 65",
+        "CRI 104",
+        "CRI 118"
+      ],
+      "limitless": {
+        "id": 40133,
+        "url": "https://limitlesstcg.com/cards/CRI/104"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-104/small",
+        "large": "https://images.scrydex.com/pokemon/me4-104/large"
+      }
+    },
+    {
+      "number": "105/86",
+      "localId": "105",
+      "name": "Cinccino ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Minccino",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 240,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Smooth Coat",
+          "text": "If any damage is done to this Pokémon by attacks, flip a coin. If heads, prevent that damage.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energized Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40×",
+          "text": "This attack does 40 damage for each Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "CRI 105",
+      "printGroup": [
+        "CRI 73",
+        "CRI 105",
+        "CRI 119"
+      ],
+      "limitless": {
+        "id": 40134,
+        "url": "https://limitlesstcg.com/cards/CRI/105"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-105/small",
+        "large": "https://images.scrydex.com/pokemon/me4-105/large"
+      }
+    },
+    {
+      "number": "106/86",
+      "localId": "106",
+      "name": "AZ's Tranquility",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Switch your Active Pokémon with 1 of your Benched Pokémon. If you moved a Pokémon ex to your Bench in this way, heal 80 damage from that Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "GIDORA",
+      "secret": true,
+      "deckCode": "CRI 106",
+      "printGroup": [
+        "CRI 76",
+        "CRI 106",
+        "CRI 120"
+      ],
+      "limitless": {
+        "id": 40135,
+        "url": "https://limitlesstcg.com/cards/CRI/106"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-106/small",
+        "large": "https://images.scrydex.com/pokemon/me4-106/large"
+      }
+    },
+    {
+      "number": "107/86",
+      "localId": "107",
+      "name": "Emma",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent reveals their hand, and you draw a card for each Pokémon you find there."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "Akira Komayama",
+      "secret": true,
+      "deckCode": "CRI 107",
+      "printGroup": [
+        "CRI 77",
+        "CRI 107"
+      ],
+      "limitless": {
+        "id": 40136,
+        "url": "https://limitlesstcg.com/cards/CRI/107"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-107/small",
+        "large": "https://images.scrydex.com/pokemon/me4-107/large"
+      }
+    },
+    {
+      "number": "108/86",
+      "localId": "108",
+      "name": "Energy Retrieval",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Put up to 2 Basic Energy cards from your discard pile into your hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Ultra Rare",
+      "artist": "Studio Bora Inc.",
+      "secret": true,
+      "deckCode": "CRI 108",
+      "printGroup": [
+        "BS 81",
+        "BS2 110",
+        "LC 107",
+        "BLW 92",
+        "PLB 80",
+        "PRC 126",
+        "AOR 99",
+        "EVO 77",
+        "SUM 116",
+        "SLG 59",
+        "SSH 160",
+        "CRZ 127",
+        "SVI 171",
+        "WHT 82",
+        "CRI 108"
+      ],
+      "limitless": {
+        "id": 40137,
+        "url": "https://limitlesstcg.com/cards/CRI/108"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-108/small",
+        "large": "https://images.scrydex.com/pokemon/me4-108/large"
+      }
+    },
+    {
+      "number": "109/86",
+      "localId": "109",
+      "name": "Jumbo Ice Cream",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Heal 80 damage from your Active Pokémon that has 3 or more Energy attached."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Ultra Rare",
+      "artist": "AYUMI ODASHIMA",
+      "secret": true,
+      "deckCode": "CRI 109",
+      "printGroup": [
+        "PFL 91",
+        "CRI 109"
+      ],
+      "limitless": {
+        "id": 40138,
+        "url": "https://limitlesstcg.com/cards/CRI/109"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-109/small",
+        "large": "https://images.scrydex.com/pokemon/me4-109/large"
+      }
+    },
+    {
+      "number": "110/86",
+      "localId": "110",
+      "name": "Philippe",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Attach up to 2 Basic Metal Energy cards from your discard pile to 1 of your Metal Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "Souichirou Gunjima",
+      "secret": true,
+      "deckCode": "CRI 110",
+      "printGroup": [
+        "CRI 79",
+        "CRI 110"
+      ],
+      "limitless": {
+        "id": 40139,
+        "url": "https://limitlesstcg.com/cards/CRI/110"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-110/small",
+        "large": "https://images.scrydex.com/pokemon/me4-110/large"
+      }
+    },
+    {
+      "number": "111/86",
+      "localId": "111",
+      "name": "Prism Tower",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may discard 2 cards from their hand in order to draw a card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "MARINA Chikazawa",
+      "secret": true,
+      "deckCode": "CRI 111",
+      "printGroup": [
+        "CRI 80",
+        "CRI 111"
+      ],
+      "limitless": {
+        "id": 40140,
+        "url": "https://limitlesstcg.com/cards/CRI/111"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-111/small",
+        "large": "https://images.scrydex.com/pokemon/me4-111/large"
+      }
+    },
+    {
+      "number": "112/86",
+      "localId": "112",
+      "name": "Roxie's Performance",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "During your opponent's next turn, their Poisoned Pokémon can't retreat. (This includes newly Poisoned Pokémon.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "Nobusawa/Mochipuyo",
+      "secret": true,
+      "deckCode": "CRI 112",
+      "printGroup": [
+        "CRI 81",
+        "CRI 112",
+        "CRI 121"
+      ],
+      "limitless": {
+        "id": 40141,
+        "url": "https://limitlesstcg.com/cards/CRI/112"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-112/small",
+        "large": "https://images.scrydex.com/pokemon/me4-112/large"
+      }
+    },
+    {
+      "number": "113/86",
+      "localId": "113",
+      "name": "Special Red Card",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You can use this card only if your opponent has 3 or fewer Prize cards remaining.\n\nYour opponent shuffles their hand and puts it on the bottom of their deck. If they put any cards on the bottom of their deck in this way, they draw 3 cards."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Ultra Rare",
+      "artist": "Studio Bora Inc.",
+      "secret": true,
+      "deckCode": "CRI 113",
+      "printGroup": [
+        "CRI 82",
+        "CRI 113"
+      ],
+      "limitless": {
+        "id": 40142,
+        "url": "https://limitlesstcg.com/cards/CRI/113"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-113/small",
+        "large": "https://images.scrydex.com/pokemon/me4-113/large"
+      }
+    },
+    {
+      "number": "114/86",
+      "localId": "114",
+      "name": "Surfing Beach",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may switch their Active Water Pokémon with 1 of their Benched Water Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Ultra Rare",
+      "artist": "AYUMI ODASHIMA",
+      "secret": true,
+      "deckCode": "CRI 114",
+      "printGroup": [
+        "MEG 129",
+        "CRI 114"
+      ],
+      "limitless": {
+        "id": 40143,
+        "url": "https://limitlesstcg.com/cards/CRI/114"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-114/small",
+        "large": "https://images.scrydex.com/pokemon/me4-114/large"
+      }
+    },
+    {
+      "number": "115/86",
+      "localId": "115",
+      "name": "Tool Scrapper",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Choose up to 2 Pokémon Tools attached to Pokémon (yours or your opponent's) and discard them."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Ultra Rare",
+      "artist": "Studio Bora Inc.",
+      "secret": true,
+      "deckCode": "CRI 115",
+      "printGroup": [
+        "DRX 116",
+        "RCL 168",
+        "RCL 208",
+        "WHT 85",
+        "ASC 212",
+        "CRI 115"
+      ],
+      "limitless": {
+        "id": 40144,
+        "url": "https://limitlesstcg.com/cards/CRI/115"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-115/small",
+        "large": "https://images.scrydex.com/pokemon/me4-115/large"
+      }
+    },
+    {
+      "number": "116/86",
+      "localId": "116",
+      "name": "Mega Greninja ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Frogadier",
+      "types": [
+        "Water"
+      ],
+      "hp": 350,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Mortal Shuriken",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Ninja Spinner",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120+",
+          "text": "You may put a Water Energy attached to this Pokémon into your hand and have this attack do 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Special Illustration Rare",
+      "artist": "Susumu Maeya",
+      "secret": true,
+      "deckCode": "CRI 116",
+      "printGroup": [
+        "MEP 81",
+        "CRI 22",
+        "CRI 100",
+        "CRI 116",
+        "CRI 122"
+      ],
+      "limitless": {
+        "id": 40145,
+        "url": "https://limitlesstcg.com/cards/CRI/116"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-116/small",
+        "large": "https://images.scrydex.com/pokemon/me4-116/large"
+      }
+    },
+    {
+      "number": "117/86",
+      "localId": "117",
+      "name": "Mega Floette ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "MEGA",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 250,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Gentle Light",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 30 damage from each Pokémon (both yours and your opponent's)."
+        },
+        {
+          "name": "Eternity Bloom",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Search your deck for up to 4 Basic Psychic Energy cards and attach them to your Benched Pokémon in any way you like. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Special Illustration Rare",
+      "artist": "Teeziro",
+      "secret": true,
+      "deckCode": "CRI 117",
+      "printGroup": [
+        "CRI 35",
+        "CRI 101",
+        "CRI 117"
+      ],
+      "limitless": {
+        "id": 40146,
+        "url": "https://limitlesstcg.com/cards/CRI/117"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-117/small",
+        "large": "https://images.scrydex.com/pokemon/me4-117/large"
+      }
+    },
+    {
+      "number": "118/86",
+      "localId": "118",
+      "name": "Mega Dragalge ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Skrelp",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 330,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corrosive Liquid",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard all Pokémon Tools and Special Energy from all of your opponent's Pokémon."
+        },
+        {
+          "name": "Pernicious Poison",
+          "cost": [
+            "Water",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, place 16 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "J",
+      "rarity": "Special Illustration Rare",
+      "artist": "Kazumasa Yasukuni",
+      "secret": true,
+      "deckCode": "CRI 118",
+      "printGroup": [
+        "CRI 65",
+        "CRI 104",
+        "CRI 118"
+      ],
+      "limitless": {
+        "id": 40147,
+        "url": "https://limitlesstcg.com/cards/CRI/118"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-118/small",
+        "large": "https://images.scrydex.com/pokemon/me4-118/large"
+      }
+    },
+    {
+      "number": "119/86",
+      "localId": "119",
+      "name": "Cinccino ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Minccino",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 240,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Smooth Coat",
+          "text": "If any damage is done to this Pokémon by attacks, flip a coin. If heads, prevent that damage.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energized Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40×",
+          "text": "This attack does 40 damage for each Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Special Illustration Rare",
+      "artist": "Keisin",
+      "secret": true,
+      "deckCode": "CRI 119",
+      "printGroup": [
+        "CRI 73",
+        "CRI 105",
+        "CRI 119"
+      ],
+      "limitless": {
+        "id": 40148,
+        "url": "https://limitlesstcg.com/cards/CRI/119"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-119/small",
+        "large": "https://images.scrydex.com/pokemon/me4-119/large"
+      }
+    },
+    {
+      "number": "120/86",
+      "localId": "120",
+      "name": "AZ's Tranquility",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Switch your Active Pokémon with 1 of your Benched Pokémon. If you moved a Pokémon ex to your Bench in this way, heal 80 damage from that Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Special Illustration Rare",
+      "artist": "OKACHEKE",
+      "secret": true,
+      "deckCode": "CRI 120",
+      "printGroup": [
+        "CRI 76",
+        "CRI 106",
+        "CRI 120"
+      ],
+      "limitless": {
+        "id": 40149,
+        "url": "https://limitlesstcg.com/cards/CRI/120"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-120/small",
+        "large": "https://images.scrydex.com/pokemon/me4-120/large"
+      }
+    },
+    {
+      "number": "121/86",
+      "localId": "121",
+      "name": "Roxie's Performance",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "During your opponent's next turn, their Poisoned Pokémon can't retreat. (This includes newly Poisoned Pokémon.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "J",
+      "rarity": "Special Illustration Rare",
+      "artist": "Tomowaka",
+      "secret": true,
+      "deckCode": "CRI 121",
+      "printGroup": [
+        "CRI 81",
+        "CRI 112",
+        "CRI 121"
+      ],
+      "limitless": {
+        "id": 40150,
+        "url": "https://limitlesstcg.com/cards/CRI/121"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-121/small",
+        "large": "https://images.scrydex.com/pokemon/me4-121/large"
+      }
+    },
+    {
+      "number": "122/86",
+      "localId": "122",
+      "name": "Mega Greninja ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex"
+      ],
+      "evolvesFrom": "Frogadier",
+      "types": [
+        "Water"
+      ],
+      "hp": 350,
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Mortal Shuriken",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Ninja Spinner",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120+",
+          "text": "You may put a Water Energy attached to this Pokémon into your hand and have this attack do 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "J",
+      "rarity": "Mega Hyper Rare",
+      "artist": "takuyoa",
+      "secret": true,
+      "deckCode": "CRI 122",
+      "printGroup": [
+        "MEP 81",
+        "CRI 22",
+        "CRI 100",
+        "CRI 116",
+        "CRI 122"
+      ],
+      "limitless": {
+        "id": 40151,
+        "url": "https://limitlesstcg.com/cards/CRI/122"
+      },
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-122/small",
+        "large": "https://images.scrydex.com/pokemon/me4-122/large"
+      }
+    }
+  ]
+}
