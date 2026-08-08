@@ -90,6 +90,7 @@ function cleanDexEntry(s) {
   return s
     .replace(/\{\{ScPkmn\}\}/g, "Pokémon")
     .replace(/\{\{ScBall\}\}/g, "Poké Ball")
+    .replace(/\{\{Berries\}\}/g, "Berries")
     .replace(/\{\{p\|([^|}]+)(?:\|([^|}]+))?\}\}/gi, (_, name, display) => display || name)
     .replace(/\{\{pkmn2?\|([^|}]+)\}\}/g, "$1")
     .replace(/\{\{t\|([^|}]+)\}\}/g, (_, type) => type.charAt(0).toUpperCase() + type.slice(1).toLowerCase())
@@ -199,12 +200,21 @@ const flavorCandidateCache = new Map()
 async function fetchFlavorCandidates(speciesName) {
   if (flavorCandidateCache.has(speciesName)) return flavorCandidateCache.get(speciesName)
   const promise = (async () => {
-    const res = await fetch(
-      `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(speciesName)}_(Pok%C3%A9mon)&action=raw`,
-      { headers: { "user-agent": "pokemon-tcg-database (flavor-text-editor)" } }
-    )
-    if (!res.ok) return []
-    return parseDexEntries(await res.text())
+    try {
+      const res = await fetch(
+        `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(speciesName)}_(Pok%C3%A9mon)&action=raw`,
+        { headers: { "user-agent": "pokemon-tcg-database (flavor-text-editor)" } }
+      )
+      if (!res.ok) return []
+      return parseDexEntries(await res.text())
+    } catch (err) {
+      // A transient network hiccup (e.g. ETIMEDOUT) shouldn't take the
+      // whole editor down, and shouldn't permanently cache a failure either
+      // — clear the cache entry so the next request actually retries.
+      flavorCandidateCache.delete(speciesName)
+      console.error(`Bulbapedia fetch failed for "${speciesName}": ${err instanceof Error ? err.message : err}`)
+      return []
+    }
   })()
   flavorCandidateCache.set(speciesName, promise)
   return promise
@@ -400,8 +410,17 @@ document.getElementById('filterBtn').onclick = async () => {
   render()
 }
 
+// Bulbapedia's wikitext and pokemon-tcg-data's own flavorText disagree on
+// straight vs curly quotes for the same real text (e.g. "doesn't" vs
+// "doesn’t") — treat them as equivalent so that doesn't read as a
+// mismatch.
 function normalize(s) {
-  return s.replace(/\\s+/g, ' ').trim().toLowerCase()
+  return s
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\\s+/g, ' ')
+    .trim()
+    .toLowerCase()
 }
 
 async function render() {
@@ -537,7 +556,10 @@ const server = createServer(async (req, res) => {
       number: c.number,
       name: c.name,
       image: `/card-image/${setCode}/${c.localId}`,
-      flavorText: overlay[c.localId] ?? "",
+      // The overlay is a manual correction on top of whatever fetch-set.mjs
+      // already merged onto the card (overlay itself, for MEG/PFL/ASC-style
+      // sets, or pokemon-tcg-data's own flavorText for older SV-era sets).
+      flavorText: overlay[c.localId] ?? c.flavorText ?? "",
     }))
     res.writeHead(200, { "content-type": "application/json" })
     res.end(JSON.stringify(data))

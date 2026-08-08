@@ -8,11 +8,19 @@
       "Bash(curl -s http://localhost:5173/api/cards)",
       "Bash(python3 -m json.tool)",
       "Bash(curl -s \"http://localhost:5173/api/flavor-candidates?name=Oddish\")",
-      "Bash(pkill -f \"flavor-text-editor.mjs PFL\")",
       "Bash(npm run typecheck)",
       "Bash(curl -s \"http://localhost:5173/*)",
       "Bash(curl -s http://localhost:5173/*)",
-      "Bash(curl -s \"https://bulbapedia.bulbagarden.net/*)"
+      "Bash(curl -s \"https://bulbapedia.bulbagarden.net/*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(node scripts/download-images.mjs *)",
+      "Bash(node scripts/*)",
+      "Bash(curl -s -X POST http://localhost:5173/*)",
+      "Bash(jq *)",
+      "Bash(lsof *)",
+      "Bash(lsof -nP -iTCP:5173 -sTCP:LISTEN -t | xargs -r kill)",
+      "Read(.local/card-images/**)",
+      "Read(.local/card-images-cropped/**)"
     ],
     "additionalDirectories": ["/private/tmp"]
   }

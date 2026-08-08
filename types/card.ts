@@ -125,6 +125,7 @@ export interface PrimaryCard {
   rarity: string
   nationalPokedexNumbers?: number[]
   images?: CardImages
+  flavorText?: string // populated by pokemon-tcg-data itself for older (e.g. Scarlet & Violet) sets
 }
 
 export interface PrimarySetMeta {

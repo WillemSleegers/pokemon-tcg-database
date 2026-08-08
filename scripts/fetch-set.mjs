@@ -220,6 +220,10 @@ async function main() {
     card.rarity = primary.rarity
     card.artist = extra.artist
     if (pokedex) card.pokedex = pokedex
+    // pokemon-tcg-data already carries flavor text for older sets (it's the
+    // community having caught up since release) — trust it as a starting
+    // point, but let the manual overlay override it for any gaps or fixes.
+    if (primary.flavorText) card.flavorText = primary.flavorText
     if (flavorTextOverlay[localId]) card.flavorText = flavorTextOverlay[localId]
     card.secret = Number(localId) > setMeta.printedTotal
     card.deckCode = `${limitlessCode} ${localId}`
