@@ -6,10 +6,16 @@ picking the work back up.
 
 ## Status
 
-`data/sets/MEG.json` (Mega Evolution, 188 cards) and `data/sets/PFL.json` (Phantasmal
-Flames, 130 cards) are complete, including flavor text — verified against Bulbapedia
-via the flavor-text editor's "Show unmatched only" filter (see below), not just
-eyeballed. No other sets have been built yet.
+`data/sets/MEG.json` (Mega Evolution, 188 cards), `data/sets/PFL.json` (Phantasmal
+Flames, 130 cards), `data/sets/ASC.json` (Ascended Heroes, 295 cards),
+`data/sets/POR.json` (Perfect Order, 124 cards), `data/sets/CRI.json` (Chaos Rising,
+122 cards), and `data/sets/PBL.json` (Pitch Black, 120 cards) are complete, including
+flavor text — verified against Bulbapedia via the flavor-text editor's "Show unmatched
+only" filter (see below), not just eyeballed. That's the entire Mega Evolution series
+done. `data/sets/SVI.json` (Scarlet & Violet base set) is also complete — its flavor
+text came from pokemon-tcg-data
+directly rather than the crop workflow (see "Scarlet & Violet: check per-set, don't
+assume").
 
 ## Schema
 
@@ -127,11 +133,63 @@ wikitext as flat rather than nested:
   read as a param separator, and everything after it is dropped. `splitTemplateParams`
   tracks both bracket types together.
 
-Bulbapedia templates handled so far in `cleanDexEntry`: `ScPkmn`, `ScBall`, `p`/`P`,
-`t`, `m`, `status`, `a`, `OBP`, `pkmn`/`pkmn2`, `tt` (footnote markers dropped, real
-text kept), `sup/N` (dropped). If a new set's candidates show stray `{{`/`}}`/`[[`/`]]`
-in the text, it's almost certainly an unhandled template — check what it renders to
-on the actual Bulbapedia page before guessing.
+Bulbapedia templates handled so far in `cleanDexEntry`: `ScPkmn`, `ScBall`, `Berries`,
+`p`/`P`, `t`, `m`, `status`, `a`, `OBP`, `pkmn`/`pkmn2`, `tt` (footnote markers dropped,
+real text kept), `sup/N` (dropped). If a new set's candidates show stray
+`{{`/`}}`/`[[`/`]]` in the text, it's almost certainly an unhandled template — check
+what it renders to on the actual Bulbapedia page before guessing. (Found `{{Berries}}`
+this way while doing PBL's Charcadet — it renders to the plain word "Berries".)
+
+## Bulk flavor text via cropped images
+
+For sets with no structured flavor-text source at all (any Mega Evolution set;
+Scarlet & Violet sets `sv6pt5` onward — see below), this is now the default way
+Claude fills in the bulk of a set, instead of the user doing it by hand in the
+browser. A full card image costs Claude ~1,000 tokens to read; the flavor text is
+always a small strip near the bottom, so cropping down to just that strip costs
+~90 tokens instead — cheap enough to read the whole set directly.
+
+```sh
+node scripts/download-images.mjs <CODE>              # cache full images locally first
+node scripts/crop-flavor-text.mjs <CODE> <top> <height> [left] [width]
+```
+
+`top`/`height` are pixel coordinates and **must be calibrated per set** — crop one
+sample card, look at the result, adjust until the box cleanly frames the text with a
+little margin, then apply it to the whole set. Card templates differ enough between
+series (Mega Evolution's separate copyright line below the flavor text vs Scarlet &
+Violet's single footer row) that a box from one doesn't carry over to the next, even
+though both happen to be ~733×1024 images. Known-good boxes so far: Mega Evolution
+`top=900 height=95` (full width), Scarlet & Violet `top=905 height=95` (full width).
+
+Then, for each card: Claude reads the cropped image (`.local/card-images-cropped/
+<CODE>/<localId>.png`) inline — same "don't spawn subagents for this, just read them
+one after another" reasoning as the old full-image approach (see Lessons below), just
+much cheaper per card now. Cross-check the transcription against that species'
+Bulbapedia candidates (`fetch("/api/flavor-candidates?name=...")` against a running
+`flavor-text-editor.mjs` instance — strip any trainer-possessive prefix first, e.g.
+"Erika's Oddish" → "Oddish") before trusting it, and save via `POST /api/flavor-text`
+(same endpoint the browser UI uses, writes to the overlay file). An exact match
+against a candidate is a strong signal the transcription is right; if nothing matches,
+double check the crop/reading before saving — Claude misreading a character is a much
+likelier explanation than the card printing text absent from every mainline game.
+
+The `http://localhost:5173` editor and its "Show unmatched only" sweep are still the
+closing step regardless of who filled the text in — run it last, same as before.
+
+### Scarlet & Violet: check per-set, don't assume
+
+Unlike Mega Evolution, older Scarlet & Violet sets _do_ have flavor text already in
+pokemon-tcg-data's own `flavorText` field (`fetch-set.mjs` reads it automatically,
+overridden by the manual overlay if present) — the community had years to fill it in.
+But coverage has a hard cutoff, not a gradient: `sv1`–`sv6` and `sve` are 100%
+covered, `sv6pt5` ("Shrouded Fable") onward through `sv10` are 0% covered, checked
+card by card. `svp` (the ongoing promo set) is partial. Check any new SV set for
+coverage before assuming either way; don't extrapolate from a neighboring set.
+
+Even where coverage exists, still run the verification sweep — it caught a real
+upstream error in `sv1` (one card's `flavorText` was copy-pasted from an unrelated
+Pokémon entirely; see git history) that a presence check alone would have missed.
 
 ## Lessons from building MEG and PFL
 
@@ -142,15 +200,14 @@ on the actual Bulbapedia page before guessing.
 - Rarity names, dex numbers, and rules text are trustworthy from pokemon-tcg-data.
   Artist and print-group data only exist on Limitless. Flavor text has no reliable
   structured source — see above.
-- **Default division of labor for flavor text: the user does the bulk pass in the
-  browser, Claude only touches the leftovers.** Reading a card image costs Claude
-  roughly 1,000–1,600 tokens, so having Claude transcribe an entire ~100-card set
-  runs six figures in tokens for work a human can do by eye for free. Instead: the
-  user fills in cards by hand at `http://localhost:5173`, then Claude runs the
-  "Show unmatched only" sweep (or the equivalent `fetch("/api/cards")` +
-  `fetch("/api/flavor-candidates?name=...")` loop from the shell) and only reads
-  images for whatever's still flagged — a handful of cards, not the whole set. Only
-  do the full-set read-through yourself if the user explicitly asks for it.
+- **(Superseded — see "Bulk flavor text via cropped images" below.) Originally,
+  the default division of labor had the user do the whole bulk pass by hand in the
+  browser, since reading a full card image costs Claude ~1,000–1,600 tokens and
+  transcribing an entire ~100-card set that way ran six figures in tokens for work
+  a human can do by eye for free.** Cropping down to just the flavor-text strip
+  (~90 tokens/card) made Claude doing the bulk pass directly cheap enough to be the
+  new default instead. The `http://localhost:5173` editor and the "Show unmatched
+  only" sweep still exist and are still how a set gets verified either way.
 - **Don't improvise one-off shell pipelines for simple lookups.** Chaining a new
   `curl | python3 -c ...`, `curl | grep`, `find`, etc. together for something like
   "what's this field in a remote JSON file" triggers a fresh permission prompt for
@@ -165,16 +222,23 @@ The `add-set` skill (`.claude/skills/add-set/skill.md`) covers this end-to-end. 
 
 ```sh
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>
-# e.g. node scripts/fetch-set.mjs sv10 ASC
+# e.g. node scripts/fetch-set.mjs me5 PBL
+node scripts/download-images.mjs <LimitlessCode>              # cache images before cropping
+node scripts/crop-flavor-text.mjs <LimitlessCode> <top> <height>   # calibrate on one card first
 node scripts/flavor-text-editor.mjs <LimitlessCode>
-# ...user fills in flavor text by hand, then Claude runs the "Show unmatched only"
-# sweep and only reads images for whatever's still flagged (see "Lessons" above)...
+# ...Claude reads the cropped images and transcribes+verifies+saves via the editor's
+# API (see "Bulk flavor text via cropped images" above), then runs the "Show unmatched
+# only" sweep as the closing check...
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>   # re-run to merge flavor text in
 node scripts/refresh-print-groups.mjs                        # propagate reprints into older sets' printGroup
 npm run typecheck
 ```
 
-Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). Sets
-still to do, in release order: Ascended Heroes (ASC), Perfect Order (POR), Chaos
-Rising (CRI), Pitch Black (PBL) — codes and release dates are in the sibling
-`my-pokemon-card-collection` repo's `src/config/megaEvolution.ts`.
+Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
+entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done. Remaining work is
+the Scarlet & Violet backlog, in release order: Shrouded Fable (sv6pt5), Stellar Crown
+(sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey Together (sv9),
+Destined Rivals (sv10) — all confirmed to have zero flavor-text coverage in
+pokemon-tcg-data (see "Scarlet & Violet: check per-set, don't assume" above), so each
+needs the crop workflow, not just a verification pass. Limitless codes for these
+aren't confirmed yet — look them up on limitlesstcg.com before starting.
