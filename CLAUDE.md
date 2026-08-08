@@ -12,10 +12,14 @@ Flames, 130 cards), `data/sets/ASC.json` (Ascended Heroes, 295 cards),
 122 cards), and `data/sets/PBL.json` (Pitch Black, 120 cards) are complete, including
 flavor text — verified against Bulbapedia via the flavor-text editor's "Show unmatched
 only" filter (see below), not just eyeballed. That's the entire Mega Evolution series
-done. `data/sets/SVI.json` (Scarlet & Violet base set) is also complete — its flavor
-text came from pokemon-tcg-data
-directly rather than the crop workflow (see "Scarlet & Violet: check per-set, don't
-assume").
+done. `data/sets/SVI.json` (Scarlet & Violet base set), `data/sets/SVE.json`
+(Scarlet & Violet Energies, 16 cards — energy cards, no flavor text applicable), and
+`data/sets/PAL.json` (Paldea Evolved, 279 cards) are also complete — their flavor
+text came from pokemon-tcg-data directly rather than the crop workflow (see
+"Scarlet & Violet: check per-set, don't assume"). PAL's verification sweep caught one
+real upstream error (Flamigo's flavor text had an extra "the" not present on the
+actual card) and needed a fix to the editor's species-name lookup for regional forms
+(see "Regional forms and Bulbapedia lookups" below).
 
 ## Schema
 
@@ -140,6 +144,23 @@ real text kept), `sup/N` (dropped). If a new set's candidates show stray
 what it renders to on the actual Bulbapedia page before guessing. (Found `{{Berries}}`
 this way while doing PBL's Charcadet — it renders to the plain word "Berries".)
 
+### Regional forms and Bulbapedia lookups
+
+`speciesName()` (`scripts/flavor-text-editor/client.js`) strips a trainer-possessive
+prefix (`"Erika's Oddish"` → `"Oddish"`) before looking up Bulbapedia candidates, but
+originally didn't strip regional-form prefixes like `"Paldean Wooper"` or
+`"Paldean Tauros"` — Bulbapedia has no separate page for those, their Dex entries live
+on the base species' page (`Wooper (Pokémon)`, `Tauros (Pokémon)`) alongside the
+regular form's. Found while verifying PAL: the "Show unmatched only" sweep flagged
+every Paldean Tauros breed and Paldean Wooper as unmatched purely because the lookup
+went to a nonexistent `"Paldean Wooper" (Pokémon)` page, not because the saved text was
+wrong (all of it checked out by hand against Bulbapedia — Tauros against the Violet
+entry, a valid fallback since Scarlet/Violet share the same generation). Fixed by
+stripping `Paldean|Galarian|Alolan|Hisuian` prefixes the same way as the possessive
+case. `parseDexEntries` doesn't filter by form — it returns every entry on the page
+regardless of which form it belongs to — so this relies on no other form on that same
+page happening to have identical flavor text, which hasn't been an issue so far.
+
 ## Bulk flavor text via cropped images
 
 For sets with no structured flavor-text source at all (any Mega Evolution set;
@@ -235,10 +256,14 @@ npm run typecheck
 ```
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
-entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done. Remaining work is
-the Scarlet & Violet backlog, in release order: Shrouded Fable (sv6pt5), Stellar Crown
-(sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey Together (sv9),
-Destined Rivals (sv10) — all confirmed to have zero flavor-text coverage in
-pokemon-tcg-data (see "Scarlet & Violet: check per-set, don't assume" above), so each
-needs the crop workflow, not just a verification pass. Limitless codes for these
+entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
+Scarlet & Violet's SVI, SVE, and PAL (sv2). Remaining SV sets with confirmed
+flavor-text coverage in pokemon-tcg-data (fetch + verify only, no crop workflow
+needed): Obsidian Flames (sv3/OBF), 151 (sv3pt5/MEW), Paradox Rift (sv4/PAR),
+Paldean Fates (sv4pt5/PAF), Temporal Forces (sv5/TEF), Twilight Masquerade
+(sv6/TWM) — in that order. After that, the backlog needs the crop workflow instead,
+since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
+"Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
+Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
+Together (sv9), Destined Rivals (sv10). Limitless codes for the crop-workflow sets
 aren't confirmed yet — look them up on limitlesstcg.com before starting.

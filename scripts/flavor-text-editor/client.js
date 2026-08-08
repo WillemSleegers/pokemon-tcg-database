@@ -16,8 +16,11 @@ async function load() {
 // Trainer-owned Pokémon (e.g. "Erika's Oddish") print the same flavor text
 // as the plain species — Bulbapedia only has a page for the species itself,
 // not "Erika's Oddish", so strip the possessive prefix before looking it up.
+// Regional forms (e.g. "Paldean Wooper", "Paldean Tauros") share their base
+// species' Bulbapedia page too — its Dex/EntryN templates cover every form,
+// not just the base one — so strip those prefixes as well.
 function speciesName(cardName) {
-  return cardName.replace(/^.*'s\s+/, '')
+  return cardName.replace(/^.*'s\s+/, '').replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, '')
 }
 
 // A card counts as "unmatched" if it's blank, or its saved text isn't a
