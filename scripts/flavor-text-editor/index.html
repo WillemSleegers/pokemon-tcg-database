@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flavor text — {{SET_NAME}}</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <h1>{{SET_NAME}} — flavor text</h1>
+  <div class="right">
+    <button id="filterBtn">Show unmatched only</button>
+    <div class="progress" id="progress"></div>
+  </div>
+</header>
+<main>
+  <div class="card-pane">
+    <img id="cardImage" src="" alt="">
+    <div class="card-meta">
+      <div class="name" id="cardName"></div>
+      <div class="number" id="cardNumber"></div>
+    </div>
+  </div>
+  <div class="form-pane">
+    <label for="flavorText">Flavor text</label>
+    <textarea id="flavorText" placeholder="Type what's printed at the bottom of the card..." autofocus></textarea>
+    <div id="matchBadge"></div>
+    <div class="actions">
+      <button id="prevBtn">← Prev</button>
+      <button id="saveNextBtn" class="primary">Save &amp; Next →</button>
+      <button id="skipBtn">Skip</button>
+    </div>
+    <div class="hint">⌘/Ctrl + Enter to save &amp; advance. Skip leaves it blank for now.</div>
+    <div class="candidates-label" id="candidatesLabel">Pokédex entries (game versions, for reference — click to fill)</div>
+    <div class="candidates" id="candidates"><div class="candidates-empty">Loading...</div></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</main>
+<script src="/client.js"></script>
+</body>
+</html>
