@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Card data viewer</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="left">
+    <h1>Card data —</h1>
+    <select id="setSelect"></select>
+  </div>
+  <div class="right">
+    <div class="position" id="position"></div>
+  </div>
+</header>
+<main>
+  <div class="card-pane">
+    <img id="cardImage" src="" alt="">
+    <div class="card-meta">
+      <div class="name" id="cardName"></div>
+      <div class="number" id="cardNumber"></div>
+    </div>
+    <div class="actions">
+      <button id="prevBtn">← Prev</button>
+      <button id="nextBtn">Next →</button>
+    </div>
+    <div class="hint">← / → to move between cards.</div>
+  </div>
+  <div class="data-pane">
+    <dl class="field-list" id="fields"></dl>
+    <div class="grid" id="grid"></div>
+  </div>
+</main>
+<script src="/client.js"></script>
+</body>
+</html>

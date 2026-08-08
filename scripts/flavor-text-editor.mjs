@@ -11,9 +11,10 @@
 
 import { createServer } from "node:http"
 import { createReadStream } from "node:fs"
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises"
+import { mkdir, readFile, writeFile } from "node:fs/promises"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
+import { ensureCachedImage } from "./lib/image-cache.mjs"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..")
 const PORT = 5173
@@ -29,26 +30,6 @@ const SET_PATH = resolve(ROOT, "data/sets", `${setCode}.json`)
 const OVERLAY_PATH = resolve(ROOT, "data/flavor-text", `${setCode}.json`)
 const IMAGE_CACHE_DIR = resolve(ROOT, ".local/card-images", setCode)
 await mkdir(IMAGE_CACHE_DIR, { recursive: true })
-
-// Card images are large and never change once printed, so cache them on
-// disk (gitignored — see .gitignore) instead of re-fetching from
-// images.pokemontcg.io on every page load while paging through a set.
-function extFromUrl(url) {
-  return /\.jpe?g(?:$|\?)/i.test(url) ? "jpg" : "png"
-}
-
-async function ensureCachedImage(localId, remoteUrl) {
-  const ext = extFromUrl(remoteUrl)
-  const filePath = resolve(IMAGE_CACHE_DIR, `${localId}.${ext}`)
-  try {
-    await stat(filePath)
-  } catch {
-    const res = await fetch(remoteUrl)
-    if (!res.ok) throw new Error(`Failed to fetch image: ${remoteUrl}`)
-    await writeFile(filePath, Buffer.from(await res.arrayBuffer()))
-  }
-  return filePath
-}
 
 async function loadOverlay() {
   try {
@@ -272,7 +253,7 @@ const server = createServer(async (req, res) => {
       return
     }
     try {
-      const filePath = await ensureCachedImage(localId, card.images.large)
+      const filePath = await ensureCachedImage(IMAGE_CACHE_DIR, localId, card.images.large)
       const contentType = filePath.endsWith(".jpg") ? "image/jpeg" : "image/png"
       res.writeHead(200, { "content-type": contentType, "cache-control": "public, max-age=31536000, immutable" })
       createReadStream(filePath).pipe(res)
