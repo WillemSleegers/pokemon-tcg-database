@@ -91,7 +91,17 @@ verification sweep flagged one card, Lopunny, whose printed "If danger approache
 (singular) differs from Bulbapedia's own Sword entry, "If dangers approaches" —
 Bulbapedia's own wording is grammatically broken (plural noun with singular verb),
 reading as a Bulbapedia-side typo rather than a data error; confirmed correct as
-printed against the card image, no fix needed.
+printed against the card image, no fix needed. `data/sets/JTG.json` (Journey
+Together, 190 cards) is also complete — built via the crop workflow (zero
+`flavorText` coverage in pokemon-tcg-data for `sv9`), Claude transcribed all 136
+eligible cards directly from cropped image strips. Its verification sweep flagged
+two cards, both confirmed correct as printed against the card images: Karrablast's
+printed "eat the shell—it eats" has no space around the em dash where the card wraps
+a line right at it, differing only from Bulbapedia's own Shield entry, which has a
+stray space there — the same line-wrap artifact category as PAR's Bounsweet and
+PAF's Magmortar/Revavroom; and Meowscarada's printed "lining its cape" differs from
+Bulbapedia's own Scarlet/Pokopia entries, "lining in its cape", which read as a
+Bulbapedia-side wording glitch (the extra "in" is redundant), not a card error.
 
 ## Schema
 
@@ -386,9 +396,9 @@ Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). Th
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
 Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
 (sv4pt5), TEF (sv5), TWM (sv6), SFA (sv6pt5, Limitless code `SFA`), SCR (sv7,
-Limitless code `SCR`), SSP (sv8, Limitless code `SSP`), and PRE (sv8pt5, Limitless
-code `PRE`). The backlog now needs the crop workflow for the rest, since these are
-confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
-"Scarlet & Violet: check per-set, don't assume" above): Journey Together (sv9),
-Destined Rivals (sv10). Limitless codes for these remaining sets aren't confirmed
-yet — look them up on limitlesstcg.com before starting.
+Limitless code `SCR`), SSP (sv8, Limitless code `SSP`), PRE (sv8pt5, Limitless
+code `PRE`), and JTG (sv9, Limitless code `JTG`). The backlog now needs the crop
+workflow for the rest, since these are confirmed to have zero flavor-text coverage
+in pokemon-tcg-data (see "Scarlet & Violet: check per-set, don't assume" above):
+Destined Rivals (sv10). Its Limitless code isn't confirmed yet — look it up on
+limitlesstcg.com before starting.
