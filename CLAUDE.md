@@ -75,7 +75,23 @@ card, Grubbin, whose printed "It spits sticky threads" (plural) differs from
 Bulbapedia's own Violet entry, "It spits sticky thread" (singular) — the card's
 wording is internally consistent (plural "threads...them") while Bulbapedia's is not
 (singular "thread...them"), reading as a Bulbapedia-side transcription slip; confirmed
-correct as printed against the card image, no fix needed.
+correct as printed against the card image, no fix needed. `data/sets/SSP.json`
+(Surging Sparks, 252 cards) is also complete — built via the crop workflow like SFA
+and SCR (zero `flavorText` coverage in pokemon-tcg-data for `sv8`), Claude transcribed
+all 166 eligible cards directly from cropped image strips. Its verification sweep
+flagged both Castform Sunny Form cards (localId 20 and its 195 reprint) as a lookup
+bug, not a text error — "Castform Sunny Form" has no separate Bulbapedia page, its Dex
+entries live on the base `Castform (Pokémon)` page, same category as Heat Rotom, Teal
+Mask Ogerpon, and Bloodmoon Ursaluna; fixed by stripping the `Sunny|Rainy|Snowy Form`
+suffix in `speciesName()` (see "Regional forms and Bulbapedia lookups").
+`data/sets/PRE.json` (Prismatic Evolutions, 180 cards) is also complete — built via
+the crop workflow (zero `flavorText` coverage in pokemon-tcg-data for `sv8pt5`),
+Claude transcribed all 61 eligible cards directly from cropped image strips. Its
+verification sweep flagged one card, Lopunny, whose printed "If danger approaches"
+(singular) differs from Bulbapedia's own Sword entry, "If dangers approaches" —
+Bulbapedia's own wording is grammatically broken (plural noun with singular verb),
+reading as a Bulbapedia-side typo rather than a data error; confirmed correct as
+printed against the card image, no fix needed.
 
 ## Schema
 
@@ -262,6 +278,13 @@ Bulbapedia page — its Dex entries live on the base `Ursaluna (Pokémon)` page,
 the regional/appliance/mask forms above. Fixed by stripping the `Bloodmoon` prefix
 before `Ursaluna` in both `speciesName()` copies.
 
+Same category again, found while verifying SSP: `"Castform Sunny Form"` has no
+separate Bulbapedia page — its Dex entries live on the base `Castform (Pokémon)` page,
+same as the other weather/appliance/mask forms above. Fixed by stripping the trailing
+`Sunny|Rainy|Snowy Form` suffix before `Castform` in both `speciesName()` copies (only
+the Sunny Form has shipped in a set so far, but Rainy and Snowy Form follow the same
+naming pattern).
+
 ## Bulk flavor text via cropped images
 
 For sets with no structured flavor-text source at all (any Mega Evolution set;
@@ -362,10 +385,10 @@ npm run typecheck
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
 Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
-(sv4pt5), TEF (sv5), TWM (sv6), SFA (sv6pt5, Limitless code `SFA`), and SCR (sv7,
-Limitless code `SCR`). The backlog now needs the crop workflow for the rest, since
-these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
-"Scarlet & Violet: check per-set, don't assume" above): Surging Sparks (sv8),
-Prismatic Evolutions (sv8pt5), Journey Together (sv9), Destined Rivals (sv10).
-Limitless codes for these remaining sets aren't confirmed yet — look them up on
-limitlesstcg.com before starting.
+(sv4pt5), TEF (sv5), TWM (sv6), SFA (sv6pt5, Limitless code `SFA`), SCR (sv7,
+Limitless code `SCR`), SSP (sv8, Limitless code `SSP`), and PRE (sv8pt5, Limitless
+code `PRE`). The backlog now needs the crop workflow for the rest, since these are
+confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
+"Scarlet & Violet: check per-set, don't assume" above): Journey Together (sv9),
+Destined Rivals (sv10). Limitless codes for these remaining sets aren't confirmed
+yet — look them up on limitlesstcg.com before starting.

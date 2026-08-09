@@ -36,6 +36,7 @@ function speciesName(cardName) {
     .replace(/^(Heat|Wash|Frost|Fan|Mow)\s+(?=Rotom)/, '')
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, '')
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, '')
+    .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, 'Castform')
     .replace(/\s+([♀♂])/, '$1')
 }
 
