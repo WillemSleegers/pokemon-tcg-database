@@ -19,7 +19,13 @@ text came from pokemon-tcg-data directly rather than the crop workflow (see
 "Scarlet & Violet: check per-set, don't assume"). PAL's verification sweep caught one
 real upstream error (Flamigo's flavor text had an extra "the" not present on the
 actual card) and needed a fix to the editor's species-name lookup for regional forms
-(see "Regional forms and Bulbapedia lookups" below).
+(see "Regional forms and Bulbapedia lookups" below). `data/sets/OBF.json` (Obsidian
+Flames, 230 cards) is also complete — its verification sweep caught three upstream
+errors in pokemon-tcg-data's `flavorText` (Chandelure missing spaces around an em
+dash, Frogadier using the wrong unit — "600 metres" instead of the card's actual
+"2,000 feet" — and the same Flamigo "extra the" error PAL had, on its OBF reprint),
+each confirmed against the actual card image and fixed via the `data/flavor-text/
+OBF.json` overlay.
 
 ## Schema
 
@@ -121,6 +127,25 @@ whatever was last saved). Always Save & Next before navigating away from an edit
 Not yet done: batch-fetching Bulbapedia candidates for a whole set upfront (or
 pre-filling the obvious Scarlet match) rather than fetching on-demand per card as you
 page through the editor. Lower priority now that the unmatched filter exists.
+
+### scripts/check-flavor-text.mjs — the headless counterpart
+
+`node scripts/check-flavor-text.mjs <CODE>` runs the same "blank or non-matching
+against any Bulbapedia candidate" check as the editor's "Show unmatched only" button,
+but as a plain CLI command with no server and no browser — this is what Claude should
+run to verify a set, rather than driving the interactive editor's HTTP API. The editor
+is for the user typing text in by hand; this script is for verification, which is a
+separate concern. Both share the actual Bulbapedia fetching/parsing logic
+(`speciesName`, `normalize`, `parseDexEntries`, `fetchFlavorCandidates`) from
+`scripts/lib/bulbapedia.mjs` rather than duplicating it.
+
+A card the script flags isn't automatically wrong — check it against the actual card
+image (`.local/card-images-cropped/<CODE>/<localId>.png`, or crop it if not already
+cached) before touching anything. OBF's sweep flagged three cards; two were real
+upstream errors in pokemon-tcg-data's `flavorText` (confirmed by comparing to the
+card image and fixed via the overlay), the third was a correct read that just
+differs from Bulbapedia's own transcription by one space around an em dash — spacing
+inconsistencies like that don't always indicate a real error.
 
 ### Bulbapedia wikitext parsing (`parseDexEntries` / `cleanDexEntry` / `splitTemplateParams`)
 
@@ -257,11 +282,11 @@ npm run typecheck
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
-Scarlet & Violet's SVI, SVE, and PAL (sv2). Remaining SV sets with confirmed
-flavor-text coverage in pokemon-tcg-data (fetch + verify only, no crop workflow
-needed): Obsidian Flames (sv3/OBF), 151 (sv3pt5/MEW), Paradox Rift (sv4/PAR),
-Paldean Fates (sv4pt5/PAF), Temporal Forces (sv5/TEF), Twilight Masquerade
-(sv6/TWM) — in that order. After that, the backlog needs the crop workflow instead,
+Scarlet & Violet's SVI, SVE, PAL (sv2), and OBF (sv3). Remaining SV sets with
+confirmed flavor-text coverage in pokemon-tcg-data (fetch + verify only, no crop
+workflow needed): 151 (sv3pt5/MEW), Paradox Rift (sv4/PAR), Paldean Fates
+(sv4pt5/PAF), Temporal Forces (sv5/TEF), Twilight Masquerade (sv6/TWM) — in that
+order. After that, the backlog needs the crop workflow instead,
 since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
 "Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
 Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
