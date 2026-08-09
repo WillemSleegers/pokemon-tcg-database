@@ -29,6 +29,15 @@ OBF.json` overlay. `data/sets/MEW.json` (151, 207 cards) is also complete — it
 verification sweep initially flagged Nidoran ♀ and Nidoran ♂ as unmatched, but both
 turned out to have correct flavor text; the real bug was in the Bulbapedia
 species-name lookup (see "Regional forms and Bulbapedia lookups" below).
+`data/sets/PAR.json` (Paradox Rift, 266 cards) is also complete — its verification
+sweep flagged three cards; Bounsweet's `flavorText` had a real upstream error (a
+stray space from the card's line-wrap hyphenation, "boiled- down" instead of
+"boiled-down", confirmed against the card image and fixed via the `data/flavor-text/
+PAR.json` overlay), while Mienfoo and Whismur were confirmed correct as printed —
+they just don't match Bulbapedia's own wording for that game version (Mienfoo's
+printed "flurry of graceful attacks" vs. Bulbapedia's Shield entry "flurry of
+attacks"; Whismur's printed "it's exhausted" vs. a typo, "its exhausted", in
+Bulbapedia's own Shield entry).
 
 ## Schema
 
@@ -294,9 +303,9 @@ npm run typecheck
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
-Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), and MEW (sv3pt5). Remaining SV sets
-with confirmed flavor-text coverage in pokemon-tcg-data (fetch + verify only, no crop
-workflow needed): Paradox Rift (sv4/PAR), Paldean Fates (sv4pt5/PAF), Temporal Forces
+Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), and PAR (sv4).
+Remaining SV sets with confirmed flavor-text coverage in pokemon-tcg-data (fetch +
+verify only, no crop workflow needed): Paldean Fates (sv4pt5/PAF), Temporal Forces
 (sv5/TEF), Twilight Masquerade (sv6/TWM) — in that order. After that, the backlog
 needs the crop workflow instead,
 since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
