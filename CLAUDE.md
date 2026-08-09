@@ -102,6 +102,13 @@ stray space there — the same line-wrap artifact category as PAR's Bounsweet an
 PAF's Magmortar/Revavroom; and Meowscarada's printed "lining its cape" differs from
 Bulbapedia's own Scarlet/Pokopia entries, "lining in its cape", which read as a
 Bulbapedia-side wording glitch (the extra "in" is redundant), not a card error.
+`data/sets/DRI.json` (Destined Rivals, 244 cards) is also complete — built via the
+crop workflow (zero `flavorText` coverage in pokemon-tcg-data for `sv10`), Claude
+transcribed all 166 eligible cards directly from cropped image strips. Its
+verification sweep flagged one card on the first pass, but that was a transcription
+slip on Claude's side (a reprint accidentally saved with the previous card's text,
+Quilava's instead of Typhlosion's) rather than a real data or lookup issue; fixed by
+re-saving the correct text, and the sweep came back clean on the second pass.
 
 ## Schema
 
@@ -321,13 +328,20 @@ Then, for each card: Claude reads the cropped image (`.local/card-images-cropped
 <CODE>/<localId>.png`) inline — same "don't spawn subagents for this, just read them
 one after another" reasoning as the old full-image approach (see Lessons below), just
 much cheaper per card now. Cross-check the transcription against that species'
-Bulbapedia candidates (`fetch("/api/flavor-candidates?name=...")` against a running
-`flavor-text-editor.mjs` instance — strip any trainer-possessive prefix first, e.g.
-"Erika's Oddish" → "Oddish") before trusting it, and save via `POST /api/flavor-text`
-(same endpoint the browser UI uses, writes to the overlay file). An exact match
-against a candidate is a strong signal the transcription is right; if nothing matches,
-double check the crop/reading before saving — Claude misreading a character is a much
-likelier explanation than the card printing text absent from every mainline game.
+Bulbapedia candidates before trusting it, and save it once confirmed. Both steps have
+a CLI script — no editor server needed for the bulk pass:
+
+```sh
+node scripts/fetch-flavor-candidates.mjs "Erika's Oddish" "Zapdos" ...   # applies speciesName() itself, pass raw card names
+node scripts/save-flavor-text.mjs <CODE> <localId> "<text>" [<localId> "<text>" ...]   # writes straight to the overlay file
+```
+
+An exact match against a candidate is a strong signal the transcription is right; if
+nothing matches, double check the crop/reading before saving — Claude misreading a
+character is a much likelier explanation than the card printing text absent from
+every mainline game. Don't improvise inline `curl`/`node -e` pipelines for either
+step — these two scripts exist specifically so a fresh permission prompt isn't needed
+per lookup.
 
 The `http://localhost:5173` editor and its "Show unmatched only" sweep are still the
 closing step regardless of who filled the text in — run it last, same as before.
@@ -383,10 +397,9 @@ node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>
 # e.g. node scripts/fetch-set.mjs me5 PBL
 node scripts/download-images.mjs <LimitlessCode>              # cache images before cropping
 node scripts/crop-flavor-text.mjs <LimitlessCode> <top> <height>   # calibrate on one card first
-node scripts/flavor-text-editor.mjs <LimitlessCode>
-# ...Claude reads the cropped images and transcribes+verifies+saves via the editor's
-# API (see "Bulk flavor text via cropped images" above), then runs the "Show unmatched
-# only" sweep as the closing check...
+# ...Claude reads the cropped images and transcribes+verifies+saves via
+# fetch-flavor-candidates.mjs / save-flavor-text.mjs (see "Bulk flavor text via
+# cropped images" above), then runs check-flavor-text.mjs as the closing check...
 node scripts/fetch-set.mjs <ptcgDataSetId> <LimitlessCode>   # re-run to merge flavor text in
 node scripts/refresh-print-groups.mjs                        # propagate reprints into older sets' printGroup
 npm run typecheck
@@ -397,8 +410,7 @@ entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
 Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
 (sv4pt5), TEF (sv5), TWM (sv6), SFA (sv6pt5, Limitless code `SFA`), SCR (sv7,
 Limitless code `SCR`), SSP (sv8, Limitless code `SSP`), PRE (sv8pt5, Limitless
-code `PRE`), and JTG (sv9, Limitless code `JTG`). The backlog now needs the crop
-workflow for the rest, since these are confirmed to have zero flavor-text coverage
-in pokemon-tcg-data (see "Scarlet & Violet: check per-set, don't assume" above):
-Destined Rivals (sv10). Its Limitless code isn't confirmed yet — look it up on
-limitlesstcg.com before starting.
+code `PRE`), JTG (sv9, Limitless code `JTG`), and DRI (sv10, Limitless code `DRI`).
+The next set after Destined Rivals hasn't been identified yet — check
+pokemon-tcg-data's `sets/en.json` for what comes after `sv10`, and confirm its
+Limitless code on limitlesstcg.com before starting.
