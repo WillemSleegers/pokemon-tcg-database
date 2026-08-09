@@ -109,6 +109,14 @@ verification sweep flagged one card on the first pass, but that was a transcript
 slip on Claude's side (a reprint accidentally saved with the previous card's text,
 Quilava's instead of Typhlosion's) rather than a real data or lookup issue; fixed by
 re-saving the correct text, and the sweep came back clean on the second pass.
+`data/sets/BLK.json` (Black Bolt, 172 cards) and `data/sets/WHT.json` (White Flare,
+173 cards) are also complete — these were the actual next sets after Destined Rivals
+(`zsv10pt5`/`rsv10pt5`, released 2025/07/18), sitting chronologically before the Mega
+Evolution series; they'd been skipped over when MEG et al. were added and were caught
+by re-checking pokemon-tcg-data's `sets/en.json` from scratch rather than assuming
+Mega Evolution was next. Both had full `flavorText` coverage direct from
+pokemon-tcg-data, and both verification sweeps came back clean on the first pass —
+no upstream errors, no lookup bugs.
 
 ## Schema
 
@@ -410,7 +418,12 @@ entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
 Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
 (sv4pt5), TEF (sv5), TWM (sv6), SFA (sv6pt5, Limitless code `SFA`), SCR (sv7,
 Limitless code `SCR`), SSP (sv8, Limitless code `SSP`), PRE (sv8pt5, Limitless
-code `PRE`), JTG (sv9, Limitless code `JTG`), and DRI (sv10, Limitless code `DRI`).
-The next set after Destined Rivals hasn't been identified yet — check
-pokemon-tcg-data's `sets/en.json` for what comes after `sv10`, and confirm its
-Limitless code on limitlesstcg.com before starting.
+code `PRE`), JTG (sv9, Limitless code `JTG`), DRI (sv10, Limitless code `DRI`),
+BLK (`zsv10pt5`, Limitless code `BLK`), and WHT (`rsv10pt5`, Limitless code `WHT`).
+BLK and WHT were released the same day (2025/07/18) and sit chronologically before
+the Mega Evolution series despite being added after it — don't assume the most
+recent `sv*`-adjacent id in `sets/en.json` is the only thing missing; check the
+full list against `data/sets/` rather than trusting the last-known "next set" note.
+Nothing newer than `me5` (Pitch Black) exists in pokemon-tcg-data as of this
+writing — re-check `sets/en.json` for what comes after it, and confirm any new
+set's Limitless code on limitlesstcg.com before starting.
