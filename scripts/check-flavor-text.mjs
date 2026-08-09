@@ -45,11 +45,11 @@ const candidates = setData.cards.filter((c) => c.pokedex)
 
 async function checkCard(c) {
   const flavorText = overlay[c.localId] ?? c.flavorText ?? ""
-  if (!flavorText) return { card: c, flavorText, matched: false }
+  if (!flavorText) return { card: c, flavorText, matched: false, candidates: [] }
   const cands = await fetchFlavorCandidates(speciesName(c.name))
   const current = normalize(flavorText)
   const matched = cands.some((cand) => normalize(cand.text) === current)
-  return { card: c, flavorText, matched }
+  return { card: c, flavorText, matched, candidates: cands }
 }
 
 const results = []
@@ -70,7 +70,11 @@ if (unmatched.length === 0) {
   console.log(`${setCode}: all ${candidates.length} cards matched.`)
 } else {
   console.log(`${setCode}: ${unmatched.length}/${candidates.length} unmatched:`)
-  for (const { card, flavorText } of unmatched) {
+  for (const { card, flavorText, candidates: cands } of unmatched) {
     console.log(`  ${card.localId} ${card.name}${flavorText ? "" : " (blank)"}`)
+    console.log(`    saved: ${flavorText || "(none)"}`)
+    for (const cand of cands) {
+      console.log(`    ${cand.versions.join("/")}: ${cand.text}`)
+    }
   }
 }

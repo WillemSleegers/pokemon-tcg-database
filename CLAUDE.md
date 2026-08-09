@@ -47,7 +47,20 @@ instead of "environment—it"), confirmed against the card images and fixed via 
 Forces, 218 cards) is also complete — its verification sweep flagged one card,
 Sharpedo, whose printed text ("the scent of prey") drops an "its" present in
 Bulbapedia's closest-matching (Sword) entry ("the scent of its prey"); confirmed
-correct as printed against the card image, no fix needed.
+correct as printed against the card image, no fix needed. `data/sets/TWM.json`
+(Twilight Masquerade, 226 cards) is also complete — its flavor text came from
+pokemon-tcg-data directly (148/148 eligible cards covered). Its verification sweep
+flagged four cards (Sandshrew, Scolipede, Ducklett, Swanna) and one lookup bug (Teal
+Mask Ogerpon — fixed by adding Ogerpon's mask-form prefixes to the species-name
+strip, same fix category as Heat Rotom; see "Regional forms and Bulbapedia lookups").
+The four flagged cards were each confirmed correct as printed against the card image
+and each differs from Bulbapedia's own closest (Violet, mostly) entry by a single
+word or character that reads as a Bulbapedia-side transcription slip, not a data
+error: Sandshrew "rolling into a ball" vs. Bulbapedia's "rolling in a ball";
+Scolipede "claws' toxic spikes" (plural possessive) vs. Bulbapedia's "claw's toxic
+spikes"; Ducklett "diving into the depths" vs. Bulbapedia's "diving in to the
+depths"; Swanna "a Swanna performing" vs. Bulbapedia's "Swanna performing" (missing
+article). No fix needed.
 
 ## Schema
 
@@ -222,6 +235,13 @@ Bulbapedia page — its Dex entries live on the base `Rotom (Pokémon)` page, sa
 regional forms. Fixed by stripping `Heat|Wash|Frost|Fan|Mow` prefixes before `Rotom`
 in both `speciesName()` copies.
 
+Same category again, found while verifying TWM: `"Teal Mask Ogerpon"` has no separate
+Bulbapedia page — its Dex entries live on the base `Ogerpon (Pokémon)` page, same as
+regional forms and Rotom's appliance forms. Fixed by stripping
+`Teal|Wellspring|Hearthflame|Cornerstone` prefixes before `Mask Ogerpon` in both
+`speciesName()` copies (only `Teal Mask Ogerpon` has shipped in a set so far, but the
+other three mask forms follow the same naming pattern).
+
 ## Bulk flavor text via cropped images
 
 For sets with no structured flavor-text source at all (any Mega Evolution set;
@@ -268,6 +288,9 @@ But coverage has a hard cutoff, not a gradient: `sv1`–`sv6` and `sve` are 100%
 covered, `sv6pt5` ("Shrouded Fable") onward through `sv10` are 0% covered, checked
 card by card. `svp` (the ongoing promo set) is partial. Check any new SV set for
 coverage before assuming either way; don't extrapolate from a neighboring set.
+`node scripts/flavor-text-coverage.mjs <CODE>` does this check — no network calls,
+just counts how many of the set's `pokedex`-eligible cards already have `flavorText`
+in the fetched set file — instead of an improvised inline script each time.
 
 Even where coverage exists, still run the verification sweep — it caught a real
 upstream error in `sv1` (one card's `flavorText` was copy-pasted from an unrelated
@@ -319,10 +342,8 @@ npm run typecheck
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
 Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
-(sv4pt5), and TEF (sv5). Remaining SV sets with confirmed flavor-text coverage in
-pokemon-tcg-data (fetch + verify only, no crop workflow needed): Twilight Masquerade
-(sv6/TWM). After that, the backlog needs the crop workflow instead,
-since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
+(sv4pt5), TEF (sv5), and TWM (sv6). The backlog now needs the crop workflow, since
+these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
 "Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
 Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
 Together (sv9), Destined Rivals (sv10). Limitless codes for the crop-workflow sets
