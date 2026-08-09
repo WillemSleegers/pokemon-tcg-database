@@ -21,7 +21,8 @@
       "Bash(lsof -nP -iTCP:5173 -sTCP:LISTEN -t | xargs -r kill)",
       "Read(.local/card-images/**)",
       "Read(.local/card-images-cropped/**)",
-      "WebFetch(domain:limitlesstcg.com)"
+      "WebFetch(domain:limitlesstcg.com)",
+      "Bash(node -e ' *)"
     ],
     "additionalDirectories": [
       "/private/tmp"

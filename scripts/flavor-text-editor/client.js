@@ -32,11 +32,14 @@ async function load() {
 function speciesName(cardName) {
   return cardName
     .replace(/^.*'s\s+/, '')
+    .replace(/^Shining\s+/, '')
+    .replace(/^Radiant\s+/, '')
     .replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, '')
     .replace(/^(Heat|Wash|Frost|Fan|Mow)\s+(?=Rotom)/, '')
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, '')
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, '')
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, 'Castform')
+    .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, '')
     .replace(/\s+([♀♂])/, '$1')
 }
 
@@ -115,6 +118,8 @@ function normalize(s) {
   return s
     .replace(/[‘’]/g, "'")
     .replace(/[“”]/g, '"')
+    .replace(/\.\.\./g, '…')
+    .replace(/−/g, '-')
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase()

@@ -11,8 +11,28 @@
 //     game Pokédex, looked up by national dex number rather than scraped
 //     per card.
 //
-//   node scripts/fetch-set.mjs <ptcgDataSetId> <limitlessCode>
+//   node scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>] [<sequentialPrefix>]
 //   e.g. node scripts/fetch-set.mjs me1 MEG
+//
+//   <code> is this set's own identity — used for the output filename,
+//   data/flavor-text/<code>.json, and the stored set.code/deckCode. Normally
+//   this is also the Limitless URL segment (limitlesstcg.com/cards/<code>),
+//   but subsets that pokemon-tcg-data splits out as their own set (a Trainer
+//   Gallery, Shiny Vault, Galarian Gallery) share their base set's Limitless
+//   page instead of having one of their own — pass the base set's Limitless
+//   code as <limitlessUrlCode> in that case, e.g.:
+//     node scripts/fetch-set.mjs swsh45sv SHFSV SHF
+//
+//   <sequentialPrefix>, if given, replaces pokemon-tcg-data's own `number`
+//   field with `${prefix}${1-based position in the fetched array}` as the
+//   local id. Needed for throwback-reprint subsets (e.g. Celebrations:
+//   Classic Collection, cel25c) whose `number` is each card's *original*
+//   print number from its original set decades ago — not unique within the
+//   subset, and unrelated to Limitless's own numbering for it — while the
+//   fetched array order does still match Limitless's sequential numbering
+//   (verified by spot-checking a few cards' positions against Limitless
+//   before trusting this for a new set). e.g.:
+//     node scripts/fetch-set.mjs cel25c CELCC CEL CC
 //
 // Card numbers stay strings — some sets use suffixed numbers (e.g. "68a").
 
@@ -37,9 +57,10 @@ async function loadFlavorTextOverlay(code) {
 const CONCURRENCY = 6
 const RETRIES = 3
 
-const [ptcgDataSetId, limitlessCode] = process.argv.slice(2)
+const [ptcgDataSetId, limitlessCode, limitlessUrlCodeArg, sequentialPrefix] = process.argv.slice(2)
+const limitlessUrlCode = limitlessUrlCodeArg || limitlessCode
 if (!ptcgDataSetId || !limitlessCode) {
-  console.error("usage: node scripts/fetch-set.mjs <ptcgDataSetId> <limitlessCode>   e.g. me1 MEG")
+  console.error("usage: node scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>] [<sequentialPrefix>]   e.g. me1 MEG")
   process.exit(1)
 }
 
@@ -102,8 +123,18 @@ async function fetchPrimarySet(setId) {
 
 // ---- limitlesstcg.com (artist + print groups) --------------------------
 
+// Limitless drops leading zeros from the numeric part of alpha-prefixed card
+// numbers — pokemon-tcg-data's "SV001"/"TG01" are Limitless's "SV1"/"TG1".
+// Plain numbers and letter-suffixed numbers ("68a") are unaffected. Found
+// while adding Shining Fates' Shiny Vault subset (swsh45sv).
+function toLimitlessLocalId(localId) {
+  const m = localId.match(/^([A-Za-z]+)0*(\d+)$/)
+  return m ? `${m[1]}${m[2]}` : localId
+}
+
 async function fetchLimitlessExtra(code, localId) {
-  const html = await get(`https://limitlesstcg.com/cards/${code}/${localId}`)
+  const limitlessLocalId = toLimitlessLocalId(localId)
+  const html = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`)
 
   const idMatch = html.match(/<!-- CARD ID (\d+) -->/)
 
@@ -117,14 +148,14 @@ async function fetchLimitlessExtra(code, localId) {
       if (!row.includes("prints-table-card-number")) continue
       const href = row.match(/href="\/cards\/([A-Za-z0-9]+)\/([0-9a-zA-Z]+)"/)
       if (href) printGroup.push(`${href[1]} ${href[2]}`)
-      else if (cls) printGroup.push(`${code} ${localId}`)
+      else if (cls) printGroup.push(`${code} ${limitlessLocalId}`)
     }
   }
 
   return {
     limitless: {
       id: idMatch ? Number(idMatch[1]) : null,
-      url: `https://limitlesstcg.com/cards/${code}/${localId}`,
+      url: `https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`,
     },
     artist: artistMatch ? textOnly(artistMatch[1]) : null,
     printGroup: [...new Set(printGroup)],
@@ -182,14 +213,22 @@ async function main() {
   // otherwise flow through to this callback's parameter — annotate it
   // directly so primary.* below is actually checked against pokemon-tcg-data's
   // shape, not silently `any`.
-  const cards = await mapWithConcurrency(primaryCards, CONCURRENCY, async (/** @type {import("../types/card.js").PrimaryCard} */ primary) => {
-    const localId = primary.number
+  const cards = await mapWithConcurrency(primaryCards, CONCURRENCY, async (/** @type {import("../types/card.js").PrimaryCard} */ primary, /** @type {number} */ index) => {
+    const localId = sequentialPrefix ? `${sequentialPrefix}${index + 1}` : primary.number
     const [extra, pokedex] = await Promise.all([
-      fetchLimitlessExtra(limitlessCode, localId),
-      // Only regular (non-ex/non-MEGA) Pokémon print the dex info box.
+      fetchLimitlessExtra(limitlessUrlCode, localId),
+      // Only regular Pokémon print the dex info box — every rarity mechanic
+      // that gets its own oversized name treatment or rule box (MEGA, V
+      // family, old-style "EX"/modern "ex", "GX", "Star", "Level-Up"/LV.X,
+      // "Prime") uses that space for something else instead. Confirmed
+      // against card images while adding Celebrations: Classic Collection,
+      // whose 25-year span of reprints exercises rarities the rest of this
+      // database hasn't touched — see CLAUDE.md Status.
       primary.supertype === "Pokémon" &&
       primary.nationalPokedexNumbers?.length &&
-      !primary.subtypes?.some((s) => s === "ex" || s === "MEGA")
+      !primary.subtypes?.some((s) =>
+        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime"].includes(s),
+      )
         ? fetchPokedexInfo(primary.nationalPokedexNumbers[0])
         : null,
     ])
@@ -226,7 +265,7 @@ async function main() {
     if (primary.flavorText) card.flavorText = primary.flavorText
     if (flavorTextOverlay[localId]) card.flavorText = flavorTextOverlay[localId]
     card.secret = Number(localId) > setMeta.printedTotal
-    card.deckCode = `${limitlessCode} ${localId}`
+    card.deckCode = `${limitlessUrlCode} ${toLimitlessLocalId(localId)}`
     card.printGroup = extra.printGroup.length ? extra.printGroup : [card.deckCode]
     card.limitless = extra.limitless
     if (primary.images) card.images = primary.images

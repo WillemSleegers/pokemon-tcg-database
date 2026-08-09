@@ -116,7 +116,187 @@ Evolution series; they'd been skipped over when MEG et al. were added and were c
 by re-checking pokemon-tcg-data's `sets/en.json` from scratch rather than assuming
 Mega Evolution was next. Both had full `flavorText` coverage direct from
 pokemon-tcg-data, and both verification sweeps came back clean on the first pass —
-no upstream errors, no lookup bugs.
+no upstream errors, no lookup bugs. `data/sets/SSH.json` (Sword & Shield base set,
+202 cards) is also complete — the first Sword & Shield-era set added, and the first
+set in this database with V/VMAX cards. Its flavor text came from pokemon-tcg-data
+directly. Fetching it surfaced a real bug in `fetch-set.mjs`: the pokedex-info-box
+attachment only excluded `ex`/`MEGA` subtypes, not `V`/`VMAX`/`VSTAR`/`V-UNION` —
+those also print no dex box (or flavor text) on the physical card, confirmed against
+the card images (Celebi V, Lapras VMAX). Fixed by adding those subtypes to the
+exclusion check, which took `flavorText` coverage from 134/173 "eligible" (38 V/VMAX
+cards wrongly counted as eligible) to a clean 134/134. Its verification sweep flagged
+one card, Kingler, a real upstream error in pokemon-tcg-data's `flavorText` ("The
+large and hard pincer" instead of the card's actual "Its large and hard pincer"),
+confirmed against the card image and fixed via the `data/flavor-text/SSH.json`
+overlay. `data/sets/RCL.json` (Rebel Clash, 192 cards) and `data/sets/DAA.json`
+(Darkness Ablaze, 189 cards) are also complete — both flavor text came from
+pokemon-tcg-data directly. RCL's verification sweep flagged one card, Pidove, the
+same line-wrap em-dash spacing artifact as prior sets (Bulbapedia's own Sword entry
+has a stray space after the dash that the card doesn't), confirmed correct as
+printed, no fix needed. DAA's sweep flagged one card, Lairon, a real upstream error
+in pokemon-tcg-data's `flavorText` (missing "the size of" — printed "shows off its
+strength with the size of sparks" vs. the upstream text's "shows off its strength
+with sparks"), confirmed against the card image and fixed via the `data/flavor-text/
+DAA.json` overlay. `data/sets/CPA.json` (Champion's Path, 80 cards) is also
+complete — its flavor text came from pokemon-tcg-data directly, and its
+verification sweep came back clean on the first pass. `data/sets/VIV.json` (Vivid
+Voltage, 203 cards) is also complete — its verification sweep flagged three cards:
+Tynamo (missing "a" — upstream text read "only trickle" instead of the card's
+"only a trickle") and Xerneas (extra "different" — upstream text read "seven
+different colors" instead of the card's "seven colors") were both real upstream
+errors, confirmed against the card images and fixed via the `data/flavor-text/
+VIV.json` overlay; Exploud was confirmed correct as printed — it matches
+Bulbapedia's HeartGold/SoulSilver/Y entry word-for-word, differing only in using an
+em dash where Bulbapedia's own transcription uses a double hyphen (`--`), a
+normalization mismatch rather than a text error. `data/sets/SHF.json` (Shining
+Fates, 73 cards) and `data/sets/SHFSV.json` (Shining Fates Shiny Vault, 122 cards)
+are also complete — the first sets built with `fetch-set.mjs`'s new third argument
+(see "Pipeline" below): pokemon-tcg-data splits Shiny Vault out as its own set
+(`swsh45sv`, numbered `SV001`–`SV122`) but Limitless has no separate page for it —
+its cards live at `limitlesstcg.com/cards/SHF/SV1` etc., under the base set's own
+`SHF` page, with leading zeros stripped from the number. Fetched via
+`node scripts/fetch-set.mjs swsh45sv SHFSV SHF`. Both sets' flavor text came from
+pokemon-tcg-data directly, and both verification sweeps came back clean on the
+first pass. `data/sets/BST.json` (Battle Styles, 163 cards) is also complete — its
+flavor text came from pokemon-tcg-data directly. Its verification sweep flagged
+three cards: Spewpa was a real upstream error (missing "Pokémon" — printed "beaks
+of bird Pokémon" vs. the upstream text's "beaks of birds"), confirmed against the
+card image and fixed via the `data/flavor-text/BST.json` overlay; Gliscor and
+Lickitung were both false positives from a normalize()-level gap, not text
+errors — the card art renders an ellipsis as a single "…" glyph while
+Bulbapedia's own transcription types it as three literal periods "...", the same
+class of surface-level mismatch as the existing curly-vs-straight-quote
+normalization. Fixed by adding an equivalent `...`→`…` normalization to
+`normalize()` in both `scripts/lib/bulbapedia.mjs` and its
+`scripts/flavor-text-editor/client.js` duplicate, which cleared both cards on
+re-sweep without touching the overlay. `data/sets/CRE.json` (Chilling Reign, 198
+cards) is also complete — its flavor text came from pokemon-tcg-data directly. Its
+verification sweep flagged three cards: Sealeo was a real upstream error (extra
+"a" — upstream text read "Spheal or a Poké Ball" instead of the card's "Spheal or
+Poké Ball"), confirmed against the card image and fixed via the `data/flavor-text/
+CRE.json` overlay; Rapid Strike Urshifu and Single Strike Urshifu were both a
+lookup bug, not text errors — same category as Heat Rotom, Teal Mask Ogerpon,
+Bloodmoon Ursaluna, and Castform Sunny Form: no separate Bulbapedia page for
+either style, their Dex entries (alternating Sword/Shield per style) live on the
+base `Urshifu (Pokémon)` page. Fixed by stripping the `Rapid Strike|Single Strike`
+prefix in `speciesName()` (both copies). `data/sets/EVS.json` (Evolving Skies, 110
+cards) is also complete — its flavor text came from pokemon-tcg-data directly. Its
+verification sweep flagged three cards: Hippopotas was confirmed correct as
+printed ("burrowed snugly") — Bulbapedia's own Shield entry has a typo
+("snuggly"), not a card error. Gigalith and Froslass were both real
+character-normalization gaps, not text errors: Gigalith's saved text had a stray
+space after an em dash ("limitation— they") where the card prints it tight to the
+next word ("limitation—they") — confirmed against a zoomed crop of the card image
+and fixed via the `data/flavor-text/EVS.json` overlay (unlike prior line-wrap
+em-dash cases, here pokemon-tcg-data's own text had the extra space, not
+Bulbapedia's); Froslass's saved text used a plain hyphen for its temperature
+("-60 degrees") where both the card and Bulbapedia's Shield entry use a proper
+minus sign ("−60 degrees", U+2212) — fixed by adding a `−`→`-` normalization to
+`normalize()` (both copies), the same character-equivalence treatment as the
+ellipsis fix, which cleared the card without touching the overlay.
+`data/sets/CEL.json` (Celebrations, 17 cards) and `data/sets/CELCC.json`
+(Celebrations: Classic Collection, 10 cards) are also complete — the first sets
+using `fetch-set.mjs`'s new `<sequentialPrefix>` argument (see "Pipeline" below):
+pokemon-tcg-data's `number` field for Classic Collection is each reprinted card's
+*original* print number from its original set decades ago (not unique within the
+subset — four different cards are all "15" — and unrelated to Limitless's own
+clean `CC1`–`CC25` numbering for it), so `localId` had to be derived from array
+position instead; verified by spot-checking positions 1, 3, and 25 against
+Limitless before trusting it for the whole set. Fetched via
+`node scripts/fetch-set.mjs cel25c CELCC CEL CC`. Classic Collection's 25-year
+span of reprints (1999–2020) also exercised rarity mechanics no other set in this
+database had touched — old-style uppercase `EX` (distinct from modern lowercase
+`ex`), `GX`, `Star`, `Level-Up` (LV.X) — which print no Pokédex info box, same as
+the V family; fixed by extending `fetch-set.mjs`'s exclusion list. Two cards
+(Rocket's Zapdos, Team Magma's Groudon) needed the same fix but have no
+distinguishing subtype — they're just old enough (e-Card/EX Team era, 2003–2004)
+to predate the TCG's modern dex-box convention entirely, which no subtype captures
+— confirmed against their card images and corrected by manually stripping their
+`pokedex` field directly in `data/sets/CELCC.json` after the automated fetch,
+documented here since a future re-fetch of this specific set would silently
+reintroduce it. Claydol was genuinely missing `flavorText` in pokemon-tcg-data (not
+a dex-box exclusion case) — transcribed directly from the card image, verified as
+an exact match against its Diamond/Pearl/Platinum/Black/White/X Bulbapedia
+candidate, and saved via the overlay. Shining Magikarp was a lookup bug, same
+category as Heat Rotom et al. — no separate Bulbapedia page for `Shining`-prefixed
+Pokémon (a Neo Destiny-era rarity predating the modern Shiny mechanic), fixed by
+stripping that prefix in `speciesName()` (both copies). The verification sweep's
+final 5 unmatched cards are all confirmed-correct exceptions that can never
+algorithmically clear: Blastoise, Charizard, and Venusaur (original 1999 Base Set
+prints) match their own card images exactly but differ from Bulbapedia's own
+Red/Blue transcription in minor wording Bulbapedia itself is inconsistent about;
+Dark Gyarados and `_____'s Pikachu` (the fill-in-your-birthday promo) carry
+card-specific text that was never a mainline Pokédex entry to begin with — the
+one documented exception to this whole project's "TCG flavor text is a verbatim
+Pokédex reuse" premise (see "Flavor text has no structured source" above).
+`data/sets/FST.json` (Fusion Strike, 197 cards) is also complete — its flavor
+text came from pokemon-tcg-data directly. Its verification sweep flagged two
+cards, both real upstream errors, each confirmed against the card image and fixed
+via the `data/flavor-text/FST.json` overlay: Marill had a stray space after a
+hyphen ("water- repellent" instead of the card's "water-repellent" — pokemon-tcg-
+data's own error this time, not a Bulbapedia-side artifact, unlike the earlier
+line-wrap cases); Toxtricity was missing "what" ("fills its surroundings with
+sounds like" instead of the card's "fills its surroundings with what sounds
+like"). `data/sets/BRS.json` (Brilliant Stars, 101 cards) and `data/sets/
+BRSTG.json` (Brilliant Stars Trainer Gallery, 12 cards) are also complete — the
+first Trainer Gallery subset added, and a useful contrast with Shiny Vault/Classic
+Collection: unlike those, Trainer Gallery's `number` field (`TG01`–`TG30`) is
+already unique and correctly ordered, so it only needed the third
+(`<limitlessUrlCode>`) argument, not the fourth (`<sequentialPrefix>`) —
+`node scripts/fetch-set.mjs swsh9tg BRSTG BRS`. Caught this distinction by trying
+the sequential-prefix argument first (out of habit from Classic Collection) and
+noticing it silently discarded the correct zero-padded `TG01` localId in favor of
+a coincidentally-matching but wrong `TG1`; re-fetched without it once noticed.
+Both sets' flavor text came from pokemon-tcg-data directly, and both verification
+sweeps came back clean on the first pass. `data/sets/ASR.json` (Astral Radiance,
+106 cards) and `data/sets/ASRTG.json` (Astral Radiance Trainer Gallery, 12 cards)
+are also complete — both sets' flavor text came from pokemon-tcg-data directly.
+ASR's verification sweep flagged four cards: Radiant Heatran, Radiant Greninja,
+and Radiant Hawlucha were a lookup bug, not text errors — "Radiant" (a new rarity
+mechanic this set introduces) has no separate Bulbapedia page, same category as
+Heat Rotom, Teal Mask Ogerpon, Bloodmoon Ursaluna, Castform Sunny Form, the
+Urshifu styles, and Shining Magikarp — fixed by stripping the `Radiant` prefix in
+`speciesName()` (both copies); Oshawott was a real upstream error — a duplicated
+trailing period after the closing quote (`"scalchop.".` instead of the card's
+`"scalchop."`), confirmed against the card image and fixed via the
+`data/flavor-text/ASR.json` overlay. ASRTG's sweep flagged one card, Abomasnow, a
+real upstream error ("The Pokémon is known" instead of the card's "This Pokémon is
+known"), confirmed against the card image and fixed via the `data/flavor-text/
+ASRTG.json` overlay. `data/sets/PGO.json` (Pokémon GO, 54 cards) is also
+complete — its flavor text came from pokemon-tcg-data directly, and its
+verification sweep came back clean on the first pass. `data/sets/LOR.json` (Lost
+Origin, 132 cards) and `data/sets/LORTG.json` (Lost Origin Trainer Gallery, 11
+cards) are also complete — both sets' flavor text came from pokemon-tcg-data
+directly. LOR's verification sweep flagged one card, Radiant Hisuian Sneasler — a
+real bug in `speciesName()` itself rather than a missing prefix rule: the
+`Radiant`/`Shining` strip ran *after* the regional-form strip in the replacement
+chain, so "Radiant Hisuian Sneasler" never got a chance to match the
+`^(Paldean|Galarian|Alolan|Hisuian)` regex (anchored to the start of the string) —
+by the time `Radiant` was stripped, that check had already run and failed. Fixed
+by reordering the chain so rarity prefixes (`Shining`, `Radiant`) strip first, in
+both `speciesName()` copies, since either can stack with a regional-form prefix.
+LORTG's sweep came back clean on the first pass. `data/sets/SIT.json` (Silver
+Tempest, 128 cards) and `data/sets/SITTG.json` (Silver Tempest Trainer Gallery, 11
+cards) are also complete — both sets' flavor text came from pokemon-tcg-data
+directly. SIT's verification sweep flagged two cards: Foongus was a real upstream
+error — an en dash where the card prints a plain hyphen ("Poké Ball–like" instead
+of "Poké Ball-like"), confirmed against the card image and fixed via the
+`data/flavor-text/SIT.json` overlay (treated as a one-off transcription slip, not
+a normalize()-level character-equivalence case like the ellipsis/minus-sign
+fixes, since an en dash isn't a standard alternate rendering of a hyphen the way
+those were); Lopunny is the same confirmed-correct case as Prismatic Evolutions'
+Lopunny (see above) — printed "If danger approaches" (singular) vs. Bulbapedia's
+own grammatically-broken Sword entry "If dangers approaches", no fix needed.
+SITTG's sweep came back clean on the first pass. `data/sets/CRZ.json` (Crown
+Zenith, 93 cards) and `data/sets/CRZGG.json` (Crown Zenith Galarian Gallery, 34
+cards) are also complete — the last sets in the Sword & Shield era. Both sets'
+flavor text came from pokemon-tcg-data directly. CRZ's sweep came back clean on
+the first pass. CRZGG's sweep flagged one card, Hisuian Goodra, a real upstream
+error — a stray space after an em dash ("clingy— it will fume" instead of the
+card's "clingy—it will fume"), confirmed against the card image and fixed via the
+`data/flavor-text/CRZGG.json` overlay. This closes out the entire Sword & Shield
+era (`swsh1` through `swsh12pt5gg`, plus `cel25`/`cel25c` and `pgo`) — 21 files
+across 15 real-world set releases, all verified clean.
 
 ## Schema
 
@@ -139,7 +319,8 @@ still be inferred from that narrow initial shape.
 
 ## Pipeline
 
-`scripts/fetch-set.mjs <ptcgDataSetId> <limitlessCode>` merges three sources per card:
+`scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>]` merges three
+sources per card:
 
 - **pokemon-tcg-data** (GitHub) — primary source. Attacks, abilities, weaknesses/
   resistances, official rules text, rarity, regulation mark, national Pokédex numbers,
@@ -147,8 +328,52 @@ still be inferred from that narrow initial shape.
 - **limitlesstcg.com** — scraped per card for the illustrator credit and for
   `printGroup` (which printings across _any_ set, including later ones, are legal
   substitutes for this card in a decklist).
-- **pokeapi.co** — species genus/height/weight for the Pokédex info box. Only attached
-  to regular (non-ex/non-MEGA) prints, matching what's actually printed on the card.
+- **pokeapi.co** — species genus/height/weight for the Pokédex info box. Only
+  attached to regular prints, matching what's actually printed on the card — every
+  rarity mechanic that gets its own oversized name treatment or rule box (`MEGA`,
+  the `V` family, old-style `EX`/modern `ex`, `GX`, `Star`, `Level-Up`/LV.X,
+  `Prime`) uses that space for something else instead, so `fetch-set.mjs` excludes
+  all of those subtypes. Verified against card images, not guessed — see "Sword &
+  Shield" and "Celebrations: Classic Collection" in Status above for the specific
+  cards that caught each one. A card old enough to predate the TCG's dex-box
+  convention entirely (pre-Diamond & Pearl, ~2006) can still slip through this
+  list since it has no distinguishing subtype — confirmed two such cases in
+  Classic Collection, corrected by hand (see Status above) rather than by
+  guessing at a release-date cutoff.
+
+### Subsets that share their base set's Limitless page
+
+`<code>` is this set's own identity — the output filename, `data/flavor-text/
+<code>.json`, and the stored `set.code`/`deckCode`. Normally it's also the Limitless
+URL segment (`limitlesstcg.com/cards/<code>`), since one pokemon-tcg-data set has
+historically always meant one Limitless page. That assumption breaks for a Trainer
+Gallery, Shiny Vault, or Galarian Gallery subset: pokemon-tcg-data splits each of
+those out as their own set id, but Limitless has no separate page for them — their
+cards live at `limitlesstcg.com/cards/<baseCode>/<localId>`, under the *base* set's
+page, with the local id's leading zeros stripped (pokemon-tcg-data's `SV001`/`TG01`
+is Limitless's `SV1`/`TG1` — handled by `toLimitlessLocalId()`). Pass the base set's
+code as the third argument in that case: `node scripts/fetch-set.mjs swsh45sv SHFSV
+SHF`. Both the resulting file's `limitless.url` and `deckCode` correctly point at
+the shared base-set page; only the output filename and `set.code` are _the
+subset's own_. Found while adding Shining Fates' Shiny Vault (`swsh45sv`) — see
+Status above.
+
+### Reprint subsets with non-sequential, non-unique numbers
+
+pokemon-tcg-data's `number` field is normally both unique within a set and the
+same numbering Limitless uses, so `fetch-set.mjs` uses it directly as `localId`.
+That breaks for a throwback-reprint subset like Celebrations: Classic Collection
+(`cel25c`): its `number` is each card's *original* print number from its original
+set, decades earlier — not unique within the subset (four different `cel25c`
+cards are all `"15"`), and unrelated to Limitless's own clean sequential numbering
+for the subset. The fetched array order does still match Limitless's numbering
+(verified by spot-checking a few cards' positions against Limitless before
+trusting it), so pass a fourth argument to override `localId` with
+`${prefix}${1-based array position}` instead: `node scripts/fetch-set.mjs cel25c
+CELCC CEL CC` (this also needs the third argument from the section above, since
+Classic Collection shares Celebrations' `CEL` Limitless page too). Don't reach for
+this unless a set's `number` field actually collides — check first, since it's a
+narrower fix than it looks (order-verified per set, not assumed).
 
 ### `printGroup` goes stale, and that's fine
 
@@ -427,3 +652,29 @@ full list against `data/sets/` rather than trusting the last-known "next set" no
 Nothing newer than `me5` (Pitch Black) exists in pokemon-tcg-data as of this
 writing — re-check `sets/en.json` for what comes after it, and confirm any new
 set's Limitless code on limitlesstcg.com before starting.
+
+The Sword & Shield era (2020/02–2023/01, 25 entries in `sets/en.json` from `swshp`
+promos through `swsh12pt5gg`) is **done** — added as a separate backfill from the
+SV/Mega Evolution frontier above, oldest first: `SSH` (swsh1), `RCL` (swsh2),
+`DAA` (swsh3), `CPA` (swsh35), `VIV` (swsh4), `SHF`/`SHFSV` (swsh45/swsh45sv),
+`BST` (swsh5), `CRE` (swsh6), `EVS` (swsh7), `CEL`/`CELCC` (cel25/cel25c), `FST`
+(swsh8), `BRS`/`BRSTG` (swsh9/swsh9tg), `ASR`/`ASRTG` (swsh10/swsh10tg), `PGO`
+(pgo), `LOR`/`LORTG` (swsh11/swsh11tg), `SIT`/`SITTG` (swsh12/swsh12tg), and
+`CRZ`/`CRZGG` (swsh12pt5/swsh12pt5gg) — 21 files, all verified. `swshp` (the
+ongoing English promo set) was left out, same treatment as `svp` elsewhere in this
+file. Every Trainer/Galarian Gallery/Shiny Vault subset is pokemon-tcg-data's own
+separate set id but shares its base set's Limitless page — see "Subsets that
+share their base set's Limitless page" above for the `fetch-set.mjs` invocation.
+Shiny Vault and Classic Collection needed the fourth (`<sequentialPrefix>`)
+argument too (non-unique/non-sequential `number` fields); every Trainer Gallery
+and Galarian Gallery subset had a `number` field that was already unique and
+correctly ordered (`TG01`–`TG30`, `GG01`–`GG70`), so only the third argument was
+needed — don't reach for the fourth without checking first (see "Reprint subsets
+with non-sequential, non-unique numbers" above; this bit BRSTG on the first try).
+This era introduces V/VMAX/VSTAR/V-UNION, old-style uppercase `EX`, `GX`, `Star`,
+`Level-Up`/LV.X, and `Prime` subtypes, none of which print a Pokédex info box or
+flavor text on the card — `fetch-set.mjs` excludes all of them from the
+pokedex-info-box fetch (see Status above). A card old enough to predate the TCG's
+dex-box convention entirely (pre-~2007) can still slip through since it has no
+distinguishing subtype — the two known cases were both in Classic Collection,
+fixed by hand (see Status above).

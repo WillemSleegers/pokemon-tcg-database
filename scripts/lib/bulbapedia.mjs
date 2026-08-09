@@ -22,11 +22,19 @@
 export function speciesName(cardName) {
   return cardName
     .replace(/^.*'s\s+/, "")
+    // Rarity prefixes (Shining, Radiant) can stack with a regional-form
+    // prefix (e.g. "Radiant Hisuian Sneasler") — strip these before the
+    // regional-form check below, which is anchored to the start of the
+    // string and would otherwise miss "Hisuian" once "Radiant" is in front
+    // of it. Found while adding Lost Origin.
+    .replace(/^Shining\s+/, "")
+    .replace(/^Radiant\s+/, "")
     .replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, "")
     .replace(/^(Heat|Wash|Frost|Fan|Mow)\s+(?=Rotom)/, "")
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, "")
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, "")
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, "Castform")
+    .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 
@@ -37,6 +45,8 @@ export function normalize(s) {
   return s
     .replace(/[‘’]/g, "'")
     .replace(/[“”]/g, '"')
+    .replace(/\.\.\./g, "…")
+    .replace(/−/g, "-")
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase()
