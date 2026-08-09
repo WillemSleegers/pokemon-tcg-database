@@ -60,7 +60,14 @@ error: Sandshrew "rolling into a ball" vs. Bulbapedia's "rolling in a ball";
 Scolipede "claws' toxic spikes" (plural possessive) vs. Bulbapedia's "claw's toxic
 spikes"; Ducklett "diving into the depths" vs. Bulbapedia's "diving in to the
 depths"; Swanna "a Swanna performing" vs. Bulbapedia's "Swanna performing" (missing
-article). No fix needed.
+article). No fix needed. `data/sets/SFA.json` (Shrouded Fable, 99 cards) is also
+complete — the first set built via the crop workflow (pokemon-tcg-data has 0%
+`flavorText` coverage for `sv6pt5` onward), Claude transcribed all 62 eligible cards
+directly from cropped image strips. Its verification sweep flagged one lookup bug,
+Bloodmoon Ursaluna — no separate Bulbapedia page, same category as Heat Rotom and
+Teal Mask Ogerpon; its Dex entries live on the base `Ursaluna (Pokémon)` page, and the
+Violet entry is a verbatim match — fixed by stripping the `Bloodmoon` prefix in
+`speciesName()` (see "Regional forms and Bulbapedia lookups").
 
 ## Schema
 
@@ -242,6 +249,11 @@ regional forms and Rotom's appliance forms. Fixed by stripping
 `speciesName()` copies (only `Teal Mask Ogerpon` has shipped in a set so far, but the
 other three mask forms follow the same naming pattern).
 
+Same category again, found while verifying SFA: `"Bloodmoon Ursaluna"` has no separate
+Bulbapedia page — its Dex entries live on the base `Ursaluna (Pokémon)` page, same as
+the regional/appliance/mask forms above. Fixed by stripping the `Bloodmoon` prefix
+before `Ursaluna` in both `speciesName()` copies.
+
 ## Bulk flavor text via cropped images
 
 For sets with no structured flavor-text source at all (any Mega Evolution set;
@@ -342,9 +354,10 @@ npm run typecheck
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
 Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
-(sv4pt5), TEF (sv5), and TWM (sv6). The backlog now needs the crop workflow, since
-these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
-"Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
-Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
-Together (sv9), Destined Rivals (sv10). Limitless codes for the crop-workflow sets
-aren't confirmed yet — look them up on limitlesstcg.com before starting.
+(sv4pt5), TEF (sv5), TWM (sv6), and SFA (sv6pt5, Limitless code `SFA`). The backlog
+now needs the crop workflow for the rest, since these are confirmed to have zero
+flavor-text coverage in pokemon-tcg-data (see "Scarlet & Violet: check per-set, don't
+assume" above): Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions
+(sv8pt5), Journey Together (sv9), Destined Rivals (sv10). Limitless codes for these
+remaining sets aren't confirmed yet — look them up on limitlesstcg.com before
+starting.

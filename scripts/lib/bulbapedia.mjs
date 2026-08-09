@@ -17,12 +17,15 @@
 // "Rotom (Pokémon)" page too, same as regional forms above.
 // Ogerpon's mask forms (e.g. "Teal Mask Ogerpon") share the base
 // "Ogerpon (Pokémon)" page too, same category of bug (found via TWM).
+// "Bloodmoon Ursaluna" shares the base "Ursaluna (Pokémon)" page too, same
+// category again (found via SFA) — its Violet entry is the verbatim match.
 export function speciesName(cardName) {
   return cardName
     .replace(/^.*'s\s+/, "")
     .replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, "")
     .replace(/^(Heat|Wash|Frost|Fan|Mow)\s+(?=Rotom)/, "")
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, "")
+    .replace(/^Bloodmoon\s+(?=Ursaluna)/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 

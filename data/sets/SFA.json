@@ -1,0 +1,5986 @@
+{
+  "set": {
+    "code": "SFA",
+    "ptcgDataId": "sv6pt5",
+    "name": "Shrouded Fable",
+    "series": "Scarlet & Violet",
+    "printedTotal": 64,
+    "secretTotal": 35,
+    "total": 99,
+    "releaseDate": "2024-08-02",
+    "copyright": "©2024 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/sv6pt5/symbol.png",
+      "logo": "https://images.pokemontcg.io/sv6pt5/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/64",
+      "localId": "1",
+      "name": "Joltik",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Galvantula"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Splashing Dodge",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 595,
+        "genus": "Attaching Pokémon",
+        "height": "0'4\"",
+        "weight": "1.3 lbs"
+      },
+      "flavorText": "Joltik can be found clinging to other Pokémon. It's soaking up static electricity because it can't produce a charge on its own.",
+      "secret": false,
+      "deckCode": "SFA 1",
+      "printGroup": [
+        "SFA 1"
+      ],
+      "limitless": {
+        "id": 34168,
+        "url": "https://limitlesstcg.com/cards/SFA/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/1.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/1_hires.png"
+      }
+    },
+    {
+      "number": "02/64",
+      "localId": "2",
+      "name": "Galvantula",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Joltik",
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Compound Eyes",
+          "text": "Attacks used by this Pokémon do 50 more damage to your opponent's Active Pokémon that has an Ability (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Shocking Web",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "If this Pokémon has any Lightning Energy attached, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "mashu",
+      "pokedex": {
+        "number": 596,
+        "genus": "EleSpider Pokémon",
+        "height": "2'7\"",
+        "weight": "31.5 lbs"
+      },
+      "flavorText": "It launches electrified fur from its abdomen as its means of attack. Opponents hit by the fur could be in for three full days and nights of paralysis.",
+      "secret": false,
+      "deckCode": "SFA 2",
+      "printGroup": [
+        "SFA 2"
+      ],
+      "limitless": {
+        "id": 34169,
+        "url": "https://limitlesstcg.com/cards/SFA/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/2.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/2_hires.png"
+      }
+    },
+    {
+      "number": "03/64",
+      "localId": "3",
+      "name": "Rowlet",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dartrix"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Add On",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Leafage",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Yoshimi Miyoshi",
+      "pokedex": {
+        "number": 722,
+        "genus": "Grass Quill Pokémon",
+        "height": "1'0\"",
+        "weight": "3.3 lbs"
+      },
+      "flavorText": "At a distance, it launches its sharp feathers while flying about. If the enemy gets too close, Rowlet switches tactics and delivers vicious kicks.",
+      "secret": false,
+      "deckCode": "SFA 3",
+      "printGroup": [
+        "SFA 3"
+      ],
+      "limitless": {
+        "id": 34170,
+        "url": "https://limitlesstcg.com/cards/SFA/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/3.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/3_hires.png"
+      }
+    },
+    {
+      "number": "04/64",
+      "localId": "4",
+      "name": "Dartrix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Rowlet",
+      "evolvesTo": [
+        "Decidueye"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "United Wings",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20×",
+          "text": "This attack does 20 damage for each Pokémon in your discard pile that has the United Wings attack."
+        },
+        {
+          "name": "Cutting Wind",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Tetsu Kayama",
+      "pokedex": {
+        "number": 723,
+        "genus": "Blade Quill Pokémon",
+        "height": "2'4\"",
+        "weight": "35.3 lbs"
+      },
+      "flavorText": "It throws one knifelike feather after another at its enemies, and each one precisely strikes a weak point. These feathers are known as blade quills.",
+      "secret": false,
+      "deckCode": "SFA 4",
+      "printGroup": [
+        "SFA 4"
+      ],
+      "limitless": {
+        "id": 34171,
+        "url": "https://limitlesstcg.com/cards/SFA/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/4.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/4_hires.png"
+      }
+    },
+    {
+      "number": "05/64",
+      "localId": "5",
+      "name": "Decidueye",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Dartrix",
+      "types": [
+        "Grass"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Stock Up on Feathers",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw cards until you have 7 cards in your hand."
+        },
+        {
+          "name": "Power Shot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "170",
+          "text": "Discard a Basic Grass Energy card from your hand. If you can't, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "DOM",
+      "pokedex": {
+        "number": 724,
+        "genus": "Arrow Quill Pokémon",
+        "height": "5'3\"",
+        "weight": "80.7 lbs"
+      },
+      "flavorText": "As if wielding a bow, it launches the arrow quills hidden among the feathers of its wings. Decidueye's shots never miss.",
+      "secret": false,
+      "deckCode": "SFA 5",
+      "printGroup": [
+        "SFA 5"
+      ],
+      "limitless": {
+        "id": 34172,
+        "url": "https://limitlesstcg.com/cards/SFA/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/5.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/5_hires.png"
+      }
+    },
+    {
+      "number": "06/64",
+      "localId": "6",
+      "name": "Tapu Bulu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Wood Hammer",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "220",
+          "text": "This Pokémon also does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "GOSSAN",
+      "pokedex": {
+        "number": 787,
+        "genus": "Land Spirit Pokémon",
+        "height": "6'3\"",
+        "weight": "100.3 lbs"
+      },
+      "flavorText": "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth.",
+      "secret": false,
+      "deckCode": "SFA 6",
+      "printGroup": [
+        "SFA 6",
+        "SFA 65"
+      ],
+      "limitless": {
+        "id": 34173,
+        "url": "https://limitlesstcg.com/cards/SFA/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/6.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/6_hires.png"
+      }
+    },
+    {
+      "number": "07/64",
+      "localId": "7",
+      "name": "Houndour",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Houndoom"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Rear Kick",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "REND",
+      "pokedex": {
+        "number": 228,
+        "genus": "Dark Pokémon",
+        "height": "2'0\"",
+        "weight": "23.8 lbs"
+      },
+      "flavorText": "It uses different kinds of cries for communicating with others of its kind and for pursuing its prey.",
+      "secret": false,
+      "deckCode": "SFA 7",
+      "printGroup": [
+        "SFA 7"
+      ],
+      "limitless": {
+        "id": 34174,
+        "url": "https://limitlesstcg.com/cards/SFA/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/7.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/7_hires.png"
+      }
+    },
+    {
+      "number": "08/64",
+      "localId": "8",
+      "name": "Houndoom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Houndour",
+      "types": [
+        "Fire"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Snarl",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "During your opponent's next turn, attacks used by the Defending Pokémon do 100 less damage (before applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "burari",
+      "pokedex": {
+        "number": 229,
+        "genus": "Dark Pokémon",
+        "height": "4'7\"",
+        "weight": "77.2 lbs"
+      },
+      "flavorText": "Upon hearing its eerie howls, other Pokémon get the shivers and head straight back to their nests.",
+      "secret": false,
+      "deckCode": "SFA 8",
+      "printGroup": [
+        "SFA 8",
+        "SFA 66"
+      ],
+      "limitless": {
+        "id": 34175,
+        "url": "https://limitlesstcg.com/cards/SFA/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/8.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/8_hires.png"
+      }
+    },
+    {
+      "number": "09/64",
+      "localId": "9",
+      "name": "Iron Moth",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Future"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Suction",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Heal from this Pokémon the same amount of damage you did to your opponent's Active Pokémon."
+        },
+        {
+          "name": "Anachronism Repulsor",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Ancient Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Shinji Kanda",
+      "pokedex": {
+        "number": 994,
+        "genus": "Paradox Pokémon",
+        "height": "3'11\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "No records exist of this species being caught. Data is lacking, but the Pokémon's traits match up with an object described in an old book.",
+      "secret": false,
+      "deckCode": "SFA 9",
+      "printGroup": [
+        "SFA 9"
+      ],
+      "limitless": {
+        "id": 34176,
+        "url": "https://limitlesstcg.com/cards/SFA/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/9.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/9_hires.png"
+      }
+    },
+    {
+      "number": "10/64",
+      "localId": "10",
+      "name": "Horsea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Seadra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Hold Still",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Razor Fin",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Shimaris Yukichi",
+      "pokedex": {
+        "number": 116,
+        "genus": "Dragon Pokémon",
+        "height": "1'4\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes.",
+      "secret": false,
+      "deckCode": "SFA 10",
+      "printGroup": [
+        "SFA 10",
+        "SFA 67"
+      ],
+      "limitless": {
+        "id": 34177,
+        "url": "https://limitlesstcg.com/cards/SFA/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/10.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/10_hires.png"
+      }
+    },
+    {
+      "number": "11/64",
+      "localId": "11",
+      "name": "Seadra",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Horsea",
+      "evolvesTo": [
+        "Kingdra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Call for Backup",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Pokémon, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Sharp Fin",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Yuya Oka",
+      "pokedex": {
+        "number": 117,
+        "genus": "Dragon Pokémon",
+        "height": "3'11\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "It's the males that raise the offspring. While Seadra are raising young, the spines on their backs secrete thicker and stronger poison.",
+      "secret": false,
+      "deckCode": "SFA 11",
+      "printGroup": [
+        "SFA 11"
+      ],
+      "limitless": {
+        "id": 34178,
+        "url": "https://limitlesstcg.com/cards/SFA/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/11.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/11_hires.png"
+      }
+    },
+    {
+      "number": "12/64",
+      "localId": "12",
+      "name": "Kingdra ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Seadra",
+      "types": [
+        "Water"
+      ],
+      "hp": 310,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "King's Order",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put up to 3 Water Pokémon from your discard pile onto your Bench."
+        },
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "This attack does 50 more damage for each Water Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Double Rare",
+      "artist": "toriyufu",
+      "secret": false,
+      "deckCode": "SFA 12",
+      "printGroup": [
+        "SFA 12",
+        "SFA 80",
+        "SVP 131"
+      ],
+      "limitless": {
+        "id": 34179,
+        "url": "https://limitlesstcg.com/cards/SFA/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/12.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/12_hires.png"
+      }
+    },
+    {
+      "number": "13/64",
+      "localId": "13",
+      "name": "Sneasel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Weavile"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Cut",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Beset",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Krgc",
+      "pokedex": {
+        "number": 215,
+        "genus": "Sharp Claw Pokémon",
+        "height": "2'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "This is a smart and sneaky Pokémon. A pair may work together to steal eggs by having one lure the parents away.",
+      "secret": false,
+      "deckCode": "SFA 13",
+      "printGroup": [
+        "ASC 44",
+        "SFA 13"
+      ],
+      "limitless": {
+        "id": 34180,
+        "url": "https://limitlesstcg.com/cards/SFA/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/13.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/13_hires.png"
+      }
+    },
+    {
+      "number": "14/64",
+      "localId": "14",
+      "name": "Weavile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sneasel",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Hail Claw",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": "Discard all Energy from this Pokémon. Your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "aspara",
+      "pokedex": {
+        "number": 461,
+        "genus": "Sharp Claw Pokémon",
+        "height": "3'7\"",
+        "weight": "75.0 lbs"
+      },
+      "flavorText": "They travel in groups of four or five, leaving signs for one another on trees and rocks. They bring down their prey with coordinated attacks.",
+      "secret": false,
+      "deckCode": "SFA 14",
+      "printGroup": [
+        "ASC 45",
+        "ASC 228",
+        "SFA 14"
+      ],
+      "limitless": {
+        "id": 34181,
+        "url": "https://limitlesstcg.com/cards/SFA/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/14.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/14_hires.png"
+      }
+    },
+    {
+      "number": "15/64",
+      "localId": "15",
+      "name": "Revavroom ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "Tera",
+        "ex"
+      ],
+      "evolvesFrom": "Varoom",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 280,
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Accelerator Flash",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If this Pokémon moved from your Bench to the Active Spot this turn, this attack does 120 more damage."
+        },
+        {
+          "name": "Shattering Speed",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "250",
+          "text": "Discard this Pokémon and all attached cards."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Double Rare",
+      "artist": "PLANETA Mochizuki",
+      "secret": false,
+      "deckCode": "SFA 15",
+      "printGroup": [
+        "SFA 15",
+        "SFA 81"
+      ],
+      "limitless": {
+        "id": 34182,
+        "url": "https://limitlesstcg.com/cards/SFA/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/15.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/15_hires.png"
+      }
+    },
+    {
+      "number": "16/64",
+      "localId": "16",
+      "name": "Drowzee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Hypno"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Eerie Gaze",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Your opponent reveals their hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "OKUBO",
+      "pokedex": {
+        "number": 96,
+        "genus": "Hypnosis Pokémon",
+        "height": "3'3\"",
+        "weight": "71.4 lbs"
+      },
+      "flavorText": "When it twitches its nose, it can tell where someone is sleeping and what that person is dreaming about.",
+      "secret": false,
+      "deckCode": "SFA 16",
+      "printGroup": [
+        "SFA 16"
+      ],
+      "limitless": {
+        "id": 34183,
+        "url": "https://limitlesstcg.com/cards/SFA/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/16.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/16_hires.png"
+      }
+    },
+    {
+      "number": "17/64",
+      "localId": "17",
+      "name": "Hypno",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Drowzee",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Daydream",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "During your opponent's next turn, if they attach an Energy card from their hand to the Defending Pokémon, their turn ends."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Masako Tomii",
+      "pokedex": {
+        "number": 97,
+        "genus": "Hypnosis Pokémon",
+        "height": "5'3\"",
+        "weight": "166.7 lbs"
+      },
+      "flavorText": "Always holding a pendulum that it swings at a steady rhythm, it causes drowsiness in anyone nearby.",
+      "secret": false,
+      "deckCode": "SFA 17",
+      "printGroup": [
+        "SFA 17"
+      ],
+      "limitless": {
+        "id": 34184,
+        "url": "https://limitlesstcg.com/cards/SFA/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/17.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/17_hires.png"
+      }
+    },
+    {
+      "number": "18/64",
+      "localId": "18",
+      "name": "Duskull",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dusclops"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Come and Get You",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put up to 3 Duskull from your discard pile onto your Bench."
+        },
+        {
+          "name": "Mumble",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "IKEDA Saki",
+      "pokedex": {
+        "number": 355,
+        "genus": "Requiem Pokémon",
+        "height": "2'7\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "Duskull's victims suffer an intense chill as the Pokémon siphons their life-force away, glaring at them with its bright red eye all the while.",
+      "secret": false,
+      "deckCode": "SFA 18",
+      "printGroup": [
+        "PRE 35",
+        "SFA 18",
+        "SFA 68"
+      ],
+      "limitless": {
+        "id": 34185,
+        "url": "https://limitlesstcg.com/cards/SFA/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/18.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/18_hires.png"
+      }
+    },
+    {
+      "number": "19/64",
+      "localId": "19",
+      "name": "Dusclops",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Duskull",
+      "evolvesTo": [
+        "Dusknoir"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Cursed Blast",
+          "text": "Once during your turn, you may put 5 damage counters on 1 of your opponent's Pokémon. If you use this Ability, this Pokémon is Knocked Out.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Will-O-Wisp",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Aya Kusube",
+      "pokedex": {
+        "number": 356,
+        "genus": "Beckon Pokémon",
+        "height": "5'3\"",
+        "weight": "67.5 lbs"
+      },
+      "flavorText": "Dusclops's true form is said to be a bright red eye burning within its body, but no one has ever seen such a thing.",
+      "secret": false,
+      "deckCode": "SFA 19",
+      "printGroup": [
+        "PRE 36",
+        "SFA 19",
+        "SFA 69"
+      ],
+      "limitless": {
+        "id": 34186,
+        "url": "https://limitlesstcg.com/cards/SFA/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/19.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/19_hires.png"
+      }
+    },
+    {
+      "number": "20/64",
+      "localId": "20",
+      "name": "Dusknoir",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Dusclops",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Cursed Blast",
+          "text": "Once during your turn, you may put 13 damage counters on 1 of your opponent's Pokémon. If you use this Ability, this Pokémon is Knocked Out.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Shadow Bind",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "150",
+          "text": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "danciao",
+      "pokedex": {
+        "number": 477,
+        "genus": "Gripper Pokémon",
+        "height": "7'3\"",
+        "weight": "235.0 lbs"
+      },
+      "flavorText": "It comes and goes between this world and the afterlife. People fear this Pokémon because it is said to suck in lost spirits and take them along.",
+      "secret": false,
+      "deckCode": "SFA 20",
+      "printGroup": [
+        "PRE 37",
+        "SFA 20",
+        "SFA 70"
+      ],
+      "limitless": {
+        "id": 34187,
+        "url": "https://limitlesstcg.com/cards/SFA/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/20.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/20_hires.png"
+      }
+    },
+    {
+      "number": "21/64",
+      "localId": "21",
+      "name": "Cresselia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Healing Pirouette",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 20 damage from each of your Pokémon."
+        },
+        {
+          "name": "Crescent Purge",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "You may turn 1 of your face-down Prize cards face up. If you do, this attack does 80 more damage. (That Prize card remains face up for the rest of the game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "matazo",
+      "pokedex": {
+        "number": 488,
+        "genus": "Lunar Pokémon",
+        "height": "4'11\"",
+        "weight": "188.7 lbs"
+      },
+      "flavorText": "Shiny particles are released from its wings like a veil. It is said to represent the crescent moon.",
+      "secret": false,
+      "deckCode": "SFA 21",
+      "printGroup": [
+        "SFA 21",
+        "SFA 71"
+      ],
+      "limitless": {
+        "id": 34188,
+        "url": "https://limitlesstcg.com/cards/SFA/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/21.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/21_hires.png"
+      }
+    },
+    {
+      "number": "22/64",
+      "localId": "22",
+      "name": "Sylveon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Mystical Return",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, choose 1 of your opponent's Benched Pokémon. Shuffle that Pokémon and all attached cards into their deck."
+        },
+        {
+          "name": "Disarming Voice",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Kuroimori",
+      "pokedex": {
+        "number": 700,
+        "genus": "Intertwining Pokémon",
+        "height": "3'3\"",
+        "weight": "51.8 lbs"
+      },
+      "flavorText": "Sylveon cuts an elegant figure as it dances lightly around, feelers fluttering, but its piercing moves aim straight for its opponents' weak spots.",
+      "secret": false,
+      "deckCode": "SFA 22",
+      "printGroup": [
+        "SFA 22",
+        "SVP 172"
+      ],
+      "limitless": {
+        "id": 34189,
+        "url": "https://limitlesstcg.com/cards/SFA/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/22.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/22_hires.png"
+      }
+    },
+    {
+      "number": "23/64",
+      "localId": "23",
+      "name": "Croagunk",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Toxicroak"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Light Punch",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Frog Hop",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Aliya Chen",
+      "pokedex": {
+        "number": 453,
+        "genus": "Toxic Mouth Pokémon",
+        "height": "2'4\"",
+        "weight": "50.7 lbs"
+      },
+      "flavorText": "It rarely fights fairly, but that is strictly to ensure survival. It is popular as a mascot.",
+      "secret": false,
+      "deckCode": "SFA 23",
+      "printGroup": [
+        "SFA 23"
+      ],
+      "limitless": {
+        "id": 34190,
+        "url": "https://limitlesstcg.com/cards/SFA/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/23.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/23_hires.png"
+      }
+    },
+    {
+      "number": "24/64",
+      "localId": "24",
+      "name": "Toxicroak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Croagunk",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Corkscrew Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Clean Hit",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90+",
+          "text": "If your opponent's Active Pokémon is an Evolution Pokémon, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Anesaki Dynamic",
+      "pokedex": {
+        "number": 454,
+        "genus": "Toxic Mouth Pokémon",
+        "height": "4'3\"",
+        "weight": "97.9 lbs"
+      },
+      "flavorText": "It has a poison sac at its throat. When it croaks, the stored poison is churned for greater potency.",
+      "secret": false,
+      "deckCode": "SFA 24",
+      "printGroup": [
+        "SFA 24"
+      ],
+      "limitless": {
+        "id": 34191,
+        "url": "https://limitlesstcg.com/cards/SFA/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/24.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/24_hires.png"
+      }
+    },
+    {
+      "number": "25/64",
+      "localId": "25",
+      "name": "Bloodmoon Ursaluna",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 150,
+      "abilities": [
+        {
+          "name": "Battle-Hardened",
+          "text": "When you play this Pokémon from your hand onto your Bench during your turn, you may attach up to 2 Basic Fighting Energy cards from your hand to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mad Bite",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "This attack does 30 more damage for each damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "Souichirou Gunjima",
+      "pokedex": {
+        "number": 901,
+        "genus": "Peat Pokémon",
+        "height": "7'10\"",
+        "weight": "639.3 lbs"
+      },
+      "flavorText": "This special Ursaluna can see in the dark with its left eye and protects itself with mud that is as hard as iron.",
+      "secret": false,
+      "deckCode": "SFA 25",
+      "printGroup": [
+        "PRE 54",
+        "SFA 25"
+      ],
+      "limitless": {
+        "id": 34192,
+        "url": "https://limitlesstcg.com/cards/SFA/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/25.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/25_hires.png"
+      }
+    },
+    {
+      "number": "26/64",
+      "localId": "26",
+      "name": "Slither Wing",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Ancient"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Iron Smasher",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If your opponent has any Future Pokémon in play, this attack does 120 more damage."
+        },
+        {
+          "name": "Smashing Wing",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "Discard 2 Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Shinji Kanda",
+      "pokedex": {
+        "number": 988,
+        "genus": "Paradox Pokémon",
+        "height": "10'6\"",
+        "weight": "202.8 lbs"
+      },
+      "flavorText": "This mysterious Pokémon has some similarities to a creature that an old book introduced as Slither Wing.",
+      "secret": false,
+      "deckCode": "SFA 26",
+      "printGroup": [
+        "SFA 26"
+      ],
+      "limitless": {
+        "id": 34193,
+        "url": "https://limitlesstcg.com/cards/SFA/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/26.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/26_hires.png"
+      }
+    },
+    {
+      "number": "27/64",
+      "localId": "27",
+      "name": "Zubat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Golbat"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Lead",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Darkness Fang",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "osare",
+      "pokedex": {
+        "number": 41,
+        "genus": "Bat Pokémon",
+        "height": "2'7\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.",
+      "secret": false,
+      "deckCode": "SFA 27",
+      "printGroup": [
+        "SFA 27"
+      ],
+      "limitless": {
+        "id": 34194,
+        "url": "https://limitlesstcg.com/cards/SFA/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/27.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/27_hires.png"
+      }
+    },
+    {
+      "number": "28/64",
+      "localId": "28",
+      "name": "Golbat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Zubat",
+      "evolvesTo": [
+        "Crobat"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Speed Dive",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Pitch-Black Blade",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "During your next turn, this Pokémon can't attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Teeziro",
+      "pokedex": {
+        "number": 42,
+        "genus": "Bat Pokémon",
+        "height": "5'3\"",
+        "weight": "121.3 lbs"
+      },
+      "flavorText": "It loves to drink other creatures' blood. It's said that if it finds others of its kind going hungry, it sometimes shares the blood it's gathered.",
+      "secret": false,
+      "deckCode": "SFA 28",
+      "printGroup": [
+        "SFA 28"
+      ],
+      "limitless": {
+        "id": 34195,
+        "url": "https://limitlesstcg.com/cards/SFA/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/28.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/28_hires.png"
+      }
+    },
+    {
+      "number": "29/64",
+      "localId": "29",
+      "name": "Crobat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Golbat",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Shadowy Envoy",
+          "text": "Once during your turn, if you played Janine's Secret Art from your hand this turn, you may draw cards until you have 8 cards in your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Poison Fang",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, put 2 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Nisota Niso",
+      "pokedex": {
+        "number": 169,
+        "genus": "Bat Pokémon",
+        "height": "5'11\"",
+        "weight": "165.3 lbs"
+      },
+      "flavorText": "Both of its legs have turned into wings. Without a sound, Crobat flies swiftly toward its prey and sinks its fangs into the nape of its target's neck.",
+      "secret": false,
+      "deckCode": "SFA 29",
+      "printGroup": [
+        "SFA 29"
+      ],
+      "limitless": {
+        "id": 34196,
+        "url": "https://limitlesstcg.com/cards/SFA/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/29.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/29_hires.png"
+      }
+    },
+    {
+      "number": "30/64",
+      "localId": "30",
+      "name": "Absol",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Darkfall",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If you have at least 3 Darkness Energy in play, this attack does 50 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "rika",
+      "pokedex": {
+        "number": 359,
+        "genus": "Disaster Pokémon",
+        "height": "3'11\"",
+        "weight": "103.6 lbs"
+      },
+      "flavorText": "Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters.",
+      "secret": false,
+      "deckCode": "SFA 30",
+      "printGroup": [
+        "SFA 30"
+      ],
+      "limitless": {
+        "id": 34197,
+        "url": "https://limitlesstcg.com/cards/SFA/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/30.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/30_hires.png"
+      }
+    },
+    {
+      "number": "31/64",
+      "localId": "31",
+      "name": "Zorua",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Zoroark"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Stampede",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Double Scratch",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Yuu Nishida",
+      "pokedex": {
+        "number": 570,
+        "genus": "Tricky Fox Pokémon",
+        "height": "2'4\"",
+        "weight": "27.6 lbs"
+      },
+      "flavorText": "To protect themselves from danger, they hide their true identities by transforming into people and Pokémon.",
+      "secret": false,
+      "deckCode": "SFA 31",
+      "printGroup": [
+        "SFA 31",
+        "SFA 75"
+      ],
+      "limitless": {
+        "id": 34198,
+        "url": "https://limitlesstcg.com/cards/SFA/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/31.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/31_hires.png"
+      }
+    },
+    {
+      "number": "32/64",
+      "localId": "32",
+      "name": "Zoroark",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Zorua",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Illusory Hijacking",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "This attack does 60 damage for each of your opponent's Pokémon ex and Pokémon V in play."
+        },
+        {
+          "name": "Claw Slash",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "nagimiso",
+      "pokedex": {
+        "number": 571,
+        "genus": "Illusion Fox Pokémon",
+        "height": "5'3\"",
+        "weight": "178.8 lbs"
+      },
+      "flavorText": "Each has the ability to fool a large group of people simultaneously. They protect their lair with illusory scenery.",
+      "secret": false,
+      "deckCode": "SFA 32",
+      "printGroup": [
+        "SFA 32"
+      ],
+      "limitless": {
+        "id": 34199,
+        "url": "https://limitlesstcg.com/cards/SFA/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/32.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/32_hires.png"
+      }
+    },
+    {
+      "number": "33/64",
+      "localId": "33",
+      "name": "Inkay",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Malamar"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Mischievous Tentacles",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at the top card of your opponent's deck. You may have your opponent shuffle their deck."
+        },
+        {
+          "name": "Peck",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Mori Yuu",
+      "pokedex": {
+        "number": 686,
+        "genus": "Revolving Pokémon",
+        "height": "1'4\"",
+        "weight": "7.7 lbs"
+      },
+      "flavorText": "It spins while making its luminescent spots flash. These spots allow it to communicate with others by using different patterns of light.",
+      "secret": false,
+      "deckCode": "SFA 33",
+      "printGroup": [
+        "SFA 33"
+      ],
+      "limitless": {
+        "id": 34200,
+        "url": "https://limitlesstcg.com/cards/SFA/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/33.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/33_hires.png"
+      }
+    },
+    {
+      "number": "34/64",
+      "localId": "34",
+      "name": "Malamar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Inkay",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Colluding Tentacles",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Switch in 1 of your opponent's Benched Pokémon to the Active Spot. If you do, this attack does 120 damage to the new Active Pokémon. If you didn't play Xerosic's Machinations from your hand during this turn, this attack does nothing."
+        },
+        {
+          "name": "Spinning Attack",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "akagi",
+      "pokedex": {
+        "number": 687,
+        "genus": "Overturning Pokémon",
+        "height": "4'11\"",
+        "weight": "103.6 lbs"
+      },
+      "flavorText": "Gazing at its luminescent spots will quickly induce a hypnotic state, putting the observer under Malamar's control.",
+      "secret": false,
+      "deckCode": "SFA 34",
+      "printGroup": [
+        "SFA 34"
+      ],
+      "limitless": {
+        "id": 34201,
+        "url": "https://limitlesstcg.com/cards/SFA/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/34.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/34_hires.png"
+      }
+    },
+    {
+      "number": "35/64",
+      "localId": "35",
+      "name": "Yveltal",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Corrosive Winds",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put 2 damage counters on each of your opponent's Pokémon that has any damage counters on it."
+        },
+        {
+          "name": "Destructive Beam",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "SIE NANAHARA",
+      "pokedex": {
+        "number": 717,
+        "genus": "Destruction Pokémon",
+        "height": "19'0\"",
+        "weight": "447.5 lbs"
+      },
+      "flavorText": "When this legendary Pokémon's wings and tail feathers spread wide and glow red, it absorbs the life force of living creatures.",
+      "secret": false,
+      "deckCode": "SFA 35",
+      "printGroup": [
+        "SFA 35"
+      ],
+      "limitless": {
+        "id": 34202,
+        "url": "https://limitlesstcg.com/cards/SFA/35"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/35.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/35_hires.png"
+      }
+    },
+    {
+      "number": "36/64",
+      "localId": "36",
+      "name": "Okidogi ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Poisonous Musculature",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Darkness Energy cards and attach them to this Pokémon. Then, shuffle your deck. If you attached Energy to a Pokémon in this way, this Pokémon is now Poisoned."
+        },
+        {
+          "name": "Chain-Crazed",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130+",
+          "text": "If this Pokémon is Poisoned, this attack does 130 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Double Rare",
+      "artist": "takuyoa",
+      "secret": false,
+      "deckCode": "SFA 36",
+      "printGroup": [
+        "SFA 36",
+        "SFA 82",
+        "SFA 90"
+      ],
+      "limitless": {
+        "id": 34203,
+        "url": "https://limitlesstcg.com/cards/SFA/36"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/36.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/36_hires.png"
+      }
+    },
+    {
+      "number": "37/64",
+      "localId": "37",
+      "name": "Munkidori ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Oh No You Don't",
+          "text": "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, and if you have any Pecharunt ex in play, your opponent takes 1 fewer Prize card.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dirty Headbutt",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "190",
+          "text": "During your next turn, this Pokémon can't use Dirty Headbutt."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Double Rare",
+      "artist": "takuyoa",
+      "secret": false,
+      "deckCode": "SFA 37",
+      "printGroup": [
+        "SFA 37",
+        "SFA 83",
+        "SFA 91"
+      ],
+      "limitless": {
+        "id": 34204,
+        "url": "https://limitlesstcg.com/cards/SFA/37"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/37.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/37_hires.png"
+      }
+    },
+    {
+      "number": "38/64",
+      "localId": "38",
+      "name": "Fezandipiti ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Flip the Script",
+          "text": "Once during your turn, if any of your Pokémon were Knocked Out during your opponent's last turn, you may draw 3 cards. You can't use more than 1 Flip the Script Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Cruel Arrow",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 100 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Double Rare",
+      "artist": "takuyoa",
+      "secret": false,
+      "deckCode": "SFA 38",
+      "printGroup": [
+        "ASC 142",
+        "ASC 288",
+        "SFA 38",
+        "SFA 84",
+        "SFA 92"
+      ],
+      "limitless": {
+        "id": 34205,
+        "url": "https://limitlesstcg.com/cards/SFA/38"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/38.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/38_hires.png"
+      }
+    },
+    {
+      "number": "39/64",
+      "localId": "39",
+      "name": "Pecharunt ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Subjugating Chains",
+          "text": "Once during your turn, you may switch 1 of your Benched Darkness Pokémon, except any Pecharunt ex, with your Active Pokémon. If you do, the new Active Pokémon is now Poisoned. You can't use more than 1 Subjugating Chains Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Irritated Outburst",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "This attack does 60 damage for each Prize card your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Double Rare",
+      "artist": "aky CG Works",
+      "secret": false,
+      "deckCode": "SFA 39",
+      "printGroup": [
+        "PRE 163",
+        "SFA 39",
+        "SFA 85",
+        "SFA 93",
+        "SFA 95"
+      ],
+      "limitless": {
+        "id": 34206,
+        "url": "https://limitlesstcg.com/cards/SFA/39"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/39.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/39_hires.png"
+      }
+    },
+    {
+      "number": "40/64",
+      "localId": "40",
+      "name": "Genesect",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "ACE Nullifier",
+          "text": "If this Pokémon has a Pokémon Tool attached, your opponent can't play any ACE SPEC cards from their hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Magnetic Blast",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Kazumasa Yasukuni",
+      "pokedex": {
+        "number": 649,
+        "genus": "Paleozoic Pokémon",
+        "height": "4'11\"",
+        "weight": "181.9 lbs"
+      },
+      "flavorText": "This ancient bug Pokémon was altered by Team Plasma. They upgraded the cannon on its back.",
+      "secret": false,
+      "deckCode": "SFA 40",
+      "printGroup": [
+        "SFA 40"
+      ],
+      "limitless": {
+        "id": 34207,
+        "url": "https://limitlesstcg.com/cards/SFA/40"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/40.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/40_hires.png"
+      }
+    },
+    {
+      "number": "41/64",
+      "localId": "41",
+      "name": "Cufant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Copperajah"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Confront",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Shinya Mizuno",
+      "pokedex": {
+        "number": 878,
+        "genus": "Copperderm Pokémon",
+        "height": "3'11\"",
+        "weight": "220.5 lbs"
+      },
+      "flavorText": "Cufant can lift loads weighing five tons. In the mornings, it heads into caves with its herd, in search of the ore on which these Pokémon feed.",
+      "secret": false,
+      "deckCode": "SFA 41",
+      "printGroup": [
+        "SFA 41",
+        "SFA 76"
+      ],
+      "limitless": {
+        "id": 34208,
+        "url": "https://limitlesstcg.com/cards/SFA/41"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/41.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/41_hires.png"
+      }
+    },
+    {
+      "number": "42/64",
+      "localId": "42",
+      "name": "Copperajah",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cufant",
+      "types": [
+        "Metal"
+      ],
+      "hp": 200,
+      "abilities": [
+        {
+          "name": "Massive Body",
+          "text": "As long as this Pokémon is in the Active Spot, your opponent can't play any Stadium cards from their hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Nasal Lariat",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130+",
+          "text": "You may do 100 more damage. If you do, during your next turn, this Pokémon can't attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 4,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 879,
+        "genus": "Copperderm Pokémon",
+        "height": "9'10\"",
+        "weight": "1433.0 lbs"
+      },
+      "flavorText": "Copperajah are prideful, cantankerous Pokémon. Specimens with vibrant green skin command the respect of others of their kind.",
+      "secret": false,
+      "deckCode": "SFA 42",
+      "printGroup": [
+        "SFA 42"
+      ],
+      "limitless": {
+        "id": 34209,
+        "url": "https://limitlesstcg.com/cards/SFA/42"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/42.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/42_hires.png"
+      }
+    },
+    {
+      "number": "43/64",
+      "localId": "43",
+      "name": "Varoom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Rigidify",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Headbutt Bounce",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "HAGIYA Kaoru",
+      "pokedex": {
+        "number": 965,
+        "genus": "Single-Cyl Pokémon",
+        "height": "3'3\"",
+        "weight": "77.2 lbs"
+      },
+      "flavorText": "The steel section is Varoom's actual body. This Pokémon clings to rocks and converts the minerals within into energy to fuel its activities.",
+      "secret": false,
+      "deckCode": "SFA 43",
+      "printGroup": [
+        "SFA 43"
+      ],
+      "limitless": {
+        "id": 34210,
+        "url": "https://limitlesstcg.com/cards/SFA/43"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/43.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/43_hires.png"
+      }
+    },
+    {
+      "number": "44/64",
+      "localId": "44",
+      "name": "Axew",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Fraxure"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Fighting",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Orca",
+      "pokedex": {
+        "number": 610,
+        "genus": "Tusk Pokémon",
+        "height": "2'0\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "If you see peculiar teeth marks on boulders or trees, it means an Axew is likely living nearby.",
+      "secret": false,
+      "deckCode": "SFA 44",
+      "printGroup": [
+        "SFA 44"
+      ],
+      "limitless": {
+        "id": 34211,
+        "url": "https://limitlesstcg.com/cards/SFA/44"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/44.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/44_hires.png"
+      }
+    },
+    {
+      "number": "45/64",
+      "localId": "45",
+      "name": "Fraxure",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Axew",
+      "evolvesTo": [
+        "Haxorus"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Unnerve",
+          "text": "Whenever your opponent plays an Item or Supporter card from their hand, prevent all effects of that card done to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Fighting",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "Discard the top card of your deck."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Uninori",
+      "pokedex": {
+        "number": 611,
+        "genus": "Axe Jaw Pokémon",
+        "height": "3'3\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "Fraxure uses its thick tusks to neatly cut prey into two portions—one to eat now and one to save for later.",
+      "secret": false,
+      "deckCode": "SFA 45",
+      "printGroup": [
+        "SFA 45",
+        "SFA 77"
+      ],
+      "limitless": {
+        "id": 34212,
+        "url": "https://limitlesstcg.com/cards/SFA/45"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/45.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/45_hires.png"
+      }
+    },
+    {
+      "number": "46/64",
+      "localId": "46",
+      "name": "Haxorus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Fraxure",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 170,
+      "attacks": [
+        {
+          "name": "Bring Down the Axe",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If your opponent's Active Pokémon has any Special Energy attached, it is Knocked Out."
+        },
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Fighting",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "230",
+          "text": "Discard the top 3 cards of your deck."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Rare",
+      "artist": "Tsuyoshi Nagano",
+      "pokedex": {
+        "number": 612,
+        "genus": "Axe Jaw Pokémon",
+        "height": "5'11\"",
+        "weight": "232.6 lbs"
+      },
+      "flavorText": "It overwhelms enemies with its prized tusks, which are sharp enough to cut through a metal transmission tower in one strike.",
+      "secret": false,
+      "deckCode": "SFA 46",
+      "printGroup": [
+        "SFA 46"
+      ],
+      "limitless": {
+        "id": 34213,
+        "url": "https://limitlesstcg.com/cards/SFA/46"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/46.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/46_hires.png"
+      }
+    },
+    {
+      "number": "47/64",
+      "localId": "47",
+      "name": "Kyurem",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Plasma Bane",
+          "text": "If your opponent has any cards in their discard pile that have \"Colress\" in the name, this Pokémon can use the Trifrost attack for Colorless.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Trifrost",
+          "cost": [
+            "Water",
+            "Water",
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "",
+          "text": "Discard all Energy from this Pokémon. This attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Shiburingaru",
+      "pokedex": {
+        "number": 646,
+        "genus": "Boundary Pokémon",
+        "height": "9'10\"",
+        "weight": "716.5 lbs"
+      },
+      "flavorText": "Dwelling within it is a power even greater than that of Reshiram or Zekrom, but the extreme cold keeps that power bound.",
+      "secret": false,
+      "deckCode": "SFA 47",
+      "printGroup": [
+        "SFA 47"
+      ],
+      "limitless": {
+        "id": 34214,
+        "url": "https://limitlesstcg.com/cards/SFA/47"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/47.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/47_hires.png"
+      }
+    },
+    {
+      "number": "48/64",
+      "localId": "48",
+      "name": "Meowth",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Persian"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 3 coins. This attack does 20 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 52,
+        "genus": "Scratch Cat Pokémon",
+        "height": "1'4\"",
+        "weight": "9.3 lbs"
+      },
+      "flavorText": "It loves things that sparkle. When it sees a shiny object, the gold coin on its head shines, too.",
+      "secret": false,
+      "deckCode": "SFA 48",
+      "printGroup": [
+        "PFL 106",
+        "SFA 48"
+      ],
+      "limitless": {
+        "id": 34215,
+        "url": "https://limitlesstcg.com/cards/SFA/48"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/48.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/48_hires.png"
+      }
+    },
+    {
+      "number": "49/64",
+      "localId": "49",
+      "name": "Persian",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Meowth",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50×",
+          "text": "Flip 3 coins. This attack does 50 damage for each heads."
+        },
+        {
+          "name": "Slashing Claw",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "NC Empire",
+      "pokedex": {
+        "number": 53,
+        "genus": "Classy Cat Pokémon",
+        "height": "3'3\"",
+        "weight": "70.5 lbs"
+      },
+      "flavorText": "It has a vicious temperament. Beware if it raises its tail straight up. This is a signal that it is about to pounce and bite.",
+      "secret": false,
+      "deckCode": "SFA 49",
+      "printGroup": [
+        "SFA 49",
+        "SFA 78"
+      ],
+      "limitless": {
+        "id": 34216,
+        "url": "https://limitlesstcg.com/cards/SFA/49"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/49.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/49_hires.png"
+      }
+    },
+    {
+      "number": "50/64",
+      "localId": "50",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Colorful Catch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Basic Energy cards of different types, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Susumu Maeya",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones.",
+      "secret": false,
+      "deckCode": "SFA 50",
+      "printGroup": [
+        "SFA 50"
+      ],
+      "limitless": {
+        "id": 34217,
+        "url": "https://limitlesstcg.com/cards/SFA/50"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/50.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/50_hires.png"
+      }
+    },
+    {
+      "number": "51/64",
+      "localId": "51",
+      "name": "Furfrou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Energy Assist",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Attach a Basic Energy card from your discard pile to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Shinya Komatsu",
+      "pokedex": {
+        "number": 676,
+        "genus": "Poodle Pokémon",
+        "height": "3'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+      "secret": false,
+      "deckCode": "SFA 51",
+      "printGroup": [
+        "SFA 51"
+      ],
+      "limitless": {
+        "id": 34218,
+        "url": "https://limitlesstcg.com/cards/SFA/51"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/51.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/51_hires.png"
+      }
+    },
+    {
+      "number": "52/64",
+      "localId": "52",
+      "name": "Stufful",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Bewear"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "This Pokémon also does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "ryoma uratsuka",
+      "pokedex": {
+        "number": 759,
+        "genus": "Flailing Pokémon",
+        "height": "1'8\"",
+        "weight": "15.0 lbs"
+      },
+      "flavorText": "Its fluffy fur is a delight to pet, but carelessly reaching out to touch this Pokémon could result in painful retaliation.",
+      "secret": false,
+      "deckCode": "SFA 52",
+      "printGroup": [
+        "SFA 52"
+      ],
+      "limitless": {
+        "id": 34219,
+        "url": "https://limitlesstcg.com/cards/SFA/52"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/52.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/52_hires.png"
+      }
+    },
+    {
+      "number": "53/64",
+      "localId": "53",
+      "name": "Bewear",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Stufful",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Power Charger",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Search your deck for a Basic Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Common",
+      "artist": "Takeshi Nakamura",
+      "pokedex": {
+        "number": 760,
+        "genus": "Strong Arm Pokémon",
+        "height": "6'11\"",
+        "weight": "297.6 lbs"
+      },
+      "flavorText": "Once it accepts you as a friend, it tries to show its affection with a hug. Letting it do that is dangerous—it could easily shatter your bones.",
+      "secret": false,
+      "deckCode": "SFA 53",
+      "printGroup": [
+        "SFA 53",
+        "SFA 79"
+      ],
+      "limitless": {
+        "id": 34220,
+        "url": "https://limitlesstcg.com/cards/SFA/53"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/53.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/53_hires.png"
+      }
+    },
+    {
+      "number": "54/64",
+      "localId": "54",
+      "name": "Academy at Night",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may put a card from their hand on top of their deck.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "AYUMI ODASHIMA",
+      "secret": false,
+      "deckCode": "SFA 54",
+      "printGroup": [
+        "SFA 54"
+      ],
+      "limitless": {
+        "id": 34221,
+        "url": "https://limitlesstcg.com/cards/SFA/54"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/54.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/54_hires.png"
+      }
+    },
+    {
+      "number": "55/64",
+      "localId": "55",
+      "name": "Binding Mochi",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attacks used by the Poisoned Pokémon this card is attached to do 40 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "SFA 55",
+      "printGroup": [
+        "PRE 95",
+        "SFA 55"
+      ],
+      "limitless": {
+        "id": 34222,
+        "url": "https://limitlesstcg.com/cards/SFA/55"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/55.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/55_hires.png"
+      }
+    },
+    {
+      "number": "56/64",
+      "localId": "56",
+      "name": "Cassiopeia",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can use this card only when it is the last card in your hand.  Search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Atsushi Furusawa",
+      "secret": false,
+      "deckCode": "SFA 56",
+      "printGroup": [
+        "SFA 56",
+        "SFA 86",
+        "SFA 94"
+      ],
+      "limitless": {
+        "id": 34223,
+        "url": "https://limitlesstcg.com/cards/SFA/56"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/56.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/56_hires.png"
+      }
+    },
+    {
+      "number": "57/64",
+      "localId": "57",
+      "name": "Colress's Tenacity",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Search your deck for a Stadium card and an Energy card, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "hncl",
+      "secret": false,
+      "deckCode": "SFA 57",
+      "printGroup": [
+        "SFA 57",
+        "SFA 87"
+      ],
+      "limitless": {
+        "id": 34224,
+        "url": "https://limitlesstcg.com/cards/SFA/57"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/57.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/57_hires.png"
+      }
+    },
+    {
+      "number": "58/64",
+      "localId": "58",
+      "name": "Dangerous Laser",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item",
+        "ACE SPEC"
+      ],
+      "rules": [
+        "You can't have more than 1 ACE SPEC card in your deck.",
+        "Your opponent's Active Pokémon is now Burned and Confused.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "ACE SPEC Rare",
+      "artist": "inose yukie",
+      "secret": false,
+      "deckCode": "SFA 58",
+      "printGroup": [
+        "SFA 58"
+      ],
+      "limitless": {
+        "id": 34225,
+        "url": "https://limitlesstcg.com/cards/SFA/58"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/58.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/58_hires.png"
+      }
+    },
+    {
+      "number": "59/64",
+      "localId": "59",
+      "name": "Janine's Secret Art",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Choose up to 2 of your Darkness Pokémon. For each of those Pokémon, search your deck for a Basic Darkness Energy card and attach it to that Pokémon. Then, shuffle your deck. If you attached Energy to your Active Pokémon in this way, it is now Poisoned.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Taira Akitsu",
+      "secret": false,
+      "deckCode": "SFA 59",
+      "printGroup": [
+        "PRE 112",
+        "PRE 173",
+        "SFA 59",
+        "SFA 88"
+      ],
+      "limitless": {
+        "id": 34226,
+        "url": "https://limitlesstcg.com/cards/SFA/59"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/59.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/59_hires.png"
+      }
+    },
+    {
+      "number": "60/64",
+      "localId": "60",
+      "name": "Neutralization Zone",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium",
+        "ACE SPEC"
+      ],
+      "rules": [
+        "You can't have more than 1 ACE SPEC card in your deck.",
+        "Prevent all damage done to Pokémon that don't have a Rule Box (both yours and your opponent's) by attacks from the opponent's Pokémon ex and Pokémon V. (Pokémon ex, Pokémon V, etc. have Rule Boxes.)    This card can't be put into your hand or deck from the discard pile.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "ACE SPEC Rare",
+      "artist": "imoniii",
+      "secret": false,
+      "deckCode": "SFA 60",
+      "printGroup": [
+        "SFA 60"
+      ],
+      "limitless": {
+        "id": 34227,
+        "url": "https://limitlesstcg.com/cards/SFA/60"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/60.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/60_hires.png"
+      }
+    },
+    {
+      "number": "61/64",
+      "localId": "61",
+      "name": "Night Stretcher",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Put a Pokémon or a Basic Energy card from your discard pile into your hand.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "SFA 61",
+      "printGroup": [
+        "ASC 196",
+        "MEG 173",
+        "SFA 61",
+        "SSP 251"
+      ],
+      "limitless": {
+        "id": 34228,
+        "url": "https://limitlesstcg.com/cards/SFA/61"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/61.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/61_hires.png"
+      }
+    },
+    {
+      "number": "62/64",
+      "localId": "62",
+      "name": "Poké Vital A",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item",
+        "ACE SPEC"
+      ],
+      "rules": [
+        "You can't have more than 1 ACE SPEC card in your deck.",
+        "Heal 150 damage from 1 of your Pokémon.    This card can't be put into your hand or deck from the discard pile.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "ACE SPEC Rare",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "SFA 62",
+      "printGroup": [
+        "SFA 62"
+      ],
+      "limitless": {
+        "id": 34229,
+        "url": "https://limitlesstcg.com/cards/SFA/62"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/62.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/62_hires.png"
+      }
+    },
+    {
+      "number": "63/64",
+      "localId": "63",
+      "name": "Powerglass",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "At the end of your turn (after your attack), if the Pokémon this card is attached to is in the Active Spot, you may attach a Basic Energy card from your discard pile to it.",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "Studio Bora Inc.",
+      "secret": false,
+      "deckCode": "SFA 63",
+      "printGroup": [
+        "SFA 63",
+        "SFA 97"
+      ],
+      "limitless": {
+        "id": 34230,
+        "url": "https://limitlesstcg.com/cards/SFA/63"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/63.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/63_hires.png"
+      }
+    },
+    {
+      "number": "64/64",
+      "localId": "64",
+      "name": "Xerosic's Machinations",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent discards cards from their hand until they have 3 cards in their hand.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Uncommon",
+      "artist": "GOSSAN",
+      "secret": false,
+      "deckCode": "SFA 64",
+      "printGroup": [
+        "SFA 64",
+        "SFA 89"
+      ],
+      "limitless": {
+        "id": 34231,
+        "url": "https://limitlesstcg.com/cards/SFA/64"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/64.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/64_hires.png"
+      }
+    },
+    {
+      "number": "65/64",
+      "localId": "65",
+      "name": "Tapu Bulu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Wood Hammer",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "220",
+          "text": "This Pokémon also does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "IKEDA Saki",
+      "pokedex": {
+        "number": 787,
+        "genus": "Land Spirit Pokémon",
+        "height": "6'3\"",
+        "weight": "100.3 lbs"
+      },
+      "flavorText": "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth.",
+      "secret": true,
+      "deckCode": "SFA 65",
+      "printGroup": [
+        "SFA 6",
+        "SFA 65"
+      ],
+      "limitless": {
+        "id": 34232,
+        "url": "https://limitlesstcg.com/cards/SFA/65"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/65.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/65_hires.png"
+      }
+    },
+    {
+      "number": "66/64",
+      "localId": "66",
+      "name": "Houndoom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Houndour",
+      "types": [
+        "Fire"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Snarl",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "During your opponent's next turn, attacks used by the Defending Pokémon do 100 less damage (before applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "Taiga Kasai",
+      "pokedex": {
+        "number": 229,
+        "genus": "Dark Pokémon",
+        "height": "4'7\"",
+        "weight": "77.2 lbs"
+      },
+      "flavorText": "Upon hearing its eerie howls, other Pokémon get the shivers and head straight back to their nests.",
+      "secret": true,
+      "deckCode": "SFA 66",
+      "printGroup": [
+        "SFA 8",
+        "SFA 66"
+      ],
+      "limitless": {
+        "id": 34233,
+        "url": "https://limitlesstcg.com/cards/SFA/66"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/66.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/66_hires.png"
+      }
+    },
+    {
+      "number": "67/64",
+      "localId": "67",
+      "name": "Horsea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Seadra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Hold Still",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Razor Fin",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "Shinya Komatsu",
+      "pokedex": {
+        "number": 116,
+        "genus": "Dragon Pokémon",
+        "height": "1'4\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes.",
+      "secret": true,
+      "deckCode": "SFA 67",
+      "printGroup": [
+        "SFA 10",
+        "SFA 67"
+      ],
+      "limitless": {
+        "id": 34234,
+        "url": "https://limitlesstcg.com/cards/SFA/67"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/67.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/67_hires.png"
+      }
+    },
+    {
+      "number": "68/64",
+      "localId": "68",
+      "name": "Duskull",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dusclops"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Come and Get You",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put up to 3 Duskull from your discard pile onto your Bench."
+        },
+        {
+          "name": "Mumble",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "James Turner",
+      "pokedex": {
+        "number": 355,
+        "genus": "Requiem Pokémon",
+        "height": "2'7\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "Duskull's victims suffer an intense chill as the Pokémon siphons their life-force away, glaring at them with its bright red eye all the while.",
+      "secret": true,
+      "deckCode": "SFA 68",
+      "printGroup": [
+        "PRE 35",
+        "SFA 18",
+        "SFA 68"
+      ],
+      "limitless": {
+        "id": 34235,
+        "url": "https://limitlesstcg.com/cards/SFA/68"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/68.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/68_hires.png"
+      }
+    },
+    {
+      "number": "69/64",
+      "localId": "69",
+      "name": "Dusclops",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Duskull",
+      "evolvesTo": [
+        "Dusknoir"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Cursed Blast",
+          "text": "Once during your turn, you may put 5 damage counters on 1 of your opponent's Pokémon. If you use this Ability, this Pokémon is Knocked Out.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Will-O-Wisp",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "James Turner",
+      "pokedex": {
+        "number": 356,
+        "genus": "Beckon Pokémon",
+        "height": "5'3\"",
+        "weight": "67.5 lbs"
+      },
+      "flavorText": "Dusclops's true form is said to be a bright red eye burning within its body, but no one has ever seen such a thing.",
+      "secret": true,
+      "deckCode": "SFA 69",
+      "printGroup": [
+        "PRE 36",
+        "SFA 19",
+        "SFA 69"
+      ],
+      "limitless": {
+        "id": 34236,
+        "url": "https://limitlesstcg.com/cards/SFA/69"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/69.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/69_hires.png"
+      }
+    },
+    {
+      "number": "70/64",
+      "localId": "70",
+      "name": "Dusknoir",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Dusclops",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Cursed Blast",
+          "text": "Once during your turn, you may put 13 damage counters on 1 of your opponent's Pokémon. If you use this Ability, this Pokémon is Knocked Out.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Shadow Bind",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "150",
+          "text": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "James Turner",
+      "pokedex": {
+        "number": 477,
+        "genus": "Gripper Pokémon",
+        "height": "7'3\"",
+        "weight": "235.0 lbs"
+      },
+      "flavorText": "It comes and goes between this world and the afterlife. People fear this Pokémon because it is said to suck in lost spirits and take them along.",
+      "secret": true,
+      "deckCode": "SFA 70",
+      "printGroup": [
+        "PRE 37",
+        "SFA 20",
+        "SFA 70"
+      ],
+      "limitless": {
+        "id": 34237,
+        "url": "https://limitlesstcg.com/cards/SFA/70"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/70.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/70_hires.png"
+      }
+    },
+    {
+      "number": "71/64",
+      "localId": "71",
+      "name": "Cresselia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Healing Pirouette",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 20 damage from each of your Pokémon."
+        },
+        {
+          "name": "Crescent Purge",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "You may turn 1 of your face-down Prize cards face up. If you do, this attack does 80 more damage. (That Prize card remains face up for the rest of the game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "satoma",
+      "pokedex": {
+        "number": 488,
+        "genus": "Lunar Pokémon",
+        "height": "4'11\"",
+        "weight": "188.7 lbs"
+      },
+      "flavorText": "Shiny particles are released from its wings like a veil. It is said to represent the crescent moon.",
+      "secret": true,
+      "deckCode": "SFA 71",
+      "printGroup": [
+        "SFA 21",
+        "SFA 71"
+      ],
+      "limitless": {
+        "id": 34238,
+        "url": "https://limitlesstcg.com/cards/SFA/71"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/71.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/71_hires.png"
+      }
+    },
+    {
+      "number": "72/64",
+      "localId": "72",
+      "name": "Munkidori",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Adrena-Brain",
+          "text": "Once during your turn, if this Pokémon has any Darkness Energy attached, you may move up to 3 damage counters from 1 of your Pokémon to 1 of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mind Bend",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "Teeziro",
+      "pokedex": {
+        "number": 1015,
+        "genus": "Retainer Pokémon",
+        "height": "3'3\"",
+        "weight": "26.9 lbs"
+      },
+      "flavorText": "Munkidori keeps itself somewhere safe while it toys with its foes, using psychokinesis to induce intense dizziness.",
+      "secret": true,
+      "deckCode": "SFA 72",
+      "printGroup": [
+        "ASC 99",
+        "PRE 44",
+        "SFA 72",
+        "TWM 95"
+      ],
+      "limitless": {
+        "id": 34239,
+        "url": "https://limitlesstcg.com/cards/SFA/72"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/72.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/72_hires.png"
+      }
+    },
+    {
+      "number": "73/64",
+      "localId": "73",
+      "name": "Fezandipiti",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Adrena-Pheromone",
+          "text": "If this Pokémon has any Darkness Energy attached and is damaged by an attack, flip a coin. If heads, prevent that damage.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energy Feather",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "KEIICHIRO ITO",
+      "pokedex": {
+        "number": 1016,
+        "genus": "Retainer Pokémon",
+        "height": "4'7\"",
+        "weight": "66.4 lbs"
+      },
+      "flavorText": "Fezandipiti beats its glossy wings to scatter pheromones that captivate people and Pokémon.",
+      "secret": true,
+      "deckCode": "SFA 73",
+      "printGroup": [
+        "PRE 45",
+        "SFA 73",
+        "TWM 96"
+      ],
+      "limitless": {
+        "id": 34240,
+        "url": "https://limitlesstcg.com/cards/SFA/73"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/73.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/73_hires.png"
+      }
+    },
+    {
+      "number": "74/64",
+      "localId": "74",
+      "name": "Okidogi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Adrena-Power",
+          "text": "If this Pokémon has any Darkness Energy attached, it gets +100 HP, and the attacks it uses do 100 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Good Punch",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "AKIRA EGAWA",
+      "pokedex": {
+        "number": 1014,
+        "genus": "Retainer Pokémon",
+        "height": "5'11\"",
+        "weight": "203.3 lbs"
+      },
+      "flavorText": "Okidogi is a ruffian with a short temper. It can pulverize anything by swinging around the chain on its neck.",
+      "secret": true,
+      "deckCode": "SFA 74",
+      "printGroup": [
+        "PRE 57",
+        "SFA 74",
+        "TWM 111"
+      ],
+      "limitless": {
+        "id": 34241,
+        "url": "https://limitlesstcg.com/cards/SFA/74"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/74.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/74_hires.png"
+      }
+    },
+    {
+      "number": "75/64",
+      "localId": "75",
+      "name": "Zorua",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Zoroark"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Stampede",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Double Scratch",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "REND",
+      "pokedex": {
+        "number": 570,
+        "genus": "Tricky Fox Pokémon",
+        "height": "2'4\"",
+        "weight": "27.6 lbs"
+      },
+      "flavorText": "To protect themselves from danger, they hide their true identities by transforming into people and Pokémon.",
+      "secret": true,
+      "deckCode": "SFA 75",
+      "printGroup": [
+        "SFA 31",
+        "SFA 75"
+      ],
+      "limitless": {
+        "id": 34242,
+        "url": "https://limitlesstcg.com/cards/SFA/75"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/75.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/75_hires.png"
+      }
+    },
+    {
+      "number": "76/64",
+      "localId": "76",
+      "name": "Cufant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Copperajah"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Confront",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "Mina Nakai",
+      "pokedex": {
+        "number": 878,
+        "genus": "Copperderm Pokémon",
+        "height": "3'11\"",
+        "weight": "220.5 lbs"
+      },
+      "flavorText": "Cufant can lift loads weighing five tons. In the mornings, it heads into caves with its herd, in search of the ore on which these Pokémon feed.",
+      "secret": true,
+      "deckCode": "SFA 76",
+      "printGroup": [
+        "SFA 41",
+        "SFA 76"
+      ],
+      "limitless": {
+        "id": 34243,
+        "url": "https://limitlesstcg.com/cards/SFA/76"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/76.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/76_hires.png"
+      }
+    },
+    {
+      "number": "77/64",
+      "localId": "77",
+      "name": "Fraxure",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Axew",
+      "evolvesTo": [
+        "Haxorus"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Unnerve",
+          "text": "Whenever your opponent plays an Item or Supporter card from their hand, prevent all effects of that card done to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Fighting",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "Discard the top card of your deck."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "MINAMINAMI Take",
+      "pokedex": {
+        "number": 611,
+        "genus": "Axe Jaw Pokémon",
+        "height": "3'3\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "Fraxure uses its thick tusks to neatly cut prey into two portions—one to eat now and one to save for later.",
+      "secret": true,
+      "deckCode": "SFA 77",
+      "printGroup": [
+        "SFA 45",
+        "SFA 77"
+      ],
+      "limitless": {
+        "id": 34244,
+        "url": "https://limitlesstcg.com/cards/SFA/77"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/77.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/77_hires.png"
+      }
+    },
+    {
+      "number": "78/64",
+      "localId": "78",
+      "name": "Persian",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Meowth",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50×",
+          "text": "Flip 3 coins. This attack does 50 damage for each heads."
+        },
+        {
+          "name": "Slashing Claw",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "Whisker",
+      "pokedex": {
+        "number": 53,
+        "genus": "Classy Cat Pokémon",
+        "height": "3'3\"",
+        "weight": "70.5 lbs"
+      },
+      "flavorText": "It has a vicious temperament. Beware if it raises its tail straight up. This is a signal that it is about to pounce and bite.",
+      "secret": true,
+      "deckCode": "SFA 78",
+      "printGroup": [
+        "SFA 49",
+        "SFA 78"
+      ],
+      "limitless": {
+        "id": 34245,
+        "url": "https://limitlesstcg.com/cards/SFA/78"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/78.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/78_hires.png"
+      }
+    },
+    {
+      "number": "79/64",
+      "localId": "79",
+      "name": "Bewear",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Stufful",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Power Charger",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Search your deck for a Basic Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Illustration Rare",
+      "artist": "Takeshi Nakamura",
+      "pokedex": {
+        "number": 760,
+        "genus": "Strong Arm Pokémon",
+        "height": "6'11\"",
+        "weight": "297.6 lbs"
+      },
+      "flavorText": "Once it accepts you as a friend, it tries to show its affection with a hug. Letting it do that is dangerous—it could easily shatter your bones.",
+      "secret": true,
+      "deckCode": "SFA 79",
+      "printGroup": [
+        "SFA 53",
+        "SFA 79"
+      ],
+      "limitless": {
+        "id": 34246,
+        "url": "https://limitlesstcg.com/cards/SFA/79"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/79.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/79_hires.png"
+      }
+    },
+    {
+      "number": "80/64",
+      "localId": "80",
+      "name": "Kingdra ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Seadra",
+      "types": [
+        "Water"
+      ],
+      "hp": 310,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "King's Order",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put up to 3 Water Pokémon from your discard pile onto your Bench."
+        },
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "This attack does 50 more damage for each Water Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "PLANETA Igarashi",
+      "secret": true,
+      "deckCode": "SFA 80",
+      "printGroup": [
+        "SFA 12",
+        "SFA 80",
+        "SVP 131"
+      ],
+      "limitless": {
+        "id": 34247,
+        "url": "https://limitlesstcg.com/cards/SFA/80"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/80.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/80_hires.png"
+      }
+    },
+    {
+      "number": "81/64",
+      "localId": "81",
+      "name": "Revavroom ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "Tera",
+        "ex"
+      ],
+      "evolvesFrom": "Varoom",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 280,
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Accelerator Flash",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If this Pokémon moved from your Bench to the Active Spot this turn, this attack does 120 more damage."
+        },
+        {
+          "name": "Shattering Speed",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "250",
+          "text": "Discard this Pokémon and all attached cards."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "PLANETA Mochizuki",
+      "secret": true,
+      "deckCode": "SFA 81",
+      "printGroup": [
+        "SFA 15",
+        "SFA 81"
+      ],
+      "limitless": {
+        "id": 34248,
+        "url": "https://limitlesstcg.com/cards/SFA/81"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/81.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/81_hires.png"
+      }
+    },
+    {
+      "number": "82/64",
+      "localId": "82",
+      "name": "Okidogi ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Poisonous Musculature",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Darkness Energy cards and attach them to this Pokémon. Then, shuffle your deck. If you attached Energy to a Pokémon in this way, this Pokémon is now Poisoned."
+        },
+        {
+          "name": "Chain-Crazed",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130+",
+          "text": "If this Pokémon is Poisoned, this attack does 130 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SFA 82",
+      "printGroup": [
+        "SFA 36",
+        "SFA 82",
+        "SFA 90"
+      ],
+      "limitless": {
+        "id": 34249,
+        "url": "https://limitlesstcg.com/cards/SFA/82"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/82.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/82_hires.png"
+      }
+    },
+    {
+      "number": "83/64",
+      "localId": "83",
+      "name": "Munkidori ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Oh No You Don't",
+          "text": "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, and if you have any Pecharunt ex in play, your opponent takes 1 fewer Prize card.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dirty Headbutt",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "190",
+          "text": "During your next turn, this Pokémon can't use Dirty Headbutt."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SFA 83",
+      "printGroup": [
+        "SFA 37",
+        "SFA 83",
+        "SFA 91"
+      ],
+      "limitless": {
+        "id": 34250,
+        "url": "https://limitlesstcg.com/cards/SFA/83"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/83.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/83_hires.png"
+      }
+    },
+    {
+      "number": "84/64",
+      "localId": "84",
+      "name": "Fezandipiti ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Flip the Script",
+          "text": "Once during your turn, if any of your Pokémon were Knocked Out during your opponent's last turn, you may draw 3 cards. You can't use more than 1 Flip the Script Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Cruel Arrow",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 100 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SFA 84",
+      "printGroup": [
+        "ASC 142",
+        "ASC 288",
+        "SFA 38",
+        "SFA 84",
+        "SFA 92"
+      ],
+      "limitless": {
+        "id": 34251,
+        "url": "https://limitlesstcg.com/cards/SFA/84"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/84.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/84_hires.png"
+      }
+    },
+    {
+      "number": "85/64",
+      "localId": "85",
+      "name": "Pecharunt ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Subjugating Chains",
+          "text": "Once during your turn, you may switch 1 of your Benched Darkness Pokémon, except any Pecharunt ex, with your Active Pokémon. If you do, the new Active Pokémon is now Poisoned. You can't use more than 1 Subjugating Chains Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Irritated Outburst",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "This attack does 60 damage for each Prize card your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "aky CG Works",
+      "secret": true,
+      "deckCode": "SFA 85",
+      "printGroup": [
+        "PRE 163",
+        "SFA 39",
+        "SFA 85",
+        "SFA 93",
+        "SFA 95"
+      ],
+      "limitless": {
+        "id": 34252,
+        "url": "https://limitlesstcg.com/cards/SFA/85"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/85.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/85_hires.png"
+      }
+    },
+    {
+      "number": "86/64",
+      "localId": "86",
+      "name": "Cassiopeia",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can use this card only when it is the last card in your hand.  Search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "Atsushi Furusawa",
+      "secret": true,
+      "deckCode": "SFA 86",
+      "printGroup": [
+        "SFA 56",
+        "SFA 86",
+        "SFA 94"
+      ],
+      "limitless": {
+        "id": 34253,
+        "url": "https://limitlesstcg.com/cards/SFA/86"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/86.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/86_hires.png"
+      }
+    },
+    {
+      "number": "87/64",
+      "localId": "87",
+      "name": "Colress's Tenacity",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Search your deck for a Stadium card and an Energy card, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "hncl",
+      "secret": true,
+      "deckCode": "SFA 87",
+      "printGroup": [
+        "SFA 57",
+        "SFA 87"
+      ],
+      "limitless": {
+        "id": 34254,
+        "url": "https://limitlesstcg.com/cards/SFA/87"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/87.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/87_hires.png"
+      }
+    },
+    {
+      "number": "88/64",
+      "localId": "88",
+      "name": "Janine's Secret Art",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Choose up to 2 of your Darkness Pokémon. For each of those Pokémon, search your deck for a Basic Darkness Energy card and attach it to that Pokémon. Then, shuffle your deck. If you attached Energy to your Active Pokémon in this way, it is now Poisoned.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "Taira Akitsu",
+      "secret": true,
+      "deckCode": "SFA 88",
+      "printGroup": [
+        "PRE 112",
+        "PRE 173",
+        "SFA 59",
+        "SFA 88"
+      ],
+      "limitless": {
+        "id": 34255,
+        "url": "https://limitlesstcg.com/cards/SFA/88"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/88.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/88_hires.png"
+      }
+    },
+    {
+      "number": "89/64",
+      "localId": "89",
+      "name": "Xerosic's Machinations",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent discards cards from their hand until they have 3 cards in their hand.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Ultra Rare",
+      "artist": "GOSSAN",
+      "secret": true,
+      "deckCode": "SFA 89",
+      "printGroup": [
+        "SFA 64",
+        "SFA 89"
+      ],
+      "limitless": {
+        "id": 34256,
+        "url": "https://limitlesstcg.com/cards/SFA/89"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/89.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/89_hires.png"
+      }
+    },
+    {
+      "number": "90/64",
+      "localId": "90",
+      "name": "Okidogi ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Poisonous Musculature",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Darkness Energy cards and attach them to this Pokémon. Then, shuffle your deck. If you attached Energy to a Pokémon in this way, this Pokémon is now Poisoned."
+        },
+        {
+          "name": "Chain-Crazed",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130+",
+          "text": "If this Pokémon is Poisoned, this attack does 130 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Special Illustration Rare",
+      "artist": "kantaro",
+      "secret": true,
+      "deckCode": "SFA 90",
+      "printGroup": [
+        "SFA 36",
+        "SFA 82",
+        "SFA 90"
+      ],
+      "limitless": {
+        "id": 34257,
+        "url": "https://limitlesstcg.com/cards/SFA/90"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/90.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/90_hires.png"
+      }
+    },
+    {
+      "number": "91/64",
+      "localId": "91",
+      "name": "Munkidori ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Oh No You Don't",
+          "text": "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, and if you have any Pecharunt ex in play, your opponent takes 1 fewer Prize card.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dirty Headbutt",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "190",
+          "text": "During your next turn, this Pokémon can't use Dirty Headbutt."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Special Illustration Rare",
+      "artist": "kantaro",
+      "secret": true,
+      "deckCode": "SFA 91",
+      "printGroup": [
+        "SFA 37",
+        "SFA 83",
+        "SFA 91"
+      ],
+      "limitless": {
+        "id": 34258,
+        "url": "https://limitlesstcg.com/cards/SFA/91"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/91.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/91_hires.png"
+      }
+    },
+    {
+      "number": "92/64",
+      "localId": "92",
+      "name": "Fezandipiti ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Flip the Script",
+          "text": "Once during your turn, if any of your Pokémon were Knocked Out during your opponent's last turn, you may draw 3 cards. You can't use more than 1 Flip the Script Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Cruel Arrow",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 100 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Special Illustration Rare",
+      "artist": "kantaro",
+      "secret": true,
+      "deckCode": "SFA 92",
+      "printGroup": [
+        "ASC 142",
+        "ASC 288",
+        "SFA 38",
+        "SFA 84",
+        "SFA 92"
+      ],
+      "limitless": {
+        "id": 34259,
+        "url": "https://limitlesstcg.com/cards/SFA/92"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/92.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/92_hires.png"
+      }
+    },
+    {
+      "number": "93/64",
+      "localId": "93",
+      "name": "Pecharunt ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Subjugating Chains",
+          "text": "Once during your turn, you may switch 1 of your Benched Darkness Pokémon, except any Pecharunt ex, with your Active Pokémon. If you do, the new Active Pokémon is now Poisoned. You can't use more than 1 Subjugating Chains Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Irritated Outburst",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "This attack does 60 damage for each Prize card your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Special Illustration Rare",
+      "artist": "kantaro",
+      "secret": true,
+      "deckCode": "SFA 93",
+      "printGroup": [
+        "PRE 163",
+        "SFA 39",
+        "SFA 85",
+        "SFA 93",
+        "SFA 95"
+      ],
+      "limitless": {
+        "id": 34260,
+        "url": "https://limitlesstcg.com/cards/SFA/93"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/93.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/93_hires.png"
+      }
+    },
+    {
+      "number": "94/64",
+      "localId": "94",
+      "name": "Cassiopeia",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can use this card only when it is the last card in your hand.  Search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Special Illustration Rare",
+      "artist": "burari",
+      "secret": true,
+      "deckCode": "SFA 94",
+      "printGroup": [
+        "SFA 56",
+        "SFA 86",
+        "SFA 94"
+      ],
+      "limitless": {
+        "id": 34261,
+        "url": "https://limitlesstcg.com/cards/SFA/94"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/94.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/94_hires.png"
+      }
+    },
+    {
+      "number": "95/64",
+      "localId": "95",
+      "name": "Pecharunt ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Subjugating Chains",
+          "text": "Once during your turn, you may switch 1 of your Benched Darkness Pokémon, except any Pecharunt ex, with your Active Pokémon. If you do, the new Active Pokémon is now Poisoned. You can't use more than 1 Subjugating Chains Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Irritated Outburst",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "This attack does 60 damage for each Prize card your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Hyper Rare",
+      "artist": "aky CG Works",
+      "secret": true,
+      "deckCode": "SFA 95",
+      "printGroup": [
+        "PRE 163",
+        "SFA 39",
+        "SFA 85",
+        "SFA 93",
+        "SFA 95"
+      ],
+      "limitless": {
+        "id": 34262,
+        "url": "https://limitlesstcg.com/cards/SFA/95"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/95.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/95_hires.png"
+      }
+    },
+    {
+      "number": "96/64",
+      "localId": "96",
+      "name": "Earthen Vessel",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item",
+        "Ancient"
+      ],
+      "rules": [
+        "You can use this card only if you discard another card from your hand.  Search your deck for up to 2 Basic Energy cards, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "G",
+      "rarity": "Hyper Rare",
+      "artist": "AYUMI ODASHIMA",
+      "secret": true,
+      "deckCode": "SFA 96",
+      "printGroup": [
+        "PAR 163",
+        "PRE 106",
+        "SFA 96"
+      ],
+      "limitless": {
+        "id": 34263,
+        "url": "https://limitlesstcg.com/cards/SFA/96"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/96.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/96_hires.png"
+      }
+    },
+    {
+      "number": "97/64",
+      "localId": "97",
+      "name": "Powerglass",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "At the end of your turn (after your attack), if the Pokémon this card is attached to is in the Active Spot, you may attach a Basic Energy card from your discard pile to it.",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Hyper Rare",
+      "artist": "Studio Bora Inc.",
+      "secret": true,
+      "deckCode": "SFA 97",
+      "printGroup": [
+        "SFA 63",
+        "SFA 97"
+      ],
+      "limitless": {
+        "id": 34264,
+        "url": "https://limitlesstcg.com/cards/SFA/97"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/97.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/97_hires.png"
+      }
+    },
+    {
+      "number": "98/64",
+      "localId": "98",
+      "name": "Basic Darkness Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Hyper Rare",
+      "artist": null,
+      "secret": true,
+      "deckCode": "SFA 98",
+      "printGroup": [
+        "BLW 111",
+        "BRS D",
+        "BUS 168",
+        "CL 94",
+        "CRZ 158",
+        "DP 129",
+        "EVO 97",
+        "EVS 236",
+        "GEN 81",
+        "HS 121",
+        "MEE 7",
+        "SFA 98",
+        "SSH D",
+        "SUM D",
+        "SVE 7",
+        "SVE 15",
+        "SVE 23",
+        "TEU D",
+        "XY 138"
+      ],
+      "limitless": {
+        "id": 34265,
+        "url": "https://limitlesstcg.com/cards/SFA/98"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/98.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/98_hires.png"
+      }
+    },
+    {
+      "number": "99/64",
+      "localId": "99",
+      "name": "Basic Metal Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Hyper Rare",
+      "artist": null,
+      "secret": true,
+      "deckCode": "SFA 99",
+      "printGroup": [
+        "BLW 112",
+        "BRS M",
+        "CL 95",
+        "CRZ 159",
+        "DP 130",
+        "EVO 98",
+        "EVS 237",
+        "GEN 82",
+        "HS 122",
+        "MEE 8",
+        "SFA 99",
+        "SSH M",
+        "SUM 163",
+        "SUM M",
+        "SVE 8",
+        "SVE 16",
+        "SVE 24",
+        "TEU M",
+        "XY 139"
+      ],
+      "limitless": {
+        "id": 34266,
+        "url": "https://limitlesstcg.com/cards/SFA/99"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sv6pt5/99.png",
+        "large": "https://images.pokemontcg.io/sv6pt5/99_hires.png"
+      }
+    }
+  ]
+}
