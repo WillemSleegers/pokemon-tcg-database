@@ -23,10 +23,13 @@ async function load() {
 // Bulbapedia's actual page title doesn't ("Nidoran♀ (Pokémon)") — the
 // spaced form just redirects to it, and raw-wikitext fetches don't follow
 // redirects, so the space has to go before the lookup.
+// Rotom's appliance forms (e.g. "Heat Rotom", "Wash Rotom") share the base
+// "Rotom (Pokémon)" page too, same as regional forms above.
 function speciesName(cardName) {
   return cardName
     .replace(/^.*'s\s+/, '')
     .replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, '')
+    .replace(/^(Heat|Wash|Frost|Fan|Mow)\s+(?=Rotom)/, '')
     .replace(/\s+([♀♂])/, '$1')
 }
 

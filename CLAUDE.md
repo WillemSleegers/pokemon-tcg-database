@@ -37,7 +37,13 @@ PAR.json` overlay), while Mienfoo and Whismur were confirmed correct as printed 
 they just don't match Bulbapedia's own wording for that game version (Mienfoo's
 printed "flurry of graceful attacks" vs. Bulbapedia's Shield entry "flurry of
 attacks"; Whismur's printed "it's exhausted" vs. a typo, "its exhausted", in
-Bulbapedia's own Shield entry).
+Bulbapedia's own Shield entry). `data/sets/PAF.json` (Paldean Fates, 245 cards) is
+also complete — its verification sweep flagged four cards: Magmortar and both
+Revavroom prints had the same line-wrap em-dash bug as PAR's Bounsweet (a stray space
+after the dash where the card wraps a line right at it — e.g. "environment— it"
+instead of "environment—it"), confirmed against the card images and fixed via the
+`data/flavor-text/PAF.json` overlay; Heat Rotom was a lookup bug, not a text error
+(see "Regional forms and Bulbapedia lookups" below).
 
 ## Schema
 
@@ -207,6 +213,11 @@ unmatched despite correct, verified text. Fixed by stripping the space before `�
 in `speciesName()` (both the shared `scripts/lib/bulbapedia.mjs` copy and the
 `client.js` duplicate).
 
+Same category again, found while verifying PAF: `"Heat Rotom"` has no separate
+Bulbapedia page — its Dex entries live on the base `Rotom (Pokémon)` page, same as
+regional forms. Fixed by stripping `Heat|Wash|Frost|Fan|Mow` prefixes before `Rotom`
+in both `speciesName()` copies.
+
 ## Bulk flavor text via cropped images
 
 For sets with no structured flavor-text source at all (any Mega Evolution set;
@@ -303,11 +314,11 @@ npm run typecheck
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
-Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), and PAR (sv4).
-Remaining SV sets with confirmed flavor-text coverage in pokemon-tcg-data (fetch +
-verify only, no crop workflow needed): Paldean Fates (sv4pt5/PAF), Temporal Forces
-(sv5/TEF), Twilight Masquerade (sv6/TWM) — in that order. After that, the backlog
-needs the crop workflow instead,
+Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), and PAF
+(sv4pt5). Remaining SV sets with confirmed flavor-text coverage in pokemon-tcg-data
+(fetch + verify only, no crop workflow needed): Temporal Forces (sv5/TEF), Twilight
+Masquerade (sv6/TWM) — in that order. After that, the backlog needs the crop workflow
+instead,
 since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
 "Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
 Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
