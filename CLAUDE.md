@@ -43,7 +43,11 @@ Revavroom prints had the same line-wrap em-dash bug as PAR's Bounsweet (a stray 
 after the dash where the card wraps a line right at it — e.g. "environment— it"
 instead of "environment—it"), confirmed against the card images and fixed via the
 `data/flavor-text/PAF.json` overlay; Heat Rotom was a lookup bug, not a text error
-(see "Regional forms and Bulbapedia lookups" below).
+(see "Regional forms and Bulbapedia lookups" below). `data/sets/TEF.json` (Temporal
+Forces, 218 cards) is also complete — its verification sweep flagged one card,
+Sharpedo, whose printed text ("the scent of prey") drops an "its" present in
+Bulbapedia's closest-matching (Sword) entry ("the scent of its prey"); confirmed
+correct as printed against the card image, no fix needed.
 
 ## Schema
 
@@ -314,11 +318,10 @@ npm run typecheck
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
-Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), and PAF
-(sv4pt5). Remaining SV sets with confirmed flavor-text coverage in pokemon-tcg-data
-(fetch + verify only, no crop workflow needed): Temporal Forces (sv5/TEF), Twilight
-Masquerade (sv6/TWM) — in that order. After that, the backlog needs the crop workflow
-instead,
+Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), MEW (sv3pt5), PAR (sv4), PAF
+(sv4pt5), and TEF (sv5). Remaining SV sets with confirmed flavor-text coverage in
+pokemon-tcg-data (fetch + verify only, no crop workflow needed): Twilight Masquerade
+(sv6/TWM). After that, the backlog needs the crop workflow instead,
 since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
 "Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
 Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
