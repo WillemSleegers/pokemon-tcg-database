@@ -9,8 +9,15 @@
 // Regional forms (e.g. "Paldean Wooper", "Paldean Tauros") share their base
 // species' Bulbapedia page too — its Dex/EntryN templates cover every form,
 // not just the base one — so strip those prefixes as well.
+// Nidoran ♀/♂'s card name has a space before the gender symbol, but
+// Bulbapedia's actual page title doesn't ("Nidoran♀ (Pokémon)") — the
+// spaced form just redirects to it, and raw-wikitext fetches don't follow
+// redirects, so the space has to go before the lookup.
 export function speciesName(cardName) {
-  return cardName.replace(/^.*'s\s+/, "").replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, "")
+  return cardName
+    .replace(/^.*'s\s+/, "")
+    .replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, "")
+    .replace(/\s+([♀♂])/, "$1")
 }
 
 // Bulbapedia's wikitext and pokemon-tcg-data's own flavorText disagree on

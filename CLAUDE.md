@@ -25,7 +25,10 @@ errors in pokemon-tcg-data's `flavorText` (Chandelure missing spaces around an e
 dash, Frogadier using the wrong unit — "600 metres" instead of the card's actual
 "2,000 feet" — and the same Flamigo "extra the" error PAL had, on its OBF reprint),
 each confirmed against the actual card image and fixed via the `data/flavor-text/
-OBF.json` overlay.
+OBF.json` overlay. `data/sets/MEW.json` (151, 207 cards) is also complete — its
+verification sweep initially flagged Nidoran ♀ and Nidoran ♂ as unmatched, but both
+turned out to have correct flavor text; the real bug was in the Bulbapedia
+species-name lookup (see "Regional forms and Bulbapedia lookups" below).
 
 ## Schema
 
@@ -186,6 +189,15 @@ case. `parseDexEntries` doesn't filter by form — it returns every entry on the
 regardless of which form it belongs to — so this relies on no other form on that same
 page happening to have identical flavor text, which hasn't been an issue so far.
 
+Same category of bug, found while verifying MEW: card names `"Nidoran ♀"` /
+`"Nidoran ♂"` have a space before the gender symbol, but Bulbapedia's actual page
+titles don't (`Nidoran♀ (Pokémon)`) — the spaced title exists only as a redirect
+stub (`#REDIRECT [[Nidoran♀ (Pokémon)]]`), and the raw-wikitext fetch doesn't follow
+redirects, so it returned zero `Dex/EntryN` templates and both cards were flagged as
+unmatched despite correct, verified text. Fixed by stripping the space before `♀`/`♂`
+in `speciesName()` (both the shared `scripts/lib/bulbapedia.mjs` copy and the
+`client.js` duplicate).
+
 ## Bulk flavor text via cropped images
 
 For sets with no structured flavor-text source at all (any Mega Evolution set;
@@ -282,11 +294,11 @@ npm run typecheck
 
 Find `ptcgDataSetId` from pokemon-tcg-data's `sets/en.json` (its `id` field). The
 entire Mega Evolution series (MEG, PFL, ASC, POR, CRI, PBL) is done, plus
-Scarlet & Violet's SVI, SVE, PAL (sv2), and OBF (sv3). Remaining SV sets with
-confirmed flavor-text coverage in pokemon-tcg-data (fetch + verify only, no crop
-workflow needed): 151 (sv3pt5/MEW), Paradox Rift (sv4/PAR), Paldean Fates
-(sv4pt5/PAF), Temporal Forces (sv5/TEF), Twilight Masquerade (sv6/TWM) — in that
-order. After that, the backlog needs the crop workflow instead,
+Scarlet & Violet's SVI, SVE, PAL (sv2), OBF (sv3), and MEW (sv3pt5). Remaining SV sets
+with confirmed flavor-text coverage in pokemon-tcg-data (fetch + verify only, no crop
+workflow needed): Paradox Rift (sv4/PAR), Paldean Fates (sv4pt5/PAF), Temporal Forces
+(sv5/TEF), Twilight Masquerade (sv6/TWM) — in that order. After that, the backlog
+needs the crop workflow instead,
 since these are confirmed to have zero flavor-text coverage in pokemon-tcg-data (see
 "Scarlet & Violet: check per-set, don't assume" above): Shrouded Fable (sv6pt5),
 Stellar Crown (sv7), Surging Sparks (sv8), Prismatic Evolutions (sv8pt5), Journey
