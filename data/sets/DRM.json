@@ -1,0 +1,4964 @@
+{
+  "set": {
+    "code": "DRM",
+    "ptcgDataId": "sm75",
+    "name": "Dragon Majesty",
+    "series": "Sun & Moon",
+    "printedTotal": 70,
+    "secretTotal": 10,
+    "total": 80,
+    "releaseDate": "2018-09-07",
+    "copyright": "©2018 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/sm75/symbol.png",
+      "logo": "https://images.pokemontcg.io/sm75/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/70",
+      "localId": "1",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Fire Fang",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "tetsuya koizumi",
+      "pokedex": {
+        "number": 4,
+        "genus": "Lizard Pokémon",
+        "height": "2'0\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+      "secret": false,
+      "deckCode": "DRM 1",
+      "printGroup": [
+        "DRM 1",
+        "HIF SV6"
+      ],
+      "limitless": {
+        "id": 4556,
+        "url": "https://limitlesstcg.com/cards/DRM/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/1.png",
+        "large": "https://images.pokemontcg.io/sm75/1_hires.png"
+      }
+    },
+    {
+      "number": "02/70",
+      "localId": "2",
+      "name": "Charmeleon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Charmander",
+      "evolvesTo": [
+        "Charizard"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Burning Fighter",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may discard the top 5 cards of your deck. If any of those cards are Fire Energy cards, attach them to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kodama",
+      "pokedex": {
+        "number": 5,
+        "genus": "Flame Pokémon",
+        "height": "3'7\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "When it swings its burning tail, it elevates the air temperature to unbearably high levels.",
+      "secret": false,
+      "deckCode": "DRM 2",
+      "printGroup": [
+        "DRM 2",
+        "HIF SV7"
+      ],
+      "limitless": {
+        "id": 4557,
+        "url": "https://limitlesstcg.com/cards/DRM/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/2.png",
+        "large": "https://images.pokemontcg.io/sm75/2_hires.png"
+      }
+    },
+    {
+      "number": "03/70",
+      "localId": "3",
+      "name": "Charizard",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Charmeleon",
+      "types": [
+        "Fire"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Resolute Flame",
+          "text": "This Pokémon's attacks do 30 more damage to your opponent's Active Pokémon for each of their Pokémon-GX and Pokémon-EX in play.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Fiery Blast",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ryota Murayama",
+      "pokedex": {
+        "number": 6,
+        "genus": "Flame Pokémon",
+        "height": "5'7\"",
+        "weight": "199.5 lbs"
+      },
+      "flavorText": "Its wings can carry this Pokémon close to an altitude of 4,600 feet. It blows out fire at very high temperatures.",
+      "secret": false,
+      "deckCode": "DRM 3",
+      "printGroup": [
+        "DRM 3"
+      ],
+      "limitless": {
+        "id": 4558,
+        "url": "https://limitlesstcg.com/cards/DRM/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/3.png",
+        "large": "https://images.pokemontcg.io/sm75/3_hires.png"
+      }
+    },
+    {
+      "number": "04/70",
+      "localId": "4",
+      "name": "Torchic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Combusken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Singe",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 255,
+        "genus": "Chick Pokémon",
+        "height": "1'4\"",
+        "weight": "5.5 lbs"
+      },
+      "flavorText": "A fire burns inside, so it feels very warm to hug. It launches fireballs of 1,800 degrees Fahrenheit.",
+      "secret": false,
+      "deckCode": "DRM 4",
+      "printGroup": [
+        "DRM 4"
+      ],
+      "limitless": {
+        "id": 4559,
+        "url": "https://limitlesstcg.com/cards/DRM/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/4.png",
+        "large": "https://images.pokemontcg.io/sm75/4_hires.png"
+      }
+    },
+    {
+      "number": "05/70",
+      "localId": "5",
+      "name": "Combusken",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Torchic",
+      "evolvesTo": [
+        "Blaziken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Natural Cure",
+          "text": "Whenever you attach an Energy card from your hand to this Pokémon, remove all Special Conditions from it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Lunge",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 256,
+        "genus": "Young Fowl Pokémon",
+        "height": "2'11\"",
+        "weight": "43.0 lbs"
+      },
+      "flavorText": "During a battle, the hot flame in its body increases. Its kicks have outstanding destructive power.",
+      "secret": false,
+      "deckCode": "DRM 5",
+      "printGroup": [
+        "DRM 5"
+      ],
+      "limitless": {
+        "id": 4560,
+        "url": "https://limitlesstcg.com/cards/DRM/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/5.png",
+        "large": "https://images.pokemontcg.io/sm75/5_hires.png"
+      }
+    },
+    {
+      "number": "06/70",
+      "localId": "6",
+      "name": "Blaziken",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Combusken",
+      "types": [
+        "Fire"
+      ],
+      "hp": 150,
+      "abilities": [
+        {
+          "name": "Firestarter",
+          "text": "Once during your turn (before your attack), you may attach a Fire Energy card from your discard pile to 1 of your Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Fire Stream",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard a Fire Energy from this Pokémon. This attack does 20 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 257,
+        "genus": "Blaze Pokémon",
+        "height": "6'3\"",
+        "weight": "114.6 lbs"
+      },
+      "flavorText": "When facing a tough foe, it looses flames from its wrists. Its powerful legs let it jump clear over buildings.",
+      "secret": false,
+      "deckCode": "DRM 6",
+      "printGroup": [
+        "DRM 6"
+      ],
+      "limitless": {
+        "id": 4561,
+        "url": "https://limitlesstcg.com/cards/DRM/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/6.png",
+        "large": "https://images.pokemontcg.io/sm75/6_hires.png"
+      }
+    },
+    {
+      "number": "07/70",
+      "localId": "7",
+      "name": "Victini ◇",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Prism Star"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 90,
+      "rules": [
+        "◇ (Prism Star) Rule: You can't have more than 1 ◇ card with the same name in your deck. If a ◇ card would go to the discard pile, put it in the Lost Zone instead."
+      ],
+      "attacks": [
+        {
+          "name": "Infinity",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "This attack does 20 damage for each basic Energy card in your discard pile. Then, shuffle those cards into your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Prism Star",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 494,
+        "genus": "Victory Pokémon",
+        "height": "1'4\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "When it shares the infinite energy it creates, that being's entire body will be overflowing with power.",
+      "secret": false,
+      "deckCode": "DRM 7",
+      "printGroup": [
+        "DRM 7"
+      ],
+      "limitless": {
+        "id": 4562,
+        "url": "https://limitlesstcg.com/cards/DRM/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/7.png",
+        "large": "https://images.pokemontcg.io/sm75/7_hires.png"
+      }
+    },
+    {
+      "number": "08/70",
+      "localId": "8",
+      "name": "Darumaka",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Darmanitan"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Damage Rush",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 554,
+        "genus": "Zen Charm Pokémon",
+        "height": "2'0\"",
+        "weight": "82.7 lbs"
+      },
+      "flavorText": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100 degrees Fahrenheit.",
+      "secret": false,
+      "deckCode": "DRM 8",
+      "printGroup": [
+        "DRM 8"
+      ],
+      "limitless": {
+        "id": 4563,
+        "url": "https://limitlesstcg.com/cards/DRM/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/8.png",
+        "large": "https://images.pokemontcg.io/sm75/8_hires.png"
+      }
+    },
+    {
+      "number": "09/70",
+      "localId": "9",
+      "name": "Darmanitan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Darumaka",
+      "types": [
+        "Fire"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Heat Assist",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach up to 3 Fire Energy cards from your hand to your Pokémon in any way you like."
+        },
+        {
+          "name": "Darmani-Hands",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Flip 4 coins. This attack does 50 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 555,
+        "genus": "Blazing Pokémon",
+        "height": "4'3\"",
+        "weight": "204.8 lbs"
+      },
+      "flavorText": "Its internal fire burns at 2,500 degrees Fahrenheit, making enough power that it can destroy a dump truck with one punch.",
+      "secret": false,
+      "deckCode": "DRM 9",
+      "printGroup": [
+        "DRM 9"
+      ],
+      "limitless": {
+        "id": 4564,
+        "url": "https://limitlesstcg.com/cards/DRM/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/9.png",
+        "large": "https://images.pokemontcg.io/sm75/9_hires.png"
+      }
+    },
+    {
+      "number": "10/70",
+      "localId": "10",
+      "name": "Heatmor",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Singe",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        },
+        {
+          "name": "Charring Breath",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "If your opponent's Active Pokémon isn't Burned, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 631,
+        "genus": "Anteater Pokémon",
+        "height": "4'7\"",
+        "weight": "127.9 lbs"
+      },
+      "flavorText": "It draws in air through its tail, transforms it into fire, and uses it like a tongue. It melts Durant and eats them.",
+      "secret": false,
+      "deckCode": "DRM 10",
+      "printGroup": [
+        "DRM 10"
+      ],
+      "limitless": {
+        "id": 4565,
+        "url": "https://limitlesstcg.com/cards/DRM/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/10.png",
+        "large": "https://images.pokemontcg.io/sm75/10_hires.png"
+      }
+    },
+    {
+      "number": "11/70",
+      "localId": "11",
+      "name": "Reshiram-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Flame Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Fire Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Scorching Column",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "110",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        },
+        {
+          "name": "Vermilion-GX",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "180",
+          "text": "You may attach up to 5 Fire Energy cards from your hand to your Pokémon in any way you like. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "PLANETA Otani",
+      "secret": false,
+      "deckCode": "DRM 11",
+      "printGroup": [
+        "DRM 11",
+        "DRM 65",
+        "DRM 71",
+        "HIF SV51",
+        "SMP 137"
+      ],
+      "limitless": {
+        "id": 4566,
+        "url": "https://limitlesstcg.com/cards/DRM/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/11.png",
+        "large": "https://images.pokemontcg.io/sm75/11_hires.png"
+      }
+    },
+    {
+      "number": "12/70",
+      "localId": "12",
+      "name": "Litten",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Torracat"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ryota Murayama",
+      "pokedex": {
+        "number": 725,
+        "genus": "Fire Cat Pokémon",
+        "height": "1'4\"",
+        "weight": "9.5 lbs"
+      },
+      "flavorText": "While grooming itself, it builds up fur inside its stomach. It sets the fur alight and spews fiery attacks, which change based on how it coughs.",
+      "secret": false,
+      "deckCode": "DRM 12",
+      "printGroup": [
+        "DRM 12"
+      ],
+      "limitless": {
+        "id": 4567,
+        "url": "https://limitlesstcg.com/cards/DRM/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/12.png",
+        "large": "https://images.pokemontcg.io/sm75/12_hires.png"
+      }
+    },
+    {
+      "number": "13/70",
+      "localId": "13",
+      "name": "Salandit",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Salazzle"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Dig Claws",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 757,
+        "genus": "Toxic Lizard Pokémon",
+        "height": "2'0\"",
+        "weight": "10.6 lbs"
+      },
+      "flavorText": "Volcanoes or dry, craggy places are its home. It emanates a sweet-smelling poisonous gas that attracts bug Pokémon, then attacks them.",
+      "secret": false,
+      "deckCode": "DRM 13",
+      "printGroup": [
+        "DRM 13"
+      ],
+      "limitless": {
+        "id": 4568,
+        "url": "https://limitlesstcg.com/cards/DRM/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/13.png",
+        "large": "https://images.pokemontcg.io/sm75/13_hires.png"
+      }
+    },
+    {
+      "number": "14/70",
+      "localId": "14",
+      "name": "Salazzle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Salandit",
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Ring of Fire",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Burned. It can't retreat during your opponent's next turn."
+        },
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 758,
+        "genus": "Toxic Lizard Pokémon",
+        "height": "3'11\"",
+        "weight": "48.9 lbs"
+      },
+      "flavorText": "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes.",
+      "secret": false,
+      "deckCode": "DRM 14",
+      "printGroup": [
+        "DRM 14"
+      ],
+      "limitless": {
+        "id": 4569,
+        "url": "https://limitlesstcg.com/cards/DRM/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/14.png",
+        "large": "https://images.pokemontcg.io/sm75/14_hires.png"
+      }
+    },
+    {
+      "number": "15/70",
+      "localId": "15",
+      "name": "Horsea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Seadra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Splatter",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yukiko Baba",
+      "pokedex": {
+        "number": 116,
+        "genus": "Dragon Pokémon",
+        "height": "1'4\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "It makes its nest in the shade of corals. If it senses danger, it spits murky ink and flees.",
+      "secret": false,
+      "deckCode": "DRM 15",
+      "printGroup": [
+        "DRM 15"
+      ],
+      "limitless": {
+        "id": 4570,
+        "url": "https://limitlesstcg.com/cards/DRM/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/15.png",
+        "large": "https://images.pokemontcg.io/sm75/15_hires.png"
+      }
+    },
+    {
+      "number": "16/70",
+      "localId": "16",
+      "name": "Horsea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Seadra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "This attack does 10 more damage times the amount of Water Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 116,
+        "genus": "Dragon Pokémon",
+        "height": "1'4\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "It makes its nest in the shade of corals. If it senses danger, it spits murky ink and flees.",
+      "secret": false,
+      "deckCode": "DRM 16",
+      "printGroup": [
+        "DRM 16"
+      ],
+      "limitless": {
+        "id": 4571,
+        "url": "https://limitlesstcg.com/cards/DRM/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/16.png",
+        "large": "https://images.pokemontcg.io/sm75/16_hires.png"
+      }
+    },
+    {
+      "number": "17/70",
+      "localId": "17",
+      "name": "Seadra",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Horsea",
+      "evolvesTo": [
+        "Kingdra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "This attack does 20 more damage times the amount of Water Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yumi",
+      "pokedex": {
+        "number": 117,
+        "genus": "Dragon Pokémon",
+        "height": "3'11\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "It is capable of swimming backwards by rapidly flapping its winglike pectoral fins and stout tail.",
+      "secret": false,
+      "deckCode": "DRM 17",
+      "printGroup": [
+        "DRM 17"
+      ],
+      "limitless": {
+        "id": 4572,
+        "url": "https://limitlesstcg.com/cards/DRM/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/17.png",
+        "large": "https://images.pokemontcg.io/sm75/17_hires.png"
+      }
+    },
+    {
+      "number": "18/70",
+      "localId": "18",
+      "name": "Kingdra-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Seadra",
+      "types": [
+        "Water"
+      ],
+      "hp": 230,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "This attack does 50 more damage times the amount of Water Energy attached to this Pokémon."
+        },
+        {
+          "name": "Reverse Thrust",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Maelstrom-GX",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 40 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 18",
+      "printGroup": [
+        "DRM 18",
+        "DRM 66",
+        "SMP 155"
+      ],
+      "limitless": {
+        "id": 4573,
+        "url": "https://limitlesstcg.com/cards/DRM/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/18.png",
+        "large": "https://images.pokemontcg.io/sm75/18_hires.png"
+      }
+    },
+    {
+      "number": "19/70",
+      "localId": "19",
+      "name": "Magikarp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gyarados"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 30,
+      "attacks": [
+        {
+          "name": "Water Splash",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sekio",
+      "pokedex": {
+        "number": 129,
+        "genus": "Fish Pokémon",
+        "height": "2'11\"",
+        "weight": "22.0 lbs"
+      },
+      "flavorText": "Its reckless leaps make it easy pickings for predators. On the bright side, many Pokémon enjoy longer life spans, thanks to Magikarp.",
+      "secret": false,
+      "deckCode": "DRM 19",
+      "printGroup": [
+        "DRM 19"
+      ],
+      "limitless": {
+        "id": 4574,
+        "url": "https://limitlesstcg.com/cards/DRM/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/19.png",
+        "large": "https://images.pokemontcg.io/sm75/19_hires.png"
+      }
+    },
+    {
+      "number": "20/70",
+      "localId": "20",
+      "name": "Gyarados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Magikarp",
+      "types": [
+        "Water"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Commotion",
+          "text": "If this Pokémon is your Active Pokémon and is damaged by an opponent's attack (even if this Pokémon is Knocked Out), put 2 damage counters on each of your Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Wild Tail",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160",
+          "text": "You may discard any Stadium card in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 130,
+        "genus": "Atrocious Pokémon",
+        "height": "21'4\"",
+        "weight": "518.1 lbs"
+      },
+      "flavorText": "There are people who swear that any place Gyarados appears is fated for destruction.",
+      "secret": false,
+      "deckCode": "DRM 20",
+      "printGroup": [
+        "DRM 20"
+      ],
+      "limitless": {
+        "id": 4575,
+        "url": "https://limitlesstcg.com/cards/DRM/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/20.png",
+        "large": "https://images.pokemontcg.io/sm75/20_hires.png"
+      }
+    },
+    {
+      "number": "21/70",
+      "localId": "21",
+      "name": "Lapras",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Aqua Bullet",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This attack does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70+",
+          "text": "This attack does 10 more damage times the amount of Water Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 131,
+        "genus": "Transport Pokémon",
+        "height": "8'2\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "These Pokémon were once near extinction due to poaching. Following protective regulations, there is now an overabundance of them.",
+      "secret": false,
+      "deckCode": "DRM 21",
+      "printGroup": [
+        "DRM 21"
+      ],
+      "limitless": {
+        "id": 4576,
+        "url": "https://limitlesstcg.com/cards/DRM/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/21.png",
+        "large": "https://images.pokemontcg.io/sm75/21_hires.png"
+      }
+    },
+    {
+      "number": "22/70",
+      "localId": "22",
+      "name": "Totodile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Croconaw"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Leer",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hironobu Yoshida",
+      "pokedex": {
+        "number": 158,
+        "genus": "Big Jaw Pokémon",
+        "height": "2'0\"",
+        "weight": "20.9 lbs"
+      },
+      "flavorText": "Its powerful, well-developed jaws are capable of crushing anything. Even its Trainer must be careful.",
+      "secret": false,
+      "deckCode": "DRM 22",
+      "printGroup": [
+        "DRM 22"
+      ],
+      "limitless": {
+        "id": 4577,
+        "url": "https://limitlesstcg.com/cards/DRM/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/22.png",
+        "large": "https://images.pokemontcg.io/sm75/22_hires.png"
+      }
+    },
+    {
+      "number": "23/70",
+      "localId": "23",
+      "name": "Croconaw",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Totodile",
+      "evolvesTo": [
+        "Feraligatr"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Sweep Away",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard the top 3 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 159,
+        "genus": "Big Jaw Pokémon",
+        "height": "3'7\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "Once it bites down, it won't let go until it loses its fangs. New fangs quickly grow into place.",
+      "secret": false,
+      "deckCode": "DRM 23",
+      "printGroup": [
+        "DRM 23"
+      ],
+      "limitless": {
+        "id": 4578,
+        "url": "https://limitlesstcg.com/cards/DRM/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/23.png",
+        "large": "https://images.pokemontcg.io/sm75/23_hires.png"
+      }
+    },
+    {
+      "number": "24/70",
+      "localId": "24",
+      "name": "Feraligatr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Croconaw",
+      "types": [
+        "Water"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Downpour",
+          "text": "As often as you like during your turn (before your attack), you may discard a Water Energy card from your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Riptide",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 20 more damage for each Water Energy card in your discard pile. Then, shuffle those cards into your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 160,
+        "genus": "Big Jaw Pokémon",
+        "height": "7'7\"",
+        "weight": "195.8 lbs"
+      },
+      "flavorText": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.",
+      "secret": false,
+      "deckCode": "DRM 24",
+      "printGroup": [
+        "DRM 24"
+      ],
+      "limitless": {
+        "id": 4579,
+        "url": "https://limitlesstcg.com/cards/DRM/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/24.png",
+        "large": "https://images.pokemontcg.io/sm75/24_hires.png"
+      }
+    },
+    {
+      "number": "25/70",
+      "localId": "25",
+      "name": "Wooper",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Quagsire"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rain Splash",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 194,
+        "genus": "Water Fish Pokémon",
+        "height": "1'4\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "When the temperature cools in the evening, they emerge from water to seek food along the shore.",
+      "secret": false,
+      "deckCode": "DRM 25",
+      "printGroup": [
+        "DRM 25",
+        "HIF SV9"
+      ],
+      "limitless": {
+        "id": 4580,
+        "url": "https://limitlesstcg.com/cards/DRM/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/25.png",
+        "large": "https://images.pokemontcg.io/sm75/25_hires.png"
+      }
+    },
+    {
+      "number": "26/70",
+      "localId": "26",
+      "name": "Quagsire",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Wooper",
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Wash Out",
+          "text": "As often as you like during your turn (before your attack), you may move a Water Energy from 1 of your Benched Pokémon to your Active Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "This attack does 20 more damage times the amount of Water Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 195,
+        "genus": "Water Fish Pokémon",
+        "height": "4'7\"",
+        "weight": "165.3 lbs"
+      },
+      "flavorText": "This carefree Pokémon has an easygoing nature. While swimming, it always bumps into boat hulls.",
+      "secret": false,
+      "deckCode": "DRM 26",
+      "printGroup": [
+        "DRM 26",
+        "HIF SV10"
+      ],
+      "limitless": {
+        "id": 4581,
+        "url": "https://limitlesstcg.com/cards/DRM/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/26.png",
+        "large": "https://images.pokemontcg.io/sm75/26_hires.png"
+      }
+    },
+    {
+      "number": "27/70",
+      "localId": "27",
+      "name": "Corsola",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cursola"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Bubble Shoot",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage times the amount of Water Energy attached to this Pokémon to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 222,
+        "genus": "Coral Pokémon",
+        "height": "2'0\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "Pursued by Mareanie for the branches on its head, this Pokémon will sometimes snap its own branches off as a diversion while it escapes.",
+      "secret": false,
+      "deckCode": "DRM 27",
+      "printGroup": [
+        "DRM 27"
+      ],
+      "limitless": {
+        "id": 4582,
+        "url": "https://limitlesstcg.com/cards/DRM/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/27.png",
+        "large": "https://images.pokemontcg.io/sm75/27_hires.png"
+      }
+    },
+    {
+      "number": "28/70",
+      "localId": "28",
+      "name": "Feebas",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Milotic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Submerge",
+          "text": "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Rain Splash",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 349,
+        "genus": "Fish Pokémon",
+        "height": "2'0\"",
+        "weight": "16.3 lbs"
+      },
+      "flavorText": "Although unattractive and unpopular, this Pokémon's marvelous vitality has made it a subject of research.",
+      "secret": false,
+      "deckCode": "DRM 28",
+      "printGroup": [
+        "DRM 28"
+      ],
+      "limitless": {
+        "id": 4583,
+        "url": "https://limitlesstcg.com/cards/DRM/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/28.png",
+        "large": "https://images.pokemontcg.io/sm75/28_hires.png"
+      }
+    },
+    {
+      "number": "29/70",
+      "localId": "29",
+      "name": "Milotic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Feebas",
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Aurora Wave",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        },
+        {
+          "name": "Aqua Split",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "This attack does 40 damage to 2 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "hatachu",
+      "pokedex": {
+        "number": 350,
+        "genus": "Tender Pokémon",
+        "height": "20'4\"",
+        "weight": "357.1 lbs"
+      },
+      "flavorText": "It lives at the bottom of clear lakes. In times of war, it shows itself, which soothes people's minds and hearts.",
+      "secret": false,
+      "deckCode": "DRM 29",
+      "printGroup": [
+        "DRM 29"
+      ],
+      "limitless": {
+        "id": 4584,
+        "url": "https://limitlesstcg.com/cards/DRM/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/29.png",
+        "large": "https://images.pokemontcg.io/sm75/29_hires.png"
+      }
+    },
+    {
+      "number": "30/70",
+      "localId": "30",
+      "name": "Phione",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Murmurs of the Sea",
+          "text": "Your Water Pokémon can't be Confused. If those Pokémon are already Confused, remove that Special Condition.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Water Pulse",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 489,
+        "genus": "Sea Drifter Pokémon",
+        "height": "1'4\"",
+        "weight": "6.8 lbs"
+      },
+      "flavorText": "It drifts in warm seas. It always returns to where it was born, no matter how far it may have drifted.",
+      "secret": false,
+      "deckCode": "DRM 30",
+      "printGroup": [
+        "DRM 30"
+      ],
+      "limitless": {
+        "id": 4585,
+        "url": "https://limitlesstcg.com/cards/DRM/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/30.png",
+        "large": "https://images.pokemontcg.io/sm75/30_hires.png"
+      }
+    },
+    {
+      "number": "31/70",
+      "localId": "31",
+      "name": "Wishiwashi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Meet Up",
+          "text": "Your Wishiwashi-GX in play get +20 HP, and their attacks do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 746,
+        "genus": "Small Fry Pokémon",
+        "height": "0'8\"",
+        "weight": "0.7 lbs"
+      },
+      "flavorText": "It's awfully weak and notably tasty, so everyone is always out to get it. As it happens, anyone trying to bully it receives a painful lesson.",
+      "secret": false,
+      "deckCode": "DRM 31",
+      "printGroup": [
+        "DRM 31"
+      ],
+      "limitless": {
+        "id": 4586,
+        "url": "https://limitlesstcg.com/cards/DRM/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/31.png",
+        "large": "https://images.pokemontcg.io/sm75/31_hires.png"
+      }
+    },
+    {
+      "number": "32/70",
+      "localId": "32",
+      "name": "Trapinch",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vibrava"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Mini Earthquake",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 328,
+        "genus": "Ant Pit Pokémon",
+        "height": "2'4\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "As it digs through the sand, its giant jaws crush any rocks that obstruct its path. It builds a funnel-shaped nest.",
+      "secret": false,
+      "deckCode": "DRM 32",
+      "printGroup": [
+        "DRM 32"
+      ],
+      "limitless": {
+        "id": 4587,
+        "url": "https://limitlesstcg.com/cards/DRM/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/32.png",
+        "large": "https://images.pokemontcg.io/sm75/32_hires.png"
+      }
+    },
+    {
+      "number": "33/70",
+      "localId": "33",
+      "name": "Hydreigon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Zweilous",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 160,
+      "abilities": [
+        {
+          "name": "Weed Out",
+          "text": "Once during your turn (before your attack), you may choose 3 of your Benched Pokémon. Then, discard your other Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dark Destruction",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "You may discard an Energy from this Pokémon. If you do, discard an Energy from your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 635,
+        "genus": "Brutal Pokémon",
+        "height": "5'11\"",
+        "weight": "352.7 lbs"
+      },
+      "flavorText": "The heads on their arms do not have brains. They use all three heads to consume and destroy everything.",
+      "secret": false,
+      "deckCode": "DRM 33",
+      "printGroup": [
+        "CIN 62",
+        "DRM 33"
+      ],
+      "limitless": {
+        "id": 4588,
+        "url": "https://limitlesstcg.com/cards/DRM/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/33.png",
+        "large": "https://images.pokemontcg.io/sm75/33_hires.png"
+      }
+    },
+    {
+      "number": "34/70",
+      "localId": "34",
+      "name": "Dratini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragonair"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Wrap",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ayaka Yoshida",
+      "pokedex": {
+        "number": 147,
+        "genus": "Dragon Pokémon",
+        "height": "5'11\"",
+        "weight": "7.3 lbs"
+      },
+      "flavorText": "After a 10-hour struggle, a fisherman was able to pull one up and confirm its existence.",
+      "secret": false,
+      "deckCode": "DRM 34",
+      "printGroup": [
+        "DRM 34"
+      ],
+      "limitless": {
+        "id": 4589,
+        "url": "https://limitlesstcg.com/cards/DRM/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/34.png",
+        "large": "https://images.pokemontcg.io/sm75/34_hires.png"
+      }
+    },
+    {
+      "number": "35/70",
+      "localId": "35",
+      "name": "Dratini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragonair"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tail Whap",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Anesaki Dynamic",
+      "pokedex": {
+        "number": 147,
+        "genus": "Dragon Pokémon",
+        "height": "5'11\"",
+        "weight": "7.3 lbs"
+      },
+      "flavorText": "After a 10-hour struggle, a fisherman was able to pull one up and confirm its existence.",
+      "secret": false,
+      "deckCode": "DRM 35",
+      "printGroup": [
+        "DRM 35"
+      ],
+      "limitless": {
+        "id": 4590,
+        "url": "https://limitlesstcg.com/cards/DRM/35"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/35.png",
+        "large": "https://images.pokemontcg.io/sm75/35_hires.png"
+      }
+    },
+    {
+      "number": "36/70",
+      "localId": "36",
+      "name": "Dragonair",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Dratini",
+      "evolvesTo": [
+        "Dragonite"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Dragon Tail",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60×",
+          "text": "Flip 2 coins. This attack does 60 damage for each heads."
+        },
+        {
+          "name": "Waterfall",
+          "cost": [
+            "Water",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "sui",
+      "pokedex": {
+        "number": 148,
+        "genus": "Dragon Pokémon",
+        "height": "13'1\"",
+        "weight": "36.4 lbs"
+      },
+      "flavorText": "From time immemorial, it has been venerated by agricultural peoples as an entity able to control the weather.",
+      "secret": false,
+      "deckCode": "DRM 36",
+      "printGroup": [
+        "DRM 36"
+      ],
+      "limitless": {
+        "id": 4591,
+        "url": "https://limitlesstcg.com/cards/DRM/36"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/36.png",
+        "large": "https://images.pokemontcg.io/sm75/36_hires.png"
+      }
+    },
+    {
+      "number": "37/70",
+      "localId": "37",
+      "name": "Dragonite-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Dragonair",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "70",
+          "text": ""
+        },
+        {
+          "name": "Giga Impact",
+          "cost": [
+            "Water",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "200",
+          "text": "This Pokémon can't attack during your next turn."
+        },
+        {
+          "name": "Dragonporter-GX",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Put 3 Dragon Pokémon from your discard pile onto your Bench. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 37",
+      "printGroup": [
+        "DRM 37",
+        "DRM 67",
+        "SMP 156"
+      ],
+      "limitless": {
+        "id": 4592,
+        "url": "https://limitlesstcg.com/cards/DRM/37"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/37.png",
+        "large": "https://images.pokemontcg.io/sm75/37_hires.png"
+      }
+    },
+    {
+      "number": "38/70",
+      "localId": "38",
+      "name": "Vibrava",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Trapinch",
+      "evolvesTo": [
+        "Flygon"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Sonic Edge",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 329,
+        "genus": "Vibration Pokémon",
+        "height": "3'7\"",
+        "weight": "33.7 lbs"
+      },
+      "flavorText": "To help make its wings grow, it dissolves quantities of prey in its digestive juices and guzzles them down every day.",
+      "secret": false,
+      "deckCode": "DRM 38",
+      "printGroup": [
+        "DRM 38"
+      ],
+      "limitless": {
+        "id": 4593,
+        "url": "https://limitlesstcg.com/cards/DRM/38"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/38.png",
+        "large": "https://images.pokemontcg.io/sm75/38_hires.png"
+      }
+    },
+    {
+      "number": "39/70",
+      "localId": "39",
+      "name": "Flygon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Vibrava",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 140,
+      "abilities": [
+        {
+          "name": "Dragon Guard",
+          "text": "Prevent all effects of your opponent's attacks, except damage, done to your Dragon Pokémon. (Existing effects are not removed.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sand Tomb",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 330,
+        "genus": "Mystic Pokémon",
+        "height": "6'7\"",
+        "weight": "180.8 lbs"
+      },
+      "flavorText": "This Pokémon hides in the heart of sandstorms it creates and seldom appears where people can see it.",
+      "secret": false,
+      "deckCode": "DRM 39",
+      "printGroup": [
+        "DRM 39"
+      ],
+      "limitless": {
+        "id": 4594,
+        "url": "https://limitlesstcg.com/cards/DRM/39"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/39.png",
+        "large": "https://images.pokemontcg.io/sm75/39_hires.png"
+      }
+    },
+    {
+      "number": "40/70",
+      "localId": "40",
+      "name": "Altaria",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Swablu",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Fight Song",
+          "text": "Your Dragon Pokémon's attacks do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kyoko Umemoto",
+      "pokedex": {
+        "number": 334,
+        "genus": "Humming Pokémon",
+        "height": "3'7\"",
+        "weight": "45.4 lbs"
+      },
+      "flavorText": "On sunny days, it flies freely through the sky and blends into the clouds. It sings in a beautiful soprano.",
+      "secret": false,
+      "deckCode": "DRM 40",
+      "printGroup": [
+        "DRM 40",
+        "DRM 40a",
+        "HIF SV37"
+      ],
+      "limitless": {
+        "id": 4595,
+        "url": "https://limitlesstcg.com/cards/DRM/40"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/40.png",
+        "large": "https://images.pokemontcg.io/sm75/40_hires.png"
+      }
+    },
+    {
+      "number": "40a",
+      "localId": "40a",
+      "name": "Altaria",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Swablu",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Fight Song",
+          "text": "Your Dragon Pokémon's attacks do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 334,
+        "genus": "Humming Pokémon",
+        "height": "3'7\"",
+        "weight": "45.4 lbs"
+      },
+      "flavorText": "On sunny days, it flies freely through the sky and blends into the clouds. It sings in a beautiful soprano.",
+      "secret": false,
+      "deckCode": "DRM 40a",
+      "printGroup": [
+        "DRM 40",
+        "DRM 40a",
+        "HIF SV37"
+      ],
+      "limitless": {
+        "id": 14543,
+        "url": "https://limitlesstcg.com/cards/DRM/40a"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/40a.png",
+        "large": "https://images.pokemontcg.io/sm75/40a_hires.png"
+      }
+    },
+    {
+      "number": "41/70",
+      "localId": "41",
+      "name": "Altaria-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Swablu",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 200,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Bright Tone",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Pokémon-GX and Pokémon-EX."
+        },
+        {
+          "name": "Sonic Edge",
+          "cost": [
+            "Water",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Euphoria-GX",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep. Heal all damage from all of your Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 41",
+      "printGroup": [
+        "DRM 41",
+        "DRM 68",
+        "DRM 72",
+        "HIF SV77"
+      ],
+      "limitless": {
+        "id": 4596,
+        "url": "https://limitlesstcg.com/cards/DRM/41"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/41.png",
+        "large": "https://images.pokemontcg.io/sm75/41_hires.png"
+      }
+    },
+    {
+      "number": "42/70",
+      "localId": "42",
+      "name": "Bagon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Shelgon"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Risky Kick",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        {
+          "name": "Dragon Eye",
+          "cost": [
+            "Fire",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 371,
+        "genus": "Rock Head Pokémon",
+        "height": "2'0\"",
+        "weight": "92.8 lbs"
+      },
+      "flavorText": "With its steel-hard stone head, it headbutts indiscriminately. This is because of the stress it feels at being unable to fly.",
+      "secret": false,
+      "deckCode": "DRM 42",
+      "printGroup": [
+        "DRM 42"
+      ],
+      "limitless": {
+        "id": 4597,
+        "url": "https://limitlesstcg.com/cards/DRM/42"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/42.png",
+        "large": "https://images.pokemontcg.io/sm75/42_hires.png"
+      }
+    },
+    {
+      "number": "43/70",
+      "localId": "43",
+      "name": "Shelgon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Bagon",
+      "evolvesTo": [
+        "Salamence"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Energy Guard",
+          "text": "If this Pokémon has any basic Energy attached to it, it takes 20 less damage from attacks (after applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Rollout",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yuka Morii",
+      "pokedex": {
+        "number": 372,
+        "genus": "Endurance Pokémon",
+        "height": "3'7\"",
+        "weight": "243.6 lbs"
+      },
+      "flavorText": "They lurk deep within caves—motionless, neither eating nor drinking. Why they don't die is not known.",
+      "secret": false,
+      "deckCode": "DRM 43",
+      "printGroup": [
+        "DRM 43"
+      ],
+      "limitless": {
+        "id": 4598,
+        "url": "https://limitlesstcg.com/cards/DRM/43"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/43.png",
+        "large": "https://images.pokemontcg.io/sm75/43_hires.png"
+      }
+    },
+    {
+      "number": "44/70",
+      "localId": "44",
+      "name": "Salamence-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Shelgon",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Dragon Lift",
+          "text": "Your Pokémon in play have no Retreat Cost, except Pokémon-GX and Pokémon-EX.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bright Flame",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "200",
+          "text": "Discard 2 Energy from this Pokémon."
+        },
+        {
+          "name": "Flame Jet-GX",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 120 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 44",
+      "printGroup": [
+        "DRM 44",
+        "DRM 73",
+        "SMP 139"
+      ],
+      "limitless": {
+        "id": 4599,
+        "url": "https://limitlesstcg.com/cards/DRM/44"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/44.png",
+        "large": "https://images.pokemontcg.io/sm75/44_hires.png"
+      }
+    },
+    {
+      "number": "45/70",
+      "localId": "45",
+      "name": "Druddigon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Rough Skin",
+          "text": "If this Pokémon is your Active Pokémon and is damaged by an opponent's attack (even if this Pokémon is Knocked Out), put 3 damage counters on the Attacking Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 621,
+        "genus": "Cave Pokémon",
+        "height": "5'3\"",
+        "weight": "306.4 lbs"
+      },
+      "flavorText": "It warms its body by absorbing sunlight with its wings. When its body temperature falls, it can no longer move.",
+      "secret": false,
+      "deckCode": "DRM 45",
+      "printGroup": [
+        "DRM 45"
+      ],
+      "limitless": {
+        "id": 4600,
+        "url": "https://limitlesstcg.com/cards/DRM/45"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/45.png",
+        "large": "https://images.pokemontcg.io/sm75/45_hires.png"
+      }
+    },
+    {
+      "number": "46/70",
+      "localId": "46",
+      "name": "Zekrom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Shred",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Bolt Strike",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "Flip a coin. If tails, this Pokémon does 50 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Hasuno",
+      "pokedex": {
+        "number": 644,
+        "genus": "Deep Black Pokémon",
+        "height": "9'6\"",
+        "weight": "760.6 lbs"
+      },
+      "flavorText": "Concealing itself in lightning clouds, it flies throughout the Unova region. It creates electricity in its tail.",
+      "secret": false,
+      "deckCode": "DRM 46",
+      "printGroup": [
+        "DRM 46"
+      ],
+      "limitless": {
+        "id": 4601,
+        "url": "https://limitlesstcg.com/cards/DRM/46"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/46.png",
+        "large": "https://images.pokemontcg.io/sm75/46_hires.png"
+      }
+    },
+    {
+      "number": "47/70",
+      "localId": "47",
+      "name": "Kyurem",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Outrage",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 10 more damage for each damage counter on this Pokémon."
+        },
+        {
+          "name": "Frost Spear",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "This attack does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "TOKIYA",
+      "pokedex": {
+        "number": 646,
+        "genus": "Boundary Pokémon",
+        "height": "9'10\"",
+        "weight": "716.5 lbs"
+      },
+      "flavorText": "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out.",
+      "secret": false,
+      "deckCode": "DRM 47",
+      "printGroup": [
+        "DRM 47",
+        "SMP 142"
+      ],
+      "limitless": {
+        "id": 4602,
+        "url": "https://limitlesstcg.com/cards/DRM/47"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/47.png",
+        "large": "https://images.pokemontcg.io/sm75/47_hires.png"
+      }
+    },
+    {
+      "number": "48/70",
+      "localId": "48",
+      "name": "White Kyurem-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Shred",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Raging Blade",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "If this Pokémon has any damage counters on it, this attack does 80 more damage."
+        },
+        {
+          "name": "Dragon Nova-GX",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "200",
+          "text": "Your opponent's Active Pokémon is now Burned and Paralyzed. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 48",
+      "printGroup": [
+        "DRM 48",
+        "DRM 74",
+        "SMP 141"
+      ],
+      "limitless": {
+        "id": 4603,
+        "url": "https://limitlesstcg.com/cards/DRM/48"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/48.png",
+        "large": "https://images.pokemontcg.io/sm75/48_hires.png"
+      }
+    },
+    {
+      "number": "49/70",
+      "localId": "49",
+      "name": "Zygarde",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Rumble",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        },
+        {
+          "name": "Raging Blade",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If this Pokémon has any damage counters on it, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Misa Tsutsui",
+      "pokedex": {
+        "number": 718,
+        "genus": "Order Pokémon",
+        "height": "16'5\"",
+        "weight": "672.4 lbs"
+      },
+      "flavorText": "It's thought to be monitoring the ecosystem. There are rumors that even greater power lies hidden within it.",
+      "secret": false,
+      "deckCode": "DRM 49",
+      "printGroup": [
+        "DRM 49"
+      ],
+      "limitless": {
+        "id": 4604,
+        "url": "https://limitlesstcg.com/cards/DRM/49"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/49.png",
+        "large": "https://images.pokemontcg.io/sm75/49_hires.png"
+      }
+    },
+    {
+      "number": "50/70",
+      "localId": "50",
+      "name": "Turtonator",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Explosive Jet",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50×",
+          "text": "Discard any amount of Fire Energy from your Pokémon. This attack does 50 damage for each card you discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 776,
+        "genus": "Blast Turtle Pokémon",
+        "height": "6'7\"",
+        "weight": "467.4 lbs"
+      },
+      "flavorText": "It gushes fire and poisonous gases from its nostrils. Its dung is an explosive substance and can be put to various uses.",
+      "secret": false,
+      "deckCode": "DRM 50",
+      "printGroup": [
+        "DRM 50"
+      ],
+      "limitless": {
+        "id": 4605,
+        "url": "https://limitlesstcg.com/cards/DRM/50"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/50.png",
+        "large": "https://images.pokemontcg.io/sm75/50_hires.png"
+      }
+    },
+    {
+      "number": "51/70",
+      "localId": "51",
+      "name": "Drampa",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Dragon Wisdom",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Attach a basic Energy card from your discard pile to 1 of your Dragon Pokémon."
+        },
+        {
+          "name": "Hyper Voice",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 780,
+        "genus": "Placid Pokémon",
+        "height": "9'10\"",
+        "weight": "407.9 lbs"
+      },
+      "flavorText": "This Pokémon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town.",
+      "secret": false,
+      "deckCode": "DRM 51",
+      "printGroup": [
+        "DRM 51"
+      ],
+      "limitless": {
+        "id": 4606,
+        "url": "https://limitlesstcg.com/cards/DRM/51"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/51.png",
+        "large": "https://images.pokemontcg.io/sm75/51_hires.png"
+      }
+    },
+    {
+      "number": "52/70",
+      "localId": "52",
+      "name": "Jangmo-o",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Hakamo-o"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Rigidify",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yusuke Ohmura",
+      "pokedex": {
+        "number": 782,
+        "genus": "Scaly Pokémon",
+        "height": "2'0\"",
+        "weight": "65.5 lbs"
+      },
+      "flavorText": "They live in mountains where no trace of humans can be detected. Jangmo-o grow little by little as they battle one another.",
+      "secret": false,
+      "deckCode": "DRM 52",
+      "printGroup": [
+        "DRM 52"
+      ],
+      "limitless": {
+        "id": 4607,
+        "url": "https://limitlesstcg.com/cards/DRM/52"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/52.png",
+        "large": "https://images.pokemontcg.io/sm75/52_hires.png"
+      }
+    },
+    {
+      "number": "53/70",
+      "localId": "53",
+      "name": "Hakamo-o",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Jangmo-o",
+      "evolvesTo": [
+        "Kommo-o"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Guard Press",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Lightning",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "hatachu",
+      "pokedex": {
+        "number": 783,
+        "genus": "Scaly Pokémon",
+        "height": "3'11\"",
+        "weight": "103.6 lbs"
+      },
+      "flavorText": "It sheds and regrows its scales on a continuous basis. The scales become harder and sharper each time they're regrown.",
+      "secret": false,
+      "deckCode": "DRM 53",
+      "printGroup": [
+        "DRM 53"
+      ],
+      "limitless": {
+        "id": 4608,
+        "url": "https://limitlesstcg.com/cards/DRM/53"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/53.png",
+        "large": "https://images.pokemontcg.io/sm75/53_hires.png"
+      }
+    },
+    {
+      "number": "54/70",
+      "localId": "54",
+      "name": "Kommo-o",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Hakamo-o",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 160,
+      "attacks": [
+        {
+          "name": "Guard Press",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "During your opponent's next turn, this Pokémon takes 30 less damage from attacks (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Raging Uppercut",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90+",
+          "text": "If this Pokémon has 8 or more damage counters on it, this attack does 120 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "so-taro",
+      "pokedex": {
+        "number": 784,
+        "genus": "Scaly Pokémon",
+        "height": "5'3\"",
+        "weight": "172.4 lbs"
+      },
+      "flavorText": "Its rigid scales function as offense and defense. In the past, its scales were processed and used to make weapons and other commodities.",
+      "secret": false,
+      "deckCode": "DRM 54",
+      "printGroup": [
+        "DRM 54"
+      ],
+      "limitless": {
+        "id": 4609,
+        "url": "https://limitlesstcg.com/cards/DRM/54"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/54.png",
+        "large": "https://images.pokemontcg.io/sm75/54_hires.png"
+      }
+    },
+    {
+      "number": "55/70",
+      "localId": "55",
+      "name": "Kangaskhan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Fetch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "One-Two Punch",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 115,
+        "genus": "Parent Pokémon",
+        "height": "7'3\"",
+        "weight": "176.4 lbs"
+      },
+      "flavorText": "The child in its pouch leaves home after roughly three years. That is the only time the mother is heard to cry wildly.",
+      "secret": false,
+      "deckCode": "DRM 55",
+      "printGroup": [
+        "DRM 55"
+      ],
+      "limitless": {
+        "id": 4610,
+        "url": "https://limitlesstcg.com/cards/DRM/55"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/55.png",
+        "large": "https://images.pokemontcg.io/sm75/55_hires.png"
+      }
+    },
+    {
+      "number": "56/70",
+      "localId": "56",
+      "name": "Swablu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Altaria"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yukiko Baba",
+      "pokedex": {
+        "number": 333,
+        "genus": "Cotton Bird Pokémon",
+        "height": "1'4\"",
+        "weight": "2.6 lbs"
+      },
+      "flavorText": "It constantly grooms its cotton-like wings. It takes a shower to clean itself if it becomes dirty.",
+      "secret": false,
+      "deckCode": "DRM 56",
+      "printGroup": [
+        "DRM 56",
+        "HIF SV42"
+      ],
+      "limitless": {
+        "id": 4611,
+        "url": "https://limitlesstcg.com/cards/DRM/56"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/56.png",
+        "large": "https://images.pokemontcg.io/sm75/56_hires.png"
+      }
+    },
+    {
+      "number": "57/70",
+      "localId": "57",
+      "name": "Swablu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Altaria"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Sing",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 333,
+        "genus": "Cotton Bird Pokémon",
+        "height": "1'4\"",
+        "weight": "2.6 lbs"
+      },
+      "flavorText": "It constantly grooms its cotton-like wings. It takes a shower to clean itself if it becomes dirty.",
+      "secret": false,
+      "deckCode": "DRM 57",
+      "printGroup": [
+        "DRM 57"
+      ],
+      "limitless": {
+        "id": 4612,
+        "url": "https://limitlesstcg.com/cards/DRM/57"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/57.png",
+        "large": "https://images.pokemontcg.io/sm75/57_hires.png"
+      }
+    },
+    {
+      "number": "58/70",
+      "localId": "58",
+      "name": "Blaine's Last Stand",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only when it is the last card in your hand.",
+        "Draw 2 cards for each Fire Pokémon you have in play.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "DRM 58",
+      "printGroup": [
+        "DRM 58",
+        "DRM 69",
+        "HIF 52"
+      ],
+      "limitless": {
+        "id": 4613,
+        "url": "https://limitlesstcg.com/cards/DRM/58"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/58.png",
+        "large": "https://images.pokemontcg.io/sm75/58_hires.png"
+      }
+    },
+    {
+      "number": "59/70",
+      "localId": "59",
+      "name": "Dragon Talon",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "If the Dragon Pokémon this card is attached to is your Active Pokémon and is damaged by an opponent's attack (even if that Pokémon is Knocked Out), put 3 damage counters on the Attacking Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "DRM 59",
+      "printGroup": [
+        "DRM 59",
+        "DRM 75"
+      ],
+      "limitless": {
+        "id": 4614,
+        "url": "https://limitlesstcg.com/cards/DRM/59"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/59.png",
+        "large": "https://images.pokemontcg.io/sm75/59_hires.png"
+      }
+    },
+    {
+      "number": "60/70",
+      "localId": "60",
+      "name": "Fiery Flint",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You can play this card only if you discard 2 other cards from your hand.",
+        "Search your deck for up to 4 Fire Energy cards, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "DRM 60",
+      "printGroup": [
+        "DRM 60",
+        "DRM 60a",
+        "DRM 76"
+      ],
+      "limitless": {
+        "id": 4615,
+        "url": "https://limitlesstcg.com/cards/DRM/60"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/60.png",
+        "large": "https://images.pokemontcg.io/sm75/60_hires.png"
+      }
+    },
+    {
+      "number": "60a",
+      "localId": "60a",
+      "name": "Fiery Flint",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You can play this card only if you discard 2 other cards from your hand.",
+        "Search your deck for up to 4 Fire Energy cards, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yoshinobu Saito",
+      "secret": false,
+      "deckCode": "DRM 60a",
+      "printGroup": [
+        "DRM 60",
+        "DRM 60a",
+        "DRM 76"
+      ],
+      "limitless": {
+        "id": 15327,
+        "url": "https://limitlesstcg.com/cards/DRM/60a"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/60a.png",
+        "large": "https://images.pokemontcg.io/sm75/60a_hires.png"
+      }
+    },
+    {
+      "number": "61/70",
+      "localId": "61",
+      "name": "Lance ◇",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter",
+        "Prism Star"
+      ],
+      "rules": [
+        "You can play this card only if 1 of your Pokémon was Knocked Out during your opponent's last turn.",
+        "Search your deck for up to 2 Dragon Pokémon and put them onto your Bench. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn (before your attack).",
+        "◇ (Prism Star) Rule: You can't have more than 1 ◇ card with the same name in your deck. If a ◇ card would go to the discard pile, put it in the Lost Zone instead."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Prism Star",
+      "artist": "kodama",
+      "secret": false,
+      "deckCode": "DRM 61",
+      "printGroup": [
+        "DRM 61"
+      ],
+      "limitless": {
+        "id": 4616,
+        "url": "https://limitlesstcg.com/cards/DRM/61"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/61.png",
+        "large": "https://images.pokemontcg.io/sm75/61_hires.png"
+      }
+    },
+    {
+      "number": "62/70",
+      "localId": "62",
+      "name": "Switch Raft",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Switch your Active Water Pokémon with 1 of your Benched Pokémon. If you do, heal 30 damage from the Pokémon you moved to your Bench.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yoshinobu Saito",
+      "secret": false,
+      "deckCode": "DRM 62",
+      "printGroup": [
+        "DRM 62",
+        "DRM 77"
+      ],
+      "limitless": {
+        "id": 4617,
+        "url": "https://limitlesstcg.com/cards/DRM/62"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/62.png",
+        "large": "https://images.pokemontcg.io/sm75/62_hires.png"
+      }
+    },
+    {
+      "number": "63/70",
+      "localId": "63",
+      "name": "Wela Volcano Park",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Whenever a player flips a coin for the Special Condition Burned between turns, that Special Condition isn't removed even if the result is heads.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 63",
+      "printGroup": [
+        "DRM 63"
+      ],
+      "limitless": {
+        "id": 4618,
+        "url": "https://limitlesstcg.com/cards/DRM/63"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/63.png",
+        "large": "https://images.pokemontcg.io/sm75/63_hires.png"
+      }
+    },
+    {
+      "number": "64/70",
+      "localId": "64",
+      "name": "Zinnia",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only if 1 of your Pokémon was Knocked Out during your opponent's last turn.",
+        "Attach up to 2 basic Energy cards from your hand to 1 of your Dragon Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "DRM 64",
+      "printGroup": [
+        "DRM 64",
+        "DRM 70"
+      ],
+      "limitless": {
+        "id": 4619,
+        "url": "https://limitlesstcg.com/cards/DRM/64"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/64.png",
+        "large": "https://images.pokemontcg.io/sm75/64_hires.png"
+      }
+    },
+    {
+      "number": "65/70",
+      "localId": "65",
+      "name": "Reshiram-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Flame Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Fire Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Scorching Column",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "110",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        },
+        {
+          "name": "Vermilion-GX",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "180",
+          "text": "You may attach up to 5 Fire Energy cards from your hand to your Pokémon in any way you like. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "PLANETA Igarashi",
+      "secret": false,
+      "deckCode": "DRM 65",
+      "printGroup": [
+        "DRM 11",
+        "DRM 65",
+        "DRM 71",
+        "HIF SV51",
+        "SMP 137"
+      ],
+      "limitless": {
+        "id": 4620,
+        "url": "https://limitlesstcg.com/cards/DRM/65"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/65.png",
+        "large": "https://images.pokemontcg.io/sm75/65_hires.png"
+      }
+    },
+    {
+      "number": "66/70",
+      "localId": "66",
+      "name": "Kingdra-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Seadra",
+      "types": [
+        "Water"
+      ],
+      "hp": 230,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "This attack does 50 more damage times the amount of Water Energy attached to this Pokémon."
+        },
+        {
+          "name": "Reverse Thrust",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Maelstrom-GX",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 40 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 66",
+      "printGroup": [
+        "DRM 18",
+        "DRM 66",
+        "SMP 155"
+      ],
+      "limitless": {
+        "id": 4621,
+        "url": "https://limitlesstcg.com/cards/DRM/66"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/66.png",
+        "large": "https://images.pokemontcg.io/sm75/66_hires.png"
+      }
+    },
+    {
+      "number": "67/70",
+      "localId": "67",
+      "name": "Dragonite-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Dragonair",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "70",
+          "text": ""
+        },
+        {
+          "name": "Giga Impact",
+          "cost": [
+            "Water",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "200",
+          "text": "This Pokémon can't attack during your next turn."
+        },
+        {
+          "name": "Dragonporter-GX",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Put 3 Dragon Pokémon from your discard pile onto your Bench. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 67",
+      "printGroup": [
+        "DRM 37",
+        "DRM 67",
+        "SMP 156"
+      ],
+      "limitless": {
+        "id": 4622,
+        "url": "https://limitlesstcg.com/cards/DRM/67"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/67.png",
+        "large": "https://images.pokemontcg.io/sm75/67_hires.png"
+      }
+    },
+    {
+      "number": "68/70",
+      "localId": "68",
+      "name": "Altaria-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Swablu",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 200,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Bright Tone",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Pokémon-GX and Pokémon-EX."
+        },
+        {
+          "name": "Sonic Edge",
+          "cost": [
+            "Water",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Euphoria-GX",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep. Heal all damage from all of your Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRM 68",
+      "printGroup": [
+        "DRM 41",
+        "DRM 68",
+        "DRM 72",
+        "HIF SV77"
+      ],
+      "limitless": {
+        "id": 4623,
+        "url": "https://limitlesstcg.com/cards/DRM/68"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/68.png",
+        "large": "https://images.pokemontcg.io/sm75/68_hires.png"
+      }
+    },
+    {
+      "number": "69/70",
+      "localId": "69",
+      "name": "Blaine's Last Stand",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only when it is the last card in your hand.",
+        "Draw 2 cards for each Fire Pokémon you have in play.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "deckCode": "DRM 69",
+      "printGroup": [
+        "DRM 58",
+        "DRM 69",
+        "HIF 52"
+      ],
+      "limitless": {
+        "id": 4624,
+        "url": "https://limitlesstcg.com/cards/DRM/69"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/69.png",
+        "large": "https://images.pokemontcg.io/sm75/69_hires.png"
+      }
+    },
+    {
+      "number": "70/70",
+      "localId": "70",
+      "name": "Zinnia",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only if 1 of your Pokémon was Knocked Out during your opponent's last turn.",
+        "Attach up to 2 basic Energy cards from your hand to 1 of your Dragon Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Hideki Ishikawa",
+      "secret": false,
+      "deckCode": "DRM 70",
+      "printGroup": [
+        "DRM 64",
+        "DRM 70"
+      ],
+      "limitless": {
+        "id": 4625,
+        "url": "https://limitlesstcg.com/cards/DRM/70"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/70.png",
+        "large": "https://images.pokemontcg.io/sm75/70_hires.png"
+      }
+    },
+    {
+      "number": "71/70",
+      "localId": "71",
+      "name": "Reshiram-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Flame Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Fire Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Scorching Column",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "110",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        },
+        {
+          "name": "Vermilion-GX",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "180",
+          "text": "You may attach up to 5 Fire Energy cards from your hand to your Pokémon in any way you like. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Rainbow",
+      "artist": "PLANETA Igarashi",
+      "secret": true,
+      "deckCode": "DRM 71",
+      "printGroup": [
+        "DRM 11",
+        "DRM 65",
+        "DRM 71",
+        "HIF SV51",
+        "SMP 137"
+      ],
+      "limitless": {
+        "id": 4626,
+        "url": "https://limitlesstcg.com/cards/DRM/71"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/71.png",
+        "large": "https://images.pokemontcg.io/sm75/71_hires.png"
+      }
+    },
+    {
+      "number": "72/70",
+      "localId": "72",
+      "name": "Altaria-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Swablu",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 200,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Bright Tone",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Pokémon-GX and Pokémon-EX."
+        },
+        {
+          "name": "Sonic Edge",
+          "cost": [
+            "Water",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Euphoria-GX",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep. Heal all damage from all of your Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Rainbow",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "DRM 72",
+      "printGroup": [
+        "DRM 41",
+        "DRM 68",
+        "DRM 72",
+        "HIF SV77"
+      ],
+      "limitless": {
+        "id": 4627,
+        "url": "https://limitlesstcg.com/cards/DRM/72"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/72.png",
+        "large": "https://images.pokemontcg.io/sm75/72_hires.png"
+      }
+    },
+    {
+      "number": "73/70",
+      "localId": "73",
+      "name": "Salamence-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Shelgon",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Dragon Lift",
+          "text": "Your Pokémon in play have no Retreat Cost, except Pokémon-GX and Pokémon-EX.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bright Flame",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "200",
+          "text": "Discard 2 Energy from this Pokémon."
+        },
+        {
+          "name": "Flame Jet-GX",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 120 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Rainbow",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "DRM 73",
+      "printGroup": [
+        "DRM 44",
+        "DRM 73",
+        "SMP 139"
+      ],
+      "limitless": {
+        "id": 4628,
+        "url": "https://limitlesstcg.com/cards/DRM/73"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/73.png",
+        "large": "https://images.pokemontcg.io/sm75/73_hires.png"
+      }
+    },
+    {
+      "number": "74/70",
+      "localId": "74",
+      "name": "White Kyurem-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Shred",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Raging Blade",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "If this Pokémon has any damage counters on it, this attack does 80 more damage."
+        },
+        {
+          "name": "Dragon Nova-GX",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "200",
+          "text": "Your opponent's Active Pokémon is now Burned and Paralyzed. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Rainbow",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "DRM 74",
+      "printGroup": [
+        "DRM 48",
+        "DRM 74",
+        "SMP 141"
+      ],
+      "limitless": {
+        "id": 4629,
+        "url": "https://limitlesstcg.com/cards/DRM/74"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/74.png",
+        "large": "https://images.pokemontcg.io/sm75/74_hires.png"
+      }
+    },
+    {
+      "number": "75/70",
+      "localId": "75",
+      "name": "Dragon Talon",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "If the Dragon Pokémon this card is attached to is your Active Pokémon and is damaged by an opponent's attack (even if that Pokémon is Knocked Out), put 3 damage counters on the Attacking Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "Toyste Beach",
+      "secret": true,
+      "deckCode": "DRM 75",
+      "printGroup": [
+        "DRM 59",
+        "DRM 75"
+      ],
+      "limitless": {
+        "id": 4630,
+        "url": "https://limitlesstcg.com/cards/DRM/75"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/75.png",
+        "large": "https://images.pokemontcg.io/sm75/75_hires.png"
+      }
+    },
+    {
+      "number": "76/70",
+      "localId": "76",
+      "name": "Fiery Flint",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You can play this card only if you discard 2 other cards from your hand.",
+        "Search your deck for up to 4 Fire Energy cards, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "Eske Yoshinob",
+      "secret": true,
+      "deckCode": "DRM 76",
+      "printGroup": [
+        "DRM 60",
+        "DRM 60a",
+        "DRM 76"
+      ],
+      "limitless": {
+        "id": 4631,
+        "url": "https://limitlesstcg.com/cards/DRM/76"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/76.png",
+        "large": "https://images.pokemontcg.io/sm75/76_hires.png"
+      }
+    },
+    {
+      "number": "77/70",
+      "localId": "77",
+      "name": "Switch Raft",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Switch your Active Water Pokémon with 1 of your Benched Pokémon. If you do, heal 30 damage from the Pokémon you moved to your Bench.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "Yoshinobu Saito",
+      "secret": true,
+      "deckCode": "DRM 77",
+      "printGroup": [
+        "DRM 62",
+        "DRM 77"
+      ],
+      "limitless": {
+        "id": 4632,
+        "url": "https://limitlesstcg.com/cards/DRM/77"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/77.png",
+        "large": "https://images.pokemontcg.io/sm75/77_hires.png"
+      }
+    },
+    {
+      "number": "78/70",
+      "localId": "78",
+      "name": "Ultra Necrozma-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX",
+        "Ultra Beast"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Photon Geyser",
+          "cost": [
+            "Psychic",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Discard all basic Psychic Energy from this Pokémon. This attack does 80 more damage for each card you discarded in this way."
+        },
+        {
+          "name": "Sky-Scorching Light-GX",
+          "cost": [
+            "Psychic",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "You can use this attack only if the total of both players' remaining Prize cards is 6 or less. Put 6 damage counters on each of your opponent's Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "PLANETA Igarashi",
+      "secret": true,
+      "deckCode": "DRM 78",
+      "printGroup": [
+        "DRM 78",
+        "FLI 95",
+        "FLI 127",
+        "FLI 140",
+        "SMP 126"
+      ],
+      "limitless": {
+        "id": 4633,
+        "url": "https://limitlesstcg.com/cards/DRM/78"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/78.png",
+        "large": "https://images.pokemontcg.io/sm75/78_hires.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "set": {
+    "code": "MCD19",
+    "ptcgDataId": "mcd19",
+    "name": "McDonald's Collection 2019",
+    "series": "Other",
+    "printedTotal": 12,
+    "secretTotal": 0,
+    "total": 12,
+    "releaseDate": "2019-10-15",
+    "copyright": "©2019 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/mcd19/symbol.png",
+      "logo": "https://images.pokemontcg.io/mcd19/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/12",
+      "localId": "1",
+      "name": "Caterpie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Metapod"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "cost": [
+            "Grass"
+          ],
+          "name": "Surprise Attack",
+          "text": "Flip a coin. If tails, this attack does nothing.",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Sekio",
+      "pokedex": {
+        "number": 10,
+        "genus": "Worm Pokémon",
+        "height": "1'0\"",
+        "weight": "6.4 lbs"
+      },
+      "flavorText": "When attacked by bird Pokémon, it resists by releasing a terrifically strong odor from its antennae, but it often becomes their prey.",
+      "secret": false,
+      "deckCode": "MCD19 1",
+      "printGroup": [
+        "MCD19 1"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/1.png",
+        "large": "https://images.pokemontcg.io/mcd19/1_hires.png"
+      }
+    },
+    {
+      "number": "02/12",
+      "localId": "2",
+      "name": "Alolan Exeggutor",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Exeggcute",
+      "types": [
+        "Grass"
+      ],
+      "hp": 160,
+      "attacks": [
+        {
+          "cost": [
+            "Grass"
+          ],
+          "name": "Tropical Shake",
+          "text": "This attack does 20 more damage for each type of basic Energy card in your discard pile. You can't add more than 100 damage in this way.",
+          "damage": "20+",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "artist": "Satoshi Shirai",
+      "pokedex": {
+        "number": 103,
+        "genus": "Coconut Pokémon",
+        "height": "6'7\"",
+        "weight": "264.6 lbs"
+      },
+      "flavorText": "As it grew taller and taller, it outgrew its reliance on psychic powers, while within it awakened the power of the sleeping dragon.",
+      "secret": false,
+      "deckCode": "MCD19 2",
+      "printGroup": [
+        "MCD19 2"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/2.png",
+        "large": "https://images.pokemontcg.io/mcd19/2_hires.png"
+      }
+    },
+    {
+      "number": "03/12",
+      "localId": "3",
+      "name": "Magmar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Magmortar"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "cost": [
+            "Fire"
+          ],
+          "name": "Controlled Burn",
+          "text": "Discard the top card of your opponent's deck.",
+          "damage": "",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "name": "Flamethrower",
+          "text": "Discard an Energy from this Pokémon.",
+          "damage": "80",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Yumi",
+      "pokedex": {
+        "number": 126,
+        "genus": "Spitfire Pokémon",
+        "height": "4'3\"",
+        "weight": "98.1 lbs"
+      },
+      "flavorText": "When angered, it spouts brilliant fire from all over its body. It doesn't calm down until its opponent has burned to ash.",
+      "secret": false,
+      "deckCode": "MCD19 3",
+      "printGroup": [
+        "MCD19 3"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/3.png",
+        "large": "https://images.pokemontcg.io/mcd19/3_hires.png"
+      }
+    },
+    {
+      "number": "04/12",
+      "localId": "4",
+      "name": "Alolan Sandshrew",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sandslash"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "cost": [],
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage for each heads.",
+          "damage": "10",
+          "convertedEnergyCost": 0
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 27,
+        "genus": "Mouse Pokémon",
+        "height": "2'0\"",
+        "weight": "26.5 lbs"
+      },
+      "flavorText": "An ancient tradition of Alolan festivals, still carried on to this day, is a competition to slide Sandshrew across ice as far as one can.",
+      "secret": false,
+      "deckCode": "MCD19 4",
+      "printGroup": [
+        "MCD19 4"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/4.png",
+        "large": "https://images.pokemontcg.io/mcd19/4_hires.png"
+      }
+    },
+    {
+      "number": "05/12",
+      "localId": "5",
+      "name": "Lapras",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "cost": [
+            "Water"
+          ],
+          "name": "Aqua Bullet",
+          "text": "This attack does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Hydro Pump",
+          "text": "This attack does 10 more damage times the amount of Water Energy attached to this Pokémon.",
+          "damage": "70+",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 131,
+        "genus": "Transport Pokémon",
+        "height": "8'2\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "These Pokémon were once near extinction due to poaching. Following protective regulations, there is now an overabundance of them.",
+      "secret": false,
+      "deckCode": "MCD19 5",
+      "printGroup": [
+        "MCD19 5"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/5.png",
+        "large": "https://images.pokemontcg.io/mcd19/5_hires.png"
+      }
+    },
+    {
+      "number": "06/12",
+      "localId": "6",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "cost": [
+            "Lightning"
+          ],
+          "name": "Iron Tail",
+          "text": "Flip a coin until you get tails. This attack does 20 damage for each heads.",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "A plan was recently announced to gather many Pikachu and make an electric power plant.",
+      "secret": false,
+      "deckCode": "MCD19 6",
+      "printGroup": [
+        "MCD19 6"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/6.png",
+        "large": "https://images.pokemontcg.io/mcd19/6_hires.png"
+      }
+    },
+    {
+      "number": "07/12",
+      "localId": "7",
+      "name": "Gastly",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Haunter"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "cost": [
+            "Psychic"
+          ],
+          "name": "Ominous Eyes",
+          "text": "Put 1 damage counter on 1 of your opponent's Pokémon.",
+          "damage": "",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 92,
+        "genus": "Gas Pokémon",
+        "height": "4'3\"",
+        "weight": "0.2 lbs"
+      },
+      "flavorText": "Should a strange light be seen flickering in an abandoned building, Gastly is lurking there.",
+      "secret": false,
+      "deckCode": "MCD19 7",
+      "printGroup": [
+        "MCD19 7"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/7.png",
+        "large": "https://images.pokemontcg.io/mcd19/7_hires.png"
+      }
+    },
+    {
+      "number": "08/12",
+      "localId": "8",
+      "name": "Mankey",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Primeape"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "cost": [
+            "Fighting"
+          ],
+          "name": "Three-Step Strike",
+          "text": "Flip 3 coins. This attack does 10 damage for each heads.",
+          "damage": "10",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Miki Tanaka",
+      "pokedex": {
+        "number": 56,
+        "genus": "Pig Monkey Pokémon",
+        "height": "1'8\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "It can spontaneously become enraged. Everyone near it clears out as it rampages, and the resulting loneliness makes it angrier still.",
+      "secret": false,
+      "deckCode": "MCD19 8",
+      "printGroup": [
+        "MCD19 8"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/8.png",
+        "large": "https://images.pokemontcg.io/mcd19/8_hires.png"
+      }
+    },
+    {
+      "number": "09/12",
+      "localId": "9",
+      "name": "Onix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Steelix"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Screech",
+          "text": "During your next turn, the Defending Pokémon takes 20 more damage from attacks (after applying Weakness and Resistance).",
+          "damage": "",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "name": "Rage",
+          "text": "This attack does 10 more damage for each damage counter on this Pokémon.",
+          "damage": "10+",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 95,
+        "genus": "Rock Snake Pokémon",
+        "height": "28'10\"",
+        "weight": "463.0 lbs"
+      },
+      "flavorText": "It usually lives underground. It searches for food while boring its way through the ground at 50 miles per hour.",
+      "secret": false,
+      "deckCode": "MCD19 9",
+      "printGroup": [
+        "MCD19 9"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/9.png",
+        "large": "https://images.pokemontcg.io/mcd19/9_hires.png"
+      }
+    },
+    {
+      "number": "10/12",
+      "localId": "10",
+      "name": "Alolan Meowth",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Persian"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "cost": [],
+          "name": "Spoil the Fun",
+          "text": "If you go second, this attack does 60 more damage during your first turn.",
+          "damage": "10+",
+          "convertedEnergyCost": 0
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 52,
+        "genus": "Scratch Cat Pokémon",
+        "height": "1'4\"",
+        "weight": "9.3 lbs"
+      },
+      "flavorText": "When its delicate pride is wounded, or when the gold coin on its forehead is dirtied, it flies into a hysterical rage.",
+      "secret": false,
+      "deckCode": "MCD19 10",
+      "printGroup": [
+        "MCD19 10"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/10.png",
+        "large": "https://images.pokemontcg.io/mcd19/10_hires.png"
+      }
+    },
+    {
+      "number": "11/12",
+      "localId": "11",
+      "name": "Alolan Dugtrio",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Alolan Diglett",
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "cost": [],
+          "name": "Gold Rush",
+          "text": "Discard any number of Metal Energy cards from your hand. This attack does 30 damage for each card you discarded in this way.",
+          "damage": "30",
+          "convertedEnergyCost": 0
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Megumi Mizutani",
+      "pokedex": {
+        "number": 51,
+        "genus": "Mole Pokémon",
+        "height": "2'4\"",
+        "weight": "73.4 lbs"
+      },
+      "flavorText": "These Pokémon are cherished in the Alola region, where they are thought to be feminine deities of the land incarnate.",
+      "secret": false,
+      "deckCode": "MCD19 11",
+      "printGroup": [
+        "MCD19 11"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/11.png",
+        "large": "https://images.pokemontcg.io/mcd19/11_hires.png"
+      }
+    },
+    {
+      "number": "12/12",
+      "localId": "12",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Gnaw",
+          "text": "",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Current studies show it can evolve into an incredible eight different species of Pokémon.",
+      "secret": false,
+      "deckCode": "MCD19 12",
+      "printGroup": [
+        "MCD19 12"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd19/12.png",
+        "large": "https://images.pokemontcg.io/mcd19/12_hires.png"
+      }
+    }
+  ]
+}

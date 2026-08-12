@@ -40,6 +40,9 @@ function speciesName(cardName) {
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, '')
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, 'Castform')
     .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, '')
+    .replace(/^(Black|White)\s+(?=Kyurem)/, '')
+    .replace(/^Ultra\s+(?=Necrozma)/, '')
+    .replace(/\s*◇$/, '')
     .replace(/\s+([♀♂])/, '$1')
 }
 
@@ -120,6 +123,7 @@ function normalize(s) {
     .replace(/[“”]/g, '"')
     .replace(/\.\.\./g, '…')
     .replace(/−/g, '-')
+    .replace(/--/g, '—')
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase()

@@ -1,0 +1,802 @@
+{
+  "set": {
+    "code": "MCD18",
+    "ptcgDataId": "mcd18",
+    "name": "McDonald's Collection 2018",
+    "series": "Other",
+    "printedTotal": 12,
+    "secretTotal": 0,
+    "total": 12,
+    "releaseDate": "2018-10-16",
+    "copyright": "©2018 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/mcd18/symbol.png",
+      "logo": "https://images.pokemontcg.io/mcd18/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/12",
+      "localId": "1",
+      "name": "Growlithe",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Arcanine"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "This Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 58,
+        "genus": "Puppy Pokémon",
+        "height": "2'4\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "It's both clever and loyal, but if a stranger tries to invade its territory, it barks threateningly.",
+      "secret": false,
+      "deckCode": "MCD18 1",
+      "printGroup": [
+        "MCD18 1"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/1.png",
+        "large": "https://images.pokemontcg.io/mcd18/1_hires.png"
+      }
+    },
+    {
+      "number": "02/12",
+      "localId": "2",
+      "name": "Psyduck",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Golduck"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Confusion Wave",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Both Active Pokémon are now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 54,
+        "genus": "Duck Pokémon",
+        "height": "2'7\"",
+        "weight": "43.2 lbs"
+      },
+      "flavorText": "As a result of headaches so fierce they cause it to cry, it sometimes uses psychokinesis without meaning to.",
+      "secret": false,
+      "deckCode": "MCD18 2",
+      "printGroup": [
+        "MCD18 2"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/2.png",
+        "large": "https://images.pokemontcg.io/mcd18/2_hires.png"
+      }
+    },
+    {
+      "number": "03/12",
+      "localId": "3",
+      "name": "Horsea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Seadra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Water Arrow",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 10 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 116,
+        "genus": "Dragon Pokémon",
+        "height": "1'4\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
+      "secret": false,
+      "deckCode": "MCD18 3",
+      "printGroup": [
+        "MCD18 3"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/3.png",
+        "large": "https://images.pokemontcg.io/mcd18/3_hires.png"
+      }
+    },
+    {
+      "number": "04/12",
+      "localId": "4",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Pika Draw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "A plan was recently announced to gather many Pikachu and make an electric power plant.",
+      "secret": false,
+      "deckCode": "MCD18 4",
+      "printGroup": [
+        "MCD18 4"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/4.png",
+        "large": "https://images.pokemontcg.io/mcd18/4_hires.png"
+      }
+    },
+    {
+      "number": "05/12",
+      "localId": "5",
+      "name": "Slowpoke",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Slowbro",
+        "Slowking"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Whimsy Tackle",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "artist": "Mina Nakai",
+      "pokedex": {
+        "number": 79,
+        "genus": "Dopey Pokémon",
+        "height": "3'11\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "Its long tail often breaks off. It doesn't really feel any pain, though, and the tail grows back, so Slowpoke isn't particularly bothered.",
+      "secret": false,
+      "deckCode": "MCD18 5",
+      "printGroup": [
+        "MCD18 5"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/5.png",
+        "large": "https://images.pokemontcg.io/mcd18/5_hires.png"
+      }
+    },
+    {
+      "number": "06/12",
+      "localId": "6",
+      "name": "Machop",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Machoke"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Dynamic Chop",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 66,
+        "genus": "Superpower Pokémon",
+        "height": "2'7\"",
+        "weight": "43.0 lbs"
+      },
+      "flavorText": "It loves working out. As it gazes at its muscles, which continue to swell day by day, it becomes more and more dedicated to its training.",
+      "secret": false,
+      "deckCode": "MCD18 6",
+      "printGroup": [
+        "MCD18 6"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/6.png",
+        "large": "https://images.pokemontcg.io/mcd18/6_hires.png"
+      }
+    },
+    {
+      "number": "07/12",
+      "localId": "7",
+      "name": "Cubone",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Marowak"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Leer",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "sui",
+      "pokedex": {
+        "number": 104,
+        "genus": "Lonely Pokémon",
+        "height": "1'4\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "When it thinks of its deceased mother, it weeps loudly. Mandibuzz that hear its cries will attack it from the air.",
+      "secret": false,
+      "deckCode": "MCD18 7",
+      "printGroup": [
+        "MCD18 7"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/7.png",
+        "large": "https://images.pokemontcg.io/mcd18/7_hires.png"
+      }
+    },
+    {
+      "number": "08/12",
+      "localId": "8",
+      "name": "Magnemite",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Magneton"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Searching Magnet",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Metal Energy cards, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Tackle",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 81,
+        "genus": "Magnet Pokémon",
+        "height": "1'0\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "It sends out electromagnetic waves, which let it float through the air. Touching it while it's eating electricity will give you a full-body shock.",
+      "secret": false,
+      "deckCode": "MCD18 8",
+      "printGroup": [
+        "MCD18 8"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/8.png",
+        "large": "https://images.pokemontcg.io/mcd18/8_hires.png"
+      }
+    },
+    {
+      "number": "09/12",
+      "localId": "9",
+      "name": "Dratini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragonair"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Signs of Evolution",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Dratini, a Dragonair, and a Dragonite, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Tail Smack",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 147,
+        "genus": "Dragon Pokémon",
+        "height": "5'11\"",
+        "weight": "7.3 lbs"
+      },
+      "flavorText": "After a 10-hour struggle, a fisherman was able to pull one up and confirm its existence.",
+      "secret": false,
+      "deckCode": "MCD18 9",
+      "printGroup": [
+        "MCD18 9"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/9.png",
+        "large": "https://images.pokemontcg.io/mcd18/9_hires.png"
+      }
+    },
+    {
+      "number": "10/12",
+      "localId": "10",
+      "name": "Chansey",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Blissey"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Bind Wound",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip a coin. If heads, heal 30 damage from 1 of your Pokémon."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Megumi Mizutani",
+      "pokedex": {
+        "number": 113,
+        "genus": "Egg Pokémon",
+        "height": "3'7\"",
+        "weight": "76.3 lbs"
+      },
+      "flavorText": "The eggs laid by Chansey are rich in nutrients and a favorite food of many Pokémon.",
+      "secret": false,
+      "deckCode": "MCD18 10",
+      "printGroup": [
+        "MCD18 10"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/10.png",
+        "large": "https://images.pokemontcg.io/mcd18/10_hires.png"
+      }
+    },
+    {
+      "number": "11/12",
+      "localId": "11",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "abilities": [
+        {
+          "name": "Energy Evolution",
+          "text": "When you attach a basic Energy card from your hand to this Pokémon during your turn, you may search your deck for a card that evolves from this Pokémon that is the same type as that Energy card and put it onto this Pokémon to evolve it. Then, shuffle your deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Quick Draw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, draw a card."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Possessing an unbalanced and unstable genetic makeup, it conceals many possible evolutions.",
+      "secret": false,
+      "deckCode": "MCD18 11",
+      "printGroup": [
+        "MCD18 11"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/11.png",
+        "large": "https://images.pokemontcg.io/mcd18/11_hires.png"
+      }
+    },
+    {
+      "number": "12/12",
+      "localId": "12",
+      "name": "Porygon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Porygon2"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Code Check",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at 1 of your opponent's face-down Prize cards."
+        },
+        {
+          "name": "Beam",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 137,
+        "genus": "Virtual Pokémon",
+        "height": "2'7\"",
+        "weight": "80.5 lbs"
+      },
+      "flavorText": "Roughly 20 years ago, it was artificially created, utilizing the latest technology of the time.",
+      "secret": false,
+      "deckCode": "MCD18 12",
+      "printGroup": [
+        "MCD18 12"
+      ],
+      "limitless": {
+        "id": null,
+        "url": ""
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd18/12.png",
+        "large": "https://images.pokemontcg.io/mcd18/12_hires.png"
+      }
+    }
+  ]
+}

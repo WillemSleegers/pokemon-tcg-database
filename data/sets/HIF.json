@@ -1,0 +1,4007 @@
+{
+  "set": {
+    "code": "HIF",
+    "ptcgDataId": "sm115",
+    "name": "Hidden Fates",
+    "series": "Sun & Moon",
+    "printedTotal": 68,
+    "secretTotal": 1,
+    "total": 69,
+    "releaseDate": "2019-08-23",
+    "copyright": "©2019 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/sm115/symbol.png",
+      "logo": "https://images.pokemontcg.io/sm115/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/68",
+      "localId": "1",
+      "name": "Caterpie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Metapod"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "tetsuya koizumi",
+      "pokedex": {
+        "number": 10,
+        "genus": "Worm Pokémon",
+        "height": "1'0\"",
+        "weight": "6.4 lbs"
+      },
+      "flavorText": "Perhaps because it would like to grow up quickly, it has a voracious appetite, eating a hundred leaves a day.",
+      "secret": false,
+      "deckCode": "HIF 1",
+      "printGroup": [
+        "HIF 1"
+      ],
+      "limitless": {
+        "id": 14304,
+        "url": "https://limitlesstcg.com/cards/HIF/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/1.png",
+        "large": "https://images.pokemontcg.io/sm115/1_hires.png"
+      }
+    },
+    {
+      "number": "02/68",
+      "localId": "2",
+      "name": "Metapod",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Caterpie",
+      "evolvesTo": [
+        "Butterfree"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shibuzoh.",
+      "pokedex": {
+        "number": 11,
+        "genus": "Cocoon Pokémon",
+        "height": "2'4\"",
+        "weight": "21.8 lbs"
+      },
+      "flavorText": "Its shell is filled with a thick liquid. All of the cells throughout its body are being rebuilt in preparation for evolution.",
+      "secret": false,
+      "deckCode": "HIF 2",
+      "printGroup": [
+        "HIF 2"
+      ],
+      "limitless": {
+        "id": 14305,
+        "url": "https://limitlesstcg.com/cards/HIF/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/2.png",
+        "large": "https://images.pokemontcg.io/sm115/2_hires.png"
+      }
+    },
+    {
+      "number": "03/68",
+      "localId": "3",
+      "name": "Butterfree",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Metapod",
+      "types": [
+        "Grass"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Gust",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 12,
+        "genus": "Butterfly Pokémon",
+        "height": "3'7\"",
+        "weight": "70.5 lbs"
+      },
+      "flavorText": "Its wings are covered in toxic scales. If it finds bird Pokémon going after Caterpie, Butterfree sprinkles its scales on them to drive them off.",
+      "secret": false,
+      "deckCode": "HIF 3",
+      "printGroup": [
+        "HIF 3"
+      ],
+      "limitless": {
+        "id": 14306,
+        "url": "https://limitlesstcg.com/cards/HIF/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/3.png",
+        "large": "https://images.pokemontcg.io/sm115/3_hires.png"
+      }
+    },
+    {
+      "number": "04/68",
+      "localId": "4",
+      "name": "Paras",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Parasect"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "OOYAMA",
+      "pokedex": {
+        "number": 46,
+        "genus": "Mushroom Pokémon",
+        "height": "1'0\"",
+        "weight": "11.9 lbs"
+      },
+      "flavorText": "Whether it's due to a lack of moisture or a lack of nutrients, in Alola the mushrooms on Paras don't grow up quite right.",
+      "secret": false,
+      "deckCode": "HIF 4",
+      "printGroup": [
+        "HIF 4",
+        "TEU 6"
+      ],
+      "limitless": {
+        "id": 14307,
+        "url": "https://limitlesstcg.com/cards/HIF/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/4.png",
+        "large": "https://images.pokemontcg.io/sm115/4_hires.png"
+      }
+    },
+    {
+      "number": "05/68",
+      "localId": "5",
+      "name": "Scyther",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Scizor"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Sharp Scythe",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hasuno",
+      "pokedex": {
+        "number": 123,
+        "genus": "Mantis Pokémon",
+        "height": "4'11\"",
+        "weight": "123.5 lbs"
+      },
+      "flavorText": "Its two sharp scythes are more than just weapons. It uses them with dexterity to dress its prey before eating.",
+      "secret": false,
+      "deckCode": "HIF 5",
+      "printGroup": [
+        "HIF 5"
+      ],
+      "limitless": {
+        "id": 14308,
+        "url": "https://limitlesstcg.com/cards/HIF/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/5.png",
+        "large": "https://images.pokemontcg.io/sm115/5_hires.png"
+      }
+    },
+    {
+      "number": "06/68",
+      "localId": "6",
+      "name": "Pinsir-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Superpowered Horns",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": ""
+        },
+        {
+          "name": "Guillotine-GX",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160",
+          "text": "(You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 6",
+      "printGroup": [
+        "HIF 6"
+      ],
+      "limitless": {
+        "id": 14309,
+        "url": "https://limitlesstcg.com/cards/HIF/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/6.png",
+        "large": "https://images.pokemontcg.io/sm115/6_hires.png"
+      }
+    },
+    {
+      "number": "07/68",
+      "localId": "7",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Megumi Mizutani",
+      "pokedex": {
+        "number": 4,
+        "genus": "Lizard Pokémon",
+        "height": "2'0\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "secret": false,
+      "deckCode": "HIF 7",
+      "printGroup": [
+        "HIF 7"
+      ],
+      "limitless": {
+        "id": 14310,
+        "url": "https://limitlesstcg.com/cards/HIF/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/7.png",
+        "large": "https://images.pokemontcg.io/sm115/7_hires.png"
+      }
+    },
+    {
+      "number": "08/68",
+      "localId": "8",
+      "name": "Charmeleon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Charmander",
+      "evolvesTo": [
+        "Charizard"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 5,
+        "genus": "Flame Pokémon",
+        "height": "3'7\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "It lashes about with its tail to knock down its foe. It then tears up the fallen opponent with sharp claws.",
+      "secret": false,
+      "deckCode": "HIF 8",
+      "printGroup": [
+        "HIF 8"
+      ],
+      "limitless": {
+        "id": 14311,
+        "url": "https://limitlesstcg.com/cards/HIF/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/8.png",
+        "large": "https://images.pokemontcg.io/sm115/8_hires.png"
+      }
+    },
+    {
+      "number": "09/68",
+      "localId": "9",
+      "name": "Charizard-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "evolvesFrom": "Charmeleon",
+      "types": [
+        "Fire"
+      ],
+      "hp": 250,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "140",
+          "text": ""
+        },
+        {
+          "name": "Flare Blitz-GX",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "300",
+          "text": "(You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "aky CG Works",
+      "secret": false,
+      "deckCode": "HIF 9",
+      "printGroup": [
+        "HIF 9",
+        "SMP 211"
+      ],
+      "limitless": {
+        "id": 14312,
+        "url": "https://limitlesstcg.com/cards/HIF/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/9.png",
+        "large": "https://images.pokemontcg.io/sm115/9_hires.png"
+      }
+    },
+    {
+      "number": "10/68",
+      "localId": "10",
+      "name": "Magmar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Magmortar"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Fire Punch",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Satoshi Shirai",
+      "pokedex": {
+        "number": 126,
+        "genus": "Spitfire Pokémon",
+        "height": "4'3\"",
+        "weight": "98.1 lbs"
+      },
+      "flavorText": "Its entire body is burning. When it breathes, the temperature rises. When it sneezes, flames shoot out!",
+      "secret": false,
+      "deckCode": "HIF 10",
+      "printGroup": [
+        "HIF 10"
+      ],
+      "limitless": {
+        "id": 14313,
+        "url": "https://limitlesstcg.com/cards/HIF/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/10.png",
+        "large": "https://images.pokemontcg.io/sm115/10_hires.png"
+      }
+    },
+    {
+      "number": "11/68",
+      "localId": "11",
+      "name": "Psyduck",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Golduck"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Headache",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "nagimiso",
+      "pokedex": {
+        "number": 54,
+        "genus": "Duck Pokémon",
+        "height": "2'7\"",
+        "weight": "43.2 lbs"
+      },
+      "flavorText": "Using psychokinesis gives it a headache, so it normally passes the time spacing out and doing as little as possible.",
+      "secret": false,
+      "deckCode": "HIF 11",
+      "printGroup": [
+        "HIF 11"
+      ],
+      "limitless": {
+        "id": 14314,
+        "url": "https://limitlesstcg.com/cards/HIF/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/11.png",
+        "large": "https://images.pokemontcg.io/sm115/11_hires.png"
+      }
+    },
+    {
+      "number": "12/68",
+      "localId": "12",
+      "name": "Slowpoke",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Slowbro",
+        "Slowking"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Yawn",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Misa Tsutsui",
+      "pokedex": {
+        "number": 79,
+        "genus": "Dopey Pokémon",
+        "height": "3'11\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "Alolan home cooking involves drying Slowpoke tails and then simmering them into a salty stew.",
+      "secret": false,
+      "deckCode": "HIF 12",
+      "printGroup": [
+        "HIF 12",
+        "LOT 54"
+      ],
+      "limitless": {
+        "id": 14315,
+        "url": "https://limitlesstcg.com/cards/HIF/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/12.png",
+        "large": "https://images.pokemontcg.io/sm115/12_hires.png"
+      }
+    },
+    {
+      "number": "13/68",
+      "localId": "13",
+      "name": "Staryu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Starmie"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Numbing Water",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 120,
+        "genus": "Star Shape Pokémon",
+        "height": "2'7\"",
+        "weight": "76.1 lbs"
+      },
+      "flavorText": "In many places, there are folktales of stardust falling into the ocean and becoming Staryu.",
+      "secret": false,
+      "deckCode": "HIF 13",
+      "printGroup": [
+        "HIF 13",
+        "TEU 28"
+      ],
+      "limitless": {
+        "id": 14316,
+        "url": "https://limitlesstcg.com/cards/HIF/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/13.png",
+        "large": "https://images.pokemontcg.io/sm115/13_hires.png"
+      }
+    },
+    {
+      "number": "14/68",
+      "localId": "14",
+      "name": "Starmie-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Staryu",
+      "types": [
+        "Water"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Star Stream",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "Attach 2 Water Energy cards from your discard pile to 1 of your Pokémon."
+        },
+        {
+          "name": "Spinning Attack",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        },
+        {
+          "name": "Hydro Pump-GX",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40+",
+          "text": "This attack does 40 more damage times the amount of Water Energy attached to this Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "PLANETA Otani",
+      "secret": false,
+      "deckCode": "HIF 14",
+      "printGroup": [
+        "HIF 14"
+      ],
+      "limitless": {
+        "id": 14317,
+        "url": "https://limitlesstcg.com/cards/HIF/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/14.png",
+        "large": "https://images.pokemontcg.io/sm115/14_hires.png"
+      }
+    },
+    {
+      "number": "15/68",
+      "localId": "15",
+      "name": "Magikarp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gyarados"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 30,
+      "attacks": [
+        {
+          "name": "Splash",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 129,
+        "genus": "Fish Pokémon",
+        "height": "2'11\"",
+        "weight": "22.0 lbs"
+      },
+      "flavorText": "In the distant past, they were fairly strong, but they have become gradually weaker over time.",
+      "secret": false,
+      "deckCode": "HIF 15",
+      "printGroup": [
+        "CL 61",
+        "HIF 15",
+        "HS 72"
+      ],
+      "limitless": {
+        "id": 14318,
+        "url": "https://limitlesstcg.com/cards/HIF/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/15.png",
+        "large": "https://images.pokemontcg.io/sm115/15_hires.png"
+      }
+    },
+    {
+      "number": "16/68",
+      "localId": "16",
+      "name": "Gyarados-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Magikarp",
+      "types": [
+        "Water"
+      ],
+      "hp": 230,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Rage",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130",
+          "text": ""
+        },
+        {
+          "name": "Hyper Beam-GX",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "240",
+          "text": "(You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 16",
+      "printGroup": [
+        "HIF 16",
+        "SMP 212"
+      ],
+      "limitless": {
+        "id": 14319,
+        "url": "https://limitlesstcg.com/cards/HIF/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/16.png",
+        "large": "https://images.pokemontcg.io/sm115/16_hires.png"
+      }
+    },
+    {
+      "number": "17/68",
+      "localId": "17",
+      "name": "Lapras",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Aqua Wave",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "kodama",
+      "pokedex": {
+        "number": 131,
+        "genus": "Transport Pokémon",
+        "height": "8'2\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "It likes swimming around with people on its back. In the Alola region, it's an important means of transportation over water.",
+      "secret": false,
+      "deckCode": "HIF 17",
+      "printGroup": [
+        "HIF 17"
+      ],
+      "limitless": {
+        "id": 14320,
+        "url": "https://limitlesstcg.com/cards/HIF/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/17.png",
+        "large": "https://images.pokemontcg.io/sm115/17_hires.png"
+      }
+    },
+    {
+      "number": "18/68",
+      "localId": "18",
+      "name": "Vaporeon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Bubble Drain",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Heal 30 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 134,
+        "genus": "Bubble Jet Pokémon",
+        "height": "3'3\"",
+        "weight": "63.9 lbs"
+      },
+      "flavorText": "Clean, clear waters are its usual habitat. When it's about to be attacked by an invading enemy, it dives into the water to hide.",
+      "secret": false,
+      "deckCode": "HIF 18",
+      "printGroup": [
+        "HIF 18"
+      ],
+      "limitless": {
+        "id": 14321,
+        "url": "https://limitlesstcg.com/cards/HIF/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/18.png",
+        "large": "https://images.pokemontcg.io/sm115/18_hires.png"
+      }
+    },
+    {
+      "number": "19/68",
+      "localId": "19",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "Its nature is to store up electricity. Forests where nests of Pikachu live are dangerous, since the trees are so often struck by lightning.",
+      "secret": false,
+      "deckCode": "HIF 19",
+      "printGroup": [
+        "HIF 19"
+      ],
+      "limitless": {
+        "id": 14322,
+        "url": "https://limitlesstcg.com/cards/HIF/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/19.png",
+        "large": "https://images.pokemontcg.io/sm115/19_hires.png"
+      }
+    },
+    {
+      "number": "20/68",
+      "localId": "20",
+      "name": "Raichu-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Pikachu",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": ""
+        },
+        {
+          "name": "Spark Ball-GX",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "(You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 20",
+      "printGroup": [
+        "HIF 20",
+        "SMP 213"
+      ],
+      "limitless": {
+        "id": 14323,
+        "url": "https://limitlesstcg.com/cards/HIF/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/20.png",
+        "large": "https://images.pokemontcg.io/sm115/20_hires.png"
+      }
+    },
+    {
+      "number": "21/68",
+      "localId": "21",
+      "name": "Voltorb",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Electrode"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Lightning Ball",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "SATOSHI NAKAI",
+      "pokedex": {
+        "number": 100,
+        "genus": "Ball Pokémon",
+        "height": "1'8\"",
+        "weight": "22.9 lbs"
+      },
+      "flavorText": "It was discovered when Poké Balls were introduced. It is said that there is some connection.",
+      "secret": false,
+      "deckCode": "HIF 21",
+      "printGroup": [
+        "HIF 21"
+      ],
+      "limitless": {
+        "id": 14324,
+        "url": "https://limitlesstcg.com/cards/HIF/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/21.png",
+        "large": "https://images.pokemontcg.io/sm115/21_hires.png"
+      }
+    },
+    {
+      "number": "22/68",
+      "localId": "22",
+      "name": "Electrode",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Voltorb",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Lightning Ball",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Electroblast",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip 2 coins. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Anesaki Dynamic",
+      "pokedex": {
+        "number": 101,
+        "genus": "Ball Pokémon",
+        "height": "3'11\"",
+        "weight": "146.8 lbs"
+      },
+      "flavorText": "It explodes in response to even minor stimuli. It is feared, with the nickname of \"The Bomb Ball.\"",
+      "secret": false,
+      "deckCode": "HIF 22",
+      "printGroup": [
+        "HIF 22"
+      ],
+      "limitless": {
+        "id": 14325,
+        "url": "https://limitlesstcg.com/cards/HIF/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/22.png",
+        "large": "https://images.pokemontcg.io/sm115/22_hires.png"
+      }
+    },
+    {
+      "number": "23/68",
+      "localId": "23",
+      "name": "Jolteon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Electromagnetic Wall",
+          "text": "As long as this Pokémon is your Active Pokémon, whenever your opponent attaches an Energy card from their hand to 1 of their Pokémon, put 2 damage counters on that Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "90",
+          "text": "Discard all Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 135,
+        "genus": "Lightning Pokémon",
+        "height": "2'7\"",
+        "weight": "54.0 lbs"
+      },
+      "flavorText": "Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales.",
+      "secret": false,
+      "deckCode": "HIF 23",
+      "printGroup": [
+        "HIF 23"
+      ],
+      "limitless": {
+        "id": 14326,
+        "url": "https://limitlesstcg.com/cards/HIF/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/23.png",
+        "large": "https://images.pokemontcg.io/sm115/23_hires.png"
+      }
+    },
+    {
+      "number": "24/68",
+      "localId": "24",
+      "name": "Zapdos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Hurricane Call",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip 4 coins. For each heads, search your deck for a Lightning Energy card and attach it to 1 of your Pokémon-GX or Pokémon-EX. Then, shuffle your deck."
+        },
+        {
+          "name": "Sky-High Claws",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 145,
+        "genus": "Electric Pokémon",
+        "height": "5'3\"",
+        "weight": "116.0 lbs"
+      },
+      "flavorText": "A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts.",
+      "secret": false,
+      "deckCode": "HIF 24",
+      "printGroup": [
+        "HIF 24"
+      ],
+      "limitless": {
+        "id": 14327,
+        "url": "https://limitlesstcg.com/cards/HIF/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/24.png",
+        "large": "https://images.pokemontcg.io/sm115/24_hires.png"
+      }
+    },
+    {
+      "number": "25/68",
+      "localId": "25",
+      "name": "Ekans",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Arbok"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Wrap",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 23,
+        "genus": "Snake Pokémon",
+        "height": "6'7\"",
+        "weight": "15.2 lbs"
+      },
+      "flavorText": "By dislocating its jaw, it can swallow prey larger than itself. After a meal, it curls up and rests.",
+      "secret": false,
+      "deckCode": "HIF 25",
+      "printGroup": [
+        "HIF 25"
+      ],
+      "limitless": {
+        "id": 14328,
+        "url": "https://limitlesstcg.com/cards/HIF/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/25.png",
+        "large": "https://images.pokemontcg.io/sm115/25_hires.png"
+      }
+    },
+    {
+      "number": "26/68",
+      "localId": "26",
+      "name": "Ekans",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Arbok"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tail Whap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 23,
+        "genus": "Snake Pokémon",
+        "height": "6'7\"",
+        "weight": "15.2 lbs"
+      },
+      "flavorText": "By dislocating its jaw, it can swallow prey larger than itself. After a meal, it curls up and rests.",
+      "secret": false,
+      "deckCode": "HIF 26",
+      "printGroup": [
+        "HIF 26"
+      ],
+      "limitless": {
+        "id": 14329,
+        "url": "https://limitlesstcg.com/cards/HIF/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/26.png",
+        "large": "https://images.pokemontcg.io/sm115/26_hires.png"
+      }
+    },
+    {
+      "number": "27/68",
+      "localId": "27",
+      "name": "Arbok",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ekans",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Last Pattern",
+          "text": "If this Pokémon is Knocked Out by damage from an opponent's attack, discard 2 random cards from your opponent's hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Rocket Tail",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "If Jessie & James is in your discard pile, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 24,
+        "genus": "Cobra Pokémon",
+        "height": "11'6\"",
+        "weight": "143.3 lbs"
+      },
+      "flavorText": "The latest research has determined that there are over 20 possible arrangements of the patterns on its stomach.",
+      "secret": false,
+      "deckCode": "HIF 27",
+      "printGroup": [
+        "HIF 27"
+      ],
+      "limitless": {
+        "id": 14330,
+        "url": "https://limitlesstcg.com/cards/HIF/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/27.png",
+        "large": "https://images.pokemontcg.io/sm115/27_hires.png"
+      }
+    },
+    {
+      "number": "28/68",
+      "localId": "28",
+      "name": "Koffing",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Weezing"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 109,
+        "genus": "Poison Gas Pokémon",
+        "height": "2'0\"",
+        "weight": "2.2 lbs"
+      },
+      "flavorText": "Its thin, balloon-like body is inflated by horribly toxic gases. It reeks when it is nearby.",
+      "secret": false,
+      "deckCode": "HIF 28",
+      "printGroup": [
+        "HIF 28"
+      ],
+      "limitless": {
+        "id": 14331,
+        "url": "https://limitlesstcg.com/cards/HIF/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/28.png",
+        "large": "https://images.pokemontcg.io/sm115/28_hires.png"
+      }
+    },
+    {
+      "number": "29/68",
+      "localId": "29",
+      "name": "Weezing",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Koffing",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Surrender Now",
+          "text": "Once during your turn, if this Pokémon is discarded with the effect of Jessie & James, you may have your opponent discard a card from their hand. (They discard that card after the effect of Jessie & James.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Hideki Ishikawa",
+      "pokedex": {
+        "number": 110,
+        "genus": "Poison Gas Pokémon",
+        "height": "3'11\"",
+        "weight": "20.9 lbs"
+      },
+      "flavorText": "If one of the twin Koffing inflates, the other one deflates. It constantly mixes its poisonous gases.",
+      "secret": false,
+      "deckCode": "HIF 29",
+      "printGroup": [
+        "HIF 29"
+      ],
+      "limitless": {
+        "id": 14332,
+        "url": "https://limitlesstcg.com/cards/HIF/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/29.png",
+        "large": "https://images.pokemontcg.io/sm115/29_hires.png"
+      }
+    },
+    {
+      "number": "30/68",
+      "localId": "30",
+      "name": "Jynx",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Slap",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Lovely Kiss",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 124,
+        "genus": "Human Shape Pokémon",
+        "height": "4'7\"",
+        "weight": "89.5 lbs"
+      },
+      "flavorText": "It sways its hips to a rhythm all its own. The precise movements of Jynx living in Alola are truly wonderful.",
+      "secret": false,
+      "deckCode": "HIF 30",
+      "printGroup": [
+        "HIF 30"
+      ],
+      "limitless": {
+        "id": 14333,
+        "url": "https://limitlesstcg.com/cards/HIF/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/30.png",
+        "large": "https://images.pokemontcg.io/sm115/30_hires.png"
+      }
+    },
+    {
+      "number": "31/68",
+      "localId": "31",
+      "name": "Mewtwo-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Super Psy Bolt",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": ""
+        },
+        {
+          "name": "Psycrush-GX",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "Discard all Energy from your opponent's Active Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "aky CG Works",
+      "secret": false,
+      "deckCode": "HIF 31",
+      "printGroup": [
+        "HIF 31"
+      ],
+      "limitless": {
+        "id": 14334,
+        "url": "https://limitlesstcg.com/cards/HIF/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/31.png",
+        "large": "https://images.pokemontcg.io/sm115/31_hires.png"
+      }
+    },
+    {
+      "number": "32/68",
+      "localId": "32",
+      "name": "Mew",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Psyshot",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 151,
+        "genus": "New Species Pokémon",
+        "height": "1'4\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "Because it can use all kinds of moves, many scientists believe Mew to be the ancestor of Pokémon.",
+      "secret": false,
+      "deckCode": "HIF 32",
+      "printGroup": [
+        "HIF 32"
+      ],
+      "limitless": {
+        "id": 14335,
+        "url": "https://limitlesstcg.com/cards/HIF/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/32.png",
+        "large": "https://images.pokemontcg.io/sm115/32_hires.png"
+      }
+    },
+    {
+      "number": "33/68",
+      "localId": "33",
+      "name": "Geodude",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Graveler"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 74,
+        "genus": "Rock Pokémon",
+        "height": "1'4\"",
+        "weight": "44.1 lbs"
+      },
+      "flavorText": "Geodude that have lived a long life have had all their edges smoothed out until they're totally round. They also have a calm, quiet disposition.",
+      "secret": false,
+      "deckCode": "HIF 33",
+      "printGroup": [
+        "HIF 33"
+      ],
+      "limitless": {
+        "id": 14336,
+        "url": "https://limitlesstcg.com/cards/HIF/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/33.png",
+        "large": "https://images.pokemontcg.io/sm115/33_hires.png"
+      }
+    },
+    {
+      "number": "34/68",
+      "localId": "34",
+      "name": "Graveler",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Geodude",
+      "evolvesTo": [
+        "Golem"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Mudslide",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "",
+          "text": "Discard 2 Fighting Energy from this Pokémon. This attack does 80 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 75,
+        "genus": "Rock Pokémon",
+        "height": "3'3\"",
+        "weight": "231.5 lbs"
+      },
+      "flavorText": "It climbs up cliffs as it heads toward the peak of a mountain. As soon as it reaches the summit, it rolls back down the way it came.",
+      "secret": false,
+      "deckCode": "HIF 34",
+      "printGroup": [
+        "HIF 34"
+      ],
+      "limitless": {
+        "id": 14337,
+        "url": "https://limitlesstcg.com/cards/HIF/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/34.png",
+        "large": "https://images.pokemontcg.io/sm115/34_hires.png"
+      }
+    },
+    {
+      "number": "35/68",
+      "localId": "35",
+      "name": "Golem",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Graveler",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 170,
+      "attacks": [
+        {
+          "name": "Rock Slide",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "This attack does 20 damage to 3 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Land Crush",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "140",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 76,
+        "genus": "Megaton Pokémon",
+        "height": "4'7\"",
+        "weight": "661.4 lbs"
+      },
+      "flavorText": "When Golem grow old, they stop shedding their shells. Those that have lived a long, long time have shells green with moss.",
+      "secret": false,
+      "deckCode": "HIF 35",
+      "printGroup": [
+        "HIF 35"
+      ],
+      "limitless": {
+        "id": 14338,
+        "url": "https://limitlesstcg.com/cards/HIF/35"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/35.png",
+        "large": "https://images.pokemontcg.io/sm115/35_hires.png"
+      }
+    },
+    {
+      "number": "36/68",
+      "localId": "36",
+      "name": "Onix-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "GX"
+      ],
+      "evolvesTo": [
+        "Steelix"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 200,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Bind",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Heavy Impact",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "150",
+          "text": ""
+        },
+        {
+          "name": "Rocky Avalanche-GX",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "200",
+          "text": "During your opponent's next turn, this Pokémon takes 100 less damage from attacks (after applying Weakness and Resistance). (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "PLANETA Igarashi",
+      "secret": false,
+      "deckCode": "HIF 36",
+      "printGroup": [
+        "HIF 36"
+      ],
+      "limitless": {
+        "id": 14339,
+        "url": "https://limitlesstcg.com/cards/HIF/36"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/36.png",
+        "large": "https://images.pokemontcg.io/sm115/36_hires.png"
+      }
+    },
+    {
+      "number": "37/68",
+      "localId": "37",
+      "name": "Cubone",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Marowak"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Sharpshooting",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hasuno",
+      "pokedex": {
+        "number": 104,
+        "genus": "Lonely Pokémon",
+        "height": "1'4\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "The skull it wears on its head is that of its dead mother. According to some, it will evolve when it comes to terms with the pain of her death.",
+      "secret": false,
+      "deckCode": "HIF 37",
+      "printGroup": [
+        "HIF 37"
+      ],
+      "limitless": {
+        "id": 14340,
+        "url": "https://limitlesstcg.com/cards/HIF/37"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/37.png",
+        "large": "https://images.pokemontcg.io/sm115/37_hires.png"
+      }
+    },
+    {
+      "number": "38/68",
+      "localId": "38",
+      "name": "Clefairy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Clefable"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Lead",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Pound",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 35,
+        "genus": "Fairy Pokémon",
+        "height": "2'0\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "They're popular, but they're rare. Trainers who show them off recklessly may be targeted by thieves.",
+      "secret": false,
+      "deckCode": "HIF 38",
+      "printGroup": [
+        "HIF 38"
+      ],
+      "limitless": {
+        "id": 14341,
+        "url": "https://limitlesstcg.com/cards/HIF/38"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/38.png",
+        "large": "https://images.pokemontcg.io/sm115/38_hires.png"
+      }
+    },
+    {
+      "number": "39/68",
+      "localId": "39",
+      "name": "Clefairy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Clefable"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Moon Dance",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 35,
+        "genus": "Fairy Pokémon",
+        "height": "2'0\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "They're popular, but they're rare. Trainers who show them off recklessly may be targeted by thieves.",
+      "secret": false,
+      "deckCode": "HIF 39",
+      "printGroup": [
+        "HIF 39"
+      ],
+      "limitless": {
+        "id": 14342,
+        "url": "https://limitlesstcg.com/cards/HIF/39"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/39.png",
+        "large": "https://images.pokemontcg.io/sm115/39_hires.png"
+      }
+    },
+    {
+      "number": "40/68",
+      "localId": "40",
+      "name": "Clefable",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Clefairy",
+      "types": [
+        "Fairy"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Moon Impact",
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "sui",
+      "pokedex": {
+        "number": 36,
+        "genus": "Fairy Pokémon",
+        "height": "4'3\"",
+        "weight": "88.2 lbs"
+      },
+      "flavorText": "It can't help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren't many people or Pokémon.",
+      "secret": false,
+      "deckCode": "HIF 40",
+      "printGroup": [
+        "HIF 40"
+      ],
+      "limitless": {
+        "id": 14343,
+        "url": "https://limitlesstcg.com/cards/HIF/40"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/40.png",
+        "large": "https://images.pokemontcg.io/sm115/40_hires.png"
+      }
+    },
+    {
+      "number": "41/68",
+      "localId": "41",
+      "name": "Jigglypuff",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Wigglytuff"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Singing Voice",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rollout",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 39,
+        "genus": "Balloon Pokémon",
+        "height": "1'8\"",
+        "weight": "12.1 lbs"
+      },
+      "flavorText": "Recordings of Jigglypuff's strange lullabies can be purchased from department stores. These CDs can be found near the bedding area.",
+      "secret": false,
+      "deckCode": "HIF 41",
+      "printGroup": [
+        "HIF 41"
+      ],
+      "limitless": {
+        "id": 14344,
+        "url": "https://limitlesstcg.com/cards/HIF/41"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/41.png",
+        "large": "https://images.pokemontcg.io/sm115/41_hires.png"
+      }
+    },
+    {
+      "number": "42/68",
+      "localId": "42",
+      "name": "Wigglytuff-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "GX"
+      ],
+      "evolvesFrom": "Jigglypuff",
+      "types": [
+        "Fairy"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Rolling Rush",
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        },
+        {
+          "name": "Lovely Star-GX",
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "Heal all damage from this Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 42",
+      "printGroup": [
+        "HIF 42"
+      ],
+      "limitless": {
+        "id": 14345,
+        "url": "https://limitlesstcg.com/cards/HIF/42"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/42.png",
+        "large": "https://images.pokemontcg.io/sm115/42_hires.png"
+      }
+    },
+    {
+      "number": "43/68",
+      "localId": "43",
+      "name": "Mr. Mime",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Happy Mime",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Each player draws a card."
+        },
+        {
+          "name": "Double Slap",
+          "cost": [
+            "Fairy",
+            "Fairy"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40×",
+          "text": "Flip 2 coins. This attack does 40 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Hideki Ishikawa",
+      "pokedex": {
+        "number": 122,
+        "genus": "Barrier Pokémon",
+        "height": "4'3\"",
+        "weight": "120.2 lbs"
+      },
+      "flavorText": "Its pantomime skills are wonderful. You may become enraptured while watching it, but next thing you know, Mr. Mime has made a real wall.",
+      "secret": false,
+      "deckCode": "HIF 43",
+      "printGroup": [
+        "HIF 43"
+      ],
+      "limitless": {
+        "id": 14346,
+        "url": "https://limitlesstcg.com/cards/HIF/43"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/43.png",
+        "large": "https://images.pokemontcg.io/sm115/43_hires.png"
+      }
+    },
+    {
+      "number": "44/68",
+      "localId": "44",
+      "name": "Moltres & Zapdos & Articuno-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "TAG TEAM",
+        "GX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 300,
+      "rules": [
+        "TAG TEAM rule: When your TAG TEAM is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Trinity Burn",
+          "cost": [
+            "Fire",
+            "Water",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "210",
+          "text": ""
+        },
+        {
+          "name": "Sky Legends-GX",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo GX",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "deckCode": "HIF 44",
+      "printGroup": [
+        "HIF 44",
+        "HIF 66",
+        "HIF 69",
+        "SMP 210"
+      ],
+      "limitless": {
+        "id": 14347,
+        "url": "https://limitlesstcg.com/cards/HIF/44"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/44.png",
+        "large": "https://images.pokemontcg.io/sm115/44_hires.png"
+      }
+    },
+    {
+      "number": "45/68",
+      "localId": "45",
+      "name": "Farfetch'd",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sirfetch'd"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Leek Slap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Eri Yamaki",
+      "pokedex": {
+        "number": 83,
+        "genus": "Wild Duck Pokémon",
+        "height": "2'7\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "The plant stalk it holds is its weapon. The stalk is used like a sword to cut all sorts of things.",
+      "secret": false,
+      "deckCode": "HIF 45",
+      "printGroup": [
+        "HIF 45"
+      ],
+      "limitless": {
+        "id": 14348,
+        "url": "https://limitlesstcg.com/cards/HIF/45"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/45.png",
+        "large": "https://images.pokemontcg.io/sm115/45_hires.png"
+      }
+    },
+    {
+      "number": "46/68",
+      "localId": "46",
+      "name": "Chansey",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Blissey"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Double-Edge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "This Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "sowsow",
+      "pokedex": {
+        "number": 113,
+        "genus": "Egg Pokémon",
+        "height": "3'7\"",
+        "weight": "76.3 lbs"
+      },
+      "flavorText": "It seems that other Pokémon's efforts to take its delicious, nutritious egg away from it caused Chansey to get faster at fleeing.",
+      "secret": false,
+      "deckCode": "HIF 46",
+      "printGroup": [
+        "HIF 46"
+      ],
+      "limitless": {
+        "id": 14349,
+        "url": "https://limitlesstcg.com/cards/HIF/46"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/46.png",
+        "large": "https://images.pokemontcg.io/sm115/46_hires.png"
+      }
+    },
+    {
+      "number": "47/68",
+      "localId": "47",
+      "name": "Kangaskhan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Parental Fury",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40×",
+          "text": "Flip a coin until you get tails. This attack does 40 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "You Iribi",
+      "pokedex": {
+        "number": 115,
+        "genus": "Parent Pokémon",
+        "height": "7'3\"",
+        "weight": "176.4 lbs"
+      },
+      "flavorText": "Kangaskhan protects its child by keeping it in its pouch. It has zero forgiveness for those who harm its child and will beat them down.",
+      "secret": false,
+      "deckCode": "HIF 47",
+      "printGroup": [
+        "HIF 47"
+      ],
+      "limitless": {
+        "id": 14350,
+        "url": "https://limitlesstcg.com/cards/HIF/47"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/47.png",
+        "large": "https://images.pokemontcg.io/sm115/47_hires.png"
+      }
+    },
+    {
+      "number": "48/68",
+      "localId": "48",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Curiosity",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent reveals their hand."
+        },
+        {
+          "name": "Spin Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "The question of why only Eevee has such unstable genes has still not been solved.",
+      "secret": false,
+      "deckCode": "HIF 48",
+      "printGroup": [
+        "HIF 48"
+      ],
+      "limitless": {
+        "id": 14351,
+        "url": "https://limitlesstcg.com/cards/HIF/48"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/48.png",
+        "large": "https://images.pokemontcg.io/sm115/48_hires.png"
+      }
+    },
+    {
+      "number": "49/68",
+      "localId": "49",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Current studies show it can evolve into an incredible eight different species of Pokémon.",
+      "secret": false,
+      "deckCode": "HIF 49",
+      "printGroup": [
+        "HIF 49",
+        "LOT 155",
+        "UPR 104"
+      ],
+      "limitless": {
+        "id": 14352,
+        "url": "https://limitlesstcg.com/cards/HIF/49"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/49.png",
+        "large": "https://images.pokemontcg.io/sm115/49_hires.png"
+      }
+    },
+    {
+      "number": "50/68",
+      "localId": "50",
+      "name": "Snorlax",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Incredible Snore",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 143,
+        "genus": "Sleeping Pokémon",
+        "height": "6'11\"",
+        "weight": "1014.1 lbs"
+      },
+      "flavorText": "It doesn't do anything other than eat and sleep. When prompted to make a serious effort, though, it apparently displays awesome power.",
+      "secret": false,
+      "deckCode": "HIF 50",
+      "printGroup": [
+        "HIF 50"
+      ],
+      "limitless": {
+        "id": 14353,
+        "url": "https://limitlesstcg.com/cards/HIF/50"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/50.png",
+        "large": "https://images.pokemontcg.io/sm115/50_hires.png"
+      }
+    },
+    {
+      "number": "51/68",
+      "localId": "51",
+      "name": "Bill's Analysis",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Look at the top 7 cards of your deck. You may reveal up to 2 Trainer cards you find there and put them into your hand. Shuffle the other cards back into your deck.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Naoki Saito",
+      "secret": false,
+      "deckCode": "HIF 51",
+      "printGroup": [
+        "HIF 51",
+        "TEU 133"
+      ],
+      "limitless": {
+        "id": 14354,
+        "url": "https://limitlesstcg.com/cards/HIF/51"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/51.png",
+        "large": "https://images.pokemontcg.io/sm115/51_hires.png"
+      }
+    },
+    {
+      "number": "52/68",
+      "localId": "52",
+      "name": "Blaine's Last Stand",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only when it is the last card in your hand.",
+        "Draw 2 cards for each Fire Pokémon you have in play.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "HIF 52",
+      "printGroup": [
+        "DRM 58",
+        "DRM 69",
+        "HIF 52"
+      ],
+      "limitless": {
+        "id": 14355,
+        "url": "https://limitlesstcg.com/cards/HIF/52"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/52.png",
+        "large": "https://images.pokemontcg.io/sm115/52_hires.png"
+      }
+    },
+    {
+      "number": "53/68",
+      "localId": "53",
+      "name": "Brock's Grit",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Shuffle 6 in any combination of Pokémon and basic Energy cards from your discard pile into your deck.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 53",
+      "printGroup": [
+        "EVO 74",
+        "EVO 107",
+        "HIF 53",
+        "TEU 135",
+        "TEU 172"
+      ],
+      "limitless": {
+        "id": 14356,
+        "url": "https://limitlesstcg.com/cards/HIF/53"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/53.png",
+        "large": "https://images.pokemontcg.io/sm115/53_hires.png"
+      }
+    },
+    {
+      "number": "54/68",
+      "localId": "54",
+      "name": "Brock's Pewter City Gym",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Onix-GX (both yours and your opponent's) take 40 less damage from the opponent's attacks (after applying Weakness and Resistance).",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 54",
+      "printGroup": [
+        "HIF 54"
+      ],
+      "limitless": {
+        "id": 14357,
+        "url": "https://limitlesstcg.com/cards/HIF/54"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/54.png",
+        "large": "https://images.pokemontcg.io/sm115/54_hires.png"
+      }
+    },
+    {
+      "number": "55/68",
+      "localId": "55",
+      "name": "Brock's Training",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Attach an Energy card from your hand to 1 of your Geodude, Graveler, Golem, Onix-GX, Cubone, Rhyhorn, Rhydon, or Sudowoodo.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "TOKIYA",
+      "secret": false,
+      "deckCode": "HIF 55",
+      "printGroup": [
+        "HIF 55"
+      ],
+      "limitless": {
+        "id": 14358,
+        "url": "https://limitlesstcg.com/cards/HIF/55"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/55.png",
+        "large": "https://images.pokemontcg.io/sm115/55_hires.png"
+      }
+    },
+    {
+      "number": "56/68",
+      "localId": "56",
+      "name": "Erika's Hospitality",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only if you have 4 or fewer other cards in your hand.",
+        "Draw a card for each of your opponent's Pokémon in play.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sanosuke Sakuma",
+      "secret": false,
+      "deckCode": "HIF 56",
+      "printGroup": [
+        "HIF 56",
+        "TEU 140",
+        "TEU 174"
+      ],
+      "limitless": {
+        "id": 14359,
+        "url": "https://limitlesstcg.com/cards/HIF/56"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/56.png",
+        "large": "https://images.pokemontcg.io/sm115/56_hires.png"
+      }
+    },
+    {
+      "number": "57/68",
+      "localId": "57",
+      "name": "Giovanni's Exile",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard up to 2 of your Benched Pokémon that have no damage counters on them and all cards attached to them.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 57",
+      "printGroup": [
+        "HIF 57",
+        "HIF 67",
+        "UNB 174"
+      ],
+      "limitless": {
+        "id": 14360,
+        "url": "https://limitlesstcg.com/cards/HIF/57"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/57.png",
+        "large": "https://images.pokemontcg.io/sm115/57_hires.png"
+      }
+    },
+    {
+      "number": "58/68",
+      "localId": "58",
+      "name": "Jessie & James",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Each player discards 2 cards from their hand. Your opponent discards first.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 58",
+      "printGroup": [
+        "HIF 58",
+        "HIF 68"
+      ],
+      "limitless": {
+        "id": 14361,
+        "url": "https://limitlesstcg.com/cards/HIF/58"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/58.png",
+        "large": "https://images.pokemontcg.io/sm115/58_hires.png"
+      }
+    },
+    {
+      "number": "59/68",
+      "localId": "59",
+      "name": "Koga's Trap",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent's Active Pokémon is now Confused and Poisoned.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 59",
+      "printGroup": [
+        "HIF 59",
+        "UNB 177",
+        "UNB 211"
+      ],
+      "limitless": {
+        "id": 14362,
+        "url": "https://limitlesstcg.com/cards/HIF/59"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/59.png",
+        "large": "https://images.pokemontcg.io/sm115/59_hires.png"
+      }
+    },
+    {
+      "number": "60/68",
+      "localId": "60",
+      "name": "Lt. Surge's Strategy",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play this card only if you have more Prize cards remaining than your opponent.",
+        "During this turn, you can play 3 Supporter cards (including this card).",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 60",
+      "printGroup": [
+        "HIF 60",
+        "UNB 178"
+      ],
+      "limitless": {
+        "id": 14363,
+        "url": "https://limitlesstcg.com/cards/HIF/60"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/60.png",
+        "large": "https://images.pokemontcg.io/sm115/60_hires.png"
+      }
+    },
+    {
+      "number": "61/68",
+      "localId": "61",
+      "name": "Misty's Cerulean City Gym",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "The attacks of Starmie-GX (both yours and your opponent's) do 40 more damage to the opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 61",
+      "printGroup": [
+        "HIF 61"
+      ],
+      "limitless": {
+        "id": 14364,
+        "url": "https://limitlesstcg.com/cards/HIF/61"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/61.png",
+        "large": "https://images.pokemontcg.io/sm115/61_hires.png"
+      }
+    },
+    {
+      "number": "62/68",
+      "localId": "62",
+      "name": "Misty's Determination",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard a card from your hand. If you do, look at the top 8 cards of your deck and put 1 of them into your hand. Shuffle the other cards back into your deck.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 62",
+      "printGroup": [
+        "BKP 104",
+        "EVO 80",
+        "EVO 108",
+        "HIF 62"
+      ],
+      "limitless": {
+        "id": 14365,
+        "url": "https://limitlesstcg.com/cards/HIF/62"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/62.png",
+        "large": "https://images.pokemontcg.io/sm115/62_hires.png"
+      }
+    },
+    {
+      "number": "63/68",
+      "localId": "63",
+      "name": "Misty's Water Command",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Move any number of Water Energy from your Pokémon to your Psyduck, Horsea, Staryu, Starmie-GX, Magikarp, Gyarados, or Lapras in any way you like.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "TOKIYA",
+      "secret": false,
+      "deckCode": "HIF 63",
+      "printGroup": [
+        "HIF 63"
+      ],
+      "limitless": {
+        "id": 14366,
+        "url": "https://limitlesstcg.com/cards/HIF/63"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/63.png",
+        "large": "https://images.pokemontcg.io/sm115/63_hires.png"
+      }
+    },
+    {
+      "number": "64/68",
+      "localId": "64",
+      "name": "Pokémon Center Lady",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal 60 damage and remove all Special Conditions from 1 of your Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "TOKIYA",
+      "secret": false,
+      "deckCode": "HIF 64",
+      "printGroup": [
+        "CPA 60",
+        "FLF 93",
+        "FLF 105",
+        "GEN 68",
+        "HIF 64",
+        "MEG 123",
+        "SSH 176",
+        "VIV 185"
+      ],
+      "limitless": {
+        "id": 14367,
+        "url": "https://limitlesstcg.com/cards/HIF/64"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/64.png",
+        "large": "https://images.pokemontcg.io/sm115/64_hires.png"
+      }
+    },
+    {
+      "number": "65/68",
+      "localId": "65",
+      "name": "Sabrina's Suggestion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent reveals their hand. You may choose a Supporter card you find there and use the effect of that card as the effect of this card.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hitoshi Ariga",
+      "secret": false,
+      "deckCode": "HIF 65",
+      "printGroup": [
+        "HIF 65",
+        "TEU 154",
+        "TEU 181"
+      ],
+      "limitless": {
+        "id": 14368,
+        "url": "https://limitlesstcg.com/cards/HIF/65"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/65.png",
+        "large": "https://images.pokemontcg.io/sm115/65_hires.png"
+      }
+    },
+    {
+      "number": "66/68",
+      "localId": "66",
+      "name": "Moltres & Zapdos & Articuno-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "TAG TEAM",
+        "GX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 300,
+      "rules": [
+        "TAG TEAM rule: When your TAG TEAM is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Trinity Burn",
+          "cost": [
+            "Fire",
+            "Water",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "210",
+          "text": ""
+        },
+        {
+          "name": "Sky Legends-GX",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "HIF 66",
+      "printGroup": [
+        "HIF 44",
+        "HIF 66",
+        "HIF 69",
+        "SMP 210"
+      ],
+      "limitless": {
+        "id": 14369,
+        "url": "https://limitlesstcg.com/cards/HIF/66"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/66.png",
+        "large": "https://images.pokemontcg.io/sm115/66_hires.png"
+      }
+    },
+    {
+      "number": "67/68",
+      "localId": "67",
+      "name": "Giovanni's Exile",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard up to 2 of your Benched Pokémon that have no damage counters on them and all cards attached to them.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "TOKIYA",
+      "secret": false,
+      "deckCode": "HIF 67",
+      "printGroup": [
+        "HIF 57",
+        "HIF 67",
+        "UNB 174"
+      ],
+      "limitless": {
+        "id": 14370,
+        "url": "https://limitlesstcg.com/cards/HIF/67"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/67.png",
+        "large": "https://images.pokemontcg.io/sm115/67_hires.png"
+      }
+    },
+    {
+      "number": "68/68",
+      "localId": "68",
+      "name": "Jessie & James",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Each player discards 2 cards from their hand. Your opponent discards first.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "HIF 68",
+      "printGroup": [
+        "HIF 58",
+        "HIF 68"
+      ],
+      "limitless": {
+        "id": 14371,
+        "url": "https://limitlesstcg.com/cards/HIF/68"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/68.png",
+        "large": "https://images.pokemontcg.io/sm115/68_hires.png"
+      }
+    },
+    {
+      "number": "69/68",
+      "localId": "69",
+      "name": "Moltres & Zapdos & Articuno-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "TAG TEAM",
+        "GX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 300,
+      "rules": [
+        "TAG TEAM rule: When your TAG TEAM is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Trinity Burn",
+          "cost": [
+            "Fire",
+            "Water",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "210",
+          "text": ""
+        },
+        {
+          "name": "Sky Legends-GX",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Rainbow",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "HIF 69",
+      "printGroup": [
+        "HIF 44",
+        "HIF 66",
+        "HIF 69",
+        "SMP 210"
+      ],
+      "limitless": {
+        "id": 14372,
+        "url": "https://limitlesstcg.com/cards/HIF/69"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/69.png",
+        "large": "https://images.pokemontcg.io/sm115/69_hires.png"
+      }
+    }
+  ]
+}

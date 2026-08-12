@@ -35,6 +35,14 @@ export function speciesName(cardName) {
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, "")
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, "Castform")
     .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, "")
+    // Fusion forms (Black Kyurem, White Kyurem) share the base Kyurem page,
+    // same category as regional/appliance/mask forms above. Found while
+    // adding Lost Thunder.
+    .replace(/^(Black|White)\s+(?=Kyurem)/, "")
+    .replace(/^Ultra\s+(?=Necrozma)/, "")
+    // Prism Star cards (Ultra Prism era) suffix the name with "◇" — not part
+    // of the species name. Found while adding Ultra Prism.
+    .replace(/\s*◇$/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 
@@ -47,6 +55,11 @@ export function normalize(s) {
     .replace(/[“”]/g, '"')
     .replace(/\.\.\./g, "…")
     .replace(/−/g, "-")
+    // Bulbapedia's own wikitext sometimes types an em dash as a plain "--"
+    // (e.g. Exploud's HeartGold/SoulSilver/Y entry) where the actual card
+    // prints "—" — a transcription-style difference, not a text error. Found
+    // twice now (Vivid Voltage, Celestial Storm), both times on Exploud.
+    .replace(/--/g, "—")
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase()
@@ -74,6 +87,9 @@ function cleanDexEntry(s) {
     // {{OBP|name|category}}/{{OBP|name|category|display}} — category is a
     // disambiguation param, never shown.
     .replace(/\{\{OBP\|([^|}]+)\|[^|}]+(?:\|([^|}]+))?\}\}/g, (_, name, display) => display || name)
+    // {{wp|Article}}/{{wp|Article|Display}} links out to real-world Wikipedia
+    // (e.g. {{wp|dravite}}) — same shape as {{p|...}}, just a different target.
+    .replace(/\{\{wp\|([^|}]+)(?:\|([^|}]+))?\}\}/gi, (_, name, display) => display || name)
     .replace(/<sc>(.*?)<\/sc>/g, (_, name) => name)
     .replace(/<small>[\s\S]*?<\/small>/g, "")
     .replace(/<br\s*\/?>/gi, " ")

@@ -126,6 +126,7 @@ export interface PrimaryCard {
   nationalPokedexNumbers?: number[]
   images?: CardImages
   flavorText?: string // populated by pokemon-tcg-data itself for older (e.g. Scarlet & Violet) sets
+  artist?: string // used directly only for sets with no Limitless page — see fetch-set.mjs's "NONE" mode
 }
 
 export interface PrimarySetMeta {

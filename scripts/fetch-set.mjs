@@ -34,6 +34,15 @@
 //   before trusting this for a new set). e.g.:
 //     node scripts/fetch-set.mjs cel25c CELCC CEL CC
 //
+//   Pass "NONE" as <limitlessUrlCode> for a set with no Limitless page at
+//   all — confirmed for the McDonald's Collection promo sets (mcd17/18/19),
+//   which Limitless never catalogued. This skips the per-card Limitless
+//   scrape entirely: artist comes from pokemon-tcg-data's own `artist` field
+//   instead, deckCode falls back to "<code> <localId>" (still unique, just
+//   not a confirmed real decklist code), and printGroup/limitless are left
+//   as empty placeholders — there's no print-group data to put there. e.g.:
+//     node scripts/fetch-set.mjs mcd17 MCD17 NONE
+//
 // Card numbers stay strings — some sets use suffixed numbers (e.g. "68a").
 
 import { mkdir, readFile, writeFile } from "node:fs/promises"
@@ -58,7 +67,8 @@ const CONCURRENCY = 6
 const RETRIES = 3
 
 const [ptcgDataSetId, limitlessCode, limitlessUrlCodeArg, sequentialPrefix] = process.argv.slice(2)
-const limitlessUrlCode = limitlessUrlCodeArg || limitlessCode
+const noLimitless = limitlessUrlCodeArg === "NONE"
+const limitlessUrlCode = noLimitless ? null : limitlessUrlCodeArg || limitlessCode
 if (!ptcgDataSetId || !limitlessCode) {
   console.error("usage: node scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>] [<sequentialPrefix>]   e.g. me1 MEG")
   process.exit(1)
@@ -77,10 +87,11 @@ function textOnly(html) {
   return decodeEntities(html.replace(/<[^>]+>/g, "").replace(/\s+/g, " "))
 }
 
-async function get(url, { json = false } = {}) {
+async function get(url, { json = false, allow404 = false } = {}) {
   for (let attempt = 1; ; attempt++) {
     try {
       const res = await fetch(url, { headers: { "user-agent": "pokemon-tcg-database (personal reference dataset)" } })
+      if (allow404 && res.status === 404) return null
       if (res.status === 429 || res.status >= 500) throw new Error(`HTTP ${res.status}`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       return json ? await res.json() : await res.text()
@@ -132,9 +143,35 @@ function toLimitlessLocalId(localId) {
   return m ? `${m[1]}${m[2]}` : localId
 }
 
-async function fetchLimitlessExtra(code, localId) {
-  const limitlessLocalId = toLimitlessLocalId(localId)
-  const html = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`)
+// Older sets (Sun & Moon on back, at least) that reprint plain basic Energy
+// cards sometimes page them on Limitless under a type letter instead of
+// pokemon-tcg-data's own sequential number — e.g. Sun & Moon's "Grass Energy"
+// is pokemon-tcg-data's #164 but limitlesstcg.com/cards/SUM/G. Not every old
+// set does this (Guardians Rising's basic energies stayed numeric, confirmed
+// against SVE.json's printGroup cross-references), so this is only a 404
+// fallback, not assumed upfront. Confirmed letters via the actual SUM page.
+const BASIC_ENERGY_LETTERS = {
+  "Grass Energy": "G",
+  "Fire Energy": "R",
+  "Water Energy": "W",
+  "Lightning Energy": "L",
+  "Psychic Energy": "P",
+  "Fighting Energy": "F",
+  "Darkness Energy": "D",
+  "Metal Energy": "M",
+  "Fairy Energy": "Y",
+}
+
+async function fetchLimitlessExtra(code, localId, cardName) {
+  const numericLocalId = toLimitlessLocalId(localId)
+  let limitlessLocalId = numericLocalId
+  let html = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { allow404: true })
+  if (html === null) {
+    const letter = BASIC_ENERGY_LETTERS[cardName]
+    if (!letter) throw new Error(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}: HTTP 404`)
+    limitlessLocalId = letter
+    html = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`)
+  }
 
   const idMatch = html.match(/<!-- CARD ID (\d+) -->/)
 
@@ -153,6 +190,7 @@ async function fetchLimitlessExtra(code, localId) {
   }
 
   return {
+    resolvedLocalId: limitlessLocalId,
     limitless: {
       id: idMatch ? Number(idMatch[1]) : null,
       url: `https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`,
@@ -216,7 +254,9 @@ async function main() {
   const cards = await mapWithConcurrency(primaryCards, CONCURRENCY, async (/** @type {import("../types/card.js").PrimaryCard} */ primary, /** @type {number} */ index) => {
     const localId = sequentialPrefix ? `${sequentialPrefix}${index + 1}` : primary.number
     const [extra, pokedex] = await Promise.all([
-      fetchLimitlessExtra(limitlessUrlCode, localId),
+      noLimitless
+        ? Promise.resolve({ resolvedLocalId: null, limitless: { id: null, url: "" }, artist: primary.artist ?? null, printGroup: [] })
+        : fetchLimitlessExtra(limitlessUrlCode, localId, primary.name),
       // Only regular Pokémon print the dex info box — every rarity mechanic
       // that gets its own oversized name treatment or rule box (MEGA, V
       // family, old-style "EX"/modern "ex", "GX", "Star", "Level-Up"/LV.X,
@@ -265,7 +305,11 @@ async function main() {
     if (primary.flavorText) card.flavorText = primary.flavorText
     if (flavorTextOverlay[localId]) card.flavorText = flavorTextOverlay[localId]
     card.secret = Number(localId) > setMeta.printedTotal
-    card.deckCode = `${limitlessUrlCode} ${toLimitlessLocalId(localId)}`
+    // deckCode must stay unique per card even with no Limitless page to
+    // confirm it against — used as computePrintGroups()'s graph key, so an
+    // empty/shared placeholder here would wrongly union unrelated cards into
+    // one fake print group (found while adding the McDonald's Collections).
+    card.deckCode = noLimitless ? `${limitlessCode} ${localId}` : `${limitlessUrlCode} ${extra.resolvedLocalId}`
     card.printGroup = extra.printGroup.length ? extra.printGroup : [card.deckCode]
     card.limitless = extra.limitless
     if (primary.images) card.images = primary.images

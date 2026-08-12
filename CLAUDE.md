@@ -298,6 +298,104 @@ card's "clingy—it will fume"), confirmed against the card image and fixed via 
 era (`swsh1` through `swsh12pt5gg`, plus `cel25`/`cel25c` and `pgo`) — 21 files
 across 15 real-world set releases, all verified clean.
 
+The entire Sun & Moon era (2017/02–2019/11, `sm1` through `sm12`) is also
+**done** — a second backfill, oldest first: `SUM` (sm1), `GRI` (sm2), `BUS`
+(sm3), `SLG` (sm35, Shining Legends), `CIN` (sm4), `MCD17` (mcd17, McDonald's
+Collection 2017), `UPR` (sm5), `FLI` (sm6), `CES` (sm7), `DRM` (sm75, Dragon
+Majesty), `MCD18` (mcd18), `LOT` (sm8), `TEU` (sm9), `DET` (det1, Detective
+Pikachu), `UNB` (sm10), `UNM` (sm11), `HIF`/`HIFSV` (sm115/sma, Hidden Fates +
+its Shiny Vault subset), `MCD19` (mcd19), and `CEC` (sm12) — 20 files across 21
+`sets/en.json` entries (the ongoing `smp` promo set excluded, same treatment as
+`swshp`/`svp`). All flavor text came from pokemon-tcg-data directly; every set's
+verification sweep was run to completion, several multiple times, since this
+era's sweep runs turned out flaky — a card flagged as unmatched on one run
+routinely cleared on a retry with no text change (a Bulbapedia fetch timeout
+reads as "no candidates," not a distinguishable error), so a flag was only
+trusted after it reproduced on a second run.
+
+This era surfaced more upstream errors and lookup bugs than any prior backfill,
+in roughly two categories:
+
+- **Real upstream `flavorText` errors**, all confirmed against card images and
+  fixed via each set's overlay: SUM (8 cards — Surskit, Torkoal, Golduck,
+  Wingull, Brionne, Primarina, Herdier, Trumbeak), GRI (Mimikyu, Drampa), BUS
+  (Meowstic, Noibat), SLG (Zorua), CIN (Gogoat, Mankey), FLI (Spewpa — the same
+  missing-"Pokémon" bug as BST's Spewpa; Delphox, Clauncher, Malamar), LOT (11
+  cards — Popplio, Wobbuffet, Meloetta, Nihilego, Umbreon, Forretress,
+  Jigglypuff, Kirlia, Stantler, both Pikipek prints), HIFSV (Malamar, Zorua,
+  Noibat — reprints of the same three FLI/SLG/BUS cards above, carrying the
+  same uncorrected upstream text independently since `flavorText` isn't
+  deduped across pokemon-tcg-data's per-set files), and MCD19 (Alolan Dugtrio,
+  "This Pokémon" instead of "These Pokémon"). CEC's sweep flagged Deerling
+  (missing the plural "seasons") the same way. TEU flagged Spiritomb and DET
+  flagged both its cards, but all three were confirmed correct as printed, not
+  errors — see the movie-tie-in note below.
+- **`speciesName()` lookup bugs**, same category as Heat Rotom/Teal Mask
+  Ogerpon/etc. (see "Regional forms and Bulbapedia lookups" below), fixed in
+  both `speciesName()` copies rather than the overlay: Ultra Prism's Prism Star
+  cards suffix the name with "◇" (e.g. "Giratina ◇"), not part of the species
+  name; Lost Thunder's White Kyurem and Cosmic Eclipse's Ultra Necrozma are
+  both fusion/absorption forms with no separate Bulbapedia page, sharing the
+  base `Kyurem (Pokémon)`/`Necrozma (Pokémon)` page like every regional/
+  appliance/mask form before them.
+
+Two more one-off fixes came out of this era, both to shared library code
+rather than any one set:
+
+- Guardians Rising's Alolan Graveler was flagged despite its saved text being
+  correct — `cleanDexEntry` (`scripts/lib/bulbapedia.mjs`) had no handler for
+  Bulbapedia's `{{wp|Article}}` template (a real-world Wikipedia link, e.g.
+  `{{wp|dravite}}`), so raw template braces leaked into the parsed candidate
+  text and broke the comparison. Fixed by adding a `wp` handler alongside the
+  existing `p`/`OBP`/etc. ones.
+- Celestial Storm's Exploud reproduced the exact Vivid Voltage Exploud case
+  (see Status above) — its HeartGold/SoulSilver/Y Bulbapedia entry types an em
+  dash as a plain `--`, which the card itself prints as a real "—". Confirmed
+  against the card image and, since this is the second set to hit the same
+  card with the same artifact, promoted from a documented one-off to an actual
+  `normalize()` rule (`--` → `—`) in both copies, the same treatment as the
+  existing ellipsis/minus-sign normalizations.
+
+Detective Pikachu (`DET`) is a movie tie-in set, not a mainline-game reprint,
+and its flavor text follows suit: the mascot card's text describes the movie
+character rather than any Pokédex entry (no match expected, same exception
+category as Classic Collection's Dark Gyarados/birthday-Pikachu cards — see
+"Flavor text has no structured source" above), and even its Mewtwo card carries
+a movie-adapted paraphrase of the classic "created by gene splicing" entry
+rather than a verbatim reuse. Both confirmed correct as printed against the
+card images; no fix applied or needed.
+
+The three McDonald's Collection sets (`MCD17`/`MCD18`/`MCD19`, 12 cards each)
+needed a real pipeline change: unlike every other set added so far, Limitless
+never catalogued them at all (confirmed via a 404 on the set page and a
+full-text search of Limitless's own set list) — not a numbering quirk like the
+Trainer Gallery/Shiny Vault subsets, but a genuine absence of any scrapeable
+page. `fetch-set.mjs` now accepts `"NONE"` as the `<limitlessUrlCode>` argument
+for this case: it skips the per-card Limitless scrape entirely, reads `artist`
+directly from pokemon-tcg-data's own field (added to the `PrimaryCard` type),
+and falls back to `deckCode = "<code> <localId>"` with `printGroup`/`limitless`
+left as empty placeholders. `deckCode` still has to stay unique per card even
+here — an early version used a literal empty string for all three sets, which
+silently unioned all 36 unrelated McDonald's cards into one fake print group
+the next time `refresh-print-groups.mjs` ran (it keys the union-find graph on
+`deckCode`); caught by inspecting the output before committing, fixed by
+switching to the `"<code> <localId>"` fallback instead.
+
+Sun & Moon's own basic Energy reprints (`SUM`, localId 164–172) turned up
+another `fetch-set.mjs` gap: Limitless pages plain "Grass Energy"/"Fire
+Energy"/etc. cards under a type letter (`SUM/G`, `SUM/R`, ...) instead of
+pokemon-tcg-data's sequential number, but *only* for some sets and *only* for
+the plain-common print — Sun & Moon's own secret-rare full-art Psychic/Metal
+Energy cards kept numeric Limitless pages, and Guardians Rising's basic
+energies turned out to stay fully numeric with no letter page at all (checked
+directly, not assumed). Handled as a 404 fallback rather than a blanket rule:
+`fetchLimitlessExtra` tries the numeric id first, and only on a 404 retries
+under the matching letter for a known basic-energy name (Grass→G, Fire→R,
+Water→W, Lightning→L, Psychic→P, Fighting→F, Darkness→D, Metal→M, Fairy→Y) —
+`deckCode` still reports pokemon-tcg-data's own number either way, matching
+existing basic-energy precedent (see SVE), while `limitless.url` and the
+printGroup scrape use whichever id actually resolved.
+
 ## Schema
 
 Ground truth is [`types/card.ts`](types/card.ts) (`CardSet`/`Card`, plus
@@ -678,3 +776,26 @@ pokedex-info-box fetch (see Status above). A card old enough to predate the TCG'
 dex-box convention entirely (pre-~2007) can still slip through since it has no
 distinguishing subtype — the two known cases were both in Classic Collection,
 fixed by hand (see Status above).
+
+The Sun & Moon era (2017/02–2019/11, `sm1` through `sm12` in `sets/en.json`) is
+also **done** — a third backfill, oldest first: `SUM` (sm1), `GRI` (sm2), `BUS`
+(sm3), `SLG` (sm35), `CIN` (sm4), `MCD17` (mcd17), `UPR` (sm5), `FLI` (sm6),
+`CES` (sm7), `DRM` (sm75), `MCD18` (mcd18), `LOT` (sm8), `TEU` (sm9), `DET`
+(det1), `UNB` (sm10), `UNM` (sm11), `HIF`/`HIFSV` (sm115/sma), `MCD19` (mcd19),
+and `CEC` (sm12) — 20 files, all verified (see Status above for the details;
+this era needed more real fixes, both per-set overlay corrections and shared
+`speciesName()`/`normalize()` library fixes, than either prior backfill). `smp`
+(the ongoing promo set) was left out, same treatment as `swshp`/`svp`. Hidden
+Fates' Shiny Vault subset (`sma`) shares `HIF`'s Limitless page like every
+other Shiny Vault/Trainer/Galarian Gallery subset before it — `node
+scripts/fetch-set.mjs sma HIFSV HIF`. The three McDonald's Collection sets
+(`mcd17`/`mcd18`/`mcd19`) are a new case, not covered by any existing
+`fetch-set.mjs` argument: Limitless never catalogued them at all, so they need
+the literal `"NONE"` `<limitlessUrlCode>` argument added for this backfill —
+`node scripts/fetch-set.mjs mcd17 MCD17 NONE` — which reads `artist` straight
+from pokemon-tcg-data instead of scraping it, and leaves `printGroup`/
+`limitless` as empty placeholders (see Status above for why `deckCode` still
+can't be left equally empty). Detective Pikachu (`det1`) has a normal
+Limitless page (`DET`) despite being a movie tie-in, not a mainline
+reprint — only its *flavor text* needed special treatment (see Status above),
+not the fetch itself.
