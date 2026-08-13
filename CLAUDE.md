@@ -652,8 +652,18 @@ sample card, look at the result, adjust until the box cleanly frames the text wi
 little margin, then apply it to the whole set. Card templates differ enough between
 series (Mega Evolution's separate copyright line below the flavor text vs Scarlet &
 Violet's single footer row) that a box from one doesn't carry over to the next, even
-though both happen to be ~733×1024 images. Known-good boxes so far: Mega Evolution
-`top=900 height=95` (full width), Scarlet & Violet `top=905 height=95` (full width).
+though both happen to be ~733×1024 images.
+
+Also set `left`/`width` — don't leave them at the full-width default. The left third
+of the strip is always the illustrator credit + set number/rarity column, never
+flavor text, so leaving it in wastes tokens on every single card for nothing. Check
+it against a card with unusually long flavor text (a short entry sits centered/
+right-aligned within the same box, so it's the long ones that reveal how far left
+the box's text region actually starts) — verified against PBL/19 (Mega Evolution,
+two-line) and DRI/20 (Scarlet & Violet, three-line), both of which had margin to
+spare at the values below. Known-good boxes so far: Mega Evolution `top=900
+height=95 left=220 width=513`, Scarlet & Violet `top=905 height=95 left=260
+width=473`.
 
 Then, for each card: Claude reads the cropped image (`.local/card-images-cropped/
 <CODE>/<localId>.png`) inline — same "don't spawn subagents for this, just read them

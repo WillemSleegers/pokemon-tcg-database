@@ -1,7 +1,9 @@
-// Crops the flavor-text strip out of every cached card image for a set, so
-// Claude can read just that region instead of the full card (~90% fewer
-// image tokens — see CLAUDE.md). Images must already be cached locally via
-// download-images.mjs or the flavor-text-editor.
+// Crops the flavor-text strip out of every cached, pokedex-eligible card
+// image for a set (Trainers/Energy and ex/MEGA/V-family cards never carry
+// flavor text, so they're skipped), so Claude can read just that region
+// instead of the full card (~90% fewer image tokens — see CLAUDE.md).
+// Images must already be cached locally via download-images.mjs or the
+// flavor-text-editor.
 //
 //   node scripts/crop-flavor-text.mjs <SET_CODE> <top> <height> [left] [width]
 //   e.g. node scripts/crop-flavor-text.mjs ASC 895 90
@@ -14,7 +16,7 @@
 // line vs Scarlet & Violet's — that a box from one set won't just carry
 // over to the next).
 
-import { mkdir, readdir } from "node:fs/promises"
+import { mkdir, readdir, readFile } from "node:fs/promises"
 import { resolve } from "node:path"
 import sharp from "sharp"
 
@@ -35,7 +37,17 @@ await mkdir(OUT_DIR, { recursive: true })
 // box by this image's actual height instead of failing on it.
 const REFERENCE_HEIGHT = 1024
 
-const files = (await readdir(SRC_DIR)).filter((f) => /\.(png|jpg)$/i.test(f))
+// Only pokedex-eligible cards (regular Pokémon prints) ever carry flavor
+// text — Trainers/Energy and ex/MEGA/V-family cards never do (same
+// criterion fetch-set.mjs uses for the pokedex info box, and that the
+// flavor-text editor / check-flavor-text.mjs already filter on) — so
+// there's no point cropping anything else, even if it's cached locally.
+const { cards } = JSON.parse(await readFile(resolve(ROOT, "data/sets", `${setCode}.json`), "utf8"))
+const eligibleIds = new Set(cards.filter((c) => c.pokedex).map((c) => String(c.localId)))
+
+const files = (await readdir(SRC_DIR)).filter(
+  (f) => /\.(png|jpg)$/i.test(f) && eligibleIds.has(f.replace(/\.(png|jpg)$/i, "")),
+)
 let done = 0
 for (const file of files) {
   const src = resolve(SRC_DIR, file)
