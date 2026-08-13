@@ -396,6 +396,86 @@ Water→W, Lightning→L, Psychic→P, Fighting→F, Darkness→D, Metal→M, Fa
 existing basic-energy precedent (see SVE), while `limitless.url` and the
 printGroup scrape use whichever id actually resolved.
 
+The entire XY era (2013/11–2016/11, `xy0` through `xy12` plus `xyp` in
+`sets/en.json`) is also **done** — a fourth backfill, oldest first: `KSS`
+(xy0, Kalos Starter Set), `XY` (xy1, the base set), `FLF` (xy2, Flashfire),
+`FFI` (xy3, Furious Fists), `PHF` (xy4, Phantom Forces), `PRC` (xy5, Primal
+Clash), `ROS` (xy6, Roaring Skies), `AOR` (xy7, Ancient Origins), `BKT` (xy8,
+BREAKthrough), `BKP` (xy9, BREAKpoint), `FCO` (xy10, Fates Collide), `STS`
+(xy11, Steam Siege), `EVO` (xy12, Evolutions), and — unlike every prior
+era — `XYP` (xyp, XY Black Star Promos), included this time at the user's
+request rather than skipped like `smp`/`swshp`/`svp`/`bwp`. 15 files across
+14 `sets/en.json` entries, all verified. All flavor text came from
+pokemon-tcg-data directly. `KSS` needed the third (`<limitlessUrlCode>`)
+argument (`node scripts/fetch-set.mjs xy0 KSS KSS`) purely for symmetry with
+the rest of the pipeline, not because it's a subset — Limitless does host it
+under its own `KSS` page.
+
+This era introduced the `BREAK` subtype (BREAKthrough onward), which prints
+no Pokédex info box or flavor text — same full-art treatment as MEGA/V/EX,
+using the space instead for "BREAK Evolution Rule" text. Confirmed against
+BKT's Chesnaught BREAK card image (which initially fetched a bogus dex box
+and 6 missing-flavorText false positives) and fixed by adding `BREAK` to
+`fetch-set.mjs`'s exclusion list alongside the existing subtypes.
+
+XYP's fetch also surfaced two real `fetch-set.mjs` bugs, both in
+`fetchLimitlessExtra`:
+
+- pokemon-tcg-data's `number` field for `xyp` keeps a redundant `XY` set-code
+  prefix baked into the card number itself (e.g. `"XY67"`, not just `"67"`),
+  unlike every other set fetched so far. For plain numbers Limitless silently
+  301-redirects `/cards/XYP/XY67` → `/cards/xyp/67`, so the fetch itself
+  didn't error — but the pre-redirect, non-canonical local id (`"XY67"`) was
+  what got stored as `resolvedLocalId`/`deckCode`/`limitless.url`, which
+  didn't match the canonical `"67"` that every *other* set's own
+  cross-reference scrape correctly recorded when linking to the same
+  physical promo card. Fixed by having `get()` optionally report the
+  post-redirect `res.url` (a new `returnUrl` option) and reading the
+  canonical local id back off of it, rather than trusting the requested URL.
+- XYP's 5 letter-suffixed alt-art cards (`XY67a` Jirachi, `XY150a`
+  Yveltal-EX, `XY177a` Karen, `XY198a` M Camerupt-EX, `XY200a` M
+  Sharpedo-EX) don't redirect at all — `/cards/XYP/XY67a` is a hard 404,
+  since Limitless's actual page is the same prefix-stripped pattern
+  (`/cards/xyp/67a`) but isn't reachable via redirect from the prefixed
+  form. Handled as a 404 fallback (same shape as the existing basic-energy
+  letter fallback) that strips a leading `XY` before a trailing
+  `<digits><letter>` and retries.
+
+Both bugs together meant the *first* XYP fetch (before either fix) wrote
+non-canonical deckCodes across the board, and running
+`refresh-print-groups.mjs` against that bad data baked phantom `"XYP
+XY<n>"` entries into more than a dozen other already-fetched sets'
+`printGroup` arrays (anywhere that unioned with an XYP card). Since
+`computePrintGroups` treats every stored `printGroup` array as graph edges
+with nothing to prune a stale node, those phantom entries wouldn't have
+self-healed just by re-fetching XYP correctly and re-running the refresh —
+confirmed by trying exactly that, which left the phantom entries in place
+because they were still sitting as literal strings inside other sets' own
+files. Fixed with a one-off sweep deleting any `printGroup` entry matching
+`/^XYP XY\d+[a-z]?$/` across every set file, *then* re-running
+`refresh-print-groups.mjs` to confirm the recomputed groups came out clean
+(they did, on the first pass). Worth knowing if a future set's fetch ever
+gets committed with a similar id-normalization bug: re-fetching the broken
+set alone isn't sufficient once `refresh-print-groups.mjs` has already run
+against it — the bad ids need to be purged from every file they leaked
+into.
+
+Two of EVO's flagged cards were genuine card-specific exceptions, not
+errors — same category as Detective Pikachu and Classic Collection's Dark
+Gyarados/birthday-Pikachu (see "Flavor text has no structured source"
+above): `Imakuni?'s Doduo` is a gag card with no flavor-text region on the
+physical card at all (confirmed against the image — the dex info line runs
+straight into the Pokémon Power text), and `ナッシー[Exeggutor]` is a
+Japanese-only novelty card whose "flavor text" is Dr. Ooyama's own
+hand-written blurb, not a Pokédex reuse. `Flying Pikachu` and `Surfing
+Pikachu` are card-specific descriptive text by design, confirmed correct as
+printed. XYP's Magearna (`XY165`, reprinted as `XY186`) is a similar
+exception found fresh in this era: its printed text ("Magearna, with its
+metallic body, is an artificial Pokémon created 500 years ago by humans.")
+doesn't verbatim-match any mainline Pokédex entry for Magearna — confirmed
+against the card image — likely because this promo predates Sun & Moon,
+Magearna's actual mainline debut, by several months.
+
 ## Schema
 
 Ground truth is [`types/card.ts`](types/card.ts) (`CardSet`/`Card`, plus
@@ -809,3 +889,22 @@ can't be left equally empty). Detective Pikachu (`det1`) has a normal
 Limitless page (`DET`) despite being a movie tie-in, not a mainline
 reprint — only its *flavor text* needed special treatment (see Status above),
 not the fetch itself.
+
+The XY era (2013/11–2016/11, `xy0` through `xy12` plus `xyp` in
+`sets/en.json`) is also **done** — a fourth backfill, oldest first: `KSS`
+(xy0), `XY` (xy1), `FLF` (xy2), `FFI` (xy3), `PHF` (xy4), `PRC` (xy5), `ROS`
+(xy6), `AOR` (xy7), `BKT` (xy8), `BKP` (xy9), `FCO` (xy10), `STS` (xy11),
+`EVO` (xy12), and `XYP` (xyp) — 15 files, all verified (see Status above for
+the details, including two `fetch-set.mjs` bugs XYP's fetch surfaced around
+Limitless's non-canonical URL redirects, and a `BREAK`-subtype dex-box
+exclusion gap BKT surfaced). Unlike every prior era's promo set (`smp`,
+`swshp`, `svp`, and this era's own `bwp` — still unadded), `XYP` was
+included rather than skipped, at the user's explicit request; if a future
+session considers going back for the others, that's a deliberate policy
+question to raise, not something to do unprompted.
+
+The next chronological gap is the Black & White era (2011/04–2013/11, `bw1`
+through `bw11` plus `dv1` Dragon Vault and `bwp` promos in `sets/en.json`,
+predating `xy0`) — unadded as of this writing. As always, re-derive the
+actual next step from `sets/en.json` against `data/sets/` rather than
+trusting this note by the time it's acted on.

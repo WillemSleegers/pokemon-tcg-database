@@ -87,14 +87,24 @@ function textOnly(html) {
   return decodeEntities(html.replace(/<[^>]+>/g, "").replace(/\s+/g, " "))
 }
 
-async function get(url, { json = false, allow404 = false } = {}) {
+async function get(url, { json = false, allow404 = false, returnUrl = false } = {}) {
   for (let attempt = 1; ; attempt++) {
     try {
       const res = await fetch(url, { headers: { "user-agent": "pokemon-tcg-database (personal reference dataset)" } })
       if (allow404 && res.status === 404) return null
       if (res.status === 429 || res.status >= 500) throw new Error(`HTTP ${res.status}`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      return json ? await res.json() : await res.text()
+      const body = json ? await res.json() : await res.text()
+      // fetch() follows redirects transparently, so res.url is the final,
+      // canonical URL — not necessarily the one requested. Some Limitless
+      // pages (e.g. XY Black Star Promos' "XY7"-style numbers, which keep
+      // pokemon-tcg-data's "XY" set-code prefix baked into the number)
+      // redirect to a differently-formatted canonical URL ("xyp/7"). Callers
+      // that derive a stored id/URL from the request need the post-redirect
+      // one, or they'll persist a URL that doesn't match what Limitless
+      // itself considers canonical (and that other sets' print-group scrapes
+      // already reference) — confirmed while adding XYP, see CLAUDE.md.
+      return returnUrl ? { body, url: res.url } : body
     } catch (err) {
       if (attempt > RETRIES) throw new Error(`${url}: ${err instanceof Error ? err.message : err}`)
       await new Promise((r) => setTimeout(r, 500 * 2 ** attempt))
@@ -165,13 +175,38 @@ const BASIC_ENERGY_LETTERS = {
 async function fetchLimitlessExtra(code, localId, cardName) {
   const numericLocalId = toLimitlessLocalId(localId)
   let limitlessLocalId = numericLocalId
-  let html = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { allow404: true })
-  if (html === null) {
+  let result = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { allow404: true, returnUrl: true })
+  if (result === null) {
+    // XY Black Star Promos' letter-suffixed alt-art cards (e.g. "XY67a")
+    // keep pokemon-tcg-data's "XY" set-code prefix baked into the number,
+    // but Limitless's own page for these 404s rather than redirects — the
+    // canonical page is the plain suffixed number with that prefix stripped
+    // ("67a"). Confirmed against xyp's 5 lettered cards (Jirachi XY67a,
+    // Yveltal-EX XY150a, Karen XY177a, M Camerupt-EX XY198a, M Sharpedo-EX
+    // XY200a) while adding the XY era.
+    const unprefixed = limitlessLocalId.match(/^XY(\d+[a-z])$/)?.[1]
+    if (unprefixed) {
+      result = await get(`https://limitlesstcg.com/cards/${code}/${unprefixed}`, { allow404: true, returnUrl: true })
+      if (result !== null) limitlessLocalId = unprefixed
+    }
+  }
+  if (result === null) {
     const letter = BASIC_ENERGY_LETTERS[cardName]
     if (!letter) throw new Error(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}: HTTP 404`)
     limitlessLocalId = letter
-    html = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`)
+    result = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { returnUrl: true })
   }
+  const html = result.body
+  // The un-suffixed XY Black Star Promos numbers ("XY7") don't 404 — they
+  // redirect straight to Limitless's differently-formatted canonical URL
+  // ("xyp/7"). Read the localId back off the post-redirect URL so the
+  // stored id/deckCode/url match what Limitless (and every other set's
+  // print-group scrape) actually considers canonical, rather than silently
+  // persisting the pre-redirect request. Confirmed while adding XYP: without
+  // this, its own cards' deckCodes ("XYP XY7") didn't match the "XYP 7"
+  // already recorded in CELCC's printGroup for the same physical card.
+  const canonicalMatch = result.url.match(/\/cards\/[^/]+\/([^/?#]+)\/?$/)
+  if (canonicalMatch) limitlessLocalId = canonicalMatch[1]
 
   const idMatch = html.match(/<!-- CARD ID (\d+) -->/)
 
@@ -260,14 +295,17 @@ async function main() {
       // Only regular Pokémon print the dex info box — every rarity mechanic
       // that gets its own oversized name treatment or rule box (MEGA, V
       // family, old-style "EX"/modern "ex", "GX", "Star", "Level-Up"/LV.X,
-      // "Prime") uses that space for something else instead. Confirmed
-      // against card images while adding Celebrations: Classic Collection,
-      // whose 25-year span of reprints exercises rarities the rest of this
-      // database hasn't touched — see CLAUDE.md Status.
+      // "Prime", "BREAK") uses that space for something else instead.
+      // Confirmed against card images while adding Celebrations: Classic
+      // Collection, whose 25-year span of reprints exercises rarities the
+      // rest of this database hasn't touched — see CLAUDE.md Status. BREAK
+      // confirmed separately while adding BREAKthrough (xy8): its full-art
+      // layout uses the dex-box space for the "BREAK Evolution Rule" text
+      // instead.
       primary.supertype === "Pokémon" &&
       primary.nationalPokedexNumbers?.length &&
       !primary.subtypes?.some((s) =>
-        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime"].includes(s),
+        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime", "BREAK"].includes(s),
       )
         ? fetchPokedexInfo(primary.nationalPokedexNumbers[0])
         : null,

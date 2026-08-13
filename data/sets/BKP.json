@@ -1,0 +1,7494 @@
+{
+  "set": {
+    "code": "BKP",
+    "ptcgDataId": "xy9",
+    "name": "BREAKpoint",
+    "series": "XY",
+    "printedTotal": 122,
+    "secretTotal": 4,
+    "total": 126,
+    "releaseDate": "2016-02-03",
+    "copyright": "©2016 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/xy9/symbol.png",
+      "logo": "https://images.pokemontcg.io/xy9/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "001/122",
+      "localId": "1",
+      "name": "Chikorita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Bayleef"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Blot",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Heal 10 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 152,
+        "genus": "Leaf Pokémon",
+        "height": "2'11\"",
+        "weight": "14.1 lbs"
+      },
+      "flavorText": "It uses the leaf on its head to determine the temperature and humidity. It loves to sunbathe.",
+      "secret": false,
+      "deckCode": "BKP 1",
+      "printGroup": [
+        "BKP 1"
+      ],
+      "limitless": {
+        "id": 2750,
+        "url": "https://limitlesstcg.com/cards/BKP/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/1.png",
+        "large": "https://images.pokemontcg.io/xy9/1_hires.png"
+      }
+    },
+    {
+      "number": "002/122",
+      "localId": "2",
+      "name": "Bayleef",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Chikorita",
+      "evolvesTo": [
+        "Meganium"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Body Slam",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If heads, your opponent's active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 153,
+        "genus": "Leaf Pokémon",
+        "height": "3'11\"",
+        "weight": "34.8 lbs"
+      },
+      "flavorText": "The buds that ring its neck give off a spicy aroma that perks people up.",
+      "secret": false,
+      "deckCode": "BKP 2",
+      "printGroup": [
+        "BKP 2"
+      ],
+      "limitless": {
+        "id": 2751,
+        "url": "https://limitlesstcg.com/cards/BKP/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/2.png",
+        "large": "https://images.pokemontcg.io/xy9/2_hires.png"
+      }
+    },
+    {
+      "number": "003/122",
+      "localId": "3",
+      "name": "Meganium",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Bayleef",
+      "types": [
+        "Grass"
+      ],
+      "hp": 150,
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "text": "If this Pokémon's remaining HP is 50 or less, its attacks do 70 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Green Force",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Heal from this Pokémon the same amount of damage you did to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 154,
+        "genus": "Herb Pokémon",
+        "height": "5'11\"",
+        "weight": "221.6 lbs"
+      },
+      "flavorText": "Meganium's breath has the power to revive dead grass and plants. It can make them healthy again.",
+      "secret": false,
+      "deckCode": "BKP 3",
+      "printGroup": [
+        "BKP 3"
+      ],
+      "limitless": {
+        "id": 2752,
+        "url": "https://limitlesstcg.com/cards/BKP/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/3.png",
+        "large": "https://images.pokemontcg.io/xy9/3_hires.png"
+      }
+    },
+    {
+      "number": "004/122",
+      "localId": "4",
+      "name": "Seedot",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Nuzleaf"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 273,
+        "genus": "Acorn Pokémon",
+        "height": "1'8\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "When it dangles from a tree branch, it looks just like an acorn. It enjoys scaring other Pokémon.",
+      "secret": false,
+      "deckCode": "BKP 4",
+      "printGroup": [
+        "BKP 4"
+      ],
+      "limitless": {
+        "id": 2753,
+        "url": "https://limitlesstcg.com/cards/BKP/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/4.png",
+        "large": "https://images.pokemontcg.io/xy9/4_hires.png"
+      }
+    },
+    {
+      "number": "005/122",
+      "localId": "5",
+      "name": "Kricketot",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Kricketune"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Bug Hunch",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Grass Pokémon, reveal them, and put them into your hand. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 401,
+        "genus": "Cricket Pokémon",
+        "height": "1'0\"",
+        "weight": "4.9 lbs"
+      },
+      "flavorText": "When its antennae hit each other, it sounds like the music of a xylophone.",
+      "secret": false,
+      "deckCode": "BKP 5",
+      "printGroup": [
+        "BKP 5"
+      ],
+      "limitless": {
+        "id": 2754,
+        "url": "https://limitlesstcg.com/cards/BKP/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/5.png",
+        "large": "https://images.pokemontcg.io/xy9/5_hires.png"
+      }
+    },
+    {
+      "number": "006/122",
+      "localId": "6",
+      "name": "Kricketune",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Kricketot",
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Screech",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your next turn, any damage done to the Defending Pokémon by attacks is increased by 60 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Suwama Chiaki",
+      "pokedex": {
+        "number": 402,
+        "genus": "Cricket Pokémon",
+        "height": "3'3\"",
+        "weight": "56.2 lbs"
+      },
+      "flavorText": "It signals its emotions with its melodies. Scientists are studying these melodic patterns.",
+      "secret": false,
+      "deckCode": "BKP 6",
+      "printGroup": [
+        "BKP 6"
+      ],
+      "limitless": {
+        "id": 2755,
+        "url": "https://limitlesstcg.com/cards/BKP/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/6.png",
+        "large": "https://images.pokemontcg.io/xy9/6_hires.png"
+      }
+    },
+    {
+      "number": "007/122",
+      "localId": "7",
+      "name": "Petilil",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Lilligant"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Aromatherapy",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 10 damage from each of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 548,
+        "genus": "Bulb Pokémon",
+        "height": "1'8\"",
+        "weight": "14.6 lbs"
+      },
+      "flavorText": "Since they prefer moist, nutrient-rich soil, the areas where Petilil live are known to be good for growing plants.",
+      "secret": false,
+      "deckCode": "BKP 7",
+      "printGroup": [
+        "BKP 7"
+      ],
+      "limitless": {
+        "id": 2756,
+        "url": "https://limitlesstcg.com/cards/BKP/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/7.png",
+        "large": "https://images.pokemontcg.io/xy9/7_hires.png"
+      }
+    },
+    {
+      "number": "008/122",
+      "localId": "8",
+      "name": "Lilligant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Petilil",
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Boo-Hoo",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "If your opponent attaches an Energy card from his or her hand to the Defending Pokémon during his or her next turn, that Pokémon will be Asleep."
+        },
+        {
+          "name": "Leaf Slice",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 549,
+        "genus": "Flowering Pokémon",
+        "height": "3'7\"",
+        "weight": "35.9 lbs"
+      },
+      "flavorText": "Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokémon is popular with celebrities.",
+      "secret": false,
+      "deckCode": "BKP 8",
+      "printGroup": [
+        "BKP 8"
+      ],
+      "limitless": {
+        "id": 2757,
+        "url": "https://limitlesstcg.com/cards/BKP/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/8.png",
+        "large": "https://images.pokemontcg.io/xy9/8_hires.png"
+      }
+    },
+    {
+      "number": "009/122",
+      "localId": "9",
+      "name": "Durant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Mountain Munch",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Discard the top card of your opponent's deck."
+        },
+        {
+          "name": "Scrape Down",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "If this Pokémon has any damage counters on it, discard the top 4 cards of your opponent's deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 632,
+        "genus": "Iron Ant Pokémon",
+        "height": "1'0\"",
+        "weight": "72.8 lbs"
+      },
+      "flavorText": "They attack in groups, covering themselves in steel armor to protect themselves from Heatmor.",
+      "secret": false,
+      "deckCode": "BKP 9",
+      "printGroup": [
+        "BKP 9"
+      ],
+      "limitless": {
+        "id": 2758,
+        "url": "https://limitlesstcg.com/cards/BKP/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/9.png",
+        "large": "https://images.pokemontcg.io/xy9/9_hires.png"
+      }
+    },
+    {
+      "number": "010/122",
+      "localId": "10",
+      "name": "Growlithe",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Arcanine"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "match",
+      "pokedex": {
+        "number": 58,
+        "genus": "Puppy Pokémon",
+        "height": "2'4\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
+      "secret": false,
+      "deckCode": "BKP 10",
+      "printGroup": [
+        "BKP 10"
+      ],
+      "limitless": {
+        "id": 2759,
+        "url": "https://limitlesstcg.com/cards/BKP/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/10.png",
+        "large": "https://images.pokemontcg.io/xy9/10_hires.png"
+      }
+    },
+    {
+      "number": "011/122",
+      "localId": "11",
+      "name": "Arcanine",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Growlithe",
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Flop",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "match",
+      "pokedex": {
+        "number": 59,
+        "genus": "Legendary Pokémon",
+        "height": "6'3\"",
+        "weight": "341.7 lbs"
+      },
+      "flavorText": "Its magnificent bark conveys a sense of majesty. Anyone hearing it can't help but grovel before it.",
+      "secret": false,
+      "deckCode": "BKP 11",
+      "printGroup": [
+        "BKP 11"
+      ],
+      "limitless": {
+        "id": 2760,
+        "url": "https://limitlesstcg.com/cards/BKP/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/11.png",
+        "large": "https://images.pokemontcg.io/xy9/11_hires.png"
+      }
+    },
+    {
+      "number": "012/122",
+      "localId": "12",
+      "name": "Numel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Camerupt"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Combustion",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 322,
+        "genus": "Numb Pokémon",
+        "height": "2'4\"",
+        "weight": "52.9 lbs"
+      },
+      "flavorText": "The magma in its body reaches 2,200 degrees Fahrenheit. Its hump gets smaller when it uses Fire-type moves.",
+      "secret": false,
+      "deckCode": "BKP 12",
+      "printGroup": [
+        "BKP 12"
+      ],
+      "limitless": {
+        "id": 2761,
+        "url": "https://limitlesstcg.com/cards/BKP/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/12.png",
+        "large": "https://images.pokemontcg.io/xy9/12_hires.png"
+      }
+    },
+    {
+      "number": "013/122",
+      "localId": "13",
+      "name": "Camerupt",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Numel",
+      "types": [
+        "Fire"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Eruption",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "Each player discards the top card of his or her deck. This attack does 60 more damage for each Energy card discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 323,
+        "genus": "Eruption Pokémon",
+        "height": "6'3\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "If angered, the humps on its back erupt in a shower of molten lava. It lives in the craters of volcanoes.",
+      "secret": false,
+      "deckCode": "BKP 13",
+      "printGroup": [
+        "BKP 13"
+      ],
+      "limitless": {
+        "id": 2762,
+        "url": "https://limitlesstcg.com/cards/BKP/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/13.png",
+        "large": "https://images.pokemontcg.io/xy9/13_hires.png"
+      }
+    },
+    {
+      "number": "014/122",
+      "localId": "14",
+      "name": "Emboar-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Spiral Punch",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin until you get tails. This attack does 20 more damage for each heads."
+        },
+        {
+          "name": "Strong Flare",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "Discard 2 Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 14",
+      "printGroup": [
+        "BKP 14"
+      ],
+      "limitless": {
+        "id": 2763,
+        "url": "https://limitlesstcg.com/cards/BKP/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/14.png",
+        "large": "https://images.pokemontcg.io/xy9/14_hires.png"
+      }
+    },
+    {
+      "number": "015/122",
+      "localId": "15",
+      "name": "Heatmor",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Reinforced Flame",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If this Pokémon has a Pokémon Tool card attached to it, this attack does 20 more damage."
+        },
+        {
+          "name": "Heat Blast",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "match",
+      "pokedex": {
+        "number": 631,
+        "genus": "Anteater Pokémon",
+        "height": "4'7\"",
+        "weight": "127.9 lbs"
+      },
+      "flavorText": "It draws in air through its tail, transforms it into fire, and uses it like a tongue. It melts Durant and eats them.",
+      "secret": false,
+      "deckCode": "BKP 15",
+      "printGroup": [
+        "BKP 15"
+      ],
+      "limitless": {
+        "id": 2764,
+        "url": "https://limitlesstcg.com/cards/BKP/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/15.png",
+        "large": "https://images.pokemontcg.io/xy9/15_hires.png"
+      }
+    },
+    {
+      "number": "016/122",
+      "localId": "16",
+      "name": "Psyduck",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Golduck"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Stampede",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 54,
+        "genus": "Duck Pokémon",
+        "height": "2'7\"",
+        "weight": "43.2 lbs"
+      },
+      "flavorText": "It has mystical powers but doesn't recall that it has used them. That is why it always looks puzzled.",
+      "secret": false,
+      "deckCode": "BKP 16",
+      "printGroup": [
+        "BKP 16"
+      ],
+      "limitless": {
+        "id": 2765,
+        "url": "https://limitlesstcg.com/cards/BKP/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/16.png",
+        "large": "https://images.pokemontcg.io/xy9/16_hires.png"
+      }
+    },
+    {
+      "number": "017/122",
+      "localId": "17",
+      "name": "Golduck",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Psyduck",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Derail",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Discard a Special Energy attached to your opponent's Active Pokémon."
+        },
+        {
+          "name": "Hydro Splash",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 55,
+        "genus": "Duck Pokémon",
+        "height": "5'7\"",
+        "weight": "168.9 lbs"
+      },
+      "flavorText": "The forelegs are webbed, helping to make it an adept swimmer. It can be seen swimming elegantly in lakes, etc.",
+      "secret": false,
+      "deckCode": "BKP 17",
+      "printGroup": [
+        "BKP 17"
+      ],
+      "limitless": {
+        "id": 2766,
+        "url": "https://limitlesstcg.com/cards/BKP/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/17.png",
+        "large": "https://images.pokemontcg.io/xy9/17_hires.png"
+      }
+    },
+    {
+      "number": "018/122",
+      "localId": "18",
+      "name": "Golduck BREAK",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "BREAK"
+      ],
+      "evolvesFrom": "Golduck",
+      "types": [
+        "Water"
+      ],
+      "hp": 140,
+      "rules": [
+        "BREAK Evolution Rule: Golduck BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "abilities": [
+        {
+          "name": "Hyper Transfer",
+          "text": "As often as you like during your turn (before your attack), you may move a basic Energy from 1 of your Pokémon to another of your Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare BREAK",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 18",
+      "printGroup": [
+        "BKP 18"
+      ],
+      "limitless": {
+        "id": 2767,
+        "url": "https://limitlesstcg.com/cards/BKP/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/18.png",
+        "large": "https://images.pokemontcg.io/xy9/18_hires.png"
+      }
+    },
+    {
+      "number": "019/122",
+      "localId": "19",
+      "name": "Slowpoke",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Slowbro",
+        "Slowking"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Tail Lure",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 79,
+        "genus": "Dopey Pokémon",
+        "height": "3'11\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "It lazes vacantly near water. If something bites its tail, it won't even notice for a whole day.",
+      "secret": false,
+      "deckCode": "BKP 19",
+      "printGroup": [
+        "BKP 19"
+      ],
+      "limitless": {
+        "id": 2768,
+        "url": "https://limitlesstcg.com/cards/BKP/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/19.png",
+        "large": "https://images.pokemontcg.io/xy9/19_hires.png"
+      }
+    },
+    {
+      "number": "020/122",
+      "localId": "20",
+      "name": "Slowbro",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Slowpoke",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Careless Head",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 50 more damage."
+        },
+        {
+          "name": "Walk-Off Homer",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "If you use this attack when you have only 1 Prize card left, you win this game."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 80,
+        "genus": "Hermit Crab Pokémon",
+        "height": "5'3\"",
+        "weight": "173.1 lbs"
+      },
+      "flavorText": "When a Slowpoke went hunting in the sea, its tail was bitten by a Shellder. That made it evolve into Slowbro.",
+      "secret": false,
+      "deckCode": "BKP 20",
+      "printGroup": [
+        "BKP 20"
+      ],
+      "limitless": {
+        "id": 2769,
+        "url": "https://limitlesstcg.com/cards/BKP/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/20.png",
+        "large": "https://images.pokemontcg.io/xy9/20_hires.png"
+      }
+    },
+    {
+      "number": "021/122",
+      "localId": "21",
+      "name": "Slowking",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Slowpoke",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Royal Flash",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, move an Energy from your opponent's Active Pokémon to 1 of his or her Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Psych Up",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "During your next turn, this Pokémon's Psych Up attack does 40 more damage (before applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Aya Kusube",
+      "pokedex": {
+        "number": 199,
+        "genus": "Royal Pokémon",
+        "height": "6'7\"",
+        "weight": "175.3 lbs"
+      },
+      "flavorText": "When its head was bitten, toxins entered Slowpoke's head and unlocked an extraordinary power.",
+      "secret": false,
+      "deckCode": "BKP 21",
+      "printGroup": [
+        "BKP 21"
+      ],
+      "limitless": {
+        "id": 2770,
+        "url": "https://limitlesstcg.com/cards/BKP/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/21.png",
+        "large": "https://images.pokemontcg.io/xy9/21_hires.png"
+      }
+    },
+    {
+      "number": "022/122",
+      "localId": "22",
+      "name": "Shellder",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cloyster"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Razor Shell",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 90,
+        "genus": "Bivalve Pokémon",
+        "height": "1'0\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "Clamping on to an opponent reveals its vulnerable parts, so it uses this move only as a last resort.",
+      "secret": false,
+      "deckCode": "BKP 22",
+      "printGroup": [
+        "BKP 22"
+      ],
+      "limitless": {
+        "id": 2771,
+        "url": "https://limitlesstcg.com/cards/BKP/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/22.png",
+        "large": "https://images.pokemontcg.io/xy9/22_hires.png"
+      }
+    },
+    {
+      "number": "023/122",
+      "localId": "23",
+      "name": "Shellder",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cloyster"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Clamp",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 90,
+        "genus": "Bivalve Pokémon",
+        "height": "1'0\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "Clamping on to an opponent reveals its vulnerable parts, so it uses this move only as a last resort.",
+      "secret": false,
+      "deckCode": "BKP 23",
+      "printGroup": [
+        "BKP 23"
+      ],
+      "limitless": {
+        "id": 2772,
+        "url": "https://limitlesstcg.com/cards/BKP/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/23.png",
+        "large": "https://images.pokemontcg.io/xy9/23_hires.png"
+      }
+    },
+    {
+      "number": "024/122",
+      "localId": "24",
+      "name": "Cloyster",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Shellder",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Sudden Grip",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "If this Pokémon evolved from Shellder during this turn, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Surf",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 91,
+        "genus": "Bivalve Pokémon",
+        "height": "4'11\"",
+        "weight": "292.1 lbs"
+      },
+      "flavorText": "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.",
+      "secret": false,
+      "deckCode": "BKP 24",
+      "printGroup": [
+        "BKP 24"
+      ],
+      "limitless": {
+        "id": 2773,
+        "url": "https://limitlesstcg.com/cards/BKP/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/24.png",
+        "large": "https://images.pokemontcg.io/xy9/24_hires.png"
+      }
+    },
+    {
+      "number": "025/122",
+      "localId": "25",
+      "name": "Staryu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Starmie"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Smack",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hiroki Asanuma",
+      "pokedex": {
+        "number": 120,
+        "genus": "Star Shape Pokémon",
+        "height": "2'7\"",
+        "weight": "76.1 lbs"
+      },
+      "flavorText": "It appears in large numbers by seashores. At night, its central core flashes with a red light.",
+      "secret": false,
+      "deckCode": "BKP 25",
+      "printGroup": [
+        "BKP 25"
+      ],
+      "limitless": {
+        "id": 2774,
+        "url": "https://limitlesstcg.com/cards/BKP/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/25.png",
+        "large": "https://images.pokemontcg.io/xy9/25_hires.png"
+      }
+    },
+    {
+      "number": "026/122",
+      "localId": "26",
+      "name": "Gyarados-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Gyarados-EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Stormy Seas",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin until you get tails. For each heads, search your deck for a Water Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Splash Burn",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130",
+          "text": "This attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 26",
+      "printGroup": [
+        "BKP 26",
+        "BKP 114",
+        "BKP 123",
+        "XYP 106"
+      ],
+      "limitless": {
+        "id": 2775,
+        "url": "https://limitlesstcg.com/cards/BKP/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/26.png",
+        "large": "https://images.pokemontcg.io/xy9/26_hires.png"
+      }
+    },
+    {
+      "number": "027/122",
+      "localId": "27",
+      "name": "M Gyarados-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Gyarados-EX",
+      "types": [
+        "Water"
+      ],
+      "hp": 240,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Blast Geyser",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120+",
+          "text": "You may do 20 more damage for each Water Energy attached to this Pokémon. If you do, discard the top 2 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 27",
+      "printGroup": [
+        "BKP 27",
+        "BKP 115"
+      ],
+      "limitless": {
+        "id": 2776,
+        "url": "https://limitlesstcg.com/cards/BKP/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/27.png",
+        "large": "https://images.pokemontcg.io/xy9/27_hires.png"
+      }
+    },
+    {
+      "number": "028/122",
+      "localId": "28",
+      "name": "Lapras",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Errand-Running",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Trainer card, reveal it, and put it into your hand. Shuffle your deck afterward."
+        },
+        {
+          "name": "Water Splash",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 131,
+        "genus": "Transport Pokémon",
+        "height": "8'2\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "Its high intelligence enables it to understand human speech. It likes to ferry people on its back.",
+      "secret": false,
+      "deckCode": "BKP 28",
+      "printGroup": [
+        "BKP 28"
+      ],
+      "limitless": {
+        "id": 2777,
+        "url": "https://limitlesstcg.com/cards/BKP/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/28.png",
+        "large": "https://images.pokemontcg.io/xy9/28_hires.png"
+      }
+    },
+    {
+      "number": "029/122",
+      "localId": "29",
+      "name": "Corsola",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cursola"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Spike Cannon",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        },
+        {
+          "name": "Power Gem",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 222,
+        "genus": "Coral Pokémon",
+        "height": "2'0\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "They prefer unpolluted southern seas. Their coral branches lose their color and deteriorate in dirty water.",
+      "secret": false,
+      "deckCode": "BKP 29",
+      "printGroup": [
+        "BKP 29"
+      ],
+      "limitless": {
+        "id": 2778,
+        "url": "https://limitlesstcg.com/cards/BKP/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/29.png",
+        "large": "https://images.pokemontcg.io/xy9/29_hires.png"
+      }
+    },
+    {
+      "number": "030/122",
+      "localId": "30",
+      "name": "Suicune",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Wind Charm",
+          "text": "As long as this Pokémon is your Active Pokémon, prevent all effects of your opponent's attacks, except damage, done to each of your Pokémon. (Existing effects are not removed.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Aurora Beam",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 245,
+        "genus": "Aurora Pokémon",
+        "height": "6'7\"",
+        "weight": "412.3 lbs"
+      },
+      "flavorText": "Said to be the embodiment of north winds, it can instantly purify filthy, murky water.",
+      "secret": false,
+      "deckCode": "BKP 30",
+      "printGroup": [
+        "BKP 30"
+      ],
+      "limitless": {
+        "id": 2779,
+        "url": "https://limitlesstcg.com/cards/BKP/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/30.png",
+        "large": "https://images.pokemontcg.io/xy9/30_hires.png"
+      }
+    },
+    {
+      "number": "031/122",
+      "localId": "31",
+      "name": "Palkia-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Aqua Turbo",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Search your deck for 2 Water Energy cards and attach them to 1 of your Benched Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Pearl Hurricane",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 31",
+      "printGroup": [
+        "BKP 31"
+      ],
+      "limitless": {
+        "id": 2780,
+        "url": "https://limitlesstcg.com/cards/BKP/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/31.png",
+        "large": "https://images.pokemontcg.io/xy9/31_hires.png"
+      }
+    },
+    {
+      "number": "032/122",
+      "localId": "32",
+      "name": "Manaphy-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Aqua Tube",
+          "text": "Each of your Pokémon that has any Water Energy attached to it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mineral Pump",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Heal 30 damage from each of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 32",
+      "printGroup": [
+        "BKP 32",
+        "BKP 116"
+      ],
+      "limitless": {
+        "id": 2781,
+        "url": "https://limitlesstcg.com/cards/BKP/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/32.png",
+        "large": "https://images.pokemontcg.io/xy9/32_hires.png"
+      }
+    },
+    {
+      "number": "033/122",
+      "localId": "33",
+      "name": "Tympole",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Palpitoad"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Get Loud",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Round",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "This attack does 10 damage times the number of your Pokémon in play that have the Round attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Miki Tanaka",
+      "pokedex": {
+        "number": 535,
+        "genus": "Tadpole Pokémon",
+        "height": "1'8\"",
+        "weight": "9.9 lbs"
+      },
+      "flavorText": "By vibrating its cheeks, it emits sound waves imperceptible to humans. It uses the rhythm of these sounds to talk.",
+      "secret": false,
+      "deckCode": "BKP 33",
+      "printGroup": [
+        "BKP 33"
+      ],
+      "limitless": {
+        "id": 2782,
+        "url": "https://limitlesstcg.com/cards/BKP/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/33.png",
+        "large": "https://images.pokemontcg.io/xy9/33_hires.png"
+      }
+    },
+    {
+      "number": "034/122",
+      "localId": "34",
+      "name": "Palpitoad",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Tympole",
+      "evolvesTo": [
+        "Seismitoad"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Frog Hop",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        },
+        {
+          "name": "Mud Shot",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ayaka Yoshida",
+      "pokedex": {
+        "number": 536,
+        "genus": "Vibration Pokémon",
+        "height": "2'7\"",
+        "weight": "37.5 lbs"
+      },
+      "flavorText": "It lives in the water and on land. It uses its long, sticky tongue to immobilize its opponents.",
+      "secret": false,
+      "deckCode": "BKP 34",
+      "printGroup": [
+        "BKP 34"
+      ],
+      "limitless": {
+        "id": 2783,
+        "url": "https://limitlesstcg.com/cards/BKP/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/34.png",
+        "large": "https://images.pokemontcg.io/xy9/34_hires.png"
+      }
+    },
+    {
+      "number": "035/122",
+      "localId": "35",
+      "name": "Seismitoad",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Palpitoad",
+      "types": [
+        "Water"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Siphon Off",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach 3 Energy cards from your discard pile to this Pokémon."
+        },
+        {
+          "name": "Shaky Fall",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "90",
+          "text": "Your opponent's Active Pokémon is now Confused. That Pokémon can't retreat during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 537,
+        "genus": "Vibration Pokémon",
+        "height": "4'11\"",
+        "weight": "136.7 lbs"
+      },
+      "flavorText": "They shoot paralyzing liquid from their head bumps. They use vibration to hurt their opponents.",
+      "secret": false,
+      "deckCode": "BKP 35",
+      "printGroup": [
+        "BKP 35"
+      ],
+      "limitless": {
+        "id": 2784,
+        "url": "https://limitlesstcg.com/cards/BKP/35"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/35.png",
+        "large": "https://images.pokemontcg.io/xy9/35_hires.png"
+      }
+    },
+    {
+      "number": "036/122",
+      "localId": "36",
+      "name": "Ducklett",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Swanna"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Lunge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 580,
+        "genus": "Water Bird Pokémon",
+        "height": "1'8\"",
+        "weight": "12.1 lbs"
+      },
+      "flavorText": "They are better at swimming than flying, and they happily eat their favorite food, peat moss, as they dive underwater.",
+      "secret": false,
+      "deckCode": "BKP 36",
+      "printGroup": [
+        "BKP 36"
+      ],
+      "limitless": {
+        "id": 2785,
+        "url": "https://limitlesstcg.com/cards/BKP/36"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/36.png",
+        "large": "https://images.pokemontcg.io/xy9/36_hires.png"
+      }
+    },
+    {
+      "number": "037/122",
+      "localId": "37",
+      "name": "Swanna",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ducklett",
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Brave Bird",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "This Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "sui",
+      "pokedex": {
+        "number": 581,
+        "genus": "White Bird Pokémon",
+        "height": "4'3\"",
+        "weight": "53.4 lbs"
+      },
+      "flavorText": "Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.",
+      "secret": false,
+      "deckCode": "BKP 37",
+      "printGroup": [
+        "BKP 37"
+      ],
+      "limitless": {
+        "id": 2786,
+        "url": "https://limitlesstcg.com/cards/BKP/37"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/37.png",
+        "large": "https://images.pokemontcg.io/xy9/37_hires.png"
+      }
+    },
+    {
+      "number": "038/122",
+      "localId": "38",
+      "name": "Froakie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Frogadier"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Bubble",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 656,
+        "genus": "Bubble Frog Pokémon",
+        "height": "1'0\"",
+        "weight": "15.4 lbs"
+      },
+      "flavorText": "It protects its skin by covering its body in delicate bubbles. Beneath its happy-go-lucky air, it keeps a watchful eye on its surroundings.",
+      "secret": false,
+      "deckCode": "BKP 38",
+      "printGroup": [
+        "BKP 38",
+        "XYP 138"
+      ],
+      "limitless": {
+        "id": 2787,
+        "url": "https://limitlesstcg.com/cards/BKP/38"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/38.png",
+        "large": "https://images.pokemontcg.io/xy9/38_hires.png"
+      }
+    },
+    {
+      "number": "039/122",
+      "localId": "39",
+      "name": "Frogadier",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Froakie",
+      "evolvesTo": [
+        "Greninja"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Water Duplicates",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Frogadier and put them onto your Bench. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 657,
+        "genus": "Bubble Frog Pokémon",
+        "height": "2'0\"",
+        "weight": "24.0 lbs"
+      },
+      "flavorText": "Its swiftness is unparalleled. It can scale a tower of more than 2,000 feet in a minute's time.",
+      "secret": false,
+      "deckCode": "BKP 39",
+      "printGroup": [
+        "BKP 39"
+      ],
+      "limitless": {
+        "id": 2788,
+        "url": "https://limitlesstcg.com/cards/BKP/39"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/39.png",
+        "large": "https://images.pokemontcg.io/xy9/39_hires.png"
+      }
+    },
+    {
+      "number": "040/122",
+      "localId": "40",
+      "name": "Greninja",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Frogadier",
+      "types": [
+        "Water"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Shadow Stitching",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "Until the end of your opponent's next turn, each Pokémon your opponent has in play, in his or her hand, and in his or her discard pile has no Abilities. (This includes cards that come into play on that turn.)"
+        },
+        {
+          "name": "Moonlight Slash",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "60+",
+          "text": "You may return a Water Energy from this Pokémon to your hand. If you do, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 658,
+        "genus": "Ninja Pokémon",
+        "height": "4'11\"",
+        "weight": "88.2 lbs"
+      },
+      "flavorText": "It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water.",
+      "secret": false,
+      "deckCode": "BKP 40",
+      "printGroup": [
+        "BKP 40"
+      ],
+      "limitless": {
+        "id": 2789,
+        "url": "https://limitlesstcg.com/cards/BKP/40"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/40.png",
+        "large": "https://images.pokemontcg.io/xy9/40_hires.png"
+      }
+    },
+    {
+      "number": "041/122",
+      "localId": "41",
+      "name": "Greninja BREAK",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "BREAK"
+      ],
+      "evolvesFrom": "Greninja",
+      "types": [
+        "Water"
+      ],
+      "hp": 170,
+      "rules": [
+        "BREAK Evolution Rule: Greninja BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "abilities": [
+        {
+          "name": "Giant Water Shuriken",
+          "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may discard a Water Energy card from your hand. If you do, put 6 damage counters on 1 of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare BREAK",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 41",
+      "printGroup": [
+        "BKP 41"
+      ],
+      "limitless": {
+        "id": 2790,
+        "url": "https://limitlesstcg.com/cards/BKP/41"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/41.png",
+        "large": "https://images.pokemontcg.io/xy9/41_hires.png"
+      }
+    },
+    {
+      "number": "042/122",
+      "localId": "42",
+      "name": "Electabuzz",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Electivire"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 125,
+        "genus": "Electric Pokémon",
+        "height": "3'7\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "It loves to feed on strong electricity. It occasionally appears around large power plants and so on.",
+      "secret": false,
+      "deckCode": "BKP 42",
+      "printGroup": [
+        "BKP 42"
+      ],
+      "limitless": {
+        "id": 2791,
+        "url": "https://limitlesstcg.com/cards/BKP/42"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/42.png",
+        "large": "https://images.pokemontcg.io/xy9/42_hires.png"
+      }
+    },
+    {
+      "number": "043/122",
+      "localId": "43",
+      "name": "Electivire",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Electabuzz",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Electroslug",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 466,
+        "genus": "Thunderbolt Pokémon",
+        "height": "5'11\"",
+        "weight": "305.6 lbs"
+      },
+      "flavorText": "It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power.",
+      "secret": false,
+      "deckCode": "BKP 43",
+      "printGroup": [
+        "BKP 43"
+      ],
+      "limitless": {
+        "id": 2792,
+        "url": "https://limitlesstcg.com/cards/BKP/43"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/43.png",
+        "large": "https://images.pokemontcg.io/xy9/43_hires.png"
+      }
+    },
+    {
+      "number": "044/122",
+      "localId": "44",
+      "name": "Shinx",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Luxio"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Roar",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Flop",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 403,
+        "genus": "Flash Pokémon",
+        "height": "1'8\"",
+        "weight": "20.9 lbs"
+      },
+      "flavorText": "All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded.",
+      "secret": false,
+      "deckCode": "BKP 44",
+      "printGroup": [
+        "BKP 44"
+      ],
+      "limitless": {
+        "id": 2793,
+        "url": "https://limitlesstcg.com/cards/BKP/44"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/44.png",
+        "large": "https://images.pokemontcg.io/xy9/44_hires.png"
+      }
+    },
+    {
+      "number": "045/122",
+      "localId": "45",
+      "name": "Luxio",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Shinx",
+      "evolvesTo": [
+        "Luxray"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Thunder Fang",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 404,
+        "genus": "Spark Pokémon",
+        "height": "2'11\"",
+        "weight": "67.2 lbs"
+      },
+      "flavorText": "Strong electricity courses through the tips of its sharp claws. A light scratch causes fainting in foes.",
+      "secret": false,
+      "deckCode": "BKP 45",
+      "printGroup": [
+        "BKP 45"
+      ],
+      "limitless": {
+        "id": 2794,
+        "url": "https://limitlesstcg.com/cards/BKP/45"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/45.png",
+        "large": "https://images.pokemontcg.io/xy9/45_hires.png"
+      }
+    },
+    {
+      "number": "046/122",
+      "localId": "46",
+      "name": "Luxray",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Luxio",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Snarl",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 405,
+        "genus": "Gleam Eyes Pokémon",
+        "height": "4'7\"",
+        "weight": "92.6 lbs"
+      },
+      "flavorText": "Luxray's ability to see through objects comes in handy when it's scouting for danger.",
+      "secret": false,
+      "deckCode": "BKP 46",
+      "printGroup": [
+        "BKP 46"
+      ],
+      "limitless": {
+        "id": 2795,
+        "url": "https://limitlesstcg.com/cards/BKP/46"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/46.png",
+        "large": "https://images.pokemontcg.io/xy9/46_hires.png"
+      }
+    },
+    {
+      "number": "047/122",
+      "localId": "47",
+      "name": "Luxray BREAK",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "BREAK"
+      ],
+      "evolvesFrom": "Luxray",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 170,
+      "rules": [
+        "BREAK Evolution Rule: Luxray BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "attacks": [
+        {
+          "name": "Wild Fury",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130+",
+          "text": "Flip a coin until you get tails. This attack does 40 more damage for each heads."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare BREAK",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 47",
+      "printGroup": [
+        "BKP 47"
+      ],
+      "limitless": {
+        "id": 2796,
+        "url": "https://limitlesstcg.com/cards/BKP/47"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/47.png",
+        "large": "https://images.pokemontcg.io/xy9/47_hires.png"
+      }
+    },
+    {
+      "number": "048/122",
+      "localId": "48",
+      "name": "Blitzle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Zebstrika"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Aya Kusube",
+      "pokedex": {
+        "number": 522,
+        "genus": "Electrified Pokémon",
+        "height": "2'7\"",
+        "weight": "65.7 lbs"
+      },
+      "flavorText": "Its mane shines when it discharges electricity. They use the frequency and rhythm of these flashes to communicate.",
+      "secret": false,
+      "deckCode": "BKP 48",
+      "printGroup": [
+        "BKP 48"
+      ],
+      "limitless": {
+        "id": 2797,
+        "url": "https://limitlesstcg.com/cards/BKP/48"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/48.png",
+        "large": "https://images.pokemontcg.io/xy9/48_hires.png"
+      }
+    },
+    {
+      "number": "049/122",
+      "localId": "49",
+      "name": "Zebstrika",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Blitzle",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Zap Zone",
+          "text": "Damage from the attacks of your Lightning Pokémon isn't affected by any effects on your opponent's Active Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Crashing Bolt",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "If your opponent's Active Pokémon has Fighting Resistance, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Hajime Kusajima",
+      "pokedex": {
+        "number": 523,
+        "genus": "Thunderbolt Pokémon",
+        "height": "5'3\"",
+        "weight": "175.3 lbs"
+      },
+      "flavorText": "They have lightning-like movements. When Zebstrika run at full speed, the sound of thunder reverberates.",
+      "secret": false,
+      "deckCode": "BKP 49",
+      "printGroup": [
+        "BKP 49"
+      ],
+      "limitless": {
+        "id": 2798,
+        "url": "https://limitlesstcg.com/cards/BKP/49"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/49.png",
+        "large": "https://images.pokemontcg.io/xy9/49_hires.png"
+      }
+    },
+    {
+      "number": "050/122",
+      "localId": "50",
+      "name": "Drowzee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Hypno"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Mumble",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Focused Wish",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 96,
+        "genus": "Hypnosis Pokémon",
+        "height": "3'3\"",
+        "weight": "71.4 lbs"
+      },
+      "flavorText": "If you think that you had a good dream but you can't remember it, a Drowzee has probably eaten it.",
+      "secret": false,
+      "deckCode": "BKP 50",
+      "printGroup": [
+        "BKP 50"
+      ],
+      "limitless": {
+        "id": 2799,
+        "url": "https://limitlesstcg.com/cards/BKP/50"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/50.png",
+        "large": "https://images.pokemontcg.io/xy9/50_hires.png"
+      }
+    },
+    {
+      "number": "051/122",
+      "localId": "51",
+      "name": "Hypno",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Drowzee",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Goodnight, Babies",
+          "text": "Once during your turn (before your attack), you may leave both Active Pokémon Asleep.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Zen Headbutt",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Tomokazu Komiya",
+      "pokedex": {
+        "number": 97,
+        "genus": "Hypnosis Pokémon",
+        "height": "5'3\"",
+        "weight": "166.7 lbs"
+      },
+      "flavorText": "Seeing its swinging pendulum can induce sleep in three seconds, even in someone who just woke up.",
+      "secret": false,
+      "deckCode": "BKP 51",
+      "printGroup": [
+        "BKP 51"
+      ],
+      "limitless": {
+        "id": 2800,
+        "url": "https://limitlesstcg.com/cards/BKP/51"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/51.png",
+        "large": "https://images.pokemontcg.io/xy9/51_hires.png"
+      }
+    },
+    {
+      "number": "052/122",
+      "localId": "52",
+      "name": "Espeon-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Miraculous Shine",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Devolve each of your opponent's evolved Pokémon and put the highest Stage Evolution card on it into your opponent's hand."
+        },
+        {
+          "name": "Psyshock",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Ayaka Yoshida",
+      "secret": false,
+      "deckCode": "BKP 52",
+      "printGroup": [
+        "BKP 52",
+        "BKP 117"
+      ],
+      "limitless": {
+        "id": 2801,
+        "url": "https://limitlesstcg.com/cards/BKP/52"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/52.png",
+        "large": "https://images.pokemontcg.io/xy9/52_hires.png"
+      }
+    },
+    {
+      "number": "053/122",
+      "localId": "53",
+      "name": "Skorupi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Drapion"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Pin Missile",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kyoko Umemoto",
+      "pokedex": {
+        "number": 451,
+        "genus": "Scorpion Pokémon",
+        "height": "2'7\"",
+        "weight": "26.5 lbs"
+      },
+      "flavorText": "It burrows under the sand to lie in wait for prey. Its tail claws can inject its prey with a savage poison.",
+      "secret": false,
+      "deckCode": "BKP 53",
+      "printGroup": [
+        "BKP 53"
+      ],
+      "limitless": {
+        "id": 2802,
+        "url": "https://limitlesstcg.com/cards/BKP/53"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/53.png",
+        "large": "https://images.pokemontcg.io/xy9/53_hires.png"
+      }
+    },
+    {
+      "number": "054/122",
+      "localId": "54",
+      "name": "Drapion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Skorupi",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Poison Claws",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        },
+        {
+          "name": "Heavy Impact",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 452,
+        "genus": "Ogre Scorpion Pokémon",
+        "height": "4'3\"",
+        "weight": "135.6 lbs"
+      },
+      "flavorText": "It has the power in its clawed arms to make scrap of a car. The tips of its claws release poison.",
+      "secret": false,
+      "deckCode": "BKP 54",
+      "printGroup": [
+        "BKP 54"
+      ],
+      "limitless": {
+        "id": 2803,
+        "url": "https://limitlesstcg.com/cards/BKP/54"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/54.png",
+        "large": "https://images.pokemontcg.io/xy9/54_hires.png"
+      }
+    },
+    {
+      "number": "055/122",
+      "localId": "55",
+      "name": "Sigilyph",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Reflective Shield",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, if this Pokémon is damaged by an attack (even if this Pokémon is Knocked Out), put 5 damage counters on the Attacking Pokémon."
+        },
+        {
+          "name": "Psy Report",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Your opponent reveals his or her hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 561,
+        "genus": "Avianoid Pokémon",
+        "height": "4'7\"",
+        "weight": "30.9 lbs"
+      },
+      "flavorText": "The guardians of an ancient city, they always fly the same route while keeping watch for invaders.",
+      "secret": false,
+      "deckCode": "BKP 55",
+      "printGroup": [
+        "BKP 55"
+      ],
+      "limitless": {
+        "id": 2804,
+        "url": "https://limitlesstcg.com/cards/BKP/55"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/55.png",
+        "large": "https://images.pokemontcg.io/xy9/55_hires.png"
+      }
+    },
+    {
+      "number": "056/122",
+      "localId": "56",
+      "name": "Trubbish",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Garbodor"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Acid Spray",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "OOYAMA",
+      "pokedex": {
+        "number": 568,
+        "genus": "Trash Bag Pokémon",
+        "height": "2'0\"",
+        "weight": "68.3 lbs"
+      },
+      "flavorText": "Inhaling the gas they belch will make you sleep for a week. They prefer unsanitary places.",
+      "secret": false,
+      "deckCode": "BKP 56",
+      "printGroup": [
+        "BKP 56"
+      ],
+      "limitless": {
+        "id": 2805,
+        "url": "https://limitlesstcg.com/cards/BKP/56"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/56.png",
+        "large": "https://images.pokemontcg.io/xy9/56_hires.png"
+      }
+    },
+    {
+      "number": "057/122",
+      "localId": "57",
+      "name": "Garbodor",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Trubbish",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Garbotoxin",
+          "text": "If this Pokémon has a Pokémon Tool card attached to it, each Pokémon in play, in each player's hand, and in each player's discard pile has no Abilities (except for Garbotoxin).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Offensive Bomb",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": "Your opponent's Active Pokémon is now Confused and Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 569,
+        "genus": "Trash Heap Pokémon",
+        "height": "6'3\"",
+        "weight": "236.6 lbs"
+      },
+      "flavorText": "Consuming garbage makes new kinds of poison gases and liquids inside their bodies.",
+      "secret": false,
+      "deckCode": "BKP 57",
+      "printGroup": [
+        "BKP 57"
+      ],
+      "limitless": {
+        "id": 2806,
+        "url": "https://limitlesstcg.com/cards/BKP/57"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/57.png",
+        "large": "https://images.pokemontcg.io/xy9/57_hires.png"
+      }
+    },
+    {
+      "number": "058/122",
+      "localId": "58",
+      "name": "Espurr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Meowstic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 677,
+        "genus": "Restraint Pokémon",
+        "height": "1'0\"",
+        "weight": "7.7 lbs"
+      },
+      "flavorText": "It has enough psychic energy to blast everything within 300 feet of itself, but it has no control over its power.",
+      "secret": false,
+      "deckCode": "BKP 58",
+      "printGroup": [
+        "BKP 58"
+      ],
+      "limitless": {
+        "id": 2807,
+        "url": "https://limitlesstcg.com/cards/BKP/58"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/58.png",
+        "large": "https://images.pokemontcg.io/xy9/58_hires.png"
+      }
+    },
+    {
+      "number": "059/122",
+      "localId": "59",
+      "name": "Meowstic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Espurr",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Energy Present",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach up to 2 Energy cards from your hand to 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Psyshot",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 678,
+        "genus": "Constraint Pokémon",
+        "height": "2'0\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "The eyeball patterns on the interior of its ears emit psychic energy. It keeps the patterns tightly covered because that power is too immense.",
+      "secret": false,
+      "deckCode": "BKP 59",
+      "printGroup": [
+        "BKP 59"
+      ],
+      "limitless": {
+        "id": 2808,
+        "url": "https://limitlesstcg.com/cards/BKP/59"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/59.png",
+        "large": "https://images.pokemontcg.io/xy9/59_hires.png"
+      }
+    },
+    {
+      "number": "060/122",
+      "localId": "60",
+      "name": "Honedge",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Doublade"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Stab",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put 1 damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 679,
+        "genus": "Sword Pokémon",
+        "height": "2'7\"",
+        "weight": "4.4 lbs"
+      },
+      "flavorText": "If anyone dares to grab its hilt, it wraps a blue cloth around that person's arm and drains that person's life energy completely.",
+      "secret": false,
+      "deckCode": "BKP 60",
+      "printGroup": [
+        "BKP 60"
+      ],
+      "limitless": {
+        "id": 2809,
+        "url": "https://limitlesstcg.com/cards/BKP/60"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/60.png",
+        "large": "https://images.pokemontcg.io/xy9/60_hires.png"
+      }
+    },
+    {
+      "number": "061/122",
+      "localId": "61",
+      "name": "Doublade",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Honedge",
+      "evolvesTo": [
+        "Aegislash"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Stab Deeply",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put 3 damage counters on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hajime Kusajima",
+      "pokedex": {
+        "number": 680,
+        "genus": "Sword Pokémon",
+        "height": "2'7\"",
+        "weight": "9.9 lbs"
+      },
+      "flavorText": "The complex attack patterns of its two swords are unstoppable, even for an opponent greatly accomplished at swordplay.",
+      "secret": false,
+      "deckCode": "BKP 61",
+      "printGroup": [
+        "BKP 61"
+      ],
+      "limitless": {
+        "id": 2810,
+        "url": "https://limitlesstcg.com/cards/BKP/61"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/61.png",
+        "large": "https://images.pokemontcg.io/xy9/61_hires.png"
+      }
+    },
+    {
+      "number": "062/122",
+      "localId": "62",
+      "name": "Aegislash",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Doublade",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Painful Sword",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Double the number of damage counters on each of your opponent's Pokémon."
+        },
+        {
+          "name": "Megaton Slash",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": "This attack does 10 damage to 2 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 681,
+        "genus": "Royal Sword Pokémon",
+        "height": "5'7\"",
+        "weight": "116.8 lbs"
+      },
+      "flavorText": "Apparently, it can detect the innate qualities of leadership. According to legend, whoever it recognizes is destined to become king.",
+      "secret": false,
+      "deckCode": "BKP 62",
+      "printGroup": [
+        "BKP 62"
+      ],
+      "limitless": {
+        "id": 2811,
+        "url": "https://limitlesstcg.com/cards/BKP/62"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/62.png",
+        "large": "https://images.pokemontcg.io/xy9/62_hires.png"
+      }
+    },
+    {
+      "number": "063/122",
+      "localId": "63",
+      "name": "Skrelp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragalge"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Hide",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yukiko Baba",
+      "pokedex": {
+        "number": 690,
+        "genus": "Mock Kelp Pokémon",
+        "height": "1'8\"",
+        "weight": "16.1 lbs"
+      },
+      "flavorText": "It looks just like rotten kelp. It hides from foes while storing up power for its evolution.",
+      "secret": false,
+      "deckCode": "BKP 63",
+      "printGroup": [
+        "BKP 63"
+      ],
+      "limitless": {
+        "id": 2812,
+        "url": "https://limitlesstcg.com/cards/BKP/63"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/63.png",
+        "large": "https://images.pokemontcg.io/xy9/63_hires.png"
+      }
+    },
+    {
+      "number": "064/122",
+      "localId": "64",
+      "name": "Phantump",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Trevenant"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Ascension",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a card that evolves from this Pokémon and put it onto this Pokémon. (This counts as evolving this Pokémon.) Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 708,
+        "genus": "Stump Pokémon",
+        "height": "1'4\"",
+        "weight": "15.4 lbs"
+      },
+      "flavorText": "According to old tales, these Pokémon are stumps possessed by the spirits of children who died while lost in the forest.",
+      "secret": false,
+      "deckCode": "BKP 64",
+      "printGroup": [
+        "BKP 64"
+      ],
+      "limitless": {
+        "id": 2813,
+        "url": "https://limitlesstcg.com/cards/BKP/64"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/64.png",
+        "large": "https://images.pokemontcg.io/xy9/64_hires.png"
+      }
+    },
+    {
+      "number": "065/122",
+      "localId": "65",
+      "name": "Trevenant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Phantump",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Nervous Seed",
+          "text": "As long as this Pokémon is your Active Pokémon, your opponent's Basic Pokémon's attacks cost Colorless more.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Energy Press",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70+",
+          "text": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 709,
+        "genus": "Elder Tree Pokémon",
+        "height": "4'11\"",
+        "weight": "156.5 lbs"
+      },
+      "flavorText": "Using its roots as a nervous system, it controls the trees in the forest. It's kind to the Pokémon that reside in its body.",
+      "secret": false,
+      "deckCode": "BKP 65",
+      "printGroup": [
+        "BKP 65",
+        "XYP 94"
+      ],
+      "limitless": {
+        "id": 2814,
+        "url": "https://limitlesstcg.com/cards/BKP/65"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/65.png",
+        "large": "https://images.pokemontcg.io/xy9/65_hires.png"
+      }
+    },
+    {
+      "number": "066/122",
+      "localId": "66",
+      "name": "Trevenant BREAK",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "BREAK"
+      ],
+      "evolvesFrom": "Trevenant",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 160,
+      "rules": [
+        "BREAK Evolution Rule: Trevenant BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "attacks": [
+        {
+          "name": "Silent Fear",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put 3 damage counters on each of your opponent's Pokémon."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare BREAK",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 66",
+      "printGroup": [
+        "BKP 66"
+      ],
+      "limitless": {
+        "id": 2815,
+        "url": "https://limitlesstcg.com/cards/BKP/66"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/66.png",
+        "large": "https://images.pokemontcg.io/xy9/66_hires.png"
+      }
+    },
+    {
+      "number": "067/122",
+      "localId": "67",
+      "name": "Sudowoodo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Watch and Learn",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "If your opponent's Pokémon used an attack during his or her last turn, use it as this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 185,
+        "genus": "Imitation Pokémon",
+        "height": "3'11\"",
+        "weight": "83.8 lbs"
+      },
+      "flavorText": "It disguises itself as a tree to avoid attack. It hates water, so it will disappear if it starts raining.",
+      "secret": false,
+      "deckCode": "BKP 67",
+      "printGroup": [
+        "BKP 67"
+      ],
+      "limitless": {
+        "id": 2816,
+        "url": "https://limitlesstcg.com/cards/BKP/67"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/67.png",
+        "large": "https://images.pokemontcg.io/xy9/67_hires.png"
+      }
+    },
+    {
+      "number": "068/122",
+      "localId": "68",
+      "name": "Gible",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gabite"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Never Enough",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard a card from your hand. If you do, draw 2 cards."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 443,
+        "genus": "Land Shark Pokémon",
+        "height": "2'4\"",
+        "weight": "45.2 lbs"
+      },
+      "flavorText": "It nests in small, horizontal holes in cave walls. It pounces to catch prey that stray too close.",
+      "secret": false,
+      "deckCode": "BKP 68",
+      "printGroup": [
+        "BKP 68"
+      ],
+      "limitless": {
+        "id": 2817,
+        "url": "https://limitlesstcg.com/cards/BKP/68"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/68.png",
+        "large": "https://images.pokemontcg.io/xy9/68_hires.png"
+      }
+    },
+    {
+      "number": "069/122",
+      "localId": "69",
+      "name": "Gabite",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Gible",
+      "evolvesTo": [
+        "Garchomp"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Sand Tomb",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 444,
+        "genus": "Cave Pokémon",
+        "height": "4'7\"",
+        "weight": "123.5 lbs"
+      },
+      "flavorText": "As it digs to expand its nest, it habitually digs up gems that it then hoards in its nest.",
+      "secret": false,
+      "deckCode": "BKP 69",
+      "printGroup": [
+        "BKP 69"
+      ],
+      "limitless": {
+        "id": 2818,
+        "url": "https://limitlesstcg.com/cards/BKP/69"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/69.png",
+        "large": "https://images.pokemontcg.io/xy9/69_hires.png"
+      }
+    },
+    {
+      "number": "070/122",
+      "localId": "70",
+      "name": "Garchomp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Gabite",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Turbo Assault",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "60",
+          "text": "Attach an Energy card from your discard pile to 1 of your Pokémon."
+        },
+        {
+          "name": "Bite Off",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80+",
+          "text": "If your opponent's Active Pokémon is a Pokémon-EX, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "TOKIYA",
+      "pokedex": {
+        "number": 445,
+        "genus": "Mach Pokémon",
+        "height": "6'3\"",
+        "weight": "209.4 lbs"
+      },
+      "flavorText": "It flies at speeds equal to a jet fighter plane. It never allows its prey to escape.",
+      "secret": false,
+      "deckCode": "BKP 70",
+      "printGroup": [
+        "BKP 70"
+      ],
+      "limitless": {
+        "id": 2819,
+        "url": "https://limitlesstcg.com/cards/BKP/70"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/70.png",
+        "large": "https://images.pokemontcg.io/xy9/70_hires.png"
+      }
+    },
+    {
+      "number": "071/122",
+      "localId": "71",
+      "name": "Pancham",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Pangoro"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Light Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Confront",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 674,
+        "genus": "Playful Pokémon",
+        "height": "2'0\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "It does its level best to glare and pull a scary face, but it can't help grinning if anyone pats its head.",
+      "secret": false,
+      "deckCode": "BKP 71",
+      "printGroup": [
+        "BKP 71"
+      ],
+      "limitless": {
+        "id": 2820,
+        "url": "https://limitlesstcg.com/cards/BKP/71"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/71.png",
+        "large": "https://images.pokemontcg.io/xy9/71_hires.png"
+      }
+    },
+    {
+      "number": "072/122",
+      "localId": "72",
+      "name": "Nuzleaf",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Seedot",
+      "evolvesTo": [
+        "Shiftry"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Corkscrew Punch",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Razor Wind",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yuka Morii",
+      "pokedex": {
+        "number": 274,
+        "genus": "Wily Pokémon",
+        "height": "3'3\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "It lives deep in forests. With the leaf on its head, it makes a flute whose song makes listeners uneasy.",
+      "secret": false,
+      "deckCode": "BKP 72",
+      "printGroup": [
+        "BKP 72"
+      ],
+      "limitless": {
+        "id": 2821,
+        "url": "https://limitlesstcg.com/cards/BKP/72"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/72.png",
+        "large": "https://images.pokemontcg.io/xy9/72_hires.png"
+      }
+    },
+    {
+      "number": "073/122",
+      "localId": "73",
+      "name": "Shiftry",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Nuzleaf",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Roll Up",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip 3 coins. If any of them are heads, your opponent reveals his or her hand. Then, for each heads, discard a card from your opponent's hand."
+        },
+        {
+          "name": "Otherworldly Return",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Put a Trainer card from your discard pile into your hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "TOKIYA",
+      "pokedex": {
+        "number": 275,
+        "genus": "Wicked Pokémon",
+        "height": "4'3\"",
+        "weight": "131.4 lbs"
+      },
+      "flavorText": "By flapping its leafy fan, it can whip up gusts of 100 feet per second that can level houses.",
+      "secret": false,
+      "deckCode": "BKP 73",
+      "printGroup": [
+        "BKP 73"
+      ],
+      "limitless": {
+        "id": 2822,
+        "url": "https://limitlesstcg.com/cards/BKP/73"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/73.png",
+        "large": "https://images.pokemontcg.io/xy9/73_hires.png"
+      }
+    },
+    {
+      "number": "074/122",
+      "localId": "74",
+      "name": "Darkrai-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Dark Pulse",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 20 more damage for each Darkness Energy attached to all of your Pokémon."
+        },
+        {
+          "name": "Dark Head",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "If your opponent's Active Pokémon is Asleep, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 74",
+      "printGroup": [
+        "BKP 74",
+        "BKP 118"
+      ],
+      "limitless": {
+        "id": 2823,
+        "url": "https://limitlesstcg.com/cards/BKP/74"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/74.png",
+        "large": "https://images.pokemontcg.io/xy9/74_hires.png"
+      }
+    },
+    {
+      "number": "075/122",
+      "localId": "75",
+      "name": "Pangoro",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pancham",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Parting Shot",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon. During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 60 (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Buster Swing",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 675,
+        "genus": "Daunting Pokémon",
+        "height": "6'11\"",
+        "weight": "299.8 lbs"
+      },
+      "flavorText": "It charges ahead and bashes its opponents like a berserker, uncaring about any hits it might take. Its arms are mighty enough to snap a telephone pole.",
+      "secret": false,
+      "deckCode": "BKP 75",
+      "printGroup": [
+        "BKP 75"
+      ],
+      "limitless": {
+        "id": 2824,
+        "url": "https://limitlesstcg.com/cards/BKP/75"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/75.png",
+        "large": "https://images.pokemontcg.io/xy9/75_hires.png"
+      }
+    },
+    {
+      "number": "076/122",
+      "localId": "76",
+      "name": "Scizor-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Scizor-EX"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Steel Wing",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Gale Thrust",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "If this Pokémon was on the Bench and became your Active Pokémon this turn, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 76",
+      "printGroup": [
+        "BKP 76",
+        "BKP 119"
+      ],
+      "limitless": {
+        "id": 2825,
+        "url": "https://limitlesstcg.com/cards/BKP/76"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/76.png",
+        "large": "https://images.pokemontcg.io/xy9/76_hires.png"
+      }
+    },
+    {
+      "number": "077/122",
+      "localId": "77",
+      "name": "M Scizor-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Scizor-EX",
+      "types": [
+        "Metal"
+      ],
+      "hp": 220,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Iron Crusher",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "You may discard a Special Energy attached to your opponent's Active Pokémon or a Stadium card in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 77",
+      "printGroup": [
+        "BKP 77",
+        "BKP 120"
+      ],
+      "limitless": {
+        "id": 2826,
+        "url": "https://limitlesstcg.com/cards/BKP/77"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/77.png",
+        "large": "https://images.pokemontcg.io/xy9/77_hires.png"
+      }
+    },
+    {
+      "number": "078/122",
+      "localId": "78",
+      "name": "Mawile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Cavernous Chomp",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 303,
+        "genus": "Deceiver Pokémon",
+        "height": "2'0\"",
+        "weight": "25.4 lbs"
+      },
+      "flavorText": "Attached to its head is a huge set of jaws formed by horns. It can chew through iron beams.",
+      "secret": false,
+      "deckCode": "BKP 78",
+      "printGroup": [
+        "BKP 78"
+      ],
+      "limitless": {
+        "id": 2827,
+        "url": "https://limitlesstcg.com/cards/BKP/78"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/78.png",
+        "large": "https://images.pokemontcg.io/xy9/78_hires.png"
+      }
+    },
+    {
+      "number": "079/122",
+      "localId": "79",
+      "name": "Ferroseed",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ferrothorn"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Harden",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "During your opponent's next turn, if this Pokémon would be damaged by an attack, prevent that attack's damage done to this Pokémon if that damage is 60 or less."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Satoshi Shirai",
+      "pokedex": {
+        "number": 597,
+        "genus": "Thorn Seed Pokémon",
+        "height": "2'0\"",
+        "weight": "41.4 lbs"
+      },
+      "flavorText": "It absorbs the iron it finds in the rock while clinging to the ceiling. It shoots spikes when in danger.",
+      "secret": false,
+      "deckCode": "BKP 79",
+      "printGroup": [
+        "BKP 79"
+      ],
+      "limitless": {
+        "id": 2828,
+        "url": "https://limitlesstcg.com/cards/BKP/79"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/79.png",
+        "large": "https://images.pokemontcg.io/xy9/79_hires.png"
+      }
+    },
+    {
+      "number": "080/122",
+      "localId": "80",
+      "name": "Ferrothorn",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ferroseed",
+      "types": [
+        "Metal"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Spike Lash",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 10 damage to each of your opponent's Pokémon for each Colorless in that Pokémon's Retreat Cost. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 598,
+        "genus": "Thorn Pod Pokémon",
+        "height": "3'3\"",
+        "weight": "242.5 lbs"
+      },
+      "flavorText": "They attach themselves to cave ceilings, firing steel spikes at targets passing beneath them.",
+      "secret": false,
+      "deckCode": "BKP 80",
+      "printGroup": [
+        "BKP 80"
+      ],
+      "limitless": {
+        "id": 2829,
+        "url": "https://limitlesstcg.com/cards/BKP/80"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/80.png",
+        "large": "https://images.pokemontcg.io/xy9/80_hires.png"
+      }
+    },
+    {
+      "number": "081/122",
+      "localId": "81",
+      "name": "Clefairy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Clefable"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Sing",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        },
+        {
+          "name": "Double Slap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "pokedex": {
+        "number": 35,
+        "genus": "Fairy Pokémon",
+        "height": "2'0\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "The moonlight that it stores in the wings on its back apparently gives it the ability to float in midair.",
+      "secret": false,
+      "deckCode": "BKP 81",
+      "printGroup": [
+        "BKP 81"
+      ],
+      "limitless": {
+        "id": 2830,
+        "url": "https://limitlesstcg.com/cards/BKP/81"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/81.png",
+        "large": "https://images.pokemontcg.io/xy9/81_hires.png"
+      }
+    },
+    {
+      "number": "082/122",
+      "localId": "82",
+      "name": "Clefable",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Clefairy",
+      "types": [
+        "Fairy"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Moon Barrier",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "During your opponent's next turn, prevent all effects of attacks, including damage, done to this Pokémon by Dragon Pokémon."
+        },
+        {
+          "name": "Tumbling Attack",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 36,
+        "genus": "Fairy Pokémon",
+        "height": "4'3\"",
+        "weight": "88.2 lbs"
+      },
+      "flavorText": "A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.",
+      "secret": false,
+      "deckCode": "BKP 82",
+      "printGroup": [
+        "BKP 82"
+      ],
+      "limitless": {
+        "id": 2831,
+        "url": "https://limitlesstcg.com/cards/BKP/82"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/82.png",
+        "large": "https://images.pokemontcg.io/xy9/82_hires.png"
+      }
+    },
+    {
+      "number": "083/122",
+      "localId": "83",
+      "name": "Togekiss-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Mighty Wind",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "You may attach an Energy card from your hand to 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Hurricane Wing",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "50×",
+          "text": "Flip 4 coins. This attack does 50 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 83",
+      "printGroup": [
+        "BKP 83"
+      ],
+      "limitless": {
+        "id": 2832,
+        "url": "https://limitlesstcg.com/cards/BKP/83"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/83.png",
+        "large": "https://images.pokemontcg.io/xy9/83_hires.png"
+      }
+    },
+    {
+      "number": "084/122",
+      "localId": "84",
+      "name": "Spritzee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Aromatisse"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Beat",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 682,
+        "genus": "Perfume Pokémon",
+        "height": "0'8\"",
+        "weight": "1.1 lbs"
+      },
+      "flavorText": "In the past, rather than using perfume, royal ladies carried a Spritzee that would waft a fragrance they liked.",
+      "secret": false,
+      "deckCode": "BKP 84",
+      "printGroup": [
+        "BKP 84"
+      ],
+      "limitless": {
+        "id": 2833,
+        "url": "https://limitlesstcg.com/cards/BKP/84"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/84.png",
+        "large": "https://images.pokemontcg.io/xy9/84_hires.png"
+      }
+    },
+    {
+      "number": "085/122",
+      "localId": "85",
+      "name": "Aromatisse",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Spritzee",
+      "types": [
+        "Fairy"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Dizzying Cologne",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If your opponent's Active Pokémon is a Pokémon-EX, this attack does 40 more damage."
+        },
+        {
+          "name": "Fairy Wind",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 683,
+        "genus": "Fragrance Pokémon",
+        "height": "2'7\"",
+        "weight": "34.2 lbs"
+      },
+      "flavorText": "Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, he or she will have a hard time walking alongside it.",
+      "secret": false,
+      "deckCode": "BKP 85",
+      "printGroup": [
+        "BKP 85"
+      ],
+      "limitless": {
+        "id": 2834,
+        "url": "https://limitlesstcg.com/cards/BKP/85"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/85.png",
+        "large": "https://images.pokemontcg.io/xy9/85_hires.png"
+      }
+    },
+    {
+      "number": "086/122",
+      "localId": "86",
+      "name": "Dragalge",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Skrelp",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Severe Poison",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. Put 4 damage counters instead of 1 on that Pokémon between turns."
+        },
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Water",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Discard the top card of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 691,
+        "genus": "Mock Kelp Pokémon",
+        "height": "5'11\"",
+        "weight": "179.7 lbs"
+      },
+      "flavorText": "Tales are told of ships that wander into seas where Dragalge live, never to return.",
+      "secret": false,
+      "deckCode": "BKP 86",
+      "printGroup": [
+        "BKP 86"
+      ],
+      "limitless": {
+        "id": 2835,
+        "url": "https://limitlesstcg.com/cards/BKP/86"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/86.png",
+        "large": "https://images.pokemontcg.io/xy9/86_hires.png"
+      }
+    },
+    {
+      "number": "087/122",
+      "localId": "87",
+      "name": "Rattata",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raticate"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 30,
+      "attacks": [
+        {
+          "name": "Dangerous Suspicion",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card. Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "match",
+      "pokedex": {
+        "number": 19,
+        "genus": "Mouse Pokémon",
+        "height": "1'0\"",
+        "weight": "7.7 lbs"
+      },
+      "flavorText": "Its fangs are long and very sharp. They grow continuously, so it gnaws on hard things to whittle them down.",
+      "secret": false,
+      "deckCode": "BKP 87",
+      "printGroup": [
+        "BKP 87"
+      ],
+      "limitless": {
+        "id": 2836,
+        "url": "https://limitlesstcg.com/cards/BKP/87"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/87.png",
+        "large": "https://images.pokemontcg.io/xy9/87_hires.png"
+      }
+    },
+    {
+      "number": "088/122",
+      "localId": "88",
+      "name": "Raticate",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Rattata",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Antibodies",
+          "text": "This Pokémon can't be affected by any Special Conditions. (Remove any Special Conditions affecting this Pokémon.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dirty Shock",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. Discard all Pokémon Tool cards attached to that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 20,
+        "genus": "Mouse Pokémon",
+        "height": "2'4\"",
+        "weight": "40.8 lbs"
+      },
+      "flavorText": "The webs on its hind legs enable it to cross rivers. It searches wide areas for food.",
+      "secret": false,
+      "deckCode": "BKP 88",
+      "printGroup": [
+        "BKP 88"
+      ],
+      "limitless": {
+        "id": 2837,
+        "url": "https://limitlesstcg.com/cards/BKP/88"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/88.png",
+        "large": "https://images.pokemontcg.io/xy9/88_hires.png"
+      }
+    },
+    {
+      "number": "089/122",
+      "localId": "89",
+      "name": "Raticate BREAK",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "BREAK"
+      ],
+      "evolvesFrom": "Raticate",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 110,
+      "rules": [
+        "BREAK Evolution Rule: Raticate BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "attacks": [
+        {
+          "name": "Super Fang",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put damage counters on your opponent's Active Pokémon until its remaining HP is 10."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare BREAK",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 89",
+      "printGroup": [
+        "BKP 89"
+      ],
+      "limitless": {
+        "id": 2838,
+        "url": "https://limitlesstcg.com/cards/BKP/89"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/89.png",
+        "large": "https://images.pokemontcg.io/xy9/89_hires.png"
+      }
+    },
+    {
+      "number": "090/122",
+      "localId": "90",
+      "name": "Dunsparce",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Ram",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 206,
+        "genus": "Land Snake Pokémon",
+        "height": "4'11\"",
+        "weight": "30.9 lbs"
+      },
+      "flavorText": "It digs into the ground with its tail and makes a mazelike nest. It can fly just a little.",
+      "secret": false,
+      "deckCode": "BKP 90",
+      "printGroup": [
+        "BKP 90"
+      ],
+      "limitless": {
+        "id": 2839,
+        "url": "https://limitlesstcg.com/cards/BKP/90"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/90.png",
+        "large": "https://images.pokemontcg.io/xy9/90_hires.png"
+      }
+    },
+    {
+      "number": "091/122",
+      "localId": "91",
+      "name": "Stantler",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Mystifying Horns",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Confused."
+        },
+        {
+          "name": "Big Charge",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "If you have any Mega Evolution Pokémon on your Bench, this attack does 50 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "sui",
+      "pokedex": {
+        "number": 234,
+        "genus": "Big Horn Pokémon",
+        "height": "4'7\"",
+        "weight": "157.0 lbs"
+      },
+      "flavorText": "The curved antlers subtly change the flow of air to create a strange space where reality is distorted.",
+      "secret": false,
+      "deckCode": "BKP 91",
+      "printGroup": [
+        "BKP 91"
+      ],
+      "limitless": {
+        "id": 2840,
+        "url": "https://limitlesstcg.com/cards/BKP/91"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/91.png",
+        "large": "https://images.pokemontcg.io/xy9/91_hires.png"
+      }
+    },
+    {
+      "number": "092/122",
+      "localId": "92",
+      "name": "Ho-Oh-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Purifying Fire",
+          "text": "Once during your turn (before your attack), if this Pokémon has any basic Fire Energy attached to it, you may heal 50 damage from it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Elemental Feather",
+          "cost": [
+            "Grass",
+            "Water",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "BKP 92",
+      "printGroup": [
+        "BKP 92",
+        "BKP 121"
+      ],
+      "limitless": {
+        "id": 2841,
+        "url": "https://limitlesstcg.com/cards/BKP/92"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/92.png",
+        "large": "https://images.pokemontcg.io/xy9/92_hires.png"
+      }
+    },
+    {
+      "number": "093/122",
+      "localId": "93",
+      "name": "Glameow",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Purugly"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Act Cute",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent puts a card from his or her hand on the bottom of his or her deck."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 431,
+        "genus": "Catty Pokémon",
+        "height": "1'8\"",
+        "weight": "8.6 lbs"
+      },
+      "flavorText": "When it's happy, Glameow demonstrates beautiful movements of its tail, like a dancing ribbon.",
+      "secret": false,
+      "deckCode": "BKP 93",
+      "printGroup": [
+        "BKP 93"
+      ],
+      "limitless": {
+        "id": 2842,
+        "url": "https://limitlesstcg.com/cards/BKP/93"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/93.png",
+        "large": "https://images.pokemontcg.io/xy9/93_hires.png"
+      }
+    },
+    {
+      "number": "094/122",
+      "localId": "94",
+      "name": "Purugly",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Glameow",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Nyan Press",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Flip a coin. If heads, this attack does 40 more damage. If tails, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 432,
+        "genus": "Tiger Cat Pokémon",
+        "height": "3'3\"",
+        "weight": "96.6 lbs"
+      },
+      "flavorText": "To make itself appear intimidatingly beefy, it tightly cinches its waist with its twin tails.",
+      "secret": false,
+      "deckCode": "BKP 94",
+      "printGroup": [
+        "BKP 94"
+      ],
+      "limitless": {
+        "id": 2843,
+        "url": "https://limitlesstcg.com/cards/BKP/94"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/94.png",
+        "large": "https://images.pokemontcg.io/xy9/94_hires.png"
+      }
+    },
+    {
+      "number": "095/122",
+      "localId": "95",
+      "name": "Furfrou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 676,
+        "genus": "Poodle Pokémon",
+        "height": "3'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "Historically, in the Kalos region, these Pokémon were the designated guardians of the king.",
+      "secret": false,
+      "deckCode": "BKP 95",
+      "printGroup": [
+        "BKP 95"
+      ],
+      "limitless": {
+        "id": 2844,
+        "url": "https://limitlesstcg.com/cards/BKP/95"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/95.png",
+        "large": "https://images.pokemontcg.io/xy9/95_hires.png"
+      }
+    },
+    {
+      "number": "096/122",
+      "localId": "96",
+      "name": "All-Night Party",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, if that player's Active Pokémon is Asleep, he or she may remove that Special Condition and heal 30 damage from that Pokémon.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hitoshi Ariga",
+      "secret": false,
+      "deckCode": "BKP 96",
+      "printGroup": [
+        "BKP 96"
+      ],
+      "limitless": {
+        "id": 2845,
+        "url": "https://limitlesstcg.com/cards/BKP/96"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/96.png",
+        "large": "https://images.pokemontcg.io/xy9/96_hires.png"
+      }
+    },
+    {
+      "number": "097/122",
+      "localId": "97",
+      "name": "Bursting Balloon",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "If this card is attached to 1 of your Pokémon, discard it at the end of your opponent's turn.",
+        "If the Pokémon this card is attached to is your Active Pokémon and is damaged by an opponent's attack (even if that Pokémon is Knocked Out), put 6 damage counters on the Attacking Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "BKP 97",
+      "printGroup": [
+        "BKP 97"
+      ],
+      "limitless": {
+        "id": 2846,
+        "url": "https://limitlesstcg.com/cards/BKP/97"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/97.png",
+        "large": "https://images.pokemontcg.io/xy9/97_hires.png"
+      }
+    },
+    {
+      "number": "098/122",
+      "localId": "98",
+      "name": "Delinquent",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard any Stadium card in play. If you do, your opponent discards 3 cards from his or her hand.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "deckCode": "BKP 98",
+      "printGroup": [
+        "BKP 98",
+        "BKP 98a",
+        "BKP 98b"
+      ],
+      "limitless": {
+        "id": 2847,
+        "url": "https://limitlesstcg.com/cards/BKP/98"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/98.png",
+        "large": "https://images.pokemontcg.io/xy9/98_hires.png"
+      }
+    },
+    {
+      "number": "98a",
+      "localId": "98a",
+      "name": "Delinquent",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard any Stadium card in play. If you do, your opponent discards 3 cards from his or her hand.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "BKP 98a",
+      "printGroup": [
+        "BKP 98",
+        "BKP 98a",
+        "BKP 98b"
+      ],
+      "limitless": {
+        "id": 14498,
+        "url": "https://limitlesstcg.com/cards/BKP/98a"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/98a.png",
+        "large": "https://images.pokemontcg.io/xy9/98a_hires.png"
+      }
+    },
+    {
+      "number": "98b",
+      "localId": "98b",
+      "name": "Delinquent",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard any Stadium card in play. If you do, your opponent discards 3 cards from his or her hand.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "deckCode": "BKP 98b",
+      "printGroup": [
+        "BKP 98",
+        "BKP 98a",
+        "BKP 98b"
+      ],
+      "limitless": {
+        "id": 14499,
+        "url": "https://limitlesstcg.com/cards/BKP/98b"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/98b.png",
+        "large": "https://images.pokemontcg.io/xy9/98b_hires.png"
+      }
+    },
+    {
+      "number": "099/122",
+      "localId": "99",
+      "name": "Fighting Fury Belt",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "The Basic Pokémon this card is attached to gets +40 HP and its attacks do 10 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "BKP 99",
+      "printGroup": [
+        "BKP 99"
+      ],
+      "limitless": {
+        "id": 2848,
+        "url": "https://limitlesstcg.com/cards/BKP/99"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/99.png",
+        "large": "https://images.pokemontcg.io/xy9/99_hires.png"
+      }
+    },
+    {
+      "number": "100/122",
+      "localId": "100",
+      "name": "Great Ball",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "BKP 100",
+      "printGroup": [
+        "BCR 129",
+        "BKP 100",
+        "CPA 52",
+        "CRZ 132",
+        "DS 90",
+        "EPO 93",
+        "PAL 183",
+        "PK 77",
+        "RG 92",
+        "SF 85",
+        "SLG 60",
+        "SSH 164",
+        "SUM 119",
+        "XY 118"
+      ],
+      "limitless": {
+        "id": 2849,
+        "url": "https://limitlesstcg.com/cards/BKP/100"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/100.png",
+        "large": "https://images.pokemontcg.io/xy9/100_hires.png"
+      }
+    },
+    {
+      "number": "101/122",
+      "localId": "101",
+      "name": "Gyarados Spirit Link",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Your turn does not end if the Pokémon this card is attached to becomes M Gyarados-EX.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 101",
+      "printGroup": [
+        "BKP 101"
+      ],
+      "limitless": {
+        "id": 2850,
+        "url": "https://limitlesstcg.com/cards/BKP/101"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/101.png",
+        "large": "https://images.pokemontcg.io/xy9/101_hires.png"
+      }
+    },
+    {
+      "number": "102/122",
+      "localId": "102",
+      "name": "Max Elixir",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Look at the top 6 cards of your deck and attach a basic Energy card you find there to a Basic Pokémon on your Bench. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "BKP 102",
+      "printGroup": [
+        "BKP 102"
+      ],
+      "limitless": {
+        "id": 2851,
+        "url": "https://limitlesstcg.com/cards/BKP/102"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/102.png",
+        "large": "https://images.pokemontcg.io/xy9/102_hires.png"
+      }
+    },
+    {
+      "number": "103/122",
+      "localId": "103",
+      "name": "Max Potion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Heal all damage from 1 of your Pokémon. If you do, discard all Energy attached to that Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "BKP 103",
+      "printGroup": [
+        "BKP 103",
+        "EPO 94",
+        "GRI 128",
+        "GRI 128a",
+        "GRI 164",
+        "PLF 121"
+      ],
+      "limitless": {
+        "id": 2852,
+        "url": "https://limitlesstcg.com/cards/BKP/103"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/103.png",
+        "large": "https://images.pokemontcg.io/xy9/103_hires.png"
+      }
+    },
+    {
+      "number": "104/122",
+      "localId": "104",
+      "name": "Misty's Determination",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard a card from your hand. If you do, look at the top 8 cards of your deck and put 1 of them into your hand. Shuffle the other cards back into your deck.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "BKP 104",
+      "printGroup": [
+        "BKP 104",
+        "EVO 80",
+        "EVO 108",
+        "HIF 62"
+      ],
+      "limitless": {
+        "id": 2853,
+        "url": "https://limitlesstcg.com/cards/BKP/104"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/104.png",
+        "large": "https://images.pokemontcg.io/xy9/104_hires.png"
+      }
+    },
+    {
+      "number": "105/122",
+      "localId": "105",
+      "name": "Pokémon Catcher",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 105",
+      "printGroup": [
+        "BKP 105",
+        "CRZ 138",
+        "DEX 111",
+        "EPO 95",
+        "KSS 36",
+        "PLB 83",
+        "POR 82",
+        "SLG 64",
+        "SSH 175",
+        "SUM 126",
+        "SVI 187"
+      ],
+      "limitless": {
+        "id": 2854,
+        "url": "https://limitlesstcg.com/cards/BKP/105"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/105.png",
+        "large": "https://images.pokemontcg.io/xy9/105_hires.png"
+      }
+    },
+    {
+      "number": "106/122",
+      "localId": "106",
+      "name": "Potion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Heal 30 damage from 1 of your Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 106",
+      "printGroup": [
+        "BCR 132",
+        "BKP 106",
+        "BLW 100",
+        "BS 94",
+        "BS2 122",
+        "CG 87",
+        "CPA 61",
+        "CRZ 139",
+        "DP 118",
+        "DS 101",
+        "E1 156",
+        "EVO 83",
+        "KSS 37",
+        "LC 110",
+        "POR 83",
+        "RG 101",
+        "RS 91",
+        "SF 92",
+        "SSH 177",
+        "SUM 127",
+        "SVI 188",
+        "SW 127",
+        "UF 95"
+      ],
+      "limitless": {
+        "id": 2855,
+        "url": "https://limitlesstcg.com/cards/BKP/106"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/106.png",
+        "large": "https://images.pokemontcg.io/xy9/106_hires.png"
+      }
+    },
+    {
+      "number": "107/122",
+      "localId": "107",
+      "name": "Professor Sycamore",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "deckCode": "BKP 107",
+      "printGroup": [
+        "BKP 107",
+        "BKP 107a",
+        "PHF 101",
+        "STS 114",
+        "XY 122"
+      ],
+      "limitless": {
+        "id": 2856,
+        "url": "https://limitlesstcg.com/cards/BKP/107"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/107.png",
+        "large": "https://images.pokemontcg.io/xy9/107_hires.png"
+      }
+    },
+    {
+      "number": "107a",
+      "localId": "107a",
+      "name": "Professor Sycamore",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "deckCode": "BKP 107a",
+      "printGroup": [
+        "BKP 107",
+        "BKP 107a",
+        "PHF 101",
+        "STS 114",
+        "XY 122"
+      ],
+      "limitless": {
+        "id": 14500,
+        "url": "https://limitlesstcg.com/cards/BKP/107a"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/107a.png",
+        "large": "https://images.pokemontcg.io/xy9/107a_hires.png"
+      }
+    },
+    {
+      "number": "108/122",
+      "localId": "108",
+      "name": "Psychic's Third Eye",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Your opponent reveals his or her hand.",
+        "Discard as many cards as you like from your hand. Then, draw that many cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "deckCode": "BKP 108",
+      "printGroup": [
+        "BKP 108"
+      ],
+      "limitless": {
+        "id": 2857,
+        "url": "https://limitlesstcg.com/cards/BKP/108"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/108.png",
+        "large": "https://images.pokemontcg.io/xy9/108_hires.png"
+      }
+    },
+    {
+      "number": "109/122",
+      "localId": "109",
+      "name": "Puzzle of Time",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "You may play 2 Puzzle of Time cards at once.\n• If you played 1 card, look at the top 3 cards of your deck and put them back in any order.\n• If you played 2 cards, put 2 cards from your discard pile into your hand.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "BKP 109",
+      "printGroup": [
+        "BKP 109"
+      ],
+      "limitless": {
+        "id": 2858,
+        "url": "https://limitlesstcg.com/cards/BKP/109"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/109.png",
+        "large": "https://images.pokemontcg.io/xy9/109_hires.png"
+      }
+    },
+    {
+      "number": "110/122",
+      "localId": "110",
+      "name": "Reverse Valley",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Choose which way this card faces before you play it. Any damage done to this ↓ player's Metal Pokémon by an opponent's attack is reduced by 10 (after applying Weakness and Resistance).",
+        "Choose which way this card faces before you play it. The attacks of this ↓ player's Darkness Pokémon do 10 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 110",
+      "printGroup": [
+        "BKP 110"
+      ],
+      "limitless": {
+        "id": 2859,
+        "url": "https://limitlesstcg.com/cards/BKP/110"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/110.png",
+        "large": "https://images.pokemontcg.io/xy9/110_hires.png"
+      }
+    },
+    {
+      "number": "111/122",
+      "localId": "111",
+      "name": "Scizor Spirit Link",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Your turn does not end if the Pokémon this card is attached to becomes M Scizor-EX.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 111",
+      "printGroup": [
+        "BKP 111"
+      ],
+      "limitless": {
+        "id": 2860,
+        "url": "https://limitlesstcg.com/cards/BKP/111"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/111.png",
+        "large": "https://images.pokemontcg.io/xy9/111_hires.png"
+      }
+    },
+    {
+      "number": "112/122",
+      "localId": "112",
+      "name": "Tierno",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Draw 3 cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "BKP 112",
+      "printGroup": [
+        "BKP 112",
+        "KSS 39",
+        "PHF 107"
+      ],
+      "limitless": {
+        "id": 2861,
+        "url": "https://limitlesstcg.com/cards/BKP/112"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/112.png",
+        "large": "https://images.pokemontcg.io/xy9/112_hires.png"
+      }
+    },
+    {
+      "number": "113/122",
+      "localId": "113",
+      "name": "Splash Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "This card can only be attached to Water Pokémon. This card provides Water Energy only while this card is attached to a Water Pokémon.",
+        "If the Water Pokémon this card is attached to is Knocked Out by damage from an opponent's attack, put that Pokémon into your hand. (Discard all cards attached to it.)",
+        "(If this card is attached to anything other than a Water Pokémon, discard this card.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 113",
+      "printGroup": [
+        "BKP 113"
+      ],
+      "limitless": {
+        "id": 2862,
+        "url": "https://limitlesstcg.com/cards/BKP/113"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/113.png",
+        "large": "https://images.pokemontcg.io/xy9/113_hires.png"
+      }
+    },
+    {
+      "number": "114/122",
+      "localId": "114",
+      "name": "Gyarados-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Gyarados-EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Stormy Seas",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin until you get tails. For each heads, search your deck for a Water Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Splash Burn",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130",
+          "text": "This attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "BKP 114",
+      "printGroup": [
+        "BKP 26",
+        "BKP 114",
+        "BKP 123",
+        "XYP 106"
+      ],
+      "limitless": {
+        "id": 2863,
+        "url": "https://limitlesstcg.com/cards/BKP/114"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/114.png",
+        "large": "https://images.pokemontcg.io/xy9/114_hires.png"
+      }
+    },
+    {
+      "number": "115/122",
+      "localId": "115",
+      "name": "M Gyarados-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Gyarados-EX",
+      "types": [
+        "Water"
+      ],
+      "hp": 240,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Blast Geyser",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120+",
+          "text": "You may do 20 more damage for each Water Energy attached to this Pokémon. If you do, discard the top 2 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 115",
+      "printGroup": [
+        "BKP 27",
+        "BKP 115"
+      ],
+      "limitless": {
+        "id": 2864,
+        "url": "https://limitlesstcg.com/cards/BKP/115"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/115.png",
+        "large": "https://images.pokemontcg.io/xy9/115_hires.png"
+      }
+    },
+    {
+      "number": "116/122",
+      "localId": "116",
+      "name": "Manaphy-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Aqua Tube",
+          "text": "Each of your Pokémon that has any Water Energy attached to it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mineral Pump",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Heal 30 damage from each of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "BKP 116",
+      "printGroup": [
+        "BKP 32",
+        "BKP 116"
+      ],
+      "limitless": {
+        "id": 2865,
+        "url": "https://limitlesstcg.com/cards/BKP/116"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/116.png",
+        "large": "https://images.pokemontcg.io/xy9/116_hires.png"
+      }
+    },
+    {
+      "number": "117/122",
+      "localId": "117",
+      "name": "Espeon-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Miraculous Shine",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Devolve each of your opponent's evolved Pokémon and put the highest Stage Evolution card on it into your opponent's hand."
+        },
+        {
+          "name": "Psyshock",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "BKP 117",
+      "printGroup": [
+        "BKP 52",
+        "BKP 117"
+      ],
+      "limitless": {
+        "id": 2866,
+        "url": "https://limitlesstcg.com/cards/BKP/117"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/117.png",
+        "large": "https://images.pokemontcg.io/xy9/117_hires.png"
+      }
+    },
+    {
+      "number": "118/122",
+      "localId": "118",
+      "name": "Darkrai-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Dark Pulse",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 20 more damage for each Darkness Energy attached to all of your Pokémon."
+        },
+        {
+          "name": "Dark Head",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "If your opponent's Active Pokémon is Asleep, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "BKP 118",
+      "printGroup": [
+        "BKP 74",
+        "BKP 118"
+      ],
+      "limitless": {
+        "id": 2867,
+        "url": "https://limitlesstcg.com/cards/BKP/118"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/118.png",
+        "large": "https://images.pokemontcg.io/xy9/118_hires.png"
+      }
+    },
+    {
+      "number": "119/122",
+      "localId": "119",
+      "name": "Scizor-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Scizor-EX"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Steel Wing",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Gale Thrust",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "If this Pokémon was on the Bench and became your Active Pokémon this turn, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "BKP 119",
+      "printGroup": [
+        "BKP 76",
+        "BKP 119"
+      ],
+      "limitless": {
+        "id": 2868,
+        "url": "https://limitlesstcg.com/cards/BKP/119"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/119.png",
+        "large": "https://images.pokemontcg.io/xy9/119_hires.png"
+      }
+    },
+    {
+      "number": "120/122",
+      "localId": "120",
+      "name": "M Scizor-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Scizor-EX",
+      "types": [
+        "Metal"
+      ],
+      "hp": 220,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Iron Crusher",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "You may discard a Special Energy attached to your opponent's Active Pokémon or a Stadium card in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "BKP 120",
+      "printGroup": [
+        "BKP 77",
+        "BKP 120"
+      ],
+      "limitless": {
+        "id": 2869,
+        "url": "https://limitlesstcg.com/cards/BKP/120"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/120.png",
+        "large": "https://images.pokemontcg.io/xy9/120_hires.png"
+      }
+    },
+    {
+      "number": "121/122",
+      "localId": "121",
+      "name": "Ho-Oh-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Purifying Fire",
+          "text": "Once during your turn (before your attack), if this Pokémon has any basic Fire Energy attached to it, you may heal 50 damage from it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Elemental Feather",
+          "cost": [
+            "Grass",
+            "Water",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "BKP 121",
+      "printGroup": [
+        "BKP 92",
+        "BKP 121"
+      ],
+      "limitless": {
+        "id": 2870,
+        "url": "https://limitlesstcg.com/cards/BKP/121"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/121.png",
+        "large": "https://images.pokemontcg.io/xy9/121_hires.png"
+      }
+    },
+    {
+      "number": "122/122",
+      "localId": "122",
+      "name": "Skyla",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Search your deck for a Trainer card, reveal it, and put it into your hand. Shuffle your deck afterward.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "BKP 122",
+      "printGroup": [
+        "BCR 134",
+        "BCR 149",
+        "BKP 122",
+        "BKT 148",
+        "RCL 166",
+        "SHF 72"
+      ],
+      "limitless": {
+        "id": 2871,
+        "url": "https://limitlesstcg.com/cards/BKP/122"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/122.png",
+        "large": "https://images.pokemontcg.io/xy9/122_hires.png"
+      }
+    },
+    {
+      "number": "123/122",
+      "localId": "123",
+      "name": "Gyarados-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Gyarados-EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Stormy Seas",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin until you get tails. For each heads, search your deck for a Water Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Splash Burn",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130",
+          "text": "This attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "Mitsuhiro Arita",
+      "secret": true,
+      "deckCode": "BKP 123",
+      "printGroup": [
+        "BKP 26",
+        "BKP 114",
+        "BKP 123",
+        "XYP 106"
+      ],
+      "limitless": {
+        "id": 2872,
+        "url": "https://limitlesstcg.com/cards/BKP/123"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/123.png",
+        "large": "https://images.pokemontcg.io/xy9/123_hires.png"
+      }
+    }
+  ]
+}

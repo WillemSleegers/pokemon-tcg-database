@@ -1,0 +1,6903 @@
+{
+  "set": {
+    "code": "FLF",
+    "ptcgDataId": "xy2",
+    "name": "Flashfire",
+    "series": "XY",
+    "printedTotal": 106,
+    "secretTotal": 4,
+    "total": 110,
+    "releaseDate": "2014-05-07",
+    "copyright": "©2014 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/xy2/symbol.png",
+      "logo": "https://images.pokemontcg.io/xy2/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "001/106",
+      "localId": "1",
+      "name": "Caterpie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Metapod"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "abilities": [
+        {
+          "name": "Adaptive Evolution",
+          "text": "This Pokémon can evolve during your first turn or the turn you play it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bug Bite",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 10,
+        "genus": "Worm Pokémon",
+        "height": "1'0\"",
+        "weight": "6.4 lbs"
+      },
+      "flavorText": "For protection, it releases a horrible stench from the antennae on its head to drive away enemies.",
+      "secret": false,
+      "deckCode": "FLF 1",
+      "printGroup": [
+        "FLF 1",
+        "GEN 3"
+      ],
+      "limitless": {
+        "id": 1834,
+        "url": "https://limitlesstcg.com/cards/FLF/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/1.png",
+        "large": "https://images.pokemontcg.io/xy2/1_hires.png"
+      }
+    },
+    {
+      "number": "002/106",
+      "localId": "2",
+      "name": "Metapod",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Caterpie",
+      "evolvesTo": [
+        "Butterfree"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Adaptive Evolution",
+          "text": "This Pokémon can evolve during your first turn or the turn you play it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Harden",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "During your opponent's next turn, if this Pokémon would be damaged by an attack, prevent that attack's damage done to this Pokémon if that damage is 60 or less."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 11,
+        "genus": "Cocoon Pokémon",
+        "height": "2'4\"",
+        "weight": "21.8 lbs"
+      },
+      "flavorText": "A steel-hard shell protects its tender body. It quietly endures hardships while awaiting evolution.",
+      "secret": false,
+      "deckCode": "FLF 2",
+      "printGroup": [
+        "FLF 2",
+        "GEN 4"
+      ],
+      "limitless": {
+        "id": 1835,
+        "url": "https://limitlesstcg.com/cards/FLF/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/2.png",
+        "large": "https://images.pokemontcg.io/xy2/2_hires.png"
+      }
+    },
+    {
+      "number": "003/106",
+      "localId": "3",
+      "name": "Butterfree",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Metapod",
+      "types": [
+        "Grass"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Quiver Dance",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a basic Energy card and attach it to this Pokémon. Shuffle your deck afterward. If you attached Energy in this way, heal 40 damage from this Pokémon."
+        },
+        {
+          "name": "Gust",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "sui",
+      "pokedex": {
+        "number": 12,
+        "genus": "Butterfly Pokémon",
+        "height": "3'7\"",
+        "weight": "70.5 lbs"
+      },
+      "flavorText": "It loves the honey of flowers and can locate flower patches that have even tiny amounts of pollen.",
+      "secret": false,
+      "deckCode": "FLF 3",
+      "printGroup": [
+        "FLF 3",
+        "GEN 5"
+      ],
+      "limitless": {
+        "id": 1836,
+        "url": "https://limitlesstcg.com/cards/FLF/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/3.png",
+        "large": "https://images.pokemontcg.io/xy2/3_hires.png"
+      }
+    },
+    {
+      "number": "004/106",
+      "localId": "4",
+      "name": "Pineco",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Forretress"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Suwama Chiaki",
+      "pokedex": {
+        "number": 204,
+        "genus": "Bagworm Pokémon",
+        "height": "2'0\"",
+        "weight": "15.9 lbs"
+      },
+      "flavorText": "It likes to make its shell thicker by adding layers of tree bark. The additional weight doesn't bother it.",
+      "secret": false,
+      "deckCode": "FLF 4",
+      "printGroup": [
+        "FLF 4"
+      ],
+      "limitless": {
+        "id": 1837,
+        "url": "https://limitlesstcg.com/cards/FLF/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/4.png",
+        "large": "https://images.pokemontcg.io/xy2/4_hires.png"
+      }
+    },
+    {
+      "number": "005/106",
+      "localId": "5",
+      "name": "Seedot",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Nuzleaf"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 273,
+        "genus": "Acorn Pokémon",
+        "height": "1'8\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "It attaches itself to a tree branch using the top of its head. Strong winds can sometimes make it fall.",
+      "secret": false,
+      "deckCode": "FLF 5",
+      "printGroup": [
+        "FLF 5"
+      ],
+      "limitless": {
+        "id": 1838,
+        "url": "https://limitlesstcg.com/cards/FLF/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/5.png",
+        "large": "https://images.pokemontcg.io/xy2/5_hires.png"
+      }
+    },
+    {
+      "number": "006/106",
+      "localId": "6",
+      "name": "Nuzleaf",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Seedot",
+      "evolvesTo": [
+        "Shiftry"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Cut",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 274,
+        "genus": "Wily Pokémon",
+        "height": "3'3\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "The sound of its grass flute makes its listeners uneasy. It lives deep in forests.",
+      "secret": false,
+      "deckCode": "FLF 6",
+      "printGroup": [
+        "FLF 6"
+      ],
+      "limitless": {
+        "id": 1839,
+        "url": "https://limitlesstcg.com/cards/FLF/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/6.png",
+        "large": "https://images.pokemontcg.io/xy2/6_hires.png"
+      }
+    },
+    {
+      "number": "007/106",
+      "localId": "7",
+      "name": "Shiftry",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Nuzleaf",
+      "types": [
+        "Grass"
+      ],
+      "hp": 140,
+      "abilities": [
+        {
+          "name": "Leaf Draw",
+          "text": "Once during your turn (before your attack), you may discard a Grass Energy card from your hand. If you do, draw 3 cards.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Deranged Dance",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20×",
+          "text": "This attack does 20 damage times the number of Benched Pokémon (both yours and your opponent's)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 275,
+        "genus": "Wicked Pokémon",
+        "height": "4'3\"",
+        "weight": "131.4 lbs"
+      },
+      "flavorText": "A Pokémon that was feared as a forest guardian. It can read the foe's mind and take preemptive action.",
+      "secret": false,
+      "deckCode": "FLF 7",
+      "printGroup": [
+        "FLF 7"
+      ],
+      "limitless": {
+        "id": 1840,
+        "url": "https://limitlesstcg.com/cards/FLF/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/7.png",
+        "large": "https://images.pokemontcg.io/xy2/7_hires.png"
+      }
+    },
+    {
+      "number": "008/106",
+      "localId": "8",
+      "name": "Roselia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Roserade"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Sleep Powder",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Asleep."
+        },
+        {
+          "name": "Cut",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 315,
+        "genus": "Thorn Pokémon",
+        "height": "1'0\"",
+        "weight": "4.4 lbs"
+      },
+      "flavorText": "It uses the different poisons in each hand separately when it attacks. The stronger its aroma, the healthier it is.",
+      "secret": false,
+      "deckCode": "FLF 8",
+      "printGroup": [
+        "FLF 8"
+      ],
+      "limitless": {
+        "id": 1841,
+        "url": "https://limitlesstcg.com/cards/FLF/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/8.png",
+        "large": "https://images.pokemontcg.io/xy2/8_hires.png"
+      }
+    },
+    {
+      "number": "009/106",
+      "localId": "9",
+      "name": "Roserade",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Roselia",
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Whiplash",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin until you get tails. For each heads, discard an Energy attached to your opponent's Active Pokémon."
+        },
+        {
+          "name": "Mega Drain",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Heal 20 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 407,
+        "genus": "Bouquet Pokémon",
+        "height": "2'11\"",
+        "weight": "32.0 lbs"
+      },
+      "flavorText": "Luring prey with a sweet scent, it uses poison whips on its arms to poison, bind, and finish off the prey.",
+      "secret": false,
+      "deckCode": "FLF 9",
+      "printGroup": [
+        "FLF 9"
+      ],
+      "limitless": {
+        "id": 1842,
+        "url": "https://limitlesstcg.com/cards/FLF/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/9.png",
+        "large": "https://images.pokemontcg.io/xy2/9_hires.png"
+      }
+    },
+    {
+      "number": "010/106",
+      "localId": "10",
+      "name": "Maractus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Exciting Shake",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your next turn, flip 6 coins instead of 2 for this Pokémon's Prickly Needles attack."
+        },
+        {
+          "name": "Prickly Needles",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "match",
+      "pokedex": {
+        "number": 556,
+        "genus": "Cactus Pokémon",
+        "height": "3'3\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "It uses an up-tempo song and dance to drive away the bird Pokémon that prey on its flower seeds.",
+      "secret": false,
+      "deckCode": "FLF 10",
+      "printGroup": [
+        "FLF 10"
+      ],
+      "limitless": {
+        "id": 1843,
+        "url": "https://limitlesstcg.com/cards/FLF/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/10.png",
+        "large": "https://images.pokemontcg.io/xy2/10_hires.png"
+      }
+    },
+    {
+      "number": "011/106",
+      "localId": "11",
+      "name": "Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Charizard-EX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Stoke",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, search your deck for up to 3 basic Energy cards and attach them to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Fire Blast",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "FLF 11",
+      "printGroup": [
+        "FLF 11",
+        "FLF 100",
+        "XYP 29"
+      ],
+      "limitless": {
+        "id": 1844,
+        "url": "https://limitlesstcg.com/cards/FLF/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/11.png",
+        "large": "https://images.pokemontcg.io/xy2/11_hires.png"
+      }
+    },
+    {
+      "number": "012/106",
+      "localId": "12",
+      "name": "Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Charizard-EX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        },
+        {
+          "name": "Combustion Blast",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "This Pokémon can't use Combustion Blast during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "PLANETA",
+      "secret": false,
+      "deckCode": "FLF 12",
+      "printGroup": [
+        "EVO 12",
+        "FLF 12",
+        "XYP 121"
+      ],
+      "limitless": {
+        "id": 1845,
+        "url": "https://limitlesstcg.com/cards/FLF/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/12.png",
+        "large": "https://images.pokemontcg.io/xy2/12_hires.png"
+      }
+    },
+    {
+      "number": "013/106",
+      "localId": "13",
+      "name": "M Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Charizard-EX",
+      "types": [
+        "Fire"
+      ],
+      "hp": 220,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Crimson Dive",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "300",
+          "text": "This Pokémon does 50 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "FLF 13",
+      "printGroup": [
+        "EVO 13",
+        "EVO 101",
+        "FLF 13",
+        "FLF 107"
+      ],
+      "limitless": {
+        "id": 1846,
+        "url": "https://limitlesstcg.com/cards/FLF/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/13.png",
+        "large": "https://images.pokemontcg.io/xy2/13_hires.png"
+      }
+    },
+    {
+      "number": "014/106",
+      "localId": "14",
+      "name": "Ponyta",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Rapidash"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Agility",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Flame Tail",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "pokedex": {
+        "number": 77,
+        "genus": "Fire Horse Pokémon",
+        "height": "3'3\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "As a newborn, it can barely stand. However, through galloping, its legs are made tougher and faster.",
+      "secret": false,
+      "deckCode": "FLF 14",
+      "printGroup": [
+        "FLF 14",
+        "GEN 14"
+      ],
+      "limitless": {
+        "id": 1847,
+        "url": "https://limitlesstcg.com/cards/FLF/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/14.png",
+        "large": "https://images.pokemontcg.io/xy2/14_hires.png"
+      }
+    },
+    {
+      "number": "015/106",
+      "localId": "15",
+      "name": "Rapidash",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ponyta",
+      "types": [
+        "Fire"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Agility",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Overrun",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "This attack does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 78,
+        "genus": "Fire Horse Pokémon",
+        "height": "5'7\"",
+        "weight": "209.4 lbs"
+      },
+      "flavorText": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it.",
+      "secret": false,
+      "deckCode": "FLF 15",
+      "printGroup": [
+        "FLF 15",
+        "GEN 15"
+      ],
+      "limitless": {
+        "id": 1848,
+        "url": "https://limitlesstcg.com/cards/FLF/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/15.png",
+        "large": "https://images.pokemontcg.io/xy2/15_hires.png"
+      }
+    },
+    {
+      "number": "016/106",
+      "localId": "16",
+      "name": "Torkoal",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Live Coal",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Flip a coin. If tails, discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 324,
+        "genus": "Coal Pokémon",
+        "height": "1'8\"",
+        "weight": "177.3 lbs"
+      },
+      "flavorText": "You find abandoned coal mines full of them. They dig tirelessly in search of coal.",
+      "secret": false,
+      "deckCode": "FLF 16",
+      "printGroup": [
+        "FLF 16"
+      ],
+      "limitless": {
+        "id": 1849,
+        "url": "https://limitlesstcg.com/cards/FLF/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/16.png",
+        "large": "https://images.pokemontcg.io/xy2/16_hires.png"
+      }
+    },
+    {
+      "number": "017/106",
+      "localId": "17",
+      "name": "Fletchinder",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Fletchling",
+      "evolvesTo": [
+        "Talonflame"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Firebreathing",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 662,
+        "genus": "Ember Pokémon",
+        "height": "2'4\"",
+        "weight": "35.3 lbs"
+      },
+      "flavorText": "From its beak, it expels embers that set the tall grass on fire. Then it pounces on the bewildered prey that pop out of the grass.",
+      "secret": false,
+      "deckCode": "FLF 17",
+      "printGroup": [
+        "FLF 17"
+      ],
+      "limitless": {
+        "id": 1850,
+        "url": "https://limitlesstcg.com/cards/FLF/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/17.png",
+        "large": "https://images.pokemontcg.io/xy2/17_hires.png"
+      }
+    },
+    {
+      "number": "018/106",
+      "localId": "18",
+      "name": "Litleo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Pyroar"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Combustion",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 667,
+        "genus": "Lion Cub Pokémon",
+        "height": "2'0\"",
+        "weight": "29.8 lbs"
+      },
+      "flavorText": "The stronger the opponent it faces, the more heat surges from its mane and the more power flows through its body.",
+      "secret": false,
+      "deckCode": "FLF 18",
+      "printGroup": [
+        "FLF 18"
+      ],
+      "limitless": {
+        "id": 1851,
+        "url": "https://limitlesstcg.com/cards/FLF/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/18.png",
+        "large": "https://images.pokemontcg.io/xy2/18_hires.png"
+      }
+    },
+    {
+      "number": "019/106",
+      "localId": "19",
+      "name": "Litleo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Pyroar"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Fire Mane",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 667,
+        "genus": "Lion Cub Pokémon",
+        "height": "2'0\"",
+        "weight": "29.8 lbs"
+      },
+      "flavorText": "The stronger the opponent it faces, the more heat surges from its mane and the more power flows through its body.",
+      "secret": false,
+      "deckCode": "FLF 19",
+      "printGroup": [
+        "FLF 19"
+      ],
+      "limitless": {
+        "id": 1852,
+        "url": "https://limitlesstcg.com/cards/FLF/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/19.png",
+        "large": "https://images.pokemontcg.io/xy2/19_hires.png"
+      }
+    },
+    {
+      "number": "020/106",
+      "localId": "20",
+      "name": "Pyroar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Litleo",
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Intimidating Mane",
+          "text": "Prevent all damage done to this Pokémon by attacks from your opponent's Basic Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Scorching Fang",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "You may discard a Fire Energy attached to this Pokémon. If you do, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 668,
+        "genus": "Royal Pokémon",
+        "height": "4'11\"",
+        "weight": "179.7 lbs"
+      },
+      "flavorText": "The male with the largest mane of fire is the leader of the pride.",
+      "secret": false,
+      "deckCode": "FLF 20",
+      "printGroup": [
+        "FLF 20"
+      ],
+      "limitless": {
+        "id": 1853,
+        "url": "https://limitlesstcg.com/cards/FLF/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/20.png",
+        "large": "https://images.pokemontcg.io/xy2/20_hires.png"
+      }
+    },
+    {
+      "number": "021/106",
+      "localId": "21",
+      "name": "Qwilfish",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Counterattack Quills",
+          "text": "If this Pokémon is your Active Pokémon and is damaged by an opponent's attack (even if this Pokémon is Knocked Out), put 2 damage counters on the Attacking Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Poison Sting",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 211,
+        "genus": "Balloon Pokémon",
+        "height": "1'8\"",
+        "weight": "8.6 lbs"
+      },
+      "flavorText": "To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once.",
+      "secret": false,
+      "deckCode": "FLF 21",
+      "printGroup": [
+        "FLF 21"
+      ],
+      "limitless": {
+        "id": 1854,
+        "url": "https://limitlesstcg.com/cards/FLF/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/21.png",
+        "large": "https://images.pokemontcg.io/xy2/21_hires.png"
+      }
+    },
+    {
+      "number": "022/106",
+      "localId": "22",
+      "name": "Feebas",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Milotic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 30,
+      "attacks": [
+        {
+          "name": "Surprise Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 349,
+        "genus": "Fish Pokémon",
+        "height": "2'0\"",
+        "weight": "16.3 lbs"
+      },
+      "flavorText": "It eats anything, so it can even live in polluted streams and lakes. No one pays any attention to it.",
+      "secret": false,
+      "deckCode": "FLF 22",
+      "printGroup": [
+        "FLF 22"
+      ],
+      "limitless": {
+        "id": 1855,
+        "url": "https://limitlesstcg.com/cards/FLF/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/22.png",
+        "large": "https://images.pokemontcg.io/xy2/22_hires.png"
+      }
+    },
+    {
+      "number": "023/106",
+      "localId": "23",
+      "name": "Milotic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Feebas",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Energy Grace",
+          "text": "Once during your turn (before your attack) you may Knock Out this Pokémon. If you do, attach 3 basic Energy from your discard pile to 1 of your Pokémon (excluding Pokémon-EX).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Waterfall",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 350,
+        "genus": "Tender Pokémon",
+        "height": "20'4\"",
+        "weight": "357.1 lbs"
+      },
+      "flavorText": "Milotic is breathtakingly beautiful. Those that see it are said to forget their combative spirits.",
+      "secret": false,
+      "deckCode": "FLF 23",
+      "printGroup": [
+        "FLF 23"
+      ],
+      "limitless": {
+        "id": 1856,
+        "url": "https://limitlesstcg.com/cards/FLF/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/23.png",
+        "large": "https://images.pokemontcg.io/xy2/23_hires.png"
+      }
+    },
+    {
+      "number": "024/106",
+      "localId": "24",
+      "name": "Spheal",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sealeo"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Ice Ball",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 363,
+        "genus": "Clap Pokémon",
+        "height": "2'7\"",
+        "weight": "87.1 lbs"
+      },
+      "flavorText": "They can't swim well yet, and they move much faster by rolling. When they're happy, they clap fins.",
+      "secret": false,
+      "deckCode": "FLF 24",
+      "printGroup": [
+        "FLF 24",
+        "PRC 46"
+      ],
+      "limitless": {
+        "id": 1857,
+        "url": "https://limitlesstcg.com/cards/FLF/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/24.png",
+        "large": "https://images.pokemontcg.io/xy2/24_hires.png"
+      }
+    },
+    {
+      "number": "025/106",
+      "localId": "25",
+      "name": "Sealeo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Spheal",
+      "evolvesTo": [
+        "Walrein"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Rest",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Heal 60 damage from this Pokémon. This Pokémon is now Asleep."
+        },
+        {
+          "name": "Ice Ball",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 364,
+        "genus": "Ball Roll Pokémon",
+        "height": "3'7\"",
+        "weight": "193.1 lbs"
+      },
+      "flavorText": "It has a very sensitive nose. It touches new things with its nose to examine them.",
+      "secret": false,
+      "deckCode": "FLF 25",
+      "printGroup": [
+        "FLF 25"
+      ],
+      "limitless": {
+        "id": 1858,
+        "url": "https://limitlesstcg.com/cards/FLF/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/25.png",
+        "large": "https://images.pokemontcg.io/xy2/25_hires.png"
+      }
+    },
+    {
+      "number": "026/106",
+      "localId": "26",
+      "name": "Walrein",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Sealeo",
+      "types": [
+        "Water"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Powder Snow",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        },
+        {
+          "name": "Big Tusk",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120-",
+          "text": "This attack does 120 damage minus 10 damage for each damage counter on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 365,
+        "genus": "Ice Break Pokémon",
+        "height": "4'7\"",
+        "weight": "332.0 lbs"
+      },
+      "flavorText": "It shatters ice with its big tusks. Its thick blubber repels not only the cold, but also enemy attacks.",
+      "secret": false,
+      "deckCode": "FLF 26",
+      "printGroup": [
+        "FLF 26"
+      ],
+      "limitless": {
+        "id": 1859,
+        "url": "https://limitlesstcg.com/cards/FLF/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/26.png",
+        "large": "https://images.pokemontcg.io/xy2/26_hires.png"
+      }
+    },
+    {
+      "number": "027/106",
+      "localId": "27",
+      "name": "Luvdisc",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Heart Wink",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent can't draw a card at the beginning of his or her next turn."
+        },
+        {
+          "name": "Spike Draw",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Draw a card."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 370,
+        "genus": "Rendezvous Pokémon",
+        "height": "2'0\"",
+        "weight": "19.2 lbs"
+      },
+      "flavorText": "It lives in warm seas. It is said that a couple finding this Pokémon will be blessed with eternal love.",
+      "secret": false,
+      "deckCode": "FLF 27",
+      "printGroup": [
+        "FLF 27"
+      ],
+      "limitless": {
+        "id": 1860,
+        "url": "https://limitlesstcg.com/cards/FLF/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/27.png",
+        "large": "https://images.pokemontcg.io/xy2/27_hires.png"
+      }
+    },
+    {
+      "number": "028/106",
+      "localId": "28",
+      "name": "Buizel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Floatzel"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 418,
+        "genus": "Sea Weasel Pokémon",
+        "height": "2'4\"",
+        "weight": "65.0 lbs"
+      },
+      "flavorText": "It swims by rotating its two tails like a screw. When it dives, its flotation sac collapses.",
+      "secret": false,
+      "deckCode": "FLF 28",
+      "printGroup": [
+        "FLF 28"
+      ],
+      "limitless": {
+        "id": 1861,
+        "url": "https://limitlesstcg.com/cards/FLF/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/28.png",
+        "large": "https://images.pokemontcg.io/xy2/28_hires.png"
+      }
+    },
+    {
+      "number": "029/106",
+      "localId": "29",
+      "name": "Floatzel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Buizel",
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Rescue",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle 3 Pokémon from your discard pile into your deck."
+        },
+        {
+          "name": "Screw Tail",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 419,
+        "genus": "Sea Weasel Pokémon",
+        "height": "3'7\"",
+        "weight": "73.9 lbs"
+      },
+      "flavorText": "It floats using its well-developed flotation sac. It assists in the rescues of drowning people.",
+      "secret": false,
+      "deckCode": "FLF 29",
+      "printGroup": [
+        "FLF 29"
+      ],
+      "limitless": {
+        "id": 1862,
+        "url": "https://limitlesstcg.com/cards/FLF/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/29.png",
+        "large": "https://images.pokemontcg.io/xy2/29_hires.png"
+      }
+    },
+    {
+      "number": "030/106",
+      "localId": "30",
+      "name": "Bergmite",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Avalugg"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Stomp Off",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard the top card of your opponent's deck."
+        },
+        {
+          "name": "Tackle",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 712,
+        "genus": "Ice Chunk Pokémon",
+        "height": "3'3\"",
+        "weight": "219.4 lbs"
+      },
+      "flavorText": "It blocks opponents' attacks with the ice that shields its body. It uses cold air to repair any cracks with new ice.",
+      "secret": false,
+      "deckCode": "FLF 30",
+      "printGroup": [
+        "FLF 30"
+      ],
+      "limitless": {
+        "id": 1863,
+        "url": "https://limitlesstcg.com/cards/FLF/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/30.png",
+        "large": "https://images.pokemontcg.io/xy2/30_hires.png"
+      }
+    },
+    {
+      "number": "031/106",
+      "localId": "31",
+      "name": "Avalugg",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Bergmite",
+      "types": [
+        "Water"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Frost Barrier",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Shatter",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "90",
+          "text": "Discard any Stadium card in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 713,
+        "genus": "Iceberg Pokémon",
+        "height": "6'7\"",
+        "weight": "1113.3 lbs"
+      },
+      "flavorText": "Its ice-covered body is as hard as steel. Its cumbersome frame crushes anything that stands in its way.",
+      "secret": false,
+      "deckCode": "FLF 31",
+      "printGroup": [
+        "FLF 31"
+      ],
+      "limitless": {
+        "id": 1864,
+        "url": "https://limitlesstcg.com/cards/FLF/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/31.png",
+        "large": "https://images.pokemontcg.io/xy2/31_hires.png"
+      }
+    },
+    {
+      "number": "032/106",
+      "localId": "32",
+      "name": "Shinx",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Luxio"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Paralyzing Gaze",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Static Shock",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 403,
+        "genus": "Flash Pokémon",
+        "height": "1'8\"",
+        "weight": "20.9 lbs"
+      },
+      "flavorText": "The extension and contraction of its muscles generates electricity. It glows when in trouble.",
+      "secret": false,
+      "deckCode": "FLF 32",
+      "printGroup": [
+        "FLF 32"
+      ],
+      "limitless": {
+        "id": 1865,
+        "url": "https://limitlesstcg.com/cards/FLF/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/32.png",
+        "large": "https://images.pokemontcg.io/xy2/32_hires.png"
+      }
+    },
+    {
+      "number": "033/106",
+      "localId": "33",
+      "name": "Luxio",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Shinx",
+      "evolvesTo": [
+        "Luxray"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Electricounter",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40×",
+          "text": "This attack does 40 damage times the number of Prize cards your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 404,
+        "genus": "Spark Pokémon",
+        "height": "2'11\"",
+        "weight": "67.2 lbs"
+      },
+      "flavorText": "Its claws loose electricity with enough amperage to cause fainting. They live in small groups.",
+      "secret": false,
+      "deckCode": "FLF 33",
+      "printGroup": [
+        "FLF 33"
+      ],
+      "limitless": {
+        "id": 1866,
+        "url": "https://limitlesstcg.com/cards/FLF/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/33.png",
+        "large": "https://images.pokemontcg.io/xy2/33_hires.png"
+      }
+    },
+    {
+      "number": "034/106",
+      "localId": "34",
+      "name": "Luxray",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Luxio",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Fang Snipe",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Your opponent reveals his or her hand. Discard a Trainer card you find there."
+        },
+        {
+          "name": "Wild Charge",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "This Pokémon does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 405,
+        "genus": "Gleam Eyes Pokémon",
+        "height": "4'7\"",
+        "weight": "92.6 lbs"
+      },
+      "flavorText": "When its eyes gleam gold, it can spot hiding prey—even those taking shelter behind a wall.",
+      "secret": false,
+      "deckCode": "FLF 34",
+      "printGroup": [
+        "FLF 34"
+      ],
+      "limitless": {
+        "id": 1867,
+        "url": "https://limitlesstcg.com/cards/FLF/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/34.png",
+        "large": "https://images.pokemontcg.io/xy2/34_hires.png"
+      }
+    },
+    {
+      "number": "035/106",
+      "localId": "35",
+      "name": "Magnezone-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Dual Bullet",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 50 damage to 2 of your opponent's Pokémon. (Don't apply Weakness or Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "FLF 35",
+      "printGroup": [
+        "FLF 35",
+        "FLF 101"
+      ],
+      "limitless": {
+        "id": 1868,
+        "url": "https://limitlesstcg.com/cards/FLF/35"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/35.png",
+        "large": "https://images.pokemontcg.io/xy2/35_hires.png"
+      }
+    },
+    {
+      "number": "036/106",
+      "localId": "36",
+      "name": "Helioptile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Heliolisk"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Destructive Beam",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 694,
+        "genus": "Generator Pokémon",
+        "height": "1'8\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "They make their home in deserts. They can generate their energy from basking in the sun, so eating food is not a requirement.",
+      "secret": false,
+      "deckCode": "FLF 36",
+      "printGroup": [
+        "FLF 36"
+      ],
+      "limitless": {
+        "id": 1869,
+        "url": "https://limitlesstcg.com/cards/FLF/36"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/36.png",
+        "large": "https://images.pokemontcg.io/xy2/36_hires.png"
+      }
+    },
+    {
+      "number": "037/106",
+      "localId": "37",
+      "name": "Heliolisk",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Helioptile",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Parabolic Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Energy cards, reveal them, and put them into your hand. Shuffle your deck afterward."
+        },
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 695,
+        "genus": "Generator Pokémon",
+        "height": "3'3\"",
+        "weight": "46.3 lbs"
+      },
+      "flavorText": "They flare their frills and generate energy. A single Heliolisk can generate sufficient electricity to power a skyscraper.",
+      "secret": false,
+      "deckCode": "FLF 37",
+      "printGroup": [
+        "FLF 37"
+      ],
+      "limitless": {
+        "id": 1870,
+        "url": "https://limitlesstcg.com/cards/FLF/37"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/37.png",
+        "large": "https://images.pokemontcg.io/xy2/37_hires.png"
+      }
+    },
+    {
+      "number": "038/106",
+      "localId": "38",
+      "name": "Duskull",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dusclops"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Revival",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put a Basic Pokémon from your opponent's discard pile onto his or her Bench."
+        },
+        {
+          "name": "Sneaky Placement",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put 1 damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "match",
+      "pokedex": {
+        "number": 355,
+        "genus": "Requiem Pokémon",
+        "height": "2'7\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "It doggedly pursues its prey wherever it goes. However, the chase is abandoned at sunrise.",
+      "secret": false,
+      "deckCode": "FLF 38",
+      "printGroup": [
+        "FLF 38"
+      ],
+      "limitless": {
+        "id": 1871,
+        "url": "https://limitlesstcg.com/cards/FLF/38"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/38.png",
+        "large": "https://images.pokemontcg.io/xy2/38_hires.png"
+      }
+    },
+    {
+      "number": "039/106",
+      "localId": "39",
+      "name": "Dusclops",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Duskull",
+      "evolvesTo": [
+        "Dusknoir"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Confuse Ray",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        },
+        {
+          "name": "Cursed Drop",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Put 4 damage counters on your opponent's Pokémon in any way you like."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 356,
+        "genus": "Beckon Pokémon",
+        "height": "5'3\"",
+        "weight": "67.5 lbs"
+      },
+      "flavorText": "Anyone who dares peer into its body to see its spectral ball of fire will have their spirit stolen away.",
+      "secret": false,
+      "deckCode": "FLF 39",
+      "printGroup": [
+        "FLF 39"
+      ],
+      "limitless": {
+        "id": 1872,
+        "url": "https://limitlesstcg.com/cards/FLF/39"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/39.png",
+        "large": "https://images.pokemontcg.io/xy2/39_hires.png"
+      }
+    },
+    {
+      "number": "040/106",
+      "localId": "40",
+      "name": "Dusknoir",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Dusclops",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Shadow Void",
+          "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Pain Pellets",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Put damage counters on 1 of your opponent's Pokémon equal to the number of damage counters on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Suwama Chiaki",
+      "pokedex": {
+        "number": 477,
+        "genus": "Gripper Pokémon",
+        "height": "7'3\"",
+        "weight": "235.0 lbs"
+      },
+      "flavorText": "It is said to take lost spirits into its pliant body and guide them home.",
+      "secret": false,
+      "deckCode": "FLF 40",
+      "printGroup": [
+        "FLF 40"
+      ],
+      "limitless": {
+        "id": 1873,
+        "url": "https://limitlesstcg.com/cards/FLF/40"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/40.png",
+        "large": "https://images.pokemontcg.io/xy2/40_hires.png"
+      }
+    },
+    {
+      "number": "041/106",
+      "localId": "41",
+      "name": "Toxicroak-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Triple Poison",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. Put 3 damage counters instead of 1 on that Pokémon between turns."
+        },
+        {
+          "name": "Smash Uppercut",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "PLANETA",
+      "secret": false,
+      "deckCode": "FLF 41",
+      "printGroup": [
+        "FLF 41",
+        "FLF 102"
+      ],
+      "limitless": {
+        "id": 1874,
+        "url": "https://limitlesstcg.com/cards/FLF/41"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/41.png",
+        "large": "https://images.pokemontcg.io/xy2/41_hires.png"
+      }
+    },
+    {
+      "number": "042/106",
+      "localId": "42",
+      "name": "Espurr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Meowstic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Psyshot",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Fake Out",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 677,
+        "genus": "Restraint Pokémon",
+        "height": "1'0\"",
+        "weight": "7.7 lbs"
+      },
+      "flavorText": "The organ that emits its intense psychic power is sheltered by its ears to keep power from leaking out.",
+      "secret": false,
+      "deckCode": "FLF 42",
+      "printGroup": [
+        "FLF 42"
+      ],
+      "limitless": {
+        "id": 1875,
+        "url": "https://limitlesstcg.com/cards/FLF/42"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/42.png",
+        "large": "https://images.pokemontcg.io/xy2/42_hires.png"
+      }
+    },
+    {
+      "number": "043/106",
+      "localId": "43",
+      "name": "Meowstic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Espurr",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Ear Influence",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Move as many damage counters on your opponent's Pokémon as you like to any of your opponent's other Pokémon in any way you like."
+        },
+        {
+          "name": "Psychic",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Does 10 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 678,
+        "genus": "Constraint Pokémon",
+        "height": "2'0\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "When in danger, it raises its ears and releases enough psychic power to grind a 10-ton truck into dust.",
+      "secret": false,
+      "deckCode": "FLF 43",
+      "printGroup": [
+        "FLF 43",
+        "GEN RC15"
+      ],
+      "limitless": {
+        "id": 1876,
+        "url": "https://limitlesstcg.com/cards/FLF/43"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/43.png",
+        "large": "https://images.pokemontcg.io/xy2/43_hires.png"
+      }
+    },
+    {
+      "number": "044/106",
+      "localId": "44",
+      "name": "Skrelp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragalge"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Spit Poison",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 690,
+        "genus": "Mock Kelp Pokémon",
+        "height": "1'8\"",
+        "weight": "16.1 lbs"
+      },
+      "flavorText": "Camouflaged as rotten kelp, they spray liquid poison on prey that approaches unawares and then finish it off.",
+      "secret": false,
+      "deckCode": "FLF 44",
+      "printGroup": [
+        "FLF 44"
+      ],
+      "limitless": {
+        "id": 1877,
+        "url": "https://limitlesstcg.com/cards/FLF/44"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/44.png",
+        "large": "https://images.pokemontcg.io/xy2/44_hires.png"
+      }
+    },
+    {
+      "number": "045/106",
+      "localId": "45",
+      "name": "Geodude",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Graveler"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Rollout",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flail",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "This attack does 10 damage times the number of damage counters on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 74,
+        "genus": "Rock Pokémon",
+        "height": "1'4\"",
+        "weight": "44.1 lbs"
+      },
+      "flavorText": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
+      "secret": false,
+      "deckCode": "FLF 45",
+      "printGroup": [
+        "FLF 45",
+        "GEN 43"
+      ],
+      "limitless": {
+        "id": 1878,
+        "url": "https://limitlesstcg.com/cards/FLF/45"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/45.png",
+        "large": "https://images.pokemontcg.io/xy2/45_hires.png"
+      }
+    },
+    {
+      "number": "046/106",
+      "localId": "46",
+      "name": "Graveler",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Geodude",
+      "evolvesTo": [
+        "Golem"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Double-Edge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "This Pokémon does 20 damage to itself."
+        },
+        {
+          "name": "Rollout",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 75,
+        "genus": "Rock Pokémon",
+        "height": "3'3\"",
+        "weight": "231.5 lbs"
+      },
+      "flavorText": "With a free and uncaring nature, it doesn't mind if pieces break off while it rolls down mountains.",
+      "secret": false,
+      "deckCode": "FLF 46",
+      "printGroup": [
+        "FLF 46",
+        "GEN 44"
+      ],
+      "limitless": {
+        "id": 1879,
+        "url": "https://limitlesstcg.com/cards/FLF/46"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/46.png",
+        "large": "https://images.pokemontcg.io/xy2/46_hires.png"
+      }
+    },
+    {
+      "number": "047/106",
+      "localId": "47",
+      "name": "Golem",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Graveler",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Stone Edge",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        },
+        {
+          "name": "Explosion",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "This Pokémon does 100 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 76,
+        "genus": "Megaton Pokémon",
+        "height": "4'7\"",
+        "weight": "661.4 lbs"
+      },
+      "flavorText": "It tumbles down mountains, leaving grooves from peak to base. Stay clear of these grooves.",
+      "secret": false,
+      "deckCode": "FLF 47",
+      "printGroup": [
+        "FLF 47",
+        "GEN 45"
+      ],
+      "limitless": {
+        "id": 1880,
+        "url": "https://limitlesstcg.com/cards/FLF/47"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/47.png",
+        "large": "https://images.pokemontcg.io/xy2/47_hires.png"
+      }
+    },
+    {
+      "number": "048/106",
+      "localId": "48",
+      "name": "Binacle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Barbaracle"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Double Scratch",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 688,
+        "genus": "Two-Handed Pokémon",
+        "height": "1'8\"",
+        "weight": "68.3 lbs"
+      },
+      "flavorText": "Two Binacle live together on one rock. When they fight, one of them will move to a different rock.",
+      "secret": false,
+      "deckCode": "FLF 48",
+      "printGroup": [
+        "FLF 48"
+      ],
+      "limitless": {
+        "id": 1881,
+        "url": "https://limitlesstcg.com/cards/FLF/48"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/48.png",
+        "large": "https://images.pokemontcg.io/xy2/48_hires.png"
+      }
+    },
+    {
+      "number": "049/106",
+      "localId": "49",
+      "name": "Barbaracle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Binacle",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Rock Rush",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Discard as many Fighting Energy cards as you like from your hand. This attack does 30 damage times the number of Energy cards you discarded."
+        },
+        {
+          "name": "Boulder Crush",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 689,
+        "genus": "Collective Pokémon",
+        "height": "4'3\"",
+        "weight": "211.6 lbs"
+      },
+      "flavorText": "When they evolve, two Binacle multiply into seven. They fight with the power of seven Binacle.",
+      "secret": false,
+      "deckCode": "FLF 49",
+      "printGroup": [
+        "FLF 49"
+      ],
+      "limitless": {
+        "id": 1882,
+        "url": "https://limitlesstcg.com/cards/FLF/49"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/49.png",
+        "large": "https://images.pokemontcg.io/xy2/49_hires.png"
+      }
+    },
+    {
+      "number": "050/106",
+      "localId": "50",
+      "name": "Sneasel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Weavile"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flash Claw",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent discards a card from his or her hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 215,
+        "genus": "Sharp Claw Pokémon",
+        "height": "2'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "It feeds on eggs stolen from nests. Its sharply hooked claws rip vulnerable spots on prey.",
+      "secret": false,
+      "deckCode": "FLF 50",
+      "printGroup": [
+        "FLF 50"
+      ],
+      "limitless": {
+        "id": 1883,
+        "url": "https://limitlesstcg.com/cards/FLF/50"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/50.png",
+        "large": "https://images.pokemontcg.io/xy2/50_hires.png"
+      }
+    },
+    {
+      "number": "051/106",
+      "localId": "51",
+      "name": "Sneasel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Weavile"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Icy Wind",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "match",
+      "pokedex": {
+        "number": 215,
+        "genus": "Sharp Claw Pokémon",
+        "height": "2'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "It feeds on eggs stolen from nests. Its sharply hooked claws rip vulnerable spots on prey.",
+      "secret": false,
+      "deckCode": "FLF 51",
+      "printGroup": [
+        "FLF 51"
+      ],
+      "limitless": {
+        "id": 1884,
+        "url": "https://limitlesstcg.com/cards/FLF/51"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/51.png",
+        "large": "https://images.pokemontcg.io/xy2/51_hires.png"
+      }
+    },
+    {
+      "number": "052/106",
+      "localId": "52",
+      "name": "Weavile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sneasel",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Claw Rend",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon already has any damage counters on it, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 461,
+        "genus": "Sharp Claw Pokémon",
+        "height": "3'7\"",
+        "weight": "75.0 lbs"
+      },
+      "flavorText": "It lives in snowy regions. It carves patterns in trees with its claws as a signal to others.",
+      "secret": false,
+      "deckCode": "FLF 52",
+      "printGroup": [
+        "FLF 52"
+      ],
+      "limitless": {
+        "id": 1885,
+        "url": "https://limitlesstcg.com/cards/FLF/52"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/52.png",
+        "large": "https://images.pokemontcg.io/xy2/52_hires.png"
+      }
+    },
+    {
+      "number": "053/106",
+      "localId": "53",
+      "name": "Stunky",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Skuntank"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Smokescreen",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kyoko Umemoto",
+      "pokedex": {
+        "number": 434,
+        "genus": "Skunk Pokémon",
+        "height": "1'4\"",
+        "weight": "42.3 lbs"
+      },
+      "flavorText": "It sprays a foul fluid from its rear. Its stench spreads over a mile radius, driving Pokémon away.",
+      "secret": false,
+      "deckCode": "FLF 53",
+      "printGroup": [
+        "FLF 53"
+      ],
+      "limitless": {
+        "id": 1886,
+        "url": "https://limitlesstcg.com/cards/FLF/53"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/53.png",
+        "large": "https://images.pokemontcg.io/xy2/53_hires.png"
+      }
+    },
+    {
+      "number": "054/106",
+      "localId": "54",
+      "name": "Stunky",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Skuntank"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Spray Fluid",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 434,
+        "genus": "Skunk Pokémon",
+        "height": "1'4\"",
+        "weight": "42.3 lbs"
+      },
+      "flavorText": "It sprays a foul fluid from its rear. Its stench spreads over a mile radius, driving Pokémon away.",
+      "secret": false,
+      "deckCode": "FLF 54",
+      "printGroup": [
+        "FLF 54"
+      ],
+      "limitless": {
+        "id": 1887,
+        "url": "https://limitlesstcg.com/cards/FLF/54"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/54.png",
+        "large": "https://images.pokemontcg.io/xy2/54_hires.png"
+      }
+    },
+    {
+      "number": "055/106",
+      "localId": "55",
+      "name": "Skuntank",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Stunky",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Push Down",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Acid Spray",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 435,
+        "genus": "Skunk Pokémon",
+        "height": "3'3\"",
+        "weight": "83.8 lbs"
+      },
+      "flavorText": "It sprays a vile-smelling fluid from the tip of its tail to attack. Its range is over 160 feet.",
+      "secret": false,
+      "deckCode": "FLF 55",
+      "printGroup": [
+        "FLF 55"
+      ],
+      "limitless": {
+        "id": 1888,
+        "url": "https://limitlesstcg.com/cards/FLF/55"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/55.png",
+        "large": "https://images.pokemontcg.io/xy2/55_hires.png"
+      }
+    },
+    {
+      "number": "056/106",
+      "localId": "56",
+      "name": "Sandile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Krokorok"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Surprise Attack",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 551,
+        "genus": "Desert Croc Pokémon",
+        "height": "2'4\"",
+        "weight": "33.5 lbs"
+      },
+      "flavorText": "It moves along below the sand's surface, except for its nose and eyes. A dark membrane shields its eyes from the sun.",
+      "secret": false,
+      "deckCode": "FLF 56",
+      "printGroup": [
+        "FLF 56"
+      ],
+      "limitless": {
+        "id": 1889,
+        "url": "https://limitlesstcg.com/cards/FLF/56"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/56.png",
+        "large": "https://images.pokemontcg.io/xy2/56_hires.png"
+      }
+    },
+    {
+      "number": "057/106",
+      "localId": "57",
+      "name": "Krokorok",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sandile",
+      "evolvesTo": [
+        "Krookodile"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Dark Clamp",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        },
+        {
+          "name": "Double Swing",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60×",
+          "text": "Flip 2 coins. This attack does 60 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 552,
+        "genus": "Desert Croc Pokémon",
+        "height": "3'3\"",
+        "weight": "73.6 lbs"
+      },
+      "flavorText": "They live in groups of a few individuals. Protective membranes shield their eyes from sandstorms.",
+      "secret": false,
+      "deckCode": "FLF 57",
+      "printGroup": [
+        "FLF 57"
+      ],
+      "limitless": {
+        "id": 1890,
+        "url": "https://limitlesstcg.com/cards/FLF/57"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/57.png",
+        "large": "https://images.pokemontcg.io/xy2/57_hires.png"
+      }
+    },
+    {
+      "number": "058/106",
+      "localId": "58",
+      "name": "Scraggy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Scrafty"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tail Rap",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 559,
+        "genus": "Shedding Pokémon",
+        "height": "2'0\"",
+        "weight": "26.0 lbs"
+      },
+      "flavorText": "Its skin has a rubbery elasticity, so it can reduce damage by defensively pulling its skin up to its neck.",
+      "secret": false,
+      "deckCode": "FLF 58",
+      "printGroup": [
+        "FLF 58"
+      ],
+      "limitless": {
+        "id": 1891,
+        "url": "https://limitlesstcg.com/cards/FLF/58"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/58.png",
+        "large": "https://images.pokemontcg.io/xy2/58_hires.png"
+      }
+    },
+    {
+      "number": "059/106",
+      "localId": "59",
+      "name": "Scrafty",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Scraggy",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Corner",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        },
+        {
+          "name": "Jet Headbutt",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 560,
+        "genus": "Hoodlum Pokémon",
+        "height": "3'7\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "It pulls up its shed skin to protect itself while it kicks. The bigger the crest, the more respected it is.",
+      "secret": false,
+      "deckCode": "FLF 59",
+      "printGroup": [
+        "FLF 59"
+      ],
+      "limitless": {
+        "id": 1892,
+        "url": "https://limitlesstcg.com/cards/FLF/59"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/59.png",
+        "large": "https://images.pokemontcg.io/xy2/59_hires.png"
+      }
+    },
+    {
+      "number": "060/106",
+      "localId": "60",
+      "name": "Forretress",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pineco",
+      "types": [
+        "Metal"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Thorn Tempest",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon, you may put 1 damage counter on each of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Iron Crash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 20 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Tomokazu Komiya",
+      "pokedex": {
+        "number": 205,
+        "genus": "Bagworm Pokémon",
+        "height": "3'11\"",
+        "weight": "277.3 lbs"
+      },
+      "flavorText": "It is encased in a steel shell. Its peering eyes are all that can be seen of its mysterious innards.",
+      "secret": false,
+      "deckCode": "FLF 60",
+      "printGroup": [
+        "FLF 60"
+      ],
+      "limitless": {
+        "id": 1893,
+        "url": "https://limitlesstcg.com/cards/FLF/60"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/60.png",
+        "large": "https://images.pokemontcg.io/xy2/60_hires.png"
+      }
+    },
+    {
+      "number": "061/106",
+      "localId": "61",
+      "name": "Durant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Chip Off",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard cards from your opponent's hand at random until he or she has 4 cards in his or her hand."
+        },
+        {
+          "name": "X-Scissor",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 632,
+        "genus": "Iron Ant Pokémon",
+        "height": "1'0\"",
+        "weight": "72.8 lbs"
+      },
+      "flavorText": "Individuals each play different roles in driving Heatmor, their natural predator, away from their colony.",
+      "secret": false,
+      "deckCode": "FLF 61",
+      "printGroup": [
+        "FLF 61"
+      ],
+      "limitless": {
+        "id": 1894,
+        "url": "https://limitlesstcg.com/cards/FLF/61"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/61.png",
+        "large": "https://images.pokemontcg.io/xy2/61_hires.png"
+      }
+    },
+    {
+      "number": "062/106",
+      "localId": "62",
+      "name": "Flabébé",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Floette"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Aromatherapy",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 10 damage from each of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 669,
+        "genus": "Single Bloom Pokémon",
+        "height": "0'4\"",
+        "weight": "0.2 lbs"
+      },
+      "flavorText": "It draws out and controls the hidden power of flowers. The flower Flabébé holds is most likely part of its body.",
+      "secret": false,
+      "deckCode": "FLF 62",
+      "printGroup": [
+        "FLF 62"
+      ],
+      "limitless": {
+        "id": 1895,
+        "url": "https://limitlesstcg.com/cards/FLF/62"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/62.png",
+        "large": "https://images.pokemontcg.io/xy2/62_hires.png"
+      }
+    },
+    {
+      "number": "063/106",
+      "localId": "63",
+      "name": "Flabébé",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Floette"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 669,
+        "genus": "Single Bloom Pokémon",
+        "height": "0'4\"",
+        "weight": "0.2 lbs"
+      },
+      "flavorText": "It draws out and controls the hidden power of flowers. The flower Flabébé holds is most likely part of its body.",
+      "secret": false,
+      "deckCode": "FLF 63",
+      "printGroup": [
+        "FLF 63",
+        "GEN RC17"
+      ],
+      "limitless": {
+        "id": 1896,
+        "url": "https://limitlesstcg.com/cards/FLF/63"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/63.png",
+        "large": "https://images.pokemontcg.io/xy2/63_hires.png"
+      }
+    },
+    {
+      "number": "064/106",
+      "localId": "64",
+      "name": "Floette",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Flabébé",
+      "evolvesTo": [
+        "Florges"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Flower Veil",
+          "text": "Each of your Grass Pokémon in play gets +20 HP.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Fairy Wind",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 670,
+        "genus": "Single Bloom Pokémon",
+        "height": "0'8\"",
+        "weight": "2.0 lbs"
+      },
+      "flavorText": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle.",
+      "secret": false,
+      "deckCode": "FLF 64",
+      "printGroup": [
+        "FLF 64"
+      ],
+      "limitless": {
+        "id": 1897,
+        "url": "https://limitlesstcg.com/cards/FLF/64"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/64.png",
+        "large": "https://images.pokemontcg.io/xy2/64_hires.png"
+      }
+    },
+    {
+      "number": "065/106",
+      "localId": "65",
+      "name": "Floette",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Flabébé",
+      "evolvesTo": [
+        "Florges"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Petal Blizzard",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 10 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 670,
+        "genus": "Single Bloom Pokémon",
+        "height": "0'8\"",
+        "weight": "2.0 lbs"
+      },
+      "flavorText": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle.",
+      "secret": false,
+      "deckCode": "FLF 65",
+      "printGroup": [
+        "FLF 65",
+        "GEN RC18"
+      ],
+      "limitless": {
+        "id": 1898,
+        "url": "https://limitlesstcg.com/cards/FLF/65"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/65.png",
+        "large": "https://images.pokemontcg.io/xy2/65_hires.png"
+      }
+    },
+    {
+      "number": "066/106",
+      "localId": "66",
+      "name": "Florges",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Floette",
+      "types": [
+        "Fairy"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Brilliant Search",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 cards and put them into your hand. Shuffle your deck afterward."
+        },
+        {
+          "name": "Petal Blizzard",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 671,
+        "genus": "Garden Pokémon",
+        "height": "3'7\"",
+        "weight": "22.0 lbs"
+      },
+      "flavorText": "It claims exquisite flower gardens as its territory, and it obtains power from basking in the energy emitted by flowering plants.",
+      "secret": false,
+      "deckCode": "FLF 66",
+      "printGroup": [
+        "FLF 66"
+      ],
+      "limitless": {
+        "id": 1899,
+        "url": "https://limitlesstcg.com/cards/FLF/66"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/66.png",
+        "large": "https://images.pokemontcg.io/xy2/66_hires.png"
+      }
+    },
+    {
+      "number": "067/106",
+      "localId": "67",
+      "name": "Spritzee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Aromatisse"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Fairy Wind",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Fickle Attack",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 682,
+        "genus": "Perfume Pokémon",
+        "height": "0'8\"",
+        "weight": "1.1 lbs"
+      },
+      "flavorText": "It emits a scent that enraptures those who smell it. This fragrance changes depending on what it has eaten.",
+      "secret": false,
+      "deckCode": "FLF 67",
+      "printGroup": [
+        "FLF 67"
+      ],
+      "limitless": {
+        "id": 1900,
+        "url": "https://limitlesstcg.com/cards/FLF/67"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/67.png",
+        "large": "https://images.pokemontcg.io/xy2/67_hires.png"
+      }
+    },
+    {
+      "number": "068/106",
+      "localId": "68",
+      "name": "Carbink",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Crystal Barrier",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Wonder Blast",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "This attack does 20 more damage for each Fairy Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 703,
+        "genus": "Jewel Pokémon",
+        "height": "1'0\"",
+        "weight": "12.6 lbs"
+      },
+      "flavorText": "Born from the temperatures and pressures deep underground, it fires beams from the stone in its head.",
+      "secret": false,
+      "deckCode": "FLF 68",
+      "printGroup": [
+        "FLF 68"
+      ],
+      "limitless": {
+        "id": 1901,
+        "url": "https://limitlesstcg.com/cards/FLF/68"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/68.png",
+        "large": "https://images.pokemontcg.io/xy2/68_hires.png"
+      }
+    },
+    {
+      "number": "069/106",
+      "localId": "69",
+      "name": "M Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Charizard-EX",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 230,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wild Blaze",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "300",
+          "text": "Discard the top 5 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "FLF 69",
+      "printGroup": [
+        "FLF 69",
+        "FLF 108"
+      ],
+      "limitless": {
+        "id": 1902,
+        "url": "https://limitlesstcg.com/cards/FLF/69"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/69.png",
+        "large": "https://images.pokemontcg.io/xy2/69_hires.png"
+      }
+    },
+    {
+      "number": "070/106",
+      "localId": "70",
+      "name": "Druddigon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Revenge",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If any of your Pokémon were Knocked Out by damage from an opponent's attack during his or her last turn, this attack does 70 more damage."
+        },
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ryota Murayama",
+      "pokedex": {
+        "number": 621,
+        "genus": "Cave Pokémon",
+        "height": "5'3\"",
+        "weight": "306.4 lbs"
+      },
+      "flavorText": "It races through narrow caves, using its sharp claws to catch prey. The skin on its face is harder than a rock.",
+      "secret": false,
+      "deckCode": "FLF 70",
+      "printGroup": [
+        "FLF 70"
+      ],
+      "limitless": {
+        "id": 1903,
+        "url": "https://limitlesstcg.com/cards/FLF/70"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/70.png",
+        "large": "https://images.pokemontcg.io/xy2/70_hires.png"
+      }
+    },
+    {
+      "number": "071/106",
+      "localId": "71",
+      "name": "Dragalge",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Skrelp",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Poison Barrier",
+          "text": "Your opponent's Poisoned Pokémon can't retreat.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Poison Breath",
+          "cost": [
+            "Water",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 691,
+        "genus": "Mock Kelp Pokémon",
+        "height": "5'11\"",
+        "weight": "179.7 lbs"
+      },
+      "flavorText": "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory.",
+      "secret": false,
+      "deckCode": "FLF 71",
+      "printGroup": [
+        "FLF 71",
+        "XYP 10"
+      ],
+      "limitless": {
+        "id": 1904,
+        "url": "https://limitlesstcg.com/cards/FLF/71"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/71.png",
+        "large": "https://images.pokemontcg.io/xy2/71_hires.png"
+      }
+    },
+    {
+      "number": "072/106",
+      "localId": "72",
+      "name": "Goomy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sliggoo"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Gooey",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 10 damage from this Pokémon."
+        },
+        {
+          "name": "Tackle",
+          "cost": [
+            "Water",
+            "Fairy"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 704,
+        "genus": "Soft Tissue Pokémon",
+        "height": "1'0\"",
+        "weight": "6.2 lbs"
+      },
+      "flavorText": "The weakest Dragon-type Pokémon, it lives in damp, shady places, so its body doesn't dry out.",
+      "secret": false,
+      "deckCode": "FLF 72",
+      "printGroup": [
+        "FLF 72",
+        "PHF 75"
+      ],
+      "limitless": {
+        "id": 1905,
+        "url": "https://limitlesstcg.com/cards/FLF/72"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/72.png",
+        "large": "https://images.pokemontcg.io/xy2/72_hires.png"
+      }
+    },
+    {
+      "number": "073/106",
+      "localId": "73",
+      "name": "Sliggoo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Goomy",
+      "evolvesTo": [
+        "Goodra"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Gooey",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Gentle Slap",
+          "cost": [
+            "Water",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 705,
+        "genus": "Soft Tissue Pokémon",
+        "height": "2'7\"",
+        "weight": "38.6 lbs"
+      },
+      "flavorText": "It drives away opponents by excreting a sticky liquid that can dissolve anything. Its eyes devolved, so it can't see anything.",
+      "secret": false,
+      "deckCode": "FLF 73",
+      "printGroup": [
+        "FLF 73",
+        "PHF 76"
+      ],
+      "limitless": {
+        "id": 1906,
+        "url": "https://limitlesstcg.com/cards/FLF/73"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/73.png",
+        "large": "https://images.pokemontcg.io/xy2/73_hires.png"
+      }
+    },
+    {
+      "number": "074/106",
+      "localId": "74",
+      "name": "Goodra",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Sliggoo",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 150,
+      "abilities": [
+        {
+          "name": "Gooey Regeneration",
+          "text": "As often as you like during your turn (before your attack), you may discard an Energy attached to this Pokémon. If you do, heal 60 damage from this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Heavy Whip",
+          "cost": [
+            "Water",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "Flip a coin. If heads, this attack does 40 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 706,
+        "genus": "Dragon Pokémon",
+        "height": "6'7\"",
+        "weight": "331.8 lbs"
+      },
+      "flavorText": "This very friendly Dragon-type Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime.",
+      "secret": false,
+      "deckCode": "FLF 74",
+      "printGroup": [
+        "FLF 74"
+      ],
+      "limitless": {
+        "id": 1907,
+        "url": "https://limitlesstcg.com/cards/FLF/74"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/74.png",
+        "large": "https://images.pokemontcg.io/xy2/74_hires.png"
+      }
+    },
+    {
+      "number": "075/106",
+      "localId": "75",
+      "name": "Pidgey",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Pidgeotto"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Peck Off",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Before doing damage, discard all Pokémon Tool cards attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 16,
+        "genus": "Tiny Bird Pokémon",
+        "height": "1'0\"",
+        "weight": "4.0 lbs"
+      },
+      "flavorText": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+      "secret": false,
+      "deckCode": "FLF 75",
+      "printGroup": [
+        "FLF 75"
+      ],
+      "limitless": {
+        "id": 1908,
+        "url": "https://limitlesstcg.com/cards/FLF/75"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/75.png",
+        "large": "https://images.pokemontcg.io/xy2/75_hires.png"
+      }
+    },
+    {
+      "number": "076/106",
+      "localId": "76",
+      "name": "Pidgeotto",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pidgey",
+      "evolvesTo": [
+        "Pidgeot"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Sand-Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        },
+        {
+          "name": "Ambush",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 17,
+        "genus": "Bird Pokémon",
+        "height": "3'7\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "The claws on its feet are well developed. It can carry prey such as an Exeggcute to its nest over 60 miles away.",
+      "secret": false,
+      "deckCode": "FLF 76",
+      "printGroup": [
+        "FLF 76"
+      ],
+      "limitless": {
+        "id": 1909,
+        "url": "https://limitlesstcg.com/cards/FLF/76"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/76.png",
+        "large": "https://images.pokemontcg.io/xy2/76_hires.png"
+      }
+    },
+    {
+      "number": "077/106",
+      "localId": "77",
+      "name": "Pidgeot",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Pidgeotto",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Clutch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        },
+        {
+          "name": "Strong Gust",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "During your next turn, this Pokémon's Strong Gust attack does 60 more damage (before applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 18,
+        "genus": "Bird Pokémon",
+        "height": "4'11\"",
+        "weight": "87.1 lbs"
+      },
+      "flavorText": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.",
+      "secret": false,
+      "deckCode": "FLF 77",
+      "printGroup": [
+        "FLF 77"
+      ],
+      "limitless": {
+        "id": 1910,
+        "url": "https://limitlesstcg.com/cards/FLF/77"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/77.png",
+        "large": "https://images.pokemontcg.io/xy2/77_hires.png"
+      }
+    },
+    {
+      "number": "078/106",
+      "localId": "78",
+      "name": "Kangaskhan-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Kangaskhan-EX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Triple Draw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw 3 cards."
+        },
+        {
+          "name": "Kindred Kick",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "deckCode": "FLF 78",
+      "printGroup": [
+        "FLF 78",
+        "FLF 103"
+      ],
+      "limitless": {
+        "id": 1911,
+        "url": "https://limitlesstcg.com/cards/FLF/78"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/78.png",
+        "large": "https://images.pokemontcg.io/xy2/78_hires.png"
+      }
+    },
+    {
+      "number": "079/106",
+      "localId": "79",
+      "name": "M Kangaskhan-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Kangaskhan-EX",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 230,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wham Bam Punch",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo EX",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "FLF 79",
+      "printGroup": [
+        "FLF 79",
+        "FLF 109"
+      ],
+      "limitless": {
+        "id": 1912,
+        "url": "https://limitlesstcg.com/cards/FLF/79"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/79.png",
+        "large": "https://images.pokemontcg.io/xy2/79_hires.png"
+      }
+    },
+    {
+      "number": "080/106",
+      "localId": "80",
+      "name": "Snorlax",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Stir and Snooze",
+          "text": "If this Pokémon is Asleep, flip 2 coins instead of 1 between turns. If either of them is tails, this Pokémon is still Asleep.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sleepy Press",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "Heal 20 damage from this Pokémon. This Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 143,
+        "genus": "Sleeping Pokémon",
+        "height": "6'11\"",
+        "weight": "1014.1 lbs"
+      },
+      "flavorText": "It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep.",
+      "secret": false,
+      "deckCode": "FLF 80",
+      "printGroup": [
+        "FLF 80",
+        "GEN 58"
+      ],
+      "limitless": {
+        "id": 1913,
+        "url": "https://limitlesstcg.com/cards/FLF/80"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/80.png",
+        "large": "https://images.pokemontcg.io/xy2/80_hires.png"
+      }
+    },
+    {
+      "number": "081/106",
+      "localId": "81",
+      "name": "Sentret",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Furret"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Tail Smack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 161,
+        "genus": "Scout Pokémon",
+        "height": "2'7\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "When acting as a lookout, it warns others of danger by screeching and hitting the ground with its tail.",
+      "secret": false,
+      "deckCode": "FLF 81",
+      "printGroup": [
+        "FLF 81"
+      ],
+      "limitless": {
+        "id": 1914,
+        "url": "https://limitlesstcg.com/cards/FLF/81"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/81.png",
+        "large": "https://images.pokemontcg.io/xy2/81_hires.png"
+      }
+    },
+    {
+      "number": "082/106",
+      "localId": "82",
+      "name": "Furret",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sentret",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Buried Treasure Hunt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at the top 4 cards of your deck and put 2 of them into your hand. Discard the other cards."
+        },
+        {
+          "name": "Slam",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 162,
+        "genus": "Long Body Pokémon",
+        "height": "5'11\"",
+        "weight": "71.7 lbs"
+      },
+      "flavorText": "The mother puts its offspring to sleep by curling up around them. It corners foes with speed.",
+      "secret": false,
+      "deckCode": "FLF 82",
+      "printGroup": [
+        "FLF 82"
+      ],
+      "limitless": {
+        "id": 1915,
+        "url": "https://limitlesstcg.com/cards/FLF/82"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/82.png",
+        "large": "https://images.pokemontcg.io/xy2/82_hires.png"
+      }
+    },
+    {
+      "number": "083/106",
+      "localId": "83",
+      "name": "Miltank",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Powerful Friends",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If you have any Stage 2 Pokémon on your Bench, this attack does 70 more damage."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 241,
+        "genus": "Milk Cow Pokémon",
+        "height": "3'11\"",
+        "weight": "166.4 lbs"
+      },
+      "flavorText": "If it is around babies, the milk it produces contains much more nutrition than usual.",
+      "secret": false,
+      "deckCode": "FLF 83",
+      "printGroup": [
+        "FLF 83"
+      ],
+      "limitless": {
+        "id": 1916,
+        "url": "https://limitlesstcg.com/cards/FLF/83"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/83.png",
+        "large": "https://images.pokemontcg.io/xy2/83_hires.png"
+      }
+    },
+    {
+      "number": "084/106",
+      "localId": "84",
+      "name": "Buneary",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Lopunny"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Bounce",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kyoko Umemoto",
+      "pokedex": {
+        "number": 427,
+        "genus": "Rabbit Pokémon",
+        "height": "1'4\"",
+        "weight": "12.1 lbs"
+      },
+      "flavorText": "Its ears are always rolled up. They can be forcefully extended to shatter even a large boulder.",
+      "secret": false,
+      "deckCode": "FLF 84",
+      "printGroup": [
+        "FLF 84"
+      ],
+      "limitless": {
+        "id": 1917,
+        "url": "https://limitlesstcg.com/cards/FLF/84"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/84.png",
+        "large": "https://images.pokemontcg.io/xy2/84_hires.png"
+      }
+    },
+    {
+      "number": "085/106",
+      "localId": "85",
+      "name": "Lopunny",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Buneary",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Big Jump",
+          "text": "Once during your turn (before your attack), you may return this Pokémon and all cards attached to it to your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sitdown Bounce",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Flip a coin. If tails, this Pokémon can't attack during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 428,
+        "genus": "Rabbit Pokémon",
+        "height": "3'11\"",
+        "weight": "73.4 lbs"
+      },
+      "flavorText": "Extremely cautious, it quickly bounds off when it senses danger.",
+      "secret": false,
+      "deckCode": "FLF 85",
+      "printGroup": [
+        "FLF 85"
+      ],
+      "limitless": {
+        "id": 1918,
+        "url": "https://limitlesstcg.com/cards/FLF/85"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/85.png",
+        "large": "https://images.pokemontcg.io/xy2/85_hires.png"
+      }
+    },
+    {
+      "number": "086/106",
+      "localId": "86",
+      "name": "Fletchling",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Fletchinder"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 661,
+        "genus": "Tiny Robin Pokémon",
+        "height": "1'0\"",
+        "weight": "3.7 lbs"
+      },
+      "flavorText": "These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements.",
+      "secret": false,
+      "deckCode": "FLF 86",
+      "printGroup": [
+        "FLF 86"
+      ],
+      "limitless": {
+        "id": 1919,
+        "url": "https://limitlesstcg.com/cards/FLF/86"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/86.png",
+        "large": "https://images.pokemontcg.io/xy2/86_hires.png"
+      }
+    },
+    {
+      "number": "087/106",
+      "localId": "87",
+      "name": "Furfrou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 676,
+        "genus": "Poodle Pokémon",
+        "height": "3'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+      "secret": false,
+      "deckCode": "FLF 87",
+      "printGroup": [
+        "FLF 87",
+        "KSS 32",
+        "KSS 33",
+        "PHF 90"
+      ],
+      "limitless": {
+        "id": 1920,
+        "url": "https://limitlesstcg.com/cards/FLF/87"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/87.png",
+        "large": "https://images.pokemontcg.io/xy2/87_hires.png"
+      }
+    },
+    {
+      "number": "088/106",
+      "localId": "88",
+      "name": "Blacksmith",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Attach 2 Fire Energy cards from your discard pile to 1 of your Fire Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "deckCode": "FLF 88",
+      "printGroup": [
+        "FLF 88",
+        "FLF 88a"
+      ],
+      "limitless": {
+        "id": 1921,
+        "url": "https://limitlesstcg.com/cards/FLF/88"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/88.png",
+        "large": "https://images.pokemontcg.io/xy2/88_hires.png"
+      }
+    },
+    {
+      "number": "88a",
+      "localId": "88a",
+      "name": "Blacksmith",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Attach 2 Fire Energy cards from your discard pile to 1 of your Fire Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "deckCode": "FLF 88a",
+      "printGroup": [
+        "FLF 88",
+        "FLF 88a"
+      ],
+      "limitless": {
+        "id": 14490,
+        "url": "https://limitlesstcg.com/cards/FLF/88a"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/88a.png",
+        "large": "https://images.pokemontcg.io/xy2/88a_hires.png"
+      }
+    },
+    {
+      "number": "089/106",
+      "localId": "89",
+      "name": "Fiery Torch",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Discard a Fire Energy card from your hand. (If you can't discard a Fire Energy card, you can't play this card.) Draw 2 cards.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "FLF 89",
+      "printGroup": [
+        "FLF 89"
+      ],
+      "limitless": {
+        "id": 1922,
+        "url": "https://limitlesstcg.com/cards/FLF/89"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/89.png",
+        "large": "https://images.pokemontcg.io/xy2/89_hires.png"
+      }
+    },
+    {
+      "number": "090/106",
+      "localId": "90",
+      "name": "Lysandre",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "FLF 90",
+      "printGroup": [
+        "AOR 78",
+        "FLF 90",
+        "FLF 104"
+      ],
+      "limitless": {
+        "id": 1923,
+        "url": "https://limitlesstcg.com/cards/FLF/90"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/90.png",
+        "large": "https://images.pokemontcg.io/xy2/90_hires.png"
+      }
+    },
+    {
+      "number": "091/106",
+      "localId": "91",
+      "name": "Magnetic Storm",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Each Pokémon in play has no Resistance.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "FLF 91",
+      "printGroup": [
+        "FLF 91",
+        "HL 91"
+      ],
+      "limitless": {
+        "id": 1924,
+        "url": "https://limitlesstcg.com/cards/FLF/91"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/91.png",
+        "large": "https://images.pokemontcg.io/xy2/91_hires.png"
+      }
+    },
+    {
+      "number": "092/106",
+      "localId": "92",
+      "name": "Pal Pad",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Shuffle 2 Supporter cards from your discard pile into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "PLANETA",
+      "secret": false,
+      "deckCode": "FLF 92",
+      "printGroup": [
+        "FLF 92",
+        "SSH 172",
+        "SVI 182",
+        "UPR 132"
+      ],
+      "limitless": {
+        "id": 1925,
+        "url": "https://limitlesstcg.com/cards/FLF/92"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/92.png",
+        "large": "https://images.pokemontcg.io/xy2/92_hires.png"
+      }
+    },
+    {
+      "number": "093/106",
+      "localId": "93",
+      "name": "Pokémon Center Lady",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal 60 damage and remove all Special Conditions from 1 of your Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Maiko Fujiwara",
+      "secret": false,
+      "deckCode": "FLF 93",
+      "printGroup": [
+        "CPA 60",
+        "FLF 93",
+        "FLF 105",
+        "GEN 68",
+        "HIF 64",
+        "MEG 123",
+        "SSH 176",
+        "VIV 185"
+      ],
+      "limitless": {
+        "id": 1926,
+        "url": "https://limitlesstcg.com/cards/FLF/93"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/93.png",
+        "large": "https://images.pokemontcg.io/xy2/93_hires.png"
+      }
+    },
+    {
+      "number": "094/106",
+      "localId": "94",
+      "name": "Pokémon Fan Club",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Search your deck for up to 2 Basic Pokémon, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "deckCode": "FLF 94",
+      "printGroup": [
+        "E2 130",
+        "FCO 107",
+        "FLF 94",
+        "FLF 106",
+        "GEN 69",
+        "P4 9",
+        "UPR 133",
+        "UPR 155"
+      ],
+      "limitless": {
+        "id": 1927,
+        "url": "https://limitlesstcg.com/cards/FLF/94"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/94.png",
+        "large": "https://images.pokemontcg.io/xy2/94_hires.png"
+      }
+    },
+    {
+      "number": "095/106",
+      "localId": "95",
+      "name": "Protection Cube",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Prevent all damage done to the Pokémon this card is attached to by attacks it uses.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "FLF 95",
+      "printGroup": [
+        "FLF 95"
+      ],
+      "limitless": {
+        "id": 1928,
+        "url": "https://limitlesstcg.com/cards/FLF/95"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/95.png",
+        "large": "https://images.pokemontcg.io/xy2/95_hires.png"
+      }
+    },
+    {
+      "number": "096/106",
+      "localId": "96",
+      "name": "Sacred Ash",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Shuffle 5 Pokémon from your discard pile into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "PLANETA",
+      "secret": false,
+      "deckCode": "FLF 96",
+      "printGroup": [
+        "DRI 168",
+        "FLF 96",
+        "POR 115"
+      ],
+      "limitless": {
+        "id": 1929,
+        "url": "https://limitlesstcg.com/cards/FLF/96"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/96.png",
+        "large": "https://images.pokemontcg.io/xy2/96_hires.png"
+      }
+    },
+    {
+      "number": "097/106",
+      "localId": "97",
+      "name": "Startling Megaphone",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Discard all Pokémon Tool cards attached to each of your opponent's Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "FLF 97",
+      "printGroup": [
+        "FLF 97"
+      ],
+      "limitless": {
+        "id": 1930,
+        "url": "https://limitlesstcg.com/cards/FLF/97"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/97.png",
+        "large": "https://images.pokemontcg.io/xy2/97_hires.png"
+      }
+    },
+    {
+      "number": "098/106",
+      "localId": "98",
+      "name": "Trick Shovel",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Look at the top card of either player's deck. You may discard that card or return it to the top of the deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "PLANETA",
+      "secret": false,
+      "deckCode": "FLF 98",
+      "printGroup": [
+        "FLF 98"
+      ],
+      "limitless": {
+        "id": 1931,
+        "url": "https://limitlesstcg.com/cards/FLF/98"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/98.png",
+        "large": "https://images.pokemontcg.io/xy2/98_hires.png"
+      }
+    },
+    {
+      "number": "099/106",
+      "localId": "99",
+      "name": "Ultra Ball",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Discard 2 cards from your hand. (If you can't discard 2 cards, you can't play this card.) Search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "FLF 99",
+      "printGroup": [
+        "ASC 213",
+        "ASC 264",
+        "BRS 150",
+        "BRS 186",
+        "CRZ 146",
+        "DEX 102",
+        "FCO 113",
+        "FLF 99",
+        "MEG 131",
+        "PAF 91",
+        "PLB 90",
+        "PLF 122",
+        "ROS 93",
+        "SLG 68",
+        "SLG 68a",
+        "SUM 135",
+        "SUM 161",
+        "SVI 196"
+      ],
+      "limitless": {
+        "id": 1932,
+        "url": "https://limitlesstcg.com/cards/FLF/99"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/99.png",
+        "large": "https://images.pokemontcg.io/xy2/99_hires.png"
+      }
+    },
+    {
+      "number": "100/106",
+      "localId": "100",
+      "name": "Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Charizard-EX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Stoke",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, search your deck for up to 3 basic Energy cards and attach them to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Fire Blast",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "FLF 100",
+      "printGroup": [
+        "FLF 11",
+        "FLF 100",
+        "XYP 29"
+      ],
+      "limitless": {
+        "id": 1933,
+        "url": "https://limitlesstcg.com/cards/FLF/100"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/100.png",
+        "large": "https://images.pokemontcg.io/xy2/100_hires.png"
+      }
+    },
+    {
+      "number": "101/106",
+      "localId": "101",
+      "name": "Magnezone-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Dual Bullet",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 50 damage to 2 of your opponent's Pokémon. (Don't apply Weakness or Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "FLF 101",
+      "printGroup": [
+        "FLF 35",
+        "FLF 101"
+      ],
+      "limitless": {
+        "id": 1934,
+        "url": "https://limitlesstcg.com/cards/FLF/101"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/101.png",
+        "large": "https://images.pokemontcg.io/xy2/101_hires.png"
+      }
+    },
+    {
+      "number": "102/106",
+      "localId": "102",
+      "name": "Toxicroak-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 170,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Triple Poison",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. Put 3 damage counters instead of 1 on that Pokémon between turns."
+        },
+        {
+          "name": "Smash Uppercut",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "FLF 102",
+      "printGroup": [
+        "FLF 41",
+        "FLF 102"
+      ],
+      "limitless": {
+        "id": 1935,
+        "url": "https://limitlesstcg.com/cards/FLF/102"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/102.png",
+        "large": "https://images.pokemontcg.io/xy2/102_hires.png"
+      }
+    },
+    {
+      "number": "103/106",
+      "localId": "103",
+      "name": "Kangaskhan-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "evolvesTo": [
+        "M Kangaskhan-EX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 180,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Triple Draw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw 3 cards."
+        },
+        {
+          "name": "Kindred Kick",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "FLF 103",
+      "printGroup": [
+        "FLF 78",
+        "FLF 103"
+      ],
+      "limitless": {
+        "id": 1936,
+        "url": "https://limitlesstcg.com/cards/FLF/103"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/103.png",
+        "large": "https://images.pokemontcg.io/xy2/103_hires.png"
+      }
+    },
+    {
+      "number": "104/106",
+      "localId": "104",
+      "name": "Lysandre",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "FLF 104",
+      "printGroup": [
+        "AOR 78",
+        "FLF 90",
+        "FLF 104"
+      ],
+      "limitless": {
+        "id": 1937,
+        "url": "https://limitlesstcg.com/cards/FLF/104"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/104.png",
+        "large": "https://images.pokemontcg.io/xy2/104_hires.png"
+      }
+    },
+    {
+      "number": "105/106",
+      "localId": "105",
+      "name": "Pokémon Center Lady",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal 60 damage and remove all Special Conditions from 1 of your Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Megumi Mizutani",
+      "secret": false,
+      "deckCode": "FLF 105",
+      "printGroup": [
+        "CPA 60",
+        "FLF 93",
+        "FLF 105",
+        "GEN 68",
+        "HIF 64",
+        "MEG 123",
+        "SSH 176",
+        "VIV 185"
+      ],
+      "limitless": {
+        "id": 1938,
+        "url": "https://limitlesstcg.com/cards/FLF/105"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/105.png",
+        "large": "https://images.pokemontcg.io/xy2/105_hires.png"
+      }
+    },
+    {
+      "number": "106/106",
+      "localId": "106",
+      "name": "Pokémon Fan Club",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Search your deck for up to 2 Basic Pokémon, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Emi Ando",
+      "secret": false,
+      "deckCode": "FLF 106",
+      "printGroup": [
+        "E2 130",
+        "FCO 107",
+        "FLF 94",
+        "FLF 106",
+        "GEN 69",
+        "P4 9",
+        "UPR 133",
+        "UPR 155"
+      ],
+      "limitless": {
+        "id": 1939,
+        "url": "https://limitlesstcg.com/cards/FLF/106"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/106.png",
+        "large": "https://images.pokemontcg.io/xy2/106_hires.png"
+      }
+    },
+    {
+      "number": "107/106",
+      "localId": "107",
+      "name": "M Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Charizard-EX",
+      "types": [
+        "Fire"
+      ],
+      "hp": 220,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Crimson Dive",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "300",
+          "text": "This Pokémon does 50 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "FLF 107",
+      "printGroup": [
+        "EVO 13",
+        "EVO 101",
+        "FLF 13",
+        "FLF 107"
+      ],
+      "limitless": {
+        "id": 1940,
+        "url": "https://limitlesstcg.com/cards/FLF/107"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/107.png",
+        "large": "https://images.pokemontcg.io/xy2/107_hires.png"
+      }
+    },
+    {
+      "number": "108/106",
+      "localId": "108",
+      "name": "M Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Charizard-EX",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 230,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wild Blaze",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "300",
+          "text": "Discard the top 5 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "FLF 108",
+      "printGroup": [
+        "FLF 69",
+        "FLF 108"
+      ],
+      "limitless": {
+        "id": 1941,
+        "url": "https://limitlesstcg.com/cards/FLF/108"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/108.png",
+        "large": "https://images.pokemontcg.io/xy2/108_hires.png"
+      }
+    },
+    {
+      "number": "109/106",
+      "localId": "109",
+      "name": "M Kangaskhan-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "evolvesFrom": "Kangaskhan-EX",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 230,
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wham Bam Punch",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Secret",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "FLF 109",
+      "printGroup": [
+        "FLF 79",
+        "FLF 109"
+      ],
+      "limitless": {
+        "id": 1942,
+        "url": "https://limitlesstcg.com/cards/FLF/109"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/109.png",
+        "large": "https://images.pokemontcg.io/xy2/109_hires.png"
+      }
+    }
+  ]
+}
