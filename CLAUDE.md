@@ -834,11 +834,13 @@ reason to assume it'll have the next promo set either. Pass `"NONE"` as
 
 Nothing downstream of the fetch changes — the mode's whole job is to assemble
 the same `PrimaryCard[]` that pokemon-tcg-data would have provided, so
-overlays, `deckCode`, print groups and the Pokédex box stay one code path:
+overlays, `limitless` (deck code, print groups) and the Pokédex box stay one
+code path:
 
 - **Card list** from the Limitless set page. That's also the scope decision:
-  a card Limitless doesn't catalogue has no `deckCode` or `printGroup` to
-  record, so it isn't in the set as far as this database is concerned.
+  a card Limitless doesn't catalogue has no `limitless.deckCode` or
+  `limitless.printGroup` to record, so it isn't in the set as far as this
+  database is concerned.
 - **Game text for reprints** from `data/sets/` — any card whose stored
   `printGroup` names this set. A shared print group *means* identical game
   text, so this is pokemon-tcg-data's own text, already verified when that set
@@ -905,8 +907,20 @@ This supersedes the hand-stripping used for Classic Collection's two such cards
 (the McDonald's collections). The long-running promo sets need the per-card
 version of the same thing: Limitless catalogues 292 of `swshp`'s 304 cards, and
 misses one of `svp`'s. List those localIds in `data/no-limitless/<CODE>.json` and
-they take the same path as `"NONE"` — `artist` from pokemon-tcg-data, `deckCode`
-falling back to `"<code> <localId>"`, empty `printGroup`/`limitless`.
+they take the same path as `"NONE"` — `artist` from pokemon-tcg-data, `limitless`
+set to `null`.
+
+`limitless` is `null` rather than some placeholder deck code, deliberately: we
+have no source for what Limitless (or anything else) would call a card it
+never catalogued, and a fabricated code would either falsely claim print-group
+knowledge this database doesn't have, or — if two such cards shared a
+placeholder — silently union unrelated cards into one fake print group (the
+exact bug the original placeholder-based version of this hit while adding the
+McDonald's Collections; see also `types/card.ts`). Every consumer
+(`computePrintGroups`, `refresh-print-groups.mjs`, `buildReprintIndex`) guards
+on `card.limitless` being non-null before reading `deckCode`/`printGroup` off
+it, and simply skips a `null` card rather than matching it against some
+shared "unknown" key.
 
 It has to be explicit rather than an automatic fallback, because a 404 is also
 what an id-normalization bug looks like, and quietly substituting placeholder
@@ -915,26 +929,27 @@ while adding XYP. A 404 that isn't listed fails the run — but the run collects
 every one first and reports them together, so a set needs one pass to find them,
 not one pass per card.
 
-### `printGroup` goes stale, and that's fine
+### `limitless.printGroup` goes stale, and that's fine
 
-A card's stored `printGroup` is a snapshot of Limitless's prints table from whenever
-_that card's set_ was fetched. If a later set reprints it, the later card's own
-snapshot correctly includes the earlier one (Limitless always shows full history), but
-the earlier card's stored array doesn't retroactively gain the new one — sets, once
-fetched and verified, are never edited again to keep it current.
+A card's stored `limitless.printGroup` is a snapshot of Limitless's prints table from
+whenever _that card's set_ was fetched. If a later set reprints it, the later card's
+own snapshot correctly includes the earlier one (Limitless always shows full history),
+but the earlier card's stored array doesn't retroactively gain the new one — sets,
+once fetched and verified, are never edited again to keep it current.
 
 That's handled by not depending on any single card's copy being current:
-`scripts/lib/print-groups.mjs` derives the _actual_ up-to-date group for any card as
-the connected component over every card's stored `printGroup`, across every set in
-`data/sets/`. As long as one member of a group has the up-to-date list — which the
-most recently fetched member always does — the union recovers the full group
-regardless of how stale any other member's own array is.
+`scripts/lib/print-groups.mjs` derives the _actual_ up-to-date group for any card
+(skipping any whose `limitless` is `null` — there's no deck code to give them a graph
+node) as the connected component over every card's stored `limitless.printGroup`,
+across every set in `data/sets/`. As long as one member of a group has the up-to-date
+list — which the most recently fetched member always does — the union recovers the
+full group regardless of how stale any other member's own array is.
 
 `scripts/refresh-print-groups.mjs` runs that derivation and rewrites every set file's
-`printGroup` fields to match, so sets read in isolation stay current too — but this is
-a convenience, not a correctness requirement. Run it whenever a set is added (the
-`add-set` skill does this as its last step) or skip it; nothing downstream should ever
-need to assume a stored `printGroup` is complete on its own.
+`limitless.printGroup` fields to match, so sets read in isolation stay current too —
+but this is a convenience, not a correctness requirement. Run it whenever a set is
+added (the `add-set` skill does this as its last step) or skip it; nothing downstream
+should ever need to assume a stored `printGroup` is complete on its own.
 
 ## Flavor text has no structured source — but there's a shortcut
 

@@ -434,14 +434,20 @@ async function fetchLimitlessExtra(code, localId, cardName) {
     }
   }
 
+  if (!idMatch) {
+    throw new Error(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}: no <!-- CARD ID --> comment found`)
+  }
+  const deckCode = `${code} ${limitlessLocalId}`
+  const dedupedPrintGroup = [...new Set(printGroup)]
   return {
     resolvedLocalId: limitlessLocalId,
     limitless: {
-      id: idMatch ? Number(idMatch[1]) : null,
+      id: Number(idMatch[1]),
       url: `https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`,
+      deckCode,
+      printGroup: dedupedPrintGroup.length ? dedupedPrintGroup : [deckCode],
     },
     artist: artistMatch ? textOnly(artistMatch[1]) : null,
-    printGroup: [...new Set(printGroup)],
     // Only read in the "NONE" <ptcgDataSetId> mode; parsing it costs one regex
     // pass over HTML already in hand, so it isn't worth making conditional.
     // Wrapped because the parse failures worth debugging are all "this one
@@ -548,9 +554,13 @@ async function buildReprintIndex(code) {
     const set = JSON.parse(await readFile(resolve(OUT_DIR, file), "utf8"))
     for (const card of set.cards) {
       const entry = { card, source: `${set.set.code} ${card.localId}` }
-      byDeckCode.set(card.deckCode, entry)
       bySetNameAndLocalId.set(`${set.set.name} ${card.localId}`, entry)
-      for (const print of card.printGroup) {
+      // limitless is null when Limitless has no page for this card — no
+      // deckCode/printGroup to index then, and a shared "no deckCode" key
+      // would wrongly match every such card to each other.
+      if (!card.limitless) continue
+      byDeckCode.set(card.limitless.deckCode, entry)
+      for (const print of card.limitless.printGroup) {
         const [printCode, printLocalId] = print.split(" ")
         if (printCode === code && !index.has(printLocalId)) {
           index.set(printLocalId, entry)
@@ -631,7 +641,7 @@ async function buildFallbackCards(code, limitlessUrlCode, localIds, meta, existi
     // own Limitless page lists the full prints history, so it names the
     // sibling even when the sibling's stored copy doesn't name it back.
     const siblings = await fetchLimitlessExtra(limitlessUrlCode, localId, listed?.name ?? "")
-    const sibling = siblings.printGroup.map((print) => byDeckCode.get(print)).find(Boolean)
+    const sibling = siblings.limitless.printGroup.map((print) => byDeckCode.get(print)).find(Boolean)
     if (sibling) {
       console.log(`  ${code} ${localId}: reusing ${sibling.source} (same print group, not yet in its stored printGroup)`)
       return cardToPrimary(sibling.card, localId, meta.defaultRarity)
@@ -906,7 +916,7 @@ async function main() {
     const localId = sequentialPrefix ? `${sequentialPrefix}${index + 1}` : primary.number
     const [extra, pokedex] = await Promise.all([
       noLimitless || noLimitlessCards.has(localId)
-        ? Promise.resolve({ resolvedLocalId: null, limitless: { id: null, url: "" }, artist: primary.artist ?? null, printGroup: [], text: null })
+        ? Promise.resolve({ resolvedLocalId: null, limitless: null, artist: primary.artist ?? null, text: null })
         : fetchLimitlessExtra(limitlessUrlCode, localId, primary.name).catch((err) => {
             // A 404 that survives every id-normalization fallback means
             // Limitless genuinely has no page for this card — which does
@@ -918,7 +928,7 @@ async function main() {
             // and XYP set-code-prefix cases above).
             if (!/HTTP 404$/.test(err.message)) throw err
             missingFromLimitless.push(localId)
-            return { resolvedLocalId: null, limitless: { id: null, url: "" }, artist: primary.artist ?? null, printGroup: [], text: null }
+            return { resolvedLocalId: null, limitless: null, artist: primary.artist ?? null, text: null }
           }),
       // Only regular Pokémon print the dex info box — every rarity mechanic
       // that gets its own oversized name treatment or rule box (MEGA, V
@@ -994,17 +1004,12 @@ async function main() {
     if (primary.flavorText) card.flavorText = primary.flavorText
     if (flavorTextOverlay[localId]) card.flavorText = flavorTextOverlay[localId]
     card.secret = Number(localId) > setMeta.printedTotal
-    // deckCode must stay unique per card even with no Limitless page to
-    // confirm it against — used as computePrintGroups()'s graph key, so an
-    // empty/shared placeholder here would wrongly union unrelated cards into
-    // one fake print group (found while adding the McDonald's Collections).
-    // resolvedLocalId is null whenever the Limitless scrape was skipped —
-    // either for the whole set ("NONE") or for a single card Limitless has no
-    // page for — so key the fallback off that rather than off noLimitless
-    // alone, which would leave every skipped card in a normal set sharing one
-    // "<code> null" deckCode.
-    card.deckCode = extra.resolvedLocalId === null ? `${limitlessCode} ${localId}` : `${limitlessUrlCode} ${extra.resolvedLocalId}`
-    card.printGroup = extra.printGroup.length ? extra.printGroup : [card.deckCode]
+    // null whenever the Limitless scrape was skipped — either for the whole
+    // set ("NONE") or for a single card Limitless has no page for. Never
+    // synthesize a deckCode/printGroup here: a placeholder would falsely
+    // claim print-group knowledge this database doesn't have, and (if shared
+    // across cards) wrongly union unrelated ones into one fake print group
+    // (found while adding the McDonald's Collections — see CLAUDE.md).
     card.limitless = extra.limitless
     if (primary.images) card.images = primary.images
 

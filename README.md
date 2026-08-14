@@ -91,9 +91,12 @@ A representative card, `MEG 3` (Mega Venusaur ex):
   "pokedex": { "number": 3, "genus": "Seed Pokémon", "height": "3'3\"", "weight": "220.5 lbs" },
   "flavorText": "...",
   "secret": false,               // localId > set.printedTotal
-  "deckCode": "MEG 3",           // what you'd type/see in a PTCGL/Limitless decklist
-  "printGroup": ["MEP 13", "MEG 3", "MEG 155", "MEG 177"],  // legal decklist substitutes
-  "limitless": { "id": 37787, "url": "https://limitlesstcg.com/cards/MEG/3" },
+  "limitless": {                 // null if Limitless has no page for this card
+    "id": 37787,
+    "url": "https://limitlesstcg.com/cards/MEG/3",
+    "deckCode": "MEG 3",         // what you'd type/see in a Limitless decklist
+    "printGroup": ["MEP 13", "MEG 3", "MEG 155", "MEG 177"]  // legal decklist substitutes
+  },
   "images": { "small": "...", "large": "..." }
 }
 ```

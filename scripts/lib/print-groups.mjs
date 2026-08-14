@@ -56,8 +56,13 @@ export function computePrintGroups(sets) {
 
   for (const set of sets) {
     for (const card of set.cards) {
-      uf.find(card.deckCode)
-      for (const other of card.printGroup) uf.union(card.deckCode, other)
+      // limitless is null when Limitless has no page for this card — there's
+      // no deckCode to give it a graph node at all, so it's simply excluded
+      // rather than unioned via some shared placeholder (which would wrongly
+      // merge every such card into one fake print group).
+      if (!card.limitless) continue
+      uf.find(card.limitless.deckCode)
+      for (const other of card.limitless.printGroup) uf.union(card.limitless.deckCode, other)
     }
   }
 

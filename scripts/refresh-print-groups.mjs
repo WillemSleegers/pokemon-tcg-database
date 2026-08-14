@@ -27,9 +27,10 @@ async function main() {
     const set = sets[i]
     let dirty = false
     for (const card of set.cards) {
-      const current = printGroups.get(card.deckCode)
-      if (current && JSON.stringify(current) !== JSON.stringify(card.printGroup)) {
-        card.printGroup = current
+      if (!card.limitless) continue
+      const current = printGroups.get(card.limitless.deckCode)
+      if (current && JSON.stringify(current) !== JSON.stringify(card.limitless.printGroup)) {
+        card.limitless.printGroup = current
         dirty = true
         changedCards++
       }

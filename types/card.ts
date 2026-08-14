@@ -51,10 +51,12 @@ export interface Card {
   pokedex?: Pokedex // only on regular (non-ex/non-MEGA) Pokémon
   flavorText?: string // only on regular (non-ex/non-MEGA) Pokémon — see CLAUDE.md
   secret: boolean // localId > set.printedTotal
-  deckCode: string // what you'd type/see in a PTCGL/Limitless decklist
-  printGroup: string[] // every printing that's a legal substitute for this
-  // card in a decklist — can span other sets on reprints
-  limitless: LimitlessInfo
+  // null when Limitless has no page for this card — id/url/deckCode/printGroup
+  // are all Limitless's own data, so they're either all known or none are.
+  // Never fall back to a placeholder deckCode/printGroup here: they'd falsely
+  // claim print-group knowledge (or worse, collide with another card's
+  // placeholder) that this database doesn't actually have — see CLAUDE.md.
+  limitless: LimitlessInfo | null
   images?: CardImages
 }
 
@@ -90,8 +92,11 @@ export interface Pokedex {
 }
 
 export interface LimitlessInfo {
-  id: number | null
+  id: number
   url: string
+  deckCode: string // what you'd type/see in a Limitless decklist
+  printGroup: string[] // every printing that's a legal substitute for this
+  // card in a decklist — can span other sets on reprints
 }
 
 export interface CardImages {
