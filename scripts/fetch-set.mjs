@@ -51,6 +51,20 @@
 //   there's no pokemon-tcg-data set entry to read it from. e.g.:
 //     node scripts/fetch-set.mjs NONE MEP
 //
+//   Pass --fill-from-limitless when pokemon-tcg-data *has* the set but is
+//   behind Limitless on it, which the long-running promo sets drift into —
+//   pokemon-tcg-data carries 165 of svp's cards where Limitless catalogues 217.
+//   pokemon-tcg-data stays the primary source for every card it does have
+//   (nothing already fetched and verified is re-derived from a weaker source);
+//   the cards it's missing take the same reprint/Bulbapedia fallback path as a
+//   "NONE" run, and the same field-by-field Limitless cross-check. e.g.:
+//     node scripts/fetch-set.mjs svp SVP --fill-from-limitless
+//
+//   Opt-in rather than automatic, because "Limitless lists an id we don't have"
+//   is only meaningful when the Limitless page is this set's own — a subset
+//   sharing its base set's page (SHFSV under SHF) would otherwise pull in the
+//   entire base set.
+//
 //   Pass "NONE" as <limitlessUrlCode> for a set with no Limitless page at
 //   all — confirmed for the McDonald's Collection promo sets (mcd17/18/19),
 //   which Limitless never catalogued. This skips the per-card Limitless
@@ -118,12 +132,35 @@ async function loadNoLimitlessOverlay(code) {
 const CONCURRENCY = 6
 const RETRIES = 3
 
-const [ptcgDataSetId, limitlessCode, limitlessUrlCodeArg, sequentialPrefix] = process.argv.slice(2)
+const args = process.argv.slice(2)
+const flags = new Set(args.filter((a) => a.startsWith("--")))
+const [ptcgDataSetId, limitlessCode, limitlessUrlCodeArg, sequentialPrefix] = args.filter((a) => !a.startsWith("--"))
 const noPrimary = ptcgDataSetId === "NONE"
 const noLimitless = limitlessUrlCodeArg === "NONE"
+const fillFromLimitless = flags.has("--fill-from-limitless")
 const limitlessUrlCode = noLimitless ? null : limitlessUrlCodeArg || limitlessCode
 if (!ptcgDataSetId || !limitlessCode) {
-  console.error("usage: node scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>] [<sequentialPrefix>]   e.g. me1 MEG")
+  console.error(
+    "usage: node scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>] [<sequentialPrefix>] [--fill-from-limitless]   e.g. me1 MEG",
+  )
+  process.exit(1)
+}
+for (const flag of flags) {
+  if (flag !== "--fill-from-limitless") {
+    console.error(`unknown flag ${flag}`)
+    process.exit(1)
+  }
+}
+if (fillFromLimitless && (noPrimary || noLimitless)) {
+  console.error("--fill-from-limitless needs both sources: it fills pokemon-tcg-data's gaps from Limitless")
+  process.exit(1)
+}
+// The flag matches Limitless's ids against pokemon-tcg-data's own `number`
+// field to find what's missing; a sequential-prefix run replaces that field
+// wholesale, so "which ids do we already have" would compare two unrelated
+// numberings.
+if (fillFromLimitless && sequentialPrefix) {
+  console.error("--fill-from-limitless can't be combined with <sequentialPrefix>")
   process.exit(1)
 }
 
@@ -283,11 +320,18 @@ function parseLimitlessCardText(html) {
     const rest = textOnly(info.replace(/<span class="ptcg-symbol">[\s\S]*?<\/span>/, ""))
     const damage = rest.match(/\s(\d+[+×x]?)$/)?.[1] ?? ""
     attacks.push({
-      cost: [...symbols].map((letter) => {
-        const type = ENERGY_SYMBOLS[letter]
-        if (!type) throw new Error(`unknown Limitless energy symbol ${JSON.stringify(letter)}`)
-        return type
-      }),
+      // An attack that costs no energy is a "0" symbol on Limitless and an
+      // empty cost array in pokemon-tcg-data (svp's Cleffa 37, "Grasping
+      // Draw"). It's never one symbol among others, so it's its own case
+      // rather than a letter to filter out.
+      cost:
+        symbols === "0"
+          ? []
+          : [...symbols].map((letter) => {
+              const type = ENERGY_SYMBOLS[letter]
+              if (!type) throw new Error(`unknown Limitless energy symbol ${JSON.stringify(letter)}`)
+              return type
+            }),
       name: (damage ? rest.slice(0, -damage.length) : rest).trim(),
       damage,
       text: textOnly(block.match(/<p class="card-text-attack-effect">([\s\S]*?)<\/p>/)?.[1] ?? ""),
@@ -400,7 +444,18 @@ async function fetchLimitlessExtra(code, localId, cardName) {
     printGroup: [...new Set(printGroup)],
     // Only read in the "NONE" <ptcgDataSetId> mode; parsing it costs one regex
     // pass over HTML already in hand, so it isn't worth making conditional.
-    text: parseLimitlessCardText(html),
+    // Wrapped because the parse failures worth debugging are all "this one
+    // card's page is shaped unexpectedly", and the raw error says nothing
+    // about which of a few hundred pages that was.
+    text: (() => {
+      try {
+        return parseLimitlessCardText(html)
+      } catch (err) {
+        throw new Error(
+          `https://limitlesstcg.com/cards/${code}/${limitlessLocalId} (${cardName}): ${err instanceof Error ? err.message : err}`,
+        )
+      }
+    })(),
   }
 }
 
@@ -444,14 +499,29 @@ async function fetchBulbapediaSetList(pageTitle) {
     `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(pageTitle.replace(/ /g, "_"))}&action=raw`,
   )
   const byLocalId = new Map()
+  // How Bulbapedia names this set inside a card-page title ("SVP Promo", from
+  // "Sprigatito (SVP Promo 1)"). Read off the entries rather than derived from
+  // the page title, which is the longer "SVP Black Star Promos (TCG)". Used to
+  // recognize a redirect that points back into this same set.
+  let setPrefix = null
   for (const [, inner] of wikitext.matchAll(/\{\{Setlist\/entry\|([\s\S]*?)\n?\}\}/g)) {
     // One entry can list several variants of the same card (staff stamp,
     // Pokémon Center print); they share a name and number, so the first wins.
     const id = inner.match(/\{\{TCG ID\|([^|}]+)\|([^|}]+)\|([^|}]+)/)
-    if (id) byLocalId.set(id[3].trim(), { name: id[2].trim(), title: `${id[2].trim()} (${id[1].trim()} ${id[3].trim()})` })
+    if (id) {
+      setPrefix ??= id[1].trim()
+      byLocalId.set(id[3].trim(), { name: id[2].trim(), title: `${id[2].trim()} (${id[1].trim()} ${id[3].trim()})` })
+      continue
+    }
+    // Not every row uses the template — some are written as a plain wiki-link
+    // to the same page it would have generated ("[[Kyogre ex (SVP Promo 178)|
+    // Kyogre]]"), which carries the title outright. Found on three of svp's
+    // Azure Legends Tins promos.
+    const link = inner.match(/\[\[((.+?) \(.+? ([0-9a-zA-Z]+)\))(?:\|[^\]]*)?\]\]/)
+    if (link) byLocalId.set(link[3].trim(), { name: link[2].trim(), title: link[1].trim() })
   }
   if (!byLocalId.size) throw new Error(`no {{Setlist/entry}} rows on Bulbapedia page "${pageTitle}"`)
-  return byLocalId
+  return { byLocalId, setPrefix }
 }
 
 // Every card already in data/sets/ that some card's printGroup ties to this
@@ -461,6 +531,15 @@ async function fetchBulbapediaSetList(pageTitle) {
 // pokemon-tcg-data and verified when that set was added.
 async function buildReprintIndex(code) {
   const index = new Map()
+  // Every card in this database by its own deckCode, so a print group scraped
+  // fresh from Limitless can be resolved to text already here. Needed because
+  // `index` only finds a reprint whose *source* set already knew about this
+  // print — and a set fetched before this promo existed doesn't (a stored
+  // printGroup is a snapshot; see CLAUDE.md "printGroup goes stale").
+  const byDeckCode = new Map()
+  // Every card by "<set name> <localId>", the form a Bulbapedia card-page
+  // redirect names its target in ("Eevee (Stellar Crown 113)").
+  const bySetNameAndLocalId = new Map()
   for (const file of await readdir(OUT_DIR)) {
     // Skip this set's own file: a re-run would otherwise match every card
     // against the copy of itself written by the previous run.
@@ -468,15 +547,18 @@ async function buildReprintIndex(code) {
     /** @type {import("../types/card.js").CardSet} */
     const set = JSON.parse(await readFile(resolve(OUT_DIR, file), "utf8"))
     for (const card of set.cards) {
+      const entry = { card, source: `${set.set.code} ${card.localId}` }
+      byDeckCode.set(card.deckCode, entry)
+      bySetNameAndLocalId.set(`${set.set.name} ${card.localId}`, entry)
       for (const print of card.printGroup) {
         const [printCode, printLocalId] = print.split(" ")
         if (printCode === code && !index.has(printLocalId)) {
-          index.set(printLocalId, { card, source: `${set.set.code} ${card.localId}` })
+          index.set(printLocalId, entry)
         }
       }
     }
   }
-  return index
+  return { index, byDeckCode, bySetNameAndLocalId }
 }
 
 /**
@@ -512,28 +594,120 @@ function cardToPrimary(card, localId, rarity) {
   return primary
 }
 
-async function buildFallbackPrimarySet(code, limitlessUrlCode) {
-  const meta = await loadSetMetaOverride(code)
-  const [localIds, bulbapediaSetList, reprints] = await Promise.all([
-    fetchLimitlessSetIndex(limitlessUrlCode),
+// The fallback assembly itself, for a given list of local ids: reprint text
+// from data/sets/ where the card already exists in this database, Bulbapedia's
+// card page for that print otherwise. Split out from buildFallbackPrimarySet so
+// --fill-from-limitless can run it over just the ids pokemon-tcg-data is
+// missing, rather than the whole set.
+/**
+ * cardToPrimary's counterpart for a source print that's still in
+ * pokemon-tcg-data's own PrimaryCard shape rather than stored in data/sets/ —
+ * a reprint of a card in this very set, which the fill path has in hand.
+ * Drops the same print-specific fields cardToPrimary declines to copy.
+ * @param {import("../types/card.js").PrimaryCard} primary
+ * @returns {import("../types/card.js").PrimaryCard}
+ */
+function reprintPrimary(primary, localId, rarity) {
+  const { artist, images, regulationMark, ...rest } = primary
+  return { ...rest, number: localId, rarity }
+}
+
+async function buildFallbackCards(code, limitlessUrlCode, localIds, meta, existingByLocalId = new Map()) {
+  const [{ byLocalId: bulbapediaSetList, setPrefix }, { index: reprints, byDeckCode, bySetNameAndLocalId }] = await Promise.all([
     fetchBulbapediaSetList(meta.bulbapediaSetPage),
     buildReprintIndex(code),
   ])
-  localIds.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-  console.log(`Limitless lists ${localIds.length} cards; ${reprints.size} are reprints already in data/sets/.`)
+  const reprintCount = localIds.filter((id) => reprints.has(id)).length
+  console.log(`Building ${localIds.length} card(s) from fallback sources; ${reprintCount} are reprints already in data/sets/.`)
 
   const trainerEffectsByLocalId = new Map()
   const cards = await mapWithConcurrency(localIds, CONCURRENCY, async (localId) => {
     const reprint = reprints.get(localId)
     if (reprint) return cardToPrimary(reprint.card, localId, meta.defaultRarity)
+
     const listed = bulbapediaSetList.get(localId)
+    // Second try at the reprint path, for a card whose earlier print is in
+    // this database but whose set was fetched before this print existed. Its
+    // own Limitless page lists the full prints history, so it names the
+    // sibling even when the sibling's stored copy doesn't name it back.
+    const siblings = await fetchLimitlessExtra(limitlessUrlCode, localId, listed?.name ?? "")
+    const sibling = siblings.printGroup.map((print) => byDeckCode.get(print)).find(Boolean)
+    if (sibling) {
+      console.log(`  ${code} ${localId}: reusing ${sibling.source} (same print group, not yet in its stored printGroup)`)
+      return cardToPrimary(sibling.card, localId, meta.defaultRarity)
+    }
+
     if (!listed) throw new Error(`no Bulbapedia set-list entry for ${code} ${localId} — can't find its card page`)
-    const { primary, trainerEffects } = parseCardWikitext(await fetchCardWikitext(listed.title))
+    // Not destructured: the return is a discriminated union (wikitext xor
+    // redirect), and destructuring drops the correlation between the two.
+    const page = await fetchCardWikitext(listed.title)
+    // Third try at the reprint path. A redirect means Bulbapedia has no page
+    // for this print because it's a reprint, and the target names the print it
+    // reprints ("Eevee (Stellar Crown 113)") — so if that set is in this
+    // database, use its pokemon-tcg-data-sourced text rather than parsing
+    // Bulbapedia at all. Reached when Limitless hasn't grouped the two prints
+    // either (svp's Eevee 200 lists no sibling print), so neither earlier tier
+    // finds it.
+    if (page.redirect !== null) {
+      const target = page.redirect.match(/^(.*) \((.+) ([0-9a-zA-Z]+)\)$/)
+      // A promo set reprints itself too — svp's Paradise Resort 224 redirects
+      // to its own 45. That print isn't in data/sets/ under this set's name
+      // (the reprint index skips this set's own file, so a re-run can't feed
+      // on its own previous output), but a --fill-from-limitless run has
+      // pokemon-tcg-data's copy of it right here.
+      if (target && target[2] === setPrefix) {
+        const self = existingByLocalId.get(target[3])
+        if (!self) {
+          throw new Error(`Bulbapedia "${listed.title}" redirects to "${page.redirect}", which isn't among this set's own cards`)
+        }
+        console.log(`  ${code} ${localId}: reusing this set's own ${target[3]} (Bulbapedia redirects this print to it)`)
+        return reprintPrimary(self, localId, meta.defaultRarity)
+      }
+      const source = target && bySetNameAndLocalId.get(`${target[2]} ${target[3]}`)
+      if (!source) {
+        throw new Error(
+          `Bulbapedia "${listed.title}" redirects to "${page.redirect}", a print not in data/sets/ — add that set first`,
+        )
+      }
+      console.log(`  ${code} ${localId}: reusing ${source.source} (Bulbapedia redirects this print to it)`)
+      return cardToPrimary(source.card, localId, meta.defaultRarity)
+    }
+    const { primary, trainerEffects } = parseCardWikitext(page.wikitext)
     primary.number = localId
     primary.rarity = meta.defaultRarity
     if (trainerEffects.length) trainerEffectsByLocalId.set(localId, trainerEffects)
     return primary
   })
+  return { cards, trainerEffectsByLocalId }
+}
+
+// The cards Limitless catalogues that pokemon-tcg-data doesn't have yet, built
+// the same way a "NONE" run builds the whole set. Only the *gap* goes through
+// the fallback — every card pokemon-tcg-data does carry keeps its existing,
+// already-verified text, so this can't quietly downgrade a finished set.
+async function buildFillCards(code, limitlessUrlCode, primaryCards) {
+  const meta = await loadSetMetaOverride(code)
+  // pokemon-tcg-data's number can carry a set-code prefix Limitless's id
+  // doesn't ("SWSH074" vs "74"), the same normalization fetchLimitlessExtra
+  // applies per card — compare on Limitless's own form so an id we already
+  // have isn't mistaken for a missing one.
+  const have = new Set(primaryCards.map((c) => toLimitlessLocalId(c.number)))
+  const localIds = (await fetchLimitlessSetIndex(limitlessUrlCode)).filter((id) => !have.has(id))
+  localIds.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  if (!localIds.length) {
+    console.log(`Limitless has no cards beyond pokemon-tcg-data's ${primaryCards.length}.`)
+    return { cards: [], trainerEffectsByLocalId: new Map() }
+  }
+  console.log(`Limitless has ${localIds.length} card(s) pokemon-tcg-data doesn't: ${localIds.join(", ")}`)
+  return buildFallbackCards(code, limitlessUrlCode, localIds, meta, new Map(primaryCards.map((c) => [c.number, c])))
+}
+
+async function buildFallbackPrimarySet(code, limitlessUrlCode) {
+  const meta = await loadSetMetaOverride(code)
+  const localIds = await fetchLimitlessSetIndex(limitlessUrlCode)
+  localIds.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  console.log(`Limitless lists ${localIds.length} cards.`)
+  const { cards, trainerEffectsByLocalId } = await buildFallbackCards(code, limitlessUrlCode, localIds, meta)
 
   /** @type {import("../types/card.js").PrimarySetMeta} */
   const setMeta = {
@@ -588,9 +762,15 @@ function limitlessMismatches(primary, text) {
     check(`attack ${i + 1} cost`, attack.cost.join(""), theirs.cost.join(""))
   }
   const ourAbilities = primary.abilities ?? []
-  check("ability count", ourAbilities.length, text.abilities.length)
+  // Limitless renders a Tera Pokémon's "prevent all damage on the Bench" rule
+  // box as an ability named "Tera"; pokemon-tcg-data models it as a `Tera`
+  // subtype plus a `rules` entry, with `abilities` left for real abilities
+  // only. Neither is wrong, so drop it before comparing rather than reporting
+  // every Tera card in the set.
+  const theirAbilities = text.abilities.filter((a) => a.name !== "Tera")
+  check("ability count", ourAbilities.length, theirAbilities.length)
   for (const [i, ability] of ourAbilities.entries()) {
-    if (text.abilities[i]) check(`ability ${i + 1} name`, ability.name, text.abilities[i].name)
+    if (theirAbilities[i]) check(`ability ${i + 1} name`, ability.name, theirAbilities[i].name)
   }
   return problems
 }
@@ -662,13 +842,37 @@ function buildNumber(localId, printedTotal, numberPad) {
 }
 
 async function main() {
-  let setMeta, primaryCards, trainerEffectsByLocalId, numberPad
+  let setMeta, primaryCards, trainerEffectsByLocalId = new Map(), numberPad
+  // Which cards didn't come from pokemon-tcg-data, and so need the fallback
+  // sources' extra handling below (Limitless-sourced images/regulation mark,
+  // Trainer text resolution, and the cross-check that makes them trustworthy).
+  // A whole-set "NONE" run is just the case where that's every card.
+  const fallbackLocalIds = new Set()
   if (noPrimary) {
     console.log(`No pokemon-tcg-data set for ${limitlessCode} — building from data/sets/ reprints + Bulbapedia...`)
     ;({ setMeta, cards: primaryCards, trainerEffectsByLocalId, numberPad } = await buildFallbackPrimarySet(limitlessCode, limitlessUrlCode))
   } else {
     console.log(`Fetching ${ptcgDataSetId} from pokemon-tcg-data...`)
     ;({ setMeta, cards: primaryCards } = await fetchPrimarySet(ptcgDataSetId))
+    if (fillFromLimitless) {
+      const fill = await buildFillCards(limitlessCode, limitlessUrlCode, primaryCards)
+      trainerEffectsByLocalId = fill.trainerEffectsByLocalId
+      for (const card of fill.cards) fallbackLocalIds.add(card.number)
+      primaryCards = [...primaryCards, ...fill.cards]
+      const ids = primaryCards.map((c) => c.number)
+      const duplicates = ids.filter((id, i) => ids.indexOf(id) !== i)
+      if (duplicates.length) {
+        throw new Error(
+          `--fill-from-limitless produced duplicate card ids: ${[...new Set(duplicates)].join(", ")}\n` +
+            `Limitless numbers these differently from pokemon-tcg-data; check toLimitlessLocalId().`,
+        )
+      }
+      // sets/en.json's own total counts what pokemon-tcg-data has, which is the
+      // number this run just went past. printedTotal is the number printed on
+      // the cards and stays as-is (a promo set's is a denominator that stopped
+      // matching reality long ago — svp prints "/102" on card 165).
+      setMeta = { ...setMeta, total: primaryCards.length }
+    }
   }
   const sourceMismatches = []
   const flavorTextOverlay = await loadFlavorTextOverlay(limitlessCode)
@@ -729,11 +933,13 @@ async function main() {
     // With no pokemon-tcg-data behind the card, the Limitless page is the only
     // per-print source for these two — a reprint's source card in data/sets/
     // has the *other* print's art and can have a different regulation mark.
-    if (noPrimary) {
+    if (noPrimary || fallbackLocalIds.has(localId)) {
       // Every field below comes off the Limitless page, and so does the check
       // that the fallback source got the card right — a card Limitless has no
       // page for has neither, and there's no pokemon-tcg-data to fall back to.
-      if (!extra.text) throw new Error(`${localId} has no Limitless page, which the "NONE" <ptcgDataSetId> mode depends on`)
+      // (Unreachable for a --fill-from-limitless card, whose id came off the
+      // Limitless set index in the first place.)
+      if (!extra.text) throw new Error(`${localId} has no Limitless page, which fallback-sourced cards depend on`)
       primary.regulationMark = extra.text.regulationMark ?? undefined
       if (extra.text.imageUrl) {
         // Limitless serves two sizes; the "_LG"-suffixed file is the smaller

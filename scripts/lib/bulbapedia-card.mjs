@@ -38,6 +38,22 @@ const RESISTANCE_VALUE = "-30"
 // rather than spelling it out, but pokemon-tcg-data (and so this database)
 // stores it verbatim in `rules` alongside the card-specific effect. Text taken
 // from an existing card in data/sets/ rather than retyped.
+// The infobox's `class=` marks a rarity mechanic that the card's *name* carries
+// on the printed card but `cardname=` doesn't ("cardname=Kyogre" with
+// "class=SVex" is the card named "Kyogre ex"). pokemon-tcg-data spells the
+// suffix into the name, records the mechanic as a subtype, and stores the rule
+// box it prints — text taken from an existing card in data/sets/ rather than
+// retyped. Unlisted values raise rather than being ignored, because the effect
+// of missing one is a card silently stored under the wrong name and without the
+// subtype that decides whether it prints a Pokédex info box.
+const CARD_CLASS = {
+  SVex: {
+    nameSuffix: " ex",
+    subtype: "ex",
+    rules: ["Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."],
+  },
+}
+
 const TRAINER_RULE_TEXT = {
   "SV Stadium":
     "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played.",
@@ -146,6 +162,14 @@ export function parseCardWikitext(wikitext) {
       throw new Error(`unhandled evostage ${JSON.stringify(stage)} — check whether it needs a subtype mapping`)
     }
     card.subtypes = [stage]
+    const cardClass = (pokemonBox.class ?? "").trim()
+    if (cardClass) {
+      const mechanic = CARD_CLASS[cardClass]
+      if (!mechanic) throw new Error(`unhandled card class ${JSON.stringify(cardClass)} — add its name suffix, subtype and rule text`)
+      card.name += mechanic.nameSuffix
+      card.subtypes.push(mechanic.subtype)
+      card.rules = mechanic.rules
+    }
     if (pokemonBox.evoname) card.evolvesFrom = cardText(pokemonBox.evoname)
     if (pokemonBox.type) card.types = [pokemonBox.type.trim()]
     if (pokemonBox.hp) card.hp = pokemonBox.hp.trim()
@@ -175,6 +199,18 @@ export function parseCardWikitext(wikitext) {
   return { primary: card, trainerEffects }
 }
 
+/**
+ * @param {string} title
+ * @returns {Promise<{wikitext: string, redirect: null} | {wikitext: null, redirect: string}>}
+ *   Exactly one of the two is set. Raw fetches don't follow redirects, and
+ *   landing on one means the page for this exact print doesn't exist — which
+ *   for a promo means it's a reprint of a print that does. The redirect target
+ *   names that print ("Eevee (Stellar Crown 113)"), so it's returned rather
+ *   than raised: the caller can resolve it against data/sets/ and reuse
+ *   pokemon-tcg-data's already-verified text, which beats parsing either page.
+ *   Parsing the *target* page here instead would silently describe a different
+ *   print of the card, which is what this guards against.
+ */
 export async function fetchCardWikitext(title) {
   const res = await fetch(
     `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(title.replace(/ /g, "_"))}&action=raw`,
@@ -182,13 +218,7 @@ export async function fetchCardWikitext(title) {
   )
   if (!res.ok) throw new Error(`Bulbapedia ${title}: HTTP ${res.status}`)
   const text = await res.text()
-  // Raw fetches don't follow redirects. Reaching one here means the page for
-  // this exact print doesn't exist — which for a promo means it's a reprint
-  // and should have been resolved from data/sets/ instead, so say that rather
-  // than silently parsing a different print's page.
   const redirect = text.match(/^#REDIRECT\s*\[\[([^\]]+)\]\]/i)
-  if (redirect) {
-    throw new Error(`Bulbapedia "${title}" redirects to "${redirect[1]}" — this card is a reprint, not a set-exclusive`)
-  }
-  return text
+  if (redirect) return { wikitext: null, redirect: redirect[1].trim() }
+  return { wikitext: text, redirect: null }
 }

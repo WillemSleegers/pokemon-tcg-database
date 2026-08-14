@@ -541,13 +541,63 @@ Magearna's actual mainline debut, by several months.
 oldest first, at the user's request after XYP: `WP` (basep, Wizards Black
 Star Promos, 53), `NP` (np, Nintendo, 40), `DPP` (dpp, DP, 56), `HSP` (hsp,
 HGSS, 25), `BWP` (bwp, BW, 101), `SMP` (smp, SM, 251), `SP` (swshp, SWSH,
-304), and `SVP` (svp, Scarlet & Violet, 165) — 8 files joining the already-
+304), and `SVP` (svp, Scarlet & Violet, 165 at the time; now 218) — 8 files joining the already-
 added `XYP`. Codes are Limitless's own, as everywhere else in this database,
 which is why the Wizards and SWSH sets are `WP`/`SP` rather than `BSP`/
 `SWSHP`. Note that `smp`/`swshp`/`svp` are the sets earlier eras
 deliberately skipped as "ongoing"; they're snapshots, and pokemon-tcg-data's
 counts have already grown past what `sets/en.json` advertises (`svp` says 102
 but ships 165), so re-fetching them later is expected rather than a bug.
+
+`SVP` was the first of those re-fetches (2026/08/14), and it turned up a gap
+no existing mode covered: **pokemon-tcg-data can be behind Limitless on an
+ongoing set**, not just behind reality. It carried 165 cards where Limitless
+catalogued 217. Plain `NONE` mode would have picked all 217 up, but at the
+cost of dropping `SVP 85` (Limitless has no page for it — a confirmed 404,
+already listed in `data/no-limitless/SVP.json`) and re-deriving 56
+already-verified cards from Bulbapedia, 42 of them with flavor text that's
+independently checkable today and wouldn't be afterwards. So `fetch-set.mjs`
+gained `--fill-from-limitless` instead (see Pipeline below): pokemon-tcg-data
+stays primary for every card it has, and only the ids it's missing take the
+fallback path. `SVP` is now **218 cards** — the union of both sources — with
+`total`/`secretTotal` corrected to 218/116 from a long-stale 75/-27.
+Bulbapedia claims 226; the 9-card difference is cards Limitless doesn't
+catalogue, out of scope by the same rule as MEP's 55–63 (no page means no
+`deckCode` or `printGroup` to record).
+
+Verified end to end: every one of the 165 pre-existing cards came through
+byte-identical apart from `printGroup` **ordering** (membership unchanged on
+all 97 that moved), card 85 kept its placeholder treatment, and the
+field-by-field Limitless cross-check was re-proven non-vacuous by corrupting
+an HP, an ability name and an attack cost and confirming all three were
+caught. Flavor text ended at 136/136 — the reprint sources carried it through
+for 52 of the 53 new cards, and `SVP 185` (Yanma) was transcribed from its
+crop as a verbatim Violet-entry match. The six new cards whose flavor text
+came *from* Bulbapedia (186, 187, 188, 199, 201, 202) were each read against
+their cropped strips rather than trusted to the sweep, which for them would
+be checking a source against itself. The sweep itself ends at 1/136
+unmatched: Pikachu 27, the already-documented starter-trio exception.
+
+Five fixes came out of it, all in shared code rather than the set file:
+
+- `fetchBulbapediaSetList` now also reads a set-list row written as a plain
+  wiki-link (`[[Kyogre ex (SVP Promo 178)|Kyogre]]`) instead of a
+  `{{TCG ID}}` template. Three of svp's Azure Legends Tins promos are.
+- `parseCardWikitext` reads the infobox's `class=`. Bulbapedia keeps
+  `cardname=Kyogre` with `class=SVex` separately, so five ex cards were being
+  built named "Kyogre" with no `ex` subtype — which the cross-check caught on
+  the name, but which would *also* have wrongly given them a Pokédex info box.
+  Unknown `class` values raise rather than being ignored, for that reason.
+- `parseLimitlessCardText` maps Limitless's `0` energy symbol to an empty
+  cost array (svp's Cleffa 37, "Grasping Draw"). A latent bug, not a new one —
+  SVP was last fetched before that parser existed.
+- `limitlessMismatches` drops Limitless's `Tera` ability block before
+  comparing. pokemon-tcg-data models Tera as a subtype plus a `rules` entry
+  and keeps `abilities` for real abilities; neither is wrong, and without this
+  every Tera card in a set reports a false mismatch.
+- A Limitless parse failure now names the card and URL. The raw error said
+  only `unknown Limitless energy symbol "0"` — nothing about which of 218
+  pages it came from.
 
 Real upstream `flavorText` errors found and fixed via each set's overlay,
 all confirmed against card images: WP (Dragonite, "can fly **is** spite"),
@@ -702,6 +752,55 @@ bare number in the base set. The title comparison spells out the rarity glyphs
 (`★`→`star`, `◇`→`prismstar`), because pokemon-tcg-data keeps the printed symbol
 where Limitless writes the word — `"Greninja ★"` vs `"Greninja Star"`, which is
 what made `swshp`'s SWSH144 look absent when it isn't.
+
+### Sets pokemon-tcg-data has, but is behind Limitless on
+
+An ongoing promo set drifts: pokemon-tcg-data carried 165 of `svp`'s cards
+while Limitless catalogued 217. `--fill-from-limitless` closes that gap
+without disturbing what's already there —
+
+```sh
+node scripts/fetch-set.mjs svp SVP --fill-from-limitless
+```
+
+— by keeping pokemon-tcg-data primary for every card it *does* have and
+sending only the ids it's missing down the same reprint/Bulbapedia fallback
+path a `"NONE"` run uses, with the same field-by-field Limitless cross-check.
+Nothing already fetched and verified gets re-derived from a weaker source,
+and a card in `data/no-limitless/<CODE>.json` (which by definition can't be
+in Limitless's set index) is preserved rather than dropped. `total` is
+recomputed from the merged card count, since `sets/en.json`'s own is a count
+of what pokemon-tcg-data has.
+
+It needs `data/set-meta/<CODE>.json` for `bulbapediaSetPage` and
+`defaultRarity` — the rest of that file is only read by a full `"NONE"` run.
+
+It's **opt-in**, and must stay that way: "Limitless lists an id we don't
+have" only means something when the Limitless page is this set's own. A
+subset sharing its base set's page (`SHFSV` under `SHF`) would otherwise pull
+in the entire base set. It also refuses to combine with `<sequentialPrefix>`,
+which replaces the `number` field the id diff compares on.
+
+Resolving a fill card's game text goes through three tiers before Bulbapedia,
+because the obvious one alone isn't enough:
+
+1. **Stored `printGroup`**, the same index a `"NONE"` run uses — some other
+   set in `data/sets/` already names this print. Covered 39 of svp's 53.
+2. **The card's own Limitless prints table**, scraped fresh. Needed because
+   tier 1 only finds a reprint whose *source* set knew about this print, and
+   a set fetched before the promo existed doesn't (see "printGroup goes
+   stale").
+3. **Bulbapedia's redirect target.** No card page for a print means it's a
+   reprint, and the redirect names the print it reprints — `Eevee (SVP Promo
+   200)` → `Eevee (Stellar Crown 113)`, resolved against `data/sets/` by set
+   name. A set reprints itself this way too (svp's Paradise Resort 224 → its
+   own 45), which tier 1 structurally cannot find, since the reprint index
+   skips this set's own file so a re-run can't feed on its previous output.
+
+`fetchCardWikitext` returns a redirect rather than raising on one, so tier 3
+can read it. It still never *follows* the redirect — parsing the target page
+would describe a different print of the card, which is the thing that guard
+was always for.
 
 ### Sets pokemon-tcg-data doesn't have
 
@@ -1026,7 +1125,10 @@ But coverage has a hard cutoff, not a gradient: `sv1`–`sv6` and `sve` are 100%
 covered, `sv6pt5` ("Shrouded Fable") onward through `sv10` are 0% covered, checked
 card by card. `svp` (the ongoing promo set) is partial — confirmed when it was
 added as `SVP`: 88 of its 107 eligible cards were covered, the other 19 needed
-transcribing from crops. Check any new SV set for
+transcribing from crops. The 2026/08/14 `--fill-from-limitless` re-fetch took
+it to 136 eligible, of which only one new card (Yanma 185) needed a crop —
+the other 52 arrived with flavor text already attached, since a fill card
+resolved from a reprint inherits its source print's. Check any new SV set for
 coverage before assuming either way; don't extrapolate from a neighboring set.
 `node scripts/flavor-text-coverage.mjs <CODE>` does this check — no network calls,
 just counts how many of the set's `pokedex`-eligible cards already have `flavorText`

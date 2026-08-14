@@ -5,8 +5,8 @@
     "name": "Scarlet & Violet Black Star Promos",
     "series": "Scarlet & Violet",
     "printedTotal": 102,
-    "secretTotal": -27,
-    "total": 75,
+    "secretTotal": 116,
+    "total": 218,
     "releaseDate": "2023-01-01",
     "copyright": "©2023 Pokémon / Nintendo / Creatures / GAME FREAK",
     "images": {
@@ -10676,6 +10676,3475 @@
       "images": {
         "small": "https://images.pokemontcg.io/svp/165.png",
         "large": "https://images.pokemontcg.io/svp/165_hires.png"
+      }
+    },
+    {
+      "number": "166/102",
+      "localId": "166",
+      "name": "Teal Mask Ogerpon ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Tera",
+        "ex"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 210,
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Teal Dance",
+          "text": "Once during your turn, you may attach a Basic Grass Energy card from your hand to this Pokémon. If you attached Energy to a Pokémon in this way, draw a card.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Myriad Leaf Shower",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "This attack does 30 more damage for each Energy attached to both Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SVP 166",
+      "printGroup": [
+        "PRE 12",
+        "PRE 145",
+        "PRE 177",
+        "SVP 166",
+        "TWM 25",
+        "TWM 190",
+        "TWM 211",
+        "TWM 221"
+      ],
+      "limitless": {
+        "id": 35284,
+        "url": "https://limitlesstcg.com/cards/SVP/166"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_166_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_166_R_EN.png"
+      }
+    },
+    {
+      "number": "167/102",
+      "localId": "167",
+      "name": "Flareon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Fire"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Destructive Flame",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        },
+        {
+          "name": "Fighting Blaze",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90+",
+          "text": "If your opponent's Active Pokémon is a Pokémon ex or Pokémon V, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "SIE NANAHARA",
+      "pokedex": {
+        "number": 136,
+        "genus": "Flame Pokémon",
+        "height": "2'11\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "Inhaled air is carried to its flame sac, heated, and exhaled as fire that reaches over 3,000 degrees Fahrenheit.",
+      "secret": true,
+      "deckCode": "SVP 167",
+      "printGroup": [
+        "MEW 136",
+        "PRE 13",
+        "SVP 167"
+      ],
+      "limitless": {
+        "id": 35878,
+        "url": "https://limitlesstcg.com/cards/SVP/167"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_167_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_167_R_EN.png"
+      }
+    },
+    {
+      "number": "168/102",
+      "localId": "168",
+      "name": "Vaporeon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Water"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Spiral Drain",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Fighting Whirlpool",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90+",
+          "text": "If your opponent's Active Pokémon is a Pokémon ex or Pokémon V, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Taira Akitsu",
+      "pokedex": {
+        "number": 134,
+        "genus": "Bubble Jet Pokémon",
+        "height": "3'3\"",
+        "weight": "63.9 lbs"
+      },
+      "flavorText": "It lives close to water. Its long tail is ridged with a fin, which is often mistaken for a mermaid's.",
+      "secret": true,
+      "deckCode": "SVP 168",
+      "printGroup": [
+        "MEW 134",
+        "PRE 22",
+        "SVP 168"
+      ],
+      "limitless": {
+        "id": 35879,
+        "url": "https://limitlesstcg.com/cards/SVP/168"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_168_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_168_R_EN.png"
+      }
+    },
+    {
+      "number": "169/102",
+      "localId": "169",
+      "name": "Jolteon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Linear Attack",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 30 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Fighting Lightning",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90+",
+          "text": "If your opponent's Active Pokémon is a Pokémon ex or Pokémon V, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Nisota Niso",
+      "pokedex": {
+        "number": 135,
+        "genus": "Lightning Pokémon",
+        "height": "2'7\"",
+        "weight": "54.0 lbs"
+      },
+      "flavorText": "It concentrates the weak electric charges emitted by its cells and launches wicked lightning bolts.",
+      "secret": true,
+      "deckCode": "SVP 169",
+      "printGroup": [
+        "MEW 135",
+        "PRE 29",
+        "SVP 169"
+      ],
+      "limitless": {
+        "id": 35880,
+        "url": "https://limitlesstcg.com/cards/SVP/169"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_169_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_169_R_EN.png"
+      }
+    },
+    {
+      "number": "170/102",
+      "localId": "170",
+      "name": "Leafeon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Grass"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Leaflet Blessings",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach a Basic Grass Energy card from your hand to 1 of your Benched Pokémon. If you do, heal all damage from that Pokémon."
+        },
+        {
+          "name": "Solar Beam",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Iori Suzuki",
+      "pokedex": {
+        "number": 470,
+        "genus": "Verdant Pokémon",
+        "height": "3'3\"",
+        "weight": "56.2 lbs"
+      },
+      "flavorText": "The younger they are, the more they smell like fresh grass. With age, their fragrance takes on the odor of fallen leaves.",
+      "secret": true,
+      "deckCode": "SVP 170",
+      "printGroup": [
+        "PRE 5",
+        "SVP 170",
+        "TWM 11"
+      ],
+      "limitless": {
+        "id": 35881,
+        "url": "https://limitlesstcg.com/cards/SVP/170"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_170_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_170_R_EN.png"
+      }
+    },
+    {
+      "number": "171/102",
+      "localId": "171",
+      "name": "Glaceon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Permeating Chill",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "At the end of your opponent's next turn, put 9 damage counters on the Defending Pokémon."
+        },
+        {
+          "name": "Icicle Missile",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Keisin",
+      "pokedex": {
+        "number": 471,
+        "genus": "Fresh Snow Pokémon",
+        "height": "2'7\"",
+        "weight": "57.1 lbs"
+      },
+      "flavorText": "It lowers its body heat to freeze its fur. The hairs then become like needles it can fire.",
+      "secret": true,
+      "deckCode": "SVP 171",
+      "printGroup": [
+        "PRE 25",
+        "SVP 171",
+        "TWM 54"
+      ],
+      "limitless": {
+        "id": 35882,
+        "url": "https://limitlesstcg.com/cards/SVP/171"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_171_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_171_R_EN.png"
+      }
+    },
+    {
+      "number": "172/102",
+      "localId": "172",
+      "name": "Sylveon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Mystical Return",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, choose 1 of your opponent's Benched Pokémon. Shuffle that Pokémon and all attached cards into their deck."
+        },
+        {
+          "name": "Disarming Voice",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Susumu Maeya",
+      "pokedex": {
+        "number": 700,
+        "genus": "Intertwining Pokémon",
+        "height": "3'3\"",
+        "weight": "51.8 lbs"
+      },
+      "flavorText": "Sylveon cuts an elegant figure as it dances lightly around, feelers fluttering, but its piercing moves aim straight for its opponents' weak spots.",
+      "secret": true,
+      "deckCode": "SVP 172",
+      "printGroup": [
+        "SFA 22",
+        "SVP 172"
+      ],
+      "limitless": {
+        "id": 35883,
+        "url": "https://limitlesstcg.com/cards/SVP/172"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_172_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_172_R_EN.png"
+      }
+    },
+    {
+      "number": "173/102",
+      "localId": "173",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Boosted Evolution",
+          "text": "As long as this Pokémon is in the Active Spot, it can evolve during your first turn or the turn you play it.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "This Pokémon also does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Makura Tami",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones.",
+      "secret": true,
+      "deckCode": "SVP 173",
+      "printGroup": [
+        "PRE 74",
+        "SSP 143",
+        "SVP 173"
+      ],
+      "limitless": {
+        "id": 35884,
+        "url": "https://limitlesstcg.com/cards/SVP/173"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_173_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_173_R_EN.png"
+      }
+    },
+    {
+      "number": "174/102",
+      "localId": "174",
+      "name": "Eevee ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Tera",
+        "ex"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 200,
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Rainbow DNA",
+          "text": "This Pokémon can evolve into any Pokémon ex that evolves from Eevee if you play it from your hand onto this Pokémon. (This Pokémon can't evolve during your first turn or the turn you play it.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Coruscating Quartz",
+          "cost": [
+            "Fire",
+            "Water",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Natsuko Shoji été",
+      "secret": true,
+      "deckCode": "SVP 174",
+      "printGroup": [
+        "PRE 75",
+        "PRE 167",
+        "SVP 174"
+      ],
+      "limitless": {
+        "id": 36363,
+        "url": "https://limitlesstcg.com/cards/SVP/174"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_174_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_174_R_EN.png"
+      }
+    },
+    {
+      "number": "175/102",
+      "localId": "175",
+      "name": "Espeon ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "Tera",
+        "ex"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 270,
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Psych Out",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160",
+          "text": "Discard a random card from your opponent's hand."
+        },
+        {
+          "name": "Amazez",
+          "cost": [
+            "Grass",
+            "Psychic",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Devolve each of your opponent's evolved Pokémon by shuffling the highest Stage Evolution card on it into your opponent's deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SVP 175",
+      "printGroup": [
+        "PRE 34",
+        "PRE 155",
+        "SVP 175"
+      ],
+      "limitless": {
+        "id": 37983,
+        "url": "https://limitlesstcg.com/cards/SVP/175"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_175_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_175_R_EN.png"
+      }
+    },
+    {
+      "number": "176/102",
+      "localId": "176",
+      "name": "Umbreon ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "Tera",
+        "ex"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 280,
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Moon Mirage",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        },
+        {
+          "name": "Onyx",
+          "cost": [
+            "Lightning",
+            "Psychic",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Discard all Energy from this Pokémon, and take a Prize card."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SVP 176",
+      "printGroup": [
+        "PRE 60",
+        "PRE 161",
+        "SVP 176"
+      ],
+      "limitless": {
+        "id": 37984,
+        "url": "https://limitlesstcg.com/cards/SVP/176"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_176_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_176_R_EN.png"
+      }
+    },
+    {
+      "number": "177/102",
+      "localId": "177",
+      "name": "Bloodmoon Ursaluna ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 260,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Seasoned Skill",
+          "text": "Blood Moon used by this Pokémon costs Colorless less for each Prize card your opponent has taken.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Blood Moon",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "240",
+          "text": "During your next turn, this Pokémon can't attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "aky CG Works",
+      "secret": true,
+      "deckCode": "SVP 177",
+      "printGroup": [
+        "PRE 168",
+        "SVP 177",
+        "TWM 141",
+        "TWM 202",
+        "TWM 216",
+        "TWM 222"
+      ],
+      "limitless": {
+        "id": 35285,
+        "url": "https://limitlesstcg.com/cards/SVP/177"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_177_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_177_R_EN.png"
+      }
+    },
+    {
+      "number": "178/102",
+      "localId": "178",
+      "name": "Kyogre ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 230,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Winding Waves",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "You may switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+        },
+        {
+          "name": "Tidal Surge",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "230",
+          "text": "Discard 2 Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "takuyoa",
+      "secret": true,
+      "deckCode": "SVP 178",
+      "printGroup": [
+        "SVP 178"
+      ],
+      "limitless": {
+        "id": 36209,
+        "url": "https://limitlesstcg.com/cards/SVP/178"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_178_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_178_R_EN.png"
+      }
+    },
+    {
+      "number": "179/102",
+      "localId": "179",
+      "name": "Xerneas ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 210,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Aurora Beam",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Rising Horns",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120+",
+          "text": "If your opponent's Active Pokémon is a Pokémon ex, this attack does 100 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "PLANETA Igarashi",
+      "secret": true,
+      "deckCode": "SVP 179",
+      "printGroup": [
+        "SVP 179"
+      ],
+      "limitless": {
+        "id": 36210,
+        "url": "https://limitlesstcg.com/cards/SVP/179"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_179_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_179_R_EN.png"
+      }
+    },
+    {
+      "number": "180/102",
+      "localId": "180",
+      "name": "Dialga ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 220,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Time Bellow",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Metal Blast",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "This attack does 20 more damage for each {{e|Metal}} Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "PLANETA Tsuji",
+      "secret": true,
+      "deckCode": "SVP 180",
+      "printGroup": [
+        "SVP 180"
+      ],
+      "limitless": {
+        "id": 36211,
+        "url": "https://limitlesstcg.com/cards/SVP/180"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_180_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_180_R_EN.png"
+      }
+    },
+    {
+      "number": "181/102",
+      "localId": "181",
+      "name": "N's Darmanitan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "N's Darumaka",
+      "types": [
+        "Fire"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Back Draft",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each Basic Energy card in your opponent's discard pile."
+        },
+        {
+          "name": "Flamebody Cannon",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard all Energy from this Pokémon, and this attack also does 90 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Takeshi Nakamura",
+      "pokedex": {
+        "number": 555,
+        "genus": "Blazing Pokémon",
+        "height": "4'3\"",
+        "weight": "204.8 lbs"
+      },
+      "flavorText": "This Pokémon's power level rises along with the temperature of its fire, which can reach 2,500 degrees Fahrenheit.",
+      "secret": true,
+      "deckCode": "SVP 181",
+      "printGroup": [
+        "ASC 33",
+        "JTG 27",
+        "SVP 181"
+      ],
+      "limitless": {
+        "id": 36212,
+        "url": "https://limitlesstcg.com/cards/SVP/181"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_181_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_181_R_EN.png"
+      }
+    },
+    {
+      "number": "182/102",
+      "localId": "182",
+      "name": "Iono's Kilowattrel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Iono's Wattrel",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Flashing Draw",
+          "text": "You must discard a Basic Lightning Energy from this Pokémon in order to use this Ability. Once during your turn, you may draw cards until you have 6 cards in your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mach Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "DOM",
+      "pokedex": {
+        "number": 940,
+        "genus": "Storm Petrel Pokémon",
+        "height": "1'4\"",
+        "weight": "7.9 lbs"
+      },
+      "flavorText": "Kilowattrel inflates its throat sac to amplify its electricity. By riding the wind, this Pokémon can fly over 430 miles in a day.",
+      "secret": true,
+      "deckCode": "SVP 182",
+      "printGroup": [
+        "ASC 72",
+        "JTG 55",
+        "JTG 163",
+        "SVP 182"
+      ],
+      "limitless": {
+        "id": 36213,
+        "url": "https://limitlesstcg.com/cards/SVP/182"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_182_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_182_R_EN.png"
+      }
+    },
+    {
+      "number": "183/102",
+      "localId": "183",
+      "name": "Lillie's Ribombee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Lillie's Cutiefly",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Inviting Wink",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may have your opponent reveal their hand and you put any number of Basic Pokémon you find there onto their Bench.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Magical Shot",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "tono",
+      "pokedex": {
+        "number": 743,
+        "genus": "Bee Fly Pokémon",
+        "height": "0'8\"",
+        "weight": "1.1 lbs"
+      },
+      "flavorText": "Ribombee can sense when people or Pokémon are feeling down, and it will cheer them up with handmade pollen puffs.",
+      "secret": true,
+      "deckCode": "SVP 183",
+      "printGroup": [
+        "JTG 67",
+        "JTG 164",
+        "SVP 183"
+      ],
+      "limitless": {
+        "id": 36214,
+        "url": "https://limitlesstcg.com/cards/SVP/183"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_183_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_183_R_EN.png"
+      }
+    },
+    {
+      "number": "184/102",
+      "localId": "184",
+      "name": "Hop's Snorlax",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 150,
+      "abilities": [
+        {
+          "name": "Extra Helpings",
+          "text": "Attacks used by your Hop's Pokémon do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). The effect of Extra Helpings doesn't stack.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dynamic Press",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "140",
+          "text": "This Pokémon also does 80 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "OKACHEKE",
+      "pokedex": {
+        "number": 143,
+        "genus": "Sleeping Pokémon",
+        "height": "6'11\"",
+        "weight": "1014.1 lbs"
+      },
+      "flavorText": "This gluttonous Pokémon eats constantly, apart from when it's asleep. It devours nearly 900 pounds of food per day.",
+      "secret": true,
+      "deckCode": "SVP 184",
+      "printGroup": [
+        "JTG 117",
+        "SVP 184"
+      ],
+      "limitless": {
+        "id": 36215,
+        "url": "https://limitlesstcg.com/cards/SVP/184"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_184_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_184_R_EN.png"
+      }
+    },
+    {
+      "number": "185/102",
+      "localId": "185",
+      "name": "Yanma",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Silent Wing",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent reveals their hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Dsuke",
+      "pokedex": {
+        "number": 193,
+        "genus": "Clear Wing Pokémon",
+        "height": "3'11\"",
+        "weight": "83.8 lbs"
+      },
+      "flavorText": "It can see in all directions without moving its big eyes, helping it spot both attackers and prey right away.",
+      "secret": true,
+      "deckCode": "SVP 185",
+      "printGroup": [
+        "SVP 185"
+      ],
+      "limitless": {
+        "id": 36216,
+        "url": "https://limitlesstcg.com/cards/SVP/185"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_185_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_185_R_EN.png"
+      }
+    },
+    {
+      "number": "186/102",
+      "localId": "186",
+      "name": "Scraggy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Kick Shot",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "OKUBO",
+      "pokedex": {
+        "number": 559,
+        "genus": "Shedding Pokémon",
+        "height": "2'0\"",
+        "weight": "26.0 lbs"
+      },
+      "flavorText": "If it locks eyes with you, watch out! Nothing and no one is safe from the reckless headbutts of this troublesome Pokémon.",
+      "secret": true,
+      "deckCode": "SVP 186",
+      "printGroup": [
+        "SVP 186"
+      ],
+      "limitless": {
+        "id": 36217,
+        "url": "https://limitlesstcg.com/cards/SVP/186"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_186_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_186_R_EN.png"
+      }
+    },
+    {
+      "number": "187/102",
+      "localId": "187",
+      "name": "Yanmega",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Yanma",
+      "types": [
+        "Grass"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Gyro Shockwave",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Dsuke",
+      "pokedex": {
+        "number": 469,
+        "genus": "Ogre Darner Pokémon",
+        "height": "6'3\"",
+        "weight": "113.5 lbs"
+      },
+      "flavorText": "Its jaw power is incredible. It is adept at biting apart foes while flying by at high speed.",
+      "secret": true,
+      "deckCode": "SVP 187",
+      "printGroup": [
+        "SVP 187"
+      ],
+      "limitless": {
+        "id": 36218,
+        "url": "https://limitlesstcg.com/cards/SVP/187"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_187_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_187_R_EN.png"
+      }
+    },
+    {
+      "number": "188/102",
+      "localId": "188",
+      "name": "Scrafty",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Scraggy",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Nab 'n' Dash",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a number of cards up to the number of your Benched Pokémon and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "High Jump Kick",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "OKUBO",
+      "pokedex": {
+        "number": 560,
+        "genus": "Hoodlum Pokémon",
+        "height": "3'7\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "As halfhearted as this Pokémon's kicks may seem, they pack enough power to shatter Conkeldurr's concrete pillars.",
+      "secret": true,
+      "deckCode": "SVP 188",
+      "printGroup": [
+        "SVP 188"
+      ],
+      "limitless": {
+        "id": 36219,
+        "url": "https://limitlesstcg.com/cards/SVP/188"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_188_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_188_R_EN.png"
+      }
+    },
+    {
+      "number": "189/102",
+      "localId": "189",
+      "name": "N's Zorua",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Megumi Mizutani",
+      "pokedex": {
+        "number": 570,
+        "genus": "Tricky Fox Pokémon",
+        "height": "2'4\"",
+        "weight": "27.6 lbs"
+      },
+      "flavorText": "It changes into the forms of others to surprise them. Apparently, it often transforms into a silent child.",
+      "secret": true,
+      "deckCode": "SVP 189",
+      "printGroup": [
+        "ASC 136",
+        "JTG 97",
+        "SVP 189"
+      ],
+      "limitless": {
+        "id": 36220,
+        "url": "https://limitlesstcg.com/cards/SVP/189"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_189_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_189_R_EN.png"
+      }
+    },
+    {
+      "number": "193/102",
+      "localId": "193",
+      "name": "Hop's Zacian ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 230,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Insta-Strike",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "This attack also does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Brave Slash",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "240",
+          "text": "During your next turn, this Pokémon can't use Brave Slash."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "PLANETA Mochizuki",
+      "secret": true,
+      "deckCode": "SVP 193",
+      "printGroup": [
+        "JTG 111",
+        "JTG 176",
+        "JTG 186",
+        "SVP 193"
+      ],
+      "limitless": {
+        "id": 36221,
+        "url": "https://limitlesstcg.com/cards/SVP/193"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_193_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_193_R_EN.png"
+      }
+    },
+    {
+      "number": "194/102",
+      "localId": "194",
+      "name": "Iono's Bellibolt ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Iono's Tadbulb",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 280,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Electric Streamer",
+          "text": "As often as you like during your turn, you may attach a Basic Lightning Energy card from your hand to 1 of your Iono's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Thunderous Bolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "230",
+          "text": "During your next turn, this Pokémon can't attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "PLANETA Mochizuki",
+      "secret": true,
+      "deckCode": "SVP 194",
+      "printGroup": [
+        "ASC 70",
+        "ASC 279",
+        "JTG 53",
+        "JTG 172",
+        "JTG 183",
+        "JTG 188",
+        "SVP 194"
+      ],
+      "limitless": {
+        "id": 36361,
+        "url": "https://limitlesstcg.com/cards/SVP/194"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_194_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_194_R_EN.png"
+      }
+    },
+    {
+      "number": "195/102",
+      "localId": "195",
+      "name": "Lillie's Clefairy ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Fairy Zone",
+          "text": "The Weakness of each of your opponent's Dragon Pokémon in play is now Psychic. (Apply Weakness as ×2.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Full Moon Rondo",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 20 more damage for each Benched Pokémon (both yours and your opponent's)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "PLANETA Tsuji",
+      "secret": true,
+      "deckCode": "SVP 195",
+      "printGroup": [
+        "ASC 76",
+        "ASC 280",
+        "JTG 56",
+        "JTG 173",
+        "JTG 184",
+        "SVP 195"
+      ],
+      "limitless": {
+        "id": 36362,
+        "url": "https://limitlesstcg.com/cards/SVP/195"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_195_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_195_R_EN.png"
+      }
+    },
+    {
+      "number": "196/102",
+      "localId": "196",
+      "name": "Charizard ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex",
+        "Tera"
+      ],
+      "evolvesFrom": "Charmeleon",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 330,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+        "Tera: As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent's)."
+      ],
+      "abilities": [
+        {
+          "name": "Infernal Reign",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may search your deck for up to 3 Basic Fire Energy cards and attach them to your Pokémon in any way you like. Then, shuffle your deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Burning Darkness",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "180+",
+          "text": "This attack does 30 more damage for each Prize card your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SVP 196",
+      "printGroup": [
+        "OBF 125",
+        "OBF 215",
+        "OBF 223",
+        "OBF 228",
+        "PAF 54",
+        "PAF 234",
+        "SVP 56",
+        "SVP 74",
+        "SVP 196"
+      ],
+      "limitless": {
+        "id": 36816,
+        "url": "https://limitlesstcg.com/cards/SVP/196"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_196_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_196_R_EN.png"
+      }
+    },
+    {
+      "number": "197/102",
+      "localId": "197",
+      "name": "Koraidon ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 230,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Claw Slash",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        },
+        {
+          "name": "Revenge Buster",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 120 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "PLANETA Tsuji",
+      "secret": true,
+      "deckCode": "SVP 197",
+      "printGroup": [
+        "SVP 197"
+      ],
+      "limitless": {
+        "id": 36364,
+        "url": "https://limitlesstcg.com/cards/SVP/197"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_197_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_197_R_EN.png"
+      }
+    },
+    {
+      "number": "198/102",
+      "localId": "198",
+      "name": "Zacian ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 220,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Steel Armament",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Search your deck for a Basic {{e|Metal}} Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Slashing Strike",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "210",
+          "text": "During your next turn, this Pokémon can't use Slashing Strike."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "PLANETA Mochizuki",
+      "secret": true,
+      "deckCode": "SVP 198",
+      "printGroup": [
+        "SVP 198"
+      ],
+      "limitless": {
+        "id": 36365,
+        "url": "https://limitlesstcg.com/cards/SVP/198"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_198_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_198_R_EN.png"
+      }
+    },
+    {
+      "number": "199/102",
+      "localId": "199",
+      "name": "Zarude",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Pluck Off",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Basic {{e|Grass}} Energy cards, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Hammer Whip",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "During your next turn, this Pokémon can't attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Uninori",
+      "pokedex": {
+        "number": 893,
+        "genus": "Rogue Monkey Pokémon",
+        "height": "5'11\"",
+        "weight": "154.3 lbs"
+      },
+      "flavorText": "Within dense forests, this Pokémon lives in a pack with others of its kind. It's incredibly aggressive, and the other Pokémon of the forest fear it.",
+      "secret": true,
+      "deckCode": "SVP 199",
+      "printGroup": [
+        "SVP 199"
+      ],
+      "limitless": {
+        "id": 36817,
+        "url": "https://limitlesstcg.com/cards/SVP/199"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_199_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_199_R_EN.png"
+      }
+    },
+    {
+      "number": "200/102",
+      "localId": "200",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Kariya",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution.",
+      "secret": true,
+      "deckCode": "SVP 200",
+      "printGroup": [
+        "SVP 200"
+      ],
+      "limitless": {
+        "id": 36818,
+        "url": "https://limitlesstcg.com/cards/SVP/200"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_200_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_200_R_EN.png"
+      }
+    },
+    {
+      "number": "201/102",
+      "localId": "201",
+      "name": "Zebstrika",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Blitzle",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Full Speed",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard your hand and draw 6 cards."
+        },
+        {
+          "name": "Head Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Krgc",
+      "pokedex": {
+        "number": 523,
+        "genus": "Thunderbolt Pokémon",
+        "height": "5'3\"",
+        "weight": "175.3 lbs"
+      },
+      "flavorText": "Once the herd hears thunder, it chases after the storm clouds so that the Blitzle in the group can use the lightning to charge up.",
+      "secret": true,
+      "deckCode": "SVP 201",
+      "printGroup": [
+        "SVP 201"
+      ],
+      "limitless": {
+        "id": 36819,
+        "url": "https://limitlesstcg.com/cards/SVP/201"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_201_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_201_R_EN.png"
+      }
+    },
+    {
+      "number": "202/102",
+      "localId": "202",
+      "name": "Kangaskhan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Punch",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Uta",
+      "pokedex": {
+        "number": 115,
+        "genus": "Parent Pokémon",
+        "height": "7'3\"",
+        "weight": "176.4 lbs"
+      },
+      "flavorText": "Although it's carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs.",
+      "secret": true,
+      "deckCode": "SVP 202",
+      "printGroup": [
+        "SVP 202"
+      ],
+      "limitless": {
+        "id": 36820,
+        "url": "https://limitlesstcg.com/cards/SVP/202"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_202_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_202_R_EN.png"
+      }
+    },
+    {
+      "number": "203/102",
+      "localId": "203",
+      "name": "Team Rocket's Wobbuffet",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Rocket Mirror",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Move all damage counters from 1 of your Benched Team Rocket's Pokémon to your opponent's Active Pokémon."
+        },
+        {
+          "name": "Headbutt Bounce",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Saboteri",
+      "pokedex": {
+        "number": 202,
+        "genus": "Patient Pokémon",
+        "height": "4'3\"",
+        "weight": "62.8 lbs"
+      },
+      "flavorText": "To keep its pitch-black tail hidden, it lives quietly in the darkness. It is never first to attack.",
+      "secret": true,
+      "deckCode": "SVP 203",
+      "printGroup": [
+        "DRI 82",
+        "SVP 203"
+      ],
+      "limitless": {
+        "id": 36821,
+        "url": "https://limitlesstcg.com/cards/SVP/203"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_203_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_203_R_EN.png"
+      }
+    },
+    {
+      "number": "204/102",
+      "localId": "204",
+      "name": "Cynthia's Garchomp ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Cynthia's Gabite",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 330,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corkscrew Dive",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "100",
+          "text": "You may draw cards until you have 6 cards in your hand."
+        },
+        {
+          "name": "Draconic Buster",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "260",
+          "text": "Discard all Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "PLANETA Igarashi",
+      "secret": true,
+      "deckCode": "SVP 204",
+      "printGroup": [
+        "ASC 111",
+        "DRI 104",
+        "DRI 215",
+        "DRI 232",
+        "DRI 241",
+        "SVP 204"
+      ],
+      "limitless": {
+        "id": 37608,
+        "url": "https://limitlesstcg.com/cards/SVP/204"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_204_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_204_R_EN.png"
+      }
+    },
+    {
+      "number": "205/102",
+      "localId": "205",
+      "name": "Team Rocket's Mewtwo ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 280,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Power Saver",
+          "text": "This Pokémon can't attack unless you have 4 or more Team Rocket's Pokémon in play.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Erasure Ball",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160+",
+          "text": "You may discard up to 2 Energy from your Benched Pokémon. This attack does 60 more damage for each card you discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "aky CG Works",
+      "secret": true,
+      "deckCode": "SVP 205",
+      "printGroup": [
+        "ASC 79",
+        "ASC 281",
+        "DRI 81",
+        "DRI 213",
+        "DRI 231",
+        "DRI 240",
+        "SVP 205",
+        "SVP 216"
+      ],
+      "limitless": {
+        "id": 37609,
+        "url": "https://limitlesstcg.com/cards/SVP/205"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_205_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_205_R_EN.png"
+      }
+    },
+    {
+      "number": "206/102",
+      "localId": "206",
+      "name": "Marnie's Morpeko",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Spiky Wheel",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20+",
+          "text": "This attack does 40 more damage for each Darkness Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Susumu Maeya",
+      "pokedex": {
+        "number": 877,
+        "genus": "Two-Sided Pokémon",
+        "height": "1'0\"",
+        "weight": "6.6 lbs"
+      },
+      "flavorText": "Morpeko eats seeds constantly to keep its hunger at bay. If it's hungry for too long, it grows wild and brutish.",
+      "secret": true,
+      "deckCode": "SVP 206",
+      "printGroup": [
+        "DRI 137",
+        "SVP 206"
+      ],
+      "limitless": {
+        "id": 36822,
+        "url": "https://limitlesstcg.com/cards/SVP/206"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_206_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_206_R_EN.png"
+      }
+    },
+    {
+      "number": "207/102",
+      "localId": "207",
+      "name": "Steven's Beldum",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Metang"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "hncl",
+      "pokedex": {
+        "number": 374,
+        "genus": "Iron Ball Pokémon",
+        "height": "2'0\"",
+        "weight": "209.9 lbs"
+      },
+      "flavorText": "The magnetic force generated by its body repels the ground's natural magnetism, letting it float.",
+      "secret": true,
+      "deckCode": "SVP 207",
+      "printGroup": [
+        "DRI 143",
+        "SVP 207"
+      ],
+      "limitless": {
+        "id": 36823,
+        "url": "https://limitlesstcg.com/cards/SVP/207"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_207_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_207_R_EN.png"
+      }
+    },
+    {
+      "number": "208/102",
+      "localId": "208",
+      "name": "Victini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "V-Force",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "If you have 4 or fewer Benched Pokémon, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Amelicart",
+      "pokedex": {
+        "number": 494,
+        "genus": "Victory Pokémon",
+        "height": "1'4\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "This Pokémon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter.",
+      "secret": true,
+      "deckCode": "SVP 208",
+      "printGroup": [
+        "BLK 12",
+        "BLK 171",
+        "SVP 208",
+        "WHT 172"
+      ],
+      "limitless": {
+        "id": 37610,
+        "url": "https://limitlesstcg.com/cards/SVP/208"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_208_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_208_R_EN.png"
+      }
+    },
+    {
+      "number": "209/102",
+      "localId": "209",
+      "name": "Thundurus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Lightning Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Disaster Volt",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Anesaki Dynamic",
+      "pokedex": {
+        "number": 642,
+        "genus": "Bolt Strike Pokémon",
+        "height": "4'11\"",
+        "weight": "134.5 lbs"
+      },
+      "flavorText": "Countless charred remains mar the landscape of places through which Thundurus has passed.",
+      "secret": true,
+      "deckCode": "SVP 209",
+      "printGroup": [
+        "BLK 33",
+        "SVP 209"
+      ],
+      "limitless": {
+        "id": 37611,
+        "url": "https://limitlesstcg.com/cards/SVP/209"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_209_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_209_R_EN.png"
+      }
+    },
+    {
+      "number": "210/102",
+      "localId": "210",
+      "name": "Tornadus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Wrapped in Wind",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach a Basic Energy card from your hand to this Pokémon."
+        },
+        {
+          "name": "Hurricane",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "Move a Basic Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 641,
+        "genus": "Cyclone Pokémon",
+        "height": "4'11\"",
+        "weight": "138.9 lbs"
+      },
+      "flavorText": "The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.",
+      "secret": true,
+      "deckCode": "SVP 210",
+      "printGroup": [
+        "SVP 210",
+        "WHT 78"
+      ],
+      "limitless": {
+        "id": 37612,
+        "url": "https://limitlesstcg.com/cards/SVP/210"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_210_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_210_R_EN.png"
+      }
+    },
+    {
+      "number": "211/102",
+      "localId": "211",
+      "name": "Gothitelle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Gothorita",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 150,
+      "abilities": [
+        {
+          "name": "Distorted Future",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may have your opponent shuffle their hand into their deck and draw 3 cards.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Synchro Shot",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "90+",
+          "text": "If you have the same number of cards in your hand as your opponent, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "IKEDA Saki",
+      "pokedex": {
+        "number": 576,
+        "genus": "Astral Body Pokémon",
+        "height": "4'11\"",
+        "weight": "97.0 lbs"
+      },
+      "flavorText": "Starry skies thousands of light-years away are visible in the space distorted by their intense psychic power.",
+      "secret": true,
+      "deckCode": "SVP 211",
+      "printGroup": [
+        "SVP 211",
+        "WHT 43"
+      ],
+      "limitless": {
+        "id": 37613,
+        "url": "https://limitlesstcg.com/cards/SVP/211"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_211_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_211_R_EN.png"
+      }
+    },
+    {
+      "number": "212/102",
+      "localId": "212",
+      "name": "Reuniclus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Duosion",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Cellular Ascension",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a card that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+        },
+        {
+          "name": "Evo-Lariat",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40+",
+          "text": "This attack does 40 more damage for each of your Evolution Pokémon in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "satoma",
+      "pokedex": {
+        "number": 579,
+        "genus": "Multiplying Pokémon",
+        "height": "3'3\"",
+        "weight": "44.3 lbs"
+      },
+      "flavorText": "When Reuniclus shake hands, a network forms between their brains, increasing their psychic power.",
+      "secret": true,
+      "deckCode": "SVP 212",
+      "printGroup": [
+        "BLK 39",
+        "SVP 212"
+      ],
+      "limitless": {
+        "id": 37614,
+        "url": "https://limitlesstcg.com/cards/SVP/212"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_212_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_212_R_EN.png"
+      }
+    },
+    {
+      "number": "216/102",
+      "localId": "216",
+      "name": "Team Rocket's Mewtwo ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 280,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Power Saver",
+          "text": "This Pokémon can't attack unless you have 4 or more Team Rocket's Pokémon in play.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Erasure Ball",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "160+",
+          "text": "You may discard up to 2 Energy from your Benched Pokémon. This attack does 60 more damage for each card you discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "aky CG Works",
+      "secret": true,
+      "deckCode": "SVP 216",
+      "printGroup": [
+        "ASC 79",
+        "ASC 281",
+        "DRI 81",
+        "DRI 213",
+        "DRI 231",
+        "DRI 240",
+        "SVP 205",
+        "SVP 216"
+      ],
+      "limitless": {
+        "id": 37985,
+        "url": "https://limitlesstcg.com/cards/SVP/216"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_216_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_216_R_EN.png"
+      }
+    },
+    {
+      "number": "217/102",
+      "localId": "217",
+      "name": "Team Rocket's Nidoking ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex"
+      ],
+      "evolvesFrom": "Team Rocket's Nidorino",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 330,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Tainted Horn",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, put 8 damage counters on that Pokémon instead of 1."
+        },
+        {
+          "name": "Kingly Impact",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "240",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SVP 217",
+      "printGroup": [
+        "DRI 119",
+        "DRI 216",
+        "DRI 233",
+        "SVP 217"
+      ],
+      "limitless": {
+        "id": 37986,
+        "url": "https://limitlesstcg.com/cards/SVP/217"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_217_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_217_R_EN.png"
+      }
+    },
+    {
+      "number": "218/102",
+      "localId": "218",
+      "name": "Team Rocket's Persian ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Team Rocket's Meowth",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 260,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Haughty Order",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Reveal the top 10 cards of your opponent's deck. You may choose an attack from a Pokémon you find there and use it as this attack. Shuffle the revealed cards into your opponent's deck."
+        },
+        {
+          "name": "Cruel Slash",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "140",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "5ban Graphics",
+      "secret": true,
+      "deckCode": "SVP 218",
+      "printGroup": [
+        "DRI 150",
+        "DRI 219",
+        "SVP 218"
+      ],
+      "limitless": {
+        "id": 37987,
+        "url": "https://limitlesstcg.com/cards/SVP/218"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_218_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_218_R_EN.png"
+      }
+    },
+    {
+      "number": "219/102",
+      "localId": "219",
+      "name": "Black Belt's Training",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "During this turn, attacks used by your Pokémon do 40 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance).",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "GOSSAN",
+      "secret": true,
+      "deckCode": "SVP 219",
+      "printGroup": [
+        "ASC 255",
+        "JTG 143",
+        "JTG 144",
+        "JTG 145",
+        "PRE 96",
+        "PRE 97",
+        "PRE 98",
+        "PRE 99",
+        "SVP 219",
+        "SVP 220"
+      ],
+      "limitless": {
+        "id": 40152,
+        "url": "https://limitlesstcg.com/cards/SVP/219"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_219_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_219_R_EN.png"
+      }
+    },
+    {
+      "number": "220/102",
+      "localId": "220",
+      "name": "Black Belt's Training",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "During this turn, attacks used by your Pokémon do 40 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance).",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "GOSSAN",
+      "secret": true,
+      "deckCode": "SVP 220",
+      "printGroup": [
+        "ASC 255",
+        "JTG 143",
+        "JTG 144",
+        "JTG 145",
+        "PRE 96",
+        "PRE 97",
+        "PRE 98",
+        "PRE 99",
+        "SVP 219",
+        "SVP 220"
+      ],
+      "limitless": {
+        "id": 40153,
+        "url": "https://limitlesstcg.com/cards/SVP/220"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_220_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_220_R_EN.png"
+      }
+    },
+    {
+      "number": "221/102",
+      "localId": "221",
+      "name": "Professor's Research",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Hideki Ishikawa",
+      "secret": true,
+      "deckCode": "SVP 221",
+      "printGroup": [
+        "BLK 85",
+        "BRS 147",
+        "CEL 23",
+        "CEL 24",
+        "CPA 62",
+        "CRZ 150",
+        "JTG 155",
+        "PAF 87",
+        "PAF 88",
+        "PGO 78",
+        "PGO 84",
+        "PRE 122",
+        "PRE 123",
+        "PRE 124",
+        "PRE 125",
+        "SHF 60",
+        "SP 152",
+        "SP 178",
+        "SSH 178",
+        "SSH 201",
+        "SSH 209",
+        "SVI 189",
+        "SVI 190",
+        "SVI 240",
+        "SVI 241",
+        "SVP 221",
+        "SVP 222",
+        "SVP 223"
+      ],
+      "limitless": {
+        "id": 40154,
+        "url": "https://limitlesstcg.com/cards/SVP/221"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_221_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_221_R_EN.png"
+      }
+    },
+    {
+      "number": "222/102",
+      "localId": "222",
+      "name": "Professor's Research",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Hideki Ishikawa",
+      "secret": true,
+      "deckCode": "SVP 222",
+      "printGroup": [
+        "BLK 85",
+        "BRS 147",
+        "CEL 23",
+        "CEL 24",
+        "CPA 62",
+        "CRZ 150",
+        "JTG 155",
+        "PAF 87",
+        "PAF 88",
+        "PGO 78",
+        "PGO 84",
+        "PRE 122",
+        "PRE 123",
+        "PRE 124",
+        "PRE 125",
+        "SHF 60",
+        "SP 152",
+        "SP 178",
+        "SSH 178",
+        "SSH 201",
+        "SSH 209",
+        "SVI 189",
+        "SVI 190",
+        "SVI 240",
+        "SVI 241",
+        "SVP 221",
+        "SVP 222",
+        "SVP 223"
+      ],
+      "limitless": {
+        "id": 40155,
+        "url": "https://limitlesstcg.com/cards/SVP/222"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_222_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_222_R_EN.png"
+      }
+    },
+    {
+      "number": "223/102",
+      "localId": "223",
+      "name": "Professor's Research",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Taira Akitsu",
+      "secret": true,
+      "deckCode": "SVP 223",
+      "printGroup": [
+        "BLK 85",
+        "BRS 147",
+        "CEL 23",
+        "CEL 24",
+        "CPA 62",
+        "CRZ 150",
+        "JTG 155",
+        "PAF 87",
+        "PAF 88",
+        "PGO 78",
+        "PGO 84",
+        "PRE 122",
+        "PRE 123",
+        "PRE 124",
+        "PRE 125",
+        "SHF 60",
+        "SP 152",
+        "SP 178",
+        "SSH 178",
+        "SSH 201",
+        "SSH 209",
+        "SVI 189",
+        "SVI 190",
+        "SVI 240",
+        "SVI 241",
+        "SVP 221",
+        "SVP 222",
+        "SVP 223"
+      ],
+      "limitless": {
+        "id": 40156,
+        "url": "https://limitlesstcg.com/cards/SVP/223"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_223_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_223_R_EN.png"
+      }
+    },
+    {
+      "number": "224/102",
+      "localId": "224",
+      "name": "Paradise Resort",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "The Retreat Cost of each Psyduck in play (both yours and your opponent's) is Colorless less.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Naoki Saito",
+      "secret": true,
+      "deckCode": "SVP 224",
+      "printGroup": [
+        "SVP 45",
+        "SVP 150",
+        "SVP 224"
+      ],
+      "limitless": {
+        "id": 37615,
+        "url": "https://limitlesstcg.com/cards/SVP/224"
+      },
+      "images": {
+        "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_224_R_EN_LG.png",
+        "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_224_R_EN.png"
       }
     }
   ]
