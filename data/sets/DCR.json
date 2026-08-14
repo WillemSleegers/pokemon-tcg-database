@@ -1,0 +1,1863 @@
+{
+  "set": {
+    "code": "DCR",
+    "ptcgDataId": "dc1",
+    "name": "Double Crisis",
+    "series": "XY",
+    "printedTotal": 34,
+    "secretTotal": 0,
+    "total": 34,
+    "releaseDate": "2015-03-25",
+    "copyright": "©2015 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/dc1/symbol.png",
+      "logo": "https://images.pokemontcg.io/dc1/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/34",
+      "localId": "1",
+      "name": "Team Magma's Numel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Camerupt"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 322,
+        "genus": "Numb Pokémon",
+        "height": "2'4\"",
+        "weight": "52.9 lbs"
+      },
+      "flavorText": "No matter how heavy the cargo, we can transport it to our destination with ease, thanks to Numel.",
+      "secret": false,
+      "deckCode": "DCR 1",
+      "printGroup": [
+        "DCR 1"
+      ],
+      "limitless": {
+        "id": 2342,
+        "url": "https://limitlesstcg.com/cards/DCR/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/1.png",
+        "large": "https://images.pokemontcg.io/dc1/1_hires.png"
+      }
+    },
+    {
+      "number": "02/34",
+      "localId": "2",
+      "name": "Team Magma's Camerupt",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Magma's Numel",
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Burning Draft",
+          "text": "Once during your turn (before your attack), you may attach a Fighting or Fire Energy card from your discard pile to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flame Ball",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Move a basic Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 323,
+        "genus": "Eruption Pokémon",
+        "height": "6'3\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "Camerupt, with its strength against fire, played a big role in rescuing team members.",
+      "secret": false,
+      "deckCode": "DCR 2",
+      "printGroup": [
+        "DCR 2"
+      ],
+      "limitless": {
+        "id": 2343,
+        "url": "https://limitlesstcg.com/cards/DCR/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/2.png",
+        "large": "https://images.pokemontcg.io/dc1/2_hires.png"
+      }
+    },
+    {
+      "number": "03/34",
+      "localId": "3",
+      "name": "Team Aqua's Spheal",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sealeo"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 363,
+        "genus": "Clap Pokémon",
+        "height": "2'7\"",
+        "weight": "87.1 lbs"
+      },
+      "flavorText": "Spheal's Water Gun can put out any fire. Flames used by opponents have no effect!",
+      "secret": false,
+      "deckCode": "DCR 3",
+      "printGroup": [
+        "DCR 3"
+      ],
+      "limitless": {
+        "id": 2344,
+        "url": "https://limitlesstcg.com/cards/DCR/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/3.png",
+        "large": "https://images.pokemontcg.io/dc1/3_hires.png"
+      }
+    },
+    {
+      "number": "04/34",
+      "localId": "4",
+      "name": "Team Aqua's Sealeo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Aqua's Spheal",
+      "evolvesTo": [
+        "Walrein"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Splatter",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Hail Storm",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon is a Team Magma Pokémon, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 364,
+        "genus": "Ball Roll Pokémon",
+        "height": "3'7\"",
+        "weight": "193.1 lbs"
+      },
+      "flavorText": "It provides support by making paths of ice. It can win any battle as long as it's on ice.",
+      "secret": false,
+      "deckCode": "DCR 4",
+      "printGroup": [
+        "DCR 4"
+      ],
+      "limitless": {
+        "id": 2345,
+        "url": "https://limitlesstcg.com/cards/DCR/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/4.png",
+        "large": "https://images.pokemontcg.io/dc1/4_hires.png"
+      }
+    },
+    {
+      "number": "05/34",
+      "localId": "5",
+      "name": "Team Aqua's Walrein",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Team Aqua's Sealeo",
+      "types": [
+        "Water"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Power Blow",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "This attack does 30 damage times the amount of Energy attached to this Pokémon."
+        },
+        {
+          "name": "Dual Blizzard",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "",
+          "text": "Discard 2 Water Energy attached to this Pokémon. This attack does 80 damage to 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 365,
+        "genus": "Ice Break Pokémon",
+        "height": "4'7\"",
+        "weight": "332.0 lbs"
+      },
+      "flavorText": "It's good at attacks that freeze opponents with a powerful cold snap. Then, it pulverizes a frozen foe with its sharp tusks!",
+      "secret": false,
+      "deckCode": "DCR 5",
+      "printGroup": [
+        "DCR 5"
+      ],
+      "limitless": {
+        "id": 2346,
+        "url": "https://limitlesstcg.com/cards/DCR/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/5.png",
+        "large": "https://images.pokemontcg.io/dc1/5_hires.png"
+      }
+    },
+    {
+      "number": "06/34",
+      "localId": "6",
+      "name": "Team Aqua's Kyogre-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Power Saver",
+          "text": "If there are 4 or fewer Team Aqua Pokémon in play, this Pokémon can't attack.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Aqua Impact",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80+",
+          "text": "This attack does 20 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "nagimiso",
+      "secret": false,
+      "deckCode": "DCR 6",
+      "printGroup": [
+        "DCR 6"
+      ],
+      "limitless": {
+        "id": 2347,
+        "url": "https://limitlesstcg.com/cards/DCR/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/6.png",
+        "large": "https://images.pokemontcg.io/dc1/6_hires.png"
+      }
+    },
+    {
+      "number": "07/34",
+      "localId": "7",
+      "name": "Team Aqua's Grimer",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Muk"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Mud-Slap",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 88,
+        "genus": "Sludge Pokémon",
+        "height": "2'11\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "Its flexible body, which allows it to squeeze into any cracks, comes in handy when invading enemy hideouts.",
+      "secret": false,
+      "deckCode": "DCR 7",
+      "printGroup": [
+        "DCR 7"
+      ],
+      "limitless": {
+        "id": 2348,
+        "url": "https://limitlesstcg.com/cards/DCR/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/7.png",
+        "large": "https://images.pokemontcg.io/dc1/7_hires.png"
+      }
+    },
+    {
+      "number": "08/34",
+      "localId": "8",
+      "name": "Team Aqua's Muk",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Aqua's Grimer",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Sludge Festival",
+          "text": "The Retreat Cost of each Pokémon in play (except for Team Aqua Pokémon) is Colorless more.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Pester",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 89,
+        "genus": "Sludge Pokémon",
+        "height": "3'11\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "It immobilizes its opponents by wrapping them in its huge, poisonous body. It'll smoosh you, too!",
+      "secret": false,
+      "deckCode": "DCR 8",
+      "printGroup": [
+        "DCR 8"
+      ],
+      "limitless": {
+        "id": 2349,
+        "url": "https://limitlesstcg.com/cards/DCR/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/8.png",
+        "large": "https://images.pokemontcg.io/dc1/8_hires.png"
+      }
+    },
+    {
+      "number": "09/34",
+      "localId": "9",
+      "name": "Team Aqua's Seviper",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Venomous Fang",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Poisoned."
+        },
+        {
+          "name": "Venom Tail",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, discard an Energy attached to that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 336,
+        "genus": "Fang Snake Pokémon",
+        "height": "8'10\"",
+        "weight": "115.7 lbs"
+      },
+      "flavorText": "Seviper's tail is a sharp blade. It can even poison you!",
+      "secret": false,
+      "deckCode": "DCR 9",
+      "printGroup": [
+        "DCR 9"
+      ],
+      "limitless": {
+        "id": 2350,
+        "url": "https://limitlesstcg.com/cards/DCR/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/9.png",
+        "large": "https://images.pokemontcg.io/dc1/9_hires.png"
+      }
+    },
+    {
+      "number": "10/34",
+      "localId": "10",
+      "name": "Team Magma's Baltoy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Claydol"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Telekinesis",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness or Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 343,
+        "genus": "Clay Doll Pokémon",
+        "height": "1'8\"",
+        "weight": "47.4 lbs"
+      },
+      "flavorText": "They all cry out at once to let us know when they spot an enemy. It really helps out!",
+      "secret": false,
+      "deckCode": "DCR 10",
+      "printGroup": [
+        "DCR 10"
+      ],
+      "limitless": {
+        "id": 2351,
+        "url": "https://limitlesstcg.com/cards/DCR/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/10.png",
+        "large": "https://images.pokemontcg.io/dc1/10_hires.png"
+      }
+    },
+    {
+      "number": "11/34",
+      "localId": "11",
+      "name": "Team Magma's Claydol",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Magma's Baltoy",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Magma Switch",
+          "text": "Once during your turn (before your attack), you may move a basic Energy from 1 of your Pokémon to 1 of your Team Magma Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Power Beam",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 344,
+        "genus": "Clay Doll Pokémon",
+        "height": "4'11\"",
+        "weight": "238.1 lbs"
+      },
+      "flavorText": "Claydol's beam can seize opponents and keep them from moving. Long-range attacks are its specialty!",
+      "secret": false,
+      "deckCode": "DCR 11",
+      "printGroup": [
+        "DCR 11"
+      ],
+      "limitless": {
+        "id": 2352,
+        "url": "https://limitlesstcg.com/cards/DCR/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/11.png",
+        "large": "https://images.pokemontcg.io/dc1/11_hires.png"
+      }
+    },
+    {
+      "number": "12/34",
+      "localId": "12",
+      "name": "Team Magma's Aron",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Lairon"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 304,
+        "genus": "Iron Armor Pokémon",
+        "height": "1'4\"",
+        "weight": "132.3 lbs"
+      },
+      "flavorText": "Aron, which even devour metal, can eat and destroy enemy ships in an instant.",
+      "secret": false,
+      "deckCode": "DCR 12",
+      "printGroup": [
+        "DCR 12"
+      ],
+      "limitless": {
+        "id": 2353,
+        "url": "https://limitlesstcg.com/cards/DCR/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/12.png",
+        "large": "https://images.pokemontcg.io/dc1/12_hires.png"
+      }
+    },
+    {
+      "number": "13/34",
+      "localId": "13",
+      "name": "Team Magma's Lairon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Magma's Aron",
+      "evolvesTo": [
+        "Aggron"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 305,
+        "genus": "Iron Armor Pokémon",
+        "height": "2'11\"",
+        "weight": "264.6 lbs"
+      },
+      "flavorText": "When Lairon uses Take Down, the impact from its solid body is enough to destroy concrete!",
+      "secret": false,
+      "deckCode": "DCR 13",
+      "printGroup": [
+        "DCR 13"
+      ],
+      "limitless": {
+        "id": 2354,
+        "url": "https://limitlesstcg.com/cards/DCR/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/13.png",
+        "large": "https://images.pokemontcg.io/dc1/13_hires.png"
+      }
+    },
+    {
+      "number": "14/34",
+      "localId": "14",
+      "name": "Team Magma's Aggron",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Team Magma's Lairon",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Rock Stomp",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40×",
+          "text": "Discard as many Fighting Energy attached to your Pokémon as you like. This attack does 40 damage times the amount of Fighting Energy you discarded."
+        },
+        {
+          "name": "Boulder Storm",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "This attack does 20 damage to each of your opponent's Benched Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "TOKIYA",
+      "pokedex": {
+        "number": 306,
+        "genus": "Iron Armor Pokémon",
+        "height": "6'11\"",
+        "weight": "793.7 lbs"
+      },
+      "flavorText": "Aggron's metal horns can smash through any defenses, no matter how strong!",
+      "secret": false,
+      "deckCode": "DCR 14",
+      "printGroup": [
+        "DCR 14"
+      ],
+      "limitless": {
+        "id": 2355,
+        "url": "https://limitlesstcg.com/cards/DCR/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/14.png",
+        "large": "https://images.pokemontcg.io/dc1/14_hires.png"
+      }
+    },
+    {
+      "number": "15/34",
+      "localId": "15",
+      "name": "Team Magma's Groudon-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 190,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Power Saver",
+          "text": "If there are 4 or fewer Team Magma Pokémon in play, this Pokémon can't attack.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Magma Quake",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80+",
+          "text": "If your opponent's Active Pokémon already has any damage counters on it, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "nagimiso",
+      "secret": false,
+      "deckCode": "DCR 15",
+      "printGroup": [
+        "DCR 15"
+      ],
+      "limitless": {
+        "id": 2356,
+        "url": "https://limitlesstcg.com/cards/DCR/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/15.png",
+        "large": "https://images.pokemontcg.io/dc1/15_hires.png"
+      }
+    },
+    {
+      "number": "16/34",
+      "localId": "16",
+      "name": "Team Aqua's Poochyena",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Mightyena"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Roar",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 261,
+        "genus": "Bite Pokémon",
+        "height": "1'8\"",
+        "weight": "30.0 lbs"
+      },
+      "flavorText": "Poochyena can easily detect invading foes with its acute sense of smell. It's an excellent lookout!",
+      "secret": false,
+      "deckCode": "DCR 16",
+      "printGroup": [
+        "DCR 16"
+      ],
+      "limitless": {
+        "id": 2357,
+        "url": "https://limitlesstcg.com/cards/DCR/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/16.png",
+        "large": "https://images.pokemontcg.io/dc1/16_hires.png"
+      }
+    },
+    {
+      "number": "17/34",
+      "localId": "17",
+      "name": "Team Magma's Poochyena",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Mightyena"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Infiltrate",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent reveals his or her hand."
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "TOKIYA",
+      "pokedex": {
+        "number": 261,
+        "genus": "Bite Pokémon",
+        "height": "1'8\"",
+        "weight": "30.0 lbs"
+      },
+      "flavorText": "Poochyena's nose can identify any scent. It's very useful for reconnaissance.",
+      "secret": false,
+      "deckCode": "DCR 17",
+      "printGroup": [
+        "DCR 17"
+      ],
+      "limitless": {
+        "id": 2358,
+        "url": "https://limitlesstcg.com/cards/DCR/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/17.png",
+        "large": "https://images.pokemontcg.io/dc1/17_hires.png"
+      }
+    },
+    {
+      "number": "18/34",
+      "localId": "18",
+      "name": "Team Aqua's Mightyena",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Aqua's Poochyena",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Teampact",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip a coin for each Team Aqua Pokémon you have in play. This attack does 30 damage times the number of heads."
+        },
+        {
+          "name": "Crunch",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 262,
+        "genus": "Bite Pokémon",
+        "height": "3'3\"",
+        "weight": "81.6 lbs"
+      },
+      "flavorText": "Thanks to Mightyena's outstanding leadership, it's very good at combination attacks that can leave a foe helpless.",
+      "secret": false,
+      "deckCode": "DCR 18",
+      "printGroup": [
+        "DCR 18"
+      ],
+      "limitless": {
+        "id": 2359,
+        "url": "https://limitlesstcg.com/cards/DCR/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/18.png",
+        "large": "https://images.pokemontcg.io/dc1/18_hires.png"
+      }
+    },
+    {
+      "number": "19/34",
+      "localId": "19",
+      "name": "Team Magma's Mightyena",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Magma's Poochyena",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Hostile Fang",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "If your opponent's Active Pokémon is a Team Aqua Pokémon, this attack does 40 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hitoshi Ariga",
+      "pokedex": {
+        "number": 262,
+        "genus": "Bite Pokémon",
+        "height": "3'3\"",
+        "weight": "81.6 lbs"
+      },
+      "flavorText": "This Pokémon is loyal to its master. It will protect its partner to the end, no matter what.",
+      "secret": false,
+      "deckCode": "DCR 19",
+      "printGroup": [
+        "DCR 19"
+      ],
+      "limitless": {
+        "id": 2360,
+        "url": "https://limitlesstcg.com/cards/DCR/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/19.png",
+        "large": "https://images.pokemontcg.io/dc1/19_hires.png"
+      }
+    },
+    {
+      "number": "20/34",
+      "localId": "20",
+      "name": "Team Aqua's Carvanha",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sharpedo"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Fin Smack",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 318,
+        "genus": "Savage Pokémon",
+        "height": "2'7\"",
+        "weight": "45.9 lbs"
+      },
+      "flavorText": "You can't keep up with its movements underwater, can you? If you get caught in this whirlpool, there'll be no escape.",
+      "secret": false,
+      "deckCode": "DCR 20",
+      "printGroup": [
+        "DCR 20"
+      ],
+      "limitless": {
+        "id": 2361,
+        "url": "https://limitlesstcg.com/cards/DCR/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/20.png",
+        "large": "https://images.pokemontcg.io/dc1/20_hires.png"
+      }
+    },
+    {
+      "number": "21/34",
+      "localId": "21",
+      "name": "Team Aqua's Sharpedo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Team Aqua's Carvanha",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Aqua Search",
+          "text": "Once during your turn (before your attack), you may search your deck for a Team Aqua Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 319,
+        "genus": "Brutal Pokémon",
+        "height": "5'11\"",
+        "weight": "195.8 lbs"
+      },
+      "flavorText": "It boasts fangs so powerful that they knock opponents out in one shot! Enemies that slip up will be taken down without fail!",
+      "secret": false,
+      "deckCode": "DCR 21",
+      "printGroup": [
+        "DCR 21"
+      ],
+      "limitless": {
+        "id": 2362,
+        "url": "https://limitlesstcg.com/cards/DCR/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/21.png",
+        "large": "https://images.pokemontcg.io/dc1/21_hires.png"
+      }
+    },
+    {
+      "number": "22/34",
+      "localId": "22",
+      "name": "Team Magma's Zangoose",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Team Magma Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Team Play",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20×",
+          "text": "This attack does 20 damage times the number of Team Magma Pokémon on your Bench."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 335,
+        "genus": "Cat Ferret Pokémon",
+        "height": "4'3\"",
+        "weight": "88.8 lbs"
+      },
+      "flavorText": "Can you handle the formation attack of the fearless Zangoose?",
+      "secret": false,
+      "deckCode": "DCR 22",
+      "printGroup": [
+        "DCR 22"
+      ],
+      "limitless": {
+        "id": 2363,
+        "url": "https://limitlesstcg.com/cards/DCR/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/22.png",
+        "large": "https://images.pokemontcg.io/dc1/22_hires.png"
+      }
+    },
+    {
+      "number": "23/34",
+      "localId": "23",
+      "name": "Aqua Diffuser",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "The Team Aqua Pokémon this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "attacks": [
+        {
+          "name": "Aqua Diffuser",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Confused and Poisoned."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "DCR 23",
+      "printGroup": [
+        "DCR 23"
+      ],
+      "limitless": {
+        "id": 2364,
+        "url": "https://limitlesstcg.com/cards/DCR/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/23.png",
+        "large": "https://images.pokemontcg.io/dc1/23_hires.png"
+      }
+    },
+    {
+      "number": "24/34",
+      "localId": "24",
+      "name": "Magma Pointer",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "The Team Magma Pokémon this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "attacks": [
+        {
+          "name": "Magma Pointer",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "DCR 24",
+      "printGroup": [
+        "DCR 24"
+      ],
+      "limitless": {
+        "id": 2365,
+        "url": "https://limitlesstcg.com/cards/DCR/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/24.png",
+        "large": "https://images.pokemontcg.io/dc1/24_hires.png"
+      }
+    },
+    {
+      "number": "25/34",
+      "localId": "25",
+      "name": "Team Aqua Admin",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Attach a basic Energy card from your discard pile to your Active Team Aqua Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "GAME FREAK inc.",
+      "secret": false,
+      "deckCode": "DCR 25",
+      "printGroup": [
+        "DCR 25"
+      ],
+      "limitless": {
+        "id": 2366,
+        "url": "https://limitlesstcg.com/cards/DCR/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/25.png",
+        "large": "https://images.pokemontcg.io/dc1/25_hires.png"
+      }
+    },
+    {
+      "number": "26/34",
+      "localId": "26",
+      "name": "Team Aqua Grunt",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard a card from your hand. (If you can't discard a card, you can't play this card.) Draw 3 cards. If you discarded a Team Aqua Pokémon, draw 1 more card.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "GAME FREAK inc.",
+      "secret": false,
+      "deckCode": "DCR 26",
+      "printGroup": [
+        "DCR 26"
+      ],
+      "limitless": {
+        "id": 2367,
+        "url": "https://limitlesstcg.com/cards/DCR/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/26.png",
+        "large": "https://images.pokemontcg.io/dc1/26_hires.png"
+      }
+    },
+    {
+      "number": "27/34",
+      "localId": "27",
+      "name": "Team Aqua's Great Ball",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Search your deck for a Basic Team Aqua Pokémon and a basic Water Energy card, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "DCR 27",
+      "printGroup": [
+        "DCR 27"
+      ],
+      "limitless": {
+        "id": 2368,
+        "url": "https://limitlesstcg.com/cards/DCR/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/27.png",
+        "large": "https://images.pokemontcg.io/dc1/27_hires.png"
+      }
+    },
+    {
+      "number": "28/34",
+      "localId": "28",
+      "name": "Team Aqua's Secret Base",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "The Retreat Cost of each Pokémon in play (except for Team Aqua Pokémon) is Colorless more.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "DCR 28",
+      "printGroup": [
+        "DCR 28"
+      ],
+      "limitless": {
+        "id": 2369,
+        "url": "https://limitlesstcg.com/cards/DCR/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/28.png",
+        "large": "https://images.pokemontcg.io/dc1/28_hires.png"
+      }
+    },
+    {
+      "number": "29/34",
+      "localId": "29",
+      "name": "Team Magma Admin",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Put up to 3 Team Magma Pokémon from your discard pile into your hand.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "GAME FREAK inc.",
+      "secret": false,
+      "deckCode": "DCR 29",
+      "printGroup": [
+        "DCR 29"
+      ],
+      "limitless": {
+        "id": 2370,
+        "url": "https://limitlesstcg.com/cards/DCR/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/29.png",
+        "large": "https://images.pokemontcg.io/dc1/29_hires.png"
+      }
+    },
+    {
+      "number": "30/34",
+      "localId": "30",
+      "name": "Team Magma Grunt",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard a card from your hand. (If you can't discard a card, you can't play this card.) Draw 3 cards. If you discarded a Team Magma Pokémon, draw 1 more card.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "GAME FREAK inc.",
+      "secret": false,
+      "deckCode": "DCR 30",
+      "printGroup": [
+        "DCR 30"
+      ],
+      "limitless": {
+        "id": 2371,
+        "url": "https://limitlesstcg.com/cards/DCR/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/30.png",
+        "large": "https://images.pokemontcg.io/dc1/30_hires.png"
+      }
+    },
+    {
+      "number": "31/34",
+      "localId": "31",
+      "name": "Team Magma's Great Ball",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Search your deck for a Basic Team Magma Pokémon and a basic Fighting Energy card, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Toyste Beach",
+      "secret": false,
+      "deckCode": "DCR 31",
+      "printGroup": [
+        "DCR 31"
+      ],
+      "limitless": {
+        "id": 2372,
+        "url": "https://limitlesstcg.com/cards/DCR/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/31.png",
+        "large": "https://images.pokemontcg.io/dc1/31_hires.png"
+      }
+    },
+    {
+      "number": "32/34",
+      "localId": "32",
+      "name": "Team Magma's Secret Base",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Whenever any player puts a Basic Pokémon (except for Team Magma Pokémon) from his or her hand onto his or her Bench, put 2 damage counters on that Pokémon.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "DCR 32",
+      "printGroup": [
+        "DCR 32"
+      ],
+      "limitless": {
+        "id": 2373,
+        "url": "https://limitlesstcg.com/cards/DCR/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/32.png",
+        "large": "https://images.pokemontcg.io/dc1/32_hires.png"
+      }
+    },
+    {
+      "number": "33/34",
+      "localId": "33",
+      "name": "Double Aqua Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "This card can only be attached to Team Aqua Pokémon. Discard this card at the end of the turn you attached it.",
+        "This card provides WaterWater Energy only while it is attached to a Team Aqua Pokémon.",
+        "(If this card is attached to anything other than a Team Aqua Pokémon, discard this card.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DCR 33",
+      "printGroup": [
+        "DCR 33"
+      ],
+      "limitless": {
+        "id": 2374,
+        "url": "https://limitlesstcg.com/cards/DCR/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/33.png",
+        "large": "https://images.pokemontcg.io/dc1/33_hires.png"
+      }
+    },
+    {
+      "number": "34/34",
+      "localId": "34",
+      "name": "Double Magma Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "This card can only be attached to Team Magma Pokémon. Discard this card at the end of the turn you attached it.",
+        "This card provides FightingFighting Energy only while it is attached to a Team Magma Pokémon.",
+        "(If this card is attached to anything other than a Team Magma Pokémon, discard this card.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DCR 34",
+      "printGroup": [
+        "DCR 34"
+      ],
+      "limitless": {
+        "id": 2375,
+        "url": "https://limitlesstcg.com/cards/DCR/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dc1/34.png",
+        "large": "https://images.pokemontcg.io/dc1/34_hires.png"
+      }
+    }
+  ]
+}

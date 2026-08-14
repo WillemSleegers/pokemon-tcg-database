@@ -411,6 +411,67 @@ argument (`node scripts/fetch-set.mjs xy0 KSS KSS`) purely for symmetry with
 the rest of the pipeline, not because it's a subset — Limitless does host it
 under its own `KSS` page.
 
+`data/sets/DCR.json` (Double Crisis, 34 cards) closes the one gap that
+backfill left: `dc1` is an XY-series mini-set (2015/03/25, Team Magma vs Team
+Aqua) whose id doesn't match the `xy<n>` pattern the era walk enumerated, so
+it was skipped without anyone noticing. Flavor text came from pokemon-tcg-data
+directly.
+
+`dc1` was not the only one: `node scripts/missing-sets.mjs XY` (added for
+exactly this, see below) turned up `g1` on its very first run — a third
+XY-series set hidden by the same numeric walk. `data/sets/GEN.json`
+(Generations, 117 cards) is now done too, which finally does close the XY
+series. Don't take an era's "done" claim in this file at face value; run the
+script.
+
+GEN's 117 cards are its 83 numbered ones plus two alternate arts (`28a`,
+`73a`) and the 32-card **Radiant Collection** subset (`RC1`–`RC32`). Unlike
+every other subset in this database, Radiant Collection needs **neither** the
+third nor the fourth `fetch-set.mjs` argument: pokemon-tcg-data keeps it
+inside `g1` rather than splitting it out as its own set id, and its `RC<n>`
+numbers are already unique and match Limitless's own — plain
+`node scripts/fetch-set.mjs g1 GEN` is correct.
+
+Radiant Collection is the second case (after DCR, above) of flavor text that
+isn't Pokédex reuse — but unlike DCR it's *mixed*, which is the part worth
+remembering. 24 of its cards carry first-person poetic text written for the
+subset ("Wings and beaks. I like yours, and I like mine, too."), while the
+rest reuse real Pokédex entries and clear the sweep normally. So a partial
+unmatched result inside one subset is the expected outcome here — don't read
+the 24 as a systematic lookup failure. All 24 were read against their cropped
+strips and confirmed correct as printed.
+
+GEN's sweep also caught two real upstream errors in pokemon-tcg-data's
+`flavorText`, both confirmed against the card images and fixed via the
+`data/flavor-text/GEN.json` overlay: Zubat's "it emits from **it** mouth" for
+the card's "from **its** mouth", and Pinsir's "It swings its long **antlers**"
+where the card prints "its long **pincer horns**" — pokemon-tcg-data had the
+Silver-era wording while the card uses the SoulSilver/Y one, and the
+correction is a verbatim match to that entry, so both cards clear the sweep
+now. GEN's images are 733×1024, not DCR's 700×990, so the standard-width box
+works: `top=860 height=150 left=190 width=500`.
+
+Double Crisis is the first *whole set* whose flavor text isn't Pokédex reuse
+at all: every one of its 20 eligible cards prints in-character Team Magma/Team
+Aqua ops chatter ("Aron, which even devour metal, can eat and destroy enemy
+ships in an instant."), so `check-flavor-text.mjs` flags all 20 and can never
+clear any of them. Prior instances of this were one-offs inside an otherwise
+normal set (Classic Collection's Dark Gyarados, Detective Pikachu, EVO's
+`Imakuni?'s Doduo` — see "Flavor text has no structured source"); here it's
+the set's whole design. All 20 were read against their cropped strips and
+confirmed correct as printed, character for character. A 20-of-20 unmatched
+result is the expected outcome for this set — don't read it as a broken
+lookup and go hunting for a `speciesName()` fix.
+
+DCR's images are **700×990**, not the 733×1024 every other set has returned.
+`crop-flavor-text.mjs` scales the box by height alone, so a `left`/`width`
+calibrated against the reference overshoots the right edge by a few pixels and
+the script skips the entire set as "non-standard-shaped" — which looks like the
+jumbo-scan case it was written for, but isn't: these are ordinary cards at a
+slightly narrower aspect ratio. Narrowing the box is the fix, not touching the
+script. Known-good XY box at this resolution: `top=880 height=130 left=190
+width=500`.
+
 This era introduced the `BREAK` subtype (BREAKthrough onward), which prints
 no Pokédex info box or flavor text — same full-art treatment as MEGA/V/EX,
 using the space instead for "BREAK Evolution Rule" text. Confirmed against
@@ -1092,7 +1153,12 @@ The XY era (2013/11–2016/11, `xy0` through `xy12` plus `xyp` in
 the details, including two `fetch-set.mjs` bugs XYP's fetch surfaced around
 Limitless's non-canonical URL redirects, and a `BREAK`-subtype dex-box
 exclusion gap BKT surfaced). Unlike every prior era's promo set, `XYP` was
-included rather than skipped, at the user's explicit request.
+included rather than skipped, at the user's explicit request. `DCR` (dc1,
+Double Crisis) and `GEN` (g1, Generations, including its `RC1`–`RC32` Radiant
+Collection subset) were added later — two more XY-series sets the era walk
+missed because their ids aren't `xy<n>`; see Status above. 17 files across 16
+`sets/en.json` entries. Enumerate an era with
+`node scripts/missing-sets.mjs <series>`, not by a numeric range over ids.
 
 All nine English Black Star Promos sets are **done** — a fifth backfill,
 oldest first, going back for the promo sets every earlier era had skipped:
@@ -1150,8 +1216,34 @@ Two things this set turned up that weren't MEP-specific:
   MEP.json` overlay. All 26 exclusives were read against their crops; only
   this one was wrong.
 
+`data/sets/DRV.json` (Dragon Vault, 21 cards) is also **done** — `dv1`, a
+Black & White-series mini-set (2012/10/05, all Dragon-types, 21 cards against
+a `printedTotal` of 20). It was added alongside `DCR` rather than with the
+rest of its era, since both were found the same way: as `sets/en.json` ids
+that no era backfill's numeric walk would ever reach. Flavor text came from
+pokemon-tcg-data directly and its sweep flagged one card, Latias, a real
+upstream error — "Its body is covered **in** a down" where the card prints
+"covered **with** a down" (Bulbapedia's Diamond/Pearl/Platinum/Black/White
+entry agrees with the card); confirmed against the card image and fixed via
+the `data/flavor-text/DRV.json` overlay. Its 3 ineligible cards are all
+Trainers, as expected. The Black & White card template puts flavor text in a
+right-hand column, but Dragon Vault's holo cards sit further left than `BWP`'s
+box allows — `top=830 height=130 left=200 width=530` frames them.
+
 The next chronological gap is the Black & White era proper (2011/04–2013/11,
-`bw1` through `bw11` plus `dv1` Dragon Vault in `sets/en.json`, predating
-`xy0`) — unadded as of this writing; its `bwp` promos are done. As always,
+`bw1` through `bw11` in `sets/en.json`, predating `xy0`) — unadded as of this
+writing; its `bwp` promos and `dv1` Dragon Vault are done. As always,
 re-derive the actual next step from `sets/en.json` against `data/sets/`
 rather than trusting this note by the time it's acted on.
+
+`node scripts/missing-sets.mjs [series]` does that derivation — it diffs
+pokemon-tcg-data's `sets/en.json` against every `data/sets/*.json`'s stored
+`set.ptcgDataId` (not filenames; this database's codes are Limitless's and
+deliberately don't track pokemon-tcg-data's ids) and prints what's missing,
+grouped by `series`, oldest first. Use it instead of walking a numeric id
+range: a numeric walk is what hid `dc1`, `dv1` and `g1` through five
+backfills, and the first run of this script found `g1` immediately — after
+`dc1` and `dv1` had already been added and the XY series declared done a
+second time. 82 sets are missing as of this writing — the Black & White era
+proper, everything older than it (HGSS, Call of Legends, and back), and eight
+more McDonald's collections.

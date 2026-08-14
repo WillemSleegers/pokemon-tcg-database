@@ -1,0 +1,1333 @@
+{
+  "set": {
+    "code": "DRV",
+    "ptcgDataId": "dv1",
+    "name": "Dragon Vault",
+    "series": "Black & White",
+    "printedTotal": 20,
+    "secretTotal": 1,
+    "total": 21,
+    "releaseDate": "2012-10-05",
+    "copyright": "©2012 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/dv1/symbol.png",
+      "logo": "https://images.pokemontcg.io/dv1/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/20",
+      "localId": "1",
+      "name": "Dratini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragonair"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Wrap",
+          "cost": [
+            "Grass",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 147,
+        "genus": "Dragon Pokémon",
+        "height": "5'11\"",
+        "weight": "7.3 lbs"
+      },
+      "flavorText": "It is called the \"Mirage Pokémon\" because so few have seen it. Its shed skin has been found.",
+      "secret": false,
+      "deckCode": "DRV 1",
+      "printGroup": [
+        "DRV 1"
+      ],
+      "limitless": {
+        "id": 631,
+        "url": "https://limitlesstcg.com/cards/DRV/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/1.png",
+        "large": "https://images.pokemontcg.io/dv1/1_hires.png"
+      }
+    },
+    {
+      "number": "02/20",
+      "localId": "2",
+      "name": "Dratini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dragonair"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Hypnotic Gaze",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Tail Whap",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 147,
+        "genus": "Dragon Pokémon",
+        "height": "5'11\"",
+        "weight": "7.3 lbs"
+      },
+      "flavorText": "It is called the \"Mirage Pokémon\" because so few have seen it. Its shed skin has been found.",
+      "secret": false,
+      "deckCode": "DRV 2",
+      "printGroup": [
+        "DRV 2"
+      ],
+      "limitless": {
+        "id": 632,
+        "url": "https://limitlesstcg.com/cards/DRV/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/2.png",
+        "large": "https://images.pokemontcg.io/dv1/2_hires.png"
+      }
+    },
+    {
+      "number": "03/20",
+      "localId": "3",
+      "name": "Dragonair",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Dratini",
+      "evolvesTo": [
+        "Dragonite"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tail Whap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Grass",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Discard the top card of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Hajime Kusajima",
+      "pokedex": {
+        "number": 148,
+        "genus": "Dragon Pokémon",
+        "height": "13'1\"",
+        "weight": "36.4 lbs"
+      },
+      "flavorText": "If its body takes on an aura, the weather changes instantly. It is said to live in seas and lakes.",
+      "secret": false,
+      "deckCode": "DRV 3",
+      "printGroup": [
+        "DRV 3"
+      ],
+      "limitless": {
+        "id": 633,
+        "url": "https://limitlesstcg.com/cards/DRV/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/3.png",
+        "large": "https://images.pokemontcg.io/dv1/3_hires.png"
+      }
+    },
+    {
+      "number": "04/20",
+      "localId": "4",
+      "name": "Dragonair",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Dratini",
+      "evolvesTo": [
+        "Dragonite"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Healing Melody",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 10 damage from each of your Pokémon."
+        },
+        {
+          "name": "Slam",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 148,
+        "genus": "Dragon Pokémon",
+        "height": "13'1\"",
+        "weight": "36.4 lbs"
+      },
+      "flavorText": "If its body takes on an aura, the weather changes instantly. It is said to live in seas and lakes.",
+      "secret": false,
+      "deckCode": "DRV 4",
+      "printGroup": [
+        "DRV 4"
+      ],
+      "limitless": {
+        "id": 634,
+        "url": "https://limitlesstcg.com/cards/DRV/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/4.png",
+        "large": "https://images.pokemontcg.io/dv1/4_hires.png"
+      }
+    },
+    {
+      "number": "05/20",
+      "localId": "5",
+      "name": "Dragonite",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Dragonair",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Hyper Beam",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Flip a coin. If heads, discard an Energy attached to the Defending Pokémon."
+        },
+        {
+          "name": "Hurricane Tail",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60×",
+          "text": "Flip 4 coins. This attack does 60 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 149,
+        "genus": "Dragon Pokémon",
+        "height": "7'3\"",
+        "weight": "463.0 lbs"
+      },
+      "flavorText": "It is said to make its home somewhere in the sea. It guides crews of shipwrecks to shore.",
+      "secret": false,
+      "deckCode": "DRV 5",
+      "printGroup": [
+        "DRV 5"
+      ],
+      "limitless": {
+        "id": 635,
+        "url": "https://limitlesstcg.com/cards/DRV/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/5.png",
+        "large": "https://images.pokemontcg.io/dv1/5_hires.png"
+      }
+    },
+    {
+      "number": "06/20",
+      "localId": "6",
+      "name": "Bagon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Shelgon"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Fire",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 371,
+        "genus": "Rock Head Pokémon",
+        "height": "2'0\"",
+        "weight": "92.8 lbs"
+      },
+      "flavorText": "Dreaming of one day flying, it practices by leaping off cliffs every day.",
+      "secret": false,
+      "deckCode": "DRV 6",
+      "printGroup": [
+        "DRV 6",
+        "PLB 62"
+      ],
+      "limitless": {
+        "id": 636,
+        "url": "https://limitlesstcg.com/cards/DRV/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/6.png",
+        "large": "https://images.pokemontcg.io/dv1/6_hires.png"
+      }
+    },
+    {
+      "number": "07/20",
+      "localId": "7",
+      "name": "Shelgon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Bagon",
+      "evolvesTo": [
+        "Salamence"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Knock Away",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        },
+        {
+          "name": "Rollout",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 372,
+        "genus": "Endurance Pokémon",
+        "height": "3'7\"",
+        "weight": "243.6 lbs"
+      },
+      "flavorText": "Within its rugged shell, its cells have begun changing. The shell peels off the instant it evolves.",
+      "secret": false,
+      "deckCode": "DRV 7",
+      "printGroup": [
+        "DRV 7",
+        "PLB 63"
+      ],
+      "limitless": {
+        "id": 637,
+        "url": "https://limitlesstcg.com/cards/DRV/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/7.png",
+        "large": "https://images.pokemontcg.io/dv1/7_hires.png"
+      }
+    },
+    {
+      "number": "08/20",
+      "localId": "8",
+      "name": "Salamence",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Shelgon",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 140,
+      "abilities": [
+        {
+          "name": "Scornful Storm",
+          "text": "Once during your turn (before your attack), you may have your opponent discard cards from his or her hand until he or she has 4 cards left in his or her hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Shred",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "90",
+          "text": "This attack's damage isn't affected by any effects on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "BERUBURI",
+      "pokedex": {
+        "number": 373,
+        "genus": "Dragon Pokémon",
+        "height": "4'11\"",
+        "weight": "226.2 lbs"
+      },
+      "flavorText": "As a result of its long-held dream of flying, its cellular structure changed, and wings grew out.",
+      "secret": false,
+      "deckCode": "DRV 8",
+      "printGroup": [
+        "DRV 8"
+      ],
+      "limitless": {
+        "id": 638,
+        "url": "https://limitlesstcg.com/cards/DRV/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/8.png",
+        "large": "https://images.pokemontcg.io/dv1/8_hires.png"
+      }
+    },
+    {
+      "number": "09/20",
+      "localId": "9",
+      "name": "Latias",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Energy Assist",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach a basic Energy card from your discard pile to 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Sky Heal",
+          "cost": [
+            "Fire",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "If Latios is on your Bench, heal 20 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Hideaki Hakozaki",
+      "pokedex": {
+        "number": 380,
+        "genus": "Eon Pokémon",
+        "height": "4'7\"",
+        "weight": "88.2 lbs"
+      },
+      "flavorText": "Its body is covered with a down that can refract light in such a way that it becomes invisible.",
+      "secret": false,
+      "deckCode": "DRV 9",
+      "printGroup": [
+        "DRV 9"
+      ],
+      "limitless": {
+        "id": 639,
+        "url": "https://limitlesstcg.com/cards/DRV/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/9.png",
+        "large": "https://images.pokemontcg.io/dv1/9_hires.png"
+      }
+    },
+    {
+      "number": "10/20",
+      "localId": "10",
+      "name": "Latios",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Sky Blade",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If Latias is on your Bench, this attack does 20 more damage."
+        },
+        {
+          "name": "Speed Wing",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ryo Ueda",
+      "pokedex": {
+        "number": 381,
+        "genus": "Eon Pokémon",
+        "height": "6'7\"",
+        "weight": "132.3 lbs"
+      },
+      "flavorText": "A highly intelligent Pokémon. By folding back its wings in flight, it can overtake jet planes.",
+      "secret": false,
+      "deckCode": "DRV 10",
+      "printGroup": [
+        "DRV 10"
+      ],
+      "limitless": {
+        "id": 640,
+        "url": "https://limitlesstcg.com/cards/DRV/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/10.png",
+        "large": "https://images.pokemontcg.io/dv1/10_hires.png"
+      }
+    },
+    {
+      "number": "11/20",
+      "localId": "11",
+      "name": "Rayquaza",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "Discard the top 2 cards of your deck."
+        },
+        {
+          "name": "Shred",
+          "cost": [
+            "Fire",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "This attack's damage isn't affected by any effects on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 384,
+        "genus": "Sky High Pokémon",
+        "height": "23'0\"",
+        "weight": "455.3 lbs"
+      },
+      "flavorText": "It lives in the ozone layer far above the clouds and cannot be seen from the ground.",
+      "secret": false,
+      "deckCode": "DRV 11",
+      "printGroup": [
+        "DRV 11",
+        "DRX 128",
+        "LTR 93"
+      ],
+      "limitless": {
+        "id": 641,
+        "url": "https://limitlesstcg.com/cards/DRV/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/11.png",
+        "large": "https://images.pokemontcg.io/dv1/11_hires.png"
+      }
+    },
+    {
+      "number": "12/20",
+      "localId": "12",
+      "name": "Axew",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Fraxure"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Signs of Evolution",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, search your deck for Fraxure, reveal it, and put it into your hand, Shuffle your deck afterward."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 610,
+        "genus": "Tusk Pokémon",
+        "height": "2'0\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "They use their tusks to crush the berries they eat. Repeated regrowth makes their tusks strong and sharp.",
+      "secret": false,
+      "deckCode": "DRV 12",
+      "printGroup": [
+        "DRV 12"
+      ],
+      "limitless": {
+        "id": 642,
+        "url": "https://limitlesstcg.com/cards/DRV/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/12.png",
+        "large": "https://images.pokemontcg.io/dv1/12_hires.png"
+      }
+    },
+    {
+      "number": "13/20",
+      "localId": "13",
+      "name": "Axew",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Fraxure"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Lunge",
+          "cost": [
+            "Fighting",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "TOKIYA",
+      "pokedex": {
+        "number": 610,
+        "genus": "Tusk Pokémon",
+        "height": "2'0\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "They mark their territory by leaving gashes in trees with their tusks. If a tusk breaks, a new one grows in quickly.",
+      "secret": false,
+      "deckCode": "DRV 13",
+      "printGroup": [
+        "DRV 13"
+      ],
+      "limitless": {
+        "id": 643,
+        "url": "https://limitlesstcg.com/cards/DRV/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/13.png",
+        "large": "https://images.pokemontcg.io/dv1/13_hires.png"
+      }
+    },
+    {
+      "number": "14/20",
+      "localId": "14",
+      "name": "Fraxure",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Axew",
+      "evolvesTo": [
+        "Haxorus"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Grit",
+          "text": "If this Pokémon is affected by a Special Condition, each of its attacks does 40 more damage (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Fighting",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 611,
+        "genus": "Axe Jaw Pokémon",
+        "height": "3'3\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "Since a broken tusk will not grow back, they diligently sharpen their tusks on river rocks after they've been fighting.",
+      "secret": false,
+      "deckCode": "DRV 14",
+      "printGroup": [
+        "DRV 14"
+      ],
+      "limitless": {
+        "id": 644,
+        "url": "https://limitlesstcg.com/cards/DRV/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/14.png",
+        "large": "https://images.pokemontcg.io/dv1/14_hires.png"
+      }
+    },
+    {
+      "number": "15/20",
+      "localId": "15",
+      "name": "Fraxure",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Axew",
+      "evolvesTo": [
+        "Haxorus"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "match",
+      "pokedex": {
+        "number": 611,
+        "genus": "Axe Jaw Pokémon",
+        "height": "3'3\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "Their tusks can shatter rocks. Territory battles between Fraxure can be intensely violent.",
+      "secret": false,
+      "deckCode": "DRV 15",
+      "printGroup": [
+        "DRV 15"
+      ],
+      "limitless": {
+        "id": 645,
+        "url": "https://limitlesstcg.com/cards/DRV/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/15.png",
+        "large": "https://images.pokemontcg.io/dv1/15_hires.png"
+      }
+    },
+    {
+      "number": "16/20",
+      "localId": "16",
+      "name": "Haxorus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Fraxure",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Axe Slugger",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60+",
+          "text": "If the Defending Pokémon is a Colorless Pokémon, this attack does 60 more damage."
+        },
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Fighting",
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": "Discard the top card of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Eske Yoshinob",
+      "pokedex": {
+        "number": 612,
+        "genus": "Axe Jaw Pokémon",
+        "height": "5'11\"",
+        "weight": "232.6 lbs"
+      },
+      "flavorText": "They are kind but can be relentless when defending territory. They challenge foes with tusks that can cut steel.",
+      "secret": false,
+      "deckCode": "DRV 16",
+      "printGroup": [
+        "DRV 16"
+      ],
+      "limitless": {
+        "id": 646,
+        "url": "https://limitlesstcg.com/cards/DRV/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/16.png",
+        "large": "https://images.pokemontcg.io/dv1/16_hires.png"
+      }
+    },
+    {
+      "number": "17/20",
+      "localId": "17",
+      "name": "Druddigon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Dragon Tail",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80×",
+          "text": "Flip 2 coins. This attack does 80 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 621,
+        "genus": "Cave Pokémon",
+        "height": "5'3\"",
+        "weight": "306.4 lbs"
+      },
+      "flavorText": "It races through narrow caves, using its sharp claws to catch prey. The skin on its face is harder than a rock.",
+      "secret": false,
+      "deckCode": "DRV 17",
+      "printGroup": [
+        "DRV 17"
+      ],
+      "limitless": {
+        "id": 647,
+        "url": "https://limitlesstcg.com/cards/DRV/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/17.png",
+        "large": "https://images.pokemontcg.io/dv1/17_hires.png"
+      }
+    },
+    {
+      "number": "18/20",
+      "localId": "18",
+      "name": "Exp. Share",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "When your Active Pokémon is Knocked Out by damage from an opponent's attack, you may move 1 basic Energy card that was attached to that Pokémon to the Pokémon this card is attached to.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "DRV 18",
+      "printGroup": [
+        "BST 126",
+        "BST 180",
+        "DRV 18",
+        "NXD 87",
+        "PRC 128",
+        "SUM 118",
+        "SVI 174"
+      ],
+      "limitless": {
+        "id": 648,
+        "url": "https://limitlesstcg.com/cards/DRV/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/18.png",
+        "large": "https://images.pokemontcg.io/dv1/18_hires.png"
+      }
+    },
+    {
+      "number": "19/20",
+      "localId": "19",
+      "name": "First Ticket",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Before you flip a coin to decide who goes first in a game, you may play this card. Don't flip that coin, and you go first. If both players play First Ticket, flip the coin as normal. (You may play only 1 First Ticket before you flip that coin.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRV 19",
+      "printGroup": [
+        "DRV 19"
+      ],
+      "limitless": {
+        "id": 649,
+        "url": "https://limitlesstcg.com/cards/DRV/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/19.png",
+        "large": "https://images.pokemontcg.io/dv1/19_hires.png"
+      }
+    },
+    {
+      "number": "20/20",
+      "localId": "20",
+      "name": "Super Rod",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Shuffle 3 in any combination of Pokémon and basic Energy cards from your discard pile back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "deckCode": "DRV 20",
+      "printGroup": [
+        "BKT 149",
+        "DRV 20",
+        "N1 103",
+        "NVI 95",
+        "PAL 188",
+        "PAL 276"
+      ],
+      "limitless": {
+        "id": 650,
+        "url": "https://limitlesstcg.com/cards/DRV/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/20.png",
+        "large": "https://images.pokemontcg.io/dv1/20_hires.png"
+      }
+    },
+    {
+      "number": "21/20",
+      "localId": "21",
+      "name": "Kyurem",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Dragon Claw",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        },
+        {
+          "name": "Blizzard",
+          "cost": [
+            "Water",
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "90",
+          "text": "Does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Dragon",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "artist": "Ryo Ueda",
+      "pokedex": {
+        "number": 646,
+        "genus": "Boundary Pokémon",
+        "height": "9'10\"",
+        "weight": "716.5 lbs"
+      },
+      "flavorText": "It can produce ultracold air. Its body is frozen.",
+      "secret": true,
+      "deckCode": "DRV 21",
+      "printGroup": [
+        "DRV 21"
+      ],
+      "limitless": {
+        "id": 651,
+        "url": "https://limitlesstcg.com/cards/DRV/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dv1/21.png",
+        "large": "https://images.pokemontcg.io/dv1/21_hires.png"
+      }
+    }
+  ]
+}
