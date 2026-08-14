@@ -116,7 +116,30 @@ Evolution series; they'd been skipped over when MEG et al. were added and were c
 by re-checking pokemon-tcg-data's `sets/en.json` from scratch rather than assuming
 Mega Evolution was next. Both had full `flavorText` coverage direct from
 pokemon-tcg-data, and both verification sweeps came back clean on the first pass —
-no upstream errors, no lookup bugs. `data/sets/SSH.json` (Sword & Shield base set,
+no upstream errors, no lookup bugs.
+
+BLK's original fetch silently produced a duplicate: pokemon-tcg-data's own record
+for Antique Cover Fossil (`id: zsv10pt5-80`, images pointing at `80.png`) carries a
+wrong `number` field of `"60"` — the same slot as Escavalier — along with Escavalier's
+own `artist` ("DOM") and `flavorText` copy-pasted onto it too. `fetch-set.mjs` trusted
+`number` as `localId` with no duplicate check at the time, so Antique Cover Fossil
+silently overwrote Escavalier's entry at localId 60 and BLK 80 went missing entirely
+— the set still counted 172 cards (masking the loss) because pokemon-tcg-data's own
+card list was one entry short of Limitless's, not because a card had vanished after
+fetching correctly. Caught only by the user directly comparing the stored data against
+the card images. Confirmed against both images (`.local` cache): Escavalier's stored
+data (060/086, DOM, the flavor text) is entirely correct; Antique Cover Fossil is
+080/086, illustrated by AYUMI ODASHIMA, and prints no flavor text at all (a Fossil
+Trainer card, not a Pokédex reuse — same "no room left" category as DPP's Porygon-Z).
+Fixed by hand-correcting the entry directly in `data/sets/BLK.json` (localId, number,
+artist, dropping the bogus `flavorText`, and re-scraping the correct Limitless
+id/url/printGroup from `limitlesstcg.com/cards/BLK/80`) — the same precedent as
+Classic Collection's two hand-fixed e-Card-era cards (see below): a one-off upstream
+data bug on an already-completed set, not worth a new overlay mechanism. Also fixed
+`fetch-set.mjs` itself: it now throws on any duplicate `number` across `primaryCards`
+(exempting `sequentialPrefix` sets, which are expected to have non-unique `number`),
+so a future occurrence of this exact upstream bug fails loudly instead of silently
+clobbering a card. `data/sets/SSH.json` (Sword & Shield base set,
 202 cards) is also complete — the first Sword & Shield-era set added, and the first
 set in this database with V/VMAX cards. Its flavor text came from pokemon-tcg-data
 directly. Fetching it surfaced a real bug in `fetch-set.mjs`: the pokedex-info-box

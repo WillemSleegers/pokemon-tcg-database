@@ -859,19 +859,34 @@ async function main() {
       trainerEffectsByLocalId = fill.trainerEffectsByLocalId
       for (const card of fill.cards) fallbackLocalIds.add(card.number)
       primaryCards = [...primaryCards, ...fill.cards]
-      const ids = primaryCards.map((c) => c.number)
-      const duplicates = ids.filter((id, i) => ids.indexOf(id) !== i)
-      if (duplicates.length) {
-        throw new Error(
-          `--fill-from-limitless produced duplicate card ids: ${[...new Set(duplicates)].join(", ")}\n` +
-            `Limitless numbers these differently from pokemon-tcg-data; check toLimitlessLocalId().`,
-        )
-      }
       // sets/en.json's own total counts what pokemon-tcg-data has, which is the
       // number this run just went past. printedTotal is the number printed on
       // the cards and stays as-is (a promo set's is a denominator that stopped
       // matching reality long ago — svp prints "/102" on card 165).
       setMeta = { ...setMeta, total: primaryCards.length }
+    }
+  }
+  // A set with a genuinely non-unique/non-sequential `number` field (Classic
+  // Collection's throwback reprints) needs the <sequentialPrefix> argument,
+  // which overrides `number` entirely (see below) — so it's exempt from this
+  // check. Every other set's `number` is supposed to be unique, and a
+  // duplicate here means one card's data will silently overwrite another's at
+  // the same localId. Found in BLK: pokemon-tcg-data's own Antique Cover
+  // Fossil record has `id: zsv10pt5-80` and images pointing at 80.png, but its
+  // `number` field wrongly says "60" — the same slot as Escavalier — so it
+  // clobbered Escavalier's entry and left 80 missing. Also catches
+  // --fill-from-limitless combining fill.cards with primaryCards under a
+  // mismatched id (Limitless numbers a card differently than pokemon-tcg-data
+  // expected; check toLimitlessLocalId()).
+  if (!sequentialPrefix) {
+    const ids = primaryCards.map((c) => c.number)
+    const duplicates = [...new Set(ids.filter((id, i) => ids.indexOf(id) !== i))]
+    if (duplicates.length) {
+      throw new Error(
+        `duplicate card number(s) in source data: ${duplicates.join(", ")}\n` +
+          `Check each duplicate's "id"/"images" fields against its "number" field — a wrong ` +
+          `"number" silently overwrites one card with another at the same localId.`,
+      )
     }
   }
   const sourceMismatches = []
