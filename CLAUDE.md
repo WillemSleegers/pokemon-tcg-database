@@ -642,6 +642,61 @@ bare number in the base set. The title comparison spells out the rarity glyphs
 where Limitless writes the word — `"Greninja ★"` vs `"Greninja Star"`, which is
 what made `swshp`'s SWSH144 look absent when it isn't.
 
+### Sets pokemon-tcg-data doesn't have
+
+pokemon-tcg-data is the primary source for everything else in this database,
+but it doesn't have every set — it has no `mep` entry at all, and there's no
+reason to assume it'll have the next promo set either. Pass `"NONE"` as
+`<ptcgDataSetId>` for that case: `node scripts/fetch-set.mjs NONE MEP`.
+
+Nothing downstream of the fetch changes — the mode's whole job is to assemble
+the same `PrimaryCard[]` that pokemon-tcg-data would have provided, so
+overlays, `deckCode`, print groups and the Pokédex box stay one code path:
+
+- **Card list** from the Limitless set page. That's also the scope decision:
+  a card Limitless doesn't catalogue has no `deckCode` or `printGroup` to
+  record, so it isn't in the set as far as this database is concerned.
+- **Game text for reprints** from `data/sets/` — any card whose stored
+  `printGroup` names this set. A shared print group *means* identical game
+  text, so this is pokemon-tcg-data's own text, already verified when that set
+  was added. It found 53 of MEP's 79 cards, because Limitless's prints table
+  is full history and the earlier sets' fetches had already recorded the MEP
+  print.
+- **Game text for set-exclusives** from Bulbapedia's card page for that print,
+  parsed by `scripts/lib/bulbapedia-card.mjs`. Note a reprint's promo page is
+  a `#REDIRECT` to the original print's page — that's why the reprint lookup
+  has to come first, and why the fetcher raises on a redirect rather than
+  parsing whatever page it lands on.
+- **Set metadata** from `data/set-meta/<CODE>.json`, since there's no
+  `sets/en.json` entry to read it from. These are judgement calls, not
+  lookups: an ongoing promo set has no real `printedTotal` (MEP uses 88, its
+  highest printed number, which also makes `secret` correctly false for every
+  card), and `numberPad` records that a promo prints a bare padded number
+  ("MEP 046") with no denominator. `set.ptcgDataId` is `null` for these sets.
+- **`regulationMark` and `images`** always come off the card's own Limitless
+  page, never from the reprint source — a promo reprint has its own artwork
+  (often a different illustrator) and can carry a different regulation mark.
+
+Every assembled card is then checked field by field against its Limitless
+page — name, HP, types, stage, evolvesFrom, weakness/resistance, retreat,
+attack names/costs/damage, ability names — and **the run fails on any
+disagreement**. That check is the point: Limitless is a different party
+transcribing the same physical card, so agreement is real evidence, where a
+single source quietly disagreeing with the card is the exact failure mode
+every promo backfill turned up. Free text (attack effects, Trainer rules)
+is deliberately not compared — Limitless writes energy symbols as `[G]` where
+this database spells out `Grass`, so it would be all false alarms.
+
+If you touch this mode, re-prove the check still fires (corrupt an HP, an
+attack cost and an ability name, confirm all three are caught) before trusting
+a clean run. A validator that never fires looks exactly like a clean set.
+
+One thing the Limitless cross-check *can't* settle is which of several
+Bulbapedia `{{TCGTrainerText}}` blocks a Trainer print uses — a card
+reprinted across eras has one per wording. There the comparison is the
+resolution: the block whose text matches Limitless's is the one this print
+shows (MEP's Celebratory Fanfare has both a SWSH-era and a SV-era wording).
+
 ### `data/no-pokedex/<CODE>.json` — cards that print no dex info box
 
 `fetch-set.mjs` decides whether to attach the Pokédex info box from the card's
@@ -756,6 +811,16 @@ is for the user typing text in by hand; this script is for verification, which i
 separate concern. Both share the actual Bulbapedia fetching/parsing logic
 (`speciesName`, `normalize`, `parseDexEntries`, `fetchFlavorCandidates`) from
 `scripts/lib/bulbapedia.mjs` rather than duplicating it.
+
+**A clean sweep only means something when the text and the check came from
+different places.** This script compares against Bulbapedia, so for text that
+was itself sourced from Bulbapedia (the set-exclusive cards in a `"NONE"`
+`<ptcgDataSetId>` run — see "Sets pokemon-tcg-data doesn't have" above) it's
+checking a source against itself and will pass regardless. Read those cards'
+cropped strips against the stored text instead; that's how MEP's Cottonee was
+caught after sweeping clean. Text from pokemon-tcg-data — every other set —
+is genuinely independent of Bulbapedia, so a clean sweep there is real
+evidence.
 
 A card the script flags isn't automatically wrong — check it against the actual card
 image (`.local/card-images-cropped/<CODE>/<localId>.png`, or crop it if not already
@@ -1039,6 +1104,51 @@ and the crop boxes for the pre-Sun & Moon card templates. The three
 "ongoing" ones (`smp`/`swshp`/`svp`) are snapshots: pokemon-tcg-data keeps
 adding to them, and its card counts already exceed what `sets/en.json`
 advertises, so re-fetching them periodically is expected.
+
+`data/sets/MEP.json` (MEP Black Star Promos, 79 cards) is also **done** — the
+Mega Evolution era's promo set, and the first set in this database that
+**pokemon-tcg-data doesn't carry at all** (no `mep` in `sets/en.json`, no
+`cards/en/mep.json`; checked directly, not assumed). TCGdex does have a `mep`
+set but a thin one — 60 of the 79 cards, no image URLs, and no weakness data
+on the first ~45 — so it isn't used. Instead `fetch-set.mjs` gained a `"NONE"`
+`<ptcgDataSetId>` mode (see "Sets pokemon-tcg-data doesn't have" above): the
+card list comes from Limitless, and game text from either the card's existing
+print elsewhere in `data/sets/` (53 of the 79 are reprints — found via the
+stored `printGroup` cross-references, which already pointed at MEP because
+Limitless's prints table is always full history) or, for the 26
+set-exclusives, from Bulbapedia's own card page for that print. Every card is
+then cross-checked field by field against its Limitless page, which came back
+clean on the first pass; the check itself was proven non-vacuous by
+deliberately corrupting an HP, an attack cost and an ability name and
+confirming all three were caught.
+
+Scope is Limitless's 79 cards (`1`–`54`, `64`–`88`). Bulbapedia lists more
+(`55`–`63` and `89`–`107`+, an ongoing set), but those have no Limitless page
+and so no `deckCode`, `printGroup`, or images — the same reason this database
+takes Limitless as the authority on set membership everywhere else. Expect to
+re-fetch as the set grows, same as `SMP`/`SP`/`SVP`.
+
+Two things this set turned up that weren't MEP-specific:
+
+- **`pokedex` is no longer a reliable proxy for "has flavor text."** Until MEP
+  the two went together, so `check-flavor-text.mjs`, `crop-flavor-text.mjs`,
+  `flavor-text-coverage.mjs` and the editor all filtered on `c.pokedex`. MEP's
+  18 First Partner Illustration Collection cards (`37`–`54`) are full-art:
+  they print flavor text with **no dex line above it** (confirmed against the
+  card images, and matching Bulbapedia's own empty `ndex=` for them). All four
+  filters now take `c.pokedex || c.flavorText`, which changes nothing for any
+  existing set but stops silently skipping 18 of MEP's 61 flavor-text cards.
+- **A verification sweep against the same source the text came from proves
+  nothing.** The 26 exclusives' flavor text came from Bulbapedia, and
+  `check-flavor-text.mjs` compares against Bulbapedia — so all 61 "matched" on
+  the first pass while Cottonee (`18`) was in fact wrong. Reading the cropped
+  strips caught it: the card prints "light and airy—altogether top quality."
+  and Bulbapedia's card page had transcribed the *Scarlet* entry's wording,
+  which has a stray space after the em dash (the same line-wrap artifact
+  category as PAR's Bounsweet and PAF's Magmortar). The card actually matches
+  Bulbapedia's **Moon** entry verbatim; fixed via the `data/flavor-text/
+  MEP.json` overlay. All 26 exclusives were read against their crops; only
+  this one was wrong.
 
 The next chronological gap is the Black & White era proper (2011/04–2013/11,
 `bw1` through `bw11` plus `dv1` Dragon Vault in `sets/en.json`, predating

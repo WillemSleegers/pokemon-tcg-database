@@ -28,9 +28,12 @@ try {
   process.exit(1)
 }
 
-// Only regular (non-ex/non-MEGA) Pokémon print the flavor text box — same
-// criterion fetch-set.mjs uses for the pokedex info box.
-const eligible = setData.cards.filter((c) => c.pokedex)
+// Only regular (non-ex/non-MEGA) Pokémon print the flavor text box — mostly the
+// same criterion fetch-set.mjs uses for the pokedex info box, but not quite:
+// a full-art card can print flavor text with no dex line above it (MEP's First
+// Partner Illustration Collection cards do), so take either field as a reason
+// to include the card.
+const eligible = setData.cards.filter((c) => c.pokedex || c.flavorText)
 const withText = eligible.filter((c) => c.flavorText)
 
 console.log(`${setCode}: ${withText.length}/${eligible.length} eligible cards have flavorText`)

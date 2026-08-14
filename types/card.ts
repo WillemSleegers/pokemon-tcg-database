@@ -11,7 +11,9 @@ export interface CardSet {
 
 export interface SetMeta {
   code: string // this repo's set code, e.g. "MEG" — matches limitlessCode
-  ptcgDataId: string // this set's id in pokemon-tcg-data, e.g. "me1"
+  // This set's id in pokemon-tcg-data, e.g. "me1" — null for a set
+  // pokemon-tcg-data doesn't carry at all (see fetch-set.mjs's "NONE" mode).
+  ptcgDataId: string | null
   name: string
   series: string
   printedTotal: number // cards with localId above this number are secret rares

@@ -85,7 +85,12 @@ export function normalize(s) {
 // all), keyed by species name rather than dex number since a dex number is
 // shared by a Pokémon and its MEGA/ex evolutions, which don't get their own
 // Bulbapedia species page.
-function cleanDexEntry(s) {
+// Exported because Bulbapedia's TCG *card* pages (parsed by bulbapedia-card.mjs
+// for sets pokemon-tcg-data doesn't carry at all) write attack and Trainer
+// effect text in the same wikitext dialect as these Pokédex entries — same
+// {{p|...}}/[[link]]/''italics'' markup, same need to render it down to the
+// plain text actually printed on the card.
+export function cleanDexEntry(s) {
   return s
     // Editor notes left in the wikitext as HTML comments render to nothing on
     // the page, but were leaking into the compared text — Glaceon's Ultra Sun
@@ -109,6 +114,11 @@ function cleanDexEntry(s) {
     // {{wp|Article}}/{{wp|Article|Display}} links out to real-world Wikipedia
     // (e.g. {{wp|dravite}}) — same shape as {{p|...}}, just a different target.
     .replace(/\{\{wp\|([^|}]+)(?:\|([^|}]+))?\}\}/gi, (_, name, display) => display || name)
+    // {{TCG|Confused}}/{{TCG|Energy card|Energy}} links a TCG glossary term.
+    // Same shape again — the printed card just says the word. Only reached via
+    // bulbapedia-card.mjs (attack and Trainer effect text); Pokédex entries
+    // don't use it.
+    .replace(/\{\{TCG\|([^|}]+)(?:\|([^|}]+))?\}\}/g, (_, name, display) => display || name)
     .replace(/<sc>(.*?)<\/sc>/g, (_, name) => name)
     .replace(/<small>[\s\S]*?<\/small>/g, "")
     .replace(/<br\s*\/?>/gi, " ")
@@ -131,7 +141,7 @@ function cleanDexEntry(s) {
 // `|` only — entries often contain nested templates of their own
 // ({{ScPkmn}}, {{tt|*|...}}) and piped wiki-links ([[Sinnoh myths|myths]]),
 // whose internal `|` must not be split on.
-function splitTemplateParams(inner) {
+export function splitTemplateParams(inner) {
   const params = []
   let depth = 0
   let current = ""
@@ -155,12 +165,16 @@ function splitTemplateParams(inner) {
   return params
 }
 
-// Finds each {{Dex/EntryN ...}} template by counting brace depth rather than
-// a regex, since entries routinely contain nested templates themselves — a
-// regex that excludes braces from the match body silently drops those.
-function extractDexEntryTemplates(wikitext) {
+// Finds each {{<startRe> ...}} template by counting brace depth rather than
+// a regex, since template bodies routinely contain nested templates
+// themselves — a regex that excludes braces from the match body silently
+// drops those. Returns each match's inner text (the outer braces stripped).
+//
+// Exported for bulbapedia-card.mjs, which pulls the same shape of template
+// ({{PokémoncardInfobox ...}}, {{Cardtext/Attack ...}}) off TCG card pages;
+// startRe must be a /g regex matching the opening "{{" plus template name.
+export function extractTemplates(wikitext, startRe) {
   const templates = []
-  const startRe = /\{\{Dex\/Entry\d/g
   let m
   while ((m = startRe.exec(wikitext))) {
     let depth = 0
@@ -185,7 +199,7 @@ function extractDexEntryTemplates(wikitext) {
 
 export function parseDexEntries(wikitext) {
   const entries = []
-  for (const inner of extractDexEntryTemplates(wikitext)) {
+  for (const inner of extractTemplates(wikitext, /\{\{Dex\/Entry\d/g)) {
     const params = splitTemplateParams(inner).slice(1) // drop "Dex/EntryN" name
     const versions = params.filter((p) => /^v\d?=/.test(p)).map((p) => p.replace(/^v\d?=/, "").trim())
     const entryParam = params.find((p) => /^entry=/.test(p))

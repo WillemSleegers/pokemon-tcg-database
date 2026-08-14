@@ -37,13 +37,15 @@ await mkdir(OUT_DIR, { recursive: true })
 // box by this image's actual height instead of failing on it.
 const REFERENCE_HEIGHT = 1024
 
-// Only pokedex-eligible cards (regular Pokémon prints) ever carry flavor
-// text — Trainers/Energy and ex/MEGA/V-family cards never do (same
-// criterion fetch-set.mjs uses for the pokedex info box, and that the
-// flavor-text editor / check-flavor-text.mjs already filter on) — so
-// there's no point cropping anything else, even if it's cached locally.
+// Only cards that carry flavor text are worth cropping — Trainers/Energy and
+// ex/MEGA/V-family cards never do, so there's no point cropping those even if
+// they're cached locally. That's mostly the pokedex-eligible ones (the same
+// criterion fetch-set.mjs uses for the dex info box, and that the flavor-text
+// editor / check-flavor-text.mjs filter on), plus full-art cards that print
+// flavor text with no dex line above it — MEP's First Partner Illustration
+// Collection cards, whose strip is the only way to verify their text.
 const { cards } = JSON.parse(await readFile(resolve(ROOT, "data/sets", `${setCode}.json`), "utf8"))
-const eligibleIds = new Set(cards.filter((c) => c.pokedex).map((c) => String(c.localId)))
+const eligibleIds = new Set(cards.filter((c) => c.pokedex || c.flavorText).map((c) => String(c.localId)))
 
 const files = (await readdir(SRC_DIR)).filter(
   (f) => /\.(png|jpg)$/i.test(f) && eligibleIds.has(f.replace(/\.(png|jpg)$/i, "")),

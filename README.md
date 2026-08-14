@@ -23,6 +23,12 @@ Three sources, merged per card:
   is game Pokédex data (same for every card of that species), looked up by
   national dex number rather than scraped per card.
 
+A fourth source, **[Bulbapedia](https://bulbapedia.bulbagarden.net)**, is used
+for flavor text (its species pages carry every game's Pokédex entry in a clean
+template — see "Notes on the data" below), and, for a set pokemon-tcg-data
+doesn't carry at all, for the game text of that set's exclusive cards. `MEP`
+(the Mega Evolution promos) is the only such set so far.
+
 ## How this differs from other databases
 
 No single upstream source combines everything here into one record — checked
@@ -104,6 +110,14 @@ Find `ptcgDataSetId` from [pokemon-tcg-data's `sets/en.json`](https://github.com
 (its `id` field, e.g. `"me2"` for Phantasmal Flames) — `limitlessCode` is the
 set's code on limitlesstcg.com / in PTCGL decklists (its `ptcgoCode` in that
 same file, which should match).
+
+For a set pokemon-tcg-data doesn't have at all, pass `NONE` as the
+`ptcgDataSetId` (e.g. `node scripts/fetch-set.mjs NONE MEP`). Limitless's set
+page then supplies the card list; each card's game text comes either from the
+card it reprints elsewhere in `data/sets/` or, for a set-exclusive, from
+Bulbapedia's page for that print; and the set's own metadata comes from
+`data/set-meta/<code>.json`. Every card assembled that way is checked field by
+field against its Limitless page, and the run fails on any disagreement.
 
 This makes a network call per card to Limitless and (for non-ex/MEGA
 Pokémon) one or two calls per distinct species to PokeAPI, so a full set

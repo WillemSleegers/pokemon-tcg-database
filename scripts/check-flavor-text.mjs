@@ -39,9 +39,16 @@ try {
   overlay = {}
 }
 
-// Only regular (non-ex/non-MEGA) Pokémon print the flavor text box — same
-// criterion fetch-set.mjs uses for the pokedex info box.
-const candidates = setData.cards.filter((c) => c.pokedex)
+// Only regular (non-ex/non-MEGA) Pokémon print the flavor text box — mostly
+// the same criterion fetch-set.mjs uses for the pokedex info box, so a card
+// with a dex box is expected to have flavor text and counts as unmatched
+// while it's still blank.
+//
+// The two aren't quite equivalent, though: a full-art card can print flavor
+// text with no dex line above it (MEP's First Partner Illustration Collection
+// cards do). Those have flavor text worth verifying and no `pokedex` to find
+// them by, so take either field as a reason to check the card.
+const candidates = setData.cards.filter((c) => c.pokedex || c.flavorText)
 
 async function checkCard(c) {
   const flavorText = overlay[c.localId] ?? c.flavorText ?? ""
