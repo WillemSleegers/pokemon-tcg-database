@@ -29,17 +29,30 @@ export function speciesName(cardName) {
     // of it. Found while adding Lost Origin.
     .replace(/^Shining\s+/, "")
     .replace(/^Radiant\s+/, "")
+    // Promo-only name prefixes with no Bulbapedia page of their own, same
+    // category as the regional forms below: the Pokémon Center "Special
+    // Delivery" promos, and the retro-styled "Light" tribute cards (a Neo
+    // Destiny-era mechanic, like the "Shining" prefix above). Found while
+    // adding the SWSH Black Star Promos.
+    .replace(/^Special\s+Delivery\s+/, "")
+    .replace(/^Light\s+/, "")
     .replace(/^(Paldean|Galarian|Alolan|Hisuian)\s+/, "")
     .replace(/^(Heat|Wash|Frost|Fan|Mow)\s+(?=Rotom)/, "")
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, "")
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, "")
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, "Castform")
+    // The Van Gogh Museum promo (svp 85) names the card after the painting it
+    // recreates; its flavor text is still a plain Pikachu Pokédex entry.
+    .replace(/^Pikachu\s+with\s+Grey\s+Felt\s+Hat$/, "Pikachu")
     .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, "")
     // Fusion forms (Black Kyurem, White Kyurem) share the base Kyurem page,
     // same category as regional/appliance/mask forms above. Found while
     // adding Lost Thunder.
     .replace(/^(Black|White)\s+(?=Kyurem)/, "")
-    .replace(/^Ultra\s+(?=Necrozma)/, "")
+    // Necrozma's fused forms all share the base "Necrozma (Pokémon)" page —
+    // "Ultra" found while adding Cosmic Eclipse, "Dawn Wings"/"Dusk Mane"
+    // while adding the SM Black Star Promos.
+    .replace(/^(Ultra|Dawn\s+Wings|Dusk\s+Mane)\s+(?=Necrozma)/, "")
     // Prism Star cards (Ultra Prism era) suffix the name with "◇" — not part
     // of the species name. Found while adding Ultra Prism.
     .replace(/\s*◇$/, "")
@@ -74,6 +87,12 @@ export function normalize(s) {
 // Bulbapedia species page.
 function cleanDexEntry(s) {
   return s
+    // Editor notes left in the wikitext as HTML comments render to nothing on
+    // the page, but were leaking into the compared text — Glaceon's Ultra Sun
+    // entry annotates its "–75 degrees" with "<!--U+2013 EN DASH in-game-->",
+    // which read as a mismatch against the identical text on SM238. Found
+    // while adding the SM Black Star Promos.
+    .replace(/<!--[\s\S]*?-->/g, "")
     .replace(/\{\{ScPkmn\}\}/g, "Pokémon")
     .replace(/\{\{ScBall\}\}/g, "Poké Ball")
     .replace(/\{\{Berries\}\}/g, "Berries")

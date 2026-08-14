@@ -63,6 +63,39 @@ async function loadFlavorTextOverlay(code) {
   }
 }
 
+// Cards that print no Pokédex info box for a reason no subtype captures —
+// namely, being old enough to predate the convention entirely. The TCG dropped
+// the dex line for the e-Card era (Expedition, 2002/09) and didn't bring it
+// back until Diamond & Pearl (2007/05), and a promo set can straddle that gap
+// card by card (WP's #1–49 print it, its e-Card-era #50–53 don't), so neither a
+// subtype check nor a per-set release date can decide this. Confirmed against
+// card images and listed by hand here rather than stripped from the output
+// after the fact, so a re-fetch doesn't silently reintroduce the field.
+// A lone "*" entry means the whole set.
+async function loadNoPokedexOverlay(code) {
+  try {
+    const ids = JSON.parse(await readFile(resolve(ROOT, "data/no-pokedex", `${code}.json`), "utf8"))
+    return { all: ids.includes("*"), ids: new Set(ids) }
+  } catch {
+    return { all: false, ids: new Set() }
+  }
+}
+
+// Cards Limitless has no page for at all. The "NONE" <limitlessUrlCode> covers
+// a set Limitless never catalogued (the McDonald's collections); this covers the
+// per-card version of the same gap, which the long-running promo sets have —
+// Limitless catalogues 292 of swshp's 304 cards. Listed explicitly, because a
+// 404 is also what an id-normalization bug looks like, and silently substituting
+// placeholder data for one of those is how phantom deckCodes leaked across a
+// dozen set files while adding XYP (see CLAUDE.md).
+async function loadNoLimitlessOverlay(code) {
+  try {
+    return new Set(JSON.parse(await readFile(resolve(ROOT, "data/no-limitless", `${code}.json`), "utf8")))
+  } catch {
+    return new Set()
+  }
+}
+
 const CONCURRENCY = 6
 const RETRIES = 3
 
@@ -172,22 +205,52 @@ const BASIC_ENERGY_LETTERS = {
   "Fairy Energy": "Y",
 }
 
+// Limitless titles every card page "<name> - <set name> (<CODE>) #<n> – Limitless".
+// Compared on alphanumerics only, since the two sources punctuate names
+// differently in places — pokemon-tcg-data's "Unown [J]" vs Limitless's
+// "Unown J" — and with the rarity glyphs spelled out, since pokemon-tcg-data
+// keeps the printed symbol where Limitless writes the word ("Greninja ★" vs
+// "Greninja Star"). Deliberately not a substring/prefix match: this guards a
+// fallback that would otherwise attach a different card's artist and print
+// group, and "Mew" is a prefix of "Mewtwo".
+function limitlessPageIsCard(html, cardName) {
+  const title = html.match(/<title>([^<]*)<\/title>/)?.[1]
+  if (!title) return false
+  const simplify = (s) =>
+    decodeEntities(s)
+      .replace(/[★☆]/g, "star")
+      .replace(/[◇♢]/g, "prismstar")
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")
+  return simplify(title.split(" - ")[0]) === simplify(cardName)
+}
+
 async function fetchLimitlessExtra(code, localId, cardName) {
   const numericLocalId = toLimitlessLocalId(localId)
   let limitlessLocalId = numericLocalId
   let result = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { allow404: true, returnUrl: true })
   if (result === null) {
-    // XY Black Star Promos' letter-suffixed alt-art cards (e.g. "XY67a")
-    // keep pokemon-tcg-data's "XY" set-code prefix baked into the number,
-    // but Limitless's own page for these 404s rather than redirects — the
-    // canonical page is the plain suffixed number with that prefix stripped
-    // ("67a"). Confirmed against xyp's 5 lettered cards (Jirachi XY67a,
-    // Yveltal-EX XY150a, Karen XY177a, M Camerupt-EX XY198a, M Sharpedo-EX
-    // XY200a) while adding the XY era.
-    const unprefixed = limitlessLocalId.match(/^XY(\d+[a-z])$/)?.[1]
+    // Several Black Star Promos sets keep pokemon-tcg-data's set-code prefix
+    // baked into the card number itself ("XY67a" for XY Black Star Promos'
+    // lettered alt-arts, "DP4" for DP Black Star Promos) where Limitless's own
+    // URL is just the number. Plain-numbered ones mostly 301-redirect and are
+    // handled by the canonical-URL read below; these 404 outright, so retry
+    // with the prefix stripped. Confirmed against xyp's 5 lettered cards
+    // (Jirachi XY67a, Yveltal-EX XY150a, Karen XY177a, M Camerupt-EX XY198a,
+    // M Sharpedo-EX XY200a) and against dpp, whose every card 404s this way.
+    //
+    // Guarded on the retrieved page's own card name, because this pattern
+    // ("letters then digits") is also what a legitimate subset id looks like
+    // (TG01, SV001, GG01) — without the check, a subset id that 404s for a
+    // real reason would silently resolve to whatever unrelated card sits at
+    // that bare number in the base set, instead of raising.
+    const unprefixed = limitlessLocalId.match(/^[A-Za-z]+(\d+[a-z]?)$/)?.[1]
     if (unprefixed) {
-      result = await get(`https://limitlesstcg.com/cards/${code}/${unprefixed}`, { allow404: true, returnUrl: true })
-      if (result !== null) limitlessLocalId = unprefixed
+      const retry = await get(`https://limitlesstcg.com/cards/${code}/${unprefixed}`, { allow404: true, returnUrl: true })
+      if (retry !== null && limitlessPageIsCard(retry.body, cardName)) {
+        result = retry
+        limitlessLocalId = unprefixed
+      }
     }
   }
   if (result === null) {
@@ -278,6 +341,9 @@ async function main() {
   console.log(`Fetching ${ptcgDataSetId} from pokemon-tcg-data...`)
   const { setMeta, cards: primaryCards } = await fetchPrimarySet(ptcgDataSetId)
   const flavorTextOverlay = await loadFlavorTextOverlay(limitlessCode)
+  const noPokedex = await loadNoPokedexOverlay(limitlessCode)
+  const noLimitlessCards = await loadNoLimitlessOverlay(limitlessCode)
+  const missingFromLimitless = []
   console.log(`Found ${primaryCards.length} cards. Fetching per-card data from Limitless + PokeAPI...`)
 
   let done = 0
@@ -289,9 +355,21 @@ async function main() {
   const cards = await mapWithConcurrency(primaryCards, CONCURRENCY, async (/** @type {import("../types/card.js").PrimaryCard} */ primary, /** @type {number} */ index) => {
     const localId = sequentialPrefix ? `${sequentialPrefix}${index + 1}` : primary.number
     const [extra, pokedex] = await Promise.all([
-      noLimitless
+      noLimitless || noLimitlessCards.has(localId)
         ? Promise.resolve({ resolvedLocalId: null, limitless: { id: null, url: "" }, artist: primary.artist ?? null, printGroup: [] })
-        : fetchLimitlessExtra(limitlessUrlCode, localId, primary.name),
+        : fetchLimitlessExtra(limitlessUrlCode, localId, primary.name).catch((err) => {
+            // A 404 that survives every id-normalization fallback means
+            // Limitless genuinely has no page for this card — which does
+            // happen (it catalogues 292 of swshp's 304 cards). Collect these
+            // rather than aborting on the first one, so a single run reports
+            // the whole list; the run still fails, since the alternative is
+            // silently persisting placeholder artist/printGroup data for a
+            // card whose 404 might just as easily be an id bug (see the DPP
+            // and XYP set-code-prefix cases above).
+            if (!/HTTP 404$/.test(err.message)) throw err
+            missingFromLimitless.push(localId)
+            return { resolvedLocalId: null, limitless: { id: null, url: "" }, artist: primary.artist ?? null, printGroup: [] }
+          }),
       // Only regular Pokémon print the dex info box — every rarity mechanic
       // that gets its own oversized name treatment or rule box (MEGA, V
       // family, old-style "EX"/modern "ex", "GX", "Star", "Level-Up"/LV.X,
@@ -304,6 +382,7 @@ async function main() {
       // instead.
       primary.supertype === "Pokémon" &&
       primary.nationalPokedexNumbers?.length &&
+      !(noPokedex.all || noPokedex.ids.has(localId)) &&
       !primary.subtypes?.some((s) =>
         ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime", "BREAK"].includes(s),
       )
@@ -347,7 +426,12 @@ async function main() {
     // confirm it against — used as computePrintGroups()'s graph key, so an
     // empty/shared placeholder here would wrongly union unrelated cards into
     // one fake print group (found while adding the McDonald's Collections).
-    card.deckCode = noLimitless ? `${limitlessCode} ${localId}` : `${limitlessUrlCode} ${extra.resolvedLocalId}`
+    // resolvedLocalId is null whenever the Limitless scrape was skipped —
+    // either for the whole set ("NONE") or for a single card Limitless has no
+    // page for — so key the fallback off that rather than off noLimitless
+    // alone, which would leave every skipped card in a normal set sharing one
+    // "<code> null" deckCode.
+    card.deckCode = extra.resolvedLocalId === null ? `${limitlessCode} ${localId}` : `${limitlessUrlCode} ${extra.resolvedLocalId}`
     card.printGroup = extra.printGroup.length ? extra.printGroup : [card.deckCode]
     card.limitless = extra.limitless
     if (primary.images) card.images = primary.images
@@ -377,6 +461,16 @@ async function main() {
       images: setMeta.images ?? null,
     },
     cards,
+  }
+
+  if (missingFromLimitless.length) {
+    throw new Error(
+      `Limitless has no page for ${missingFromLimitless.length} card(s):\n` +
+        `  ${missingFromLimitless.join(", ")}\n` +
+        `Confirm each is genuinely absent (not an id-normalization bug — check\n` +
+        `limitlesstcg.com/cards/${limitlessUrlCode} yourself), then list them in\n` +
+        `data/no-limitless/${limitlessCode}.json and re-run.`,
+    )
   }
 
   await mkdir(OUT_DIR, { recursive: true })

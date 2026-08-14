@@ -476,6 +476,79 @@ doesn't verbatim-match any mainline Pokédex entry for Magearna — confirmed
 against the card image — likely because this promo predates Sun & Moon,
 Magearna's actual mainline debut, by several months.
 
+**Every English Black Star Promos set is now done** — a fifth backfill,
+oldest first, at the user's request after XYP: `WP` (basep, Wizards Black
+Star Promos, 53), `NP` (np, Nintendo, 40), `DPP` (dpp, DP, 56), `HSP` (hsp,
+HGSS, 25), `BWP` (bwp, BW, 101), `SMP` (smp, SM, 251), `SP` (swshp, SWSH,
+304), and `SVP` (svp, Scarlet & Violet, 165) — 8 files joining the already-
+added `XYP`. Codes are Limitless's own, as everywhere else in this database,
+which is why the Wizards and SWSH sets are `WP`/`SP` rather than `BSP`/
+`SWSHP`. Note that `smp`/`swshp`/`svp` are the sets earlier eras
+deliberately skipped as "ongoing"; they're snapshots, and pokemon-tcg-data's
+counts have already grown past what `sets/en.json` advertises (`svp` says 102
+but ships 165), so re-fetching them later is expected rather than a bug.
+
+Real upstream `flavorText` errors found and fixed via each set's overlay,
+all confirmed against card images: WP (Dragonite, "can fly **is** spite"),
+DPP (Glameow, "fickleness **if** very popular"), HSP (Ho-Oh, "form behind
+when it flies", missing "it"), BWP (Pansage "are **know** to relieve",
+Serperior "give their all" missing "it", Kyurem "**a** powerful, freezing
+energy"), SMP (Pikipek, Decidueye, Zorua, Heatran — "like **plasma**" for
+"like magma", Mimikyu, Malamar, Pikachu SM157 "It **feel** stressed", and
+both Dusk Mane Necrozma prints, whose "This is its form **with** it is
+devouring" garbles "while"), SP (Cinccino "body **secrets** oil", Sobble
+"**attacks** won't be able to resist weeping", Pikachu SWSH234 missing its
+final period, Hisuian Basculin's em dashes typed as " - ", Manaphy "It
+starts life" missing "its"), and SVP (both Revavroom prints' line-wrap
+em-dash space, and the Van Gogh Pikachu's "pouches **of** its cheeks" for
+"in its cheeks"). SVP also needed 19 cards transcribed from cropped images
+outright — `svp` is the "partial coverage" set CLAUDE.md already warned
+about, and its newer promos have none.
+
+Confirmed-correct-as-printed exceptions that can never algorithmically clear:
+WP's 25 flagged cards are almost all WotC-era rewordings of a Red/Blue entry
+(singular for plural and similar), the same category as Classic Collection's
+1999 Base Set prints; HSP's Porygon prints a doubled period ("any
+environment..") that the card itself really has; DPP's Porygon-Z and Gliscor
+have a dex box but no room left for flavor text; SMP's three Detective
+Pikachu cards, Charizard SM226 and Armored Mewtwo SM228 carry *Mewtwo Strikes
+Back*/*Detective Pikachu* movie text; and SVP's Pikachu #27 describes the
+Scarlet & Violet starter trio. Sabrina's Abra (WP 19) prints a dex box but no
+flavor text at all.
+
+Five shared-library fixes came out of this backfill:
+
+- `speciesName()` (both copies) gained the "Special Delivery" and "Light"
+  promo prefixes, Necrozma's `Dawn Wings`/`Dusk Mane` fused forms (alongside
+  the existing `Ultra`), and the Van Gogh promo's full card name, `Pikachu
+  with Grey Felt Hat` — all the same no-separate-Bulbapedia-page category as
+  Heat Rotom et al.
+- `cleanDexEntry` now strips HTML comments. Bulbapedia's Glaceon Ultra Sun
+  entry annotates its temperature as `–75<!--U+2013 EN DASH in-game-->`,
+  which rendered to nothing on the page but leaked into the compared text and
+  flagged SM238 despite identical wording.
+- `fetch-set.mjs`'s XY-specific set-code-prefix fallback is now general (see
+  "Card numbers with the set code baked in" below), because `dpp` has the
+  same problem: pokemon-tcg-data numbers its cards `DP04` where Limitless's
+  URL is just `4`, and unlike XYP's plain numbers these 404 rather than
+  redirecting.
+- `crop-flavor-text.mjs` skips images whose box would run off the edge
+  instead of aborting the run. The long promo sets mix in oversized/jumbo
+  scans with a non-standard aspect ratio (SMP has 7), and the box is scaled
+  by height alone.
+- The `deckCode` fallback keys off `resolvedLocalId === null` rather than the
+  whole-set `noLimitless` flag. Caught by inspecting the output: the first
+  version gave all 13 no-Limitless SP cards the same `"SP null"` deckCode,
+  the exact non-unique-deckCode trap the McDonald's sets documented.
+
+Crop boxes for the older card templates, since none of the existing ones fit
+(all in the script's 1024-height reference space, as always): WotC/Base-era
+`top=910 height=70 left=55 width=625`, Diamond & Pearl `top=800 height=95
+left=45 width=600`, HGSS `top=825 height=100 left=45 width=600`. Black &
+White moved flavor text into a right-hand column at the bottom — `top=865
+height=120 left=415 width=295` — and Sun & Moon onward matches the existing
+Scarlet & Violet box (`top=905 height=95 left=260 width=473`).
+
 ## Schema
 
 Ground truth is [`types/card.ts`](types/card.ts) (`CardSet`/`Card`, plus
@@ -552,6 +625,57 @@ CELCC CEL CC` (this also needs the third argument from the section above, since
 Classic Collection shares Celebrations' `CEL` Limitless page too). Don't reach for
 this unless a set's `number` field actually collides — check first, since it's a
 narrower fix than it looks (order-verified per set, not assumed).
+
+### Card numbers with the set code baked in
+
+Some promo sets' pokemon-tcg-data `number` repeats the set code — `xyp`'s
+`"XY67"`, `dpp`'s `"DP04"`, `swshp`'s `"SWSH074"` — where Limitless's URL is just
+the number. `fetch-set.mjs` handles this automatically, no argument needed:
+Limitless 301-redirects most of them (and the canonical id is read back off the
+post-redirect URL), and for the ones that hard-404 instead, it retries with a
+leading alpha prefix stripped. That retry is guarded on the fetched page's own
+`<title>`, since "letters then digits" is also exactly what a legitimate subset
+id looks like (`TG01`, `SV001`, `GG01`) — without the check, a subset id that
+404s for a real reason would silently attach whatever unrelated card sits at that
+bare number in the base set. The title comparison spells out the rarity glyphs
+(`★`→`star`, `◇`→`prismstar`), because pokemon-tcg-data keeps the printed symbol
+where Limitless writes the word — `"Greninja ★"` vs `"Greninja Star"`, which is
+what made `swshp`'s SWSH144 look absent when it isn't.
+
+### `data/no-pokedex/<CODE>.json` — cards that print no dex info box
+
+`fetch-set.mjs` decides whether to attach the Pokédex info box from the card's
+subtypes (see Pipeline above), which can't catch a card that predates the
+convention entirely: the TCG dropped the dex line for the e-Card era (Expedition,
+2002/09) and didn't bring it back until Diamond & Pearl (2007/05). Neither a
+subtype nor a per-set release date decides this, because a promo set straddles
+that gap card by card — WP's #1–49 print it, its e-Card-era #50–53 don't.
+
+List those cards' localIds in `data/no-pokedex/<CODE>.json` (a bare JSON array; a
+lone `"*"` means the whole set) and `fetch-set.mjs` will skip the box for them.
+Confirm each against the actual card image first. Files so far: `NP` (`["*"]` —
+every Nintendo promo is e-Card/EX era), `WP`, `DPP` (its Darkrai movie promo plus
+the three Team Galactic "SP" cards, whose banner takes the dex line's place), and
+`SP` (two retro-styled tribute cards aping EX- and DP-era layouts).
+
+This supersedes the hand-stripping used for Classic Collection's two such cards
+(see Status) — that approach silently reverts on the next re-fetch.
+
+### `data/no-limitless/<CODE>.json` — cards Limitless doesn't have
+
+`"NONE"` as `<limitlessUrlCode>` covers a set Limitless never catalogued at all
+(the McDonald's collections). The long-running promo sets need the per-card
+version of the same thing: Limitless catalogues 292 of `swshp`'s 304 cards, and
+misses one of `svp`'s. List those localIds in `data/no-limitless/<CODE>.json` and
+they take the same path as `"NONE"` — `artist` from pokemon-tcg-data, `deckCode`
+falling back to `"<code> <localId>"`, empty `printGroup`/`limitless`.
+
+It has to be explicit rather than an automatic fallback, because a 404 is also
+what an id-normalization bug looks like, and quietly substituting placeholder
+data for one of those is how phantom deckCodes leaked into a dozen set files
+while adding XYP. A 404 that isn't listed fails the run — but the run collects
+every one first and reports them together, so a set needs one pass to find them,
+not one pass per card.
 
 ### `printGroup` goes stale, and that's fine
 
@@ -774,7 +898,9 @@ pokemon-tcg-data's own `flavorText` field (`fetch-set.mjs` reads it automaticall
 overridden by the manual overlay if present) — the community had years to fill it in.
 But coverage has a hard cutoff, not a gradient: `sv1`–`sv6` and `sve` are 100%
 covered, `sv6pt5` ("Shrouded Fable") onward through `sv10` are 0% covered, checked
-card by card. `svp` (the ongoing promo set) is partial. Check any new SV set for
+card by card. `svp` (the ongoing promo set) is partial — confirmed when it was
+added as `SVP`: 88 of its 107 eligible cards were covered, the other 19 needed
+transcribing from crops. Check any new SV set for
 coverage before assuming either way; don't extrapolate from a neighboring set.
 `node scripts/flavor-text-coverage.mjs <CODE>` does this check — no network calls,
 just counts how many of the set's `pokedex`-eligible cards already have `flavorText`
@@ -849,8 +975,9 @@ SV/Mega Evolution frontier above, oldest first: `SSH` (swsh1), `RCL` (swsh2),
 (swsh8), `BRS`/`BRSTG` (swsh9/swsh9tg), `ASR`/`ASRTG` (swsh10/swsh10tg), `PGO`
 (pgo), `LOR`/`LORTG` (swsh11/swsh11tg), `SIT`/`SITTG` (swsh12/swsh12tg), and
 `CRZ`/`CRZGG` (swsh12pt5/swsh12pt5gg) — 21 files, all verified. `swshp` (the
-ongoing English promo set) was left out, same treatment as `svp` elsewhere in this
-file. Every Trainer/Galarian Gallery/Shiny Vault subset is pokemon-tcg-data's own
+ongoing English promo set) was left out of this backfill, same treatment as `svp`
+elsewhere in this file; both were added later as `SP`/`SVP` in the Black Star
+Promos backfill below. Every Trainer/Galarian Gallery/Shiny Vault subset is pokemon-tcg-data's own
 separate set id but shares its base set's Limitless page — see "Subsets that
 share their base set's Limitless page" above for the `fetch-set.mjs` invocation.
 Shiny Vault and Classic Collection needed the fourth (`<sequentialPrefix>`)
@@ -875,7 +1002,9 @@ also **done** — a third backfill, oldest first: `SUM` (sm1), `GRI` (sm2), `BUS
 and `CEC` (sm12) — 20 files, all verified (see Status above for the details;
 this era needed more real fixes, both per-set overlay corrections and shared
 `speciesName()`/`normalize()` library fixes, than either prior backfill). `smp`
-(the ongoing promo set) was left out, same treatment as `swshp`/`svp`. Hidden
+(the ongoing promo set) was left out of this backfill, same treatment as
+`swshp`/`svp`; it was added later as `SMP` in the Black Star Promos backfill
+below. Hidden
 Fates' Shiny Vault subset (`sma`) shares `HIF`'s Limitless page like every
 other Shiny Vault/Trainer/Galarian Gallery subset before it — `node
 scripts/fetch-set.mjs sma HIFSV HIF`. The three McDonald's Collection sets
@@ -897,14 +1026,22 @@ The XY era (2013/11–2016/11, `xy0` through `xy12` plus `xyp` in
 `EVO` (xy12), and `XYP` (xyp) — 15 files, all verified (see Status above for
 the details, including two `fetch-set.mjs` bugs XYP's fetch surfaced around
 Limitless's non-canonical URL redirects, and a `BREAK`-subtype dex-box
-exclusion gap BKT surfaced). Unlike every prior era's promo set (`smp`,
-`swshp`, `svp`, and this era's own `bwp` — still unadded), `XYP` was
-included rather than skipped, at the user's explicit request; if a future
-session considers going back for the others, that's a deliberate policy
-question to raise, not something to do unprompted.
+exclusion gap BKT surfaced). Unlike every prior era's promo set, `XYP` was
+included rather than skipped, at the user's explicit request.
 
-The next chronological gap is the Black & White era (2011/04–2013/11, `bw1`
-through `bw11` plus `dv1` Dragon Vault and `bwp` promos in `sets/en.json`,
-predating `xy0`) — unadded as of this writing. As always, re-derive the
-actual next step from `sets/en.json` against `data/sets/` rather than
-trusting this note by the time it's acted on.
+All nine English Black Star Promos sets are **done** — a fifth backfill,
+oldest first, going back for the promo sets every earlier era had skipped:
+`WP` (basep), `NP` (np), `DPP` (dpp), `HSP` (hsp), `BWP` (bwp), `SMP` (smp),
+`SP` (swshp), and `SVP` (svp), joining `XYP` from the XY era. See Status
+above for the full detail — the per-set overlay fixes, the two new
+`data/no-pokedex/` and `data/no-limitless/` mechanisms these sets needed,
+and the crop boxes for the pre-Sun & Moon card templates. The three
+"ongoing" ones (`smp`/`swshp`/`svp`) are snapshots: pokemon-tcg-data keeps
+adding to them, and its card counts already exceed what `sets/en.json`
+advertises, so re-fetching them periodically is expected.
+
+The next chronological gap is the Black & White era proper (2011/04–2013/11,
+`bw1` through `bw11` plus `dv1` Dragon Vault in `sets/en.json`, predating
+`xy0`) — unadded as of this writing; its `bwp` promos are done. As always,
+re-derive the actual next step from `sets/en.json` against `data/sets/`
+rather than trusting this note by the time it's acted on.

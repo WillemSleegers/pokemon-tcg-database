@@ -124,3 +124,11 @@ before you even run it.
   is a verbatim reuse of a mainline-game Pokédex entry findable on
   Bulbapedia — see `CLAUDE.md` for how that pipeline works.
 - No pricing — this is a card-text reference, not a market-value tracker.
+- Two small per-set overlays sit alongside the flavor-text one, for cases the
+  automated fetch can't infer and shouldn't guess at:
+  `data/no-pokedex/<CODE>.json` lists cards that print no Pokédex info box for
+  a reason no subtype captures (mostly cards from the 2002–2007 gap when the
+  TCG dropped the dex line), and `data/no-limitless/<CODE>.json` lists cards
+  Limitless has no page for at all (the long-running promo sets have a
+  handful each). Both are plain JSON arrays of local ids, confirmed against
+  card images; see `CLAUDE.md`.

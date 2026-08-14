@@ -1,0 +1,2420 @@
+{
+  "set": {
+    "code": "NP",
+    "ptcgDataId": "np",
+    "name": "Nintendo Black Star Promos",
+    "series": "NP",
+    "printedTotal": 40,
+    "secretTotal": 0,
+    "total": 40,
+    "releaseDate": "2003-10-01",
+    "copyright": "©2003 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/np/symbol.png",
+      "logo": "https://images.pokemontcg.io/np/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/40",
+      "localId": "1",
+      "name": "Kyogre ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Major Flood",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": "Discard a Water Energy card attached to Kyogre ex. Does 10 damage to each Benched Pokémon (both yours and your opponent's). (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Hiromichi Sugiyama",
+      "secret": false,
+      "deckCode": "NP 1",
+      "printGroup": [
+        "NP 1"
+      ],
+      "limitless": {
+        "id": 32458,
+        "url": "https://limitlesstcg.com/cards/NP/1"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/1.png",
+        "large": "https://images.pokemontcg.io/np/1_hires.png"
+      }
+    },
+    {
+      "number": "02/40",
+      "localId": "2",
+      "name": "Groudon ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 120,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Major Earthquake",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Discard a Fighting Energy card attached to Groudon ex. Does 10 damage to your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kazuo Yazawa",
+      "secret": false,
+      "deckCode": "NP 2",
+      "printGroup": [
+        "NP 2"
+      ],
+      "limitless": {
+        "id": 32459,
+        "url": "https://limitlesstcg.com/cards/NP/2"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/2.png",
+        "large": "https://images.pokemontcg.io/np/2_hires.png"
+      }
+    },
+    {
+      "number": "03/40",
+      "localId": "3",
+      "name": "Treecko",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Grovyle"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Tail Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "deckCode": "NP 3",
+      "printGroup": [
+        "NP 3",
+        "NP 7",
+        "RS 76"
+      ],
+      "limitless": {
+        "id": 32621,
+        "url": "https://limitlesstcg.com/cards/NP/3"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/3.png",
+        "large": "https://images.pokemontcg.io/np/3_hires.png"
+      }
+    },
+    {
+      "number": "04/40",
+      "localId": "4",
+      "name": "Grovyle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Treecko",
+      "evolvesTo": [
+        "Sceptile"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Poison Breath",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "The Defending Pokémon is now Poisoned."
+        },
+        {
+          "name": "Swift",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Midori Harada",
+      "secret": false,
+      "deckCode": "NP 4",
+      "printGroup": [
+        "NP 4",
+        "RS 31"
+      ],
+      "limitless": {
+        "id": 32622,
+        "url": "https://limitlesstcg.com/cards/NP/4"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/4.png",
+        "large": "https://images.pokemontcg.io/np/4_hires.png"
+      }
+    },
+    {
+      "number": "05/40",
+      "localId": "5",
+      "name": "Mudkip",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Marshtomp"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "NP 5",
+      "printGroup": [
+        "NP 5",
+        "NP 10",
+        "RS 60"
+      ],
+      "limitless": {
+        "id": 32623,
+        "url": "https://limitlesstcg.com/cards/NP/5"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/5.png",
+        "large": "https://images.pokemontcg.io/np/5_hires.png"
+      }
+    },
+    {
+      "number": "06/40",
+      "localId": "6",
+      "name": "Torchic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Combusken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Fireworks",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, discard a Fire Energy card attached to Torchic."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "NP 6",
+      "printGroup": [
+        "NP 6",
+        "NP 8",
+        "RS 73"
+      ],
+      "limitless": {
+        "id": 32624,
+        "url": "https://limitlesstcg.com/cards/NP/6"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/6.png",
+        "large": "https://images.pokemontcg.io/np/6_hires.png"
+      }
+    },
+    {
+      "number": "07/40",
+      "localId": "7",
+      "name": "Treecko",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Grovyle"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Tail Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "NP 7",
+      "printGroup": [
+        "NP 3",
+        "NP 7",
+        "RS 76"
+      ],
+      "limitless": {
+        "id": 32625,
+        "url": "https://limitlesstcg.com/cards/NP/7"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/7.png",
+        "large": "https://images.pokemontcg.io/np/7_hires.png"
+      }
+    },
+    {
+      "number": "08/40",
+      "localId": "8",
+      "name": "Torchic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Combusken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Fireworks",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, discard a Fire Energy card attached to Torchic."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "deckCode": "NP 8",
+      "printGroup": [
+        "NP 6",
+        "NP 8",
+        "RS 73"
+      ],
+      "limitless": {
+        "id": 32626,
+        "url": "https://limitlesstcg.com/cards/NP/8"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/8.png",
+        "large": "https://images.pokemontcg.io/np/8_hires.png"
+      }
+    },
+    {
+      "number": "09/40",
+      "localId": "9",
+      "name": "Combusken",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Torchic",
+      "evolvesTo": [
+        "Blaziken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Double Kick",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40×",
+          "text": "Flip 2 coins. This attack does 40 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "deckCode": "NP 9",
+      "printGroup": [
+        "NP 9",
+        "RS 27"
+      ],
+      "limitless": {
+        "id": 32627,
+        "url": "https://limitlesstcg.com/cards/NP/9"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/9.png",
+        "large": "https://images.pokemontcg.io/np/9_hires.png"
+      }
+    },
+    {
+      "number": "10/40",
+      "localId": "10",
+      "name": "Mudkip",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Marshtomp"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "deckCode": "NP 10",
+      "printGroup": [
+        "NP 5",
+        "NP 10",
+        "RS 60"
+      ],
+      "limitless": {
+        "id": 32628,
+        "url": "https://limitlesstcg.com/cards/NP/10"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/10.png",
+        "large": "https://images.pokemontcg.io/np/10_hires.png"
+      }
+    },
+    {
+      "number": "11/40",
+      "localId": "11",
+      "name": "Marshtomp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Mudkip",
+      "evolvesTo": [
+        "Swampert"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Bubble",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "deckCode": "NP 11",
+      "printGroup": [
+        "NP 11",
+        "RS 40"
+      ],
+      "limitless": {
+        "id": 32629,
+        "url": "https://limitlesstcg.com/cards/NP/11"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/11.png",
+        "large": "https://images.pokemontcg.io/np/11_hires.png"
+      }
+    },
+    {
+      "number": "12/40",
+      "localId": "12",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Agility",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all effects of an attack, including damage, done to Pikachu during your opponent's next turn."
+        },
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "deckCode": "NP 12",
+      "printGroup": [
+        "MA 43",
+        "NP 12"
+      ],
+      "limitless": {
+        "id": 32630,
+        "url": "https://limitlesstcg.com/cards/NP/12"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/12.png",
+        "large": "https://images.pokemontcg.io/np/12_hires.png"
+      }
+    },
+    {
+      "number": "13/40",
+      "localId": "13",
+      "name": "Meowth",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Persian"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Plunder",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Before doing damage, discard all Trainer cards attached to the Defending Pokémon (before they affect the damage.)."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "deckCode": "NP 13",
+      "printGroup": [
+        "MA 42",
+        "NP 13"
+      ],
+      "limitless": {
+        "id": 32631,
+        "url": "https://limitlesstcg.com/cards/NP/13"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/13.png",
+        "large": "https://images.pokemontcg.io/np/13_hires.png"
+      }
+    },
+    {
+      "number": "14/40",
+      "localId": "14",
+      "name": "Latias",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Super Psy",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Searing Flame",
+          "cost": [
+            "Fire",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "NP 14",
+      "printGroup": [
+        "NP 14"
+      ],
+      "limitless": {
+        "id": 32460,
+        "url": "https://limitlesstcg.com/cards/NP/14"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/14.png",
+        "large": "https://images.pokemontcg.io/np/14_hires.png"
+      }
+    },
+    {
+      "number": "15/40",
+      "localId": "15",
+      "name": "Latios",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Super Psy",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Freeze Dry",
+          "cost": [
+            "Water",
+            "Psychic",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "deckCode": "NP 15",
+      "printGroup": [
+        "NP 15"
+      ],
+      "limitless": {
+        "id": 32461,
+        "url": "https://limitlesstcg.com/cards/NP/15"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/15.png",
+        "large": "https://images.pokemontcg.io/np/15_hires.png"
+      }
+    },
+    {
+      "number": "16/40",
+      "localId": "16",
+      "name": "Treecko",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Grovyle"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Sporadic Sponging",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, remove 1 damage counter from Treecko."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kagemaru Himeno",
+      "secret": false,
+      "deckCode": "NP 16",
+      "printGroup": [
+        "NP 16"
+      ],
+      "limitless": {
+        "id": 32462,
+        "url": "https://limitlesstcg.com/cards/NP/16"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/16.png",
+        "large": "https://images.pokemontcg.io/np/16_hires.png"
+      }
+    },
+    {
+      "number": "17/40",
+      "localId": "17",
+      "name": "Torchic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Combusken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard a Fire Energy card attached to Torchic."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kagemaru Himeno",
+      "secret": false,
+      "deckCode": "NP 17",
+      "printGroup": [
+        "NP 17"
+      ],
+      "limitless": {
+        "id": 32463,
+        "url": "https://limitlesstcg.com/cards/NP/17"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/17.png",
+        "large": "https://images.pokemontcg.io/np/17_hires.png"
+      }
+    },
+    {
+      "number": "18/40",
+      "localId": "18",
+      "name": "Mudkip",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Marshtomp"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Surf",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Whirlpool",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, discard an Energy card attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kagemaru Himeno",
+      "secret": false,
+      "deckCode": "NP 18",
+      "printGroup": [
+        "NP 18"
+      ],
+      "limitless": {
+        "id": 32464,
+        "url": "https://limitlesstcg.com/cards/NP/18"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/18.png",
+        "large": "https://images.pokemontcg.io/np/18_hires.png"
+      }
+    },
+    {
+      "number": "19/40",
+      "localId": "19",
+      "name": "Whismur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Loudred"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Supersonic",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kagemaru Himeno",
+      "secret": false,
+      "deckCode": "NP 19",
+      "printGroup": [
+        "NP 19"
+      ],
+      "limitless": {
+        "id": 32465,
+        "url": "https://limitlesstcg.com/cards/NP/19"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/19.png",
+        "large": "https://images.pokemontcg.io/np/19_hires.png"
+      }
+    },
+    {
+      "number": "20/40",
+      "localId": "20",
+      "name": "Ludicolo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Lombre",
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Rain Dish",
+          "text": "At any time between turns, remove 1 damage counter from Ludicolo.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip 3 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "deckCode": "NP 20",
+      "printGroup": [
+        "NP 20"
+      ],
+      "limitless": {
+        "id": 32466,
+        "url": "https://limitlesstcg.com/cards/NP/20"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/20.png",
+        "large": "https://images.pokemontcg.io/np/20_hires.png"
+      }
+    },
+    {
+      "number": "21/40",
+      "localId": "21",
+      "name": "Jirachi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "The Third Eye",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard an Energy card attached to Jirachi and draw 3 cards."
+        },
+        {
+          "name": "Psywave",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the amount of Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "deckCode": "NP 21",
+      "printGroup": [
+        "NP 21"
+      ],
+      "limitless": {
+        "id": 32467,
+        "url": "https://limitlesstcg.com/cards/NP/21"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/21.png",
+        "large": "https://images.pokemontcg.io/np/21_hires.png"
+      }
+    },
+    {
+      "number": "22/40",
+      "localId": "22",
+      "name": "Beldum",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Metang"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Magnetic Call",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for a Metal Basic Pokémon and put it onto your Bench. Shuffle your deck afterward. This power can't be used if Beldum is affected by a Special Condition.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Metal Charge",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Put 1 damage counter on Beldum."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "deckCode": "NP 22",
+      "printGroup": [
+        "HL 29",
+        "NP 22"
+      ],
+      "limitless": {
+        "id": 32632,
+        "url": "https://limitlesstcg.com/cards/NP/22"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/22.png",
+        "large": "https://images.pokemontcg.io/np/22_hires.png"
+      }
+    },
+    {
+      "number": "23/40",
+      "localId": "23",
+      "name": "Metang",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Beldum",
+      "evolvesTo": [
+        "Metagross"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Metal Load",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your discard pile for a Metal Energy card and attach it to Metang."
+        },
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "deckCode": "NP 23",
+      "printGroup": [
+        "HL 21",
+        "NP 23"
+      ],
+      "limitless": {
+        "id": 32633,
+        "url": "https://limitlesstcg.com/cards/NP/23"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/23.png",
+        "large": "https://images.pokemontcg.io/np/23_hires.png"
+      }
+    },
+    {
+      "number": "24/40",
+      "localId": "24",
+      "name": "Chimecho",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Resonate",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent switches each Defending Pokémon with his or her Benched Pokémon. If your opponent has only 1 Benched Pokémon, you choose the Defending Pokémon to switch."
+        },
+        {
+          "name": "Healing Sound",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Remove 3 damage counters from each of your Active Pokémon. Each Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "deckCode": "NP 24",
+      "printGroup": [
+        "NP 24"
+      ],
+      "limitless": {
+        "id": 32468,
+        "url": "https://limitlesstcg.com/cards/NP/24"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/24.png",
+        "large": "https://images.pokemontcg.io/np/24_hires.png"
+      }
+    },
+    {
+      "number": "25/40",
+      "localId": "25",
+      "name": "Flygon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Vibrava",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Sand Pit",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "The Defending Pokémon can't retreat until the end of your opponent's next turn."
+        },
+        {
+          "name": "Dragonbreath",
+          "cost": [
+            "Grass",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Colorless",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "deckCode": "NP 25",
+      "printGroup": [
+        "NP 25"
+      ],
+      "limitless": {
+        "id": 32469,
+        "url": "https://limitlesstcg.com/cards/NP/25"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/25.png",
+        "large": "https://images.pokemontcg.io/np/25_hires.png"
+      }
+    },
+    {
+      "number": "26/40",
+      "localId": "26",
+      "name": "Tropical Wind",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, remove 2 damage counters from each Active Pokémon (remove 1 damage counter if a Pokémon has only 1). If tails, each Active Pokémon is now Asleep."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Sumiyoshi Kizuki",
+      "secret": false,
+      "deckCode": "NP 26",
+      "printGroup": [
+        "DPP 5",
+        "DPP 25",
+        "DPP 48",
+        "NP 26"
+      ],
+      "limitless": {
+        "id": 32470,
+        "url": "https://limitlesstcg.com/cards/NP/26"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/26.png",
+        "large": "https://images.pokemontcg.io/np/26_hires.png"
+      }
+    },
+    {
+      "number": "27/40",
+      "localId": "27",
+      "name": "Tropical Tidal Wave",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, discard all Trainer cards your opponent has in play. If tails, discard all Trainer (excluding Supporter cards) you have in play."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Sumiyoshi Kizuki",
+      "secret": false,
+      "deckCode": "NP 27",
+      "printGroup": [
+        "HSP 18",
+        "NP 27",
+        "NP 36"
+      ],
+      "limitless": {
+        "id": 32634,
+        "url": "https://limitlesstcg.com/cards/NP/27"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/27.png",
+        "large": "https://images.pokemontcg.io/np/27_hires.png"
+      }
+    },
+    {
+      "number": "28/40",
+      "localId": "28",
+      "name": "Championship Arena",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card.",
+        "At the end of each player's turn, if that player has 8 or more cards in his or her hand, that player discards a number of cards until that player has 7 cards left in his or her hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "NP 28",
+      "printGroup": [
+        "NP 28"
+      ],
+      "limitless": {
+        "id": 32471,
+        "url": "https://limitlesstcg.com/cards/NP/28"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/28.png",
+        "large": "https://images.pokemontcg.io/np/28_hires.png"
+      }
+    },
+    {
+      "number": "29/40",
+      "localId": "29",
+      "name": "Celebi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Leaf Slice",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Hajime Kusajima",
+      "secret": false,
+      "deckCode": "NP 29",
+      "printGroup": [
+        "NP 29",
+        "WP 50"
+      ],
+      "limitless": {
+        "id": 32635,
+        "url": "https://limitlesstcg.com/cards/NP/29"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/29.png",
+        "large": "https://images.pokemontcg.io/np/29_hires.png"
+      }
+    },
+    {
+      "number": "30/40",
+      "localId": "30",
+      "name": "Suicune",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Pure Body",
+          "text": "Whenever you attach a Water Energy card from your hand to Suicune, discard an Energy card attached to Suicune. (You can't attach a Water Energy card from your hand if Suicune has no Energy cards attached.)",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Hypno Wave",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 20 more damage. If tails, this attack does 30 damage and the Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "deckCode": "NP 30",
+      "printGroup": [
+        "E2 37",
+        "E2 H25",
+        "NP 30",
+        "WP 53"
+      ],
+      "limitless": {
+        "id": 32636,
+        "url": "https://limitlesstcg.com/cards/NP/30"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/30.png",
+        "large": "https://images.pokemontcg.io/np/30_hires.png"
+      }
+    },
+    {
+      "number": "31/40",
+      "localId": "31",
+      "name": "Moltres ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Synchronized Lift",
+          "text": "As long as you have Articuno ex and Zapdos ex in play, the Retreat Cost for Moltres ex is 0.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flame Gift",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "You may move a Fire Energy card attached to Moltres ex to 1 of your Pokémon."
+        },
+        {
+          "name": "Scorching Wing",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard all Fire Energy attached to Moltres ex."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ken Ikuji",
+      "secret": false,
+      "deckCode": "NP 31",
+      "printGroup": [
+        "NP 31"
+      ],
+      "limitless": {
+        "id": 32472,
+        "url": "https://limitlesstcg.com/cards/NP/31"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/31.png",
+        "large": "https://images.pokemontcg.io/np/31_hires.png"
+      }
+    },
+    {
+      "number": "32/40",
+      "localId": "32",
+      "name": "Articuno ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Synchronized Lift",
+          "text": "As long as you have Zapdos ex and Moltres ex in play, the Retreat Cost for Articuno ex is 0.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Ice Gift",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "You may move a Water Energy attached to Articuno ex to 1 of your Pokémon."
+        },
+        {
+          "name": "Freezing Wing",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Nakaoka",
+      "secret": false,
+      "deckCode": "NP 32",
+      "printGroup": [
+        "NP 32"
+      ],
+      "limitless": {
+        "id": 32473,
+        "url": "https://limitlesstcg.com/cards/NP/32"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/32.png",
+        "large": "https://images.pokemontcg.io/np/32_hires.png"
+      }
+    },
+    {
+      "number": "33/40",
+      "localId": "33",
+      "name": "Zapdos ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 100,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Synchronized Lift",
+          "text": "As long as you have Articuno ex and Moltres ex in play, the Retreat Cost for Zapdos ex is 0.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Thunder Gift",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "You may move a Lightning Energy card attached to Zapdos ex to 1 of your Pokémon."
+        },
+        {
+          "name": "Lightning Wing",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Does 10 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "K. Hoshiba",
+      "secret": false,
+      "deckCode": "NP 33",
+      "printGroup": [
+        "NP 33"
+      ],
+      "limitless": {
+        "id": 32474,
+        "url": "https://limitlesstcg.com/cards/NP/33"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/33.png",
+        "large": "https://images.pokemontcg.io/np/33_hires.png"
+      }
+    },
+    {
+      "number": "34/40",
+      "localId": "34",
+      "name": "Typhlosion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Quilava",
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Burning Aura",
+          "text": "As long as Typhlosion is your Active Pokémon, put 1 damage counter on each Active Pokémon (both yours and your opponent's) between turns.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flickering Flames",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Rage",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "Does 50 damage plus 10 more damage for each damage counter on Typhlosion."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Hajime Kusajima",
+      "secret": false,
+      "deckCode": "NP 34",
+      "printGroup": [
+        "NP 34",
+        "UF 17"
+      ],
+      "limitless": {
+        "id": 32637,
+        "url": "https://limitlesstcg.com/cards/NP/34"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/34.png",
+        "large": "https://images.pokemontcg.io/np/34_hires.png"
+      }
+    },
+    {
+      "number": "35/40",
+      "localId": "35",
+      "name": "Pikachu δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Thunder Wave",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Iron Tail",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip a coin until you get tails. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "NP 35",
+      "printGroup": [
+        "LM 93",
+        "NP 35"
+      ],
+      "limitless": {
+        "id": 32638,
+        "url": "https://limitlesstcg.com/cards/NP/35"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/35.png",
+        "large": "https://images.pokemontcg.io/np/35_hires.png"
+      }
+    },
+    {
+      "number": "36/40",
+      "localId": "36",
+      "name": "Tropical Tidal Wave",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, discard all Trainer cards your opponent has in play. If tails, discard all Trainer cards (excluding Supporter cards) you have in play."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Sumiyoshi Kizuki",
+      "secret": false,
+      "deckCode": "NP 36",
+      "printGroup": [
+        "HSP 18",
+        "NP 27",
+        "NP 36"
+      ],
+      "limitless": {
+        "id": 32639,
+        "url": "https://limitlesstcg.com/cards/NP/36"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/36.png",
+        "large": "https://images.pokemontcg.io/np/36_hires.png"
+      }
+    },
+    {
+      "number": "37/40",
+      "localId": "37",
+      "name": "Kyogre ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Frenzy",
+          "text": "As long as your opponent has Groudon, Groudon ex, Rayquaza, or Rayquaza ex in play. Kyogre ex's attacks do 40 more damage to the Defending Pokémon (before applying Weakness and Resistance).",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Aqua Supply",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "You may attach a basic Energy card from your hand to 1 of your Pokémon."
+        },
+        {
+          "name": "Tsunami",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "Does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "NP 37",
+      "printGroup": [
+        "NP 37"
+      ],
+      "limitless": {
+        "id": 32475,
+        "url": "https://limitlesstcg.com/cards/NP/37"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/37.png",
+        "large": "https://images.pokemontcg.io/np/37_hires.png"
+      }
+    },
+    {
+      "number": "38/40",
+      "localId": "38",
+      "name": "Groudon ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 100,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Frenzy",
+          "text": "As long as your opponent has Kyogre, Kyogre ex, Rayquaza, or Rayquaza ex in play, Groudon ex's attacks do 40 more damage to the Defending Pokémon (before applying Weakness and Resistance).",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mix-Up",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent discards the top card from his or her deck."
+        },
+        {
+          "name": "Earthquake",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "NP 38",
+      "printGroup": [
+        "NP 38"
+      ],
+      "limitless": {
+        "id": 32476,
+        "url": "https://limitlesstcg.com/cards/NP/38"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/38.png",
+        "large": "https://images.pokemontcg.io/np/38_hires.png"
+      }
+    },
+    {
+      "number": "39/40",
+      "localId": "39",
+      "name": "Rayquaza ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Frenzy",
+          "text": "As long as your opponent has Kyogre, Kyogre ex, Groudon, or Groudon ex in play, Rayquaza ex's attacks do 40 damage to the Defending Pokémon (before applying Weakness and Resistance).",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Bind",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Twister",
+          "cost": [
+            "Fire",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Flip 2 coins. If both are tails, this attack does nothing. For each heads, discard an Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Colorless",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "deckCode": "NP 39",
+      "printGroup": [
+        "NP 39"
+      ],
+      "limitless": {
+        "id": 32477,
+        "url": "https://limitlesstcg.com/cards/NP/39"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/39.png",
+        "large": "https://images.pokemontcg.io/np/39_hires.png"
+      }
+    },
+    {
+      "number": "40/40",
+      "localId": "40",
+      "name": "Mew",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Psywave",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the amount of Energy attached to the Defending Pokémon."
+        },
+        {
+          "name": "Devolution Beam",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, choose 1 of either player's Evolved Pokémon, remove the highest stage Evolution card from that Pokémon, and put it into that player's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Promo",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "deckCode": "NP 40",
+      "printGroup": [
+        "NP 40"
+      ],
+      "limitless": {
+        "id": 32478,
+        "url": "https://limitlesstcg.com/cards/NP/40"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/np/40.png",
+        "large": "https://images.pokemontcg.io/np/40_hires.png"
+      }
+    }
+  ]
+}

@@ -49,19 +49,33 @@ const files = (await readdir(SRC_DIR)).filter(
   (f) => /\.(png|jpg)$/i.test(f) && eligibleIds.has(f.replace(/\.(png|jpg)$/i, "")),
 )
 let done = 0
+const skipped = []
 for (const file of files) {
   const src = resolve(SRC_DIR, file)
   const dst = resolve(OUT_DIR, file)
   const meta = await sharp(src).metadata()
   const scale = meta.height / REFERENCE_HEIGHT
-  await sharp(src)
-    .extract({
-      left: Math.round((left !== undefined ? Number(left) : 0) * scale),
-      top: Math.round(Number(top) * scale),
-      width: Math.round((width !== undefined ? Number(width) : meta.width / scale) * scale),
-      height: Math.round(Number(height) * scale),
-    })
-    .toFile(dst)
+  const box = {
+    left: Math.round((left !== undefined ? Number(left) : 0) * scale),
+    top: Math.round(Number(top) * scale),
+    width: Math.round((width !== undefined ? Number(width) : meta.width / scale) * scale),
+    height: Math.round(Number(height) * scale),
+  }
+  // The box is scaled by height alone, which assumes every image shares the
+  // standard card aspect ratio. A handful don't — the long promo sets mix in
+  // oversized/jumbo scans — and there the box can run off the right or bottom
+  // edge. Skip those with a note rather than aborting the whole run: the crop
+  // would be misframed for them anyway, so they're a "go look at the full
+  // image" case, not a reason to lose the other few hundred cards.
+  if (box.left + box.width > meta.width || box.top + box.height > meta.height) {
+    skipped.push(`${file} (${meta.width}×${meta.height})`)
+    continue
+  }
+  await sharp(src).extract(box).toFile(dst)
   done++
 }
 console.log(`Cropped ${done} image(s) into ${OUT_DIR}`)
+if (skipped.length) {
+  console.log(`Skipped ${skipped.length} non-standard-shaped image(s) — read these full-size instead:`)
+  for (const s of skipped) console.log(`  ${s}`)
+}
