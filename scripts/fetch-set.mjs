@@ -1041,7 +1041,17 @@ async function main() {
     // point, but let the manual overlay override it for any gaps or fixes.
     if (primary.flavorText) card.flavorText = primary.flavorText
     if (flavorTextOverlay[localId]) card.flavorText = flavorTextOverlay[localId]
-    card.secret = Number(localId) > setMeta.printedTotal
+    // buildNumber() above still denominates against setMeta.printedTotal
+    // unconditionally, because that's what's literally printed on the card
+    // (svp prints "165/102" for real). But treating everything past that as
+    // a "secret rare" would be wrong for --fill-from-limitless sets
+    // specifically: that mode exists exactly because the source's own total
+    // has already fallen behind the real count, so its printedTotal isn't a
+    // meaningful secret-rare threshold anymore — same "no real printedTotal"
+    // treatment MEP's NONE mode already gives an ongoing promo set (see
+    // CLAUDE.md). Found on svp: 123 of 225 numbered cards were coming out
+    // secret:true off a printedTotal (102) more than a hundred cards stale.
+    card.secret = fillFromLimitless ? false : Number(localId) > setMeta.printedTotal
     // null whenever the Limitless scrape was skipped — either for the whole
     // set ("NONE") or for a single card Limitless has no page for. Never
     // synthesize a deckCode/printGroup here: a placeholder would falsely
@@ -1066,7 +1076,10 @@ async function main() {
       name: setMeta.name,
       series: setMeta.series,
       printedTotal: setMeta.printedTotal,
-      secretTotal: setMeta.total - setMeta.printedTotal,
+      // See the matching card.secret comment above — a --fill-from-limitless
+      // set's printedTotal is a stale printed denominator, not a real
+      // secret-rare threshold, so it can't be subtracted from total here.
+      secretTotal: fillFromLimitless ? 0 : setMeta.total - setMeta.printedTotal,
       total: setMeta.total,
       releaseDate: setMeta.releaseDate.replace(/\//g, "-"),
       // The year matches the set's release year for original artwork; sets
