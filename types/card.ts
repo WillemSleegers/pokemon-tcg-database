@@ -33,7 +33,7 @@ export interface Card {
   number: string // exact phrasing printed on the card, e.g. "003/132"
   localId: string // bare number — Limitless/PTCGL URLs and IDs use this
   name: string
-  supertype: "Pokémon" | "Trainer"
+  supertype: "Pokémon" | "Trainer" | "Energy"
   subtypes: string[]
   evolvesFrom?: string // Pokémon only, if not Basic
   evolvesTo?: string[] // Pokémon only, if any
@@ -116,7 +116,7 @@ export interface CardImages {
 export interface PrimaryCard {
   number: string
   name: string
-  supertype: "Pokémon" | "Trainer"
+  supertype: "Pokémon" | "Trainer" | "Energy"
   subtypes?: string[]
   evolvesFrom?: string
   evolvesTo?: string[]
