@@ -443,17 +443,36 @@ directly.
 `dc1` was not the only one: `node scripts/missing-sets.mjs XY` (added for
 exactly this, see below) turned up `g1` on its very first run — a third
 XY-series set hidden by the same numeric walk. `data/sets/GEN.json`
-(Generations, 117 cards) is now done too, which finally does close the XY
+(Generations, 85 cards) and `data/sets/GENRC.json` (Generations Radiant
+Collection, 32 cards) are now done too, which finally does close the XY
 series. Don't take an era's "done" claim in this file at face value; run the
 script.
 
-GEN's 117 cards are its 83 numbered ones plus two alternate arts (`28a`,
-`73a`) and the 32-card **Radiant Collection** subset (`RC1`–`RC32`). Unlike
-every other subset in this database, Radiant Collection needs **neither** the
-third nor the fourth `fetch-set.mjs` argument: pokemon-tcg-data keeps it
-inside `g1` rather than splitting it out as its own set id, and its `RC<n>`
-numbers are already unique and match Limitless's own — plain
-`node scripts/fetch-set.mjs g1 GEN` is correct.
+GEN's 117 fetched cards are its 83 numbered ones plus two alternate arts
+(`28a`, `73a`) and the 32-card **Radiant Collection** subset (`RC1`–`RC32`).
+Unlike every other subset in this database, Radiant Collection needs
+**neither** the third nor the fourth `fetch-set.mjs` argument to *fetch*:
+pokemon-tcg-data keeps it inside `g1` rather than splitting it out as its own
+set id, and its `RC<n>` numbers are already unique and match Limitless's
+own — plain `node scripts/fetch-set.mjs g1 GEN` pulls in all 117 as one file.
+
+It was later split by hand into `GEN.json`/`GENRC.json`, at the user's
+request, for consistency with every other subset that shares its base set's
+Limitless page (Trainer Gallery, Shiny Vault, Galarian Gallery, Classic
+Collection all get their own file — see "Subsets that share their base set's
+Limitless page" below) — even though, unlike those, pokemon-tcg-data doesn't
+itself split Radiant Collection out as a separate id. `GENRC`'s `ptcgDataId`
+is still `"g1"`, same as `GEN`'s, since that's genuinely where the data came
+from; harmless duplication, not a bug (`missing-sets.mjs` only checks set
+membership). Each card's `limitless.deckCode`/`url`/`printGroup` were left
+exactly as fetched (`"GEN RC1"` etc.) since that's still Limitless's own
+numbering under `GEN`'s page, not `GENRC`'s — only the output file and
+`set.code` changed, so no other set's stored `printGroup` cross-references
+needed touching; confirmed by `refresh-print-groups.mjs` coming back clean
+against the split files. `fetch-set.mjs` itself has no native way to split
+one pokemon-tcg-data set into two output files, so a future re-fetch (there's
+no reason to expect one — this is a closed, years-old set) would need the
+same by-hand split repeated, not a plain re-run.
 
 Radiant Collection is the second case (after DCR, above) of flavor text that
 isn't Pokédex reuse — but unlike DCR it's *mixed*, which is the part worth
@@ -1467,10 +1486,11 @@ the details, including two `fetch-set.mjs` bugs XYP's fetch surfaced around
 Limitless's non-canonical URL redirects, and a `BREAK`-subtype dex-box
 exclusion gap BKT surfaced). Unlike every prior era's promo set, `XYP` was
 included rather than skipped, at the user's explicit request. `DCR` (dc1,
-Double Crisis) and `GEN` (g1, Generations, including its `RC1`–`RC32` Radiant
-Collection subset) were added later — two more XY-series sets the era walk
-missed because their ids aren't `xy<n>`; see Status above. 17 files across 16
-`sets/en.json` entries. Enumerate an era with
+Double Crisis) and `GEN`/`GENRC` (g1, Generations plus its `RC1`–`RC32`
+Radiant Collection subset, later split into its own file — see Status above)
+were added later — two more XY-series sets the era walk missed because their
+ids aren't `xy<n>`; see Status above. 18 files across 16 `sets/en.json`
+entries. Enumerate an era with
 `node scripts/missing-sets.mjs <series>`, not by a numeric range over ids.
 
 All nine English Black Star Promos sets are **done** — a fifth backfill,
