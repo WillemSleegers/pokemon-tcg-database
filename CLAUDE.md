@@ -1061,6 +1061,28 @@ not the stale "Limitless's N cards is the whole set" assumption.
     pre-existing Pikachu 27 exception plus the two new anime tie-ins above —
     expected, not a regression.
 
+SVP grew to **226 cards** shortly after (2026/08/15) with `Terapagos &
+Friends`, a jumbo/oversized promo from the Pokémon Horizons "Grand Adventure
+Collection" gift set (2024/11/15 US release). Confirmed against its own card
+image (Bulbapedia Archives): no pokemon-tcg-data entry (still capped at 165
+as of this writing), no Limitless page (confirmed 404, and not a redirect —
+Bulbapedia's own page for it is the genuine article, not a `#REDIRECT`), and
+critically **no printed card number at all** — the bottom-left corner shows
+only "SVP EN" and the promo star, unlike every other hand-added no-Limitless
+SVP card (213–215, 225), which at least print a bare number. That's a new
+case `Card.number: string` couldn't represent, so `types/card.ts` widened it
+to `string | null` — null meaning the card genuinely prints no number, not
+"unknown". `localId` is still `"226"`, continuing the sequence positionally.
+Its flavor text ("After a long slumber in the form of a pendant...") is
+anime-continuity text, not a Pokédex reuse — the same "flavor text has no
+structured source" exception as SVP 191/192 above; `check-flavor-text.mjs`
+flags it and always will, expected rather than a bug. `pokedex.height` is
+stored as `"0'8\""` (the feet'inches convention every other card uses) even
+though the card itself prints the abbreviated `HT: 8"` with no feet
+component — confirmed against Terapagos's real-world Normal Form height
+(0.2 m ≈ 8 in) rather than transcribed literally, unlike `number`, which does
+get transcribed literally when present.
+
 `limitless` is `null` rather than some placeholder deck code, deliberately: we
 have no source for what Limitless (or anything else) would call a card it
 never catalogued, and a fabricated code would either falsely claim print-group

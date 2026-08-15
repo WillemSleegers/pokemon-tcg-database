@@ -30,7 +30,7 @@ export interface SetImages {
 }
 
 export interface Card {
-  number: string // exact phrasing printed on the card, e.g. "003/132"
+  number: string | null // exact phrasing printed on the card, e.g. "003/132" — null if the card prints no number at all (e.g. an unnumbered jumbo/oversized promo)
   localId: string // bare number — Limitless/PTCGL URLs and IDs use this
   name: string
   supertype: "Pokémon" | "Trainer" | "Energy"
