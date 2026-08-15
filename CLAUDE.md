@@ -966,6 +966,48 @@ doesn't share it. Not fixed here — SP's 3 cards were added by hand instead —
 but worth fixing before trusting `--fill-from-limitless` on `swshp`/`xyp`/
 `dpp` again.
 
+### `data/no-rarity/<CODE>.json` — cards that print no rarity symbol
+
+`card.rarity = primary.rarity` used to be a direct, unchecked copy — which
+silently dropped the field entirely for any set whose pokemon-tcg-data source
+has no `rarity` at all (`rarity: string` is required in `types/card.ts`, but
+that's only checked against the typed input shape, not the actual JSON an
+external fetch returns). Found by audit: 75 cards across `KSS` (Kalos Starter
+Set) and the three McDonald's Collections (`MCD17`/`MCD18`/`MCD19`) had no
+`rarity` key at all. Confirmed genuine — not a fetch bug — against
+Bulbapedia's own set-list rarity column, which shows a bare "—" for every card
+in all four sets: these are theme-deck/promo-collection prints that carry no
+rarity symbol on the physical card, the same real fact `data/no-pokedex/`
+records for cards that predate the dex-box convention. `fetch-set.mjs` now
+requires an explicit source for `rarity` — either a non-empty value from
+pokemon-tcg-data/the fallback path, or the card's localId (or a lone `"*"`)
+listed in `data/no-rarity/<CODE>.json`, which stores `"None"` — and throws
+naming the card otherwise, so a future set with a genuine gap fails loudly
+instead of silently dropping the field again.
+
+**A missing `rarity` field is not always a whole-set case, though — check
+per card before assuming "*".** The same audit also caught 3 individual cards
+in the already-completed `DRV.json` (Dragon Vault) missing `rarity` — Exp.
+Share (18), First Ticket (19), and the Kyurem secret rare (21) — despite the
+other 18 cards in that same 21-card set carrying `Rare Holo` normally. Unlike
+KSS/MCD, this wasn't "no rarity concept": Limitless's own card pages list all
+three as "Holo Rare" (Bulbapedia's set list agrees, using this database's
+`Rare Holo` spelling), pokemon-tcg-data just happens to lack the field for
+those three specific cards. Fixed by hand directly in `data/sets/DRV.json`
+(the BLK/Escavalier precedent — a one-off upstream gap on an already-completed
+set isn't worth a new overlay), not added to `data/no-rarity/`, since these
+cards do have a real rarity, just not one pokemon-tcg-data carries.
+
+Separately, 7 cards in `ASC.json` (Ascended Heroes) carried the raw upstream
+constant `"MEGA_ATTACK_RARE"` in `rarity` instead of pokemon-tcg-data's usual
+title-cased strings — confirmed against `me2pt5.json` directly, where every
+other card's `rarity` is already title case (`"Common"`, `"Double Rare"`,
+etc.) and only these 7 escaped it. `fetch-set.mjs` now runs every `rarity`
+value through `normalizeRarity()`, which title-cases a SCREAMING_SNAKE_CASE
+value structurally (`MEGA_ATTACK_RARE` → `Mega Attack Rare`) rather than
+special-casing this one string, so the same upstream slip on a future set is
+caught too.
+
 **The same "not in Limitless, therefore out of scope" reasoning was wrong for
 MEP and SVP too — this isn't an SP-specific fix, it's a standing policy error
 in this file.** Both sets had deliberately excluded cards on exactly this

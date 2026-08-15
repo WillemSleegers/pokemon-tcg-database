@@ -129,6 +129,33 @@ async function loadNoLimitlessOverlay(code) {
   }
 }
 
+// Cards that print no rarity symbol at all — confirmed against Bulbapedia's
+// own set-list rarity column (a "—" for every card), not assumed from the
+// absence of a pokemon-tcg-data field, since that absence is equally what a
+// genuine data gap looks like. So far this is whole theme-deck/promo-collection
+// sets rather than individual cards (Kalos Starter Set, the McDonald's
+// Collections), listed with a lone "*" the same as data/no-pokedex/.
+async function loadNoRarityOverlay(code) {
+  try {
+    const ids = JSON.parse(await readFile(resolve(ROOT, "data/no-rarity", `${code}.json`), "utf8"))
+    return { all: ids.includes("*"), ids: new Set(ids) }
+  } catch {
+    return { all: false, ids: new Set() }
+  }
+}
+
+// pokemon-tcg-data's rarity field is normally already the title-cased name
+// this database stores verbatim ("Rare Holo VMAX"), but Ascended Heroes'
+// Mega Attack Rare cards carry the raw upstream constant "MEGA_ATTACK_RARE"
+// instead — the one set found so far where that escaped normalization on
+// pokemon-tcg-data's own side. Detected structurally (SCREAMING_SNAKE_CASE)
+// rather than as a one-off string replacement, so any future set with the
+// same upstream slip is caught too.
+function normalizeRarity(rarity) {
+  if (!/^[A-Z]+(_[A-Z]+)*$/.test(rarity)) return rarity
+  return rarity.split("_").map((word) => word[0] + word.slice(1).toLowerCase()).join(" ")
+}
+
 const CONCURRENCY = 6
 const RETRIES = 3
 
@@ -903,6 +930,7 @@ async function main() {
   const flavorTextOverlay = await loadFlavorTextOverlay(limitlessCode)
   const noPokedex = await loadNoPokedexOverlay(limitlessCode)
   const noLimitlessCards = await loadNoLimitlessOverlay(limitlessCode)
+  const noRarity = await loadNoRarityOverlay(limitlessCode)
   const missingFromLimitless = []
   console.log(`Found ${primaryCards.length} cards. Fetching per-card data from Limitless + PokeAPI...`)
 
@@ -995,7 +1023,17 @@ async function main() {
     card.resistances = primary.resistances ?? []
     if (primary.convertedRetreatCost !== undefined) card.retreatCost = primary.convertedRetreatCost
     card.regulationMark = primary.regulationMark ?? null
-    card.rarity = primary.rarity
+    if (primary.rarity) {
+      card.rarity = normalizeRarity(primary.rarity)
+    } else if (noRarity.all || noRarity.ids.has(localId)) {
+      card.rarity = "None"
+    } else {
+      throw new Error(
+        `${localId} ${primary.name} has no rarity from any source — if the physical card genuinely ` +
+          `prints no rarity symbol (confirm against Bulbapedia's own set-list rarity column, not just ` +
+          `this field's absence), add it to data/no-rarity/${limitlessCode}.json`,
+      )
+    }
     card.artist = extra.artist
     if (pokedex) card.pokedex = pokedex
     // pokemon-tcg-data already carries flavor text for older sets (it's the
