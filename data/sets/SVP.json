@@ -5,8 +5,8 @@
     "name": "Scarlet & Violet Black Star Promos",
     "series": "Scarlet & Violet",
     "printedTotal": 102,
-    "secretTotal": 116,
-    "total": 218,
+    "secretTotal": 123,
+    "total": 225,
     "releaseDate": "2023-01-01",
     "copyright": "©2023 Pokémon / Nintendo / Creatures / GAME FREAK",
     "images": {
@@ -12288,6 +12288,162 @@
       }
     },
     {
+      "number": "190",
+      "localId": "190",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scrappy Spark",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "H",
+      "rarity": "Promo",
+      "artist": "Atsushi Furusawa",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/3/39/PikachuSVPPromo190.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/3/39/PikachuSVPPromo190.jpg"
+      }
+    },
+    {
+      "number": "191",
+      "localId": "191",
+      "name": "Sprigatito",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Leafage",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Yamazaki Rei",
+      "pokedex": {
+        "number": 906,
+        "genus": "Grass Cat Pokémon",
+        "height": "1'4\"",
+        "weight": "9.0 lbs"
+      },
+      "flavorText": "Liko's partner is quirky and has its own tempo. No one really knows what this Sprigatito is thinking.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/9/9e/SprigatitoSVPPromo191.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/9/9e/SprigatitoSVPPromo191.jpg"
+      }
+    },
+    {
+      "number": "192",
+      "localId": "192",
+      "name": "Fuecoco",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "G",
+      "rarity": "Promo",
+      "artist": "Ito Kyoko",
+      "pokedex": {
+        "number": 909,
+        "genus": "Fire Croc Pokémon",
+        "height": "1'4\"",
+        "weight": "21.6 lbs"
+      },
+      "flavorText": "Roy's partner is lax and prone to gluttony. This Fuecoco loves to sing its heart out.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/f/f1/FuecocoSVPPromo192.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/f/f1/FuecocoSVPPromo192.jpg"
+      }
+    },
+    {
       "number": "193/102",
       "localId": "193",
       "name": "Hop's Zacian ex",
@@ -13644,6 +13800,154 @@
       }
     },
     {
+      "number": "213",
+      "localId": "213",
+      "name": "Feraligatr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Croconaw",
+      "types": [
+        "Water"
+      ],
+      "hp": 180,
+      "attacks": [
+        {
+          "name": "Deep Submergence",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "140",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Acorviart",
+      "pokedex": {
+        "number": 160,
+        "genus": "Big Jaw Pokémon",
+        "height": "7'7\"",
+        "weight": "195.8 lbs"
+      },
+      "flavorText": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/3/3e/FeraligatrSVPPromo213.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/3/3e/FeraligatrSVPPromo213.jpg"
+      }
+    },
+    {
+      "number": "214",
+      "localId": "214",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Unwind",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 20 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Kazuki Minami",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/b/b5/PikachuSVPPromo214.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/b/b5/PikachuSVPPromo214.jpg"
+      }
+    },
+    {
+      "number": "215",
+      "localId": "215",
+      "name": "Toxtricity ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "ex"
+      ],
+      "evolvesFrom": "Toxel",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 260,
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Strumming Thunder",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "240",
+          "text": "Discard 2 Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "Anderson",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/0/01/ToxtricityexSVPPromo215.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/0/01/ToxtricityexSVPPromo215.jpg"
+      }
+    },
+    {
       "number": "216/102",
       "localId": "216",
       "name": "Team Rocket's Mewtwo ex",
@@ -14138,6 +14442,56 @@
       "images": {
         "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_224_R_EN_LG.png",
         "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SVP/SVP_224_R_EN.png"
+      }
+    },
+    {
+      "number": "225",
+      "localId": "225",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scrappy Spark",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "artist": "DOM",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://archives.bulbagarden.net/media/upload/4/46/PikachuSVPPromo225.jpg",
+        "large": "https://archives.bulbagarden.net/media/upload/4/46/PikachuSVPPromo225.jpg"
       }
     }
   ]

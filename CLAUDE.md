@@ -905,10 +905,119 @@ This supersedes the hand-stripping used for Classic Collection's two such cards
 
 `"NONE"` as `<limitlessUrlCode>` covers a set Limitless never catalogued at all
 (the McDonald's collections). The long-running promo sets need the per-card
-version of the same thing: Limitless catalogues 292 of `swshp`'s 304 cards, and
-misses one of `svp`'s. List those localIds in `data/no-limitless/<CODE>.json` and
-they take the same path as `"NONE"` — `artist` from pokemon-tcg-data, `limitless`
-set to `null`.
+version of the same thing: Limitless catalogues 292 of `swshp`'s (now 307)
+cards, and misses one of `svp`'s. List those localIds in `data/no-limitless/
+<CODE>.json` and they take the same path as `"NONE"` — `artist` from
+pokemon-tcg-data, `limitless` set to `null`.
+
+**A card missing from Limitless is not out of scope — check whether it's a
+reprint before writing it off.** SP (`swshp`) was found short 3 cards neither
+pokemon-tcg-data nor (for 2 of the 3) Limitless carries at all: SWSH299
+(Jirachi V), SWSH300 (Unown V), SWSH301 (Lugia V). The instinct to treat "no
+Limitless page" as "not in scope" (the MEP/SVP precedent, where Limitless's own
+card-list scope decision is treated as authoritative) doesn't hold here,
+because these three aren't unique prints with no other source — Bulbapedia's
+card page for each is a `#REDIRECT` to an already-verified reprint in this
+database (Jirachi V → `ASR 170`, Unown V → `SIT 65`, Lugia V → `SIT 138`), the
+same redirect-resolution tier `buildFallbackCards` already uses for
+`--fill-from-limitless`. A reprint's game text is definitionally identical, so
+all three were hand-added directly to `data/sets/SP.json` (not run through
+`fetch-set.mjs`, since no existing mode covers "no Limitless page, but a known
+reprint") with text/HP/attacks/weakness/resistance/retreat copied verbatim
+from their source card, confirmed against each promo's own card image before
+trusting anything. SWSH301 does have a live Limitless page (`id`/`deckCode`/
+`printGroup` set normally, and its `printGroup` already listed `SP 301` — no
+`refresh-print-groups.mjs` change needed); SWSH299/300 have `limitless: null`,
+same as any other no-Limitless card.
+
+Two things this surfaced that aren't SP-specific:
+
+- **Don't trust a Bulbapedia gallery image's caption.** The files captioned as
+  SWSH300's and SWSH301's promo prints (`UnownVSWSHPromo300.jpg`,
+  `LugiaVSWSHPromo301.jpg`) are actually the **Japanese** S-P promo scans
+  (320/S-P, 322/S-P) — confirmed by opening both images (wrong language) and
+  by the file's own upload-history comment on Bulbagarden Archives ("Unown V
+  (S-P Promo 320)"). Only SWSH299's file was genuinely correct. Always open
+  the image and read the card, not just the caption — same lesson as every
+  "confirmed against the card image" note elsewhere in this file, just for a
+  source image instead of a flavor-text transcription.
+- **Limitless's own CDN can 404 in spirit while 200ing in form.** All three
+  promo images 403'd from `limitlesstcg.nyc3.cdn.digitaloceanspaces.com`
+  (`AccessDenied`, not a clean 404) even for SWSH301, which has a normal card
+  page — a genuinely missing/broken asset on Limitless's side, not an id bug.
+  Confirmed by fetching a known-good MEP/SVP fallback image from the same CDN
+  successfully, which ruled out a general outage. Final images for all three
+  came from `storage.googleapis.com/images.pricecharting.com/...` instead (a
+  new source for this database, supplied and confirmed by the user) — SWSH299
+  used its correct Bulbapedia Archives URL instead, since that one held up.
+  Neither has a `_LG`/small variant, so `images.small`/`images.large` point at
+  the same URL for these three cards specifically.
+
+Also worth remembering for the next long-running promo set's refresh:
+`--fill-from-limitless`'s missing-card diff is currently broken for any set
+whose pokemon-tcg-data `number` bakes in a redundant set-code prefix the way
+`swshp`'s does (`"SWSH001"`, not `"1"`) — `buildFillCards`'s `have` set runs
+`toLimitlessLocalId()` over that number, which only strips leading zeros, not
+the whole prefix, so it undercounts what's already present almost entirely
+(a test run on SP saw 292 of 304 already-fetched cards reported as "missing").
+`fetchLimitlessExtra`'s per-card 404 retry already has the real prefix-strip
+logic (guarded on the fetched page's title); `buildFillCards`'s upfront diff
+doesn't share it. Not fixed here — SP's 3 cards were added by hand instead —
+but worth fixing before trusting `--fill-from-limitless` on `swshp`/`xyp`/
+`dpp` again.
+
+**The same "not in Limitless, therefore out of scope" reasoning was wrong for
+MEP and SVP too — this isn't an SP-specific fix, it's a standing policy error
+in this file.** Both sets had deliberately excluded cards on exactly this
+premise (documented as scope decisions in Status above). Re-checked the same
+way as SP: diff each set's own Bulbapedia set-list page against what's stored,
+not the stale "Limitless's N cards is the whole set" assumption.
+
+- **MEP grew from 88 to 88 known-real cards** — Bulbapedia's set list actually
+  runs to 120 (with a large ongoing gap, `111`–`119`, not yet assigned), which
+  is a separate, much bigger backfill than what was tackled here. What *was*
+  in scope: `055`–`063`, the "First Partner Illustration Collection Series 3"
+  cards (Treecko, Torchic, Mudkip, Chespin, Fennekin, Froakie, Sprigatito,
+  Fuecoco, Quaxly) — still absent from Limitless's own MEP page as of this
+  writing (a very recent release, August 7, 2026), but each has its own full
+  Bulbapedia card page (not a redirect) with complete, self-consistent game
+  text, matching the exact shape of the already-verified `037`–`054` cards in
+  this same set (single attack, no ability, flavor text, no resistance). All
+  9 transcribed from Bulbapedia's wikitext and cross-checked against their own
+  card images (2 read in full, the rest spot-checked for retreat cost and
+  regulation mark, which the infobox text doesn't state) before saving. Added
+  by hand directly to `data/sets/MEP.json`, `limitless: null`. Images from
+  Bulbagarden Archives — no mislabeling this time (unlike the SP case below),
+  confirmed by opening them.
+- **SVP had 7 of Bulbapedia's 225 listed cards missing**, not the 9 the old
+  note claimed (that count had drifted). Same triage as SP: checked each
+  card's own Bulbapedia page for a `#REDIRECT` before assuming it needed
+  transcription.
+  - `190`, `225` (Pikachu, Play!Pokémon/Worlds promos) and `191`
+    (Sprigatito), `192` (Fuecoco) — Pokémon Horizons anime tie-in prints —
+    all redirect, to `SVP 101`, `SVI 13`, and `PAL 34` respectively (192 also
+    joins `PAL 34`'s existing print group alongside the already-stored `SVP
+    79`, a different Fuecoco promo — three separate physical prints of the
+    same game text is normal here, same as any other reprint chain).
+    **Redirecting to the same source doesn't mean identical card, though**:
+    191 and 192 turned out to carry unique anime-tie-in flavor text ("Liko's
+    partner is quirky...", "Roy's partner is lax...") instead of the source
+    print's Pokédex text — caught only by actually opening the image rather
+    than assuming a reprint's flavor text carries over unchanged the way its
+    attacks/HP do. Filed alongside Detective Pikachu and Classic Collection's
+    Dark Gyarados as the same "flavor text has no structured source"
+    exception (see below) — confirmed correct as printed, not fixed.
+  - `213` (Feraligatr), `214` (Pikachu), `215` (Toxtricity ex) — 2024
+    Illustration Contest winner promos — have no Bulbapedia redirect, so were
+    transcribed directly from Bulbapedia's card page the same way MEP's
+    original exclusives were, each confirmed against its own card image.
+    Regulation mark had to come off the image directly (varies by print date,
+    not carried in the infobox text) — confirmed `H`/`I` depending on print,
+    not assumed from a neighboring card.
+  - All added by hand to `data/sets/SVP.json`, `limitless: null`.
+    `check-flavor-text.mjs SVP` came back 3/142 unmatched afterward: the
+    pre-existing Pikachu 27 exception plus the two new anime tie-ins above —
+    expected, not a regression.
 
 `limitless` is `null` rather than some placeholder deck code, deliberately: we
 have no source for what Limitless (or anything else) would call a card it
