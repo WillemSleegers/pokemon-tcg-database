@@ -229,11 +229,11 @@
     {
       "number": "CC4",
       "localId": "CC4",
-      "name": "Here Comes Team Rocket!",
+      "name": "Imposter Professor Oak",
       "supertype": "Trainer",
       "subtypes": [],
       "rules": [
-        "Each player plays with his or her Prize cards face up for the rest of the game."
+        "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards."
       ],
       "weaknesses": [],
       "resistances": [],
@@ -252,172 +252,13 @@
         ]
       },
       "images": {
-        "small": "https://images.pokemontcg.io/cel25c/15_B.png",
-        "large": "https://images.pokemontcg.io/cel25c/15_B_hires.png"
-      }
-    },
-    {
-      "number": "CC5",
-      "localId": "CC5",
-      "name": "Rocket's Zapdos",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Basic"
-      ],
-      "types": [
-        "Lightning"
-      ],
-      "hp": 70,
-      "attacks": [
-        {
-          "cost": [
-            "Lightning"
-          ],
-          "name": "Plasma",
-          "damage": "20",
-          "text": "If there are any Lightning Energy cards in your discard pile, attach 1 of them to Rocket's Zapdos.",
-          "convertedEnergyCost": 1
-        },
-        {
-          "cost": [
-            "Lightning",
-            "Lightning",
-            "Lightning",
-            "Colorless"
-          ],
-          "name": "Electroburn",
-          "damage": "70",
-          "text": "Rocket's Zapdos does damage to itself equal to 10 times the number of Lightning Energy cards attached to it.",
-          "convertedEnergyCost": 4
-        }
-      ],
-      "weaknesses": [],
-      "resistances": [
-        {
-          "type": "Fighting",
-          "value": "-30"
-        }
-      ],
-      "retreatCost": 2,
-      "regulationMark": null,
-      "rarity": "Classic Collection",
-      "artist": "Kagemaru Himeno",
-      "secret": false,
-      "limitless": {
-        "id": 19933,
-        "url": "https://limitlesstcg.com/cards/CEL/CC5",
-        "deckCode": "CEL CC5",
-        "printGroup": [
-          "CEL CC5",
-          "TR 8",
-          "TR 25"
-        ]
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/cel25c/15_C.png",
-        "large": "https://images.pokemontcg.io/cel25c/15_C_hires.png"
-      }
-    },
-    {
-      "number": "CC6",
-      "localId": "CC6",
-      "name": "Claydol",
-      "supertype": "Pokémon",
-      "subtypes": [
-        "Stage 1"
-      ],
-      "evolvesFrom": "Baltoy",
-      "types": [
-        "Fighting"
-      ],
-      "hp": 80,
-      "abilities": [
-        {
-          "type": "Poké-Power",
-          "name": "Cosmic Power",
-          "text": "Once during your turn (before your attack), you may choose up to 2 cards from your hand and put them on the bottom of your deck in any order. If you do, draw cards until you have 6 cards in your hand. This power can't be used if Claydol is affected by a Special Condition."
-        }
-      ],
-      "attacks": [
-        {
-          "cost": [
-            "Fighting",
-            "Colorless"
-          ],
-          "name": "Spinning Attack",
-          "damage": "40",
-          "text": "",
-          "convertedEnergyCost": 2
-        }
-      ],
-      "weaknesses": [
-        {
-          "type": "Grass",
-          "value": "+20"
-        }
-      ],
-      "resistances": [],
-      "retreatCost": 2,
-      "regulationMark": null,
-      "rarity": "Classic Collection",
-      "artist": "Ken Sugimori",
-      "pokedex": {
-        "number": 344,
-        "genus": "Clay Doll Pokémon",
-        "height": "4'11\"",
-        "weight": "238.1 lbs"
-      },
-      "flavorText": "An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.",
-      "secret": false,
-      "limitless": {
-        "id": 19934,
-        "url": "https://limitlesstcg.com/cards/CEL/CC6",
-        "deckCode": "CEL CC6",
-        "printGroup": [
-          "CEL CC6",
-          "EVO 113",
-          "TR 15",
-          "TR 71",
-          "TRR 111"
-        ]
-      },
-      "images": {
-        "small": "https://images.pokemontcg.io/cel25c/15_D.png",
-        "large": "https://images.pokemontcg.io/cel25c/15_D_hires.png"
-      }
-    },
-    {
-      "number": "CC7",
-      "localId": "CC7",
-      "name": "Imposter Professor Oak",
-      "supertype": "Trainer",
-      "subtypes": [],
-      "rules": [
-        "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards."
-      ],
-      "weaknesses": [],
-      "resistances": [],
-      "regulationMark": null,
-      "rarity": "Classic Collection",
-      "artist": "Shin-ichi Yoshida",
-      "secret": false,
-      "limitless": {
-        "id": 19935,
-        "url": "https://limitlesstcg.com/cards/CEL/CC7",
-        "deckCode": "CEL CC7",
-        "printGroup": [
-          "CEL CC7",
-          "G2 15"
-        ]
-      },
-      "images": {
         "small": "https://images.pokemontcg.io/cel25c/73_A.png",
         "large": "https://images.pokemontcg.io/cel25c/73_A_hires.png"
       }
     },
     {
-      "number": "CC8",
-      "localId": "CC8",
+      "number": "CC5",
+      "localId": "CC5",
       "name": "Dark Gyarados",
       "supertype": "Pokémon",
       "subtypes": [
@@ -473,12 +314,13 @@
       "flavorText": "Normally found only in the deep ocean, it has recently been seen in shallow waters as well.",
       "secret": false,
       "limitless": {
-        "id": 19936,
-        "url": "https://limitlesstcg.com/cards/CEL/CC8",
-        "deckCode": "CEL CC8",
+        "id": 19933,
+        "url": "https://limitlesstcg.com/cards/CEL/CC5",
+        "deckCode": "CEL CC5",
         "printGroup": [
-          "CEL CC8",
-          "WP 24"
+          "CEL CC5",
+          "TR 8",
+          "TR 25"
         ]
       },
       "images": {
@@ -487,8 +329,101 @@
       }
     },
     {
-      "number": "CC9",
-      "localId": "CC9",
+      "number": "CC6",
+      "localId": "CC6",
+      "name": "Here Comes Team Rocket!",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Each player plays with his or her Prize cards face up for the rest of the game."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Classic Collection",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 19934,
+        "url": "https://limitlesstcg.com/cards/CEL/CC6",
+        "deckCode": "CEL CC6",
+        "printGroup": [
+          "CEL CC6",
+          "EVO 113",
+          "TR 15",
+          "TR 71",
+          "TRR 111"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/cel25c/15_B.png",
+        "large": "https://images.pokemontcg.io/cel25c/15_B_hires.png"
+      }
+    },
+    {
+      "number": "CC7",
+      "localId": "CC7",
+      "name": "Rocket's Zapdos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "cost": [
+            "Lightning"
+          ],
+          "name": "Plasma",
+          "damage": "20",
+          "text": "If there are any Lightning Energy cards in your discard pile, attach 1 of them to Rocket's Zapdos.",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "name": "Electroburn",
+          "damage": "70",
+          "text": "Rocket's Zapdos does damage to itself equal to 10 times the number of Lightning Energy cards attached to it.",
+          "convertedEnergyCost": 4
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Classic Collection",
+      "artist": "Shin-ichi Yoshida",
+      "secret": false,
+      "limitless": {
+        "id": 19935,
+        "url": "https://limitlesstcg.com/cards/CEL/CC7",
+        "deckCode": "CEL CC7",
+        "printGroup": [
+          "CEL CC7",
+          "G2 15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/cel25c/15_C.png",
+        "large": "https://images.pokemontcg.io/cel25c/15_C_hires.png"
+      }
+    },
+    {
+      "number": "CC8",
+      "localId": "CC8",
       "name": "_____'s Pikachu",
       "supertype": "Pokémon",
       "subtypes": [
@@ -530,12 +465,12 @@
       "flavorText": "Your Birthdate: ______________________________",
       "secret": false,
       "limitless": {
-        "id": 19937,
-        "url": "https://limitlesstcg.com/cards/CEL/CC9",
-        "deckCode": "CEL CC9",
+        "id": 19936,
+        "url": "https://limitlesstcg.com/cards/CEL/CC8",
+        "deckCode": "CEL CC8",
         "printGroup": [
-          "CEL CC9",
-          "N1 20"
+          "CEL CC8",
+          "WP 24"
         ]
       },
       "images": {
@@ -544,8 +479,8 @@
       }
     },
     {
-      "number": "CC10",
-      "localId": "CC10",
+      "number": "CC9",
+      "localId": "CC9",
       "name": "Cleffa",
       "supertype": "Pokémon",
       "subtypes": [
@@ -576,7 +511,7 @@
       "resistances": [],
       "regulationMark": null,
       "rarity": "Classic Collection",
-      "artist": "Ken Sugimori",
+      "artist": "Kagemaru Himeno",
       "pokedex": {
         "number": 173,
         "genus": "Star Shape Pokémon",
@@ -586,12 +521,12 @@
       "flavorText": "Because of its unusual, star-like silhouette, people believe that it came here on a meteor.",
       "secret": false,
       "limitless": {
-        "id": 19938,
-        "url": "https://limitlesstcg.com/cards/CEL/CC10",
-        "deckCode": "CEL CC10",
+        "id": 19937,
+        "url": "https://limitlesstcg.com/cards/CEL/CC9",
+        "deckCode": "CEL CC9",
         "printGroup": [
-          "CEL CC10",
-          "N3 66"
+          "CEL CC9",
+          "N1 20"
         ]
       },
       "images": {
@@ -600,8 +535,8 @@
       }
     },
     {
-      "number": "CC11",
-      "localId": "CC11",
+      "number": "CC10",
+      "localId": "CC10",
       "name": "Shining Magikarp",
       "supertype": "Pokémon",
       "subtypes": [
@@ -647,7 +582,7 @@
       "retreatCost": 1,
       "regulationMark": null,
       "rarity": "Classic Collection",
-      "artist": "Kazuo Yazawa",
+      "artist": "Ken Sugimori",
       "pokedex": {
         "number": 129,
         "genus": "Fish Pokémon",
@@ -657,12 +592,12 @@
       "flavorText": "An underpowered, pathetic Pokémon. It may jump high on rare occasions, but never more than seven feet.",
       "secret": false,
       "limitless": {
-        "id": 19939,
-        "url": "https://limitlesstcg.com/cards/CEL/CC11",
-        "deckCode": "CEL CC11",
+        "id": 19938,
+        "url": "https://limitlesstcg.com/cards/CEL/CC10",
+        "deckCode": "CEL CC10",
         "printGroup": [
-          "CEL CC11",
-          "MA 9"
+          "CEL CC10",
+          "N3 66"
         ]
       },
       "images": {
@@ -671,8 +606,8 @@
       }
     },
     {
-      "number": "CC12",
-      "localId": "CC12",
+      "number": "CC11",
+      "localId": "CC11",
       "name": "Team Magma's Groudon",
       "supertype": "Pokémon",
       "subtypes": [
@@ -726,15 +661,15 @@
       "retreatCost": 3,
       "regulationMark": null,
       "rarity": "Classic Collection",
-      "artist": "Ken Sugimori",
+      "artist": "Kazuo Yazawa",
       "secret": false,
       "limitless": {
-        "id": 19940,
-        "url": "https://limitlesstcg.com/cards/CEL/CC12",
-        "deckCode": "CEL CC12",
+        "id": 19939,
+        "url": "https://limitlesstcg.com/cards/CEL/CC11",
+        "deckCode": "CEL CC11",
         "printGroup": [
-          "CEL CC12",
-          "TRR 86"
+          "CEL CC11",
+          "MA 9"
         ]
       },
       "images": {
@@ -743,8 +678,8 @@
       }
     },
     {
-      "number": "CC13",
-      "localId": "CC13",
+      "number": "CC12",
+      "localId": "CC12",
       "name": "Rocket's Admin.",
       "supertype": "Trainer",
       "subtypes": [
@@ -758,15 +693,15 @@
       "resistances": [],
       "regulationMark": null,
       "rarity": "Classic Collection",
-      "artist": "Ryo Ueda",
+      "artist": "Ken Sugimori",
       "secret": false,
       "limitless": {
-        "id": 19941,
-        "url": "https://limitlesstcg.com/cards/CEL/CC13",
-        "deckCode": "CEL CC13",
+        "id": 19940,
+        "url": "https://limitlesstcg.com/cards/CEL/CC12",
+        "deckCode": "CEL CC12",
         "printGroup": [
-          "CEL CC13",
-          "LM 88"
+          "CEL CC12",
+          "TRR 86"
         ]
       },
       "images": {
@@ -775,8 +710,8 @@
       }
     },
     {
-      "number": "CC14",
-      "localId": "CC14",
+      "number": "CC13",
+      "localId": "CC13",
       "name": "Mew ex",
       "supertype": "Pokémon",
       "subtypes": [
@@ -819,15 +754,15 @@
       "retreatCost": 1,
       "regulationMark": null,
       "rarity": "Classic Collection",
-      "artist": "Masahiko Ishii",
+      "artist": "Ryo Ueda",
       "secret": false,
       "limitless": {
-        "id": 19942,
-        "url": "https://limitlesstcg.com/cards/CEL/CC14",
-        "deckCode": "CEL CC14",
+        "id": 19941,
+        "url": "https://limitlesstcg.com/cards/CEL/CC13",
+        "deckCode": "CEL CC13",
         "printGroup": [
-          "CEL CC14",
-          "DF 93"
+          "CEL CC13",
+          "LM 88"
         ]
       },
       "images": {
@@ -836,8 +771,8 @@
       }
     },
     {
-      "number": "CC15",
-      "localId": "CC15",
+      "number": "CC14",
+      "localId": "CC14",
       "name": "Gardevoir ex δ",
       "supertype": "Pokémon",
       "subtypes": [
@@ -882,15 +817,15 @@
       "retreatCost": 2,
       "regulationMark": null,
       "rarity": "Classic Collection",
-      "artist": "Masakazu Fukuda",
+      "artist": "Masahiko Ishii",
       "secret": false,
       "limitless": {
-        "id": 19943,
-        "url": "https://limitlesstcg.com/cards/CEL/CC15",
-        "deckCode": "CEL CC15",
+        "id": 19942,
+        "url": "https://limitlesstcg.com/cards/CEL/CC14",
+        "deckCode": "CEL CC14",
         "printGroup": [
-          "CEL CC15",
-          "P5 17"
+          "CEL CC14",
+          "DF 93"
         ]
       },
       "images": {
@@ -899,8 +834,8 @@
       }
     },
     {
-      "number": "CC16",
-      "localId": "CC16",
+      "number": "CC15",
+      "localId": "CC15",
       "name": "Umbreon ★",
       "supertype": "Pokémon",
       "subtypes": [
@@ -948,7 +883,72 @@
       "retreatCost": 1,
       "regulationMark": null,
       "rarity": "Classic Collection",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 19943,
+        "url": "https://limitlesstcg.com/cards/CEL/CC15",
+        "deckCode": "CEL CC15",
+        "printGroup": [
+          "CEL CC15",
+          "P5 17"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/cel25c/17_A.png",
+        "large": "https://images.pokemontcg.io/cel25c/17_A_hires.png"
+      }
+    },
+    {
+      "number": "CC16",
+      "localId": "CC16",
+      "name": "Claydol",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Baltoy",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "type": "Poké-Power",
+          "name": "Cosmic Power",
+          "text": "Once during your turn (before your attack), you may choose up to 2 cards from your hand and put them on the bottom of your deck in any order. If you do, draw cards until you have 6 cards in your hand. This power can't be used if Claydol is affected by a Special Condition."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "name": "Spinning Attack",
+          "damage": "40",
+          "text": "",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "+20"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Classic Collection",
       "artist": "Midori Harada",
+      "pokedex": {
+        "number": 344,
+        "genus": "Clay Doll Pokémon",
+        "height": "4'11\"",
+        "weight": "238.1 lbs"
+      },
+      "flavorText": "An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.",
       "secret": false,
       "limitless": {
         "id": 19944,
@@ -960,8 +960,8 @@
         ]
       },
       "images": {
-        "small": "https://images.pokemontcg.io/cel25c/17_A.png",
-        "large": "https://images.pokemontcg.io/cel25c/17_A_hires.png"
+        "small": "https://images.pokemontcg.io/cel25c/15_D.png",
+        "large": "https://images.pokemontcg.io/cel25c/15_D_hires.png"
       }
     },
     {

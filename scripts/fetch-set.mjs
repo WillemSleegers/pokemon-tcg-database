@@ -24,14 +24,14 @@
 //     node scripts/fetch-set.mjs swsh45sv SHFSV SHF
 //
 //   <sequentialPrefix>, if given, replaces pokemon-tcg-data's own `number`
-//   field with `${prefix}${1-based position in the fetched array}` as the
-//   local id. Needed for throwback-reprint subsets (e.g. Celebrations:
-//   Classic Collection, cel25c) whose `number` is each card's *original*
-//   print number from its original set decades ago — not unique within the
-//   subset, and unrelated to Limitless's own numbering for it — while the
-//   fetched array order does still match Limitless's sequential numbering
-//   (verified by spot-checking a few cards' positions against Limitless
-//   before trusting this for a new set). e.g.:
+//   field with `${prefix}<n>` as the local id, `<n>` found by matching each
+//   card's own name against every `${prefix}<n>` page on Limitless (not
+//   assumed from array position — pokemon-tcg-data's fetched order does NOT
+//   reliably match Limitless's own numbering; see resolveSequentialLocalIds).
+//   Needed for throwback-reprint subsets (e.g. Celebrations: Classic
+//   Collection, cel25c) whose `number` is each card's *original* print number
+//   from its original set decades ago — not unique within the subset, and
+//   unrelated to Limitless's own numbering for it. e.g.:
 //     node scripts/fetch-set.mjs cel25c CELCC CEL CC
 //
 //   Pass "NONE" as <ptcgDataSetId> for a set pokemon-tcg-data doesn't carry at
@@ -289,7 +289,6 @@ const BASIC_ENERGY_LETTERS = {
   "Fairy Energy": "Y",
 }
 
-// Limitless titles every card page "<name> - <set name> (<CODE>) #<n> – Limitless".
 // Compared on alphanumerics only, since the two sources punctuate names
 // differently in places — pokemon-tcg-data's "Unown [J]" vs Limitless's
 // "Unown J" — and with the rarity glyphs spelled out, since pokemon-tcg-data
@@ -297,16 +296,19 @@ const BASIC_ENERGY_LETTERS = {
 // "Greninja Star"). Deliberately not a substring/prefix match: this guards a
 // fallback that would otherwise attach a different card's artist and print
 // group, and "Mew" is a prefix of "Mewtwo".
+function simplifyCardName(s) {
+  return decodeEntities(s)
+    .replace(/[★☆]/g, "star")
+    .replace(/[◇♢]/g, "prismstar")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "")
+}
+
+// Limitless titles every card page "<name> - <set name> (<CODE>) #<n> – Limitless".
 function limitlessPageIsCard(html, cardName) {
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1]
   if (!title) return false
-  const simplify = (s) =>
-    decodeEntities(s)
-      .replace(/[★☆]/g, "star")
-      .replace(/[◇♢]/g, "prismstar")
-      .toLowerCase()
-      .replace(/[^a-z0-9]/g, "")
-  return simplify(title.split(" - ")[0]) === simplify(cardName)
+  return simplifyCardName(title.split(" - ")[0]) === simplifyCardName(cardName)
 }
 
 // Limitless writes energy costs as a run of single letters in a
@@ -866,6 +868,69 @@ async function fetchPokedexInfo(dexNumber) {
   return promise
 }
 
+// ---- sequential-prefix subsets (Classic Collection and its like) --------
+
+// <sequentialPrefix> exists because a throwback-reprint subset's pokemon-tcg-data
+// `number` is each card's *original* print number from decades ago, not unique
+// within the subset and unrelated to Limitless's own numbering for it. The
+// original implementation assumed the fetched array's order matched Limitless's
+// sequential numbering directly (spot-checked on a few cards rather than
+// verified in full) — wrong for Celebrations: Classic Collection, whose
+// pokemon-tcg-data order disagrees with Limitless's CC4–CC16 for 13 of its 25
+// cards. Since name/attacks/images (from pokemon-tcg-data) and
+// artist/deckCode/printGroup (scraped from Limitless at the assumed localId) are
+// joined purely by that localId, the mismatch silently attached one card's
+// print history to a different card entirely — e.g. Claydol ended up holding
+// Here Comes Team Rocket!'s printGroup. Fixed by matching on each card's own
+// name instead of trusting position: fetch every Limitless page under this
+// prefix up front, and pair each pokemon-tcg-data card with whichever page's
+// name actually matches it.
+async function resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, primaryCards) {
+  const n = primaryCards.length
+  const pages = await mapWithConcurrency(
+    Array.from({ length: n }, (_, i) => i + 1),
+    CONCURRENCY,
+    async (i) => {
+      const localId = `${sequentialPrefix}${i}`
+      const html = await get(`https://limitlesstcg.com/cards/${limitlessUrlCode}/${localId}`)
+      const title = html.match(/<title>([^<]*)<\/title>/)?.[1]
+      if (!title) throw new Error(`https://limitlesstcg.com/cards/${limitlessUrlCode}/${localId}: no <title> found`)
+      return { localId, name: title.split(" - ")[0] }
+    },
+  )
+
+  const byName = new Map()
+  for (const { localId, name } of pages) {
+    const key = simplifyCardName(name)
+    if (byName.has(key)) {
+      throw new Error(
+        `two Limitless pages under ${sequentialPrefix} share the same name "${name}" (${byName.get(key)} and ${localId}) — ` +
+          `name-matching can't disambiguate them, this needs a manual mapping instead`,
+      )
+    }
+    byName.set(key, localId)
+  }
+
+  const localIds = primaryCards.map((primary) => {
+    const key = simplifyCardName(primary.name)
+    const localId = byName.get(key)
+    if (!localId) {
+      throw new Error(
+        `no Limitless page under ${sequentialPrefix} matches pokemon-tcg-data's "${primary.name}" — ` +
+          `checked: ${pages.map((p) => p.name).join(", ")}`,
+      )
+    }
+    byName.delete(key)
+    return localId
+  })
+
+  if (byName.size) {
+    throw new Error(`${byName.size} Limitless page(s) under ${sequentialPrefix} matched no pokemon-tcg-data card: ${[...byName.values()].join(", ")}`)
+  }
+
+  return localIds
+}
+
 // ---- assembly -------------------------------------------------------------
 
 function buildNumber(localId, printedTotal, numberPad) {
@@ -926,6 +991,15 @@ async function main() {
       )
     }
   }
+  // See resolveSequentialLocalIds' comment above — this can't be assumed from
+  // array position, it has to be matched card by card against Limitless.
+  /** @type {string[] | null} */
+  let sequentialLocalIds = null
+  if (sequentialPrefix) {
+    console.log(`Matching ${primaryCards.length} cards against Limitless's own ${sequentialPrefix}-numbering by name...`)
+    sequentialLocalIds = await resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, primaryCards)
+  }
+
   const sourceMismatches = []
   const flavorTextOverlay = await loadFlavorTextOverlay(limitlessCode)
   const noPokedex = await loadNoPokedexOverlay(limitlessCode)
@@ -941,7 +1015,7 @@ async function main() {
   // directly so primary.* below is actually checked against pokemon-tcg-data's
   // shape, not silently `any`.
   const cards = await mapWithConcurrency(primaryCards, CONCURRENCY, async (/** @type {import("../types/card.js").PrimaryCard} */ primary, /** @type {number} */ index) => {
-    const localId = sequentialPrefix ? `${sequentialPrefix}${index + 1}` : primary.number
+    const localId = sequentialPrefix ? /** @type {string[]} */ (sequentialLocalIds)[index] : primary.number
     const [extra, pokedex] = await Promise.all([
       noLimitless || noLimitlessCards.has(localId)
         ? Promise.resolve({ resolvedLocalId: null, limitless: null, artist: primary.artist ?? null, text: null })

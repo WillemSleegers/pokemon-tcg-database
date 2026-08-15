@@ -702,6 +702,25 @@ White moved flavor text into a right-hand column at the bottom — `top=865
 height=120 left=415 width=295` — and Sun & Moon onward matches the existing
 Scarlet & Violet box (`top=905 height=95 left=260 width=473`).
 
+`data/sets/CELCC.json`'s original `<sequentialPrefix>` fetch (see Status above)
+turned out to have mis-numbered 13 of its 25 cards: it assumed pokemon-tcg-data's
+fetched array order matched Limitless's own `CC1`–`CC25` numbering, spot-checked
+on only 3 positions, and that assumption broke silently for `CC4`–`CC16` — each
+of those localIds ended up with one card's name/attacks/images (from
+pokemon-tcg-data) paired with a *different* card's artist/deckCode/printGroup
+(scraped from Limitless at that same wrong id), e.g. Claydol holding Here Comes
+Team Rocket!'s printGroup. Caught by the user, not this database's own tooling —
+the field-by-field Limitless cross-check that would normally catch a source
+disagreement doesn't run for `<sequentialPrefix>` cards at all. Fixed at the
+root: `fetch-set.mjs` now resolves `<sequentialPrefix>` localIds by matching
+each card's own name against every fetched Limitless page under that prefix,
+never by position (see "Reprint subsets with non-sequential, non-unique
+numbers" below for the full mechanism). Re-fetching with the fix reassigned all
+13 cards to their correct `localId` cleanly; `refresh-print-groups.mjs` and
+`check-flavor-text.mjs CELCC` both confirmed clean afterward, and no other set
+file needed touching, since every other set's own `CEL CC<n>` cross-references
+were scraped correctly at that other set's own fetch time.
+
 ## Schema
 
 Ground truth is [`types/card.ts`](types/card.ts) (`CardSet`/`Card`, plus
@@ -770,14 +789,50 @@ That breaks for a throwback-reprint subset like Celebrations: Classic Collection
 (`cel25c`): its `number` is each card's *original* print number from its original
 set, decades earlier — not unique within the subset (four different `cel25c`
 cards are all `"15"`), and unrelated to Limitless's own clean sequential numbering
-for the subset. The fetched array order does still match Limitless's numbering
-(verified by spot-checking a few cards' positions against Limitless before
-trusting it), so pass a fourth argument to override `localId` with
-`${prefix}${1-based array position}` instead: `node scripts/fetch-set.mjs cel25c
-CELCC CEL CC` (this also needs the third argument from the section above, since
-Classic Collection shares Celebrations' `CEL` Limitless page too). Don't reach for
-this unless a set's `number` field actually collides — check first, since it's a
-narrower fix than it looks (order-verified per set, not assumed).
+for the subset. Pass a fourth argument to override `localId` with a name-matched
+`${prefix}<n>` instead: `node scripts/fetch-set.mjs cel25c CELCC CEL CC` (this
+also needs the third argument from the section above, since Classic Collection
+shares Celebrations' `CEL` Limitless page too). Don't reach for this unless a
+set's `number` field actually collides — check first, since it's a narrower fix
+than it looks.
+
+**`<sequentialPrefix>` resolves `<n>` by matching each pokemon-tcg-data card's own
+name against every `${prefix}<n>` page on Limitless — never by array position.**
+The original implementation assumed pokemon-tcg-data's fetched array order
+matched Limitless's own sequential numbering, spot-checked on 3 cards (positions
+1, 3, 25) rather than verified in full. That assumption was wrong for 13 of
+Classic Collection's 25 cards: pokemon-tcg-data's own array order for CC4–CC16
+doesn't match Limitless's, so the position-based `localId` paired each of those
+13 cards' name/attacks/images (from pokemon-tcg-data) with a *different* card's
+artist/deckCode/printGroup (scraped from Limitless at that same, wrong,
+position-derived id) — e.g. Claydol ended up holding Here Comes Team Rocket!'s
+printGroup, and vice versa. Caught by the user cross-checking the stored `number`
+column against each card's own printGroup entry (Imposter Professor Oak is Base
+Set 73; the card stored as `CC4` had printGroup `["BS 73", ...]` but was named
+"Here Comes Team Rocket!"). Fixed by `resolveSequentialLocalIds()`
+(`scripts/fetch-set.mjs`): before assigning any localId, it fetches every
+`${prefix}<n>` page under the set up front, and pairs each pokemon-tcg-data card
+with whichever page's own name (via the same alphanumerics-only comparison
+`limitlessPageIsCard` already used elsewhere) actually matches it — throwing
+loudly on an unmatched or ambiguous name rather than falling back to position.
+Re-running `node scripts/fetch-set.mjs cel25c CELCC CEL CC` after the fix
+reassigned all 13 cards to their correct `localId` with no mismatch errors.
+
+Two overlays keyed by the old (wrong) localId needed updating by hand alongside
+the re-fetch, since neither is derived automatically: `data/flavor-text/
+CELCC.json`'s `"CC6"` (Claydol's transcribed flavor text) became `"CC16"`; and
+the two cards previously hand-stripped of a bogus Pokédex box directly in
+`data/sets/CELCC.json` (Rocket's Zapdos, Team Magma's Groudon — see the
+`data/no-pokedex/` section below) were migrated to a proper `data/no-pokedex/
+CELCC.json` overlay (`["CC7", "CC11"]`, their corrected localIds) instead of
+being re-stripped by hand again, since the hand-stripping approach silently
+reverts on every re-fetch. `refresh-print-groups.mjs` and `check-flavor-text.mjs
+CELCC` both came back clean afterward (the latter's 5/10 unmatched count
+unchanged — the same long-documented exceptions, just at their now-correct
+localIds), and no other set file needed touching: every other set's own
+`CEL CC<n>` printGroup references were scraped directly off Limitless when
+*that* set was fetched, so they were already correct — only CELCC's own
+internal pairing was wrong.
 
 ### Card numbers with the set code baked in
 
@@ -914,11 +969,16 @@ List those cards' localIds in `data/no-pokedex/<CODE>.json` (a bare JSON array; 
 lone `"*"` means the whole set) and `fetch-set.mjs` will skip the box for them.
 Confirm each against the actual card image first. Files so far: `NP` (`["*"]` —
 every Nintendo promo is e-Card/EX era), `WP`, `DPP` (its Darkrai movie promo plus
-the three Team Galactic "SP" cards, whose banner takes the dex line's place), and
-`SP` (two retro-styled tribute cards aping EX- and DP-era layouts).
+the three Team Galactic "SP" cards, whose banner takes the dex line's place),
+`SP` (two retro-styled tribute cards aping EX- and DP-era layouts), and `CELCC`
+(`["CC7", "CC11"]` — Rocket's Zapdos and Team Magma's Groudon).
 
-This supersedes the hand-stripping used for Classic Collection's two such cards
-(see Status) — that approach silently reverts on the next re-fetch.
+This supersedes the hand-stripping originally used for Classic Collection's two
+such cards (see Status) — that approach silently reverts on the next re-fetch,
+which is exactly what happened when CELCC had to be re-fetched to fix its
+CC4–CC16 localId mismatch (see "Reprint subsets with non-sequential, non-unique
+numbers" above); migrated to this overlay at that point instead of re-stripping
+by hand again.
 
 ### `data/no-limitless/<CODE>.json` — cards Limitless doesn't have
 
