@@ -382,13 +382,19 @@ function parseLimitlessCardText(html) {
     .map(([, block]) => textOnly(block))
     .filter(Boolean)
 
+  // "Trainer - Item" / "Energy - Basic Energy" / "Energy - Special Energy" /
+  // "Pokémon - Stage 1 - Evolves from Bayleef". Energy's second segment
+  // redundantly repeats "Energy" where pokemon-tcg-data's own subtype is just
+  // "Basic"/"Special" — stripped so the two compare equal.
+  const supertype = typeLine.startsWith("Trainer") ? "Trainer" : typeLine.startsWith("Energy") ? "Energy" : "Pokémon"
+  const rawSubtype = typeLine.split(" - ")[1]?.trim() ?? null
+
   return {
     name: textOnly(title.match(/^(.*?)\s+-\s+(?:[A-Za-z]+\s+-\s+)?\d+ HP$/)?.[1] ?? title.split(" - ")[0]),
     hp: title.match(/(\d+) HP$/)?.[1] ?? null,
     types: title.match(/\s-\s([A-Za-z]+)\s-\s\d+ HP$/)?.[1] ?? null,
-    supertype: typeLine.startsWith("Trainer") ? "Trainer" : "Pokémon",
-    // "Pokémon - Stage 1 - Evolves from Bayleef" / "Trainer - Stadium"
-    subtype: typeLine.split(" - ")[1]?.trim() ?? null,
+    supertype,
+    subtype: supertype === "Energy" ? rawSubtype?.replace(/\s+Energy$/, "") ?? null : rawSubtype,
     evolvesFrom: typeLine.match(/Evolves from\s+(.*)$/)?.[1]?.trim() ?? null,
     weakness: wrr.match(/Weakness:\s*(.*?)\s*(?:Resistance:|$)/)?.[1]?.trim() ?? null,
     resistance: wrr.match(/Resistance:\s*(.*?)\s*(?:Retreat:|$)/)?.[1]?.trim() ?? null,

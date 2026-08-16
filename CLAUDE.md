@@ -1623,6 +1623,48 @@ Trainers, as expected. The Black & White card template puts flavor text in a
 right-hand column, but Dragon Vault's holo cards sit further left than `BWP`'s
 box allows — `top=830 height=130 left=200 width=530` frames them.
 
+`data/sets/MEE.json` (MEE Basic Energies, 8 cards) is also **done** — a
+dedicated basic-energy set for the Mega Evolution era (released 2025/09/26),
+found while answering a user question about a specific card rather than
+during a backfill sweep. Same shape as `SVE`/MEP: pokemon-tcg-data has no
+`mee` entry at all, so it went through `"NONE"` mode
+(`node scripts/fetch-set.mjs NONE MEE`) against a hand-written
+`data/set-meta/MEE.json` (`bulbapediaSetPage: "MEE Basic Energies (TCG)"`).
+All 8 cards are reprints of existing basic energies already in `data/sets/`,
+so nothing needed transcribing from Bulbapedia — but reusing an existing
+reprint's stored text surfaced two real gaps, one in the fetch script and
+one in its reprint-selection logic:
+
+- **`parseLimitlessCardText` (the Limitless cross-check every `"NONE"`-mode
+  card goes through) had no `Energy` case at all** — only `Trainer` vs.
+  `Pokémon`, since no prior `"NONE"`/`--fill-from-limitless` set had ever
+  included an Energy card. All 8 cards failed the cross-check with a bogus
+  `supertype: "Pokémon"` mismatch. Fixed by detecting `Energy` from the
+  card's `typeLine` (`"Energy - Basic Energy"` / `"Energy - Special
+  Energy"` on Limitless) and stripping the redundant trailing `" Energy"`
+  before comparing against this database's own `"Basic"`/`"Special"`
+  subtype.
+- **`rarity` needed a value in `defaultRarity` even though these cards print
+  no rarity symbol** — `"NONE"` mode has no per-card `data/no-rarity/`
+  branch the way a normal fetch does, so `data/set-meta/MEE.json` sets
+  `defaultRarity: "None"` directly (confirmed against Bulbapedia's own set
+  list, which marks all 8 rows' rarity column "-").
+- **The reprint text a card inherits can come from the wrong era.**
+  `buildReprintIndex` resolves a reprint by scanning `data/sets/*.json` in
+  directory order and taking the first file whose stored `printGroup`
+  already lists this set's card — with no tie-break for a field that
+  changed wording *across* the reprint chain. All 8 MEE cards resolved to
+  `CRZ`/`XY`/`GEN`-era text, whose `name` is the bare pre-Scarlet & Violet
+  "Grass Energy" — but the actual MEE print (confirmed against all 8 card
+  images directly) reads "**Basic** Grass Energy", the same S&V-era wording
+  `SVE.json` already stores, just not the file the scan happened to hit
+  first alphabetically. Fixed by hand directly in `data/sets/MEE.json`
+  (prepending "Basic " to all 8 names) rather than touching the shared
+  selection logic — this is the one field basic-energy reprints are known to
+  disagree on across eras, and a name is cheap to eyeball against 8 card
+  images directly, the same one-off-hand-fix precedent as BLK/CELCC/DRV
+  elsewhere in this file.
+
 The next chronological gap is the Black & White era proper (2011/04–2013/11,
 `bw1` through `bw11` in `sets/en.json`, predating `xy0`) — unadded as of this
 writing; its `bwp` promos and `dv1` Dragon Vault are done. As always,
