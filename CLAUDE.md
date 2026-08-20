@@ -1775,8 +1775,27 @@ and fixed via the `data/flavor-text/BCR.json` overlay. Golurk, Terrakion,
 and Altaria (150–152, this set's shiny-rare cards) were confirmed correct
 as printed — the same identical card-specific text and exception category
 as the prior three sets' own shiny-rare cards.
+`data/sets/PLS.json` (Plasma Storm, 138 cards) is also done — its flavor
+text also came from pokemon-tcg-data directly. Its verification sweep
+flagged 12 cards; 10 were real upstream `flavorText` errors, confirmed
+against the card images and fixed via the `data/flavor-text/PLS.json`
+overlay. Most were single dropped/wrong words or missing punctuation —
+Infernape ("hand" for "hands"), Swinub (an extra comma), Beartic ("around
+the ocean waters" for "across the ocean waters"), both Zubat prints (52,
+53; "surrounding" for "surroundings"), Klang ("comprises" for "comprise",
+and "its foe" for "a foe"), Doduo (missing "a" before "telepathic
+power") — but two were more substantial: Sharpedo's saved `flavorText`
+was truncated mid-sentence, cutting off after "and is known as" with the
+rest of the quoted title missing entirely; and both Riolu and Patrat had
+saved text that didn't match the card at all — not a wording slip but
+wholesale wrong text, each replaced with the Bulbapedia candidate that
+turned out to be a verbatim match against the card image (Riolu's Black
+2/White 2/X/Omega Ruby entry, Patrat's Black 2/White 2 entry). Charizard
+and Blastoise (136, 137, this set's shiny-rare cards) were confirmed
+correct as printed — the same identical card-specific text and exception
+category as the prior sets' own shiny-rare cards.
 
-The remaining chronological gap is `bw8`–`bw11`, plus everything older than
+The remaining chronological gap is `bw9`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
