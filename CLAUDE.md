@@ -1804,7 +1804,20 @@ this set's shiny-rare cards) were confirmed correct as printed — the same
 identical card-specific text and exception category as the prior sets'
 own shiny-rare cards.
 
-The remaining chronological gap is `bw10`–`bw11`, plus everything older than
+`data/sets/PLB.json` (Plasma Blast, 105 cards) is also done — its flavor
+text also came from pokemon-tcg-data directly. Its verification sweep
+flagged 5 cards: Kangaskhan was missing "out to" before "play" (the card
+reads "lets the baby out to play only when it feels safe"), a real
+upstream error confirmed against the card image and fixed via the
+`data/flavor-text/PLB.json` overlay; Froslass was confirmed correct as
+printed — the card really does say "-58 degrees F" (plural), and it's
+Bulbapedia's own Platinum entry that has the "degree" (singular) typo, not
+the card. Exeggcute, Virizion, and Dusknoir (102–104, this set's
+shiny-rare cards) were confirmed correct as printed — the same identical
+card-specific text and exception category as the prior sets' own
+shiny-rare cards.
+
+The remaining chronological gap is `bw11` alone, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
