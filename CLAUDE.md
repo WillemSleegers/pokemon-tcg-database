@@ -1693,8 +1693,28 @@ card's singular "membrane"), Unfezant ("fell" — a typo — for the card's
 "feel"), and Audino ("radar-like"/"surrounding" for the card's
 "radarlike"/"surroundings") were real upstream errors, confirmed against
 the card images and fixed via the `data/flavor-text/EPO.json` overlay.
+`data/sets/NVI.json` (Noble Victories, 102 cards) is also done — its flavor
+text also came from pokemon-tcg-data directly. Its verification sweep
+flagged an unusually large 14 of 94 cards, all real upstream `flavorText`
+errors (a dropped word, a wrong word, or a singular/plural slip), each
+confirmed against the card image and fixed via the `data/flavor-text/
+NVI.json` overlay: Leavanny (missing "the" before "cutters"), Dwebble
+("The Pokémon" for the card's "This Pokémon"), Karrablast (missing "an"
+before "acidic liquid"), Palpitoad (missing "the" before "water"),
+Jellicent (missing "the" before "ships", and "habitats" for the card's
+singular "habitat"), Kyurem (missing "a" before "powerful, freezing
+energy" — the same bug already documented on BWP's Kyurem, here on a
+different card entirely), Garbodor (missing "a" before "poisonous
+liquid"), Litwick 57 (missing "that" before "it burns"), Litwick 58
+("leaches" for the card's "leeches"), Conkeldurr ("It it thought" — a
+typo — for the card's "It is thought"), Stunfisk ("volt" for the card's
+"jolt"), Mienfoo ("attack" for the card's plural "attacks"), Mienshao
+("wield"/"arms attacks" for the card's "wields"/"arm attacks"), and Durant
+("against" for the card's "from"). Meowth (102, the "extremely rare"
+promo-style card) was confirmed correct as printed, the same exception
+category as BLW's Pikachu and EPO's own precedent.
 
-The remaining chronological gap is `bw3`–`bw11`, plus everything older than
+The remaining chronological gap is `bw4`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
