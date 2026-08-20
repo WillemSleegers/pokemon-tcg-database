@@ -1713,8 +1713,26 @@ typo — for the card's "It is thought"), Stunfisk ("volt" for the card's
 ("against" for the card's "from"). Meowth (102, the "extremely rare"
 promo-style card) was confirmed correct as printed, the same exception
 category as BLW's Pikachu and EPO's own precedent.
+`data/sets/NXD.json` (Next Destinies, 103 cards) is also done — Limitless
+files this one under `NXD`, not the `NDE` guess tried first (all 103 cards
+404ing on the first attempt was the tell — a wrong code, not a genuinely
+missing set; confirmed via a direct card-page fetch before retrying). Its
+flavor text also came from pokemon-tcg-data directly. Its verification
+sweep flagged 10 cards: both Growlithe prints (10, 11), Muk, Mienfoo, and
+Scraggy were real upstream `flavorText` errors — a comma-and-lowercase
+"it" where the card has a period and capital "It" (Growlithe), "A toxic
+fluids" for the card's "A toxic fluid" (Muk), "They has mastered" for the
+card's "They have mastered" (Mienfoo), and "anyones" for the card's
+"anyone" (Scraggy) — each confirmed against the card image and fixed via
+the `data/flavor-text/NXD.json` overlay; Litwick repeated the exact
+"leaches"/"leeches" typo already seen on NVI's own Litwick, same fix.
+Emboar, Chandelure, Zoroark, and Hydreigon (100–103, this set's shiny-rare
+cards) were all confirmed correct as printed — identical card-specific
+text ("This extremely rare Pokémon is a different color than usual. It is
+very hard to find."), the same exception category as BLW's Pikachu and
+NVI's Meowth.
 
-The remaining chronological gap is `bw4`–`bw11`, plus everything older than
+The remaining chronological gap is `bw5`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
