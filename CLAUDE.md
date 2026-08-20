@@ -1742,8 +1742,27 @@ against the card images and fixed via the `data/flavor-text/DEX.json`
 overlay. Gardevoir and Archeops (109, 110, this set's shiny-rare cards)
 were confirmed correct as printed — the same identical card-specific text
 and exception category as NXD's own shiny-rare cards.
+`data/sets/DRX.json` (Dragons Exalted, 128 cards) is also done — its
+flavor text also came from pokemon-tcg-data directly. Its verification
+sweep flagged an unusually large 19 of 110 cards; 15 were real upstream
+`flavorText` errors, mostly single dropped/wrong words or typos, each
+confirmed against the card image and fixed via the `data/flavor-text/
+DRX.json` overlay: Jumpluff (extra "the" before "seasonal winds"), Buizel
+(extra "the" before "water"), Palpitoad ("the can make wave" — a
+typo — for "they can make waves"), Golurk ("around the sky" for "across
+the sky"), Baltoy ("It move" — a typo — for "It moves"), Gigalith
+("magnified internally are fired" for "magnified internally and fired"),
+Lairon ("it steely body" for "its steely body"), Deino ("bit everything"
+for "bite everything"), Aipom ("can us its tail" for "can use its tail"),
+both Swablu prints (104, 105; "wipes of dirt" for "wipes off dirt"),
+Bibarel (extra "the" before "people nearby"), Audino (missing "a" before
+"radarlike ability"), Minccino ("They great" for "They greet"), and
+Bouffalant ("derail a trail" for "derail a train"). Serperior, Reuniclus,
+Krookodile, and Rayquaza (125–128, this set's shiny-rare cards) were
+confirmed correct as printed — the same identical card-specific text and
+exception category as NXD's and DEX's own shiny-rare cards.
 
-The remaining chronological gap is `bw6`–`bw11`, plus everything older than
+The remaining chronological gap is `bw7`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
