@@ -1731,8 +1731,19 @@ cards) were all confirmed correct as printed — identical card-specific
 text ("This extremely rare Pokémon is a different color than usual. It is
 very hard to find."), the same exception category as BLW's Pikachu and
 NVI's Meowth.
+`data/sets/DEX.json` (Dark Explorers, 111 cards) is also done — its flavor
+text also came from pokemon-tcg-data directly. Its verification sweep
+flagged 7 cards: Carnivine ("on marshes" for the card's "in marshes"),
+Blaziken ("it foes" — a typo — for the card's "its foes"), Tympole
+(missing "s" on "warn others"), Vanillite ("areas surrounding them" for
+the card's "areas around them"), and Herdier (extra "a" before "black,
+cape-like fur") were all real upstream `flavorText` errors, confirmed
+against the card images and fixed via the `data/flavor-text/DEX.json`
+overlay. Gardevoir and Archeops (109, 110, this set's shiny-rare cards)
+were confirmed correct as printed — the same identical card-specific text
+and exception category as NXD's own shiny-rare cards.
 
-The remaining chronological gap is `bw5`–`bw11`, plus everything older than
+The remaining chronological gap is `bw6`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
