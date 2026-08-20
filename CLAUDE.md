@@ -1665,11 +1665,28 @@ one in its reprint-selection logic:
   images directly, the same one-off-hand-fix precedent as BLK/CELCC/DRV
   elsewhere in this file.
 
-The next chronological gap is the Black & White era proper (2011/04–2013/11,
-`bw1` through `bw11` in `sets/en.json`, predating `xy0`) — unadded as of this
-writing; its `bwp` promos and `dv1` Dragon Vault are done. As always,
-re-derive the actual next step from `sets/en.json` against `data/sets/`
-rather than trusting this note by the time it's acted on.
+The Black & White era proper (2011/04–2013/11, `bw1` through `bw11` in
+`sets/en.json`, predating `xy0`) has begun: `data/sets/BLW.json` (Black &
+White base set, 115 cards) is done, the first of the eleven. Its flavor text
+came from pokemon-tcg-data directly. Its verification sweep flagged six
+cards; five were real upstream `flavorText` errors, each a single-word or
+punctuation slip, confirmed against the card images and fixed via the
+`data/flavor-text/BLW.json` overlay — Darmanitan ("stone statue, then it"
+instead of the card's "stone statue. Then it"), Scolipede ("its opponent"
+for the card's plural "its opponents"), Duosion ("the same thought" for the
+card's plural "the same thoughts"), Timburr ("piece of timber" for the
+card's "piece of lumber"), and Patrat ("keep watches" for the card's
+singular "keep watch"). Pikachu (115, the "extremely rare" promo-style card)
+was confirmed correct as printed — card-specific text with no Pokédex
+source, the same exception category as Classic Collection's Dark Gyarados.
+The Black & White-era flavor-text box from `BWP`/`DRV` needed widening for
+this set's card template: `top=855 height=130 left=380 width=340`.
+
+The remaining chronological gap is `bw2`–`bw11`, plus everything older than
+Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
+collections. As always, re-derive the actual next step from `sets/en.json`
+against `data/sets/` rather than trusting this note by the time it's acted
+on.
 
 `node scripts/missing-sets.mjs [series]` does that derivation — it diffs
 pokemon-tcg-data's `sets/en.json` against every `data/sets/*.json`'s stored
@@ -1679,6 +1696,4 @@ grouped by `series`, oldest first. Use it instead of walking a numeric id
 range: a numeric walk is what hid `dc1`, `dv1` and `g1` through five
 backfills, and the first run of this script found `g1` immediately — after
 `dc1` and `dv1` had already been added and the XY series declared done a
-second time. 82 sets are missing as of this writing — the Black & White era
-proper, everything older than it (HGSS, Call of Legends, and back), and eight
-more McDonald's collections.
+second time.
