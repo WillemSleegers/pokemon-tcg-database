@@ -1816,12 +1816,32 @@ the card. Exeggcute, Virizion, and Dusknoir (102–104, this set's
 shiny-rare cards) were confirmed correct as printed — the same identical
 card-specific text and exception category as the prior sets' own
 shiny-rare cards.
+`data/sets/LTR.json` (Legendary Treasures, 115 cards) and `data/sets/
+LTRRC.json` (Legendary Treasures Radiant Collection, 25 cards) are also
+done — this closes out the entire Black & White era. `bw11`'s fetch
+pulled in 140 cards total (like `g1`/Generations before it, pokemon-tcg-
+data keeps this set's own Radiant Collection subset — `RC1`–`RC25` —
+inside the base set id rather than splitting it out); it was split by
+hand into two files afterward, same precedent as GEN/GENRC, for
+consistency with every other subset that shares its base set's Limitless
+page. `printedTotal`/`secretTotal`/`total` needed recomputing by hand
+after the split (113/2/115 for the base set — 2 secret rares sit past its
+113 printed slots — and 25/0/25 for Radiant Collection), since the
+fetched file's original `secretTotal: 27` was `140 - 113`, a figure that
+only made sense before the split. Both halves' flavor text came from
+pokemon-tcg-data directly. The sweep (run once, before splitting) flagged
+two cards, both real upstream `flavorText` errors, confirmed against the
+card images and fixed via the `data/flavor-text/LTR.json` overlay: Pignite
+("When it trouble" — a typo — for "When in trouble") and Solosis (missing
+its final period).
 
-The remaining chronological gap is `bw11` alone, plus everything older than
-Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
-collections. As always, re-derive the actual next step from `sets/en.json`
-against `data/sets/` rather than trusting this note by the time it's acted
-on.
+The Black & White era (`bw1` through `bw11`, plus its already-done `bwp`
+promos and `dv1` Dragon Vault) is now **done** — 12 files across the 11
+`sets/en.json` entries the era backfill covers (`bw11` splitting into two
+files). The remaining gap is everything older than Black & White (HGSS,
+Call of Legends, and back) and eight more McDonald's collections. As
+always, re-derive the actual next step from `sets/en.json` against
+`data/sets/` rather than trusting this note by the time it's acted on.
 
 `node scripts/missing-sets.mjs [series]` does that derivation — it diffs
 pokemon-tcg-data's `sets/en.json` against every `data/sets/*.json`'s stored

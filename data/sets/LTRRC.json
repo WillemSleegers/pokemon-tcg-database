@@ -1,0 +1,1662 @@
+{
+  "set": {
+    "code": "LTRRC",
+    "ptcgDataId": "bw11",
+    "name": "Legendary Treasures Radiant Collection",
+    "series": "Black & White",
+    "printedTotal": 25,
+    "secretTotal": 0,
+    "total": 25,
+    "releaseDate": "2013-11-06",
+    "copyright": "©2013 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/bw11/symbol.png",
+      "logo": "https://images.pokemontcg.io/bw11/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "RC1",
+      "localId": "RC1",
+      "name": "Snivy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Servine"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Growth",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach a Grass Energy from your hand to this Pokémon."
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Eske Yoshinob",
+      "pokedex": {
+        "number": 495,
+        "genus": "Grass Snake Pokémon",
+        "height": "2'0\"",
+        "weight": "17.9 lbs"
+      },
+      "flavorText": "Being exposed to sunlight makes its movements swifter. It uses vines more adeptly than its hands.",
+      "secret": false,
+      "limitless": {
+        "id": 1308,
+        "url": "https://limitlesstcg.com/cards/LTR/RC1",
+        "deckCode": "LTR RC1",
+        "printGroup": [
+          "LTR RC1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC1.png",
+        "large": "https://images.pokemontcg.io/bw11/RC1_hires.png"
+      }
+    },
+    {
+      "number": "RC2",
+      "localId": "RC2",
+      "name": "Servine",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Snivy",
+      "evolvesTo": [
+        "Serperior"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Leaf Blade",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        },
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 496,
+        "genus": "Grass Snake Pokémon",
+        "height": "2'7\"",
+        "weight": "35.3 lbs"
+      },
+      "flavorText": "When it gets dirty, its leaves can't be used in photosynthesis, so it always keeps itself clean.",
+      "secret": false,
+      "limitless": {
+        "id": 1309,
+        "url": "https://limitlesstcg.com/cards/LTR/RC2",
+        "deckCode": "LTR RC2",
+        "printGroup": [
+          "LTR RC2"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC2.png",
+        "large": "https://images.pokemontcg.io/bw11/RC2_hires.png"
+      }
+    },
+    {
+      "number": "RC3",
+      "localId": "RC3",
+      "name": "Serperior",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Servine",
+      "types": [
+        "Grass"
+      ],
+      "hp": 140,
+      "abilities": [
+        {
+          "name": "Royal Garden",
+          "text": "If this Pokémon has any Grass Energy attached to it, this Pokémon has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Solar Beam",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 497,
+        "genus": "Regal Pokémon",
+        "height": "10'10\"",
+        "weight": "138.9 lbs"
+      },
+      "flavorText": "It only gives its all against strong opponents who are not fazed by the glare from Serperior's noble eyes.",
+      "secret": false,
+      "limitless": {
+        "id": 1301,
+        "url": "https://limitlesstcg.com/cards/LTR/RC3",
+        "deckCode": "LTR RC3",
+        "printGroup": [
+          "LTR RC3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC3.png",
+        "large": "https://images.pokemontcg.io/bw11/RC3_hires.png"
+      }
+    },
+    {
+      "number": "RC4",
+      "localId": "RC4",
+      "name": "Growlithe",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Arcanine"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Rest",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Heal all damage from this Pokémon. This Pokémon is now Asleep."
+        },
+        {
+          "name": "Lunge",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 58,
+        "genus": "Puppy Pokémon",
+        "height": "2'4\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "Extremely loyal to its Trainer, it will bark at those who approach the Trainer unexpectedly and run them out of town.",
+      "secret": false,
+      "limitless": {
+        "id": 1313,
+        "url": "https://limitlesstcg.com/cards/LTR/RC4",
+        "deckCode": "LTR RC4",
+        "printGroup": [
+          "LTR RC4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC4.png",
+        "large": "https://images.pokemontcg.io/bw11/RC4_hires.png"
+      }
+    },
+    {
+      "number": "RC5",
+      "localId": "RC5",
+      "name": "Torchic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Combusken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Live Coal",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 255,
+        "genus": "Chick Pokémon",
+        "height": "1'4\"",
+        "weight": "5.5 lbs"
+      },
+      "flavorText": "A fire burns inside, so it feels very warm to hug. It launches fireballs of 1,800 degrees F.",
+      "secret": false,
+      "limitless": {
+        "id": 1320,
+        "url": "https://limitlesstcg.com/cards/LTR/RC5",
+        "deckCode": "LTR RC5",
+        "printGroup": [
+          "DEX 15",
+          "LTR RC5"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC5.png",
+        "large": "https://images.pokemontcg.io/bw11/RC5_hires.png"
+      }
+    },
+    {
+      "number": "RC6",
+      "localId": "RC6",
+      "name": "Piplup",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Prinplup"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Charm",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 20 (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Peck",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "sui",
+      "pokedex": {
+        "number": 393,
+        "genus": "Penguin Pokémon",
+        "height": "1'4\"",
+        "weight": "11.5 lbs"
+      },
+      "flavorText": "A poor walker, it often falls down. However, its strong pride makes it puff up its chest without a care.",
+      "secret": false,
+      "limitless": {
+        "id": 1317,
+        "url": "https://limitlesstcg.com/cards/LTR/RC6",
+        "deckCode": "LTR RC6",
+        "printGroup": [
+          "LTR RC6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC6.png",
+        "large": "https://images.pokemontcg.io/bw11/RC6_hires.png"
+      }
+    },
+    {
+      "number": "RC7",
+      "localId": "RC7",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Tail Whap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "It occasionally uses an electric shock to recharge a fellow Pikachu that is in a weakened state.",
+      "secret": false,
+      "limitless": {
+        "id": 1314,
+        "url": "https://limitlesstcg.com/cards/LTR/RC7",
+        "deckCode": "LTR RC7",
+        "printGroup": [
+          "LTR RC7",
+          "NXD 39"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC7.png",
+        "large": "https://images.pokemontcg.io/bw11/RC7_hires.png"
+      }
+    },
+    {
+      "number": "RC8",
+      "localId": "RC8",
+      "name": "Ralts",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Kirlia"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Hypnotic Gaze",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Pound",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 280,
+        "genus": "Feeling Pokémon",
+        "height": "1'4\"",
+        "weight": "14.6 lbs"
+      },
+      "flavorText": "If its horns capture the warm feelings of people or Pokémon, its body warms up slightly.",
+      "secret": false,
+      "limitless": {
+        "id": 1315,
+        "url": "https://limitlesstcg.com/cards/LTR/RC8",
+        "deckCode": "LTR RC8",
+        "printGroup": [
+          "LTR RC8"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC8.png",
+        "large": "https://images.pokemontcg.io/bw11/RC8_hires.png"
+      }
+    },
+    {
+      "number": "RC9",
+      "localId": "RC9",
+      "name": "Kirlia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ralts",
+      "evolvesTo": [
+        "Gardevoir",
+        "Gallade"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tiptoe Step",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card for each Psychic Energy attached to this Pokémon."
+        },
+        {
+          "name": "Double Slap",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 281,
+        "genus": "Emotion Pokémon",
+        "height": "2'7\"",
+        "weight": "44.5 lbs"
+      },
+      "flavorText": "If its Trainer becomes happy, it overflows with energy, dancing joyously while spinning about.",
+      "secret": false,
+      "limitless": {
+        "id": 1316,
+        "url": "https://limitlesstcg.com/cards/LTR/RC9",
+        "deckCode": "LTR RC9",
+        "printGroup": [
+          "LTR RC9"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC9.png",
+        "large": "https://images.pokemontcg.io/bw11/RC9_hires.png"
+      }
+    },
+    {
+      "number": "RC10",
+      "localId": "RC10",
+      "name": "Gardevoir",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Kirlia",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Psybeam",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "The Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Eternal Radiance",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Move all damage counters from this Pokémon to the Defending Pokémon. This Pokémon can't use Eternal Radiance during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 282,
+        "genus": "Embrace Pokémon",
+        "height": "5'3\"",
+        "weight": "106.7 lbs"
+      },
+      "flavorText": "To protect its Trainer, it will expend all its psychic power to create a small black hole.",
+      "secret": false,
+      "limitless": {
+        "id": 1310,
+        "url": "https://limitlesstcg.com/cards/LTR/RC10",
+        "deckCode": "LTR RC10",
+        "printGroup": [
+          "LTR RC10"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC10.png",
+        "large": "https://images.pokemontcg.io/bw11/RC10_hires.png"
+      }
+    },
+    {
+      "number": "RC11",
+      "localId": "RC11",
+      "name": "Meloetta-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Brilliant Voice",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep. If tails, the Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Round",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Does 30 damage times the number of your Pokémon that have the Round attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "limitless": {
+        "id": 1319,
+        "url": "https://limitlesstcg.com/cards/LTR/RC11",
+        "deckCode": "LTR RC11",
+        "printGroup": [
+          "LTR RC11",
+          "LTR RC25"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC11.png",
+        "large": "https://images.pokemontcg.io/bw11/RC11_hires.png"
+      }
+    },
+    {
+      "number": "RC12",
+      "localId": "RC12",
+      "name": "Stunfisk",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Attract",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        },
+        {
+          "name": "Mud-Slap",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 618,
+        "genus": "Trap Pokémon",
+        "height": "2'4\"",
+        "weight": "24.3 lbs"
+      },
+      "flavorText": "When its opponent can't be paralyzed, it contorts itself with unexpected speed and flops away.",
+      "secret": false,
+      "limitless": {
+        "id": 1300,
+        "url": "https://limitlesstcg.com/cards/LTR/RC12",
+        "deckCode": "LTR RC12",
+        "printGroup": [
+          "LTR RC12"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC12.png",
+        "large": "https://images.pokemontcg.io/bw11/RC12_hires.png"
+      }
+    },
+    {
+      "number": "RC13",
+      "localId": "RC13",
+      "name": "Purrloin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Liepard"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Captivate",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, switch 1 of your opponent's Benched Pokémon with the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 509,
+        "genus": "Devious Pokémon",
+        "height": "1'4\"",
+        "weight": "22.3 lbs"
+      },
+      "flavorText": "Their cute act is a ruse. They trick people and steal their valuables just to see the looks on their faces.",
+      "secret": false,
+      "limitless": {
+        "id": 1311,
+        "url": "https://limitlesstcg.com/cards/LTR/RC13",
+        "deckCode": "LTR RC13",
+        "printGroup": [
+          "BCR 90",
+          "LTR RC13"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC13.png",
+        "large": "https://images.pokemontcg.io/bw11/RC13_hires.png"
+      }
+    },
+    {
+      "number": "RC14",
+      "localId": "RC14",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Surprise Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.",
+      "secret": false,
+      "limitless": {
+        "id": 1307,
+        "url": "https://limitlesstcg.com/cards/LTR/RC14",
+        "deckCode": "LTR RC14",
+        "printGroup": [
+          "DEX 83",
+          "LTR RC14"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC14.png",
+        "large": "https://images.pokemontcg.io/bw11/RC14_hires.png"
+      }
+    },
+    {
+      "number": "RC15",
+      "localId": "RC15",
+      "name": "Teddiursa",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ursaring"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Honey Snack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 20 damage from this Pokémon."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "kirisAki",
+      "pokedex": {
+        "number": 216,
+        "genus": "Little Bear Pokémon",
+        "height": "2'0\"",
+        "weight": "19.4 lbs"
+      },
+      "flavorText": "It lets honey soak into its paws so it can lick them all the time. Every set of paws tastes unique.",
+      "secret": false,
+      "limitless": {
+        "id": 1318,
+        "url": "https://limitlesstcg.com/cards/LTR/RC15",
+        "deckCode": "LTR RC15",
+        "printGroup": [
+          "LTR RC15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC15.png",
+        "large": "https://images.pokemontcg.io/bw11/RC15_hires.png"
+      }
+    },
+    {
+      "number": "RC16",
+      "localId": "RC16",
+      "name": "Ursaring",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Teddiursa",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Picnic Weather",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put a Teddiursa from your discard pile onto your Bench. Then, attach an Energy card from your discard pile to that Pokémon."
+        },
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "50×",
+          "text": "Flip 3 coins. This attack does 50 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 217,
+        "genus": "Hibernator Pokémon",
+        "height": "5'11\"",
+        "weight": "277.3 lbs"
+      },
+      "flavorText": "In its territory, it leaves scratches on trees that bear delicious berries or fruits.",
+      "secret": false,
+      "limitless": {
+        "id": 1302,
+        "url": "https://limitlesstcg.com/cards/LTR/RC16",
+        "deckCode": "LTR RC16",
+        "printGroup": [
+          "LTR RC16"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC16.png",
+        "large": "https://images.pokemontcg.io/bw11/RC16_hires.png"
+      }
+    },
+    {
+      "number": "RC17",
+      "localId": "RC17",
+      "name": "Audino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Relaxed Roll",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip a coin until you get tails. This attack does 30 damage times the number heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 531,
+        "genus": "Hearing Pokémon",
+        "height": "3'7\"",
+        "weight": "68.3 lbs"
+      },
+      "flavorText": "Using the feelers on its ears, it can tell how someone is feeling or when an egg might hatch.",
+      "secret": false,
+      "limitless": {
+        "id": 1303,
+        "url": "https://limitlesstcg.com/cards/LTR/RC17",
+        "deckCode": "LTR RC17",
+        "printGroup": [
+          "LTR RC17"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC17.png",
+        "large": "https://images.pokemontcg.io/bw11/RC17_hires.png"
+      }
+    },
+    {
+      "number": "RC18",
+      "localId": "RC18",
+      "name": "Minccino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cinccino"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tail Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 572,
+        "genus": "Chinchilla Pokémon",
+        "height": "1'4\"",
+        "weight": "12.8 lbs"
+      },
+      "flavorText": "Minccino greet each other by grooming one another thoroughly with their tails.",
+      "secret": false,
+      "limitless": {
+        "id": 1321,
+        "url": "https://limitlesstcg.com/cards/LTR/RC18",
+        "deckCode": "LTR RC18",
+        "printGroup": [
+          "BLW 88",
+          "LTR RC18"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC18.png",
+        "large": "https://images.pokemontcg.io/bw11/RC18_hires.png"
+      }
+    },
+    {
+      "number": "RC19",
+      "localId": "RC19",
+      "name": "Cinccino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Minccino",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Smooth Coat",
+          "text": "If any damage is done to this Pokémon by attacks, flip a coin. If heads, prevent that damage.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Echoed Voice",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "During your next turn, this Pokémon's Echoed Voice attack does 50 more damage (before applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 573,
+        "genus": "Scarf Pokémon",
+        "height": "1'8\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "Cinccino's body is coated in a special oil that helps it deflect attacks, such as punches.",
+      "secret": false,
+      "limitless": {
+        "id": 1304,
+        "url": "https://limitlesstcg.com/cards/LTR/RC19",
+        "deckCode": "LTR RC19",
+        "printGroup": [
+          "LTR 105",
+          "LTR RC19",
+          "NXD 85"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC19.png",
+        "large": "https://images.pokemontcg.io/bw11/RC19_hires.png"
+      }
+    },
+    {
+      "number": "RC20",
+      "localId": "RC20",
+      "name": "Elesa",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Search your deck for 3 Pokémon Tool cards, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "limitless": {
+        "id": 1298,
+        "url": "https://limitlesstcg.com/cards/LTR/RC20",
+        "deckCode": "LTR RC20",
+        "printGroup": [
+          "LTR RC20"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC20.png",
+        "large": "https://images.pokemontcg.io/bw11/RC20_hires.png"
+      }
+    },
+    {
+      "number": "RC21",
+      "localId": "RC21",
+      "name": "Shaymin-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 110,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Synthesis",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Grass Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Revenge Blast",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Does 30 more damage for each Prize card your opponent has taken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Kanako Eo",
+      "secret": false,
+      "limitless": {
+        "id": 1305,
+        "url": "https://limitlesstcg.com/cards/LTR/RC21",
+        "deckCode": "LTR RC21",
+        "printGroup": [
+          "LTR RC21",
+          "NXD 5",
+          "NXD 94"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC21.png",
+        "large": "https://images.pokemontcg.io/bw11/RC21_hires.png"
+      }
+    },
+    {
+      "number": "RC22",
+      "localId": "RC22",
+      "name": "Reshiram",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Outrage",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Does 10 more damage for each damage counter on this Pokémon."
+        },
+        {
+          "name": "Blue Flare",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "Discard 2 Fire Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 643,
+        "genus": "Vast White Pokémon",
+        "height": "10'6\"",
+        "weight": "727.5 lbs"
+      },
+      "flavorText": "This legendary Pokémon can scorch the world with fire. It helps those who want to build a world of truth.",
+      "secret": false,
+      "limitless": {
+        "id": 1306,
+        "url": "https://limitlesstcg.com/cards/LTR/RC22",
+        "deckCode": "LTR RC22",
+        "printGroup": [
+          "BLW 26",
+          "BLW 113",
+          "BWP 4",
+          "BWP 23",
+          "CEL CC20",
+          "LTR 28",
+          "LTR 114",
+          "LTR RC22",
+          "NXD 21"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC22.png",
+        "large": "https://images.pokemontcg.io/bw11/RC22_hires.png"
+      }
+    },
+    {
+      "number": "RC23",
+      "localId": "RC23",
+      "name": "Emolga",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Static Shock",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 587,
+        "genus": "Sky Squirrel Pokémon",
+        "height": "1'4\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "It glides on its outstretched membrane while shocking foes with the electricity stored in the pouches on its cheeks.",
+      "secret": false,
+      "limitless": {
+        "id": 1312,
+        "url": "https://limitlesstcg.com/cards/LTR/RC23",
+        "deckCode": "LTR RC23",
+        "printGroup": [
+          "DRX 45",
+          "LTR 49",
+          "LTR RC23"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC23.png",
+        "large": "https://images.pokemontcg.io/bw11/RC23_hires.png"
+      }
+    },
+    {
+      "number": "RC24",
+      "localId": "RC24",
+      "name": "Mew-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Versatile",
+          "text": "This Pokémon can use the attacks of any Pokémon in play (both yours and your opponent's). (You still need the necessary Energy to use each attack.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Replace",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Move as many Energy attached to your Pokémon to your other Pokémon in any way you like."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "MAHOU",
+      "secret": false,
+      "limitless": {
+        "id": 1299,
+        "url": "https://limitlesstcg.com/cards/LTR/RC24",
+        "deckCode": "LTR RC24",
+        "printGroup": [
+          "DRX 46",
+          "DRX 120",
+          "LTR RC24",
+          "XYP 126"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC24.png",
+        "large": "https://images.pokemontcg.io/bw11/RC24_hires.png"
+      }
+    },
+    {
+      "number": "RC25",
+      "localId": "RC25",
+      "name": "Meloetta-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 110,
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Brilliant Voice",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep. If tails, the Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Round",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Does 30 damage times the number of your Pokémon that have the Round attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "Eske Yoshinob",
+      "secret": false,
+      "limitless": {
+        "id": 1322,
+        "url": "https://limitlesstcg.com/cards/LTR/RC25",
+        "deckCode": "LTR RC25",
+        "printGroup": [
+          "LTR RC11",
+          "LTR RC25"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/RC25.png",
+        "large": "https://images.pokemontcg.io/bw11/RC25_hires.png"
+      }
+    }
+  ]
+}
