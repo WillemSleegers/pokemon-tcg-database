@@ -1681,8 +1681,20 @@ was confirmed correct as printed — card-specific text with no Pokédex
 source, the same exception category as Classic Collection's Dark Gyarados.
 The Black & White-era flavor-text box from `BWP`/`DRV` needed widening for
 this set's card template: `top=855 height=130 left=380 width=340`.
+`data/sets/EPO.json` (Emerging Powers, 98 cards) is also done — its flavor
+text also came from pokemon-tcg-data directly. Its verification sweep
+flagged five cards: Pansear and Darmanitan were both a real
+character-normalization gap, not text errors — pokemon-tcg-data's own
+`flavorText` types a degree sign as "º" (the masculine ordinal indicator,
+visually near-identical) where the card prints a real "°"; fixed by adding
+a `º`→`°` normalization to `normalize()` (both copies), the same treatment
+as the existing ellipsis/minus-sign/`--` fixes. Emolga ("membranes" for the
+card's singular "membrane"), Unfezant ("fell" — a typo — for the card's
+"feel"), and Audino ("radar-like"/"surrounding" for the card's
+"radarlike"/"surroundings") were real upstream errors, confirmed against
+the card images and fixed via the `data/flavor-text/EPO.json` overlay.
 
-The remaining chronological gap is `bw2`–`bw11`, plus everything older than
+The remaining chronological gap is `bw3`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted

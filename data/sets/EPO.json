@@ -1,0 +1,6507 @@
+{
+  "set": {
+    "code": "EPO",
+    "ptcgDataId": "bw2",
+    "name": "Emerging Powers",
+    "series": "Black & White",
+    "printedTotal": 98,
+    "secretTotal": 0,
+    "total": 98,
+    "releaseDate": "2011-08-31",
+    "copyright": "©2011 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/bw2/symbol.png",
+      "logo": "https://images.pokemontcg.io/bw2/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/98",
+      "localId": "1",
+      "name": "Pansage",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Simisage"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 511,
+        "genus": "Grass Monkey Pokémon",
+        "height": "2'0\"",
+        "weight": "23.1 lbs"
+      },
+      "flavorText": "This Pokémon dwells deep in the forest. Eating a leaf from its head whisks weariness away as if by magic.",
+      "secret": false,
+      "limitless": {
+        "id": 217,
+        "url": "https://limitlesstcg.com/cards/EPO/1",
+        "deckCode": "EPO 1",
+        "printGroup": [
+          "EPO 1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/1.png",
+        "large": "https://images.pokemontcg.io/bw2/1_hires.png"
+      }
+    },
+    {
+      "number": "02/98",
+      "localId": "2",
+      "name": "Simisage",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pansage",
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Fire's Power",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If this Pokémon has any Fire Energy attached to it, the Defending Pokémon is now Burned."
+        },
+        {
+          "name": "Seed Bomb",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "match",
+      "pokedex": {
+        "number": 512,
+        "genus": "Thorn Monkey Pokémon",
+        "height": "3'7\"",
+        "weight": "67.2 lbs"
+      },
+      "flavorText": "Ill tempered, it fights by swinging its barbed tail around wildly. The leaf growing on its head is very bitter.",
+      "secret": false,
+      "limitless": {
+        "id": 218,
+        "url": "https://limitlesstcg.com/cards/EPO/2",
+        "deckCode": "EPO 2",
+        "printGroup": [
+          "EPO 2"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/2.png",
+        "large": "https://images.pokemontcg.io/bw2/2_hires.png"
+      }
+    },
+    {
+      "number": "03/98",
+      "localId": "3",
+      "name": "Sewaddle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Swadloon"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "String Shot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 540,
+        "genus": "Sewing Pokémon",
+        "height": "1'0\"",
+        "weight": "5.5 lbs"
+      },
+      "flavorText": "Leavanny dress it in clothes they made for it when it hatched. It hides its head in its hood while it is sleeping.",
+      "secret": false,
+      "limitless": {
+        "id": 219,
+        "url": "https://limitlesstcg.com/cards/EPO/3",
+        "deckCode": "EPO 3",
+        "printGroup": [
+          "EPO 3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/3.png",
+        "large": "https://images.pokemontcg.io/bw2/3_hires.png"
+      }
+    },
+    {
+      "number": "04/98",
+      "localId": "4",
+      "name": "Sewaddle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Swadloon"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 540,
+        "genus": "Sewing Pokémon",
+        "height": "1'0\"",
+        "weight": "5.5 lbs"
+      },
+      "flavorText": "This Pokémon makes clothes for itself. It chews up leaves and sews them with sticky thread extruded from its mouth.",
+      "secret": false,
+      "limitless": {
+        "id": 220,
+        "url": "https://limitlesstcg.com/cards/EPO/4",
+        "deckCode": "EPO 4",
+        "printGroup": [
+          "EPO 4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/4.png",
+        "large": "https://images.pokemontcg.io/bw2/4_hires.png"
+      }
+    },
+    {
+      "number": "05/98",
+      "localId": "5",
+      "name": "Swadloon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sewaddle",
+      "evolvesTo": [
+        "Leavanny"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Double Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50×",
+          "text": "Flip 2 coins. This attack does 50 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 541,
+        "genus": "Leaf-Wrapped Pokémon",
+        "height": "1'8\"",
+        "weight": "16.1 lbs"
+      },
+      "flavorText": "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests.",
+      "secret": false,
+      "limitless": {
+        "id": 221,
+        "url": "https://limitlesstcg.com/cards/EPO/5",
+        "deckCode": "EPO 5",
+        "printGroup": [
+          "EPO 5"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/5.png",
+        "large": "https://images.pokemontcg.io/bw2/5_hires.png"
+      }
+    },
+    {
+      "number": "06/98",
+      "localId": "6",
+      "name": "Swadloon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sewaddle",
+      "evolvesTo": [
+        "Leavanny"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Grass Cocooning",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 40 damage from this Pokémon."
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 541,
+        "genus": "Leaf-Wrapped Pokémon",
+        "height": "1'8\"",
+        "weight": "16.1 lbs"
+      },
+      "flavorText": "Forests where Swadloon live have superb foliage because the nutrients they make from fallen leaves nourish the plant life.",
+      "secret": false,
+      "limitless": {
+        "id": 222,
+        "url": "https://limitlesstcg.com/cards/EPO/6",
+        "deckCode": "EPO 6",
+        "printGroup": [
+          "EPO 6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/6.png",
+        "large": "https://images.pokemontcg.io/bw2/6_hires.png"
+      }
+    },
+    {
+      "number": "07/98",
+      "localId": "7",
+      "name": "Leavanny",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Swadloon",
+      "types": [
+        "Grass"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Nurturing",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Choose 1 of your Pokémon. Search your deck for a card that evolves from that Pokémon and put it onto that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward."
+        },
+        {
+          "name": "X-Scissor",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Flip a coin. If heads, this attack does 50 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 542,
+        "genus": "Nurturing Pokémon",
+        "height": "3'11\"",
+        "weight": "45.2 lbs"
+      },
+      "flavorText": "Upon finding a small Pokémon, it weaves clothing for it from leaves, using the cutters on its arms and sticky silk.",
+      "secret": false,
+      "limitless": {
+        "id": 223,
+        "url": "https://limitlesstcg.com/cards/EPO/7",
+        "deckCode": "EPO 7",
+        "printGroup": [
+          "EPO 7"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/7.png",
+        "large": "https://images.pokemontcg.io/bw2/7_hires.png"
+      }
+    },
+    {
+      "number": "08/98",
+      "localId": "8",
+      "name": "Leavanny",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Swadloon",
+      "types": [
+        "Grass"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Triple Cutter",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60×",
+          "text": "Flip 3 coins. This attack does 60 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 542,
+        "genus": "Nurturing Pokémon",
+        "height": "3'11\"",
+        "weight": "45.2 lbs"
+      },
+      "flavorText": "It keeps its eggs warm with heat from fermenting leaves. It also uses leaves to make warm wrappings for Sewaddle.",
+      "secret": false,
+      "limitless": {
+        "id": 224,
+        "url": "https://limitlesstcg.com/cards/EPO/8",
+        "deckCode": "EPO 8",
+        "printGroup": [
+          "EPO 8"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/8.png",
+        "large": "https://images.pokemontcg.io/bw2/8_hires.png"
+      }
+    },
+    {
+      "number": "09/98",
+      "localId": "9",
+      "name": "Cottonee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Whimsicott"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Absorb",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Heal 10 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 546,
+        "genus": "Cotton Puff Pokémon",
+        "height": "1'0\"",
+        "weight": "1.3 lbs"
+      },
+      "flavorText": "They go wherever the wind takes them. On rainy days, their bodies are heavier, so they take shelter beneath big trees.",
+      "secret": false,
+      "limitless": {
+        "id": 225,
+        "url": "https://limitlesstcg.com/cards/EPO/9",
+        "deckCode": "EPO 9",
+        "printGroup": [
+          "EPO 9"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/9.png",
+        "large": "https://images.pokemontcg.io/bw2/9_hires.png"
+      }
+    },
+    {
+      "number": "10/98",
+      "localId": "10",
+      "name": "Cottonee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Whimsicott"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Cotton Guard",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 10 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 546,
+        "genus": "Cotton Puff Pokémon",
+        "height": "1'0\"",
+        "weight": "1.3 lbs"
+      },
+      "flavorText": "When attacked, it escapes by shooting cotton from its body. The cotton serves as a decoy to distract the attacker.",
+      "secret": false,
+      "limitless": {
+        "id": 226,
+        "url": "https://limitlesstcg.com/cards/EPO/10",
+        "deckCode": "EPO 10",
+        "printGroup": [
+          "EPO 10"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/10.png",
+        "large": "https://images.pokemontcg.io/bw2/10_hires.png"
+      }
+    },
+    {
+      "number": "11/98",
+      "localId": "11",
+      "name": "Whimsicott",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cottonee",
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Helping Hand",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a basic Energy card and attach it to 1 of your Benched Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Cotton Guard",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 30 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "sui",
+      "pokedex": {
+        "number": 547,
+        "genus": "Windveiled Pokémon",
+        "height": "2'4\"",
+        "weight": "14.6 lbs"
+      },
+      "flavorText": "Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind.",
+      "secret": false,
+      "limitless": {
+        "id": 227,
+        "url": "https://limitlesstcg.com/cards/EPO/11",
+        "deckCode": "EPO 11",
+        "printGroup": [
+          "EPO 11"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/11.png",
+        "large": "https://images.pokemontcg.io/bw2/11_hires.png"
+      }
+    },
+    {
+      "number": "12/98",
+      "localId": "12",
+      "name": "Whimsicott",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cottonee",
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Encore",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Choose 1 of the Defending Pokémon's attacks. During your opponent's next turn, that Pokémon can only use that attack."
+        },
+        {
+          "name": "U-turn",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 547,
+        "genus": "Windveiled Pokémon",
+        "height": "2'4\"",
+        "weight": "14.6 lbs"
+      },
+      "flavorText": "Riding whirlwinds, they appear. These Pokémon sneak through gaps into houses and cause all sorts of mischief.",
+      "secret": false,
+      "limitless": {
+        "id": 228,
+        "url": "https://limitlesstcg.com/cards/EPO/12",
+        "deckCode": "EPO 12",
+        "printGroup": [
+          "EPO 12"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/12.png",
+        "large": "https://images.pokemontcg.io/bw2/12_hires.png"
+      }
+    },
+    {
+      "number": "13/98",
+      "localId": "13",
+      "name": "Petilil",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Lilligant"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Stun Spore",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Cut",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 548,
+        "genus": "Bulb Pokémon",
+        "height": "1'8\"",
+        "weight": "14.6 lbs"
+      },
+      "flavorText": "The leaves on its head are very bitter. Eating one of these leaves is known to refresh a tired body.",
+      "secret": false,
+      "limitless": {
+        "id": 229,
+        "url": "https://limitlesstcg.com/cards/EPO/13",
+        "deckCode": "EPO 13",
+        "printGroup": [
+          "EPO 13"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/13.png",
+        "large": "https://images.pokemontcg.io/bw2/13_hires.png"
+      }
+    },
+    {
+      "number": "14/98",
+      "localId": "14",
+      "name": "Lilligant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Petilil",
+      "types": [
+        "Grass"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Bemusing Aroma",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and Poisoned. If tails, the Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Cut",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 549,
+        "genus": "Flowering Pokémon",
+        "height": "3'7\"",
+        "weight": "35.9 lbs"
+      },
+      "flavorText": "Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokémon is popular with celebrities.",
+      "secret": false,
+      "limitless": {
+        "id": 230,
+        "url": "https://limitlesstcg.com/cards/EPO/14",
+        "deckCode": "EPO 14",
+        "printGroup": [
+          "EPO 14"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/14.png",
+        "large": "https://images.pokemontcg.io/bw2/14_hires.png"
+      }
+    },
+    {
+      "number": "15/98",
+      "localId": "15",
+      "name": "Deerling",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sawsbuck"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Wild Kick",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 585,
+        "genus": "Season Pokémon",
+        "height": "2'0\"",
+        "weight": "43.0 lbs"
+      },
+      "flavorText": "The turning of the seasons changes the color and scent of this Pokémon's fur. People use it to mark the seasons.",
+      "secret": false,
+      "limitless": {
+        "id": 231,
+        "url": "https://limitlesstcg.com/cards/EPO/15",
+        "deckCode": "EPO 15",
+        "printGroup": [
+          "EPO 15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/15.png",
+        "large": "https://images.pokemontcg.io/bw2/15_hires.png"
+      }
+    },
+    {
+      "number": "16/98",
+      "localId": "16",
+      "name": "Sawsbuck",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Deerling",
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Push Down",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Take Down",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "This Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 586,
+        "genus": "Season Pokémon",
+        "height": "6'3\"",
+        "weight": "203.9 lbs"
+      },
+      "flavorText": "The plants growing on its horns change according to the season. The leaders of the herd possess magnificent horns.",
+      "secret": false,
+      "limitless": {
+        "id": 232,
+        "url": "https://limitlesstcg.com/cards/EPO/16",
+        "deckCode": "EPO 16",
+        "printGroup": [
+          "EPO 16"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/16.png",
+        "large": "https://images.pokemontcg.io/bw2/16_hires.png"
+      }
+    },
+    {
+      "number": "17/98",
+      "localId": "17",
+      "name": "Virizion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Giga Drain",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Heal from this Pokémon the same amount of damage you did to the Defending Pokémon."
+        },
+        {
+          "name": "Sacred Sword",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "This Pokémon can't use Sacred Sword during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 640,
+        "genus": "Grassland Pokémon",
+        "height": "6'7\"",
+        "weight": "440.9 lbs"
+      },
+      "flavorText": "This Pokémon fought humans in order to protect its friends. Legends about it continue to be passed down.",
+      "secret": false,
+      "limitless": {
+        "id": 233,
+        "url": "https://limitlesstcg.com/cards/EPO/17",
+        "deckCode": "EPO 17",
+        "printGroup": [
+          "EPO 17"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/17.png",
+        "large": "https://images.pokemontcg.io/bw2/17_hires.png"
+      }
+    },
+    {
+      "number": "18/98",
+      "localId": "18",
+      "name": "Pansear",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Simisear"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 513,
+        "genus": "High Temp Pokémon",
+        "height": "2'0\"",
+        "weight": "24.3 lbs"
+      },
+      "flavorText": "This Pokémon lives in caves in volcanoes. The fire within the tuft on its head can reach 600º F.",
+      "secret": false,
+      "limitless": {
+        "id": 234,
+        "url": "https://limitlesstcg.com/cards/EPO/18",
+        "deckCode": "EPO 18",
+        "printGroup": [
+          "EPO 18"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/18.png",
+        "large": "https://images.pokemontcg.io/bw2/18_hires.png"
+      }
+    },
+    {
+      "number": "19/98",
+      "localId": "19",
+      "name": "Simisear",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pansear",
+      "types": [
+        "Fire"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Water's Power",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If this Pokémon has any Water Energy attached to it, the Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 514,
+        "genus": "Ember Pokémon",
+        "height": "3'3\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "A flame burns inside its body. It scatters embers from its head and tail to sear its opponents.",
+      "secret": false,
+      "limitless": {
+        "id": 235,
+        "url": "https://limitlesstcg.com/cards/EPO/19",
+        "deckCode": "EPO 19",
+        "printGroup": [
+          "EPO 19"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/19.png",
+        "large": "https://images.pokemontcg.io/bw2/19_hires.png"
+      }
+    },
+    {
+      "number": "20/98",
+      "localId": "20",
+      "name": "Darumaka",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Darmanitan"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Combustion",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 554,
+        "genus": "Zen Charm Pokémon",
+        "height": "2'0\"",
+        "weight": "82.7 lbs"
+      },
+      "flavorText": "When its internal fire is burning, it cannot calm down and it runs around. When the fire diminishes, it falls asleep.",
+      "secret": false,
+      "limitless": {
+        "id": 236,
+        "url": "https://limitlesstcg.com/cards/EPO/20",
+        "deckCode": "EPO 20",
+        "printGroup": [
+          "EPO 20"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/20.png",
+        "large": "https://images.pokemontcg.io/bw2/20_hires.png"
+      }
+    },
+    {
+      "number": "21/98",
+      "localId": "21",
+      "name": "Darmanitan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Darumaka",
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Rock Smash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage."
+        },
+        {
+          "name": "Fire Punch",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "70",
+          "text": "The Defending Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 555,
+        "genus": "Blazing Pokémon",
+        "height": "4'3\"",
+        "weight": "204.8 lbs"
+      },
+      "flavorText": "Its internal fire burns at 2,500º F, making enough power that it can destroy a dump truck with one punch.",
+      "secret": false,
+      "limitless": {
+        "id": 237,
+        "url": "https://limitlesstcg.com/cards/EPO/21",
+        "deckCode": "EPO 21",
+        "printGroup": [
+          "EPO 21"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/21.png",
+        "large": "https://images.pokemontcg.io/bw2/21_hires.png"
+      }
+    },
+    {
+      "number": "22/98",
+      "localId": "22",
+      "name": "Panpour",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Simipour"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 515,
+        "genus": "Spray Pokémon",
+        "height": "2'0\"",
+        "weight": "29.8 lbs"
+      },
+      "flavorText": "It does not thrive in dry environments. It keeps itself damp by shooting water stored in its head tuft from its tail.",
+      "secret": false,
+      "limitless": {
+        "id": 238,
+        "url": "https://limitlesstcg.com/cards/EPO/22",
+        "deckCode": "EPO 22",
+        "printGroup": [
+          "EPO 22"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/22.png",
+        "large": "https://images.pokemontcg.io/bw2/22_hires.png"
+      }
+    },
+    {
+      "number": "23/98",
+      "localId": "23",
+      "name": "Simipour",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Panpour",
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Grass' Power",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If this Pokémon has any Grass Energy attached to it, heal 20 damage from this Pokémon."
+        },
+        {
+          "name": "Rushing Water",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Move an Energy attached to the Defending Pokémon to 1 of your opponent's Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 516,
+        "genus": "Geyser Pokémon",
+        "height": "3'3\"",
+        "weight": "63.9 lbs"
+      },
+      "flavorText": "The tuft on its head holds water. When the level runs low, it replenishes the tuft by siphoning up water with its tail.",
+      "secret": false,
+      "limitless": {
+        "id": 239,
+        "url": "https://limitlesstcg.com/cards/EPO/23",
+        "deckCode": "EPO 23",
+        "printGroup": [
+          "EPO 23"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/23.png",
+        "large": "https://images.pokemontcg.io/bw2/23_hires.png"
+      }
+    },
+    {
+      "number": "24/98",
+      "localId": "24",
+      "name": "Basculin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Flail",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the number of damage counters on this Pokémon."
+        },
+        {
+          "name": "Final Gambit",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Flip 2 coins. If both of them are tails, this Pokémon does 80 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "match",
+      "pokedex": {
+        "number": 550,
+        "genus": "Hostile Pokémon",
+        "height": "3'3\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "Red and blue Basculin get along so poorly, they'll start fighting instantly. These Pokémon are very hostile.",
+      "secret": false,
+      "limitless": {
+        "id": 240,
+        "url": "https://limitlesstcg.com/cards/EPO/24",
+        "deckCode": "EPO 24",
+        "printGroup": [
+          "EPO 24"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/24.png",
+        "large": "https://images.pokemontcg.io/bw2/24_hires.png"
+      }
+    },
+    {
+      "number": "25/98",
+      "localId": "25",
+      "name": "Basculin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Splatter",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Does 30 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 550,
+        "genus": "Hostile Pokémon",
+        "height": "3'3\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "Red and blue Basculin usually do not get along, but sometimes members of one school mingle with the other's school.",
+      "secret": false,
+      "limitless": {
+        "id": 241,
+        "url": "https://limitlesstcg.com/cards/EPO/25",
+        "deckCode": "EPO 25",
+        "printGroup": [
+          "EPO 25"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/25.png",
+        "large": "https://images.pokemontcg.io/bw2/25_hires.png"
+      }
+    },
+    {
+      "number": "26/98",
+      "localId": "26",
+      "name": "Ducklett",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Swanna"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Roost",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 40 damage from this Pokémon. This Pokémon can't retreat during your next turn."
+        },
+        {
+          "name": "Rain Splash",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 580,
+        "genus": "Water Bird Pokémon",
+        "height": "1'8\"",
+        "weight": "12.1 lbs"
+      },
+      "flavorText": "When attacked, it uses its feathers to splash water, escaping under cover of the spray.",
+      "secret": false,
+      "limitless": {
+        "id": 242,
+        "url": "https://limitlesstcg.com/cards/EPO/26",
+        "deckCode": "EPO 26",
+        "printGroup": [
+          "EPO 26"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/26.png",
+        "large": "https://images.pokemontcg.io/bw2/26_hires.png"
+      }
+    },
+    {
+      "number": "27/98",
+      "localId": "27",
+      "name": "Swanna",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ducklett",
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Wing Dance",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Air Slash",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 581,
+        "genus": "White Bird Pokémon",
+        "height": "4'3\"",
+        "weight": "53.4 lbs"
+      },
+      "flavorText": "It administers sharp, powerful pecks with its bill. It whips its long neck to deliver forceful repeated strikes.",
+      "secret": false,
+      "limitless": {
+        "id": 243,
+        "url": "https://limitlesstcg.com/cards/EPO/27",
+        "deckCode": "EPO 27",
+        "printGroup": [
+          "EPO 27"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/27.png",
+        "large": "https://images.pokemontcg.io/bw2/27_hires.png"
+      }
+    },
+    {
+      "number": "28/98",
+      "localId": "28",
+      "name": "Cubchoo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Beartic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Powder Snow",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Rest",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Heal 60 damage from this Pokémon. This Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 613,
+        "genus": "Chill Pokémon",
+        "height": "1'8\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "When it is not feeling well, its mucus gets watery and the power of its Ice-type moves decreases.",
+      "secret": false,
+      "limitless": {
+        "id": 244,
+        "url": "https://limitlesstcg.com/cards/EPO/28",
+        "deckCode": "EPO 28",
+        "printGroup": [
+          "EPO 28"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/28.png",
+        "large": "https://images.pokemontcg.io/bw2/28_hires.png"
+      }
+    },
+    {
+      "number": "29/98",
+      "localId": "29",
+      "name": "Cubchoo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Beartic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Icicle Punch",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kanako Eo",
+      "pokedex": {
+        "number": 613,
+        "genus": "Chill Pokémon",
+        "height": "1'8\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "Its nose is always running. It sniffs the snot back up because the mucus provides the raw material for its moves.",
+      "secret": false,
+      "limitless": {
+        "id": 245,
+        "url": "https://limitlesstcg.com/cards/EPO/29",
+        "deckCode": "EPO 29",
+        "printGroup": [
+          "EPO 29"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/29.png",
+        "large": "https://images.pokemontcg.io/bw2/29_hires.png"
+      }
+    },
+    {
+      "number": "30/98",
+      "localId": "30",
+      "name": "Beartic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cubchoo",
+      "types": [
+        "Water"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Sheer Cold",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "The Defending Pokémon can't attack during your opponent's next turn."
+        },
+        {
+          "name": "Icicle Crash",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 614,
+        "genus": "Freezing Pokémon",
+        "height": "8'6\"",
+        "weight": "573.2 lbs"
+      },
+      "flavorText": "It can make its breath freeze at will. Very able in the water, it swims around in northern seas and catches prey.",
+      "secret": false,
+      "limitless": {
+        "id": 246,
+        "url": "https://limitlesstcg.com/cards/EPO/30",
+        "deckCode": "EPO 30",
+        "printGroup": [
+          "EPO 30"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/30.png",
+        "large": "https://images.pokemontcg.io/bw2/30_hires.png"
+      }
+    },
+    {
+      "number": "31/98",
+      "localId": "31",
+      "name": "Beartic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cubchoo",
+      "types": [
+        "Water"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Icy Wind",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Superpower",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "You may do 20 more damage. If you do, this Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 614,
+        "genus": "Freezing Pokémon",
+        "height": "8'6\"",
+        "weight": "573.2 lbs"
+      },
+      "flavorText": "It freezes its breath to create fangs and claws of ice to fight with. Cold northern areas are its habitat.",
+      "secret": false,
+      "limitless": {
+        "id": 247,
+        "url": "https://limitlesstcg.com/cards/EPO/31",
+        "deckCode": "EPO 31",
+        "printGroup": [
+          "EPO 31"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/31.png",
+        "large": "https://images.pokemontcg.io/bw2/31_hires.png"
+      }
+    },
+    {
+      "number": "32/98",
+      "localId": "32",
+      "name": "Emolga",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Acrobatics",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 587,
+        "genus": "Sky Squirrel Pokémon",
+        "height": "1'4\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "The energy made in its cheeks' electric pouches is stored inside its membrane and released while it is gliding.",
+      "secret": false,
+      "limitless": {
+        "id": 248,
+        "url": "https://limitlesstcg.com/cards/EPO/32",
+        "deckCode": "EPO 32",
+        "printGroup": [
+          "EPO 32"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/32.png",
+        "large": "https://images.pokemontcg.io/bw2/32_hires.png"
+      }
+    },
+    {
+      "number": "33/98",
+      "localId": "33",
+      "name": "Joltik",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Galvantula"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 595,
+        "genus": "Attaching Pokémon",
+        "height": "0'4\"",
+        "weight": "1.3 lbs"
+      },
+      "flavorText": "Joltik that live in cities have learned a technique for sucking electricity from the outlets in houses.",
+      "secret": false,
+      "limitless": {
+        "id": 249,
+        "url": "https://limitlesstcg.com/cards/EPO/33",
+        "deckCode": "EPO 33",
+        "printGroup": [
+          "EPO 33"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/33.png",
+        "large": "https://images.pokemontcg.io/bw2/33_hires.png"
+      }
+    },
+    {
+      "number": "34/98",
+      "localId": "34",
+      "name": "Galvantula",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Joltik",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Stun Needle",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 596,
+        "genus": "EleSpider Pokémon",
+        "height": "2'7\"",
+        "weight": "31.5 lbs"
+      },
+      "flavorText": "When attacked, they create an electric barrier by spitting out many electrically charged threads.",
+      "secret": false,
+      "limitless": {
+        "id": 250,
+        "url": "https://limitlesstcg.com/cards/EPO/34",
+        "deckCode": "EPO 34",
+        "printGroup": [
+          "EPO 34"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/34.png",
+        "large": "https://images.pokemontcg.io/bw2/34_hires.png"
+      }
+    },
+    {
+      "number": "35/98",
+      "localId": "35",
+      "name": "Thundurus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Lightning Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Disaster Volt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 642,
+        "genus": "Bolt Strike Pokémon",
+        "height": "4'11\"",
+        "weight": "134.5 lbs"
+      },
+      "flavorText": "The spikes on its tail discharge immense bolts of lightning. It flies around the Unova region firing off lightning bolts.",
+      "secret": false,
+      "limitless": {
+        "id": 251,
+        "url": "https://limitlesstcg.com/cards/EPO/35",
+        "deckCode": "EPO 35",
+        "printGroup": [
+          "BWP 41",
+          "EPO 35",
+          "EPO 97",
+          "LTR 50"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/35.png",
+        "large": "https://images.pokemontcg.io/bw2/35_hires.png"
+      }
+    },
+    {
+      "number": "36/98",
+      "localId": "36",
+      "name": "Woobat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Swoobat"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Psy Bolt",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 527,
+        "genus": "Bat Pokémon",
+        "height": "1'4\"",
+        "weight": "4.6 lbs"
+      },
+      "flavorText": "Its habitat is dark forests and caves. It emits ultrasonic waves from its nose to learn about its surroundings.",
+      "secret": false,
+      "limitless": {
+        "id": 252,
+        "url": "https://limitlesstcg.com/cards/EPO/36",
+        "deckCode": "EPO 36",
+        "printGroup": [
+          "EPO 36"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/36.png",
+        "large": "https://images.pokemontcg.io/bw2/36_hires.png"
+      }
+    },
+    {
+      "number": "37/98",
+      "localId": "37",
+      "name": "Swoobat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Woobat",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Psyshot",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Phat Sound",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 528,
+        "genus": "Courting Pokémon",
+        "height": "2'11\"",
+        "weight": "23.1 lbs"
+      },
+      "flavorText": "Anyone who comes into contact with the ultrasonic waves emitted by a courting male experiences a positive mood shift.",
+      "secret": false,
+      "limitless": {
+        "id": 253,
+        "url": "https://limitlesstcg.com/cards/EPO/37",
+        "deckCode": "EPO 37",
+        "printGroup": [
+          "EPO 37"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/37.png",
+        "large": "https://images.pokemontcg.io/bw2/37_hires.png"
+      }
+    },
+    {
+      "number": "38/98",
+      "localId": "38",
+      "name": "Venipede",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Whirlipede"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Poison Sting",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 543,
+        "genus": "Centipede Pokémon",
+        "height": "1'4\"",
+        "weight": "11.7 lbs"
+      },
+      "flavorText": "It discovers what is going on around it by using the feelers on its head and tail. It is brutally aggressive.",
+      "secret": false,
+      "limitless": {
+        "id": 254,
+        "url": "https://limitlesstcg.com/cards/EPO/38",
+        "deckCode": "EPO 38",
+        "printGroup": [
+          "EPO 38"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/38.png",
+        "large": "https://images.pokemontcg.io/bw2/38_hires.png"
+      }
+    },
+    {
+      "number": "39/98",
+      "localId": "39",
+      "name": "Whirlipede",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Venipede",
+      "evolvesTo": [
+        "Scolipede"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Venoshock",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If the Defending Pokémon is Poisoned, this attack does 60 more damage."
+        },
+        {
+          "name": "Steamroller",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 544,
+        "genus": "Curlipede Pokémon",
+        "height": "3'11\"",
+        "weight": "129.0 lbs"
+      },
+      "flavorText": "It is usually motionless, but when attacked, it rotates at high speed and then crashes into its opponent.",
+      "secret": false,
+      "limitless": {
+        "id": 255,
+        "url": "https://limitlesstcg.com/cards/EPO/39",
+        "deckCode": "EPO 39",
+        "printGroup": [
+          "EPO 39"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/39.png",
+        "large": "https://images.pokemontcg.io/bw2/39_hires.png"
+      }
+    },
+    {
+      "number": "40/98",
+      "localId": "40",
+      "name": "Scolipede",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Whirlipede",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Toxic Claws",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "The Defending Pokémon is now Poisoned. Put 2 damage counters instead of 1 on that Pokémon between turns."
+        },
+        {
+          "name": "Wild Horn",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 545,
+        "genus": "Megapede Pokémon",
+        "height": "8'2\"",
+        "weight": "442.0 lbs"
+      },
+      "flavorText": "With quick movements, it chases down its foes, attacking relentlessly with its horns until it prevails.",
+      "secret": false,
+      "limitless": {
+        "id": 256,
+        "url": "https://limitlesstcg.com/cards/EPO/40",
+        "deckCode": "EPO 40",
+        "printGroup": [
+          "EPO 40"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/40.png",
+        "large": "https://images.pokemontcg.io/bw2/40_hires.png"
+      }
+    },
+    {
+      "number": "41/98",
+      "localId": "41",
+      "name": "Sigilyph",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Reflect",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 40 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Telekinesis",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Does 50 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness or Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 561,
+        "genus": "Avianoid Pokémon",
+        "height": "4'7\"",
+        "weight": "30.9 lbs"
+      },
+      "flavorText": "The guardians of an ancient city, they use their psychic power to attack enemies that invade their territory.",
+      "secret": false,
+      "limitless": {
+        "id": 257,
+        "url": "https://limitlesstcg.com/cards/EPO/41",
+        "deckCode": "EPO 41",
+        "printGroup": [
+          "EPO 41"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/41.png",
+        "large": "https://images.pokemontcg.io/bw2/41_hires.png"
+      }
+    },
+    {
+      "number": "42/98",
+      "localId": "42",
+      "name": "Sigilyph",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Quick Turn",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Psychic Assault",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Does 10 more damage for each damage counter on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "match",
+      "pokedex": {
+        "number": 561,
+        "genus": "Avianoid Pokémon",
+        "height": "4'7\"",
+        "weight": "30.9 lbs"
+      },
+      "flavorText": "They never vary the route they fly, because their memories of guarding an ancient city remain steadfast.",
+      "secret": false,
+      "limitless": {
+        "id": 258,
+        "url": "https://limitlesstcg.com/cards/EPO/42",
+        "deckCode": "EPO 42",
+        "printGroup": [
+          "EPO 42"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/42.png",
+        "large": "https://images.pokemontcg.io/bw2/42_hires.png"
+      }
+    },
+    {
+      "number": "43/98",
+      "localId": "43",
+      "name": "Gothita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gothorita"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Hypnotic Gaze",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Double Slap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 574,
+        "genus": "Fixation Pokémon",
+        "height": "1'4\"",
+        "weight": "12.8 lbs"
+      },
+      "flavorText": "Their ribbonlike feelers increase their psychic power. They are always staring at something.",
+      "secret": false,
+      "limitless": {
+        "id": 259,
+        "url": "https://limitlesstcg.com/cards/EPO/43",
+        "deckCode": "EPO 43",
+        "printGroup": [
+          "EPO 43",
+          "LTR 69"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/43.png",
+        "large": "https://images.pokemontcg.io/bw2/43_hires.png"
+      }
+    },
+    {
+      "number": "44/98",
+      "localId": "44",
+      "name": "Gothita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gothorita"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Smack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 574,
+        "genus": "Fixation Pokémon",
+        "height": "1'4\"",
+        "weight": "12.8 lbs"
+      },
+      "flavorText": "They intently observe both Trainers and Pokémon. Apparently, they are looking at something that only Gothita can see.",
+      "secret": false,
+      "limitless": {
+        "id": 260,
+        "url": "https://limitlesstcg.com/cards/EPO/44",
+        "deckCode": "EPO 44",
+        "printGroup": [
+          "EPO 44"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/44.png",
+        "large": "https://images.pokemontcg.io/bw2/44_hires.png"
+      }
+    },
+    {
+      "number": "45/98",
+      "localId": "45",
+      "name": "Gothorita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Gothita",
+      "evolvesTo": [
+        "Gothitelle"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Double Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        },
+        {
+          "name": "Psybeam",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "The Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 575,
+        "genus": "Manipulate Pokémon",
+        "height": "2'4\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "They use hypnosis to control people and Pokémon. Tales of Gothorita leading people astray are told in every corner.",
+      "secret": false,
+      "limitless": {
+        "id": 261,
+        "url": "https://limitlesstcg.com/cards/EPO/45",
+        "deckCode": "EPO 45",
+        "printGroup": [
+          "EPO 45",
+          "LTR 71"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/45.png",
+        "large": "https://images.pokemontcg.io/bw2/45_hires.png"
+      }
+    },
+    {
+      "number": "46/98",
+      "localId": "46",
+      "name": "Gothorita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Gothita",
+      "evolvesTo": [
+        "Gothitelle"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Deleting Glare",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, discard an Energy attached to 1 of your opponent's Pokémon."
+        },
+        {
+          "name": "Super Psy Bolt",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 575,
+        "genus": "Manipulate Pokémon",
+        "height": "2'4\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "Starlight is the source of their power. At night, they mark star positions by using psychic power to float stones.",
+      "secret": false,
+      "limitless": {
+        "id": 262,
+        "url": "https://limitlesstcg.com/cards/EPO/46",
+        "deckCode": "EPO 46",
+        "printGroup": [
+          "EPO 46"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/46.png",
+        "large": "https://images.pokemontcg.io/bw2/46_hires.png"
+      }
+    },
+    {
+      "number": "47/98",
+      "localId": "47",
+      "name": "Gothitelle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Gothorita",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Magic Room",
+          "text": "As long as this Pokémon is your Active Pokémon, your opponent can't play any Item cards from his or her hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Madkinesis",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Does 20 more damage for each Psychic Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 576,
+        "genus": "Astral Body Pokémon",
+        "height": "4'11\"",
+        "weight": "97.0 lbs"
+      },
+      "flavorText": "Starry skies thousands of light-years away are visible in the space distorted by their intense psychic power.",
+      "secret": false,
+      "limitless": {
+        "id": 263,
+        "url": "https://limitlesstcg.com/cards/EPO/47",
+        "deckCode": "EPO 47",
+        "printGroup": [
+          "EPO 47",
+          "LTR 72"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/47.png",
+        "large": "https://images.pokemontcg.io/bw2/47_hires.png"
+      }
+    },
+    {
+      "number": "48/98",
+      "localId": "48",
+      "name": "Gothitelle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Gothorita",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Smack",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Mental Shock",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused. If tails, discard an Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 576,
+        "genus": "Astral Body Pokémon",
+        "height": "4'11\"",
+        "weight": "97.0 lbs"
+      },
+      "flavorText": "They can predict the future from the placement and movement of the stars. They can see Trainers' life spans.",
+      "secret": false,
+      "limitless": {
+        "id": 264,
+        "url": "https://limitlesstcg.com/cards/EPO/48",
+        "deckCode": "EPO 48",
+        "printGroup": [
+          "EPO 48"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/48.png",
+        "large": "https://images.pokemontcg.io/bw2/48_hires.png"
+      }
+    },
+    {
+      "number": "49/98",
+      "localId": "49",
+      "name": "Roggenrola",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Boldore"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Harden",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, if this Pokémon would be damaged by an attack, prevent that attack's damage done to this Pokémon if that damage is 40 or less."
+        },
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 524,
+        "genus": "Mantle Pokémon",
+        "height": "1'4\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "Its ear is hexagonal in shape. Compressed underground, its body is as hard as steel.",
+      "secret": false,
+      "limitless": {
+        "id": 265,
+        "url": "https://limitlesstcg.com/cards/EPO/49",
+        "deckCode": "EPO 49",
+        "printGroup": [
+          "EPO 49"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/49.png",
+        "large": "https://images.pokemontcg.io/bw2/49_hires.png"
+      }
+    },
+    {
+      "number": "50/98",
+      "localId": "50",
+      "name": "Roggenrola",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Boldore"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 524,
+        "genus": "Mantle Pokémon",
+        "height": "1'4\"",
+        "weight": "39.7 lbs"
+      },
+      "flavorText": "They were discovered a hundred years ago in an earthquake fissure. Inside each one is an energy core.",
+      "secret": false,
+      "limitless": {
+        "id": 266,
+        "url": "https://limitlesstcg.com/cards/EPO/50",
+        "deckCode": "EPO 50",
+        "printGroup": [
+          "EPO 50"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/50.png",
+        "large": "https://images.pokemontcg.io/bw2/50_hires.png"
+      }
+    },
+    {
+      "number": "51/98",
+      "localId": "51",
+      "name": "Boldore",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Roggenrola",
+      "evolvesTo": [
+        "Gigalith"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Smack Down",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If the Defending Pokémon has Fighting Resistance, this attack does 60 more damage."
+        },
+        {
+          "name": "Power Gem",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 525,
+        "genus": "Ore Pokémon",
+        "height": "2'11\"",
+        "weight": "224.9 lbs"
+      },
+      "flavorText": "When it overflows with power, the orange crystal on its body glows. It looks for underground water in caves.",
+      "secret": false,
+      "limitless": {
+        "id": 267,
+        "url": "https://limitlesstcg.com/cards/EPO/51",
+        "deckCode": "EPO 51",
+        "printGroup": [
+          "EPO 51"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/51.png",
+        "large": "https://images.pokemontcg.io/bw2/51_hires.png"
+      }
+    },
+    {
+      "number": "52/98",
+      "localId": "52",
+      "name": "Boldore",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Roggenrola",
+      "evolvesTo": [
+        "Gigalith"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Hard Crash",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage. If tails, this Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 525,
+        "genus": "Ore Pokémon",
+        "height": "2'11\"",
+        "weight": "224.9 lbs"
+      },
+      "flavorText": "Because its energy was too great to be contained, the energy leaked and formed orange crystals.",
+      "secret": false,
+      "limitless": {
+        "id": 268,
+        "url": "https://limitlesstcg.com/cards/EPO/52",
+        "deckCode": "EPO 52",
+        "printGroup": [
+          "EPO 52"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/52.png",
+        "large": "https://images.pokemontcg.io/bw2/52_hires.png"
+      }
+    },
+    {
+      "number": "53/98",
+      "localId": "53",
+      "name": "Gigalith",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Boldore",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Shear",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard the top 5 cards of your deck. If any of those cards are Fighting Energy cards, attach them to this Pokémon."
+        },
+        {
+          "name": "Rock Bullet",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "40+",
+          "text": "Does 20 more damage for each Fighting Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 526,
+        "genus": "Compressed Pokémon",
+        "height": "5'7\"",
+        "weight": "573.2 lbs"
+      },
+      "flavorText": "The solar energy absorbed by its body's orange crystals is magnified internally and fired from its mouth.",
+      "secret": false,
+      "limitless": {
+        "id": 269,
+        "url": "https://limitlesstcg.com/cards/EPO/53",
+        "deckCode": "EPO 53",
+        "printGroup": [
+          "EPO 53"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/53.png",
+        "large": "https://images.pokemontcg.io/bw2/53_hires.png"
+      }
+    },
+    {
+      "number": "54/98",
+      "localId": "54",
+      "name": "Drilbur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Excadrill"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Hone Claws",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your next turn, each of this Pokémon's attacks does 30 more damage (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "match",
+      "pokedex": {
+        "number": 529,
+        "genus": "Mole Pokémon",
+        "height": "1'0\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "It can dig through the ground at a speed of 30 mph. It could give a car running aboveground a good race.",
+      "secret": false,
+      "limitless": {
+        "id": 270,
+        "url": "https://limitlesstcg.com/cards/EPO/54",
+        "deckCode": "EPO 54",
+        "printGroup": [
+          "EPO 54"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/54.png",
+        "large": "https://images.pokemontcg.io/bw2/54_hires.png"
+      }
+    },
+    {
+      "number": "55/98",
+      "localId": "55",
+      "name": "Drilbur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Excadrill"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Mud-Slap",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 529,
+        "genus": "Mole Pokémon",
+        "height": "1'0\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "It makes its way swiftly through the soil by putting both claws together and rotating at high speed.",
+      "secret": false,
+      "limitless": {
+        "id": 271,
+        "url": "https://limitlesstcg.com/cards/EPO/55",
+        "deckCode": "EPO 55",
+        "printGroup": [
+          "EPO 55"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/55.png",
+        "large": "https://images.pokemontcg.io/bw2/55_hires.png"
+      }
+    },
+    {
+      "number": "56/98",
+      "localId": "56",
+      "name": "Excadrill",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Drilbur",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Drill Run",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Discard an Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 530,
+        "genus": "Subterrene Pokémon",
+        "height": "2'4\"",
+        "weight": "89.1 lbs"
+      },
+      "flavorText": "It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates.",
+      "secret": false,
+      "limitless": {
+        "id": 272,
+        "url": "https://limitlesstcg.com/cards/EPO/56",
+        "deckCode": "EPO 56",
+        "printGroup": [
+          "EPO 56"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/56.png",
+        "large": "https://images.pokemontcg.io/bw2/56_hires.png"
+      }
+    },
+    {
+      "number": "57/98",
+      "localId": "57",
+      "name": "Excadrill",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Drilbur",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Dig",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Earthquake",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 530,
+        "genus": "Subterrene Pokémon",
+        "height": "2'4\"",
+        "weight": "89.1 lbs"
+      },
+      "flavorText": "More than 300 feet below the surface, they build mazelike nests. Their activity can be destructive to subway tunnels.",
+      "secret": false,
+      "limitless": {
+        "id": 273,
+        "url": "https://limitlesstcg.com/cards/EPO/57",
+        "deckCode": "EPO 57",
+        "printGroup": [
+          "EPO 57"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/57.png",
+        "large": "https://images.pokemontcg.io/bw2/57_hires.png"
+      }
+    },
+    {
+      "number": "58/98",
+      "localId": "58",
+      "name": "Throh",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Scarf Hold",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "match",
+      "pokedex": {
+        "number": 538,
+        "genus": "Judo Pokémon",
+        "height": "4'3\"",
+        "weight": "122.4 lbs"
+      },
+      "flavorText": "When it tightens its belt, it becomes stronger. Wild Throh use vines to weave their own belts.",
+      "secret": false,
+      "limitless": {
+        "id": 274,
+        "url": "https://limitlesstcg.com/cards/EPO/58",
+        "deckCode": "EPO 58",
+        "printGroup": [
+          "EPO 58"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/58.png",
+        "large": "https://images.pokemontcg.io/bw2/58_hires.png"
+      }
+    },
+    {
+      "number": "59/98",
+      "localId": "59",
+      "name": "Sawk",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Five Fierce Chops",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 5 coins. This attack does 20 damage times the number of heads. This Pokémon can't attack during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 539,
+        "genus": "Karate Pokémon",
+        "height": "4'7\"",
+        "weight": "112.4 lbs"
+      },
+      "flavorText": "Tying their belts gets them pumped and makes their punches more destructive. Disturbing their training angers them.",
+      "secret": false,
+      "limitless": {
+        "id": 275,
+        "url": "https://limitlesstcg.com/cards/EPO/59",
+        "deckCode": "EPO 59",
+        "printGroup": [
+          "EPO 59"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/59.png",
+        "large": "https://images.pokemontcg.io/bw2/59_hires.png"
+      }
+    },
+    {
+      "number": "60/98",
+      "localId": "60",
+      "name": "Sandile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Krokorok"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 551,
+        "genus": "Desert Croc Pokémon",
+        "height": "2'4\"",
+        "weight": "33.5 lbs"
+      },
+      "flavorText": "They live buried in the sands of the desert. The sun-warmed sands prevent their body temperature from dropping.",
+      "secret": false,
+      "limitless": {
+        "id": 276,
+        "url": "https://limitlesstcg.com/cards/EPO/60",
+        "deckCode": "EPO 60",
+        "printGroup": [
+          "EPO 60"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/60.png",
+        "large": "https://images.pokemontcg.io/bw2/60_hires.png"
+      }
+    },
+    {
+      "number": "61/98",
+      "localId": "61",
+      "name": "Krokorok",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sandile",
+      "evolvesTo": [
+        "Krookodile"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Crunch",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "Flip a coin. If heads, discard an Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 552,
+        "genus": "Desert Croc Pokémon",
+        "height": "3'3\"",
+        "weight": "73.6 lbs"
+      },
+      "flavorText": "They live in groups of a few individuals. Protective membranes shield their eyes from sandstorms.",
+      "secret": false,
+      "limitless": {
+        "id": 277,
+        "url": "https://limitlesstcg.com/cards/EPO/61",
+        "deckCode": "EPO 61",
+        "printGroup": [
+          "EPO 61"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/61.png",
+        "large": "https://images.pokemontcg.io/bw2/61_hires.png"
+      }
+    },
+    {
+      "number": "62/98",
+      "localId": "62",
+      "name": "Krookodile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Krokorok",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 140,
+      "abilities": [
+        {
+          "name": "Black Eyes",
+          "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Thrash",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage. If tails, this Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 553,
+        "genus": "Intimidation Pokémon",
+        "height": "4'11\"",
+        "weight": "212.3 lbs"
+      },
+      "flavorText": "They never allow prey to escape. Their jaws are so powerful, they can crush the body of an automobile.",
+      "secret": false,
+      "limitless": {
+        "id": 278,
+        "url": "https://limitlesstcg.com/cards/EPO/62",
+        "deckCode": "EPO 62",
+        "printGroup": [
+          "EPO 62"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/62.png",
+        "large": "https://images.pokemontcg.io/bw2/62_hires.png"
+      }
+    },
+    {
+      "number": "63/98",
+      "localId": "63",
+      "name": "Terrakion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Boulder Crush",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Sacred Sword",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "This Pokémon can't use Sacred Sword during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 639,
+        "genus": "Cavern Pokémon",
+        "height": "6'3\"",
+        "weight": "573.2 lbs"
+      },
+      "flavorText": "This Pokémon came to the defense of Pokémon that had lost their homes in a war among humans.",
+      "secret": false,
+      "limitless": {
+        "id": 279,
+        "url": "https://limitlesstcg.com/cards/EPO/63",
+        "deckCode": "EPO 63",
+        "printGroup": [
+          "EPO 63"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/63.png",
+        "large": "https://images.pokemontcg.io/bw2/63_hires.png"
+      }
+    },
+    {
+      "number": "64/98",
+      "localId": "64",
+      "name": "Purrloin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Liepard"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Knock Off",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, discard a random card from your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 509,
+        "genus": "Devious Pokémon",
+        "height": "1'4\"",
+        "weight": "22.3 lbs"
+      },
+      "flavorText": "They steal from people for fun, but their victims can't help but forgive them. Their deceptively cute act is perfect.",
+      "secret": false,
+      "limitless": {
+        "id": 280,
+        "url": "https://limitlesstcg.com/cards/EPO/64",
+        "deckCode": "EPO 64",
+        "printGroup": [
+          "EPO 64"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/64.png",
+        "large": "https://images.pokemontcg.io/bw2/64_hires.png"
+      }
+    },
+    {
+      "number": "65/98",
+      "localId": "65",
+      "name": "Liepard",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Purrloin",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Feint Attack",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Does 30 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness, Resistance, or any other effects on that Pokémon."
+        },
+        {
+          "name": "Claw Rend",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50+",
+          "text": "If the Defending Pokémon already has any damage counters on it, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 510,
+        "genus": "Cruel Pokémon",
+        "height": "3'7\"",
+        "weight": "82.7 lbs"
+      },
+      "flavorText": "These Pokémon vanish and appear unexpectedly. Many Trainers are drawn to their beautiful form and fur.",
+      "secret": false,
+      "limitless": {
+        "id": 281,
+        "url": "https://limitlesstcg.com/cards/EPO/65",
+        "deckCode": "EPO 65",
+        "printGroup": [
+          "EPO 65"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/65.png",
+        "large": "https://images.pokemontcg.io/bw2/65_hires.png"
+      }
+    },
+    {
+      "number": "66/98",
+      "localId": "66",
+      "name": "Zorua",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Zoroark"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rising Lunge",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 570,
+        "genus": "Tricky Fox Pokémon",
+        "height": "2'4\"",
+        "weight": "27.6 lbs"
+      },
+      "flavorText": "It changes into the forms of others to surprise them. Apparently, it often transforms into a silent child.",
+      "secret": false,
+      "limitless": {
+        "id": 282,
+        "url": "https://limitlesstcg.com/cards/EPO/66",
+        "deckCode": "EPO 66",
+        "printGroup": [
+          "EPO 66"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/66.png",
+        "large": "https://images.pokemontcg.io/bw2/66_hires.png"
+      }
+    },
+    {
+      "number": "67/98",
+      "localId": "67",
+      "name": "Zoroark",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Zorua",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20×",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+        },
+        {
+          "name": "Night Daze",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 571,
+        "genus": "Illusion Fox Pokémon",
+        "height": "5'3\"",
+        "weight": "178.8 lbs"
+      },
+      "flavorText": "Bonds between these Pokémon are very strong. It protects the safety of its pack by tricking its opponents.",
+      "secret": false,
+      "limitless": {
+        "id": 283,
+        "url": "https://limitlesstcg.com/cards/EPO/67",
+        "deckCode": "EPO 67",
+        "printGroup": [
+          "EPO 67"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/67.png",
+        "large": "https://images.pokemontcg.io/bw2/67_hires.png"
+      }
+    },
+    {
+      "number": "68/98",
+      "localId": "68",
+      "name": "Vullaby",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Mandibuzz"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Rear Guard",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 30 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Gust",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "sui",
+      "pokedex": {
+        "number": 629,
+        "genus": "Diapered Pokémon",
+        "height": "1'8\"",
+        "weight": "19.8 lbs"
+      },
+      "flavorText": "They tend to guard their posteriors with suitable bones they have found. They pursue weak Pokémon.",
+      "secret": false,
+      "limitless": {
+        "id": 284,
+        "url": "https://limitlesstcg.com/cards/EPO/68",
+        "deckCode": "EPO 68",
+        "printGroup": [
+          "EPO 68"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/68.png",
+        "large": "https://images.pokemontcg.io/bw2/68_hires.png"
+      }
+    },
+    {
+      "number": "69/98",
+      "localId": "69",
+      "name": "Mandibuzz",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Vullaby",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Bone Rush",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads."
+        },
+        {
+          "name": "Dark Pulse",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Does 10 more damage for each Darkness Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 630,
+        "genus": "Bone Vulture Pokémon",
+        "height": "3'11\"",
+        "weight": "87.1 lbs"
+      },
+      "flavorText": "Watching from the sky, they swoop to strike weakened Pokémon on the ground. They decorate themselves with bones.",
+      "secret": false,
+      "limitless": {
+        "id": 285,
+        "url": "https://limitlesstcg.com/cards/EPO/69",
+        "deckCode": "EPO 69",
+        "printGroup": [
+          "EPO 69"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/69.png",
+        "large": "https://images.pokemontcg.io/bw2/69_hires.png"
+      }
+    },
+    {
+      "number": "70/98",
+      "localId": "70",
+      "name": "Ferroseed",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ferrothorn"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Pin Missile",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 597,
+        "genus": "Thorn Seed Pokémon",
+        "height": "2'0\"",
+        "weight": "41.4 lbs"
+      },
+      "flavorText": "They stick their spikes into cave walls and absorb the minerals they find in the rock.",
+      "secret": false,
+      "limitless": {
+        "id": 286,
+        "url": "https://limitlesstcg.com/cards/EPO/70",
+        "deckCode": "EPO 70",
+        "printGroup": [
+          "EPO 70"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/70.png",
+        "large": "https://images.pokemontcg.io/bw2/70_hires.png"
+      }
+    },
+    {
+      "number": "71/98",
+      "localId": "71",
+      "name": "Ferroseed",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ferrothorn"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 597,
+        "genus": "Thorn Seed Pokémon",
+        "height": "2'0\"",
+        "weight": "41.4 lbs"
+      },
+      "flavorText": "When threatened, it attacks by shooting a barrage of spikes, which gives it a chance to escape by rolling away.",
+      "secret": false,
+      "limitless": {
+        "id": 287,
+        "url": "https://limitlesstcg.com/cards/EPO/71",
+        "deckCode": "EPO 71",
+        "printGroup": [
+          "EPO 71"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/71.png",
+        "large": "https://images.pokemontcg.io/bw2/71_hires.png"
+      }
+    },
+    {
+      "number": "72/98",
+      "localId": "72",
+      "name": "Ferrothorn",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ferroseed",
+      "types": [
+        "Metal"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Steel Feelers",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "Flip 3 coins. This attack does 30 damage times the number of heads."
+        },
+        {
+          "name": "Gyro Ball",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon. Then, your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shin Nagasawa",
+      "pokedex": {
+        "number": 598,
+        "genus": "Thorn Pod Pokémon",
+        "height": "3'3\"",
+        "weight": "242.5 lbs"
+      },
+      "flavorText": "They attach themselves to cave ceilings, firing steel spikes at targets passing beneath them.",
+      "secret": false,
+      "limitless": {
+        "id": 288,
+        "url": "https://limitlesstcg.com/cards/EPO/72",
+        "deckCode": "EPO 72",
+        "printGroup": [
+          "EPO 72"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/72.png",
+        "large": "https://images.pokemontcg.io/bw2/72_hires.png"
+      }
+    },
+    {
+      "number": "73/98",
+      "localId": "73",
+      "name": "Ferrothorn",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ferroseed",
+      "types": [
+        "Metal"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Iron Defense",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Power Whip",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Does 10 damage for each Energy attached to this Pokémon to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 598,
+        "genus": "Thorn Pod Pokémon",
+        "height": "3'3\"",
+        "weight": "242.5 lbs"
+      },
+      "flavorText": "It fights by swinging around its three spiky feelers. A hit from these steel spikes can reduce a boulder to rubble.",
+      "secret": false,
+      "limitless": {
+        "id": 289,
+        "url": "https://limitlesstcg.com/cards/EPO/73",
+        "deckCode": "EPO 73",
+        "printGroup": [
+          "EPO 73"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/73.png",
+        "large": "https://images.pokemontcg.io/bw2/73_hires.png"
+      }
+    },
+    {
+      "number": "74/98",
+      "localId": "74",
+      "name": "Klink",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Klang"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Spinning Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Gear Grind",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 599,
+        "genus": "Gear Pokémon",
+        "height": "1'0\"",
+        "weight": "46.3 lbs"
+      },
+      "flavorText": "Interlocking two bodies and spinning around generates the energy they need to live.",
+      "secret": false,
+      "limitless": {
+        "id": 290,
+        "url": "https://limitlesstcg.com/cards/EPO/74",
+        "deckCode": "EPO 74",
+        "printGroup": [
+          "EPO 74"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/74.png",
+        "large": "https://images.pokemontcg.io/bw2/74_hires.png"
+      }
+    },
+    {
+      "number": "75/98",
+      "localId": "75",
+      "name": "Klang",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Klink",
+      "evolvesTo": [
+        "Klinklang"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Metal Sound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Guard Press",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 600,
+        "genus": "Gear Pokémon",
+        "height": "2'0\"",
+        "weight": "112.4 lbs"
+      },
+      "flavorText": "Spinning minigears are rotated at high speed and repeatedly fired away. It is dangerous if the gears don't return.",
+      "secret": false,
+      "limitless": {
+        "id": 291,
+        "url": "https://limitlesstcg.com/cards/EPO/75",
+        "deckCode": "EPO 75",
+        "printGroup": [
+          "EPO 75"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/75.png",
+        "large": "https://images.pokemontcg.io/bw2/75_hires.png"
+      }
+    },
+    {
+      "number": "76/98",
+      "localId": "76",
+      "name": "Klinklang",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Klang",
+      "types": [
+        "Metal"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Charge Beam",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Attach an Energy card from your discard pile to this Pokémon."
+        },
+        {
+          "name": "Zap Cannon",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Flip a coin. If tails, this Pokémon can't use Zap Cannon during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 601,
+        "genus": "Gear Pokémon",
+        "height": "2'0\"",
+        "weight": "178.6 lbs"
+      },
+      "flavorText": "The gear with the red core is rotated at high speed for a rapid energy charge.",
+      "secret": false,
+      "limitless": {
+        "id": 292,
+        "url": "https://limitlesstcg.com/cards/EPO/76",
+        "deckCode": "EPO 76",
+        "printGroup": [
+          "EPO 76"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/76.png",
+        "large": "https://images.pokemontcg.io/bw2/76_hires.png"
+      }
+    },
+    {
+      "number": "77/98",
+      "localId": "77",
+      "name": "Cobalion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Metal Horns",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Sacred Sword",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "This Pokémon can't use Sacred Sword during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 638,
+        "genus": "Iron Will Pokémon",
+        "height": "6'11\"",
+        "weight": "551.2 lbs"
+      },
+      "flavorText": "This legendary Pokémon battled against humans to protect Pokémon. Its personality is calm and composed.",
+      "secret": false,
+      "limitless": {
+        "id": 293,
+        "url": "https://limitlesstcg.com/cards/EPO/77",
+        "deckCode": "EPO 77",
+        "printGroup": [
+          "EPO 77"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/77.png",
+        "large": "https://images.pokemontcg.io/bw2/77_hires.png"
+      }
+    },
+    {
+      "number": "78/98",
+      "localId": "78",
+      "name": "Patrat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Watchog"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Hyper Fang",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 504,
+        "genus": "Scout Pokémon",
+        "height": "1'8\"",
+        "weight": "25.6 lbs"
+      },
+      "flavorText": "Extremely cautious, they take shifts to maintain a constant watch of their nest. They feel insecure without a lookout.",
+      "secret": false,
+      "limitless": {
+        "id": 294,
+        "url": "https://limitlesstcg.com/cards/EPO/78",
+        "deckCode": "EPO 78",
+        "printGroup": [
+          "BLW 78",
+          "EPO 78"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/78.png",
+        "large": "https://images.pokemontcg.io/bw2/78_hires.png"
+      }
+    },
+    {
+      "number": "79/98",
+      "localId": "79",
+      "name": "Watchog",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Patrat",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Watcheck",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at the top 5 cards of your opponent's deck and put them back on top of his or her deck in any order."
+        },
+        {
+          "name": "Quick Tail Smash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Before doing damage, you may flip a coin. If heads, this attack does 60 more damage. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 505,
+        "genus": "Lookout Pokémon",
+        "height": "3'7\"",
+        "weight": "59.5 lbs"
+      },
+      "flavorText": "When they see an enemy, their tails stand high, and they spit the seeds of berries stored in their cheek pouches.",
+      "secret": false,
+      "limitless": {
+        "id": 295,
+        "url": "https://limitlesstcg.com/cards/EPO/79",
+        "deckCode": "EPO 79",
+        "printGroup": [
+          "EPO 79"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/79.png",
+        "large": "https://images.pokemontcg.io/bw2/79_hires.png"
+      }
+    },
+    {
+      "number": "80/98",
+      "localId": "80",
+      "name": "Pidove",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Tranquill"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Gust",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 519,
+        "genus": "Tiny Pigeon Pokémon",
+        "height": "1'0\"",
+        "weight": "4.6 lbs"
+      },
+      "flavorText": "Each follows its Trainer's orders as best it can, but they sometimes fail to understand complicated commands.",
+      "secret": false,
+      "limitless": {
+        "id": 296,
+        "url": "https://limitlesstcg.com/cards/EPO/80",
+        "deckCode": "EPO 80",
+        "printGroup": [
+          "BWP 15",
+          "EPO 80"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/80.png",
+        "large": "https://images.pokemontcg.io/bw2/80_hires.png"
+      }
+    },
+    {
+      "number": "81/98",
+      "localId": "81",
+      "name": "Tranquill",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pidove",
+      "evolvesTo": [
+        "Unfezant"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Claw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 520,
+        "genus": "Wild Pigeon Pokémon",
+        "height": "2'0\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "Many people believe that, deep in the forest where Tranquill live, there is a peaceful place where there is no war.",
+      "secret": false,
+      "limitless": {
+        "id": 297,
+        "url": "https://limitlesstcg.com/cards/EPO/81",
+        "deckCode": "EPO 81",
+        "printGroup": [
+          "EPO 81"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/81.png",
+        "large": "https://images.pokemontcg.io/bw2/81_hires.png"
+      }
+    },
+    {
+      "number": "82/98",
+      "localId": "82",
+      "name": "Unfezant",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Tranquill",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Tailwind",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach an Energy from your hand to 1 of your Pokémon."
+        },
+        {
+          "name": "Feather Strike",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Flip a coin. If heads, this attack does 40 more damage. If tails, discard an Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "kawayoo",
+      "pokedex": {
+        "number": 521,
+        "genus": "Proud Pokémon",
+        "height": "3'11\"",
+        "weight": "63.9 lbs"
+      },
+      "flavorText": "Males have plumage on their heads. They will never let themselves feel close to anyone other than their Trainers.",
+      "secret": false,
+      "limitless": {
+        "id": 298,
+        "url": "https://limitlesstcg.com/cards/EPO/82",
+        "deckCode": "EPO 82",
+        "printGroup": [
+          "EPO 82"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/82.png",
+        "large": "https://images.pokemontcg.io/bw2/82_hires.png"
+      }
+    },
+    {
+      "number": "83/98",
+      "localId": "83",
+      "name": "Audino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Powerful Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40×",
+          "text": "Flip a coin for each Energy attached to this Pokémon. This attack does 40 damage times the number of heads."
+        },
+        {
+          "name": "Heal Pulse",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Heal 50 damage from 1 of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 531,
+        "genus": "Hearing Pokémon",
+        "height": "3'7\"",
+        "weight": "68.3 lbs"
+      },
+      "flavorText": "Its auditory sense is astounding. It has a radarlike ability to understand its surroundings through slight sounds.",
+      "secret": false,
+      "limitless": {
+        "id": 299,
+        "url": "https://limitlesstcg.com/cards/EPO/83",
+        "deckCode": "EPO 83",
+        "printGroup": [
+          "EPO 83"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/83.png",
+        "large": "https://images.pokemontcg.io/bw2/83_hires.png"
+      }
+    },
+    {
+      "number": "84/98",
+      "localId": "84",
+      "name": "Minccino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cinccino"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Last Resort",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 572,
+        "genus": "Chinchilla Pokémon",
+        "height": "1'4\"",
+        "weight": "12.8 lbs"
+      },
+      "flavorText": "These Pokémon prefer a tidy habitat. They are always sweeping and dusting, using their tails as brooms.",
+      "secret": false,
+      "limitless": {
+        "id": 300,
+        "url": "https://limitlesstcg.com/cards/EPO/84",
+        "deckCode": "EPO 84",
+        "printGroup": [
+          "EPO 84"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/84.png",
+        "large": "https://images.pokemontcg.io/bw2/84_hires.png"
+      }
+    },
+    {
+      "number": "85/98",
+      "localId": "85",
+      "name": "Cinccino",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Minccino",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Captivate",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Switch the Defending Pokémon with 1 of your opponent's Benched Pokémon."
+        },
+        {
+          "name": "Fluffy Tail",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "The Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 573,
+        "genus": "Scarf Pokémon",
+        "height": "1'8\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "Their white fur feels amazing to touch. Their fur repels dust and prevents static electricity from building up.",
+      "secret": false,
+      "limitless": {
+        "id": 301,
+        "url": "https://limitlesstcg.com/cards/EPO/85",
+        "deckCode": "EPO 85",
+        "printGroup": [
+          "EPO 85"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/85.png",
+        "large": "https://images.pokemontcg.io/bw2/85_hires.png"
+      }
+    },
+    {
+      "number": "86/98",
+      "localId": "86",
+      "name": "Rufflet",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Braviary"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 627,
+        "genus": "Eaglet Pokémon",
+        "height": "1'8\"",
+        "weight": "23.1 lbs"
+      },
+      "flavorText": "They will challenge anything, even strong opponents, without fear. Their frequent fights help them become stronger.",
+      "secret": false,
+      "limitless": {
+        "id": 302,
+        "url": "https://limitlesstcg.com/cards/EPO/86",
+        "deckCode": "EPO 86",
+        "printGroup": [
+          "EPO 86"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/86.png",
+        "large": "https://images.pokemontcg.io/bw2/86_hires.png"
+      }
+    },
+    {
+      "number": "87/98",
+      "localId": "87",
+      "name": "Rufflet",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Braviary"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Claw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 627,
+        "genus": "Eaglet Pokémon",
+        "height": "1'8\"",
+        "weight": "23.1 lbs"
+      },
+      "flavorText": "They crush berries with their talons. They bravely stand up to any opponent, no matter how strong it is.",
+      "secret": false,
+      "limitless": {
+        "id": 303,
+        "url": "https://limitlesstcg.com/cards/EPO/87",
+        "deckCode": "EPO 87",
+        "printGroup": [
+          "EPO 87"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/87.png",
+        "large": "https://images.pokemontcg.io/bw2/87_hires.png"
+      }
+    },
+    {
+      "number": "88/98",
+      "localId": "88",
+      "name": "Braviary",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Rufflet",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Brave Bird",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "This Pokémon does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 628,
+        "genus": "Valiant Pokémon",
+        "height": "4'11\"",
+        "weight": "90.4 lbs"
+      },
+      "flavorText": "The more scars they have, the more respect these brave soldiers of the sky get from their peers.",
+      "secret": false,
+      "limitless": {
+        "id": 304,
+        "url": "https://limitlesstcg.com/cards/EPO/88",
+        "deckCode": "EPO 88",
+        "printGroup": [
+          "EPO 88"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/88.png",
+        "large": "https://images.pokemontcg.io/bw2/88_hires.png"
+      }
+    },
+    {
+      "number": "89/98",
+      "localId": "89",
+      "name": "Tornadus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Energy Wheel",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Move an Energy from 1 of your Benched Pokémon to this Pokémon."
+        },
+        {
+          "name": "Hurricane",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Move a basic Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 641,
+        "genus": "Cyclone Pokémon",
+        "height": "4'11\"",
+        "weight": "138.9 lbs"
+      },
+      "flavorText": "The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.",
+      "secret": false,
+      "limitless": {
+        "id": 305,
+        "url": "https://limitlesstcg.com/cards/EPO/89",
+        "deckCode": "EPO 89",
+        "printGroup": [
+          "BWP 42",
+          "EPO 89",
+          "EPO 98",
+          "LTR 108"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/89.png",
+        "large": "https://images.pokemontcg.io/bw2/89_hires.png"
+      }
+    },
+    {
+      "number": "90/98",
+      "localId": "90",
+      "name": "Bianca",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Draw cards until you have 6 cards in your hand.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "limitless": {
+        "id": 306,
+        "url": "https://limitlesstcg.com/cards/EPO/90",
+        "deckCode": "EPO 90",
+        "printGroup": [
+          "BCR 147",
+          "EPO 90",
+          "LTR 109"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/90.png",
+        "large": "https://images.pokemontcg.io/bw2/90_hires.png"
+      }
+    },
+    {
+      "number": "91/98",
+      "localId": "91",
+      "name": "Cheren",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Draw 3 cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yusuke Ohmura",
+      "secret": false,
+      "limitless": {
+        "id": 307,
+        "url": "https://limitlesstcg.com/cards/EPO/91",
+        "deckCode": "EPO 91",
+        "printGroup": [
+          "ASC 258",
+          "BCR 148",
+          "DEX 91",
+          "EPO 91",
+          "WHT 81"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/91.png",
+        "large": "https://images.pokemontcg.io/bw2/91_hires.png"
+      }
+    },
+    {
+      "number": "92/98",
+      "localId": "92",
+      "name": "Crushing Hammer",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, discard an Energy attached to 1 of your opponent's Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "limitless": {
+        "id": 308,
+        "url": "https://limitlesstcg.com/cards/EPO/92",
+        "deckCode": "EPO 92",
+        "printGroup": [
+          "CRZ 125",
+          "EPO 92",
+          "GEN 60",
+          "KSS 34",
+          "LTR 111",
+          "PBL 105",
+          "POR 71",
+          "SSH 159",
+          "SUM 115",
+          "SVI 168",
+          "UPR 166"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/92.png",
+        "large": "https://images.pokemontcg.io/bw2/92_hires.png"
+      }
+    },
+    {
+      "number": "93/98",
+      "localId": "93",
+      "name": "Great Ball",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "limitless": {
+        "id": 309,
+        "url": "https://limitlesstcg.com/cards/EPO/93",
+        "deckCode": "EPO 93",
+        "printGroup": [
+          "BCR 129",
+          "BKP 100",
+          "CPA 52",
+          "CRZ 132",
+          "DS 90",
+          "EPO 93",
+          "PAL 183",
+          "PK 77",
+          "RG 92",
+          "SF 85",
+          "SLG 60",
+          "SSH 164",
+          "SUM 119",
+          "XY 118"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/93.png",
+        "large": "https://images.pokemontcg.io/bw2/93_hires.png"
+      }
+    },
+    {
+      "number": "94/98",
+      "localId": "94",
+      "name": "Max Potion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Heal all damage from 1 of your Pokémon. Then, discard all Energy attached to that Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "limitless": {
+        "id": 310,
+        "url": "https://limitlesstcg.com/cards/EPO/94",
+        "deckCode": "EPO 94",
+        "printGroup": [
+          "BKP 103",
+          "EPO 94",
+          "GRI 128",
+          "GRI 128a",
+          "GRI 164",
+          "PLF 121"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/94.png",
+        "large": "https://images.pokemontcg.io/bw2/94_hires.png"
+      }
+    },
+    {
+      "number": "95/98",
+      "localId": "95",
+      "name": "Pokémon Catcher",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Switch your opponent's Active Pokémon with 1 of his or her Benched Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "5ban Graphics",
+      "secret": false,
+      "limitless": {
+        "id": 311,
+        "url": "https://limitlesstcg.com/cards/EPO/95",
+        "deckCode": "EPO 95",
+        "printGroup": [
+          "BKP 105",
+          "CRZ 138",
+          "DEX 111",
+          "EPO 95",
+          "KSS 36",
+          "PLB 83",
+          "POR 82",
+          "SLG 64",
+          "SSH 175",
+          "SUM 126",
+          "SVI 187"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/95.png",
+        "large": "https://images.pokemontcg.io/bw2/95_hires.png"
+      }
+    },
+    {
+      "number": "96/98",
+      "localId": "96",
+      "name": "Recycle",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Flip a coin. If heads, put a card from your discard pile on top of your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "limitless": {
+        "id": 312,
+        "url": "https://limitlesstcg.com/cards/EPO/96",
+        "deckCode": "EPO 96",
+        "printGroup": [
+          "EPO 96",
+          "FO 61"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/96.png",
+        "large": "https://images.pokemontcg.io/bw2/96_hires.png"
+      }
+    },
+    {
+      "number": "97/98",
+      "localId": "97",
+      "name": "Thundurus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Lightning Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Disaster Volt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 642,
+        "genus": "Bolt Strike Pokémon",
+        "height": "4'11\"",
+        "weight": "134.5 lbs"
+      },
+      "flavorText": "The spikes on its tail discharge immense bolts of lightning. It flies around the Unova region firing off lightning bolts.",
+      "secret": false,
+      "limitless": {
+        "id": 313,
+        "url": "https://limitlesstcg.com/cards/EPO/97",
+        "deckCode": "EPO 97",
+        "printGroup": [
+          "BWP 41",
+          "EPO 35",
+          "EPO 97",
+          "LTR 50"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/97.png",
+        "large": "https://images.pokemontcg.io/bw2/97_hires.png"
+      }
+    },
+    {
+      "number": "98/98",
+      "localId": "98",
+      "name": "Tornadus",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Energy Wheel",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Move an Energy from 1 of your Benched Pokémon to this Pokémon."
+        },
+        {
+          "name": "Hurricane",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Move a basic Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Ultra",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 641,
+        "genus": "Cyclone Pokémon",
+        "height": "4'11\"",
+        "weight": "138.9 lbs"
+      },
+      "flavorText": "The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.",
+      "secret": false,
+      "limitless": {
+        "id": 314,
+        "url": "https://limitlesstcg.com/cards/EPO/98",
+        "deckCode": "EPO 98",
+        "printGroup": [
+          "BWP 42",
+          "EPO 89",
+          "EPO 98",
+          "LTR 108"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw2/98.png",
+        "large": "https://images.pokemontcg.io/bw2/98_hires.png"
+      }
+    }
+  ]
+}

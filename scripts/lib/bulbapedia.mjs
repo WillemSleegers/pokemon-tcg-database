@@ -68,6 +68,10 @@ export function normalize(s) {
     .replace(/[“”]/g, '"')
     .replace(/\.\.\./g, "…")
     .replace(/−/g, "-")
+    // pokemon-tcg-data's own flavorText sometimes types a degree sign as the
+    // masculine ordinal indicator "º" (visually near-identical) instead of
+    // the real "°" the card prints — found on EPO's Pansear and Darmanitan.
+    .replace(/º/g, "°")
     // Bulbapedia's own wikitext sometimes types an em dash as a plain "--"
     // (e.g. Exploud's HeartGold/SoulSilver/Y entry) where the actual card
     // prints "—" — a transcription-style difference, not a text error. Found

@@ -126,6 +126,7 @@ function normalize(s) {
     .replace(/[“”]/g, '"')
     .replace(/\.\.\./g, '…')
     .replace(/−/g, '-')
+    .replace(/º/g, '°')
     .replace(/--/g, '—')
     .replace(/\s+/g, ' ')
     .trim()
