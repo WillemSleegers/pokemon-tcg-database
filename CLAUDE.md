@@ -1794,8 +1794,17 @@ turned out to be a verbatim match against the card image (Riolu's Black
 and Blastoise (136, 137, this set's shiny-rare cards) were confirmed
 correct as printed — the same identical card-specific text and exception
 category as the prior sets' own shiny-rare cards.
+`data/sets/PLF.json` (Plasma Freeze, 122 cards) is also done — its flavor
+text also came from pokemon-tcg-data directly. Its verification sweep
+flagged 5 cards: Nidoran ♀ had an extra "its" before "barbs" (the card
+reads "the poison it secretes from barbs"), a real upstream error
+confirmed against the card image and fixed via the `data/flavor-text/
+PLF.json` overlay. Empoleon, Sigilyph, Garbodor, and Garchomp (117–120,
+this set's shiny-rare cards) were confirmed correct as printed — the same
+identical card-specific text and exception category as the prior sets'
+own shiny-rare cards.
 
-The remaining chronological gap is `bw9`–`bw11`, plus everything older than
+The remaining chronological gap is `bw10`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
