@@ -1761,8 +1761,22 @@ Bouffalant ("derail a trail" for "derail a train"). Serperior, Reuniclus,
 Krookodile, and Rayquaza (125–128, this set's shiny-rare cards) were
 confirmed correct as printed — the same identical card-specific text and
 exception category as NXD's and DEX's own shiny-rare cards.
+`data/sets/BCR.json` (Boundaries Crossed, 153 cards) is also done — its
+flavor text also came from pokemon-tcg-data directly. Its verification
+sweep flagged 9 cards: Camerupt (an en dash "–" where the card prints a
+real em dash "—" — a one-off transcription slip, not promoted to a
+`normalize()` rule since it's the first occurrence), Darumaka (missing
+"°" before "F"), Mandibuzz (extra "the" before "bones it finds"),
+Skarmory ("speed of over 180 mph" for the card's "speeds over 180 mph"),
+Flygon (missing the comma after the quoted "The Desert Spirit"), and
+Buneary ("rolled up ears" for the card's hyphenated "rolled-up ears") were
+all real upstream `flavorText` errors, confirmed against the card images
+and fixed via the `data/flavor-text/BCR.json` overlay. Golurk, Terrakion,
+and Altaria (150–152, this set's shiny-rare cards) were confirmed correct
+as printed — the same identical card-specific text and exception category
+as the prior three sets' own shiny-rare cards.
 
-The remaining chronological gap is `bw7`–`bw11`, plus everything older than
+The remaining chronological gap is `bw8`–`bw11`, plus everything older than
 Black & White (HGSS, Call of Legends, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
