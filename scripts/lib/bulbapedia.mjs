@@ -56,6 +56,9 @@ export function speciesName(cardName) {
     // Prism Star cards (Ultra Prism era) suffix the name with "◇" — not part
     // of the species name. Found while adding Ultra Prism.
     .replace(/\s*◇$/, "")
+    // LEGEND cards (HGSS era) suffix the name with "LEGEND" — not part of
+    // the species name. Found while adding HS (HeartGold & SoulSilver).
+    .replace(/\s+LEGEND$/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 

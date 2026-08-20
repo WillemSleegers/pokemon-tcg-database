@@ -1838,10 +1838,43 @@ its final period).
 The Black & White era (`bw1` through `bw11`, plus its already-done `bwp`
 promos and `dv1` Dragon Vault) is now **done** — 12 files across the 11
 `sets/en.json` entries the era backfill covers (`bw11` splitting into two
-files). The remaining gap is everything older than Black & White (HGSS,
-Call of Legends, and back) and eight more McDonald's collections. As
-always, re-derive the actual next step from `sets/en.json` against
-`data/sets/` rather than trusting this note by the time it's acted on.
+files).
+
+The HGSS era (2010/02–2011/02, `hgss1` through `hgss4` plus `col1` in
+`sets/en.json`, predating Black & White) has begun: `data/sets/HS.json`
+(HeartGold & SoulSilver base set, Limitless code `HS`, 124 cards) is done.
+Its flavor text came from pokemon-tcg-data directly. Its verification
+sweep flagged 7 cards. Sandslash ("its spike" for the card's plural "its
+spikes"), Chikorita (extra "the" before "humidity"), and Paras ("grows
+large, large mushrooms" for the card's "grows, large mushrooms") were real
+upstream `flavorText` errors, confirmed against the card images and fixed
+via the `data/flavor-text/HS.json` overlay. The other 4 (both Ho-Oh LEGEND
+prints, both Lugia LEGEND prints) surfaced a genuine upstream data bug, not
+a wording slip: HGSS-era LEGEND cards are split across two physical
+prints — a top half carrying only HP and a "put this card onto your Bench
+with the other half" rule box, and a bottom half carrying the attacks,
+Pokédex info box, and flavor text — but pokemon-tcg-data's `flavorText`
+(and `nationalPokedexNumbers`) are set on *both* halves' entries, not just
+the bottom one; confirmed against all four card images (111/112 for Ho-Oh,
+113/114 for Lugia). Fixed by hand directly in `data/sets/HS.json` (deleting
+`pokedex` and `flavorText` from the top-half prints, 111 and 113 — the same
+one-off-hand-fix precedent as BLK/CELCC/DRV elsewhere in this file) plus a
+`data/no-pokedex/HS.json` overlay (`["111", "113"]`) so a future re-fetch
+doesn't reattach the Pokédex box; the `flavorText` half of the bug isn't
+covered by any existing overlay mechanism (`no-pokedex` only suppresses
+`pokedex`), so a future re-fetch would need the same `flavorText` deletion
+repeated by hand for these two localIds specifically. Separately, "Ho-Oh
+LEGEND"/"Lugia LEGEND" turned out to also be a `speciesName()` lookup gap
+of the usual kind (no separate Bulbapedia page for the "LEGEND" suffix) —
+fixed by stripping a trailing `LEGEND` in both `speciesName()` copies,
+which is what let 112/114 clear the sweep once their own `flavorText` was
+confirmed correct.
+
+The remaining chronological gap is `hgss2`–`hgss4` and `col1`, plus
+everything older than HGSS (Platinum, Diamond & Pearl, and back) and eight
+more McDonald's collections. As always, re-derive the actual next step
+from `sets/en.json` against `data/sets/` rather than trusting this note by
+the time it's acted on.
 
 `node scripts/missing-sets.mjs [series]` does that derivation — it diffs
 pokemon-tcg-data's `sets/en.json` against every `data/sets/*.json`'s stored
