@@ -1965,7 +1965,22 @@ same card-specific, no-Pokédex-source text as EVO's own Flying Pikachu/
 Surfing Pikachu precedent (see "Flavor text has no structured source"
 above).
 
-The remaining chronological gap is `pl3`–`pl4`, plus everything older than
+`data/sets/SV.json` (Supreme Victors, Limitless code `SV`, 153 cards) is
+also done — its flavor text also came from pokemon-tcg-data directly. 8
+cards (Garchomp, Magmortar, Swampert, Venusaur, Yanmega, Dewgong, Exploud,
+Mawile) repeated the "3 rule-text blocks leave no room for flavor text"
+pattern, confirmed against the card images and expected to stay flagged
+blank. Its verification sweep on the rest flagged 4 more: Yanma ("hover
+is one spot" — a typo — for the card's "hover in one spot"), a real
+upstream error confirmed against the card image and fixed via the
+`data/flavor-text/SV.json` overlay; and this set's Articuno, Moltres, and
+Zapdos holo prints, each confirmed correct as printed against their card
+images — unique paraphrased text for these specific prints that doesn't
+verbatim-match any single Bulbapedia game entry, the same
+no-structured-source category as EVO's Flying/Surfing Pikachu and RR's
+own reprints of them, just phrased freshly rather than reused.
+
+The remaining chronological gap is `pl4` alone, plus everything older than
 Platinum (Diamond & Pearl, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted
