@@ -2226,3 +2226,15 @@ confirmed against Blastoise 1/17; added `data/no-pokedex/P3.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P3.json`
 (1 card).
+
+## EX Holon Phantoms (`ex13` → `HP`)
+
+Thirty-seventh stop. Limitless code `HP` confirmed against
+`limitlesstcg.com/cards/HP` (111 cards, 3 May 2006) before starting — no
+collision with any existing set code in this database. `fetch-set.mjs
+ex13 HP` ran clean. Same EX-era no-Pokédex template, confirmed against
+Armaldo 1/110; added `data/no-pokedex/HP.json` as `["*"]`. Flavor text
+0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `HP.json`
+(16 cards).
