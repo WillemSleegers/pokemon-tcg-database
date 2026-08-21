@@ -1982,3 +1982,27 @@ all.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `E2.json`
 (11 cards).
+
+## Skyridge (`ecard3` → `E3`)
+
+Seventeenth stop, closing out the e-Card era. Limitless code `E3` confirmed
+against `limitlesstcg.com/cards/E3` ("12th May 2003", 182 cards) before
+starting. `fetch-set.mjs ecard3 E3` ran clean.
+
+Same Rare-Holo-only Pokédex rule as Expedition/Aquapolis, but Skyridge's own
+numbering makes it easy to misjudge at a glance: its 32 Rare Holo cards use
+a separate `H1`-`H32` localId namespace (not plain numbers), and its 6 "Rare
+Secret" Crystal-type cards (`145`-`150`) are holofoil too and correctly kept
+their `pokedex`. Confirmed against Abra 46/144 (Common, wrongly had a box)
+and Celebi 145/144 (Rare Secret Crystal type, holo, correctly has one).
+Added `data/no-pokedex/E3.json` for the numeric non-holo Pokémon range
+`1`-`118`, excluding `47` (Buried Fossil, a Trainer despite sitting in that
+numeric block).
+
+Flavor text: 0/155, confirmed genuine from the same two images checked
+above.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `E3.json`
+(8 cards).
+
+This closes out the e-Card era (`E1`-`E3`).
