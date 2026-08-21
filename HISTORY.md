@@ -2084,3 +2084,14 @@ confirmed against Banette 1/101; added `data/no-pokedex/HL.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `HL.json`
 (4 cards).
+
+## EX FireRed & LeafGreen (`ex6` → `RG`)
+
+Twenty-fifth stop. Limitless code `RG` confirmed against
+`limitlesstcg.com/cards/RG` (116 cards, 30 August 2004) before starting.
+`fetch-set.mjs ex6 RG` ran clean. Same EX-era no-Pokédex template,
+confirmed against Beedrill 1/112; added `data/no-pokedex/RG.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `RG.json`
+(14 cards).
