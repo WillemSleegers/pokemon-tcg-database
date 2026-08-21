@@ -1942,3 +1942,21 @@ investigating the Pokédex gap above).
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `E1.json`
 (27 cards).
+
+## Best of Game (`bp` → `BG`)
+
+Fifteenth stop, a small 9-card promo set. Limitless code `BG` confirmed
+against `limitlesstcg.com/cards/BG` (9 cards, 2002/12/01). `fetch-set.mjs bp
+BG` ran clean.
+
+Flavor text: 2/8 eligible (Electabuzz, Hitmonchan) already covered by
+pokemon-tcg-data; the other 6 (Rocket's Scizor/Sneasel/Mewtwo/Hitmonchan,
+Dark Ivysaur/Venusaur) had none. Confirmed genuine against Rocket's Scizor
+4/9 and Dark Ivysaur 6/9's card images — same custom-roster Pokémon as Team
+Rocket/Neo Destiny/Legendary Collection, and this time with no flavor text
+at all rather than custom lore text. `check-flavor-text.mjs` flagged all
+8/8: the 2 covered cards are the usual minor drift, the 6 blank ones are
+expected.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `BG.json`
+(5 cards).
