@@ -1921,9 +1921,36 @@ The HGSS era (`hgss1`–`hgss4` plus `col1`) is now **done** — 5 files
 across all 5 `sets/en.json` entries the era backfill covers, closing the
 gap between the already-done Black & White era and everything older
 (Platinum, Diamond & Pearl, and back), plus eight more McDonald's
-collections still outstanding. As always, re-derive the actual next step
-from `sets/en.json` against `data/sets/` rather than trusting this note by
-the time it's acted on.
+collections still outstanding.
+
+The Platinum era (2009/02–2009/11, `pl1` through `pl4` in `sets/en.json`,
+predating HGSS) has begun: `data/sets/PL.json` (Platinum base set,
+Limitless code `PL`, 133 cards) is done. Its flavor text came from
+pokemon-tcg-data directly. This set surfaced a genuine `fetch-set.mjs`
+gap: 11 cards are Team Galactic's "G" Pokémon (Dialga G, Palkia G, and
+9 others), which print a "Team Galactic's Pokémon" banner in place of the
+Pokédex info box entirely (confirmed against the card images) — pulled in
+regardless because only their `SP` subtype distinguishes them, which
+wasn't in the dex-box exclusion list. Fixed by adding `SP` to that list
+alongside `ex`/`MEGA`/`V`/etc. A further 24 cards (Ampharos, Blastoise,
+and 22 others, including all 3 of this set's Shining-rarity cards, `SH4`–
+`SH6`) have a normal dex box but no flavor text at all — confirmed against
+the card images as the same "3 rule-text blocks leave no room for flavor
+text" case as DPP's Porygon-Z/Gliscor, WP's Sabrina's Abra, and UL's
+Metagross; expected to stay flagged blank, not a bug. The verification
+sweep on the remaining 74 flagged 5 cards, all real upstream `flavorText`
+errors — Infernape ("fires" for the card's singular "fire"), Monferno
+("control" for "controls"), Vigoroth (word order: "cannot sit still even
+for a moment" for the card's "cannot sit still for even a moment"),
+Cacnea (missing "for" before "30 days"), and Poochyena (missing "a" before
+"persistent nature", and "chosen" before "prey") — each confirmed against
+the card image and fixed via the `data/flavor-text/PL.json` overlay.
+
+The remaining chronological gap is `pl2`–`pl4`, plus everything older than
+Platinum (Diamond & Pearl, and back) and eight more McDonald's
+collections. As always, re-derive the actual next step from `sets/en.json`
+against `data/sets/` rather than trusting this note by the time it's acted
+on.
 
 `node scripts/missing-sets.mjs [series]` does that derivation — it diffs
 pokemon-tcg-data's `sets/en.json` against every `data/sets/*.json`'s stored

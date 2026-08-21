@@ -1047,12 +1047,16 @@ async function main() {
       // rest of this database hasn't touched — see CLAUDE.md Status. BREAK
       // confirmed separately while adding BREAKthrough (xy8): its full-art
       // layout uses the dex-box space for the "BREAK Evolution Rule" text
-      // instead.
+      // instead. SP confirmed while adding Platinum (pl1): Team Galactic's
+      // "G" Pokémon print a "Team Galactic's Pokémon" banner in the dex
+      // box's place.
       primary.supertype === "Pokémon" &&
       primary.nationalPokedexNumbers?.length &&
       !(noPokedex.all || noPokedex.ids.has(localId)) &&
       !primary.subtypes?.some((s) =>
-        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime", "BREAK"].includes(s),
+        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime", "BREAK", "SP"].includes(
+          s,
+        ),
       )
         ? fetchPokedexInfo(primary.nationalPokedexNumbers[0])
         : null,
