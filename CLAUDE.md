@@ -42,11 +42,12 @@ Deoxys, `DX`), `ex9` (EX Emerald, `EM`), and `ex10` (EX Unseen Forces,
 (EX Legend Maker, `LM`), and the two-deck `tk2a`/`tk2b` EX Trainer Kit 2
 (Plusle `TK2A`, Minun `TK2B`), and `pop3` (POP Series 3, `P3`) done —
 36 files, plus `ex13` (EX Holon Phantoms, `HP`) and `ex14` (EX Crystal
-Guardians, `CG`) — 38 files. This closes out the Neo series and the
-e-Card era in full, and opens the EX era and POP series.
+Guardians, `CG`), and `pop4` (POP Series 4, `P4`) — 39 files. This
+closes out the Neo series and the e-Card era in full, and opens the EX
+era and POP series.
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`
 (the rest of the EX era, POP series, and a couple of misc later sets —
 `ru1`, `fut20`). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next

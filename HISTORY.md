@@ -2249,3 +2249,14 @@ confirmed against Banette 1/100; added `data/no-pokedex/CG.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `CG.json`
 (13 cards).
+
+## POP Series 4 (`pop4` → `P4`)
+
+Thirty-ninth stop. Limitless code `P4` confirmed against
+`limitlesstcg.com/cards/P4` (17 cards, 1 August 2006) before starting.
+`fetch-set.mjs pop4 P4` ran clean. Same EX-era no-Pokédex template,
+confirmed against Chimecho 1/17; added `data/no-pokedex/P4.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P4.json`
+(4 cards).
