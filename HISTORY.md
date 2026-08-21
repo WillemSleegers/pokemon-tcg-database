@@ -1960,3 +1960,25 @@ expected.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `BG.json`
 (5 cards).
+
+## Aquapolis (`ecard2` → `E2`)
+
+Sixteenth stop. Limitless code `E2` confirmed against
+`limitlesstcg.com/cards/E2` ("15th January 2003", 182 cards) before
+starting. `fetch-set.mjs ecard2 E2` ran clean — no rarity gap this time
+(Aquapolis's basic energy cards carry a real rarity value).
+
+Same Rare-Holo-only Pokédex-box rule as Expedition — confirmed again via
+image (Slowbro 33/147, non-Holo, no box; Kingdra 148/147, a "Crystal type"
+Rare Secret holo, has the box). localIds 33-117 are the non-Holo-Pokémon
+block wrongly carrying `pokedex` data (1-32 are Rare Holo, 118-147 are
+Trainers/Energy with none to begin with, 148-150 are the holo Rare Secret
+Pokémon and correctly keep theirs). Added `data/no-pokedex/E2.json` for
+33-117.
+
+Flavor text: 0/152, confirmed genuine from the same two images used for the
+Pokédex check above — this era's template still has no flavor-text slot at
+all.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `E2.json`
+(11 cards).
