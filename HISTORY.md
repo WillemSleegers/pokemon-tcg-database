@@ -2201,3 +2201,17 @@ confirmed against Aerodactyl 1/92; added `data/no-pokedex/LM.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `LM.json`
 (6 cards).
+
+## EX Trainer Kit 2 Plusle / Minun (`tk2a`/`tk2b` → `TK2A`/`TK2B`)
+
+Thirty-fourth and thirty-fifth stops, the second two-deck Trainer Kit.
+Neither half is on Limitless (both 404, and neither appears in the full
+EX-era set listing) — same as the first Trainer Kit, fetched with `NONE`
+as the `<limitlessUrlCode>`. Same no-rarity-at-all and no-Pokédex-at-all
+pattern as `TK1A`/`TK1B`, confirmed against Beldum (TK2A 1/12); added
+`data/no-rarity/TK2A.json`/`TK2B.json` and
+`data/no-pokedex/TK2A.json`/`TK2B.json` as `["*"]`. Flavor text 0/0
+eligible for both, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op for
+both — expected, since every card's `limitless` is `null`.
