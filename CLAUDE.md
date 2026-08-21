@@ -1869,8 +1869,30 @@ of the usual kind (no separate Bulbapedia page for the "LEGEND" suffix) —
 fixed by stripping a trailing `LEGEND` in both `speciesName()` copies,
 which is what let 112/114 clear the sweep once their own `flavorText` was
 confirmed correct.
+`data/sets/UL.json` (HS—Unleashed, Limitless code `UL`, 96 cards) is also
+done. Its flavor text also came from pokemon-tcg-data directly. Its
+coverage check first flagged 7 cards missing `flavorText`: Metagross
+turned out to be the same "has a dex box but no room left for flavor
+text" case as DPP's Porygon-Z/Gliscor and WP's Sabrina's Abra (confirmed
+against the card image) — expected to stay flagged as blank, not a bug.
+The other 6 were this set's own LEGEND cards (Entei & Raikou, Raikou &
+Suicune, Suicune & Entei — three dual-species pairs, 90–95), which are a
+different LEGEND layout than HS's single-species pairs: neither half
+prints a Pokédex box or flavor text at all here (confirmed against all
+six card images), yet pokemon-tcg-data/PokeAPI had still attached a
+`pokedex` box to all 6, keyed off of just one of the two species'
+national dex numbers. Fixed with a `data/no-pokedex/UL.json` overlay
+(`["90", "91", "92", "93", "94", "95"]`) — no hand-`flavorText`-deletion
+needed this time, since pokemon-tcg-data never had `flavorText` for these
+6 to begin with. The verification sweep on the remaining 70 flagged 2
+more cards: Ursaring ("unfailing finds" — a typo — for the card's
+"unfailingly finds"), a real upstream error confirmed against the card
+image and fixed via the `data/flavor-text/UL.json` overlay; and Lucario,
+confirmed correct as printed — it's Bulbapedia's own HeartGold/SoulSilver
+entry that has a period where the card has a comma, the same kind of
+Bulbapedia-side transcription variance as several prior sets' exceptions.
 
-The remaining chronological gap is `hgss2`–`hgss4` and `col1`, plus
+The remaining chronological gap is `hgss3`–`hgss4` and `col1`, plus
 everything older than HGSS (Platinum, Diamond & Pearl, and back) and eight
 more McDonald's collections. As always, re-derive the actual next step
 from `sets/en.json` against `data/sets/` rather than trusting this note by
