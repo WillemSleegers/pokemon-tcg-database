@@ -2260,3 +2260,14 @@ confirmed against Chimecho 1/17; added `data/no-pokedex/P4.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P4.json`
 (4 cards).
+
+## EX Dragon Frontiers (`ex15` → `DF`)
+
+Fortieth stop. Limitless code `DF` confirmed against
+`limitlesstcg.com/cards/DF` (101 cards, 8 November 2006) before starting.
+`fetch-set.mjs ex15 DF` ran clean. Same EX-era no-Pokédex template,
+confirmed against Ampharos 1/101; added `data/no-pokedex/DF.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `DF.json`
+(21 cards).
