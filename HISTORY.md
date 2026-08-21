@@ -2179,3 +2179,14 @@ Flavor text 0/0 eligible, genuine.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P2.json`
 (2 cards).
+
+## EX Delta Species (`ex11` → `DS`)
+
+Thirty-second stop. Limitless code `DS` confirmed against
+`limitlesstcg.com/cards/DS` (114 cards, 31 October 2005) before starting.
+`fetch-set.mjs ex11 DS` ran clean. Same EX-era no-Pokédex template,
+confirmed against Beedrill 1/113; added `data/no-pokedex/DS.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `DS.json`
+(12 cards).
