@@ -1,0 +1,860 @@
+{
+  "set": {
+    "code": "MCD22",
+    "ptcgDataId": "mcd22",
+    "name": "McDonald's Collection 2022",
+    "series": "Other",
+    "printedTotal": 15,
+    "secretTotal": 0,
+    "total": 15,
+    "releaseDate": "2022-08-03",
+    "copyright": "©2022 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/mcd22/symbol.png",
+      "logo": "https://images.pokemontcg.io/mcd22/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/15",
+      "localId": "1",
+      "name": "Ledyba",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ledian"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 165,
+        "genus": "Five Star Pokémon",
+        "height": "3'3\"",
+        "weight": "23.8 lbs"
+      },
+      "flavorText": "These very cowardly Pokémon join together and use Reflect to protect their nest.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/1.png",
+        "large": "https://images.pokemontcg.io/mcd22/1_hires.png"
+      }
+    },
+    {
+      "number": "02/15",
+      "localId": "2",
+      "name": "Rowlet",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Dartrix"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Sky Circus",
+          "text": "If you played Bird Keeper from your hand during this turn, ignore all Energy in this Pokémon's attack costs.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Wind Shard",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 60 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "D",
+      "rarity": "None",
+      "artist": "HYOGONOSUKE",
+      "pokedex": {
+        "number": 722,
+        "genus": "Grass Quill Pokémon",
+        "height": "1'0\"",
+        "weight": "3.3 lbs"
+      },
+      "flavorText": "At a distance, it launches its sharp feathers while flying about. If the enemy gets too close, Rowlet switches tactics and delivers vicious kicks.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/2.png",
+        "large": "https://images.pokemontcg.io/mcd22/2_hires.png"
+      }
+    },
+    {
+      "number": "03/15",
+      "localId": "3",
+      "name": "Gossifleur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Eldegoss"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Blot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Heal 10 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Mizue",
+      "pokedex": {
+        "number": 829,
+        "genus": "Flowering Pokémon",
+        "height": "1'4\"",
+        "weight": "4.9 lbs"
+      },
+      "flavorText": "It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/3.png",
+        "large": "https://images.pokemontcg.io/mcd22/3_hires.png"
+      }
+    },
+    {
+      "number": "04/15",
+      "localId": "4",
+      "name": "Growlithe",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Arcanine"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Warm Up",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Fire Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Combustion",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Narumi Sato",
+      "pokedex": {
+        "number": 58,
+        "genus": "Puppy Pokémon",
+        "height": "2'4\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "Extremely loyal, it will fearlessly bark at any opponent to protect its own Trainer from harm.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/4.png",
+        "large": "https://images.pokemontcg.io/mcd22/4_hires.png"
+      }
+    },
+    {
+      "number": "05/15",
+      "localId": "5",
+      "name": "Victini",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Victory Dive",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "You may search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Teeziro",
+      "pokedex": {
+        "number": 494,
+        "genus": "Victory Pokémon",
+        "height": "1'4\"",
+        "weight": "8.8 lbs"
+      },
+      "flavorText": "When it shares the infinite energy it creates, that being's entire body will be overflowing with power.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/5.png",
+        "large": "https://images.pokemontcg.io/mcd22/5_hires.png"
+      }
+    },
+    {
+      "number": "06/15",
+      "localId": "6",
+      "name": "Lapras",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Wintry Call",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Melony cards, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Icy Wind",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Atsushi Furusawa",
+      "pokedex": {
+        "number": 131,
+        "genus": "Transport Pokémon",
+        "height": "8'2\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "Crossing icy seas is no issue for this cold-resistant Pokémon. Its smooth skin is a little cool to the touch.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/6.png",
+        "large": "https://images.pokemontcg.io/mcd22/6_hires.png"
+      }
+    },
+    {
+      "number": "07/15",
+      "localId": "7",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Energize",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach a Lightning Energy card from your discard pile to this Pokémon."
+        },
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "chibi",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "When Pikachu meet, they'll touch their tails together and exchange electricity through them as a form of greeting.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/7.png",
+        "large": "https://images.pokemontcg.io/mcd22/7_hires.png"
+      }
+    },
+    {
+      "number": "08/15",
+      "localId": "8",
+      "name": "Chinchou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Lanturn"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "sowsow",
+      "pokedex": {
+        "number": 170,
+        "genus": "Angler Pokémon",
+        "height": "1'8\"",
+        "weight": "26.5 lbs"
+      },
+      "flavorText": "On the dark ocean floor, its only means of communication is its constantly flashing lights.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/8.png",
+        "large": "https://images.pokemontcg.io/mcd22/8_hires.png"
+      }
+    },
+    {
+      "number": "09/15",
+      "localId": "9",
+      "name": "Flaaffy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Mareep",
+      "evolvesTo": [
+        "Ampharos"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 100,
+      "attacks": [
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "sui",
+      "pokedex": {
+        "number": 180,
+        "genus": "Wool Pokémon",
+        "height": "2'7\"",
+        "weight": "29.3 lbs"
+      },
+      "flavorText": "It stores electricity in its fluffy fleece. If it stores up too much, it will start to go bald in those patches.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/9.png",
+        "large": "https://images.pokemontcg.io/mcd22/9_hires.png"
+      }
+    },
+    {
+      "number": "10/15",
+      "localId": "10",
+      "name": "Tynamo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Eelektrik"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 40,
+      "abilities": [
+        {
+          "name": "Levitate",
+          "text": "If this Pokémon has any Energy attached, it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Tiny Charge",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "D",
+      "rarity": "None",
+      "artist": "sowsow",
+      "pokedex": {
+        "number": 602,
+        "genus": "EleFish Pokémon",
+        "height": "0'8\"",
+        "weight": "0.7 lbs"
+      },
+      "flavorText": "One alone can emit only a trickle of electricity, so a group of them gathers to unleash a powerful electric shock.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/10.png",
+        "large": "https://images.pokemontcg.io/mcd22/10_hires.png"
+      }
+    },
+    {
+      "number": "11/15",
+      "localId": "11",
+      "name": "Cutiefly",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ribombee"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 30,
+      "attacks": [
+        {
+          "name": "Flap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Yukiko Baba",
+      "pokedex": {
+        "number": 742,
+        "genus": "Bee Fly Pokémon",
+        "height": "0'4\"",
+        "weight": "0.4 lbs"
+      },
+      "flavorText": "An opponent's aura can tell Cutiefly what that opponent's next move will be. Then Cutiefly can glide around the attack and strike back.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/11.png",
+        "large": "https://images.pokemontcg.io/mcd22/11_hires.png"
+      }
+    },
+    {
+      "number": "12/15",
+      "localId": "12",
+      "name": "Bewear",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Stufful",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Split Spiral Punch",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        },
+        {
+          "name": "Strength",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Shigenori Negishi",
+      "pokedex": {
+        "number": 760,
+        "genus": "Strong Arm Pokémon",
+        "height": "6'11\"",
+        "weight": "297.6 lbs"
+      },
+      "flavorText": "The moves it uses to take down its prey would make a martial artist jealous. It tucks subdued prey under its arms to carry them to its nest.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/12.png",
+        "large": "https://images.pokemontcg.io/mcd22/12_hires.png"
+      }
+    },
+    {
+      "number": "13/15",
+      "localId": "13",
+      "name": "Pangoro",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pancham",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Knocking Hammer",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard the top card of your opponent's deck."
+        },
+        {
+          "name": "Shakedown",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "Discard a random card from your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 4,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "HYOGONOSUKE",
+      "pokedex": {
+        "number": 675,
+        "genus": "Daunting Pokémon",
+        "height": "6'11\"",
+        "weight": "299.8 lbs"
+      },
+      "flavorText": "Using its leaf, Pangoro can predict the moves of its opponents. It strikes with punches that can turn a dump truck into scrap with just one hit.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/13.png",
+        "large": "https://images.pokemontcg.io/mcd22/13_hires.png"
+      }
+    },
+    {
+      "number": "14/15",
+      "localId": "14",
+      "name": "Drampa",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Corkscrew Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Berserk",
+          "cost": [
+            "Water",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70+",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Tomokazu Komiya",
+      "pokedex": {
+        "number": 780,
+        "genus": "Placid Pokémon",
+        "height": "9'10\"",
+        "weight": "407.9 lbs"
+      },
+      "flavorText": "Drampa is a kind and friendly Pokémon—up until it's angered. When that happens, it stirs up a gale and flattens everything around.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/14.png",
+        "large": "https://images.pokemontcg.io/mcd22/14_hires.png"
+      }
+    },
+    {
+      "number": "15/15",
+      "localId": "15",
+      "name": "Smeargle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Live Painting",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Reveal any number of basic Energy cards from your hand. This attack does 30 more damage for each type of basic Energy you revealed in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 235,
+        "genus": "Painter Pokémon",
+        "height": "3'11\"",
+        "weight": "127.9 lbs"
+      },
+      "flavorText": "It draws symbols with the fluid that oozes from the tip of its tail. Depending on the symbol, Smeargle fanatics will pay big money for them.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd22/15.png",
+        "large": "https://images.pokemontcg.io/mcd22/15_hires.png"
+      }
+    }
+  ]
+}

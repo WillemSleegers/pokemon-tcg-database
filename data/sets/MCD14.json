@@ -1,0 +1,713 @@
+{
+  "set": {
+    "code": "MCD14",
+    "ptcgDataId": "mcd14",
+    "name": "McDonald's Collection 2014",
+    "series": "Other",
+    "printedTotal": 12,
+    "secretTotal": 0,
+    "total": 12,
+    "releaseDate": "2014-05-23",
+    "copyright": "©2014 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/mcd14/symbol.png",
+      "logo": "https://images.pokemontcg.io/mcd14/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/12",
+      "localId": "1",
+      "name": "Weedle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Kakuna"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "String Shot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 13,
+        "genus": "Hairy Bug Pokémon",
+        "height": "1'0\"",
+        "weight": "7.1 lbs"
+      },
+      "flavorText": "Often found in forests and grasslands. It has a sharp, toxic barb of around two inches on top of its head.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/1.png",
+        "large": "https://images.pokemontcg.io/mcd14/1_hires.png"
+      }
+    },
+    {
+      "number": "02/12",
+      "localId": "2",
+      "name": "Chespin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Quilladin"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Seed Bomb",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 650,
+        "genus": "Spiny Nut Pokémon",
+        "height": "1'4\"",
+        "weight": "19.8 lbs"
+      },
+      "flavorText": "The quills on its head are usually soft. When it flexes them, the points become so hard and sharp that they can pierce rock.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/2.png",
+        "large": "https://images.pokemontcg.io/mcd14/2_hires.png"
+      }
+    },
+    {
+      "number": "03/12",
+      "localId": "3",
+      "name": "Fennekin",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Braixen"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Live Coal",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 653,
+        "genus": "Fox Pokémon",
+        "height": "1'4\"",
+        "weight": "20.7 lbs"
+      },
+      "flavorText": "Eating a twig fills it with energy, and its roomy ears give vent to air hotter than 390 degrees Fahrenheit.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/3.png",
+        "large": "https://images.pokemontcg.io/mcd14/3_hires.png"
+      }
+    },
+    {
+      "number": "04/12",
+      "localId": "4",
+      "name": "Froakie",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Frogadier"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Water Drip",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 656,
+        "genus": "Bubble Frog Pokémon",
+        "height": "1'0\"",
+        "weight": "15.4 lbs"
+      },
+      "flavorText": "It secretes flexible bubbles from its chest and back. The bubbles reduce the damage it would otherwise take when attacked.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/4.png",
+        "large": "https://images.pokemontcg.io/mcd14/4_hires.png"
+      }
+    },
+    {
+      "number": "05/12",
+      "localId": "5",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Nuzzle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "MAHOU",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "It raises its tail to check its surroundings. The tail is sometimes struck by lightning in this pose.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/5.png",
+        "large": "https://images.pokemontcg.io/mcd14/5_hires.png"
+      }
+    },
+    {
+      "number": "06/12",
+      "localId": "6",
+      "name": "Inkay",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Malamar"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 686,
+        "genus": "Revolving Pokémon",
+        "height": "1'4\"",
+        "weight": "7.7 lbs"
+      },
+      "flavorText": "Opponents who stare at the flashing of the light-emitting spots on its body become dazed and lose their will to fight.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/6.png",
+        "large": "https://images.pokemontcg.io/mcd14/6_hires.png"
+      }
+    },
+    {
+      "number": "07/12",
+      "localId": "7",
+      "name": "Honedge",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Doublade"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Continuous Slash",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 679,
+        "genus": "Sword Pokémon",
+        "height": "2'7\"",
+        "weight": "4.4 lbs"
+      },
+      "flavorText": "Apparently this Pokémon is born when a departed spirit inhabits a sword. It attaches itself to people and drinks their life force.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/7.png",
+        "large": "https://images.pokemontcg.io/mcd14/7_hires.png"
+      }
+    },
+    {
+      "number": "08/12",
+      "localId": "8",
+      "name": "Snubbull",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Granbull"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Naoki Saito",
+      "pokedex": {
+        "number": 209,
+        "genus": "Fairy Pokémon",
+        "height": "2'0\"",
+        "weight": "17.2 lbs"
+      },
+      "flavorText": "It has an active, playful nature. Many women like to frolic with it because of its affectionate ways.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/8.png",
+        "large": "https://images.pokemontcg.io/mcd14/8_hires.png"
+      }
+    },
+    {
+      "number": "09/12",
+      "localId": "9",
+      "name": "Swirlix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Slurpuff"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Draining Kiss",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Heal 10 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 684,
+        "genus": "Cotton Candy Pokémon",
+        "height": "1'4\"",
+        "weight": "7.7 lbs"
+      },
+      "flavorText": "To entangle its opponents in battle, it extrudes white threads as sweet and sticky as cotton candy.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/9.png",
+        "large": "https://images.pokemontcg.io/mcd14/9_hires.png"
+      }
+    },
+    {
+      "number": "10/12",
+      "localId": "10",
+      "name": "Bunnelby",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Diggersby"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 659,
+        "genus": "Digging Pokémon",
+        "height": "1'4\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "They use their large ears to dig burrows. They will dig the whole night through.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/10.png",
+        "large": "https://images.pokemontcg.io/mcd14/10_hires.png"
+      }
+    },
+    {
+      "number": "11/12",
+      "localId": "11",
+      "name": "Fletchling",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Fletchinder"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Razor Wind",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 661,
+        "genus": "Tiny Robin Pokémon",
+        "height": "1'0\"",
+        "weight": "3.7 lbs"
+      },
+      "flavorText": "These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/11.png",
+        "large": "https://images.pokemontcg.io/mcd14/11_hires.png"
+      }
+    },
+    {
+      "number": "12/12",
+      "localId": "12",
+      "name": "Furfrou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "5ban Graphics",
+      "pokedex": {
+        "number": 676,
+        "genus": "Poodle Pokémon",
+        "height": "3'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.",
+      "secret": false,
+      "limitless": null,
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd14/12.png",
+        "large": "https://images.pokemontcg.io/mcd14/12_hires.png"
+      }
+    }
+  ]
+}
