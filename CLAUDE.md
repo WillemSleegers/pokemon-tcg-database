@@ -31,13 +31,14 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 (Southern Islands, `SI`), `neo3` (Neo Revelation, `N3`), `neo4` (Neo
 Destiny, `N4`), `base6` (Legendary Collection, `LC`), `ecard1`
 (Expedition Base Set, `E1`), `bp` (Best of Game, `BG`), `ecard2`
-(Aquapolis, `E2`), and `ecard3` (Skyridge, `E3`) done — 17 files. This
-closes out the Neo series and the e-Card era in full.
+(Aquapolis, `E2`), `ecard3` (Skyridge, `E3`), and `ex1` (EX Ruby &
+Sapphire, `RS`) done — 18 files. This closes out the Neo series and the
+e-Card era in full, and opens the EX era.
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`
-(the EX era, POP series, and a couple of misc later sets — `ru1`, `fut20`).
-Don't trust this list at face value — run
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`
+(the rest of the EX era, POP series, and a couple of misc later sets —
+`ru1`, `fut20`). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.

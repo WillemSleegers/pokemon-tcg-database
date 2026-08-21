@@ -2006,3 +2006,20 @@ above.
 (8 cards).
 
 This closes out the e-Card era (`E1`-`E3`).
+
+## EX Ruby & Sapphire (`ex1` → `RS`)
+
+Eighteenth stop, opening the EX era. Limitless code `RS` confirmed against
+`limitlesstcg.com/cards/RS` (109 cards, 18 June 2003) before starting.
+`fetch-set.mjs ex1 RS` ran clean — no rarity gap.
+
+New template, new gap: unlike the e-Card era's Rare-Holo-only rule, the EX
+era's card template has **no Pokédex box at all, for any card** — confirmed
+against Aggron 1/109 (Rare Holo) and Aron 50/109 (Common Basic), neither of
+which prints a genus/height/weight line despite pokemon-tcg-data attaching
+`pokedex` data to 79/109 cards. Added `data/no-pokedex/RS.json` as `["*"]`.
+
+Flavor text: 0/79, confirmed genuine from the same two images.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `RS.json`
+(28 cards).
