@@ -24,8 +24,15 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 - **Diamond & Pearl era** (`dp1`–`dp7`) — `DP`, `MT`, `SW`, `GE`, `MD`, `LA`, `SF` — 7 files.
 - **Every McDonald's Collection through 2024** (`MCD11`, `MCD12`, `MCD14`–`MCD19`, `MCD21`–`MCD24`) — 12 files. `MCD23`/`MCD24` are in neither pokemon-tcg-data nor Limitless — see HISTORY.md for how those two were hand-built entirely from Bulbapedia/reprint data instead.
 
-**Remaining gap**: everything older than Diamond & Pearl (the WotC/e-Card
-era, and back). Don't trust this list at face value — run
+**In progress**: WotC/e-Card era backfill, oldest-first. `base1` (Base Set, `BS`),
+`base2` (Jungle, `JU`), `base3` (Fossil, `FO`), `base4` (Base Set 2, `BS2`),
+`base5` (Team Rocket, `TR`), `gym1` (Gym Heroes, `G1`), `gym2` (Gym Challenge,
+`G2`), `neo1` (Neo Genesis, `N1`), and `neo2` (Neo Discovery, `N2`) done —
+9 files.
+
+**Remaining gap**: everything older than Diamond & Pearl except
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2` (the rest of the WotC/e-Card era,
+and back). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.
@@ -307,6 +314,13 @@ should ever need to assume a stored `printGroup` is complete on its own.
 Neither pokemon-tcg-data, Limitless, nor TCGdex has flavor text for any set newer than
 the community got around to typing it in.
 
+**Some sets genuinely print no flavor text on any card at all** — confirmed for Gym
+Heroes/`G1` by reading multiple card images directly (template has the Pokédex
+genus/height/weight line but no italic descriptive sentence beneath it). `flavorText`
+being absent for 0% of a set's cards isn't automatically a gap to fill; check the
+actual card template before assuming pokemon-tcg-data/manual transcription owes you
+something here.
+
 Key discovery: TCG flavor text is a **verbatim reuse of an existing mainline-game
 Pokédex entry** — usually the species' **Pokémon Scarlet** entry, falling back to an
 earlier game (varies per species — Shield, Legends: Z-A, even the Pokopia spinoff have
@@ -323,8 +337,10 @@ candidates and pick the match" — usually a few seconds instead of reading the 
 A handful of sets/cards break the "verbatim Pokédex reuse" premise entirely — Double
 Crisis's whole set (in-character Team Magma/Team Aqua ops chatter), Detective
 Pikachu's movie tie-in text, Classic Collection's Dark Gyarados and birthday-Pikachu,
-EVO's Flying/Surfing Pikachu, various SVP anime-tie-in promos, and a few holo-print
-Legendary birds with freshly paraphrased text. `check-flavor-text.mjs` will flag these
+EVO's Flying/Surfing Pikachu, various SVP anime-tie-in promos, Team Rocket's whole
+"Dark" Pokémon roster (custom corrupted-Pokémon lore text, no matching mainline
+species page to compare against at all), and a few holo-print Legendary birds with
+freshly paraphrased text. `check-flavor-text.mjs` will flag these
 and can never clear them algorithmically — confirm against the card image once, and
 that's the expected permanent state. See HISTORY.md for the specific cards.
 

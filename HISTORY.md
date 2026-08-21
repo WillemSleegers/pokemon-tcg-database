@@ -1585,3 +1585,225 @@ This closes out every McDonald's Collection that exists in English through
 2024 — 12 files total (`MCD11`, `MCD12`, `MCD14`–`MCD19`, `MCD21`–`MCD24`).
 Worth re-checking Bulbapedia periodically for a McDonald's Collection 2025
 once that promotion actually starts.
+
+## Base Set (`base1` → `BS`) — opening the WotC/e-Card era backfill
+
+`node scripts/missing-sets.mjs` (no argument, whole-database sweep) confirmed
+`base1` (1999-01-09, 102 cards) as the oldest set missing from `data/sets/`,
+same conclusion CLAUDE.md's cached "Remaining gap" note already pointed at —
+but re-derived properly rather than trusted at face value, per house habit.
+Limitless code `BS` confirmed against `limitlesstcg.com/cards/BS` before
+starting (title reads "Base Set (BS) – Limitless", 102 cards, matches).
+
+`fetch-set.mjs base1 BS` failed on card 97, Fighting Energy: no rarity from
+any source. Checked Bulbapedia's Base Set set-list table rather than
+guessing — all six basic energy cards (97 Fighting through 102 Water) show
+"—" in the rarity column, not a symbol. Added `data/no-rarity/BS.json` with
+all six localIds and re-ran clean.
+
+**Pokédex info box is genuine here, not a `no-pokedex` case.** CLAUDE.md's
+"cards that print no dex info box" note covers the *e-Card era through just
+before Diamond & Pearl* (2002/09–2007/05) — Base Set (1999) predates even
+that gap. Confirmed against the Charizard (4/102) and Chansey (3/102) card
+images: both print a genus/height/weight line just above the rules text
+("Flame Pokémon. Length: 5'7", Weight: 200 lbs."), matching what
+`fetch-set.mjs` attached from PokeAPI/pokemon-tcg-data. No override needed.
+
+**Flavor text: already covered by pokemon-tcg-data (69/69), but Base Set is
+a new addition to the "breaks verbatim reuse" list** in CLAUDE.md's flavor
+text section. `check-flavor-text.mjs BS` flagged 43/69 as not matching any
+Bulbapedia mainline-game candidate. Spot-checked four spread across the
+flagged list against actual card images (Chansey 3/102, Zapdos 16/102, plus
+reading the diffs for Alakazam and Blastoise) — every one matched the stored
+text exactly, word for word, including "manage to catch it" (card) vs.
+Bulbapedia's own Red/Blue transcription "manage to get it", and "wielding"
+(card) vs. Bulbapedia's "dropping". This is the WotC-era English card
+localization diverging from Bulbapedia's own separately-transcribed Red/Blue
+Pokédex text — not a card error, not a Bulbapedia transcription slip, just a
+distinct translation that predates the "byte-identical reuse" convention
+later sets follow. Nothing needed fixing; the pokemon-tcg-data-sourced text
+was correct as fetched.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` touched 26 cards in
+`BS.json` itself (first-time population) and no other set files — expected,
+since no later set has reprinted a Base Set card yet as far as this
+database's own stored `printGroup` data reaches.
+
+## Jungle (`base2` → `JU`)
+
+Second stop in the WotC backfill. Limitless code `JU` confirmed against
+`limitlesstcg.com/cards/JU` ("Jungle (JU) – Limitless", 1999-06-16, 64
+cards) before starting. `fetch-set.mjs base2 JU` ran clean on the first try
+— no rarity gaps this time (Jungle's basic energy reprints weren't part of
+this set; it introduces no new basic energy cards). Pokédex box confirmed
+genuine (not a `no-pokedex` case) against Clefable 1/64's card image, same
+as Base Set.
+
+Flavor text: 63/63 already covered by pokemon-tcg-data.
+`check-flavor-text.mjs` flagged 24/63 against Bulbapedia. Spot-checked
+Electrode 2/64 (diff only) and Pinsir 9/64 (full card-image read) — both
+matched the stored text exactly, confirming the same WotC-era-diverges-from-
+Bulbapedia's-own-Red/Blue-transcription pattern documented in Base Set's
+entry above, not a new failure mode. No fixes made.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated only
+`JU.json` (47 cards) — no existing set file needed a rewrite, so Jungle
+doesn't yet reprint anything already in `data/sets/`.
+
+## Fossil (`base3` → `FO`)
+
+Third stop in the WotC backfill. Limitless code `FO` confirmed against
+`limitlesstcg.com/cards/FO` ("10th October 1999", 62 cards) before starting.
+`fetch-set.mjs base3 FO` ran clean — no rarity gaps, no unusual subtypes.
+Pokédex box confirmed genuine against Aerodactyl 1/62's card image, same as
+Base Set and Jungle.
+
+Flavor text: 57/57 already covered by pokemon-tcg-data.
+`check-flavor-text.mjs` flagged 14/57 against Bulbapedia; the top hit
+(Aerodactyl 1/62, missing comma: "ferocious prehistoric" vs. Bulbapedia's
+"ferocious, prehistoric") was already confirmed against the card image
+during the pokedex-box check and matches the stored text exactly — same
+WotC-era-diverges-from-Bulbapedia's-Red/Blue-transcription pattern as the
+two prior sets, not re-verified card by card given the pattern is now
+established across three sets.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated only
+`FO.json` (5 cards).
+
+## Base Set 2 (`base4` → `BS2`)
+
+Fourth stop in the WotC backfill — an all-reprint set (every card here is a
+reprint of a Base Set/Jungle/Fossil card, none new). Limitless code `BS2`
+confirmed against `limitlesstcg.com/cards/BS2` ("24th February 2000", 130
+cards) — `B2` 404s, worth remembering as another non-obvious Limitless code
+alongside the ones already documented in CLAUDE.md.
+
+Hit the same basic-energy-has-no-rarity gap as Base Set: cards 125-130
+(Fighting through Water Energy). Confirmed against Bulbapedia's Base Set 2
+set-list table (all six show "—") before adding `data/no-rarity/BS2.json`.
+Re-ran clean.
+
+Flavor text: 100/100 already covered by pokemon-tcg-data. Pokédex box
+confirmed genuine against Charizard 4/130 — identical text to Base Set's
+own Charizard (4/102), as expected for a straight reprint.
+`check-flavor-text.mjs` flagged 51/100, same established WotC-vs-Bulbapedia
+pattern — not re-verified per card since these are reprints of cards
+already confirmed correct in `BS.json`/`JU.json`/`FO.json`.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `BS2.json`
+(60 cards) — the older `BS`/`JU`/`FO` files weren't rewritten on this run;
+their own stored `printGroup` arrays go stale until something re-touches
+them, which is expected and harmless per the "goes stale, and that's fine"
+section in CLAUDE.md (the union-find derivation doesn't depend on any one
+file being current).
+
+## Team Rocket (`base5` → `TR`)
+
+Fifth stop in the WotC backfill. Limitless code `TR` confirmed against
+`limitlesstcg.com/cards/TR` ("24th April 2000", 83 cards) before starting.
+`fetch-set.mjs base5 TR` ran clean — no rarity gaps. Pokédex box confirmed
+genuine against Dark Alakazam 1/83: genus/height/weight still describe the
+base species (Psi Pokémon, 4'11", matches Alakazam), correctly unaffected
+by the "Dark" prefix.
+
+Flavor text: 68/68 already covered by pokemon-tcg-data, but
+`check-flavor-text.mjs` flagged **all 68/68**, and unlike every prior WotC
+set, none of the flagged cards showed any Bulbapedia candidate text at all
+— `speciesName()` doesn't strip Team Rocket's "Dark" prefix (nor should it:
+"Dark Alakazam" isn't a species with its own Bulbapedia page, it's TR's own
+in-universe corrupted-Pokémon concept), so no comparison could ever have
+been possible here. Confirmed this is the expected outcome, not a bug, by
+reading two card images directly (Dark Alakazam 1/83, Dark Charizard
+4/83) — both match the stored pokemon-tcg-data text verbatim, including
+Team-Rocket-specific lore phrasing ("Almost as if it were being controlled
+by something else…", "Seemingly possessed, it spews fire like a
+volcano…") that has no mainline-game Pokédex equivalent to match against.
+Added Team Rocket to CLAUDE.md's list of sets that break the "verbatim
+Pokédex reuse" premise entirely, alongside Double Crisis/Detective
+Pikachu/etc. — this set's whole roster of "Dark" Pokémon is custom lore
+text by construction, so a 100% unmatched sweep here is the expected
+permanent state, not something to keep re-checking.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated only
+`TR.json` (25 cards).
+
+## Gym Heroes (`gym1` → `G1`)
+
+Sixth stop in the WotC backfill, first of the two Gym sets. Limitless code
+`G1` confirmed against `limitlesstcg.com/cards/G1` ("14th August 2000", 132
+cards) — `GH` 404s. No collision with this database's own `GEN`/`GENRC`
+codes for Generations (that set's *pokemon-tcg-data* id happens to also be
+`g1`, but this database's own code for it has always been `GEN`, so `G1`
+was free to use here as Gym Heroes' own code).
+
+Hit the same basic-energy-has-no-rarity gap as every `base*` set so far
+(cards 127-132, Fighting through Water Energy) — confirmed against
+Bulbapedia's Gym Heroes set-list table (all six show "—"), added
+`data/no-rarity/G1.json`, re-ran clean.
+
+**New discovery: Gym Heroes prints no flavor text at all, on any card.**
+`flavor-text-coverage.mjs` showed 0/91. Downloaded images and read three
+card templates directly (Blaine's Moltres 1/132, Misty's Tentacruel
+10/132, Lt. Surge's Magnemite 50/132) — all three have the Pokédex
+genus/height/weight line but no italic descriptive sentence beneath it,
+just `LV. ## #dexnum`. This isn't a transcription gap to fill; the
+physical card template for this set has no flavor text slot. Documented
+in CLAUDE.md's flavor text section so this isn't mistaken for missing work
+on a future pass. Pokédex box itself confirmed genuine (matches Alakazam/
+Charizard-style boxes from earlier WotC sets).
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated only
+`G1.json` (9 cards).
+
+## Gym Challenge (`gym2` → `G2`)
+
+Seventh stop, second of the two Gym sets. Limitless code `G2` confirmed
+against `limitlesstcg.com/cards/G2` ("16th October 2000", 132 cards) before
+starting. Same basic-energy-has-no-rarity gap as every set since `base1`
+(cards 127-132) — confirmed against Bulbapedia's Gym Challenge set-list
+table, added `data/no-rarity/G2.json`, re-ran clean.
+
+Flavor text: 0/95, as expected — confirmed against Blaine's Arcanine 1/132's
+card image, same template as Gym Heroes with no flavor text slot at all.
+Not a gap; matches the exception already documented for `G1`.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated only
+`G2.json` (12 cards).
+
+This closes out both Gym sets (`G1`, `G2`).
+
+## Neo Genesis (`neo1` → `N1`)
+
+Eighth stop, opening the Neo series. Limitless code `N1` confirmed against
+`limitlesstcg.com/cards/N1` ("16th December 2000", 111 cards) before
+starting. Same basic-energy-has-no-rarity gap as every set since `base1`
+(cards 106-111) — confirmed against Bulbapedia's Neo Genesis set-list
+table, added `data/no-rarity/N1.json`, re-ran clean.
+
+Flavor text is back for this set (unlike the two Gym sets) — 81/81 already
+covered by pokemon-tcg-data. Pokédex box confirmed genuine against Ampharos
+1/111. `check-flavor-text.mjs` flagged 10/81 against Bulbapedia; read the
+full diff for all ten (Lugia, Ledian, Phanpy, Chikorita, Hoothoot, Ledyba,
+Oddish, Snubbull, Sunkern, Wooper) rather than sampling — all are the same
+established WotC-vs-Bulbapedia minor wording/punctuation drift pattern from
+every prior set in this backfill, nothing that reads as a genuine card
+error. No fixes made.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated only
+`N1.json` (14 cards).
+
+## Neo Discovery (`neo2` → `N2`)
+
+Ninth stop. Limitless code `N2` confirmed against
+`limitlesstcg.com/cards/N2` ("1st June 2001", 75 cards) before starting.
+`fetch-set.mjs neo2 N2` ran clean — first set since `base1` with no
+rarity gap (Neo Discovery introduces no new basic energy cards of its
+own). Flavor text: 71/71 already covered by pokemon-tcg-data. Pokédex box
+confirmed genuine against Espeon 1/75. `check-flavor-text.mjs` flagged
+10/71, same established WotC-vs-Bulbapedia drift pattern, spot-checked via
+the diff output only (Hitmontop's missing hyphen in "dance-like"), no
+fixes needed.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op —
+`N2.json`'s own per-card printGroup data (scraped fresh from Limitless
+during the fetch) was already the up-to-date union.

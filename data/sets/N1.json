@@ -1,0 +1,6561 @@
+{
+  "set": {
+    "code": "N1",
+    "ptcgDataId": "neo1",
+    "name": "Neo Genesis",
+    "series": "Neo",
+    "printedTotal": 111,
+    "secretTotal": 0,
+    "total": 111,
+    "releaseDate": "2000-12-16",
+    "copyright": "©2000 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/neo1/symbol.png",
+      "logo": "https://images.pokemontcg.io/neo1/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "001/111",
+      "localId": "1",
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Gigaspark",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 181,
+        "genus": "Light Pokémon",
+        "height": "4'7\"",
+        "weight": "135.6 lbs"
+      },
+      "flavorText": "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.",
+      "secret": false,
+      "limitless": {
+        "id": 29721,
+        "url": "https://limitlesstcg.com/cards/N1/1",
+        "deckCode": "N1 1",
+        "printGroup": [
+          "N1 1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/1.png",
+        "large": "https://images.pokemontcg.io/neo1/1_hires.png"
+      }
+    },
+    {
+      "number": "002/111",
+      "localId": "2",
+      "name": "Azumarill",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Marill",
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Bubble Shower",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 184,
+        "genus": "Aqua Rabbit Pokémon",
+        "height": "2'7\"",
+        "weight": "62.8 lbs"
+      },
+      "flavorText": "By keeping still and listening intently, it can tell what is in even wild, fast-moving rivers.",
+      "secret": false,
+      "limitless": {
+        "id": 29722,
+        "url": "https://limitlesstcg.com/cards/N1/2",
+        "deckCode": "N1 2",
+        "printGroup": [
+          "N1 2"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/2.png",
+        "large": "https://images.pokemontcg.io/neo1/2_hires.png"
+      }
+    },
+    {
+      "number": "003/111",
+      "localId": "3",
+      "name": "Bellossom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Gloom",
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Sweet Nectar",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, remove all damage counters from 1 of your Pokémon."
+        },
+        {
+          "name": "Flower Dance",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Does 30 damage times the number of cards with Bellossom in their names that you have in play (including this one)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 182,
+        "genus": "Flower Pokémon",
+        "height": "1'4\"",
+        "weight": "12.8 lbs"
+      },
+      "flavorText": "Plentiful in the tropics. When it dances, its petals rub together and make a pleasant ringing sound.",
+      "secret": false,
+      "limitless": {
+        "id": 29723,
+        "url": "https://limitlesstcg.com/cards/N1/3",
+        "deckCode": "N1 3",
+        "printGroup": [
+          "N1 3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/3.png",
+        "large": "https://images.pokemontcg.io/neo1/3_hires.png"
+      }
+    },
+    {
+      "number": "004/111",
+      "localId": "4",
+      "name": "Feraligatr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Croconaw",
+      "types": [
+        "Water"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Berserk",
+          "text": "When you play Feraligatr from your hand, flip a coin. If heads, discard the top 5 cards from your opponent's deck. If tails, discard the top 5 cards from your deck.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Chomp",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "50+",
+          "text": "Flip a number of coins equal to the number of damage counters on Feraligatr. This attack does 50 damage plus 10 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 160,
+        "genus": "Big Jaw Pokémon",
+        "height": "7'7\"",
+        "weight": "195.8 lbs"
+      },
+      "flavorText": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.",
+      "secret": false,
+      "limitless": {
+        "id": 29724,
+        "url": "https://limitlesstcg.com/cards/N1/4",
+        "deckCode": "N1 4",
+        "printGroup": [
+          "N1 4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/4.png",
+        "large": "https://images.pokemontcg.io/neo1/4_hires.png"
+      }
+    },
+    {
+      "number": "005/111",
+      "localId": "5",
+      "name": "Feraligatr",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Croconaw",
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Downpour",
+          "text": "As often as you like during your turn (before your attack), you may discard a Water Energy card from your hand. This power can't be used if Feraligatr is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Riptide",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 damage times the number of Water Energy cards in your discard pile. Then, shuffle all Water Energy cards from your discard pile into your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 160,
+        "genus": "Big Jaw Pokémon",
+        "height": "7'7\"",
+        "weight": "195.8 lbs"
+      },
+      "flavorText": "It is hard for it to support its own weight out of water, so it gets down on all fours. But it moves fast.",
+      "secret": false,
+      "limitless": {
+        "id": 29725,
+        "url": "https://limitlesstcg.com/cards/N1/5",
+        "deckCode": "N1 5",
+        "printGroup": [
+          "N1 5"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/5.png",
+        "large": "https://images.pokemontcg.io/neo1/5_hires.png"
+      }
+    },
+    {
+      "number": "006/111",
+      "localId": "6",
+      "name": "Heracross",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "abilities": [
+        {
+          "name": "Final Blow",
+          "text": "If Heracross's remaining HP are 20 or less, you may make its Megahorn attack's base damage 120 instead of 60. This power can't be used if Heracross is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Megahorn",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 214,
+        "genus": "Single Horn Pokémon",
+        "height": "4'11\"",
+        "weight": "119.0 lbs"
+      },
+      "flavorText": "This powerful Pokémon thrusts its prized horn under its enemies' bellies, then lifts and throws them.",
+      "secret": false,
+      "limitless": {
+        "id": 29726,
+        "url": "https://limitlesstcg.com/cards/N1/6",
+        "deckCode": "N1 6",
+        "printGroup": [
+          "N1 6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/6.png",
+        "large": "https://images.pokemontcg.io/neo1/6_hires.png"
+      }
+    },
+    {
+      "number": "007/111",
+      "localId": "7",
+      "name": "Jumpluff",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Skiploom",
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Sleep Powder",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Leech Seed",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "If this attack damages the Defending Pokémon (after applying Weakness and Resistance), remove 1 damage counter from Jumpluff, if it has any."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 189,
+        "genus": "Cottonweed Pokémon",
+        "height": "2'7\"",
+        "weight": "6.6 lbs"
+      },
+      "flavorText": "Once it catches the wind, it deftly controls its cotton-puff spores to float, even around the world.",
+      "secret": false,
+      "limitless": {
+        "id": 29727,
+        "url": "https://limitlesstcg.com/cards/N1/7",
+        "deckCode": "N1 7",
+        "printGroup": [
+          "N1 7"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/7.png",
+        "large": "https://images.pokemontcg.io/neo1/7_hires.png"
+      }
+    },
+    {
+      "number": "008/111",
+      "localId": "8",
+      "name": "Kingdra",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Seadra",
+      "types": [
+        "Water"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Agility",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Kingdra."
+        },
+        {
+          "name": "Dragon Tornado",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "50",
+          "text": "If this attack doesn't Knock Out the Defending Pokémon, and if there are any Pokémon on your opponent's Bench, choose 1 of them and switch it with the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 230,
+        "genus": "Dragon Pokémon",
+        "height": "5'11\"",
+        "weight": "335.1 lbs"
+      },
+      "flavorText": "It is said that it usually hides in underwater caves. It can create whirlpools by yawning.",
+      "secret": false,
+      "limitless": {
+        "id": 29728,
+        "url": "https://limitlesstcg.com/cards/N1/8",
+        "deckCode": "N1 8",
+        "printGroup": [
+          "N1 8"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/8.png",
+        "large": "https://images.pokemontcg.io/neo1/8_hires.png"
+      }
+    },
+    {
+      "number": "009/111",
+      "localId": "9",
+      "name": "Lugia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Elemental Blast",
+          "cost": [
+            "Fire",
+            "Water",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard a Fire Energy card, a Water Energy card, and a Lightning Energy card attached to Lugia in order to use this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Hironobu Yoshida",
+      "pokedex": {
+        "number": 249,
+        "genus": "Diving Pokémon",
+        "height": "17'1\"",
+        "weight": "476.2 lbs"
+      },
+      "flavorText": "It is said that it quietly spends its time deep at the bottom of the sea, because its powers are too strong.",
+      "secret": false,
+      "limitless": {
+        "id": 29729,
+        "url": "https://limitlesstcg.com/cards/N1/9",
+        "deckCode": "N1 9",
+        "printGroup": [
+          "N1 9"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/9.png",
+        "large": "https://images.pokemontcg.io/neo1/9_hires.png"
+      }
+    },
+    {
+      "number": "010/111",
+      "localId": "10",
+      "name": "Meganium",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Bayleef",
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Herbal Scent",
+          "text": "When you play Meganium from your hand, you may flip a coin. If heads, remove all damage counters from all Grass Pokémon in play.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Body Slam",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "40",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 154,
+        "genus": "Herb Pokémon",
+        "height": "5'11\"",
+        "weight": "221.6 lbs"
+      },
+      "flavorText": "Meganium's breath has the power to revive dead grass and plants. It can make them healthy again.",
+      "secret": false,
+      "limitless": {
+        "id": 29730,
+        "url": "https://limitlesstcg.com/cards/N1/10",
+        "deckCode": "N1 10",
+        "printGroup": [
+          "N1 10"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/10.png",
+        "large": "https://images.pokemontcg.io/neo1/10_hires.png"
+      }
+    },
+    {
+      "number": "011/111",
+      "localId": "11",
+      "name": "Meganium",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Bayleef",
+      "types": [
+        "Grass"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Wild Growth",
+          "text": "As long as Meganium is in play each Grass Energy card attached to your Grass Pokémon instead provides GrassGrass. This power stops working while Meganium is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Soothing Scent",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "40",
+          "text": "The Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 154,
+        "genus": "Herb Pokémon",
+        "height": "5'11\"",
+        "weight": "221.6 lbs"
+      },
+      "flavorText": "The aroma that rises from its petals contains a substance that calms aggressive feelings.",
+      "secret": false,
+      "limitless": {
+        "id": 29731,
+        "url": "https://limitlesstcg.com/cards/N1/11",
+        "deckCode": "N1 11",
+        "printGroup": [
+          "N1 11"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/11.png",
+        "large": "https://images.pokemontcg.io/neo1/11_hires.png"
+      }
+    },
+    {
+      "number": "012/111",
+      "localId": "12",
+      "name": "Pichu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Baby"
+      ],
+      "evolvesTo": [
+        "Pikachu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 30,
+      "rules": [
+        "If this Baby Pokémon is your Active Pokémon and your opponent tries to attack, your opponent flips a coin (before doing anything required in order to use that attack). If tails, your opponent's turn ends without an attack."
+      ],
+      "attacks": [
+        {
+          "name": "Zzzap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Does 20 damage to each Pokémon in play that has a Pokémon Power. Don't apply Weakness and Resistance."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 172,
+        "genus": "Tiny Mouse Pokémon",
+        "height": "1'0\"",
+        "weight": "4.4 lbs"
+      },
+      "flavorText": "Despite its small size, it can zap even adult humans. However, if it does so, it also surprises itself.",
+      "secret": false,
+      "limitless": {
+        "id": 29732,
+        "url": "https://limitlesstcg.com/cards/N1/12",
+        "deckCode": "N1 12",
+        "printGroup": [
+          "N1 12"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/12.png",
+        "large": "https://images.pokemontcg.io/neo1/12_hires.png"
+      }
+    },
+    {
+      "number": "013/111",
+      "localId": "13",
+      "name": "Skarmory",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Claw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        {
+          "name": "Steel Wing",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, all damage done by attacks to Skarmory during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 227,
+        "genus": "Armor Bird Pokémon",
+        "height": "5'7\"",
+        "weight": "111.3 lbs"
+      },
+      "flavorText": "Its sturdy wings look heavy, but they are actually hollow and light, allowing it to fly freely in the sky.",
+      "secret": false,
+      "limitless": {
+        "id": 29733,
+        "url": "https://limitlesstcg.com/cards/N1/13",
+        "deckCode": "N1 13",
+        "printGroup": [
+          "N1 13"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/13.png",
+        "large": "https://images.pokemontcg.io/neo1/13_hires.png"
+      }
+    },
+    {
+      "number": "014/111",
+      "localId": "14",
+      "name": "Slowking",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Slowpoke",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Mind Games",
+          "text": "Whenever your opponent plays a Trainer card, you may flip a coin. If heads, that card does nothing. Put it on top of your opponent's deck. This power can't be used if Slowking is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Mind Blast",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage and the Defending Pokémon is now Confused. If tails, this attack does 20 damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 199,
+        "genus": "Royal Pokémon",
+        "height": "6'7\"",
+        "weight": "175.3 lbs"
+      },
+      "flavorText": "When its head was bitten, toxins entered Slowpoke's head and unlocked an extraordinary power.",
+      "secret": false,
+      "limitless": {
+        "id": 29734,
+        "url": "https://limitlesstcg.com/cards/N1/14",
+        "deckCode": "N1 14",
+        "printGroup": [
+          "N1 14"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/14.png",
+        "large": "https://images.pokemontcg.io/neo1/14_hires.png"
+      }
+    },
+    {
+      "number": "015/111",
+      "localId": "15",
+      "name": "Steelix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Onix",
+      "types": [
+        "Metal"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Tail Crush",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 20 more damage; if tails, this attack does 30 damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 4,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 208,
+        "genus": "Iron Snake Pokémon",
+        "height": "30'2\"",
+        "weight": "881.8 lbs"
+      },
+      "flavorText": "Its body has been compressed deep under the ground. As a result, it is even harder than a diamond.",
+      "secret": false,
+      "limitless": {
+        "id": 29735,
+        "url": "https://limitlesstcg.com/cards/N1/15",
+        "deckCode": "N1 15",
+        "printGroup": [
+          "N1 15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/15.png",
+        "large": "https://images.pokemontcg.io/neo1/15_hires.png"
+      }
+    },
+    {
+      "number": "016/111",
+      "localId": "16",
+      "name": "Togetic",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Togepi",
+      "evolvesTo": [
+        "Togekiss"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Super Metronome",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, choose an attack on 1 of your opponent's Pokémon. Super Metronome copies that attack except for its Energy cost. (You must still do anything else in order to use that attack.) (No matter what type the Defending Pokémon is, Togetic's type is still Colorless.) Togetic performs that attack. (Togetic can make that attack even if it does not have the appropriate number or type of Energy attached to it necessary to make the attack.)"
+        },
+        {
+          "name": "Fly",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Togetic; if tails, this attack does nothing (not even damage)."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 176,
+        "genus": "Happiness Pokémon",
+        "height": "2'0\"",
+        "weight": "7.1 lbs"
+      },
+      "flavorText": "They say that it will appear before kindhearted, caring people and shower them with happiness.",
+      "secret": false,
+      "limitless": {
+        "id": 29736,
+        "url": "https://limitlesstcg.com/cards/N1/16",
+        "deckCode": "N1 16",
+        "printGroup": [
+          "N1 16"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/16.png",
+        "large": "https://images.pokemontcg.io/neo1/16_hires.png"
+      }
+    },
+    {
+      "number": "017/111",
+      "localId": "17",
+      "name": "Typhlosion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Quilava",
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Fire Recharge",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, attach a Fire Energy card from your discard pile to 1 of your Fire Pokémon. This power can't be used if Typhlosion is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flame Burst",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 60 damage plus 20 more damage and does 20 damage to Typhlosion. If tails, this attack does 60 damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Shin-ichi Yoshida",
+      "pokedex": {
+        "number": 157,
+        "genus": "Volcano Pokémon",
+        "height": "5'7\"",
+        "weight": "175.3 lbs"
+      },
+      "flavorText": "If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames.",
+      "secret": false,
+      "limitless": {
+        "id": 29737,
+        "url": "https://limitlesstcg.com/cards/N1/17",
+        "deckCode": "N1 17",
+        "printGroup": [
+          "N1 17"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/17.png",
+        "large": "https://images.pokemontcg.io/neo1/17_hires.png"
+      }
+    },
+    {
+      "number": "018/111",
+      "localId": "18",
+      "name": "Typhlosion",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Quilava",
+      "types": [
+        "Fire"
+      ],
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Fire Boost",
+          "text": "When you play Typhlosion from your hand, you may flip a coin. If heads, search your deck for up to 4 Fire Energy cards and attach them to Typhlosion. Shuffle your deck afterward.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flame Wheel",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Discard 3 Fire Energy cards attached to Typhlosion in order to use this attack. Do 20 damage to each Benched Pokémon (yours and your opponent's). (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 157,
+        "genus": "Volcano Pokémon",
+        "height": "5'7\"",
+        "weight": "175.3 lbs"
+      },
+      "flavorText": "It has a secret, devastating move. It rubs its blazing fur together to cause huge explosions.",
+      "secret": false,
+      "limitless": {
+        "id": 29738,
+        "url": "https://limitlesstcg.com/cards/N1/18",
+        "deckCode": "N1 18",
+        "printGroup": [
+          "N1 18"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/18.png",
+        "large": "https://images.pokemontcg.io/neo1/18_hires.png"
+      }
+    },
+    {
+      "number": "019/111",
+      "localId": "19",
+      "name": "Metal Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "Damage done to the Pokémon Metal Energy is attached to is reduced by 10 (after applying Weakness and Resistance). If the Pokémon Metal Energy is attached to isn't Metal, whenever it damages a Pokémon, reduce that damage by 10 (before applying Weakness and Resistance).\nMetal Energy provides Metal Energy. (Doesn't count as a basic Energy card.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare Holo",
+      "artist": "Milky Isobe",
+      "secret": false,
+      "limitless": {
+        "id": 30075,
+        "url": "https://limitlesstcg.com/cards/N1/19",
+        "deckCode": "N1 19",
+        "printGroup": [
+          "CL 87",
+          "DS 107",
+          "E1 159",
+          "E2 143",
+          "EM 88",
+          "HP 95",
+          "MD 95",
+          "MT 120",
+          "N1 19",
+          "PK 88",
+          "RR 100",
+          "RS 94",
+          "SW 130",
+          "UD 80",
+          "UF 97"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/19.png",
+        "large": "https://images.pokemontcg.io/neo1/19_hires.png"
+      }
+    },
+    {
+      "number": "020/111",
+      "localId": "20",
+      "name": "Cleffa",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Baby"
+      ],
+      "evolvesTo": [
+        "Clefairy"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 30,
+      "rules": [
+        "If this Baby Pokémon is your Active Pokémon and your opponent tries to attack, your opponent flips a coin (before doing anything required in order to use that attack). If tails, your opponent's turn ends without an attack."
+      ],
+      "attacks": [
+        {
+          "name": "Eeeeeeek",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle your hand into your deck, then draw 7 cards."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 173,
+        "genus": "Star Shape Pokémon",
+        "height": "1'0\"",
+        "weight": "6.6 lbs"
+      },
+      "flavorText": "Because of its unusual, star-like silhouette, people believe that it came here on a meteor.",
+      "secret": false,
+      "limitless": {
+        "id": 30076,
+        "url": "https://limitlesstcg.com/cards/N1/20",
+        "deckCode": "N1 20",
+        "printGroup": [
+          "CEL CC9",
+          "N1 20"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/20.png",
+        "large": "https://images.pokemontcg.io/neo1/20_hires.png"
+      }
+    },
+    {
+      "number": "021/111",
+      "localId": "21",
+      "name": "Donphan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Phanpy",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Flail",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the number of damage counters on Donphan."
+        },
+        {
+          "name": "Rapid Spin",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with his or her Active Pokémon, then, if you have any Benched Pokémon, you switch 1 of them with your Active Pokémon. (Do the damage before switching the Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 232,
+        "genus": "Armor Pokémon",
+        "height": "3'7\"",
+        "weight": "264.6 lbs"
+      },
+      "flavorText": "It has sharp, hard tusks and a rugged hide. Its tackle is strong enough to knock down a house.",
+      "secret": false,
+      "limitless": {
+        "id": 29739,
+        "url": "https://limitlesstcg.com/cards/N1/21",
+        "deckCode": "N1 21",
+        "printGroup": [
+          "N1 21"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/21.png",
+        "large": "https://images.pokemontcg.io/neo1/21_hires.png"
+      }
+    },
+    {
+      "number": "022/111",
+      "localId": "22",
+      "name": "Elekid",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Baby"
+      ],
+      "evolvesTo": [
+        "Electabuzz"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 30,
+      "rules": [
+        "If this Baby Pokémon is your Active Pokémon and your opponent tries to attack, your opponent flips a coin (before doing anything required in order to use that attack). If tails, your opponent's turn ends without an attack."
+      ],
+      "abilities": [
+        {
+          "name": "Playful Punch",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, do 20 damage to your opponent's Active Pokémon. (Apply Weakness and Resistance.) Either way, this ends your turn. This power can't be used if Elekid is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Miki Tanaka",
+      "pokedex": {
+        "number": 239,
+        "genus": "Electric Pokémon",
+        "height": "2'0\"",
+        "weight": "51.8 lbs"
+      },
+      "flavorText": "It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit.",
+      "secret": false,
+      "limitless": {
+        "id": 29740,
+        "url": "https://limitlesstcg.com/cards/N1/22",
+        "deckCode": "N1 22",
+        "printGroup": [
+          "N1 22"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/22.png",
+        "large": "https://images.pokemontcg.io/neo1/22_hires.png"
+      }
+    },
+    {
+      "number": "023/111",
+      "localId": "23",
+      "name": "Magby",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Baby"
+      ],
+      "evolvesTo": [
+        "Magmar"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 30,
+      "rules": [
+        "If this Baby Pokémon is your Active Pokémon and your opponent tries to attack, your opponent flips a coin (before doing anything required in order to use that attack). If tails, your opponent's turn ends without an attack."
+      ],
+      "attacks": [
+        {
+          "name": "Sputter",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "All Pokémon Powers stop working until the end of your next turn."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 240,
+        "genus": "Live Coal Pokémon",
+        "height": "2'4\"",
+        "weight": "47.2 lbs"
+      },
+      "flavorText": "Each and every time it inhales and exhales, hot embers dribble out of its mouth and nostrils.",
+      "secret": false,
+      "limitless": {
+        "id": 29741,
+        "url": "https://limitlesstcg.com/cards/N1/23",
+        "deckCode": "N1 23",
+        "printGroup": [
+          "N1 23"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/23.png",
+        "large": "https://images.pokemontcg.io/neo1/23_hires.png"
+      }
+    },
+    {
+      "number": "024/111",
+      "localId": "24",
+      "name": "Murkrow",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Honchkrow"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Mean Look",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon can't retreat as long as Murkrow remains your Active Pokémon. (Benching or evolving either Pokémon ends this effect.)"
+        },
+        {
+          "name": "Feint Attack",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shin-ichi Yoshida",
+      "pokedex": {
+        "number": 198,
+        "genus": "Darkness Pokémon",
+        "height": "1'8\"",
+        "weight": "4.6 lbs"
+      },
+      "flavorText": "It is said that when chased, it lures its attacker onto dark mountain trails where the foe will get lost.",
+      "secret": false,
+      "limitless": {
+        "id": 29742,
+        "url": "https://limitlesstcg.com/cards/N1/24",
+        "deckCode": "N1 24",
+        "printGroup": [
+          "N1 24"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/24.png",
+        "large": "https://images.pokemontcg.io/neo1/24_hires.png"
+      }
+    },
+    {
+      "number": "025/111",
+      "localId": "25",
+      "name": "Sneasel",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Weavile"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Beat Up",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip a coin for each of your Pokémon in play (including this one). This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 215,
+        "genus": "Sharp Claw Pokémon",
+        "height": "2'11\"",
+        "weight": "61.7 lbs"
+      },
+      "flavorText": "Its paws conceal sharp claws. If attacked, it suddenly extends the claws and startles its enemy.",
+      "secret": false,
+      "limitless": {
+        "id": 29743,
+        "url": "https://limitlesstcg.com/cards/N1/25",
+        "deckCode": "N1 25",
+        "printGroup": [
+          "N1 25"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/25.png",
+        "large": "https://images.pokemontcg.io/neo1/25_hires.png"
+      }
+    },
+    {
+      "number": "026/111",
+      "localId": "26",
+      "name": "Aipom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ambipom"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Pilfer",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle Aipom and all cards attached to it into your deck. Flip a coin. If heads, shuffle a card from your discard pile into your deck."
+        },
+        {
+          "name": "Tail Rap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hironobu Yoshida",
+      "pokedex": {
+        "number": 190,
+        "genus": "Long Tail Pokémon",
+        "height": "2'7\"",
+        "weight": "25.4 lbs"
+      },
+      "flavorText": "Its tail is so powerful that it can use it to grab a tree branch and hold itself up in the air.",
+      "secret": false,
+      "limitless": {
+        "id": 29744,
+        "url": "https://limitlesstcg.com/cards/N1/26",
+        "deckCode": "N1 26",
+        "printGroup": [
+          "N1 26"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/26.png",
+        "large": "https://images.pokemontcg.io/neo1/26_hires.png"
+      }
+    },
+    {
+      "number": "027/111",
+      "localId": "27",
+      "name": "Ariados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Spinarak",
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Spider Web",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't retreat. (Benching or evolving that Pokémon ends this effect.)"
+        },
+        {
+          "name": "Poison Bite",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20",
+          "text": "If this attack damages the Defending Pokémon, the Defending Pokémon is now Poisoned and you remove a number of damage counters from Ariados equal to half that damage (rounded up to the nearest 10). If Ariados has fewer damage counters than that, remove all of them."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 168,
+        "genus": "Long Leg Pokémon",
+        "height": "3'7\"",
+        "weight": "73.9 lbs"
+      },
+      "flavorText": "It spins string not only from its rear but also from its mouth. It's hard to tell which end is which.",
+      "secret": false,
+      "limitless": {
+        "id": 29745,
+        "url": "https://limitlesstcg.com/cards/N1/27",
+        "deckCode": "N1 27",
+        "printGroup": [
+          "N1 27"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/27.png",
+        "large": "https://images.pokemontcg.io/neo1/27_hires.png"
+      }
+    },
+    {
+      "number": "028/111",
+      "localId": "28",
+      "name": "Bayleef",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Chikorita",
+      "evolvesTo": [
+        "Meganium"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Poisonpowder",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        {
+          "name": "Pollen Shield",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "During your opponent's next turn, Bayleef can't become Asleep, Confused, Paralyzed, or Poisoned. (All other effects of attacks, Pokémon Powers and Trainer cards still happen.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 153,
+        "genus": "Leaf Pokémon",
+        "height": "3'11\"",
+        "weight": "34.8 lbs"
+      },
+      "flavorText": "A spicy aroma emanates from around its neck. The aroma acts as a stimulant to restore health.",
+      "secret": false,
+      "limitless": {
+        "id": 29746,
+        "url": "https://limitlesstcg.com/cards/N1/28",
+        "deckCode": "N1 28",
+        "printGroup": [
+          "N1 28"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/28.png",
+        "large": "https://images.pokemontcg.io/neo1/28_hires.png"
+      }
+    },
+    {
+      "number": "029/111",
+      "localId": "29",
+      "name": "Bayleef",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Chikorita",
+      "evolvesTo": [
+        "Meganium"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Sweet Scent",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads and if any of your Pokémon have any damage counters on them, then remove 2 damage counters from 1 of them (or 1 if it only has 1). If tails and if any of your opponent's Pokémon have any damage counters on them, choose 1 of them and remove 2 damage counters from it (or 1 if it only has 1)."
+        },
+        {
+          "name": "Double Razor Leaf",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40×",
+          "text": "Flip 2 coins. This attack does 40 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 153,
+        "genus": "Leaf Pokémon",
+        "height": "3'11\"",
+        "weight": "34.8 lbs"
+      },
+      "flavorText": "The scent of spices comes from around its neck. Somehow, sniffing it makes you want to fight.",
+      "secret": false,
+      "limitless": {
+        "id": 29747,
+        "url": "https://limitlesstcg.com/cards/N1/29",
+        "deckCode": "N1 29",
+        "printGroup": [
+          "N1 29"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/29.png",
+        "large": "https://images.pokemontcg.io/neo1/29_hires.png"
+      }
+    },
+    {
+      "number": "030/111",
+      "localId": "30",
+      "name": "Clefairy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Clefable"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Doubleslap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Squaredance",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Flip a number of coins equal to the total number of Pokémon in play. For each heads, you may search your deck for a basic Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 35,
+        "genus": "Fairy Pokémon",
+        "height": "2'0\"",
+        "weight": "16.5 lbs"
+      },
+      "flavorText": "The moonlight that it stores in the wings on its back apparently gives it the ability to float in midair.",
+      "secret": false,
+      "limitless": {
+        "id": 29748,
+        "url": "https://limitlesstcg.com/cards/N1/30",
+        "deckCode": "N1 30",
+        "printGroup": [
+          "N1 30"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/30.png",
+        "large": "https://images.pokemontcg.io/neo1/30_hires.png"
+      }
+    },
+    {
+      "number": "031/111",
+      "localId": "31",
+      "name": "Croconaw",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Totodile",
+      "evolvesTo": [
+        "Feraligatr"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Screech",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Until the end of your next turn, if an attack damages the Defending Pokémon (after applying Weakness and Resistance), that attack does 20 more damage to the Defending Pokémon"
+        },
+        {
+          "name": "Jaw Clamp",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Until the end of your opponent's next turn, as long as Croconaw is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 159,
+        "genus": "Big Jaw Pokémon",
+        "height": "3'7\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "If it loses a fang, a new one grows back in its place. There are always 48 fangs lining its mouth.",
+      "secret": false,
+      "limitless": {
+        "id": 29749,
+        "url": "https://limitlesstcg.com/cards/N1/31",
+        "deckCode": "N1 31",
+        "printGroup": [
+          "N1 31"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/31.png",
+        "large": "https://images.pokemontcg.io/neo1/31_hires.png"
+      }
+    },
+    {
+      "number": "032/111",
+      "localId": "32",
+      "name": "Croconaw",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Totodile",
+      "evolvesTo": [
+        "Feraligatr"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Sweep Away",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Discard the top 3 cards from your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 159,
+        "genus": "Big Jaw Pokémon",
+        "height": "3'7\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "It opens its huge jaws wide when attacking. If it loses any fangs while biting, they grow back in.",
+      "secret": false,
+      "limitless": {
+        "id": 29750,
+        "url": "https://limitlesstcg.com/cards/N1/32",
+        "deckCode": "N1 32",
+        "printGroup": [
+          "N1 32"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/32.png",
+        "large": "https://images.pokemontcg.io/neo1/32_hires.png"
+      }
+    },
+    {
+      "number": "033/111",
+      "localId": "33",
+      "name": "Electabuzz",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Electivire"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Swift",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin-ichi Yoshida",
+      "pokedex": {
+        "number": 125,
+        "genus": "Electric Pokémon",
+        "height": "3'7\"",
+        "weight": "66.1 lbs"
+      },
+      "flavorText": "Electricity runs across the surface of its body. In darkness, its entire body glows a whitish-blue.",
+      "secret": false,
+      "limitless": {
+        "id": 29751,
+        "url": "https://limitlesstcg.com/cards/N1/33",
+        "deckCode": "N1 33",
+        "printGroup": [
+          "N1 33"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/33.png",
+        "large": "https://images.pokemontcg.io/neo1/33_hires.png"
+      }
+    },
+    {
+      "number": "034/111",
+      "localId": "34",
+      "name": "Flaaffy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Mareep",
+      "evolvesTo": [
+        "Ampharos"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Discharge",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "Discard all Lightning Energy cards attached to Flaaffy in order to use this attack. Flip a number of coins equal to the number of Lightning Energy cards you discarded. This attack does 30 damage times then number of heads."
+        },
+        {
+          "name": "Electric Current",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Take 1 Lightning Energy cards attached to Flaaffy and attach it to 1 of your Benched Pokémon. If you have no Benched Pokémon, discard that Energy card."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 180,
+        "genus": "Wool Pokémon",
+        "height": "2'7\"",
+        "weight": "29.3 lbs"
+      },
+      "flavorText": "As a result of storing too much electricity, it developed patches where even downy wool won't grow.",
+      "secret": false,
+      "limitless": {
+        "id": 29752,
+        "url": "https://limitlesstcg.com/cards/N1/34",
+        "deckCode": "N1 34",
+        "printGroup": [
+          "N1 34"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/34.png",
+        "large": "https://images.pokemontcg.io/neo1/34_hires.png"
+      }
+    },
+    {
+      "number": "035/111",
+      "localId": "35",
+      "name": "Furret",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sentret",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        },
+        {
+          "name": "Slam",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 162,
+        "genus": "Long Body Pokémon",
+        "height": "5'11\"",
+        "weight": "71.7 lbs"
+      },
+      "flavorText": "It makes a nest to suit its long and skinny body. The nest is impossible for other Pokémon to enter.",
+      "secret": false,
+      "limitless": {
+        "id": 29753,
+        "url": "https://limitlesstcg.com/cards/N1/35",
+        "deckCode": "N1 35",
+        "printGroup": [
+          "N1 35"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/35.png",
+        "large": "https://images.pokemontcg.io/neo1/35_hires.png"
+      }
+    },
+    {
+      "number": "036/111",
+      "localId": "36",
+      "name": "Gloom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Oddish",
+      "evolvesTo": [
+        "Vileplume",
+        "Bellossom"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Strange Powder",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused. If tails, the Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Sticky Nectar",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage and, until the end of your next turn, as long as Gloom is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing. If tails, this attack does 20 damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 44,
+        "genus": "Weed Pokémon",
+        "height": "2'7\"",
+        "weight": "19.0 lbs"
+      },
+      "flavorText": "What appears to be drool is actually sweet honey. It is very sticky and clings stubbornly if touched.",
+      "secret": false,
+      "limitless": {
+        "id": 29754,
+        "url": "https://limitlesstcg.com/cards/N1/36",
+        "deckCode": "N1 36",
+        "printGroup": [
+          "N1 36"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/36.png",
+        "large": "https://images.pokemontcg.io/neo1/36_hires.png"
+      }
+    },
+    {
+      "number": "037/111",
+      "localId": "37",
+      "name": "Granbull",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Snubbull",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Raging Charge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "10+",
+          "text": "This attack does 10 damage plus 10 more damage for each damage counter on Granbull. Then, Granbull does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 210,
+        "genus": "Fairy Pokémon",
+        "height": "4'7\"",
+        "weight": "107.4 lbs"
+      },
+      "flavorText": "It is actually timid and easily spooked. If attacked, it flails about to fend off its attacker.",
+      "secret": false,
+      "limitless": {
+        "id": 29755,
+        "url": "https://limitlesstcg.com/cards/N1/37",
+        "deckCode": "N1 37",
+        "printGroup": [
+          "N1 37"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/37.png",
+        "large": "https://images.pokemontcg.io/neo1/37_hires.png"
+      }
+    },
+    {
+      "number": "038/111",
+      "localId": "38",
+      "name": "Lanturn",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Chinchou",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Hydroelectric Power",
+          "text": "You may make Floodlight do 10 more damage for each Water Energy attached to Lanturn, but not used to pay for Floodlight's Energy cost. This power can't be used if Lanturn is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Floodlight",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 171,
+        "genus": "Light Pokémon",
+        "height": "3'11\"",
+        "weight": "49.6 lbs"
+      },
+      "flavorText": "The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles.",
+      "secret": false,
+      "limitless": {
+        "id": 29756,
+        "url": "https://limitlesstcg.com/cards/N1/38",
+        "deckCode": "N1 38",
+        "printGroup": [
+          "N1 38"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/38.png",
+        "large": "https://images.pokemontcg.io/neo1/38_hires.png"
+      }
+    },
+    {
+      "number": "039/111",
+      "localId": "39",
+      "name": "Ledian",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ledyba",
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Baton Pass",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If you have any Grass Pokémon on your Bench, remove all Grass Energy cards from Ledian and attach them to 1 of those Pokémon, then switch Ledian with that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 166,
+        "genus": "Five Star Pokémon",
+        "height": "4'7\"",
+        "weight": "78.5 lbs"
+      },
+      "flavorText": "When the stars flicker in the night sky, Ledian flutters about, scattering a glowing powder.",
+      "secret": false,
+      "limitless": {
+        "id": 29757,
+        "url": "https://limitlesstcg.com/cards/N1/39",
+        "deckCode": "N1 39",
+        "printGroup": [
+          "N1 39"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/39.png",
+        "large": "https://images.pokemontcg.io/neo1/39_hires.png"
+      }
+    },
+    {
+      "number": "040/111",
+      "localId": "40",
+      "name": "Magmar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Magmortar"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tail Slap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Magma Punch",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 126,
+        "genus": "Spitfire Pokémon",
+        "height": "4'3\"",
+        "weight": "98.1 lbs"
+      },
+      "flavorText": "It dislikes cold places, so it blows scorching flames to make the environment suitable for itself.",
+      "secret": false,
+      "limitless": {
+        "id": 29758,
+        "url": "https://limitlesstcg.com/cards/N1/40",
+        "deckCode": "N1 40",
+        "printGroup": [
+          "N1 40"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/40.png",
+        "large": "https://images.pokemontcg.io/neo1/40_hires.png"
+      }
+    },
+    {
+      "number": "041/111",
+      "localId": "41",
+      "name": "Miltank",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Milk Drink",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip 2 coins. Remove 2 damage counters times the number of heads from Miltank. If it has fewer damage counters than that, remove all of them."
+        },
+        {
+          "name": "Body Slam",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 241,
+        "genus": "Milk Cow Pokémon",
+        "height": "3'11\"",
+        "weight": "166.4 lbs"
+      },
+      "flavorText": "Its milk is packed with nutrition, making it the ultimate beverage for the sick or weary.",
+      "secret": false,
+      "limitless": {
+        "id": 29759,
+        "url": "https://limitlesstcg.com/cards/N1/41",
+        "deckCode": "N1 41",
+        "printGroup": [
+          "N1 41"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/41.png",
+        "large": "https://images.pokemontcg.io/neo1/41_hires.png"
+      }
+    },
+    {
+      "number": "042/111",
+      "localId": "42",
+      "name": "Noctowl",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Hoothoot",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "abilities": [
+        {
+          "name": "Glaring Gaze",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, look at your opponent's hand. If your opponent has any Trainer cards there, choose 1 of them. Your opponent shuffles that card into his or her deck. This power can't be used if Noctowl is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 164,
+        "genus": "Owl Pokémon",
+        "height": "5'3\"",
+        "weight": "89.9 lbs"
+      },
+      "flavorText": "Its eyes are specially adapted. They concentrate even faint light and enable it to see in the dark.",
+      "secret": false,
+      "limitless": {
+        "id": 29760,
+        "url": "https://limitlesstcg.com/cards/N1/42",
+        "deckCode": "N1 42",
+        "printGroup": [
+          "N1 42"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/42.png",
+        "large": "https://images.pokemontcg.io/neo1/42_hires.png"
+      }
+    },
+    {
+      "number": "043/111",
+      "localId": "43",
+      "name": "Phanpy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Donphan"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Endure",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, then if, during your opponent's next turn, Phanpy would be Knocked Out by an attack, Phanpy isn't Knocked Out and its remaining HP become 10 instead."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 231,
+        "genus": "Long Nose Pokémon",
+        "height": "1'8\"",
+        "weight": "73.9 lbs"
+      },
+      "flavorText": "It swings its long snout around playfully, but, because it is so strong, that can be dangerous.",
+      "secret": false,
+      "limitless": {
+        "id": 29761,
+        "url": "https://limitlesstcg.com/cards/N1/43",
+        "deckCode": "N1 43",
+        "printGroup": [
+          "N1 43"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/43.png",
+        "large": "https://images.pokemontcg.io/neo1/43_hires.png"
+      }
+    },
+    {
+      "number": "044/111",
+      "localId": "44",
+      "name": "Piloswine",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Swinub",
+      "evolvesTo": [
+        "Mamoswine"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Freeze",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack. (Benching or evolving the Defending Pokémon ends this effect.)"
+        },
+        {
+          "name": "Blizzard",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon; if tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 221,
+        "genus": "Swine Pokémon",
+        "height": "3'7\"",
+        "weight": "123.0 lbs"
+      },
+      "flavorText": "Because the long hair all over its body obscures its sight, it just keeps charging repeatedly.",
+      "secret": false,
+      "limitless": {
+        "id": 29762,
+        "url": "https://limitlesstcg.com/cards/N1/44",
+        "deckCode": "N1 44",
+        "printGroup": [
+          "N1 44"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/44.png",
+        "large": "https://images.pokemontcg.io/neo1/44_hires.png"
+      }
+    },
+    {
+      "number": "045/111",
+      "localId": "45",
+      "name": "Quagsire",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Wooper",
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Surf",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Earthquake",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": "Does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 195,
+        "genus": "Water Fish Pokémon",
+        "height": "4'7\"",
+        "weight": "165.3 lbs"
+      },
+      "flavorText": "Due to its relaxed and carefree attitude, it often bumps its head on boulders and boat hulls as it swims.",
+      "secret": false,
+      "limitless": {
+        "id": 29763,
+        "url": "https://limitlesstcg.com/cards/N1/45",
+        "deckCode": "N1 45",
+        "printGroup": [
+          "N1 45"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/45.png",
+        "large": "https://images.pokemontcg.io/neo1/45_hires.png"
+      }
+    },
+    {
+      "number": "046/111",
+      "localId": "46",
+      "name": "Quilava",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cyndaquil",
+      "evolvesTo": [
+        "Typhlosion"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard 1 Fire Energy card attached to Quilava in order to use this attack."
+        },
+        {
+          "name": "Fire Wind",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them. Flip 2 coins. For each heads, this attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 156,
+        "genus": "Volcano Pokémon",
+        "height": "2'11\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "This Pokémon is fully covered by nonflammable fur. It can withstand any kind of fire attack.",
+      "secret": false,
+      "limitless": {
+        "id": 29764,
+        "url": "https://limitlesstcg.com/cards/N1/46",
+        "deckCode": "N1 46",
+        "printGroup": [
+          "N1 46"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/46.png",
+        "large": "https://images.pokemontcg.io/neo1/46_hires.png"
+      }
+    },
+    {
+      "number": "047/111",
+      "localId": "47",
+      "name": "Quilava",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Cyndaquil",
+      "evolvesTo": [
+        "Typhlosion"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Smokescreen",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        },
+        {
+          "name": "Char",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "If the Defending Pokémon doesn't have a Char counter on it, flip a coin. If heads, put a Char counter on it. A Char counter requires your opponent to flip a coin after every turn. If tails, put 2 damage counters on the Pokémon with that Char counter. (Char counters stay on the Pokémon as long as it's in play.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 156,
+        "genus": "Volcano Pokémon",
+        "height": "2'11\"",
+        "weight": "41.9 lbs"
+      },
+      "flavorText": "Be careful if it turns its back during battle. It means that it will attack with the fire on its back.",
+      "secret": false,
+      "limitless": {
+        "id": 29765,
+        "url": "https://limitlesstcg.com/cards/N1/47",
+        "deckCode": "N1 47",
+        "printGroup": [
+          "N1 47"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/47.png",
+        "large": "https://images.pokemontcg.io/neo1/47_hires.png"
+      }
+    },
+    {
+      "number": "048/111",
+      "localId": "48",
+      "name": "Seadra",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Horsea",
+      "evolvesTo": [
+        "Kingdra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Bubble",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Mud Splash",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and flip a coin. If heads, this attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin-ichi Yoshida",
+      "pokedex": {
+        "number": 117,
+        "genus": "Dragon Pokémon",
+        "height": "3'11\"",
+        "weight": "55.1 lbs"
+      },
+      "flavorText": "An examination of its cells revealed the presence of a gene not found in Horsea. It became a hot topic.",
+      "secret": false,
+      "limitless": {
+        "id": 29766,
+        "url": "https://limitlesstcg.com/cards/N1/48",
+        "deckCode": "N1 48",
+        "printGroup": [
+          "N1 48"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/48.png",
+        "large": "https://images.pokemontcg.io/neo1/48_hires.png"
+      }
+    },
+    {
+      "number": "049/111",
+      "localId": "49",
+      "name": "Skiploom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Hoppip",
+      "evolvesTo": [
+        "Jumpluff"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Poisonpowder",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "The Defending Pokémon is now Poisoned."
+        },
+        {
+          "name": "Stun Spore",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 188,
+        "genus": "Cottonweed Pokémon",
+        "height": "2'0\"",
+        "weight": "2.2 lbs"
+      },
+      "flavorText": "The bloom on top of its head opens and closes as the temperature fluctuates up and down.",
+      "secret": false,
+      "limitless": {
+        "id": 29767,
+        "url": "https://limitlesstcg.com/cards/N1/49",
+        "deckCode": "N1 49",
+        "printGroup": [
+          "N1 49"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/49.png",
+        "large": "https://images.pokemontcg.io/neo1/49_hires.png"
+      }
+    },
+    {
+      "number": "050/111",
+      "localId": "50",
+      "name": "Sunflora",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Sunkern",
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Petal Dance",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip 3 coins. This attack does 30 damage times the number of heads. Sunflora is now Confused (after doing damage)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 192,
+        "genus": "Sun Pokémon",
+        "height": "2'7\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "It converts sunlight into energy. In the darkness after sunset, it closes its petals and becomes still.",
+      "secret": false,
+      "limitless": {
+        "id": 29768,
+        "url": "https://limitlesstcg.com/cards/N1/50",
+        "deckCode": "N1 50",
+        "printGroup": [
+          "N1 50"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/50.png",
+        "large": "https://images.pokemontcg.io/neo1/50_hires.png"
+      }
+    },
+    {
+      "number": "051/111",
+      "localId": "51",
+      "name": "Togepi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Togetic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Poison Barb",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "The Defending Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 175,
+        "genus": "Spike Ball Pokémon",
+        "height": "1'0\"",
+        "weight": "3.3 lbs"
+      },
+      "flavorText": "A proverb claims that happiness will come to anyone who can make a sleeping Togepi stand up.",
+      "secret": false,
+      "limitless": {
+        "id": 29769,
+        "url": "https://limitlesstcg.com/cards/N1/51",
+        "deckCode": "N1 51",
+        "printGroup": [
+          "N1 51"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/51.png",
+        "large": "https://images.pokemontcg.io/neo1/51_hires.png"
+      }
+    },
+    {
+      "number": "052/111",
+      "localId": "52",
+      "name": "Xatu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Natu",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Prophecy",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at the top 3 cards of either player's deck and rearrange them as you like."
+        },
+        {
+          "name": "Confuse Ray",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 178,
+        "genus": "Mystic Pokémon",
+        "height": "4'11\"",
+        "weight": "33.1 lbs"
+      },
+      "flavorText": "They say that it stays still and quiet because it is seeing both the past and future at the same time.",
+      "secret": false,
+      "limitless": {
+        "id": 29770,
+        "url": "https://limitlesstcg.com/cards/N1/52",
+        "deckCode": "N1 52",
+        "printGroup": [
+          "N1 52"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/52.png",
+        "large": "https://images.pokemontcg.io/neo1/52_hires.png"
+      }
+    },
+    {
+      "number": "053/111",
+      "localId": "53",
+      "name": "Chikorita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Bayleef"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Deflector",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "During your opponent's next turn, whenever Chikorita takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 152,
+        "genus": "Leaf Pokémon",
+        "height": "2'11\"",
+        "weight": "14.1 lbs"
+      },
+      "flavorText": "A sweet aroma gently wafts from the leaf on its head. It is docile and loves to soak up the sun's rays.",
+      "secret": false,
+      "limitless": {
+        "id": 29771,
+        "url": "https://limitlesstcg.com/cards/N1/53",
+        "deckCode": "N1 53",
+        "printGroup": [
+          "N1 53"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/53.png",
+        "large": "https://images.pokemontcg.io/neo1/53_hires.png"
+      }
+    },
+    {
+      "number": "054/111",
+      "localId": "54",
+      "name": "Chikorita",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Bayleef"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Growl",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If the Defending Pokémon attacks Chikorita during your opponent's next turn, any damage done to Chikorita is reduced by 10 (before applying Weakness and Resistance). (Benching or evolving either Pokémon ends this effect.)"
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 152,
+        "genus": "Leaf Pokémon",
+        "height": "2'11\"",
+        "weight": "14.1 lbs"
+      },
+      "flavorText": "Its pleasantly aromatic leaf has the ability to check the humidity and temperature.",
+      "secret": false,
+      "limitless": {
+        "id": 29772,
+        "url": "https://limitlesstcg.com/cards/N1/54",
+        "deckCode": "N1 54",
+        "printGroup": [
+          "N1 54"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/54.png",
+        "large": "https://images.pokemontcg.io/neo1/54_hires.png"
+      }
+    },
+    {
+      "number": "055/111",
+      "localId": "55",
+      "name": "Chinchou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Lanturn"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Supersonic",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Flail",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the number of damage counters on Chinchou."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 170,
+        "genus": "Angler Pokémon",
+        "height": "1'8\"",
+        "weight": "26.5 lbs"
+      },
+      "flavorText": "It shoots positive and negative electricity between the tips of its two antennae and zaps its enemies.",
+      "secret": false,
+      "limitless": {
+        "id": 29773,
+        "url": "https://limitlesstcg.com/cards/N1/55",
+        "deckCode": "N1 55",
+        "printGroup": [
+          "N1 55"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/55.png",
+        "large": "https://images.pokemontcg.io/neo1/55_hires.png"
+      }
+    },
+    {
+      "number": "056/111",
+      "localId": "56",
+      "name": "Cyndaquil",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Quilava"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Leer",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack Cyndaquil during your opponent's next turn. (Benching or evolving either Pokémon ends this effect.)"
+        },
+        {
+          "name": "Swift",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 155,
+        "genus": "Fire Mouse Pokémon",
+        "height": "1'8\"",
+        "weight": "17.4 lbs"
+      },
+      "flavorText": "It usually stays hunched over. If it is angry or surprised, it shoots flames out of its back.",
+      "secret": false,
+      "limitless": {
+        "id": 29774,
+        "url": "https://limitlesstcg.com/cards/N1/56",
+        "deckCode": "N1 56",
+        "printGroup": [
+          "N1 56"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/56.png",
+        "large": "https://images.pokemontcg.io/neo1/56_hires.png"
+      }
+    },
+    {
+      "number": "057/111",
+      "localId": "57",
+      "name": "Cyndaquil",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Quilava"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Fireworks",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If tails, discard 1 Energy card attached to Cyndaquil."
+        },
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Shin-ichi Yoshida",
+      "pokedex": {
+        "number": 155,
+        "genus": "Fire Mouse Pokémon",
+        "height": "1'8\"",
+        "weight": "17.4 lbs"
+      },
+      "flavorText": "It is timid and always curls itself up in a ball. If attacked, it flares up its back for protection.",
+      "secret": false,
+      "limitless": {
+        "id": 29775,
+        "url": "https://limitlesstcg.com/cards/N1/57",
+        "deckCode": "N1 57",
+        "printGroup": [
+          "N1 57"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/57.png",
+        "large": "https://images.pokemontcg.io/neo1/57_hires.png"
+      }
+    },
+    {
+      "number": "058/111",
+      "localId": "58",
+      "name": "Girafarig",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Agility",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Girafarig."
+        },
+        {
+          "name": "Psybeam",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 203,
+        "genus": "Long Neck Pokémon",
+        "height": "4'11\"",
+        "weight": "91.5 lbs"
+      },
+      "flavorText": "Its tail has a small brain of its own. Beware! If you get close, it may react to your scent and bite.",
+      "secret": false,
+      "limitless": {
+        "id": 29776,
+        "url": "https://limitlesstcg.com/cards/N1/58",
+        "deckCode": "N1 58",
+        "printGroup": [
+          "N1 58"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/58.png",
+        "large": "https://images.pokemontcg.io/neo1/58_hires.png"
+      }
+    },
+    {
+      "number": "059/111",
+      "localId": "59",
+      "name": "Gligar",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gliscor"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Poison Sting",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hironobu Yoshida",
+      "pokedex": {
+        "number": 207,
+        "genus": "Fly Scorpion Pokémon",
+        "height": "3'7\"",
+        "weight": "142.9 lbs"
+      },
+      "flavorText": "It flies straight at its target's face, then clamps down on the startled victim to inject poison.",
+      "secret": false,
+      "limitless": {
+        "id": 29777,
+        "url": "https://limitlesstcg.com/cards/N1/59",
+        "deckCode": "N1 59",
+        "printGroup": [
+          "N1 59"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/59.png",
+        "large": "https://images.pokemontcg.io/neo1/59_hires.png"
+      }
+    },
+    {
+      "number": "060/111",
+      "localId": "60",
+      "name": "Hoothoot",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Noctowl"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Hypnosis",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Asleep."
+        },
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 163,
+        "genus": "Owl Pokémon",
+        "height": "2'4\"",
+        "weight": "46.7 lbs"
+      },
+      "flavorText": "It always stands on one foot. It changes feet so fast that the movement can rarely be seen.",
+      "secret": false,
+      "limitless": {
+        "id": 29778,
+        "url": "https://limitlesstcg.com/cards/N1/60",
+        "deckCode": "N1 60",
+        "printGroup": [
+          "N1 60"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/60.png",
+        "large": "https://images.pokemontcg.io/neo1/60_hires.png"
+      }
+    },
+    {
+      "number": "061/111",
+      "localId": "61",
+      "name": "Hoppip",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Skiploom"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Hop",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Sprout",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Pokémon named Hoppip and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 187,
+        "genus": "Cottonweed Pokémon",
+        "height": "1'4\"",
+        "weight": "1.1 lbs"
+      },
+      "flavorText": "To keep from being blown away by the wind, they gather in clusters. They do enjoy gentle breezes, though.",
+      "secret": false,
+      "limitless": {
+        "id": 29779,
+        "url": "https://limitlesstcg.com/cards/N1/61",
+        "deckCode": "N1 61",
+        "printGroup": [
+          "N1 61"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/61.png",
+        "large": "https://images.pokemontcg.io/neo1/61_hires.png"
+      }
+    },
+    {
+      "number": "062/111",
+      "localId": "62",
+      "name": "Horsea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Seadra"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Fin Slap",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "If an attack damaged Horsea during your opponent's last turn, this attack does 20 damage plus 10 more damage. If not, this attack does 20 damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Miki Tanaka",
+      "pokedex": {
+        "number": 116,
+        "genus": "Dragon Pokémon",
+        "height": "1'4\"",
+        "weight": "17.6 lbs"
+      },
+      "flavorText": "If attacked by a larger enemy, it quickly swims to safety by adeptly controlling its dorsal fin.",
+      "secret": false,
+      "limitless": {
+        "id": 29780,
+        "url": "https://limitlesstcg.com/cards/N1/62",
+        "deckCode": "N1 62",
+        "printGroup": [
+          "N1 62"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/62.png",
+        "large": "https://images.pokemontcg.io/neo1/62_hires.png"
+      }
+    },
+    {
+      "number": "063/111",
+      "localId": "63",
+      "name": "Ledyba",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ledian"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Supersonic",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        {
+          "name": "Comet Punch",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 165,
+        "genus": "Five Star Pokémon",
+        "height": "3'3\"",
+        "weight": "23.8 lbs"
+      },
+      "flavorText": "It is very timid. It's afraid to move if alone, but it's active if in a group.",
+      "secret": false,
+      "limitless": {
+        "id": 29781,
+        "url": "https://limitlesstcg.com/cards/N1/63",
+        "deckCode": "N1 63",
+        "printGroup": [
+          "N1 63"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/63.png",
+        "large": "https://images.pokemontcg.io/neo1/63_hires.png"
+      }
+    },
+    {
+      "number": "064/111",
+      "localId": "64",
+      "name": "Mantine",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Undulate",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Mantine."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 226,
+        "genus": "Kite Pokémon",
+        "height": "6'11\"",
+        "weight": "485.0 lbs"
+      },
+      "flavorText": "Swimming freely in open seas, it may fly out of the water and over the waves if it builds up enough speed.",
+      "secret": false,
+      "limitless": {
+        "id": 29782,
+        "url": "https://limitlesstcg.com/cards/N1/64",
+        "deckCode": "N1 64",
+        "printGroup": [
+          "N1 64"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/64.png",
+        "large": "https://images.pokemontcg.io/neo1/64_hires.png"
+      }
+    },
+    {
+      "number": "065/111",
+      "localId": "65",
+      "name": "Mareep",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Flaaffy"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Static Electricity",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each Mareep in play, you may search your deck for a Lightning Energy card and attach it to Mareep. Shuffle your deck afterward."
+        },
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 179,
+        "genus": "Wool Pokémon",
+        "height": "2'0\"",
+        "weight": "17.2 lbs"
+      },
+      "flavorText": "If static electricity builds in its body, its fleece doubles in volume. Touching it will shock you.",
+      "secret": false,
+      "limitless": {
+        "id": 29783,
+        "url": "https://limitlesstcg.com/cards/N1/65",
+        "deckCode": "N1 65",
+        "printGroup": [
+          "N1 65"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/65.png",
+        "large": "https://images.pokemontcg.io/neo1/65_hires.png"
+      }
+    },
+    {
+      "number": "066/111",
+      "localId": "66",
+      "name": "Marill",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Azumarill"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Defense Curl",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all damage done to Marill during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        {
+          "name": "Bubble Bomb",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, Marill does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 183,
+        "genus": "Aqua Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "The end of its tail serves as a buoy that keeps it from drowning, even in a vicious current.",
+      "secret": false,
+      "limitless": {
+        "id": 29784,
+        "url": "https://limitlesstcg.com/cards/N1/66",
+        "deckCode": "N1 66",
+        "printGroup": [
+          "N1 66"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/66.png",
+        "large": "https://images.pokemontcg.io/neo1/66_hires.png"
+      }
+    },
+    {
+      "number": "067/111",
+      "localId": "67",
+      "name": "Natu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Xatu"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 30,
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Telekinesis",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 177,
+        "genus": "Tiny Bird Pokémon",
+        "height": "0'8\"",
+        "weight": "4.4 lbs"
+      },
+      "flavorText": "Because its wings aren't yet fully grown, it has to hop to get around. It is always staring at something.",
+      "secret": false,
+      "limitless": {
+        "id": 29785,
+        "url": "https://limitlesstcg.com/cards/N1/67",
+        "deckCode": "N1 67",
+        "printGroup": [
+          "N1 67"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/67.png",
+        "large": "https://images.pokemontcg.io/neo1/67_hires.png"
+      }
+    },
+    {
+      "number": "068/111",
+      "localId": "68",
+      "name": "Oddish",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Gloom"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Hide",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Oddish."
+        },
+        {
+          "name": "Absorb",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Remove a number of damage counters from Oddish equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Oddish has fewer damage counters than that, remove all of them."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 43,
+        "genus": "Weed Pokémon",
+        "height": "1'8\"",
+        "weight": "11.9 lbs"
+      },
+      "flavorText": "Awakened by moonlight, it roams actively at night. In the day it stays quietly underground.",
+      "secret": false,
+      "limitless": {
+        "id": 29786,
+        "url": "https://limitlesstcg.com/cards/N1/68",
+        "deckCode": "N1 68",
+        "printGroup": [
+          "N1 68"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/68.png",
+        "large": "https://images.pokemontcg.io/neo1/68_hires.png"
+      }
+    },
+    {
+      "number": "069/111",
+      "localId": "69",
+      "name": "Onix",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Steelix"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Screech",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Until the end of your next turn, if an attack damages the Defending Pokémon (after applying Weakness and Resistance), that attack does 20 more damage to the Defending Pokémon."
+        },
+        {
+          "name": "Rage",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Onix."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 95,
+        "genus": "Rock Snake Pokémon",
+        "height": "28'10\"",
+        "weight": "463.0 lbs"
+      },
+      "flavorText": "It twists and squirms through the ground. The thunderous roar of its tunneling echoes a long way.",
+      "secret": false,
+      "limitless": {
+        "id": 29787,
+        "url": "https://limitlesstcg.com/cards/N1/69",
+        "deckCode": "N1 69",
+        "printGroup": [
+          "N1 69"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/69.png",
+        "large": "https://images.pokemontcg.io/neo1/69_hires.png"
+      }
+    },
+    {
+      "number": "070/111",
+      "localId": "70",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        },
+        {
+          "name": "Agility",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Pikachu."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "It raises its tail to check its surroundings. The tail is sometimes struck by lightning in this pose.",
+      "secret": false,
+      "limitless": {
+        "id": 29788,
+        "url": "https://limitlesstcg.com/cards/N1/70",
+        "deckCode": "N1 70",
+        "printGroup": [
+          "N1 70"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/70.png",
+        "large": "https://images.pokemontcg.io/neo1/70_hires.png"
+      }
+    },
+    {
+      "number": "071/111",
+      "localId": "71",
+      "name": "Sentret",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Furret"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 161,
+        "genus": "Scout Pokémon",
+        "height": "2'7\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "A very cautious Pokémon, it raises itself up using its tail to get a better view of its surroundings.",
+      "secret": false,
+      "limitless": {
+        "id": 29789,
+        "url": "https://limitlesstcg.com/cards/N1/71",
+        "deckCode": "N1 71",
+        "printGroup": [
+          "N1 71"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/71.png",
+        "large": "https://images.pokemontcg.io/neo1/71_hires.png"
+      }
+    },
+    {
+      "number": "072/111",
+      "localId": "72",
+      "name": "Shuckle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Withdraw",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all damage done to Shuckle during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        {
+          "name": "Wrap",
+          "cost": [
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 213,
+        "genus": "Mold Pokémon",
+        "height": "2'0\"",
+        "weight": "45.2 lbs"
+      },
+      "flavorText": "The Berries it stores in its vaselike shell decompose and become a gooey liquid.",
+      "secret": false,
+      "limitless": {
+        "id": 29790,
+        "url": "https://limitlesstcg.com/cards/N1/72",
+        "deckCode": "N1 72",
+        "printGroup": [
+          "N1 72"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/72.png",
+        "large": "https://images.pokemontcg.io/neo1/72_hires.png"
+      }
+    },
+    {
+      "number": "073/111",
+      "localId": "73",
+      "name": "Slowpoke",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Slowbro",
+        "Slowking"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Psyshock",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Slowpoke but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "pokedex": {
+        "number": 79,
+        "genus": "Dopey Pokémon",
+        "height": "3'11\"",
+        "weight": "79.4 lbs"
+      },
+      "flavorText": "It lazes vacantly near water. If something bites its tail, it won't even notice for a whole day.",
+      "secret": false,
+      "limitless": {
+        "id": 29791,
+        "url": "https://limitlesstcg.com/cards/N1/73",
+        "deckCode": "N1 73",
+        "printGroup": [
+          "N1 73"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/73.png",
+        "large": "https://images.pokemontcg.io/neo1/73_hires.png"
+      }
+    },
+    {
+      "number": "074/111",
+      "localId": "74",
+      "name": "Snubbull",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Granbull"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Roar",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads and if your opponent has any Benched Pokémon, he of she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+        },
+        {
+          "name": "Lick",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "pokedex": {
+        "number": 209,
+        "genus": "Fairy Pokémon",
+        "height": "2'0\"",
+        "weight": "17.2 lbs"
+      },
+      "flavorText": "Although it looks frightening, it is actually kind and affectionate. It is very popular.",
+      "secret": false,
+      "limitless": {
+        "id": 29792,
+        "url": "https://limitlesstcg.com/cards/N1/74",
+        "deckCode": "N1 74",
+        "printGroup": [
+          "N1 74"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/74.png",
+        "large": "https://images.pokemontcg.io/neo1/74_hires.png"
+      }
+    },
+    {
+      "number": "075/111",
+      "localId": "75",
+      "name": "Spinarak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ariados"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Scary Face",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, until the end of your opponent's next turn, the Defending Pokémon can't attack or retreat."
+        },
+        {
+          "name": "String Shot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 167,
+        "genus": "String Spit Pokémon",
+        "height": "1'8\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close.",
+      "secret": false,
+      "limitless": {
+        "id": 29793,
+        "url": "https://limitlesstcg.com/cards/N1/75",
+        "deckCode": "N1 75",
+        "printGroup": [
+          "N1 75"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/75.png",
+        "large": "https://images.pokemontcg.io/neo1/75_hires.png"
+      }
+    },
+    {
+      "number": "076/111",
+      "localId": "76",
+      "name": "Stantler",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Stomp",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        },
+        {
+          "name": "Mystifying Horns",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 234,
+        "genus": "Big Horn Pokémon",
+        "height": "4'7\"",
+        "weight": "157.0 lbs"
+      },
+      "flavorText": "The curved antlers subtly change the flow of air to create a strange space where reality is distorted.",
+      "secret": false,
+      "limitless": {
+        "id": 29794,
+        "url": "https://limitlesstcg.com/cards/N1/76",
+        "deckCode": "N1 76",
+        "printGroup": [
+          "N1 76"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/76.png",
+        "large": "https://images.pokemontcg.io/neo1/76_hires.png"
+      }
+    },
+    {
+      "number": "077/111",
+      "localId": "77",
+      "name": "Sudowoodo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Flail",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the number of damage counters on Sudowoodo."
+        },
+        {
+          "name": "Rock Throw",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 185,
+        "genus": "Imitation Pokémon",
+        "height": "3'11\"",
+        "weight": "83.8 lbs"
+      },
+      "flavorText": "Although it always pretends to be a tree, its composition appears to be closer to a rock than a plant.",
+      "secret": false,
+      "limitless": {
+        "id": 29795,
+        "url": "https://limitlesstcg.com/cards/N1/77",
+        "deckCode": "N1 77",
+        "printGroup": [
+          "N1 77"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/77.png",
+        "large": "https://images.pokemontcg.io/neo1/77_hires.png"
+      }
+    },
+    {
+      "number": "078/111",
+      "localId": "78",
+      "name": "Sunkern",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Sunflora"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Growth",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, you may attach up to 2 Grass Energy cards from your hand to Sunkern."
+        },
+        {
+          "name": "Mega Drain",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Remove a number of damage counters from Sunkern equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Sunkern has fewer damage counters than that, remove all of them."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 191,
+        "genus": "Seed Pokémon",
+        "height": "1'0\"",
+        "weight": "4.0 lbs"
+      },
+      "flavorText": "It may drop out of the sky suddenly. If attacked by a Spearow, it violently shakes its leaves.",
+      "secret": false,
+      "limitless": {
+        "id": 29796,
+        "url": "https://limitlesstcg.com/cards/N1/78",
+        "deckCode": "N1 78",
+        "printGroup": [
+          "N1 78"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/78.png",
+        "large": "https://images.pokemontcg.io/neo1/78_hires.png"
+      }
+    },
+    {
+      "number": "079/111",
+      "localId": "79",
+      "name": "Swinub",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Piloswine"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Powder Snow",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "The Defending Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 220,
+        "genus": "Pig Pokémon",
+        "height": "1'4\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "It rubs its snout on the ground to find and dig up food. It sometimes discovers hot springs.",
+      "secret": false,
+      "limitless": {
+        "id": 29797,
+        "url": "https://limitlesstcg.com/cards/N1/79",
+        "deckCode": "N1 79",
+        "printGroup": [
+          "N1 79"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/79.png",
+        "large": "https://images.pokemontcg.io/neo1/79_hires.png"
+      }
+    },
+    {
+      "number": "080/111",
+      "localId": "80",
+      "name": "Totodile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Croconaw"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rage",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Totodile."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "pokedex": {
+        "number": 158,
+        "genus": "Big Jaw Pokémon",
+        "height": "2'0\"",
+        "weight": "20.9 lbs"
+      },
+      "flavorText": "It is small but rough and tough. It won't hesitate to take a bite out of anything that moves.",
+      "secret": false,
+      "limitless": {
+        "id": 29798,
+        "url": "https://limitlesstcg.com/cards/N1/80",
+        "deckCode": "N1 80",
+        "printGroup": [
+          "N1 80"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/80.png",
+        "large": "https://images.pokemontcg.io/neo1/80_hires.png"
+      }
+    },
+    {
+      "number": "081/111",
+      "localId": "81",
+      "name": "Totodile",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Croconaw"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Leer",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack Totodile during your opponent's next turn. (Benching or evolving either Pokémon ends this effect.)"
+        },
+        {
+          "name": "Fury Swipes",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Hironobu Yoshida",
+      "pokedex": {
+        "number": 158,
+        "genus": "Big Jaw Pokémon",
+        "height": "2'0\"",
+        "weight": "20.9 lbs"
+      },
+      "flavorText": "Its well-developed jaws are powerful and capable of crushing anything. Even its trainer must be careful.",
+      "secret": false,
+      "limitless": {
+        "id": 29799,
+        "url": "https://limitlesstcg.com/cards/N1/81",
+        "deckCode": "N1 81",
+        "printGroup": [
+          "N1 81"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/81.png",
+        "large": "https://images.pokemontcg.io/neo1/81_hires.png"
+      }
+    },
+    {
+      "number": "082/111",
+      "localId": "82",
+      "name": "Wooper",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Quagsire"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Amnesia",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use that attack during your opponent's next turn."
+        },
+        {
+          "name": "Slam",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Miki Tanaka",
+      "pokedex": {
+        "number": 194,
+        "genus": "Water Fish Pokémon",
+        "height": "1'4\"",
+        "weight": "18.7 lbs"
+      },
+      "flavorText": "This Pokémon lives in cold water. It leaves the water to search for food when it gets cold outside.",
+      "secret": false,
+      "limitless": {
+        "id": 29800,
+        "url": "https://limitlesstcg.com/cards/N1/82",
+        "deckCode": "N1 82",
+        "printGroup": [
+          "N1 82"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/82.png",
+        "large": "https://images.pokemontcg.io/neo1/82_hires.png"
+      }
+    },
+    {
+      "number": "083/111",
+      "localId": "83",
+      "name": "Arcade Game",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Goldenrod Game Corner"
+      ],
+      "rules": [
+        "Shuffle your deck, then reveal the top 3 cards of it. If at least 2 of those cards share the same name, put all the ones with that name into your hand and shuffle the rest into your deck. If none of them do, shuffle all 3 into your deck."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "K. Hoshiba",
+      "secret": false,
+      "limitless": {
+        "id": 29801,
+        "url": "https://limitlesstcg.com/cards/N1/83",
+        "deckCode": "N1 83",
+        "printGroup": [
+          "N1 83"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/83.png",
+        "large": "https://images.pokemontcg.io/neo1/83_hires.png"
+      }
+    },
+    {
+      "number": "084/111",
+      "localId": "84",
+      "name": "Ecogym",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+        "Whenever an attack, Pokémon Power, or Trainer card discards another player's non-Colorless Energy card from a Pokémon, return that Energy card to its owner's hand. (Energy cards that are discarded when that Pokémon is Knocked Out don't count.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Shin-ichi Yoshikawa",
+      "secret": false,
+      "limitless": {
+        "id": 29802,
+        "url": "https://limitlesstcg.com/cards/N1/84",
+        "deckCode": "N1 84",
+        "printGroup": [
+          "N1 84"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/84.png",
+        "large": "https://images.pokemontcg.io/neo1/84_hires.png"
+      }
+    },
+    {
+      "number": "085/111",
+      "localId": "85",
+      "name": "Energy Charge",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Flip a coin. If heads, shuffle up to 2 Energy cards from your discard pile into your deck."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 29803,
+        "url": "https://limitlesstcg.com/cards/N1/85",
+        "deckCode": "N1 85",
+        "printGroup": [
+          "DX 86",
+          "N1 85"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/85.png",
+        "large": "https://images.pokemontcg.io/neo1/85_hires.png"
+      }
+    },
+    {
+      "number": "086/111",
+      "localId": "86",
+      "name": "Focus Band",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach Focus Band to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+        "If the Pokémon Focus Band is attached to would be Knocked Out by your opponent's attack, flip a coin. If heads, that Pokémon is not Knocked Out and its remaining HP become 10 instead. Then, discard Focus Band."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Tomokazu Komiya",
+      "secret": false,
+      "limitless": {
+        "id": 29804,
+        "url": "https://limitlesstcg.com/cards/N1/86",
+        "deckCode": "N1 86",
+        "printGroup": [
+          "N1 86"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/86.png",
+        "large": "https://images.pokemontcg.io/neo1/86_hires.png"
+      }
+    },
+    {
+      "number": "087/111",
+      "localId": "87",
+      "name": "Mary",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Draw 2 cards. Then, shuffle 2 cards from your hand into your deck."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 29805,
+        "url": "https://limitlesstcg.com/cards/N1/87",
+        "deckCode": "N1 87",
+        "printGroup": [
+          "N1 87"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/87.png",
+        "large": "https://images.pokemontcg.io/neo1/87_hires.png"
+      }
+    },
+    {
+      "number": "088/111",
+      "localId": "88",
+      "name": "PokéGear",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Look at the top 7 cards of your deck. If any of them are Trainer cards, you may show 1 of them to your opponent and put it into your hand. Shuffle your deck afterward. You can't play any more Trainer cards this turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Katsura Tabata",
+      "secret": false,
+      "limitless": {
+        "id": 29806,
+        "url": "https://limitlesstcg.com/cards/N1/88",
+        "deckCode": "N1 88",
+        "printGroup": [
+          "N1 88"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/88.png",
+        "large": "https://images.pokemontcg.io/neo1/88_hires.png"
+      }
+    },
+    {
+      "number": "089/111",
+      "localId": "89",
+      "name": "Super Energy Retrieval",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Trade 2 of the other cards in your hand for 4 basic Energy cards from your discard pile. If you have fewer than 4 basic Energy cards there, take all of them."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 29807,
+        "url": "https://limitlesstcg.com/cards/N1/89",
+        "deckCode": "N1 89",
+        "printGroup": [
+          "N1 89"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/89.png",
+        "large": "https://images.pokemontcg.io/neo1/89_hires.png"
+      }
+    },
+    {
+      "number": "090/111",
+      "localId": "90",
+      "name": "Time Capsule",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Your opponent may choose 5 Basic Pokémon, Evolution, and/or basic Energy cards in his or her discard pile. (If your opponent doesn't have that many, he or she chooses all or none of them.) If your opponent chooses any cards, he or she shuffles them into his or her deck. Either way, you may do the same, and you can't play any more Trainer cards this turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "\"Big Mama\" Tagawa",
+      "secret": false,
+      "limitless": {
+        "id": 29808,
+        "url": "https://limitlesstcg.com/cards/N1/90",
+        "deckCode": "N1 90",
+        "printGroup": [
+          "N1 90"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/90.png",
+        "large": "https://images.pokemontcg.io/neo1/90_hires.png"
+      }
+    },
+    {
+      "number": "091/111",
+      "localId": "91",
+      "name": "Bill's Teleporter",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Flip a coin. If heads, draw 4 cards."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 29809,
+        "url": "https://limitlesstcg.com/cards/N1/91",
+        "deckCode": "N1 91",
+        "printGroup": [
+          "N1 91"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/91.png",
+        "large": "https://images.pokemontcg.io/neo1/91_hires.png"
+      }
+    },
+    {
+      "number": "092/111",
+      "localId": "92",
+      "name": "Card-Flip Game",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Goldenrod Game Corner"
+      ],
+      "rules": [
+        "Choose 1 of your opponent's face-down Prizes. Guess whether it is an Energy card, a Trainer card, or a Pokémon (Basic or Evolution) card. Flip the card face up (and leave it face up). If you guessed right, draw 2 cards."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "K. Hoshiba",
+      "secret": false,
+      "limitless": {
+        "id": 29810,
+        "url": "https://limitlesstcg.com/cards/N1/92",
+        "deckCode": "N1 92",
+        "printGroup": [
+          "N1 92"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/92.png",
+        "large": "https://images.pokemontcg.io/neo1/92_hires.png"
+      }
+    },
+    {
+      "number": "093/111",
+      "localId": "93",
+      "name": "Gold Berry",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach Gold Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+        "At any time between turns, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, you may remove 4 of them and discard Gold Berry. At the start of each turn, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, remove 4 of them and discard Gold Berry."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ryuta Kusumi",
+      "secret": false,
+      "limitless": {
+        "id": 29811,
+        "url": "https://limitlesstcg.com/cards/N1/93",
+        "deckCode": "N1 93",
+        "printGroup": [
+          "N1 93"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/93.png",
+        "large": "https://images.pokemontcg.io/neo1/93_hires.png"
+      }
+    },
+    {
+      "number": "094/111",
+      "localId": "94",
+      "name": "Miracle Berry",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach Miracle Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+        "At any time between turns, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, you may remove all those effects from that Pokémon and discard Miracle Berry. At the start of each turn, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, remove all of those effects from that Pokémon and discard Miracle Berry."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Yousuke Hirata",
+      "secret": false,
+      "limitless": {
+        "id": 29812,
+        "url": "https://limitlesstcg.com/cards/N1/94",
+        "deckCode": "N1 94",
+        "printGroup": [
+          "N1 94"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/94.png",
+        "large": "https://images.pokemontcg.io/neo1/94_hires.png"
+      }
+    },
+    {
+      "number": "095/111",
+      "localId": "95",
+      "name": "New Pokédex",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Shuffle your deck. Then, look at up to 5 cards from the top of your deck and rearrange them as you like."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 29813,
+        "url": "https://limitlesstcg.com/cards/N1/95",
+        "deckCode": "N1 95",
+        "printGroup": [
+          "N1 95"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/95.png",
+        "large": "https://images.pokemontcg.io/neo1/95_hires.png"
+      }
+    },
+    {
+      "number": "096/111",
+      "localId": "96",
+      "name": "Professor Elm",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Shuffle your hand into your deck. Then, draw 7 cards. You can't play any more Trainer cards this turn."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 29814,
+        "url": "https://limitlesstcg.com/cards/N1/96",
+        "deckCode": "N1 96",
+        "printGroup": [
+          "BG 3",
+          "N1 96"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/96.png",
+        "large": "https://images.pokemontcg.io/neo1/96_hires.png"
+      }
+    },
+    {
+      "number": "097/111",
+      "localId": "97",
+      "name": "Sprout Tower",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+        "All damage done by Colorless Pokémon's attacks is reduced by 30 (after applying Weakness and Resistance)."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Hiromichi Sugiyama",
+      "secret": false,
+      "limitless": {
+        "id": 29815,
+        "url": "https://limitlesstcg.com/cards/N1/97",
+        "deckCode": "N1 97",
+        "printGroup": [
+          "N1 97"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/97.png",
+        "large": "https://images.pokemontcg.io/neo1/97_hires.png"
+      }
+    },
+    {
+      "number": "098/111",
+      "localId": "98",
+      "name": "Super Scoop Up",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Flip a coin. If heads, return 1 of your Pokémon and all cards attached to it to your hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30077,
+        "url": "https://limitlesstcg.com/cards/N1/98",
+        "deckCode": "N1 98",
+        "printGroup": [
+          "BLW 103",
+          "BUS 124",
+          "BUS 166",
+          "CES 146",
+          "DP 115",
+          "DS 100",
+          "E1 151",
+          "FFI 100",
+          "MD 87",
+          "N1 98",
+          "RG 99",
+          "SLG 66",
+          "UL 83"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/98.png",
+        "large": "https://images.pokemontcg.io/neo1/98_hires.png"
+      }
+    },
+    {
+      "number": "099/111",
+      "localId": "99",
+      "name": "Berry",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+        "At any time between turns, if there are at least 2 damage counters on the Pokémon Berry is attached to, you may remove 2 of them and discard Berry. At the start of each turn, if there are at least 2 damage counters on the Pokémon Berry is attached to, remove 2 of them and discard Berry."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yousuke Hirata",
+      "secret": false,
+      "limitless": {
+        "id": 29816,
+        "url": "https://limitlesstcg.com/cards/N1/99",
+        "deckCode": "N1 99",
+        "printGroup": [
+          "N1 99"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/99.png",
+        "large": "https://images.pokemontcg.io/neo1/99_hires.png"
+      }
+    },
+    {
+      "number": "100/111",
+      "localId": "100",
+      "name": "Double Gust",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "If you have any Benched Pokémon, your opponent chooses 1 of them and switches it with your Active Pokémon. Then, if your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "secret": false,
+      "limitless": {
+        "id": 29817,
+        "url": "https://limitlesstcg.com/cards/N1/100",
+        "deckCode": "N1 100",
+        "printGroup": [
+          "N1 100"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/100.png",
+        "large": "https://images.pokemontcg.io/neo1/100_hires.png"
+      }
+    },
+    {
+      "number": "101/111",
+      "localId": "101",
+      "name": "Moo-Moo Milk",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Choose 1 of your Pokémon. Flip 2 coins. Remove 2 damage counters times the number of heads from that Pokémon. If the Pokémon has fewer damage counters than that, remove all of them."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "secret": false,
+      "limitless": {
+        "id": 29818,
+        "url": "https://limitlesstcg.com/cards/N1/101",
+        "deckCode": "N1 101",
+        "printGroup": [
+          "E1 155",
+          "N1 101"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/101.png",
+        "large": "https://images.pokemontcg.io/neo1/101_hires.png"
+      }
+    },
+    {
+      "number": "102/111",
+      "localId": "102",
+      "name": "Pokémon March",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Your opponent may search his or her deck for 1 Basic Pokémon card and put it onto his or her Bench. Then, you may search your deck for 1 Basic Pokémon card and put it onto your Bench. Then, each player shuffles his or her deck. (A player can't do any of this if his or her Bench is full.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "secret": false,
+      "limitless": {
+        "id": 29819,
+        "url": "https://limitlesstcg.com/cards/N1/102",
+        "deckCode": "N1 102",
+        "printGroup": [
+          "N1 102"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/102.png",
+        "large": "https://images.pokemontcg.io/neo1/102_hires.png"
+      }
+    },
+    {
+      "number": "103/111",
+      "localId": "103",
+      "name": "Super Rod",
+      "supertype": "Trainer",
+      "subtypes": [],
+      "rules": [
+        "Flip a coin. If heads, put an Evolution card from your discard pile, if any, into your hand. If tails, put a Basic Pokémon card from your discard pile, if any, into your hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30078,
+        "url": "https://limitlesstcg.com/cards/N1/103",
+        "deckCode": "N1 103",
+        "printGroup": [
+          "BKT 149",
+          "DRV 20",
+          "N1 103",
+          "NVI 95",
+          "PAL 188",
+          "PAL 276"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/103.png",
+        "large": "https://images.pokemontcg.io/neo1/103_hires.png"
+      }
+    },
+    {
+      "number": "104/111",
+      "localId": "104",
+      "name": "Darkness Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "If the Pokémon Darkness Energy is attached to damages the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon. At the end of every turn, put 1 damage counter on the Pokémon Darkness Energy is attached to, unless it's Darkness or has Dark in its name.\nDarkness Energy provides Darkness Energy. (Doesn't count as a basic Energy card.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Milky Isobe",
+      "secret": false,
+      "limitless": {
+        "id": 30079,
+        "url": "https://limitlesstcg.com/cards/N1/104",
+        "deckCode": "N1 104",
+        "printGroup": [
+          "CL 86",
+          "DS 103",
+          "E1 158",
+          "E2 142",
+          "EM 86",
+          "HP 94",
+          "MD 93",
+          "MT 119",
+          "N1 104",
+          "PK 87",
+          "RR 99",
+          "RS 93",
+          "SW 129",
+          "UD 79",
+          "UF 96"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/104.png",
+        "large": "https://images.pokemontcg.io/neo1/104_hires.png"
+      }
+    },
+    {
+      "number": "105/111",
+      "localId": "105",
+      "name": "Recycle Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "Recycle Energy provides Colorless Energy. (Doesn't count as a basic Energy card.)",
+        "If this card is put into your discard pile from play, return it to your hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Hideki Kazama",
+      "secret": false,
+      "limitless": {
+        "id": 30080,
+        "url": "https://limitlesstcg.com/cards/N1/105",
+        "deckCode": "N1 105",
+        "printGroup": [
+          "N1 105",
+          "UNM 212",
+          "UNM 257"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/105.png",
+        "large": "https://images.pokemontcg.io/neo1/105_hires.png"
+      }
+    },
+    {
+      "number": "106/111",
+      "localId": "106",
+      "name": "Fighting Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30081,
+        "url": "https://limitlesstcg.com/cards/N1/106",
+        "deckCode": "N1 106",
+        "printGroup": [
+          "BLW 110",
+          "BRS F",
+          "BS 97",
+          "BS2 125",
+          "CL 93",
+          "CRE 233",
+          "CRZ 157",
+          "DP 128",
+          "E1 160",
+          "EM 106",
+          "EVO 96",
+          "G1 127",
+          "G2 127",
+          "GEN 80",
+          "GRI 169",
+          "HP 110",
+          "HS 120",
+          "MEE 6",
+          "N1 106",
+          "PK 108",
+          "RS 105",
+          "SSH F",
+          "SUM F",
+          "SVE 6",
+          "SVE 14",
+          "SVE 22",
+          "SVI 258",
+          "TEU F",
+          "XY 137"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/106.png",
+        "large": "https://images.pokemontcg.io/neo1/106_hires.png"
+      }
+    },
+    {
+      "number": "107/111",
+      "localId": "107",
+      "name": "Fire Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30082,
+        "url": "https://limitlesstcg.com/cards/N1/107",
+        "deckCode": "N1 107",
+        "printGroup": [
+          "BLW 106",
+          "BRS R",
+          "BS 98",
+          "BS2 126",
+          "BUS 167",
+          "CL 89",
+          "CRZ 153",
+          "DP 124",
+          "E1 161",
+          "EM 102",
+          "EVO 92",
+          "FST 284",
+          "G1 128",
+          "G2 128",
+          "GEN 76",
+          "HP 106",
+          "HS 116",
+          "MEE 2",
+          "N1 107",
+          "OBF 230",
+          "PK 104",
+          "RS 108",
+          "SSH R",
+          "SUM R",
+          "SVE 2",
+          "SVE 10",
+          "SVE 18",
+          "TEU R",
+          "XY 133"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/107.png",
+        "large": "https://images.pokemontcg.io/neo1/107_hires.png"
+      }
+    },
+    {
+      "number": "108/111",
+      "localId": "108",
+      "name": "Grass Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30083,
+        "url": "https://limitlesstcg.com/cards/N1/108",
+        "deckCode": "N1 108",
+        "printGroup": [
+          "BLW 105",
+          "BRS G",
+          "BS 99",
+          "BS2 127",
+          "CL 88",
+          "CRZ 152",
+          "DP 123",
+          "E1 162",
+          "EM 101",
+          "EVO 91",
+          "FST 283",
+          "G1 129",
+          "G2 129",
+          "GEN 75",
+          "GRI 167",
+          "HP 105",
+          "HS 115",
+          "MEE 1",
+          "N1 108",
+          "PAL 278",
+          "PK 103",
+          "RS 104",
+          "SSH G",
+          "SUM G",
+          "SVE 1",
+          "SVE 9",
+          "SVE 17",
+          "TEU G",
+          "XY 132"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/108.png",
+        "large": "https://images.pokemontcg.io/neo1/108_hires.png"
+      }
+    },
+    {
+      "number": "109/111",
+      "localId": "109",
+      "name": "Lightning Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30084,
+        "url": "https://limitlesstcg.com/cards/N1/109",
+        "deckCode": "N1 109",
+        "printGroup": [
+          "BLW 108",
+          "BRS L",
+          "BS 100",
+          "BS2 128",
+          "CL 91",
+          "CRZ 155",
+          "DP 126",
+          "E1 163",
+          "EM 104",
+          "EVO 94",
+          "EVS 235",
+          "G1 130",
+          "G2 130",
+          "GEN 78",
+          "GRI 168",
+          "HP 108",
+          "HS 118",
+          "MEE 4",
+          "N1 109",
+          "PK 106",
+          "RS 109",
+          "SSH L",
+          "SUM L",
+          "SVE 4",
+          "SVE 12",
+          "SVE 20",
+          "SVI 257",
+          "TEU L",
+          "XY 135"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/109.png",
+        "large": "https://images.pokemontcg.io/neo1/109_hires.png"
+      }
+    },
+    {
+      "number": "110/111",
+      "localId": "110",
+      "name": "Psychic Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30085,
+        "url": "https://limitlesstcg.com/cards/N1/110",
+        "deckCode": "N1 110",
+        "printGroup": [
+          "BLW 109",
+          "BRS P",
+          "BS 101",
+          "BS2 129",
+          "CL 92",
+          "CRE 232",
+          "CRZ 156",
+          "DP 127",
+          "E1 164",
+          "EM 105",
+          "EVO 95",
+          "G1 131",
+          "G2 131",
+          "GEN 79",
+          "HP 109",
+          "HS 119",
+          "MEE 5",
+          "MEW 207",
+          "N1 110",
+          "PK 107",
+          "RS 107",
+          "SSH P",
+          "SUM 162",
+          "SUM P",
+          "SVE 5",
+          "SVE 13",
+          "SVE 21",
+          "TEU P",
+          "XY 136"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/110.png",
+        "large": "https://images.pokemontcg.io/neo1/110_hires.png"
+      }
+    },
+    {
+      "number": "111/111",
+      "localId": "111",
+      "name": "Water Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Basic"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "None",
+      "artist": "Keiji Kinebuchi",
+      "secret": false,
+      "limitless": {
+        "id": 30086,
+        "url": "https://limitlesstcg.com/cards/N1/111",
+        "deckCode": "N1 111",
+        "printGroup": [
+          "BLW 107",
+          "BRS W",
+          "BS 102",
+          "BS2 130",
+          "CIN 124",
+          "CL 90",
+          "CRE 231",
+          "CRZ 154",
+          "DP 125",
+          "E1 165",
+          "EM 103",
+          "EVO 93",
+          "G1 132",
+          "G2 132",
+          "GEN 77",
+          "HP 107",
+          "HS 117",
+          "MEE 3",
+          "N1 111",
+          "PAL 279",
+          "PK 105",
+          "RS 106",
+          "SSH W",
+          "SUM W",
+          "SVE 3",
+          "SVE 11",
+          "SVE 19",
+          "TEU W",
+          "XY 134"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/111.png",
+        "large": "https://images.pokemontcg.io/neo1/111_hires.png"
+      }
+    }
+  ]
+}
