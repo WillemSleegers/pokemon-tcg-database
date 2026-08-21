@@ -2095,3 +2095,13 @@ confirmed against Beedrill 1/112; added `data/no-pokedex/RG.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `RG.json`
 (14 cards).
+
+## POP Series 1 (`pop1` → `P1`)
+
+Twenty-sixth stop, opening the POP promo series. Limitless code `P1`
+confirmed against `limitlesstcg.com/cards/P1` (17 cards, 1 September 2004)
+before starting. `fetch-set.mjs pop1 P1` ran clean. Same EX-era
+no-Pokédex template, confirmed against Blaziken 1/17; added
+`data/no-pokedex/P1.json` as `["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
