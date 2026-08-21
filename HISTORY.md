@@ -2116,3 +2116,14 @@ confirmed against Azumarill 1/109; added `data/no-pokedex/TRR.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `TRR.json`
 (4 cards).
+
+## EX Deoxys (`ex8` → `DX`)
+
+Twenty-eighth stop. Limitless code `DX` confirmed against
+`limitlesstcg.com/cards/DX` (108 cards, 14 February 2005) before starting.
+`fetch-set.mjs ex8 DX` ran clean. Same EX-era no-Pokédex template,
+confirmed against Altaria 1/107; added `data/no-pokedex/DX.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `DX.json`
+(8 cards).
