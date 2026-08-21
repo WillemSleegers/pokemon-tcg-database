@@ -2344,3 +2344,20 @@ issues than most.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P7.json`
 (14 cards).
+
+## POP Series 8 (`pop8` → `P8`)
+
+Forty-fifth stop. Limitless code `P8` confirmed against
+`limitlesstcg.com/cards/P8` (17 cards, 1 September 2008) before starting.
+`fetch-set.mjs pop8 P8` ran clean — Pokédex and flavor text both fully
+covered automatically.
+
+`check-flavor-text.mjs` flagged 2/14: Luxray 3/17's mismatch is just an
+en-dash-vs-double-hyphen transcription difference against the matching
+Pearl candidate, not a card error. Probopass 4/17 is a genuine upstream
+typo — pokemon-tcg-data read "from all **cover**" where the card prints
+"from all **over**"; confirmed against the card image and fixed directly
+in `data/sets/P8.json`.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P8.json`
+(6 cards).
