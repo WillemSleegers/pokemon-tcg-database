@@ -63,6 +63,10 @@ export function speciesName(cardName) {
     // Bulbapedia page, same category as regional/appliance/mask forms
     // above. Found while adding Rising Rivals (pl2).
     .replace(/\s+(East|West)\s+Sea$/, "")
+    // Wormadam/Burmy's Plant/Sandy/Trash Cloak forms share the base
+    // species' Bulbapedia page too, same category. Found while adding
+    // Arceus (pl4).
+    .replace(/\s+(Plant|Sandy|Trash)\s+Cloak$/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 
