@@ -2034,3 +2034,14 @@ Ruby & Sapphire, confirmed against Armaldo 1/100; added
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `SS.json`
 (13 cards).
+
+## EX Dragon (`ex3` → `DR`)
+
+Twentieth stop. Limitless code `DR` confirmed against
+`limitlesstcg.com/cards/DR` (100 cards, 24 November 2003) before starting.
+`fetch-set.mjs ex3 DR` ran clean. Same EX-era no-Pokédex template,
+confirmed against Absol 1/97; added `data/no-pokedex/DR.json` as `["*"]`.
+Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `DR.json`
+(4 cards).
