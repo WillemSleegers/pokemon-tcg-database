@@ -2168,3 +2168,14 @@ confirmed against Ampharos 1/115; added `data/no-pokedex/UF.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `UF.json`
 (16 cards).
+
+## POP Series 2 (`pop2` → `P2`)
+
+Thirty-first stop. Limitless code `P2` confirmed against
+`limitlesstcg.com/cards/P2` (17 cards, 1 August 2005) before starting.
+`fetch-set.mjs pop2 P2` ran clean. Same EX-era no-Pokédex template,
+confirmed against Entei 1/17; added `data/no-pokedex/P2.json` as `["*"]`.
+Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P2.json`
+(2 cards).

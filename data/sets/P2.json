@@ -1,0 +1,941 @@
+{
+  "set": {
+    "code": "P2",
+    "ptcgDataId": "pop2",
+    "name": "POP Series 2",
+    "series": "POP",
+    "printedTotal": 17,
+    "secretTotal": 0,
+    "total": 17,
+    "releaseDate": "2005-08-01",
+    "copyright": "©2005 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/pop2/symbol.png",
+      "logo": "https://images.pokemontcg.io/pop2/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/17",
+      "localId": "1",
+      "name": "Entei",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Stomp",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage."
+        },
+        {
+          "name": "Fire Spin",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Discard 2 Basic Energy cards attached to Entei or this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "limitless": {
+        "id": 32496,
+        "url": "https://limitlesstcg.com/cards/P2/1",
+        "deckCode": "P2 1",
+        "printGroup": [
+          "P2 1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/1.png",
+        "large": "https://images.pokemontcg.io/pop2/1_hires.png"
+      }
+    },
+    {
+      "number": "02/17",
+      "localId": "2",
+      "name": "Pidgeot",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Pidgeotto",
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Beating Wings",
+          "text": "Once during your turn (before your attack), if Pidgeot is your Active Pokémon, you may shuffle 1 of your Benched Pokémon and all cards attached to it into your deck. This power can't be used if Pidgeot is affected by a Special Condition.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sharp Beak",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 32640,
+        "url": "https://limitlesstcg.com/cards/P2/2",
+        "deckCode": "P2 2",
+        "printGroup": [
+          "E1 23",
+          "E1 59",
+          "P2 2"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/2.png",
+        "large": "https://images.pokemontcg.io/pop2/2_hires.png"
+      }
+    },
+    {
+      "number": "03/17",
+      "localId": "3",
+      "name": "Raikou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Roar",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any."
+        },
+        {
+          "name": "Thunder",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Flip a coin. If tails, Raikou does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "limitless": {
+        "id": 32497,
+        "url": "https://limitlesstcg.com/cards/P2/3",
+        "deckCode": "P2 3",
+        "printGroup": [
+          "P2 3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/3.png",
+        "large": "https://images.pokemontcg.io/pop2/3_hires.png"
+      }
+    },
+    {
+      "number": "04/17",
+      "localId": "4",
+      "name": "Suicune",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Mirror Coat",
+          "text": "If Suicune is Burned or Poisoned by an opponent's attack (even if Suicune is Knocked Out), the Attacking Pokémon is now affected by the same Special Conditions (1 if there is only 1).",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bubblebeam",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "limitless": {
+        "id": 32498,
+        "url": "https://limitlesstcg.com/cards/P2/4",
+        "deckCode": "P2 4",
+        "printGroup": [
+          "P2 4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/4.png",
+        "large": "https://images.pokemontcg.io/pop2/4_hires.png"
+      }
+    },
+    {
+      "number": "05/17",
+      "localId": "5",
+      "name": "Tauros",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Rage",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Tauros."
+        },
+        {
+          "name": "Take Down",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "Tauros does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "limitless": {
+        "id": 32499,
+        "url": "https://limitlesstcg.com/cards/P2/5",
+        "deckCode": "P2 5",
+        "printGroup": [
+          "P2 5"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/5.png",
+        "large": "https://images.pokemontcg.io/pop2/5_hires.png"
+      }
+    },
+    {
+      "number": "06/17",
+      "localId": "6",
+      "name": "Venusaur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Ivysaur",
+      "types": [
+        "Grass"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Wide Solarbeam",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20",
+          "text": "Does 20 damage to 2 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Hard Plant",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80",
+          "text": "Venusaur can't use Hard Plant during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32500,
+        "url": "https://limitlesstcg.com/cards/P2/6",
+        "deckCode": "P2 6",
+        "printGroup": [
+          "P2 6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/6.png",
+        "large": "https://images.pokemontcg.io/pop2/6_hires.png"
+      }
+    },
+    {
+      "number": "07/17",
+      "localId": "7",
+      "name": "Ivysaur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Bulbasaur",
+      "evolvesTo": [
+        "Venusaur"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Poison Seed",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Poisoned."
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 32641,
+        "url": "https://limitlesstcg.com/cards/P2/7",
+        "deckCode": "P2 7",
+        "printGroup": [
+          "P2 7",
+          "RG 35"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/7.png",
+        "large": "https://images.pokemontcg.io/pop2/7_hires.png"
+      }
+    },
+    {
+      "number": "08/17",
+      "localId": "8",
+      "name": "Mr. Briney's Compassion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
+        "Choose 1 of your Pokémon in play (excluding Pokémon-ex). Return that Pokémon and all cards attached to it to your hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 32642,
+        "url": "https://limitlesstcg.com/cards/P2/8",
+        "deckCode": "P2 8",
+        "printGroup": [
+          "DR 87",
+          "P2 8"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/8.png",
+        "large": "https://images.pokemontcg.io/pop2/8_hires.png"
+      }
+    },
+    {
+      "number": "09/17",
+      "localId": "9",
+      "name": "Multi Technical Machine 01",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Technical Machine"
+      ],
+      "rules": [
+        "Attach this card to 1 of your Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Multi Technical Machine 01."
+      ],
+      "attacks": [
+        {
+          "name": "Paralyzing Gaze",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "\"Big Mama\" Tagawa",
+      "secret": false,
+      "limitless": {
+        "id": 32643,
+        "url": "https://limitlesstcg.com/cards/P2/9",
+        "deckCode": "P2 9",
+        "printGroup": [
+          "E1 144",
+          "P2 9"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/9.png",
+        "large": "https://images.pokemontcg.io/pop2/9_hires.png"
+      }
+    },
+    {
+      "number": "10/17",
+      "localId": "10",
+      "name": "Pokémon Park",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card.",
+        "Once during each player's turn, when that player attaches an Energy card from his or her hand to 1 of his or her Benched Pokémon, he or she removes 1 damage counter from that Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kazuo Yazawa",
+      "secret": false,
+      "limitless": {
+        "id": 32644,
+        "url": "https://limitlesstcg.com/cards/P2/10",
+        "deckCode": "P2 10",
+        "printGroup": [
+          "E2 131",
+          "P2 10"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/10.png",
+        "large": "https://images.pokemontcg.io/pop2/10_hires.png"
+      }
+    },
+    {
+      "number": "11/17",
+      "localId": "11",
+      "name": "TV Reporter",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
+        "Draw 3 cards. Then discard any 1 card from your hand."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 32645,
+        "url": "https://limitlesstcg.com/cards/P2/11",
+        "deckCode": "P2 11",
+        "printGroup": [
+          "CES 149",
+          "CES 167",
+          "DF 82",
+          "DR 88",
+          "P2 11"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/11.png",
+        "large": "https://images.pokemontcg.io/pop2/11_hires.png"
+      }
+    },
+    {
+      "number": "12/17",
+      "localId": "12",
+      "name": "Bulbasaur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Ivysaur"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Razor Leaf",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "secret": false,
+      "limitless": {
+        "id": 32501,
+        "url": "https://limitlesstcg.com/cards/P2/12",
+        "deckCode": "P2 12",
+        "printGroup": [
+          "P2 12"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/12.png",
+        "large": "https://images.pokemontcg.io/pop2/12_hires.png"
+      }
+    },
+    {
+      "number": "13/17",
+      "localId": "13",
+      "name": "Cacnea",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cacturne"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Sand Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 32502,
+        "url": "https://limitlesstcg.com/cards/P2/13",
+        "deckCode": "P2 13",
+        "printGroup": [
+          "P2 13"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/13.png",
+        "large": "https://images.pokemontcg.io/pop2/13_hires.png"
+      }
+    },
+    {
+      "number": "14/17",
+      "localId": "14",
+      "name": "Luvdisc",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Paralyzing Kiss",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If there are 2 Defending Pokémon in play, choose 1 of the Defending Pokémon. That Pokémon is now Paralyzed. (If there is only 1 Defending Pokémon, this attack does nothing.)"
+        },
+        {
+          "name": "Fast Stream",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Move 1 Energy card attached to the Defending Pokémon to the other Defending Pokémon. (Ignore this effect if your opponent has only 1 Defending Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "secret": false,
+      "limitless": {
+        "id": 32503,
+        "url": "https://limitlesstcg.com/cards/P2/14",
+        "deckCode": "P2 14",
+        "printGroup": [
+          "P2 14"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/14.png",
+        "large": "https://images.pokemontcg.io/pop2/14_hires.png"
+      }
+    },
+    {
+      "number": "15/17",
+      "localId": "15",
+      "name": "Phanpy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Donphan"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Double Spin",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Body Slam",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Tomokazu Komiya",
+      "secret": false,
+      "limitless": {
+        "id": 32504,
+        "url": "https://limitlesstcg.com/cards/P2/15",
+        "deckCode": "P2 15",
+        "printGroup": [
+          "P2 15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/15.png",
+        "large": "https://images.pokemontcg.io/pop2/15_hires.png"
+      }
+    },
+    {
+      "number": "16/17",
+      "localId": "16",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Thunder Jolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If tails, Pikachu does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yuka Morii",
+      "secret": false,
+      "limitless": {
+        "id": 32646,
+        "url": "https://limitlesstcg.com/cards/P2/16",
+        "deckCode": "P2 16",
+        "printGroup": [
+          "BS 58",
+          "BS2 87",
+          "P2 16",
+          "RR 112"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/16.png",
+        "large": "https://images.pokemontcg.io/pop2/16_hires.png"
+      }
+    },
+    {
+      "number": "17/17",
+      "localId": "17",
+      "name": "Celebi ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Time Reversal",
+          "text": "Once during your turn, when you put Celebi ex from your hand onto your Bench, you may search your discard pile for a card, show it to your opponent, and put it on top of your deck.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Psychic Shield",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Prevent all effects of attacks, including damage, done to Celebi ex by your opponent's Pokémon-ex during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "limitless": {
+        "id": 32505,
+        "url": "https://limitlesstcg.com/cards/P2/17",
+        "deckCode": "P2 17",
+        "printGroup": [
+          "P2 17"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop2/17.png",
+        "large": "https://images.pokemontcg.io/pop2/17_hires.png"
+      }
+    }
+  ]
+}
