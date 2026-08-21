@@ -2073,3 +2073,14 @@ for both, genuine.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op for both —
 expected, since every card's `limitless` is `null`.
+
+## EX Hidden Legends (`ex5` → `HL`)
+
+Twenty-fourth stop. Limitless code `HL` confirmed against
+`limitlesstcg.com/cards/HL` (102 cards, 14 June 2004) before starting.
+`fetch-set.mjs ex5 HL` ran clean. Same EX-era no-Pokédex template,
+confirmed against Banette 1/101; added `data/no-pokedex/HL.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `HL.json`
+(4 cards).
