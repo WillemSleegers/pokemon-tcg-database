@@ -2298,3 +2298,30 @@ despite this releasing after `ex16` — confirmed against Ho-Oh 1/17; added
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P5.json`
 (6 cards).
+
+## POP Series 6 (`pop6` → `P6`)
+
+Forty-third stop. Limitless code `P6` confirmed against
+`limitlesstcg.com/cards/P6` (17 cards, 1 September 2007) before starting.
+`fetch-set.mjs pop6 P6` ran clean. **Template changed**: unlike every EX-era
+set since Ruby & Sapphire, this one (released after Diamond & Pearl's own
+debut) has the Pokédex box and flavor text back, and both worked
+automatically via the normal subtype-based logic for 15/17 cards —
+confirmed against Bastiodon 1/17.
+
+Two cards (Gible 7/17, Pikachu 9/17) hold an Oran Berry, and this
+template's held-item banner occupies the same space the Pokédex box would
+use — both wrongly had `pokedex` attached despite the card printing neither
+a dex box nor flavor text at all. Confirmed against both card images; added
+`data/no-pokedex/P6.json` for `["7", "9"]`.
+
+`check-flavor-text.mjs` flagged 2/15 covered cards. Buneary 12/17 turned out
+to be a genuine upstream typo, not the usual wording drift — pokemon-tcg-data's
+`flavorText` read "uncoiling **is** rolled ears" where the card clearly prints
+"uncoiling **its** rolled ears"; confirmed against the card image and fixed
+directly in `data/sets/P6.json` (no overlay mechanism covers a flavorText
+correction, same as the HS LEGEND precedent — see CLAUDE.md). Chimchar 14/17's
+mismatch is the ordinary drift pattern, no fix needed.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P6.json`
+(4 cards).

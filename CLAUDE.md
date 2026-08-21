@@ -46,10 +46,14 @@ Guardians, `CG`), and `pop4` (POP Series 4, `P4`) — 39 files. This
 closes out the Neo series and the e-Card era in full, and opens the EX
 era and POP series. `ex15` (EX Dragon Frontiers, `DF`) and `ex16` (EX
 Power Keepers, `PK`) done too — 41 files. This closes out the EX era in
-full. `pop5` (POP Series 5, `P5`) done — 42 files.
+full. `pop5` (POP Series 5, `P5`) done — 42 files. `pop6` (POP Series 6, `P6`)
+done too — 43 files (this one, released after Diamond & Pearl's own
+debut, switched back to a DP-style template with Pokédex/flavor text —
+don't assume the EX-era no-Pokédex rule still applies to `pop7`-`pop9`
+without checking).
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`/`PK`/`P5`
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`/`PK`/`P5`/`P6`
 (the rest of the POP series, and a couple of misc later sets — `ru1`,
 `fut20`). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
