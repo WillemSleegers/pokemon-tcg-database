@@ -1913,3 +1913,32 @@ fixes made.
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `LC.json`
 (42 cards) — expected for an all-reprint set touching cards across nine
 earlier sets.
+
+## Expedition Base Set (`ecard1` → `E1`)
+
+Fourteenth stop, opening the e-Card era. Limitless code `E1` confirmed
+against `limitlesstcg.com/cards/E1` ("15th September 2002", 165 cards) —
+"EX" and "EXP" both 404 first.
+
+Same basic-energy-has-no-rarity gap as every set since `base1` (cards
+160-165); confirmed against Bulbapedia's set-list rarity column (shown as
+"—"), added `data/no-rarity/E1.json`.
+
+**New per-card Pokédex gap, genuinely per-card rather than whole-set or
+subtype-based**: this set's card template only prints the genus/height/
+weight info line for **Rare Holo** cards — every non-Holo Pokémon (any
+rarity) omits it entirely, showing just a bare "ID: B-89-#"-style code under
+a rectangular (non-oval) art frame instead. Caught by comparing Golem 49/165
+and Kingler 50/165's card images against pokemon-tcg-data's attached
+`pokedex` field (both wrongly had one attached). Confirmed the full range —
+localIds 33-136 are exactly the non-Holo-Pokémon block (1-32 Rare Holo, 137+
+Trainers with no `pokedex` to begin with) — added
+`data/no-pokedex/E1.json` listing that whole 33-136 range.
+
+Flavor text: 0/136, confirmed genuine — same as Gym Heroes/Challenge, this
+era's template has no flavor-text slot at all (verified directly against
+Alakazam, Ampharos, Arbok, Golem, and Kingler's card images while
+investigating the Pokédex gap above).
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `E1.json`
+(27 cards).
