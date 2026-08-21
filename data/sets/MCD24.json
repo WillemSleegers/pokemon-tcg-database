@@ -1,0 +1,863 @@
+{
+  "set": {
+    "code": "MCD24",
+    "ptcgDataId": null,
+    "name": "McDonald's Collection 2024",
+    "series": "Other",
+    "printedTotal": 15,
+    "secretTotal": 0,
+    "total": 15,
+    "releaseDate": "2024-12-04",
+    "copyright": "©2024 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": null
+  },
+  "cards": [
+    {
+      "number": "01/15",
+      "localId": "1",
+      "name": "Charizard",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Charmeleon",
+      "types": [
+        "Fire"
+      ],
+      "hp": 170,
+      "abilities": [
+        {
+          "name": "Battle Sense",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and put 1 of them into your hand. Discard the other cards.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Royal Blaze",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "100+",
+          "text": "This attack does 50 more damage for each Leon card in your discard pile."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "D",
+      "rarity": "None",
+      "artist": "Ryuta Fuse",
+      "pokedex": {
+        "number": 6,
+        "genus": "Flame Pokémon",
+        "height": "5'7\"",
+        "weight": "199.5 lbs"
+      },
+      "flavorText": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "02/15",
+      "localId": "2",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Charge",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Basic Lightning Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Pika Punch",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "G",
+      "rarity": "None",
+      "artist": "Naoyo Kimura",
+      "pokedex": {
+        "number": 25,
+        "genus": "Mouse Pokémon",
+        "height": "1'4\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "03/15",
+      "localId": "3",
+      "name": "Miraidon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Sharp Fang",
+          "damage": "30",
+          "text": "",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "name": "Lightning Laser",
+          "damage": "90",
+          "text": "This attack also does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "G",
+      "rarity": "None",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 1008,
+        "genus": "Paradox Pokémon",
+        "height": "11'6\"",
+        "weight": "529.1 lbs"
+      },
+      "flavorText": "Much remains unknown about this creature. It resembles Cyclizar, but it is far more ruthless and powerful.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "04/15",
+      "localId": "4",
+      "name": "Jigglypuff",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Wigglytuff"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Let's All Rollout",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "This attack does 20 damage for each of your Benched Pokémon that has the Let's All Rollout attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Saya Tsuruta",
+      "pokedex": {
+        "number": 39,
+        "genus": "Balloon Pokémon",
+        "height": "1'8\"",
+        "weight": "12.1 lbs"
+      },
+      "flavorText": "The songs they sing are totally different depending on the region they live in. Some even sound like they're shouting!",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "05/15",
+      "localId": "5",
+      "name": "Hatenna",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Hattrem"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Stampede",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Magical Shot",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "D",
+      "rarity": "None",
+      "artist": "Akira Komayama",
+      "pokedex": {
+        "number": 856,
+        "genus": "Calm Pokémon",
+        "height": "1'4\"",
+        "weight": "7.5 lbs"
+      },
+      "flavorText": "Via the protrusion on its head, it senses other creatures' emotions. If you don't have a calm disposition, it will never warm up to you.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "06/15",
+      "localId": "6",
+      "name": "Dragapult",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Drakloak",
+      "types": [
+        "Psychic"
+      ],
+      "hp": 150,
+      "attacks": [
+        {
+          "name": "Dragon Launcher",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard a number of your Benched Dreepy up to the number of your opponent's Pokémon in play. Then, for each Dreepy you discarded in this way, choose 1 of your opponent's Pokémon and do 100 damage to it. You can't choose the same Pokémon more than once. This damage isn't affected by Weakness or Resistance."
+        },
+        {
+          "name": "Spooky Shot",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": "F",
+      "rarity": "None",
+      "artist": "Teeziro",
+      "pokedex": {
+        "number": 887,
+        "genus": "Stealth Pokémon",
+        "height": "9'10\"",
+        "weight": "110.2 lbs"
+      },
+      "flavorText": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "07/15",
+      "localId": "7",
+      "name": "Quagsire",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Wooper",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Beat",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Fickle Impact",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "180",
+          "text": "If you have exactly 2, 4, or 6 Prize cards remaining, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "D",
+      "rarity": "None",
+      "artist": "otumami",
+      "pokedex": {
+        "number": 195,
+        "genus": "Water Fish Pokémon",
+        "height": "4'7\"",
+        "weight": "165.3 lbs"
+      },
+      "flavorText": "It has an easygoing nature. It doesn't care if it bumps its head on boats and boulders while swimming.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "08/15",
+      "localId": "8",
+      "name": "Koraidon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Claw Slash",
+          "damage": "70",
+          "text": "",
+          "convertedEnergyCost": 3
+        },
+        {
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "name": "Rampaging Fang",
+          "damage": "190",
+          "text": "Discard 3 Energy from this Pokémon.",
+          "convertedEnergyCost": 4
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "G",
+      "rarity": "None",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 1007,
+        "genus": "Paradox Pokémon",
+        "height": "8'2\"",
+        "weight": "668.0 lbs"
+      },
+      "flavorText": "This seems to be the Winged King mentioned in an old expedition journal. It was said to have split the land with its bare fists.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "09/15",
+      "localId": "9",
+      "name": "Umbreon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 110,
+      "attacks": [
+        {
+          "name": "Blindside",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 60 damage to 1 of your opponent's Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Moon Mirage",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "Souichirou Gunjima",
+      "pokedex": {
+        "number": 197,
+        "genus": "Moonlight Pokémon",
+        "height": "3'3\"",
+        "weight": "59.5 lbs"
+      },
+      "flavorText": "On the night of a full moon, or when it gets excited, the ring patterns on its body glow yellow.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "10/15",
+      "localId": "10",
+      "name": "Hydreigon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Zweilous",
+      "types": [
+        "Darkness"
+      ],
+      "hp": 180,
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Tri Howl",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and attach any number of Energy cards you find there to your Pokémon in any way you like. Discard the other cards."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "name": "Dark Cutter",
+          "damage": "160",
+          "text": "",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "G",
+      "rarity": "None",
+      "artist": "Teeziro",
+      "pokedex": {
+        "number": 635,
+        "genus": "Brutal Pokémon",
+        "height": "5'11\"",
+        "weight": "352.7 lbs"
+      },
+      "flavorText": "Only the central head has a brain. It is very intelligent, but it thinks only of destruction.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "11/15",
+      "localId": "11",
+      "name": "Roaring Moon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Ancient"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 140,
+      "attacks": [
+        {
+          "name": "Vengeance Fletching",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70+",
+          "text": "This attack does 10 more damage for each Ancient card in your discard pile."
+        },
+        {
+          "name": "Speed Wing",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "None",
+      "artist": "hncl",
+      "pokedex": {
+        "number": 1005,
+        "genus": "Paradox Pokémon",
+        "height": "6'7\"",
+        "weight": "837.8 lbs"
+      },
+      "flavorText": "It is possible that this is the creature listed as Roaring Moon in an expedition journal that still holds many mysteries.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "12/15",
+      "localId": "12",
+      "name": "Dragonite",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Dragonair",
+      "types": [
+        "Dragon"
+      ],
+      "hp": 180,
+      "abilities": [
+        {
+          "name": "Jet Cruise",
+          "text": "Your Pokémon in play have no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dragon Pulse",
+          "cost": [
+            "Water",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "180",
+          "text": "Discard the top 2 cards of your deck."
+        }
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "retreatCost": 3,
+      "regulationMark": "G",
+      "rarity": "None",
+      "artist": "Sanosuke Sakuma",
+      "pokedex": {
+        "number": 149,
+        "genus": "Dragon Pokémon",
+        "height": "7'3\"",
+        "weight": "463.0 lbs"
+      },
+      "flavorText": "It is said that somewhere in the ocean lies an island where these gather. Only they live there.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "13/15",
+      "localId": "13",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Continuous Steps",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "Flip a coin until you get tails. This attack does 30 damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": "E",
+      "rarity": "None",
+      "artist": "0313",
+      "pokedex": {
+        "number": 133,
+        "genus": "Evolution Pokémon",
+        "height": "1'0\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "14/15",
+      "localId": "14",
+      "name": "Rayquaza",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Jaw Lock",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "During your opponent's next turn, the Defending Pokémon can't retreat."
+        },
+        {
+          "name": "Power Blast",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": "D",
+      "rarity": "None",
+      "artist": "so-taro",
+      "pokedex": {
+        "number": 384,
+        "genus": "Sky High Pokémon",
+        "height": "23'0\"",
+        "weight": "455.3 lbs"
+      },
+      "flavorText": "It flies in the ozone layer, way up high in the sky. Until recently, no one had ever seen it.",
+      "secret": false,
+      "limitless": null
+    },
+    {
+      "number": "15/15",
+      "localId": "15",
+      "name": "Drampa",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Gentle Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Raging Cannon",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "If all of your Benched Pokémon have at least 1 damage counter on them, this attack does 120 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": "H",
+      "rarity": "None",
+      "artist": "Toshinao Aoki",
+      "pokedex": {
+        "number": 780,
+        "genus": "Placid Pokémon",
+        "height": "9'10\"",
+        "weight": "407.9 lbs"
+      },
+      "flavorText": "The mountains it calls home are nearly two miles in height. On rare occasions, it descends to play with the children living in the towns below.",
+      "secret": false,
+      "limitless": null
+    }
+  ]
+}
