@@ -2023,3 +2023,14 @@ Flavor text: 0/79, confirmed genuine from the same two images.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `RS.json`
 (28 cards).
+
+## EX Sandstorm (`ex2` → `SS`)
+
+Nineteenth stop. Limitless code `SS` confirmed against
+`limitlesstcg.com/cards/SS` (100 cards, 18 September 2003) before starting.
+`fetch-set.mjs ex2 SS` ran clean. Same EX-era no-Pokédex-at-all template as
+Ruby & Sapphire, confirmed against Armaldo 1/100; added
+`data/no-pokedex/SS.json` as `["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `SS.json`
+(13 cards).
