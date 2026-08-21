@@ -2045,3 +2045,14 @@ Flavor text 0/0 eligible, genuine.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `DR.json`
 (4 cards).
+
+## EX Team Magma vs Team Aqua (`ex4` → `MA`)
+
+Twenty-first stop. Limitless code `MA` confirmed against
+`limitlesstcg.com/cards/MA` (97 cards, 15 March 2004) before starting.
+`fetch-set.mjs ex4 MA` ran clean. Same EX-era no-Pokédex template,
+confirmed against Team Aqua's Cacturne 1/95; added `data/no-pokedex/MA.json`
+as `["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `MA.json`
+(7 cards).
