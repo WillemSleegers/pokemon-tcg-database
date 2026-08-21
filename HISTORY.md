@@ -1807,3 +1807,33 @@ fixes needed.
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op —
 `N2.json`'s own per-card printGroup data (scraped fresh from Limitless
 during the fetch) was already the up-to-date union.
+
+## Southern Islands (`si1` → `SI`)
+
+Tenth stop, and out of strict numeric order deliberately — `si1` released
+2001/07/31, before Neo Revelation (2001/09/21), so it's next per
+`missing-sets.mjs`'s date ordering even though it sits outside the Neo
+series proper. Limitless code `SI` confirmed against
+`limitlesstcg.com/cards/SI` before starting.
+
+pokemon-tcg-data only carries 18 of this set's 32 physical cards (Bulbapedia's
+full set list has 32; `si1` in pokemon-tcg-data stops at 18) — not a bug, just
+the source's own coverage limit for this small collector-only Japanese-import
+set. `fetch-set.mjs si1 SI` failed on Raticate's missing rarity; confirmed via
+a general-purpose agent against Bulbapedia's Southern Islands page, whose
+Trivia section states outright: "None of the cards have rarity symbols, as
+they are part of a fixed set." Added `data/no-rarity/SI.json` as `["*"]`,
+re-ran clean.
+
+Flavor text: 18/18 already covered by pokemon-tcg-data. `check-flavor-text.mjs`
+flagged all 18/18 against Bulbapedia — unusually total, so read every card
+image directly rather than sampling. Mew (1/18) and Raticate (6/18) both
+confirmed the saved text verbatim against the printed card. This set's flavor
+text consistently doesn't exact-match any single Bulbapedia mainline-game
+candidate, but does read as a close paraphrase of an existing entry each
+time (Raticate's saved text near-matches Yellow's entry, for instance) —
+same minor WotC-era-translation-drift pattern as every other set in this
+backfill, just hitting 100% of the set instead of a handful of cards. No
+fixes made; this is expected, not a gap.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
