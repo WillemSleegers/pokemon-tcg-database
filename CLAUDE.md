@@ -44,12 +44,14 @@ Deoxys, `DX`), `ex9` (EX Emerald, `EM`), and `ex10` (EX Unseen Forces,
 36 files, plus `ex13` (EX Holon Phantoms, `HP`) and `ex14` (EX Crystal
 Guardians, `CG`), and `pop4` (POP Series 4, `P4`) — 39 files. This
 closes out the Neo series and the e-Card era in full, and opens the EX
-era and POP series. `ex15` (EX Dragon Frontiers, `DF`) done too — 40 files.
+era and POP series. `ex15` (EX Dragon Frontiers, `DF`) and `ex16` (EX
+Power Keepers, `PK`) done too — 41 files. This closes out the EX era in
+full.
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`
-(the rest of the EX era, POP series, and a couple of misc later sets —
-`ru1`, `fut20`). Don't trust this list at face value — run
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`/`PK`
+(the rest of the POP series, and a couple of misc later sets — `ru1`,
+`fut20`). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.

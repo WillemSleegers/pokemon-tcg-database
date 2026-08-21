@@ -2271,3 +2271,19 @@ confirmed against Ampharos 1/101; added `data/no-pokedex/DF.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `DF.json`
 (21 cards).
+
+## EX Power Keepers (`ex16` → `PK`)
+
+Forty-first stop, closing out the EX era. Limitless code `PK` confirmed
+against `limitlesstcg.com/cards/PK` (108 cards, 14 February 2007) before
+starting. `fetch-set.mjs ex16 PK` ran clean. Same EX-era no-Pokédex
+template as every set since Ruby & Sapphire, confirmed against Aggron
+1/108; added `data/no-pokedex/PK.json` as `["*"]`. Flavor text 0/0
+eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `PK.json`
+(27 cards).
+
+This closes out the EX era (`RS`, `SS`, `DR`, `MA`, `TK1A`/`TK1B`, `HL`,
+`RG`, `TRR`, `DX`, `EM`, `UF`, `DS`, `LM`, `TK2A`/`TK2B`, `HP`, `CG`, `DF`,
+`PK`).
