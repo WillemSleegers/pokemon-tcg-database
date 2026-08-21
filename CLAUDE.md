@@ -1891,8 +1891,17 @@ image and fixed via the `data/flavor-text/UL.json` overlay; and Lucario,
 confirmed correct as printed — it's Bulbapedia's own HeartGold/SoulSilver
 entry that has a period where the card has a comma, the same kind of
 Bulbapedia-side transcription variance as several prior sets' exceptions.
+`data/sets/UD.json` (HS—Undaunted, Limitless code `UD`, 91 cards) is also
+done — its own two dual-species LEGEND pairs (Kyogre & Groudon,
+Rayquaza & Deoxys; 87–90) hit the exact same bogus-Pokédex-box bug as
+UL's three pairs, fixed the same way via a `data/no-pokedex/UD.json`
+overlay (`["87", "88", "89", "90"]`). Its flavor text also came from
+pokemon-tcg-data directly. Its verification sweep flagged one card,
+Oddish, missing a comma before "it stays" — a real upstream error,
+confirmed against the card image and fixed via the `data/flavor-text/
+UD.json` overlay.
 
-The remaining chronological gap is `hgss3`–`hgss4` and `col1`, plus
+The remaining chronological gap is `hgss4` and `col1`, plus
 everything older than HGSS (Platinum, Diamond & Pearl, and back) and eight
 more McDonald's collections. As always, re-derive the actual next step
 from `sets/en.json` against `data/sets/` rather than trusting this note by
