@@ -2190,3 +2190,14 @@ confirmed against Beedrill 1/113; added `data/no-pokedex/DS.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `DS.json`
 (12 cards).
+
+## EX Legend Maker (`ex12` → `LM`)
+
+Thirty-third stop. Limitless code `LM` confirmed against
+`limitlesstcg.com/cards/LM` (93 cards, 13 February 2006) before starting.
+`fetch-set.mjs ex12 LM` ran clean. Same EX-era no-Pokédex template,
+confirmed against Aerodactyl 1/92; added `data/no-pokedex/LM.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `LM.json`
+(6 cards).
