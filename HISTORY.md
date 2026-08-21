@@ -228,7 +228,7 @@ ellipsis fix, which cleared the card without touching the overlay.
 (Celebrations: Classic Collection, 10 cards) are also complete — the first sets
 using `fetch-set.mjs`'s new `<sequentialPrefix>` argument (see CLAUDE.md "Pipeline"):
 pokemon-tcg-data's `number` field for Classic Collection is each reprinted card's
-*original* print number from its original set decades ago (not unique within the
+_original_ print number from its original set decades ago (not unique within the
 subset — four different cards are all "15" — and unrelated to Limitless's own
 clean `CC1`–`CC25` numbering for it), so `localId` had to be derived from array
 position instead; verified by spot-checking positions 1, 3, and 25 against
@@ -299,7 +299,7 @@ Origin, 132 cards) and `data/sets/LORTG.json` (Lost Origin Trainer Gallery, 11
 cards) are also complete — both sets' flavor text came from pokemon-tcg-data
 directly. LOR's verification sweep flagged one card, Radiant Hisuian Sneasler — a
 real bug in `speciesName()` itself rather than a missing prefix rule: the
-`Radiant`/`Shining` strip ran *after* the regional-form strip in the replacement
+`Radiant`/`Shining` strip ran _after_ the regional-form strip in the replacement
 chain, so "Radiant Hisuian Sneasler" never got a chance to match the
 `^(Paldean|Galarian|Alolan|Hisuian)` regex (anchored to the start of the string) —
 by the time `Radiant` was stripped, that check had already run and failed. Fixed
@@ -416,7 +416,7 @@ switching to the `"<code> <localId>"` fallback instead.
 Sun & Moon's own basic Energy reprints (`SUM`, localId 164–172) turned up
 another `fetch-set.mjs` gap: Limitless pages plain "Grass Energy"/"Fire
 Energy"/etc. cards under a type letter (`SUM/G`, `SUM/R`, ...) instead of
-pokemon-tcg-data's sequential number, but *only* for some sets and *only* for
+pokemon-tcg-data's sequential number, but _only_ for some sets and _only_ for
 the plain-common print — Sun & Moon's own secret-rare full-art Psychic/Metal
 Energy cards kept numeric Limitless pages, and Guardians Rising's basic
 energies turned out to stay fully numeric with no letter page at all (checked
@@ -461,7 +461,7 @@ series. Don't take an era's "done" claim at face value; run the script.
 GEN's 117 fetched cards are its 83 numbered ones plus two alternate arts
 (`28a`, `73a`) and the 32-card **Radiant Collection** subset (`RC1`–`RC32`).
 Unlike every other subset in this database, Radiant Collection needs
-**neither** the third nor the fourth `fetch-set.mjs` argument to *fetch*:
+**neither** the third nor the fourth `fetch-set.mjs` argument to _fetch_:
 pokemon-tcg-data keeps it inside `g1` rather than splitting it out as its own
 set id, and its `RC<n>` numbers are already unique and match Limitless's
 own — plain `node scripts/fetch-set.mjs g1 GEN` pulls in all 117 as one file.
@@ -485,7 +485,7 @@ no reason to expect one — this is a closed, years-old set) would need the
 same by-hand split repeated, not a plain re-run.
 
 Radiant Collection is the second case (after DCR, above) of flavor text that
-isn't Pokédex reuse — but unlike DCR it's *mixed*, which is the part worth
+isn't Pokédex reuse — but unlike DCR it's _mixed_, which is the part worth
 remembering. 24 of its cards carry first-person poetic text written for the
 subset ("Wings and beaks. I like yours, and I like mine, too."), while the
 rest reuse real Pokédex entries and clear the sweep normally. So a partial
@@ -503,7 +503,7 @@ correction is a verbatim match to that entry, so both cards clear the sweep
 now. GEN's images are 733×1024, not DCR's 700×990, so the standard-width box
 works: `top=860 height=150 left=190 width=500`.
 
-Double Crisis is the first *whole set* whose flavor text isn't Pokédex reuse
+Double Crisis is the first _whole set_ whose flavor text isn't Pokédex reuse
 at all: every one of its 20 eligible cards prints in-character Team Magma/Team
 Aqua ops chatter ("Aron, which even devour metal, can eat and destroy enemy
 ships in an instant."), so `check-flavor-text.mjs` flags all 20 and can never
@@ -540,7 +540,7 @@ XYP's fetch also surfaced two real `fetch-set.mjs` bugs, both in
   301-redirects `/cards/XYP/XY67` → `/cards/xyp/67`, so the fetch itself
   didn't error — but the pre-redirect, non-canonical local id (`"XY67"`) was
   what got stored as `resolvedLocalId`/`deckCode`/`limitless.url`, which
-  didn't match the canonical `"67"` that every *other* set's own
+  didn't match the canonical `"67"` that every _other_ set's own
   cross-reference scrape correctly recorded when linking to the same
   physical promo card. Fixed by having `get()` optionally report the
   post-redirect `res.url` (a new `returnUrl` option) and reading the
@@ -554,7 +554,7 @@ XYP's fetch also surfaced two real `fetch-set.mjs` bugs, both in
   letter fallback) that strips a leading `XY` before a trailing
   `<digits><letter>` and retries.
 
-Both bugs together meant the *first* XYP fetch (before either fix) wrote
+Both bugs together meant the _first_ XYP fetch (before either fix) wrote
 non-canonical deckCodes across the board, and running
 `refresh-print-groups.mjs` against that bad data baked phantom `"XYP
 XY<n>"` entries into more than a dozen other already-fetched sets'
@@ -565,7 +565,7 @@ self-healed just by re-fetching XYP correctly and re-running the refresh —
 confirmed by trying exactly that, which left the phantom entries in place
 because they were still sitting as literal strings inside other sets' own
 files. Fixed with a one-off sweep deleting any `printGroup` entry matching
-`/^XYP XY\d+[a-z]?$/` across every set file, *then* re-running
+`/^XYP XY\d+[a-z]?$/` across every set file, _then_ re-running
 `refresh-print-groups.mjs` to confirm the recomputed groups came out clean
 (they did, on the first pass). Worth knowing if a future set's fetch ever
 gets committed with a similar id-normalization bug: re-fetching the broken
@@ -627,7 +627,7 @@ an HP, an ability name and an attack cost and confirming all three were
 caught. Flavor text ended at 136/136 — the reprint sources carried it through
 for 52 of the 53 new cards, and `SVP 185` (Yanma) was transcribed from its
 crop as a verbatim Violet-entry match. The six new cards whose flavor text
-came *from* Bulbapedia (186, 187, 188, 199, 201, 202) were each read against
+came _from_ Bulbapedia (186, 187, 188, 199, 201, 202) were each read against
 their cropped strips rather than trusted to the sweep, which for them would
 be checking a source against itself. The sweep itself ends at 1/136
 unmatched: Pikachu 27, the already-documented starter-trio exception.
@@ -640,7 +640,7 @@ Five fixes came out of it, all in shared code rather than the set file:
 - `parseCardWikitext` reads the infobox's `class=`. Bulbapedia keeps
   `cardname=Kyogre` with `class=SVex` separately, so five ex cards were being
   built named "Kyogre" with no `ex` subtype — which the cross-check caught on
-  the name, but which would *also* have wrongly given them a Pokédex info box.
+  the name, but which would _also_ have wrongly given them a Pokédex info box.
   Unknown `class` values raise rather than being ignored, for that reason.
 - `parseLimitlessCardText` maps Limitless's `0` energy symbol to an empty
   cost array (svp's Cleffa 37, "Grasping Draw"). A latent bug, not a new one —
@@ -675,8 +675,8 @@ WP's 25 flagged cards are almost all WotC-era rewordings of a Red/Blue entry
 1999 Base Set prints; HSP's Porygon prints a doubled period ("any
 environment..") that the card itself really has; DPP's Porygon-Z and Gliscor
 have a dex box but no room left for flavor text; SMP's three Detective
-Pikachu cards, Charizard SM226 and Armored Mewtwo SM228 carry *Mewtwo Strikes
-Back*/*Detective Pikachu* movie text; and SVP's Pikachu #27 describes the
+Pikachu cards, Charizard SM226 and Armored Mewtwo SM228 carry _Mewtwo Strikes
+Back_/_Detective Pikachu_ movie text; and SVP's Pikachu #27 describes the
 Scarlet & Violet starter trio. Sabrina's Abra (WP 19) prints a dex box but no
 flavor text at all.
 
@@ -685,7 +685,7 @@ Five shared-library fixes came out of this backfill:
 - `speciesName()` (both copies) gained the "Special Delivery" and "Light"
   promo prefixes, Necrozma's `Dawn Wings`/`Dusk Mane` fused forms (alongside
   the existing `Ultra`), and the Van Gogh promo's full card name, `Pikachu
-  with Grey Felt Hat` — all the same no-separate-Bulbapedia-page category as
+with Grey Felt Hat` — all the same no-separate-Bulbapedia-page category as
   Heat Rotom et al.
 - `cleanDexEntry` now strips HTML comments. Bulbapedia's Glaceon Ultra Sun
   entry annotates its temperature as `–75<!--U+2013 EN DASH in-game-->`,
@@ -717,7 +717,7 @@ Scarlet & Violet box (`top=905 height=95 left=260 width=473`).
 mis-numbered 13 of its 25 cards: it assumed pokemon-tcg-data's fetched array order
 matched Limitless's own `CC1`–`CC25` numbering, spot-checked on only 3 positions, and
 that assumption broke silently for `CC4`–`CC16` — each of those localIds ended up with
-one card's name/attacks/images (from pokemon-tcg-data) paired with a *different*
+one card's name/attacks/images (from pokemon-tcg-data) paired with a _different_
 card's artist/deckCode/printGroup (scraped from Limitless at that same wrong id), e.g.
 Claydol holding Here Comes Team Rocket!'s printGroup. Caught by the user, not this
 database's own tooling — the field-by-field Limitless cross-check that would normally
@@ -771,11 +771,11 @@ Two things this set turned up that weren't MEP-specific:
   `check-flavor-text.mjs` compares against Bulbapedia — so all 61 "matched" on
   the first pass while Cottonee (`18`) was in fact wrong. Reading the cropped
   strips caught it: the card prints "light and airy—altogether top quality."
-  and Bulbapedia's card page had transcribed the *Scarlet* entry's wording,
+  and Bulbapedia's card page had transcribed the _Scarlet_ entry's wording,
   which has a stray space after the em dash (the same line-wrap artifact
   category as PAR's Bounsweet and PAF's Magmortar). The card actually matches
   Bulbapedia's **Moon** entry verbatim; fixed via the `data/flavor-text/
-  MEP.json` overlay. All 26 exclusives were read against their crops; only
+MEP.json` overlay. All 26 exclusives were read against their crops; only
   this one was wrong.
 
 `data/sets/DRV.json` (Dragon Vault, 21 cards) is also **done** — `dv1`, a
@@ -810,7 +810,7 @@ one in its reprint-selection logic:
   included an Energy card. All 8 cards failed the cross-check with a bogus
   `supertype: "Pokémon"` mismatch. Fixed by detecting `Energy` from the
   card's `typeLine` (`"Energy - Basic Energy"` / `"Energy - Special
-  Energy"` on Limitless) and stripping the redundant trailing `" Energy"`
+Energy"` on Limitless) and stripping the redundant trailing `" Energy"`
   before comparing against this database's own `"Basic"`/`"Special"`
   subtype.
 - **`rarity` needed a value in `defaultRarity` even though these cards print
@@ -822,7 +822,7 @@ one in its reprint-selection logic:
   `buildReprintIndex` resolves a reprint by scanning `data/sets/*.json` in
   directory order and taking the first file whose stored `printGroup`
   already lists this set's card — with no tie-break for a field that
-  changed wording *across* the reprint chain. All 8 MEE cards resolved to
+  changed wording _across_ the reprint chain. All 8 MEE cards resolved to
   `CRZ`/`XY`/`GEN`-era text, whose `name` is the bare pre-Scarlet & Violet
   "Grass Energy" — but the actual MEE print (confirmed against all 8 card
   images directly) reads "**Basic** Grass Energy", the same S&V-era wording
@@ -915,7 +915,7 @@ naming the card otherwise, so a future set with a genuine gap fails loudly
 instead of silently dropping the field again.
 
 **A missing `rarity` field is not always a whole-set case, though — check
-per card before assuming "*".** The same audit also caught 3 individual cards
+per card before assuming "\*".** The same audit also caught 3 individual cards
 in the already-completed `DRV.json` (Dragon Vault) missing `rarity` — Exp.
 Share (18), First Ticket (19), and the Kyurem secret rare (21) — despite the
 other 18 cards in that same 21-card set carrying `Rare Holo` normally. Unlike
@@ -946,7 +946,7 @@ assumption.
 
 - **MEP grew from 88 to 88 known-real cards** — Bulbapedia's set list actually
   runs to 120 (with a large ongoing gap, `111`–`119`, not yet assigned), which
-  is a separate, much bigger backfill than what was tackled here. What *was*
+  is a separate, much bigger backfill than what was tackled here. What _was_
   in scope: `055`–`063`, the "First Partner Illustration Collection Series 3"
   cards (Treecko, Torchic, Mudkip, Chespin, Fennekin, Froakie, Sprigatito,
   Fuecoco, Quaxly) — still absent from Limitless's own MEP page as of this
@@ -968,7 +968,7 @@ assumption.
     (Sprigatito), `192` (Fuecoco) — Pokémon Horizons anime tie-in prints —
     all redirect, to `SVP 101`, `SVI 13`, and `PAL 34` respectively (192 also
     joins `PAL 34`'s existing print group alongside the already-stored `SVP
-    79`, a different Fuecoco promo — three separate physical prints of the
+79`, a different Fuecoco promo — three separate physical prints of the
     same game text is normal here, same as any other reprint chain).
     **Redirecting to the same source doesn't mean identical card, though**:
     191 and 192 turned out to carry unique anime-tie-in flavor text ("Liko's
@@ -1229,7 +1229,7 @@ data bug, not a wording slip: HGSS-era LEGEND cards are split across two
 physical prints — a top half carrying only HP and a "put this card onto
 your Bench with the other half" rule box, and a bottom half carrying the
 attacks, Pokédex info box, and flavor text — but pokemon-tcg-data's
-`flavorText` (and `nationalPokedexNumbers`) are set on *both* halves'
+`flavorText` (and `nationalPokedexNumbers`) are set on _both_ halves'
 entries, not just the bottom one; confirmed against all four card images
 (111/112 for Ho-Oh, 113/114 for Lugia). Fixed by hand directly in
 `data/sets/HS.json` (deleting `pokedex` and `flavorText` from the top-half
@@ -1395,3 +1395,193 @@ fixed via the `data/flavor-text/DP.json` overlay. Unown's four letter-form
 prints (`[A]`–`[D]`) were a `speciesName()` lookup gap of the usual kind —
 no separate Bulbapedia page per letter form, fixed by stripping the
 trailing `[X]` bracket suffix in both `speciesName()` copies.
+
+`data/sets/MT.json` (Mysterious Treasures, Limitless code `MT`, 124 cards)
+is done, 2 of 7. Its flavor text came from pokemon-tcg-data directly, with
+one wrinkle: three cards — Bidoof (73), Buizel (75), Shinx (98) — each
+print a Berry-effect ability (Wacan/Chesto/Rawst Berry) in the space
+normally held by the Pokédex info box, and print no dex box or flavor text
+at all; pokemon-tcg-data's own `pokedex` fields for all three were
+spurious (genus/height/weight attached despite nothing being printed),
+caught by checking the card images directly rather than trusting the
+per-card subtype exclusion list. Added to `data/no-pokedex/MT.json`. The
+verification sweep flagged 8 cards, all real upstream `flavorText`
+transcription errors confirmed against the card images and fixed via the
+`data/flavor-text/MT.json` overlay: Celebi ("is is said" for "it is
+said"), Whiscash ("setting of tremors" for "setting off tremors"), Gabite
+("its scale will heal" for "its scales will heal"), Happiny ("carries and
+egg-shaped rock" for "carries an egg-shaped rock"), Quilava ("fire burn
+more strongly" for "fire burns more strongly"), Vigoroth ("cannot sit
+still even for a moment" for "cannot sit still for even a moment",
+transposed), Teddiursa ("Every sets of paws" for "Every set of paws"), and
+Totodile ("Trainer need to be careful" for "Trainer needs to be careful").
+
+`data/sets/SW.json` (Secret Wonders, Limitless code `SW`, 132 cards) is
+done, 3 of 7. Same wrinkle as MT: three cards — Clefairy (83), Duskull
+(86), Murkrow (95) — print an evolution-item ability (Moon Stone/Reaper
+Cloth/Dusk Stone) in place of the Pokédex box, with pokemon-tcg-data again
+attaching a spurious `pokedex` field to all three; added to
+`data/no-pokedex/SW.json`. The verification sweep flagged 11 cards, all
+real upstream `flavorText` transcription errors confirmed against the
+card images and fixed via the `data/flavor-text/SW.json` overlay:
+Lickilicky ("to close" for "too close"), Salamence ("structure changes"
+for "structure changed"), Absol ("disasters coming" for "coming
+disasters", transposed), Dugtrio ("heads moves" for "heads move"), Jynx
+("It cries" for "Its cries"), Muk ("toxic fluids seeps" for "toxic fluid
+seeps"), Carvanha ("They can swarm" for "They swarm"), Psyduck ("its
+starts exhibiting" for "it starts exhibiting"), Ralts ("thorns on its
+head" for "horns on its head"), Shellder ("swims backwards" for "swims
+backward"), and Venonat ("At nights" for "At night").
+
+`data/sets/GE.json` (Great Encounters, Limitless code `GE`, 106 cards) is
+done, 4 of 7 — no `no-pokedex` cases this time, full flavor-text coverage
+from pokemon-tcg-data. The verification sweep flagged 3 cards, all real
+upstream `flavorText` errors confirmed against the card images and fixed
+via the `data/flavor-text/GE.json` overlay: Hypno ("even if someone just
+woke up" for "even in someone who just woke up"), Floatzel ("floatation
+sac" for "flotation sac" — the same typo DP's own Floatzel print already
+caught, see above), and Cacnea (missing "for" — "survive 30 days" for
+"survive for 30 days").
+
+`data/sets/MD.json` (Majestic Dawn, Limitless code `MD`, 100 cards) is
+done, 5 of 7. Five cards print an ability box in place of the Pokédex box
+— Dialga (4, Adamant Orb), Palkia (11, Lustrous Orb), Chimchar (57, Cheri
+Berry), Piplup (72, Pecha Berry), Turtwig (78, Persim Berry) — with
+pokemon-tcg-data again attaching a spurious `pokedex` field to all five;
+added to `data/no-pokedex/MD.json`. The verification sweep flagged 2
+cards, both real upstream `flavorText` errors confirmed against the card
+images and fixed via the `data/flavor-text/MD.json` overlay: Jolteon
+("furs" for "fur") and Vaporeon (missing "an" — "suitable for aquatic
+life" for "suitable for an aquatic life").
+
+`data/sets/LA.json` (Legends Awakened, Limitless code `LA`, 146 cards) is
+done, 6 of 7 — full flavor-text coverage from pokemon-tcg-data, no
+`no-pokedex` cases. The verification sweep flagged 17 cards. Six were a
+genuine `speciesName()` lookup gap: Deoxys's four Formes ("Normal Forme",
+"Attack Forme", "Defense Forme", "Speed Forme") and Castform's DP-era
+weather-form naming ("Rain Form", "Snow-Cloud Form" — different from the
+"Sunny/Rainy/Snowy Form" wording `speciesName()` already handled) weren't
+being stripped before the Bulbapedia lookup, so those pages returned no
+candidates at all even though the printed text was already correct; fixed
+by adding both patterns to `speciesName()` in both
+`scripts/lib/bulbapedia.mjs` and `scripts/flavor-text-editor/client.js`
+(per CLAUDE.md, always edit both copies). Ten were real upstream
+`flavorText` transcription errors, confirmed against the card images and
+fixed via the `data/flavor-text/LA.json` overlay: Probopass ("call" for
+"called"), Poliwrath (missing "its" — "With extremely tough muscles" for
+"With its extremely tough muscles"), Swellow ("dive" for "dives"), and all
+seven Unown letter-form prints ([!], [J], [R], [U], [V], [W], [Y]) sharing
+the same extra-"an" typo ("Shaped like an ancient writing" for "Shaped
+like ancient writing"). The remaining flagged
+card, Staryu (122), was confirmed correct as printed against the card
+image — its flavor text simply isn't among any of the mainline-game
+entries Bulbapedia's species page lists, a Bulbapedia-side gap rather than
+a card error, left as is.
+
+`data/sets/SF.json` (Stormfront, Limitless code `SF`, 106 cards) is done,
+closing out the Diamond & Pearl era (7 of 7). Different wrinkle from the
+rest of the era: no `no-pokedex` cases, but 38 of the set's ability-heavy
+Rare Holos (Dusknoir, Empoleon, Infernape, and 35 others, plus the three
+Shining Pokémon SH1–SH3) print a Pokédex info box (genus/height/weight)
+but no flavor text at all — the card's Poké-Power/Poké-Body plus 2–3
+attacks fill the entire lower half, leaving no room for a flavor-text
+line. Confirmed against several sample card images rather than assumed
+from the pattern alone; pokemon-tcg-data's own `flavorText` field is
+correctly absent for all 38, so no overlay or `no-pokedex` entry was
+needed — an absent `flavorText` on a card that does have a `pokedex` box
+is a legitimate state, not a gap to fill. The verification sweep flagged
+one real error among the 49 cards that do print flavor text: Pupitar
+(missing "as" — "Its body is hard as bedrock" for "Its body is as hard as
+bedrock"), confirmed against the card image and fixed via the
+`data/flavor-text/SF.json` overlay.
+
+The Diamond & Pearl era (`dp1`–`dp7`) is now **done** — 7 files across all
+7 `sets/en.json` entries the era backfill covers. The remaining gap is
+everything older than Diamond & Pearl (the WotC/e-Card era, and back) and
+seven more McDonald's collections (CLAUDE.md's "eight more" note turned
+out stale — pokemon-tcg-data only has ten `mcd*` entries total, three of
+which, `MCD17`–`MCD19`, were already done).
+
+## McDonald's Collections, remaining seven
+
+`data/sets/MCD11.json`, `MCD12.json`, `MCD14.json`, `MCD15.json`,
+`MCD16.json`, `MCD21.json`, and `MCD22.json` (12, 12, 12, 12, 12, 25, and
+15 cards) are all done, closing out every McDonald's Collection
+pokemon-tcg-data carries (`MCD11`–`MCD19`, `MCD21`, `MCD22` — no 2013 or
+2020 collection exists). Same pipeline as `MCD17`–`MCD19`: Limitless
+doesn't catalogue any of them (confirmed via a 404 and a scan of
+Limitless's own set list, not assumed), so all seven used `"NONE"` as the
+`<limitlessUrlCode>` argument, with `artist` read from pokemon-tcg-data
+and `limitless`/`printGroup` left as the standard no-Limitless
+placeholders. Every one of the seven also hit `fetch-set.mjs`'s
+`rarity`-is-required guard on its first card — confirmed against
+Bulbapedia's own rarity column for each set (all show "—" across every
+card, promotional cards printing no rarity symbol at all) before adding a
+lone `"*"` to each set's `data/no-rarity/<CODE>.json`, rather than
+assuming from the first failure that the whole set matched. All seven had
+full flavor-text coverage from pokemon-tcg-data directly. The verification
+sweep flagged 6 cards total across four sets, all real upstream
+`flavorText` transcription errors confirmed against the card images and
+fixed via each set's `data/flavor-text/<CODE>.json` overlay: MCD12's
+Dwebble ("The Pokémon" for "This Pokémon") and Emolga ("membranes" for
+"membrane"), MCD16's Scraggy ("pulling it skin" for "pulling its skin"),
+and MCD22's Tynamo (missing "a" — "only trickle" for "only a trickle").
+MCD11, MCD14, MCD15, and MCD21 needed no fixes at all.
+
+## McDonald's Collection 2023/2024 — hand-built, no primary source at all
+
+While confirming the seven sets above were complete against Bulbapedia,
+two more turned up that neither pokemon-tcg-data nor Limitless carries at
+all: **McDonald's Collection 2023** ("Match Battle 2023" internally, 15
+cards, Bulbapedia page `McDonald's_Collection_2023_(TCG)`) and
+**McDonald's Collection 2024** ("Dragon Discovery", 15 cards,
+`McDonald's_Collection_2024_(TCG)`). No 2025 collection exists yet — the
+2024 one's release window just runs into mid-2025 depending on region.
+`fetch-set.mjs`'s existing `"NONE"` `<ptcgDataSetId>` mode couldn't apply
+as-is: that mode gets its card list from Limitless's own set page, and
+Limitless has no page for either set (same 404-plus-set-list-scan check as
+every other McDonald's set). Rather than extend the script for a
+one-off, both sets were built by hand directly as JSON, bypassing
+`fetch-set.mjs` entirely.
+
+The key discovery that made this tractable: **every card in both sets is
+a reprint that shares its game text, artist, and regulation mark with an
+existing print already verified in this database** — confirmed by
+following each card's Bulbapedia page, which is a plain `#REDIRECT` to the
+original print's own page (e.g. `Sprigatito (Match Battle 2023 1)` →
+`Sprigatito (Scarlet & Violet 13)`), one card at a time for all 30 cards.
+Cross-checked against `pkmncards.com`'s own per-card listings (indexed
+under set codes `M23`/`M24`) for `regulationMark`, HP, and illustrator on
+every MCD23 card and a sample of MCD24's, all of which matched the
+redirect-target print already in `data/sets/`. MCD23's 15 cards all
+redirect into `SVI`/`PAL`; MCD24's 15 span `VIV`, `MEW`, `SVI`, `FST`,
+`CPA`, `SIT`, `PAL`, `TEF`, and `SP` (`SP` being this database's code for
+`swshp`, the SWSH Black Star Promos set — not obvious from the code
+alone, worth remembering if this pattern recurs). Every reprint's source
+print was confirmed present in `data/sets/` by localId and name before
+being reused.
+
+`data/sets/MCD23.json` and `MCD24.json` copy each source card's
+`supertype`/`subtypes`/`evolvesFrom`/`evolvesTo`/`types`/`hp`/`attacks`/
+`weaknesses`/`resistances`/`retreatCost`/`regulationMark`/`artist`/
+`pokedex`/`flavorText` verbatim, only overriding what's genuinely specific
+to the McDonald's print: `number`/`localId` (this set's own sequential
+numbering), `rarity` ("None", confirmed via Bulbapedia's dash-rarity
+column same as every other McDonald's set), `secret: false`, and
+`limitless: null` (no Limitless page, same as every other McDonald's set).
+Neither set has an `images` field — no official CDN (`images.pokemontcg.io`
+or Limitless's own) hosts scans of either print, and pkmncards.com's own
+image URLs aren't an official source this database otherwise depends on,
+so the field is omitted rather than pointed at a fan-site host.
+`set.images` is `null` for the same reason (no symbol/logo asset exists to
+link). `releaseDate` uses each set's earliest confirmed regional release
+(2023-07-27 Germany/Austria for MCD23, 2024-12-04 France for MCD24) per
+existing precedent (MCD21's stored date is also its earliest region).
+`npm run typecheck` passes on both hand-built files. `refresh-print-groups.mjs`
+is a no-op for both, same as every other McDonald's set — `limitless: null`
+cards are always skipped by that script's union-find, by design.
+
+This closes out every McDonald's Collection that exists in English through
+2024 — 12 files total (`MCD11`, `MCD12`, `MCD14`–`MCD19`, `MCD21`–`MCD24`).
+Worth re-checking Bulbapedia periodically for a McDonald's Collection 2025
+once that promotion actually starts.

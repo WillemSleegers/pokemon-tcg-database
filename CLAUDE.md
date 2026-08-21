@@ -21,14 +21,11 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 - **HGSS era** (`hgss1`–`hgss4`, `col1`) — 5 files.
 - **Platinum era** (`pl1`–`pl4`) — 4 files.
 - **Mega Evolution series** (MEG, PFL, ASC, POR, CRI, PBL) and **Scarlet & Violet** (SVI, SVE, PAL, OBF, MEW, PAR, PAF, TEF, TWM, SFA, SCR, SSP, PRE, JTG, DRI, BLK, WHT) — done, predates this file's HISTORY.md split.
+- **Diamond & Pearl era** (`dp1`–`dp7`) — `DP`, `MT`, `SW`, `GE`, `MD`, `LA`, `SF` — 7 files.
+- **Every McDonald's Collection through 2024** (`MCD11`, `MCD12`, `MCD14`–`MCD19`, `MCD21`–`MCD24`) — 12 files. `MCD23`/`MCD24` are in neither pokemon-tcg-data nor Limitless — see HISTORY.md for how those two were hand-built entirely from Bulbapedia/reprint data instead.
 
-In progress:
-
-- **Diamond & Pearl era** (`dp1`–`dp7`) — `DP` (dp1) done, 1 of 7.
-
-**Remaining gap**: `dp2`–`dp7`, plus everything older than Diamond & Pearl
-(the WotC/e-Card era, and back) and eight more McDonald's collections. Don't
-trust this list at face value — run
+**Remaining gap**: everything older than Diamond & Pearl (the WotC/e-Card
+era, and back). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.
@@ -84,7 +81,7 @@ URL segment (`limitlesstcg.com/cards/<code>`), since one pokemon-tcg-data set ha
 historically always meant one Limitless page. That assumption breaks for a Trainer
 Gallery, Shiny Vault, or Galarian Gallery subset: pokemon-tcg-data splits each of
 those out as their own set id, but Limitless has no separate page for them — their
-cards live at `limitlesstcg.com/cards/<baseCode>/<localId>`, under the *base* set's
+cards live at `limitlesstcg.com/cards/<baseCode>/<localId>`, under the _base_ set's
 page, with the local id's leading zeros stripped (pokemon-tcg-data's `SV001`/`TG01`
 is Limitless's `SV1`/`TG1` — handled by `toLimitlessLocalId()`). Pass the base set's
 code as the third argument in that case: `node scripts/fetch-set.mjs swsh45sv SHFSV
@@ -103,7 +100,7 @@ like that, since the pre-split numbers don't make sense once the subset's cards 
 pokemon-tcg-data's `number` field is normally both unique within a set and the
 same numbering Limitless uses, so `fetch-set.mjs` uses it directly as `localId`.
 That breaks for a throwback-reprint subset like Celebrations: Classic Collection
-(`cel25c`): its `number` is each card's *original* print number from its original
+(`cel25c`): its `number` is each card's _original_ print number from its original
 set, decades earlier — not unique within the subset, and unrelated to Limitless's
 own clean sequential numbering for the subset. Pass a fourth argument to override
 `localId` with a name-matched `${prefix}<n>` instead: `node scripts/fetch-set.mjs
@@ -115,7 +112,7 @@ for this unless a set's `number` field actually collides — check first.
 name against every `${prefix}<n>` page on Limitless — never by array position.**
 An early implementation assumed pokemon-tcg-data's fetched array order matched
 Limitless's own sequential numbering and got it wrong for 13 of Classic Collection's
-25 cards, pairing each card's name/attacks/images with a *different* card's
+25 cards, pairing each card's name/attacks/images with a _different_ card's
 artist/deckCode/printGroup. Fixed by `resolveSequentialLocalIds()`
 (`scripts/fetch-set.mjs`): before assigning any localId, it fetches every
 `${prefix}<n>` page under the set up front, and pairs each pokemon-tcg-data card
@@ -148,7 +145,7 @@ already there —
 node scripts/fetch-set.mjs svp SVP --fill-from-limitless
 ```
 
-— by keeping pokemon-tcg-data primary for every card it *does* have and sending
+— by keeping pokemon-tcg-data primary for every card it _does_ have and sending
 only the ids it's missing down the same reprint/Bulbapedia fallback path a
 `"NONE"` run uses, with the same field-by-field Limitless cross-check. Nothing
 already fetched and verified gets re-derived from a weaker source, and a card in
@@ -168,9 +165,9 @@ Resolving a fill card's game text goes through three tiers before Bulbapedia:
 
 1. **Stored `printGroup`** — some other set in `data/sets/` already names this print.
 2. **The card's own Limitless prints table**, scraped fresh — catches a reprint
-   whose *source* set was fetched before the promo existed and so never recorded it.
+   whose _source_ set was fetched before the promo existed and so never recorded it.
 3. **Bulbapedia's redirect target** — no card page for a print means it's a
-   reprint, and the redirect names the print it reprints. Never *follow* the
+   reprint, and the redirect names the print it reprints. Never _follow_ the
    redirect (that would describe a different print); `fetchCardWikitext` returns
    the redirect target rather than raising on one specifically so this tier can read it.
 
@@ -213,7 +210,7 @@ writes energy symbols as `[G]` where this database spells out `Grass`, all false
 If you touch this mode, re-prove the check still fires (corrupt an HP, an attack
 cost, an ability name; confirm all three are caught) before trusting a clean run.
 
-One thing the Limitless cross-check *can't* settle: which of several Bulbapedia
+One thing the Limitless cross-check _can't_ settle: which of several Bulbapedia
 `{{TCGTrainerText}}` blocks a Trainer print uses, for a card reprinted across eras.
 There the comparison is the resolution — the block whose text matches Limitless's
 is the one this print shows.
@@ -232,8 +229,8 @@ sets needed this and why (`NP`, `WP`, `DPP`, `SP`, `CELCC`, `HS`, `UL`, `UD`, `T
 
 A second case entirely: HGSS-era LEGEND cards are split across two physical
 prints, and pokemon-tcg-data sometimes attaches a Pokédex box/`flavorText` to
-*both* halves even though only the bottom half prints one — or, for dual-species
-LEGEND pairs, to *neither* half despite pokemon-tcg-data/PokeAPI still attaching a
+_both_ halves even though only the bottom half prints one — or, for dual-species
+LEGEND pairs, to _neither_ half despite pokemon-tcg-data/PokeAPI still attaching a
 bogus box keyed off one of the two species. Confirm against the card images before
 trusting either half. `no-pokedex` only suppresses the `pokedex` field — a bogus
 `flavorText` on a card that should have none needs deleting by hand directly in
@@ -455,18 +452,18 @@ actually starts).
 
 Known-good boxes so far (all in the script's 1024-height reference space):
 
-| Era / template | Box |
-|---|---|
-| Mega Evolution | `top=900 height=95 left=220 width=513` |
-| Scarlet & Violet / Sun & Moon onward | `top=905 height=95 left=260 width=473` |
-| WotC/Base-era | `top=910 height=70 left=55 width=625` |
-| Diamond & Pearl | `top=800 height=95 left=45 width=600` |
-| HGSS / Platinum | `top=825 height=100 left=45 width=600` |
-| Black & White (base template) | `top=865 height=120 left=415 width=295` |
-| Black & White (widened, BLW onward) | `top=855 height=130 left=380 width=340` |
+| Era / template                               | Box                                     |
+| -------------------------------------------- | --------------------------------------- |
+| Mega Evolution                               | `top=900 height=95 left=220 width=513`  |
+| Scarlet & Violet / Sun & Moon onward         | `top=905 height=95 left=260 width=473`  |
+| WotC/Base-era                                | `top=910 height=70 left=55 width=625`   |
+| Diamond & Pearl                              | `top=800 height=95 left=45 width=600`   |
+| HGSS / Platinum                              | `top=825 height=100 left=45 width=600`  |
+| Black & White (base template)                | `top=865 height=120 left=415 width=295` |
+| Black & White (widened, BLW onward)          | `top=855 height=130 left=380 width=340` |
 | Dragon Vault (BW holo, non-standard 700×990) | `top=830 height=130 left=200 width=530` |
-| XY (non-standard 700×990, e.g. DCR) | `top=880 height=130 left=190 width=500` |
-| Generations (733×1024) | `top=860 height=150 left=190 width=500` |
+| XY (non-standard 700×990, e.g. DCR)          | `top=880 height=130 left=190 width=500` |
+| Generations (733×1024)                       | `top=860 height=150 left=190 width=500` |
 
 `crop-flavor-text.mjs` scales the box by height alone and skips (rather than aborts)
 images whose box would run off the edge — long promo sets mix in oversized/jumbo scans.
