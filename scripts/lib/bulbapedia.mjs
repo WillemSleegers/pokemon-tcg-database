@@ -53,6 +53,10 @@ export function speciesName(cardName) {
     // The Van Gogh Museum promo (svp 85) names the card after the painting it
     // recreates; its flavor text is still a plain Pikachu Pokédex entry.
     .replace(/^Pikachu\s+with\s+Grey\s+Felt\s+Hat$/, "Pikachu")
+    // The Pokémon Futsal Collection promo (fut20) names each card "<species>
+    // on the Ball"; flavor text is still a plain Pokédex entry for the
+    // species. Found while adding that set.
+    .replace(/\s+on\s+the\s+Ball$/, "")
     .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, "")
     // Fusion forms (Black Kyurem, White Kyurem) share the base Kyurem page,
     // same category as regional/appliance/mask forms above. Found while

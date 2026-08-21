@@ -2392,3 +2392,29 @@ symbol, no dex box, no flavor text). Added `data/no-rarity/RU.json` and
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op —
 expected, since every card's `limitless` is `null`.
+
+## Pokémon Futsal Collection (`fut20` → `FUT`)
+
+Forty-eighth and final stop of this backfill session — a 5-card 2020
+retailer promo tie-in with a Pokémon-branded futsal tournament. Not on
+Limitless at all — fetched with `NONE` as the `<limitlessUrlCode>`.
+Bulbapedia's set-list rarity column shows "—" for all 5 cards; confirmed
+against Pikachu on the Ball 1/5's card image (no rarity symbol, but a
+normal modern-era Pokédex box and flavor text). Added
+`data/no-rarity/FUT.json` as `["*"]`.
+
+Flavor text: 5/5 already covered by pokemon-tcg-data, but
+`check-flavor-text.mjs` initially found zero Bulbapedia candidates for any
+of the 5 cards — a real `speciesName()` gap: each card is named "`<species>`
+on the Ball" (e.g. "Pikachu on the Ball"), and nothing stripped that
+suffix before the Bulbapedia lookup, same category of bug as the Van Gogh
+Museum Pikachu promo. Fixed by adding an `on the Ball` suffix strip to
+`speciesName()` in both `scripts/lib/bulbapedia.mjs` and its
+`scripts/flavor-text-editor/client.js` duplicate. Re-ran clean: all 5/5
+matched.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
+
+This closes out every set `missing-sets.mjs` reported at the start of this
+session — every WotC/e-Card/EX/POP-era and misc set through 2020 is now
+in `data/sets/`.

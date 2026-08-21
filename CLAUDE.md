@@ -24,42 +24,25 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 - **Diamond & Pearl era** (`dp1`–`dp7`) — `DP`, `MT`, `SW`, `GE`, `MD`, `LA`, `SF` — 7 files.
 - **Every McDonald's Collection through 2024** (`MCD11`, `MCD12`, `MCD14`–`MCD19`, `MCD21`–`MCD24`) — 12 files. `MCD23`/`MCD24` are in neither pokemon-tcg-data nor Limitless — see HISTORY.md for how those two were hand-built entirely from Bulbapedia/reprint data instead.
 
-**In progress**: WotC/e-Card era backfill, oldest-first. `base1` (Base Set, `BS`),
-`base2` (Jungle, `JU`), `base3` (Fossil, `FO`), `base4` (Base Set 2, `BS2`),
-`base5` (Team Rocket, `TR`), `gym1` (Gym Heroes, `G1`), `gym2` (Gym Challenge,
-`G2`), `neo1` (Neo Genesis, `N1`), `neo2` (Neo Discovery, `N2`), `si1`
-(Southern Islands, `SI`), `neo3` (Neo Revelation, `N3`), `neo4` (Neo
-Destiny, `N4`), `base6` (Legendary Collection, `LC`), `ecard1`
-(Expedition Base Set, `E1`), `bp` (Best of Game, `BG`), `ecard2`
-(Aquapolis, `E2`), `ecard3` (Skyridge, `E3`), `ex1` (EX Ruby &
-Sapphire, `RS`), `ex2` (EX Sandstorm, `SS`), `ex3` (EX Dragon, `DR`), and
-`ex4` (EX Team Magma vs Team Aqua, `MA`), the two-deck `tk1a`/`tk1b`
-EX Trainer Kit (Latias `TK1A`, Latios `TK1B`), `ex5` (EX Hidden
-Legends, `HL`), `ex6` (EX FireRed & LeafGreen, `RG`), and `pop1` (POP
-Series 1, `P1`), `ex7` (EX Team Rocket Returns, `TRR`), and `ex8` (EX
-Deoxys, `DX`), `ex9` (EX Emerald, `EM`), and `ex10` (EX Unseen Forces,
-`UF`), `pop2` (POP Series 2, `P2`), `ex11` (EX Delta Species, `DS`), and `ex12`
-(EX Legend Maker, `LM`), and the two-deck `tk2a`/`tk2b` EX Trainer Kit 2
-(Plusle `TK2A`, Minun `TK2B`), and `pop3` (POP Series 3, `P3`) done —
-36 files, plus `ex13` (EX Holon Phantoms, `HP`) and `ex14` (EX Crystal
-Guardians, `CG`), and `pop4` (POP Series 4, `P4`) — 39 files. This
-closes out the Neo series and the e-Card era in full, and opens the EX
-era and POP series. `ex15` (EX Dragon Frontiers, `DF`) and `ex16` (EX
-Power Keepers, `PK`) done too — 41 files. This closes out the EX era in
-full. `pop5` (POP Series 5, `P5`) done — 42 files. `pop6` (POP Series 6, `P6`)
-done too — 43 files (this one, released after Diamond & Pearl's own
-debut, switched back to a DP-style template with Pokédex/flavor text —
-don't assume the EX-era no-Pokédex rule still applies to `pop7`-`pop9`
-without checking). `pop7` (POP Series 7, `P7`), `pop8` (POP Series 8,
-`P8`), and `pop9` (POP Series 9, `P9`) done — 46 files. This closes out
-the POP series in full. `ru1` (Pokémon Rumble, `RU`) done too — 47 files.
+- **WotC/e-Card era** (`base1`–`base6`, `gym1`–`gym2`, `neo1`–`neo4`, `si1`,
+  `ecard1`–`ecard3`, `bp`) — `BS`, `JU`, `FO`, `BS2`, `TR`, `G1`, `G2`, `N1`,
+  `N2`, `SI`, `N3`, `N4`, `LC`, `E1`, `E2`, `E3`, `BG` — 17 files.
+- **EX era** (`ex1`–`ex16`, `tk1a`/`tk1b`, `tk2a`/`tk2b`) — `RS`, `SS`, `DR`,
+  `MA`, `TK1A`/`TK1B`, `HL`, `RG`, `TRR`, `DX`, `EM`, `UF`, `DS`, `LM`,
+  `TK2A`/`TK2B`, `HP`, `CG`, `DF`, `PK` — 20 files.
+- **POP series** (`pop1`–`pop9`) — `P1`–`P9` — 9 files. `P1`–`P5` share the
+  EX era's no-Pokédex template; `P6`–`P9` switch back to a DP-style template
+  (Pokédex box and flavor text both present) since they released after
+  Diamond & Pearl's own debut.
+- **Misc later sets found outside any era backfill**: `ru1` (Pokémon
+  Rumble, `RU`), `fut20` (Pokémon Futsal Collection, `FUT`) — 2 files.
 
-**Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`/`PK`/`P5`/`P6`/`P7`/`P8`/`P9`/`RU`
-(one misc later set — `fut20`). Don't trust this list at face value — run
-`node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
-step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
-hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.
+Every set `missing-sets.mjs` can find is now in `data/sets/` — there is no
+known remaining gap as of this writing. Don't trust that at face value: run
+`node scripts/missing-sets.mjs [series]` (see below) to re-derive the
+actual state from `sets/en.json` against `data/sets/` before assuming
+there's nothing left to add; a numeric id walk has silently hidden `dc1`,
+`dv1`, and `g1` in the past across five different backfills.
 
 ## Schema
 
