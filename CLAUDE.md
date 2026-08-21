@@ -1907,10 +1907,21 @@ UD's, fixed the same way via a `data/no-pokedex/TM.json` overlay
 (`["99", "100", "101", "102"]`). Its flavor text also came from
 pokemon-tcg-data directly, and its verification sweep came back clean on
 the first pass.
+`data/sets/CL.json` (Call of Legends, Limitless code `CL`, 106 cards) is
+also done — no LEGEND cards in this one, and its flavor text also came
+from pokemon-tcg-data directly. Its verification sweep flagged one card,
+Ursaring, the exact same "unfailing"/"unfailingly" typo already fixed on
+UL's own Ursaring — a reprint carrying the same uncorrected upstream text
+independently (`flavorText` isn't deduped across pokemon-tcg-data's
+per-set files, same as HIFSV/FLI/SLG/BUS's Malamar/Zorua/Noibat back in
+the Sun & Moon backfill); confirmed against the card image and fixed via
+the `data/flavor-text/CL.json` overlay.
 
-The remaining chronological gap is `col1` alone, plus
-everything older than HGSS (Platinum, Diamond & Pearl, and back) and eight
-more McDonald's collections. As always, re-derive the actual next step
+The HGSS era (`hgss1`–`hgss4` plus `col1`) is now **done** — 5 files
+across all 5 `sets/en.json` entries the era backfill covers, closing the
+gap between the already-done Black & White era and everything older
+(Platinum, Diamond & Pearl, and back), plus eight more McDonald's
+collections still outstanding. As always, re-derive the actual next step
 from `sets/en.json` against `data/sets/` rather than trusting this note by
 the time it's acted on.
 
