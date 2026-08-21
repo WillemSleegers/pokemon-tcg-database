@@ -2238,3 +2238,14 @@ Armaldo 1/110; added `data/no-pokedex/HP.json` as `["*"]`. Flavor text
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `HP.json`
 (16 cards).
+
+## EX Crystal Guardians (`ex14` → `CG`)
+
+Thirty-eighth stop. Limitless code `CG` confirmed against
+`limitlesstcg.com/cards/CG` (100 cards, 30 August 2006) before starting.
+`fetch-set.mjs ex14 CG` ran clean. Same EX-era no-Pokédex template,
+confirmed against Banette 1/100; added `data/no-pokedex/CG.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `CG.json`
+(13 cards).
