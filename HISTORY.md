@@ -1862,3 +1862,33 @@ needed. No further fixes made.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `N3.json`
 (3 cards).
+
+## Neo Destiny (`neo4` → `N4`)
+
+Twelfth stop, closing out the Neo series. Limitless code `N4` confirmed
+against `limitlesstcg.com/cards/N4` (113 cards) before starting.
+`fetch-set.mjs neo4 N4` ran clean — no rarity or Pokédex gaps.
+
+Flavor text: 98/98 already covered by pokemon-tcg-data. `check-flavor-text.mjs`
+flagged all 98/98 against Bulbapedia — read the full diff rather than
+sampling given how total it was. Two populations:
+
+- **26 Dark Pokémon** (Dark Ampharos through Dark Tyranitar) returned *no*
+  Bulbapedia candidates at all, not just a near-miss list — same category as
+  Team Rocket's Dark Pokémon roster (see that set's HISTORY.md entry): custom
+  corrupted-Pokémon lore text with no mainline species page to compare
+  against, since "Dark Ampharos" etc. isn't a real Bulbapedia page. Confirmed
+  against Dark Ampharos 1/105's card image — saved text matches the print
+  verbatim.
+- **The remaining 72** (plain-named Pokémon, the Light-prefixed Pokémon,
+  Unown letters, and the Shining Pokémon) are the same established minor
+  punctuation/wording WotC-vs-Bulbapedia drift pattern as every other set in
+  this backfill — confirmed via the diff text alone.
+
+No fixes made — this is the expected shape for a set built around the
+Dark/Light Pokémon mechanic, not a gap.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `N4.json`
+(1 card).
+
+This closes out the Neo series (`N1`–`N4`).
