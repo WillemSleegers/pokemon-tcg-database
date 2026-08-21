@@ -52,12 +52,11 @@ debut, switched back to a DP-style template with Pokédex/flavor text —
 don't assume the EX-era no-Pokédex rule still applies to `pop7`-`pop9`
 without checking). `pop7` (POP Series 7, `P7`), `pop8` (POP Series 8,
 `P8`), and `pop9` (POP Series 9, `P9`) done — 46 files. This closes out
-the POP series in full.
+the POP series in full. `ru1` (Pokémon Rumble, `RU`) done too — 47 files.
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`/`PK`/`P5`/`P6`/`P7`/`P8`/`P9`
-(a couple of misc later sets — `ru1`, `fut20`). Don't trust this list at
-face value — run
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`/`UF`/`P2`/`DS`/`LM`/`TK2A`/`TK2B`/`P3`/`HP`/`CG`/`P4`/`DF`/`PK`/`P5`/`P6`/`P7`/`P8`/`P9`/`RU`
+(one misc later set — `fut20`). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.

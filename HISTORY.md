@@ -2378,3 +2378,17 @@ small").
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
 
 This closes out the POP series (`P1`-`P9`).
+
+## Pokémon Rumble (`ru1` → `RU`)
+
+Forty-seventh stop, a 16-card tie-in promo set for the Wii game. Not on
+Limitless at all (`RU`, `RUM`, `PR` all 404) — fetched with `NONE` as the
+`<limitlessUrlCode>` (artist from pokemon-tcg-data, `limitless: null` per
+card). Bulbapedia states outright: "None of the cards have Pokédex
+entries, Poké-Powers, Poké-Bodies, or rarity symbols" — confirmed against
+Venusaur 1/16's card image (Pokémon Rumble-branded template, no rarity
+symbol, no dex box, no flavor text). Added `data/no-rarity/RU.json` and
+`data/no-pokedex/RU.json` as `["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op —
+expected, since every card's `limitless` is `null`.
