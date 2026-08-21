@@ -1900,8 +1900,15 @@ pokemon-tcg-data directly. Its verification sweep flagged one card,
 Oddish, missing a comma before "it stays" — a real upstream error,
 confirmed against the card image and fixed via the `data/flavor-text/
 UD.json` overlay.
+`data/sets/TM.json` (HS—Triumphant, Limitless code `TM`, 103 cards) is
+also done — its own two dual-species LEGEND pairs (Darkrai & Cresselia,
+Palkia & Dialga; 99–102) hit the same bogus-Pokédex-box bug as UL's and
+UD's, fixed the same way via a `data/no-pokedex/TM.json` overlay
+(`["99", "100", "101", "102"]`). Its flavor text also came from
+pokemon-tcg-data directly, and its verification sweep came back clean on
+the first pass.
 
-The remaining chronological gap is `hgss4` and `col1`, plus
+The remaining chronological gap is `col1` alone, plus
 everything older than HGSS (Platinum, Diamond & Pearl, and back) and eight
 more McDonald's collections. As always, re-derive the actual next step
 from `sets/en.json` against `data/sets/` rather than trusting this note by
