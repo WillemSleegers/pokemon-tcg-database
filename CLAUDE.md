@@ -28,12 +28,13 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 `base2` (Jungle, `JU`), `base3` (Fossil, `FO`), `base4` (Base Set 2, `BS2`),
 `base5` (Team Rocket, `TR`), `gym1` (Gym Heroes, `G1`), `gym2` (Gym Challenge,
 `G2`), `neo1` (Neo Genesis, `N1`), `neo2` (Neo Discovery, `N2`), `si1`
-(Southern Islands, `SI`), `neo3` (Neo Revelation, `N3`), and `neo4` (Neo
-Destiny, `N4`) done — 12 files. This closes out the Neo series.
+(Southern Islands, `SI`), `neo3` (Neo Revelation, `N3`), `neo4` (Neo
+Destiny, `N4`), and `base6` (Legendary Collection, `LC`) done — 13 files.
+This closes out the Neo series.
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4` (the rest of the
-WotC/e-Card era, and back). Don't trust this list at face value — run
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC` (the rest of
+the WotC/e-Card era, and back). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.

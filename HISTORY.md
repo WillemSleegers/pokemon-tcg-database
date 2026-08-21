@@ -1892,3 +1892,24 @@ Dark/Light Pokémon mechanic, not a gap.
 (1 card).
 
 This closes out the Neo series (`N1`–`N4`).
+
+## Legendary Collection (`base6` → `LC`)
+
+Thirteenth stop. Limitless code `LC` confirmed against
+`limitlesstcg.com/cards/LC` ("24th May 2002", 110 cards) before starting.
+`fetch-set.mjs base6 LC` ran clean — no rarity or Pokédex gaps, despite this
+being an all-reprint set drawing cards from Base Set through Neo Destiny.
+
+Flavor text: 99/99 already covered by pokemon-tcg-data. `check-flavor-text.mjs`
+flagged 53/99 — read the full diff rather than sampling given the size.
+9 of the 53 are Dark Pokémon reprints (Dark Blastoise, Dark Dragonite, Dark
+Persian, Dark Raichu, Dark Slowbro, Dark Vaporeon, Dark Dragonair, Dark
+Wartortle, plus one more) returning no Bulbapedia candidates at all — same
+custom-lore-no-mainline-page category as Team Rocket/Neo Destiny's Dark
+Pokémon. The remaining 44 are the same established minor punctuation/wording
+WotC-vs-Bulbapedia drift pattern as every other set in this backfill. No
+fixes made.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `LC.json`
+(42 cards) — expected for an all-reprint set touching cards across nine
+earlier sets.
