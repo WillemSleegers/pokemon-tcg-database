@@ -410,7 +410,10 @@ function parseLimitlessCardText(html) {
 async function fetchLimitlessExtra(code, localId, cardName) {
   const numericLocalId = toLimitlessLocalId(localId)
   let limitlessLocalId = numericLocalId
-  let result = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { allow404: true, returnUrl: true })
+  let result = await get(`https://limitlesstcg.com/cards/${code}/${encodeURIComponent(limitlessLocalId)}`, {
+    allow404: true,
+    returnUrl: true,
+  })
   if (result === null) {
     // Several Black Star Promos sets keep pokemon-tcg-data's set-code prefix
     // baked into the card number itself ("XY67a" for XY Black Star Promos'
@@ -439,7 +442,7 @@ async function fetchLimitlessExtra(code, localId, cardName) {
     const letter = BASIC_ENERGY_LETTERS[cardName]
     if (!letter) throw new Error(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}: HTTP 404`)
     limitlessLocalId = letter
-    result = await get(`https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`, { returnUrl: true })
+    result = await get(`https://limitlesstcg.com/cards/${code}/${encodeURIComponent(limitlessLocalId)}`, { returnUrl: true })
   }
   const html = result.body
   // The un-suffixed XY Black Star Promos numbers ("XY7") don't 404 — they
@@ -451,7 +454,11 @@ async function fetchLimitlessExtra(code, localId, cardName) {
   // this, its own cards' deckCodes ("XYP XY7") didn't match the "XYP 7"
   // already recorded in CELCC's printGroup for the same physical card.
   const canonicalMatch = result.url.match(/\/cards\/[^/]+\/([^/?#]+)\/?$/)
-  if (canonicalMatch) limitlessLocalId = canonicalMatch[1]
+  // decodeURIComponent because result.url is the actual fetched (already
+  // percent-encoded, e.g. "%3F" for Unown's "?" card) URL — without this,
+  // re-encoding it below for the stored `url` field double-encodes it into
+  // "%253F". Found while adding Unseen Forces (ex10).
+  if (canonicalMatch) limitlessLocalId = decodeURIComponent(canonicalMatch[1])
 
   const idMatch = html.match(/<!-- CARD ID (\d+) -->/)
 
@@ -478,7 +485,7 @@ async function fetchLimitlessExtra(code, localId, cardName) {
     resolvedLocalId: limitlessLocalId,
     limitless: {
       id: Number(idMatch[1]),
-      url: `https://limitlesstcg.com/cards/${code}/${limitlessLocalId}`,
+      url: `https://limitlesstcg.com/cards/${code}/${encodeURIComponent(limitlessLocalId)}`,
       deckCode,
       printGroup: dedupedPrintGroup.length ? dedupedPrintGroup : [deckCode],
     },

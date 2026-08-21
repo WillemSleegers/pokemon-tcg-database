@@ -2138,3 +2138,33 @@ confirmed against Blaziken 1/106; added `data/no-pokedex/EM.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `EM.json`
 (19 cards).
+
+## EX Unseen Forces (`ex10` → `UF`)
+
+Thirtieth stop. Limitless code `UF` confirmed against
+`limitlesstcg.com/cards/UF` (145 cards per pokemon-tcg-data, Limitless
+itself shows 143, 22 August 2005) before starting.
+
+Found and fixed a real tooling bug: this set's 28 Unown letter cards
+include "!" and "?" variants, and Limitless's URL for those needs
+percent-encoding (`/cards/UF/%3F`) — `fetchLimitlessExtra` was building the
+request URL by simple template-literal interpolation with no encoding, so
+the "?" card's request silently became `.../UF/?` (an empty path segment
+plus a query string), landing on the base set page and failing with "no
+CARD ID comment found". Fixed in `scripts/fetch-set.mjs` by wrapping the
+localId in `encodeURIComponent()` at both the initial fetch and the retry
+fetch. That surfaced a second bug: the post-redirect canonical-URL read
+(`canonicalMatch`) picks the localId back out of the already-encoded
+fetched URL, so re-encoding it again for the stored `url` field
+double-encoded it into `%253F` — fixed by `decodeURIComponent()`-ing
+`canonicalMatch`'s capture before it's used anywhere else. Verified both
+Unown `!` and `?` end up with a clean single-encoded `url`
+(`.../UF/%3F`) and a human-readable `deckCode` (`"UF ?"`, not
+`"UF %3F"`).
+
+Same EX-era no-Pokédex template as every set since Ruby & Sapphire,
+confirmed against Ampharos 1/115; added `data/no-pokedex/UF.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `UF.json`
+(16 cards).
