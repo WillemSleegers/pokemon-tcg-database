@@ -2127,3 +2127,14 @@ confirmed against Altaria 1/107; added `data/no-pokedex/DX.json` as
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `DX.json`
 (8 cards).
+
+## EX Emerald (`ex9` → `EM`)
+
+Twenty-ninth stop. Limitless code `EM` confirmed against
+`limitlesstcg.com/cards/EM` (107 cards, 9 May 2005) before starting.
+`fetch-set.mjs ex9 EM` ran clean. Same EX-era no-Pokédex template,
+confirmed against Blaziken 1/106; added `data/no-pokedex/EM.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `EM.json`
+(19 cards).

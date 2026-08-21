@@ -37,11 +37,12 @@ Sapphire, `RS`), `ex2` (EX Sandstorm, `SS`), `ex3` (EX Dragon, `DR`), and
 EX Trainer Kit (Latias `TK1A`, Latios `TK1B`), `ex5` (EX Hidden
 Legends, `HL`), `ex6` (EX FireRed & LeafGreen, `RG`), and `pop1` (POP
 Series 1, `P1`), `ex7` (EX Team Rocket Returns, `TRR`), and `ex8` (EX
-Deoxys, `DX`) done — 28 files. This closes out the Neo series and the
-e-Card era in full, and opens the EX era and POP series.
+Deoxys, `DX`), and `ex9` (EX Emerald, `EM`) done — 29 files. This closes
+out the Neo series and the e-Card era in full, and opens the EX era and
+POP series.
 
 **Remaining gap**: everything older than Diamond & Pearl except
-`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`
+`BS`/`JU`/`FO`/`BS2`/`TR`/`G1`/`G2`/`N1`/`N2`/`SI`/`N3`/`N4`/`LC`/`E1`/`BG`/`E2`/`E3`/`RS`/`SS`/`DR`/`MA`/`TK1A`/`TK1B`/`HL`/`RG`/`P1`/`TRR`/`DX`/`EM`
 (the rest of the EX era, POP series, and a couple of misc later sets —
 `ru1`, `fut20`). Don't trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
