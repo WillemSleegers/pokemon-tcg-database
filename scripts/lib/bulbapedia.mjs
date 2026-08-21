@@ -67,6 +67,9 @@ export function speciesName(cardName) {
     // species' Bulbapedia page too, same category. Found while adding
     // Arceus (pl4).
     .replace(/\s+(Plant|Sandy|Trash)\s+Cloak$/, "")
+    // Unown's letter forms (e.g. "Unown [A]") share the base "Unown
+    // (Pokémon)" page too. Found while adding Diamond & Pearl (dp1).
+    .replace(/\s+\[[A-Z!?]\]$/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 

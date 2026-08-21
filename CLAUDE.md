@@ -22,8 +22,13 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 - **Platinum era** (`pl1`–`pl4`) — 4 files.
 - **Mega Evolution series** (MEG, PFL, ASC, POR, CRI, PBL) and **Scarlet & Violet** (SVI, SVE, PAL, OBF, MEW, PAR, PAF, TEF, TWM, SFA, SCR, SSP, PRE, JTG, DRI, BLK, WHT) — done, predates this file's HISTORY.md split.
 
-**Remaining gap**: everything older than Platinum (Diamond & Pearl era, and back)
-plus eight more McDonald's collections. Don't trust this list at face value — run
+In progress:
+
+- **Diamond & Pearl era** (`dp1`–`dp7`) — `DP` (dp1) done, 1 of 7.
+
+**Remaining gap**: `dp2`–`dp7`, plus everything older than Diamond & Pearl
+(the WotC/e-Card era, and back) and eight more McDonald's collections. Don't
+trust this list at face value — run
 `node scripts/missing-sets.mjs [series]` (see below) to re-derive the actual next
 step from `sets/en.json` against `data/sets/`; a numeric id walk has silently
 hidden `dc1`, `dv1`, and `g1` in the past across five different backfills.

@@ -1381,3 +1381,17 @@ The Platinum era (`pl1`–`pl4`) is now **done** — 4 files across all 4
 `sets/en.json` entries the era backfill covers. The remaining gap is
 everything older than Platinum (Diamond & Pearl, and back) and eight more
 McDonald's collections.
+
+## Diamond & Pearl era
+
+`data/sets/DP.json` (Diamond & Pearl base set, Limitless code `DP`, 130
+cards) is done, the first of the era. Its flavor text came from
+pokemon-tcg-data directly. Its verification sweep flagged 8 cards: Floatzel
+("floatation sac" for the card's "flotation sac"), Gengar ("cools that
+area" for the card's "cools the area"), Glameow ("if very popular" for the
+card's "is very popular"), and Goldeen (missing "fin" after "tail") were
+real upstream `flavorText` errors, confirmed against the card images and
+fixed via the `data/flavor-text/DP.json` overlay. Unown's four letter-form
+prints (`[A]`–`[D]`) were a `speciesName()` lookup gap of the usual kind —
+no separate Bulbapedia page per letter form, fixed by stripping the
+trailing `[X]` bracket suffix in both `speciesName()` copies.

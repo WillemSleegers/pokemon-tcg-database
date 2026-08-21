@@ -49,6 +49,7 @@ function speciesName(cardName) {
     .replace(/\s+LEGEND$/, '')
     .replace(/\s+(East|West)\s+Sea$/, '')
     .replace(/\s+(Plant|Sandy|Trash)\s+Cloak$/, '')
+    .replace(/\s+\[[A-Z!?]\]$/, '')
     .replace(/\s+([♀♂])/, '$1')
 }
 
