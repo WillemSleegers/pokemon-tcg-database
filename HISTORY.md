@@ -2361,3 +2361,20 @@ in `data/sets/P8.json`.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P8.json`
 (6 cards).
+
+## POP Series 9 (`pop9` → `P9`)
+
+Forty-sixth stop, closing out the POP series. Limitless code `P9`
+confirmed against `limitlesstcg.com/cards/P9` (17 cards, 1 March 2009)
+before starting. `fetch-set.mjs pop9 P9` ran clean — Pokédex and flavor
+text both fully covered automatically.
+
+`check-flavor-text.mjs` flagged 2/17, both genuine upstream typos —
+confirmed against the card images and fixed directly in
+`data/sets/P9.json`: Pachirisu 10/17 ("It live atop trees" → "It lives
+atop trees") and Gible 14/17 ("Its nests is small" → "It nests in
+small").
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
+
+This closes out the POP series (`P1`-`P9`).
