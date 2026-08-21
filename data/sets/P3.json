@@ -1,0 +1,1024 @@
+{
+  "set": {
+    "code": "P3",
+    "ptcgDataId": "pop3",
+    "name": "POP Series 3",
+    "series": "POP",
+    "printedTotal": 17,
+    "secretTotal": 0,
+    "total": 17,
+    "releaseDate": "2006-04-01",
+    "copyright": "©2006 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/pop3/symbol.png",
+      "logo": "https://images.pokemontcg.io/pop3/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/17",
+      "localId": "1",
+      "name": "Blastoise",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Wartortle",
+      "types": [
+        "Water"
+      ],
+      "hp": 120,
+      "attacks": [
+        {
+          "name": "Smash Turn",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "After your attack, you may switch Blastoise with 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Rocket Tackle",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": "Blastoise does 10 damage to itself. Flip a coin. If heads, prevent all damage done to Blastoise by attacks during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32506,
+        "url": "https://limitlesstcg.com/cards/P3/1",
+        "deckCode": "P3 1",
+        "printGroup": [
+          "P3 1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/1.png",
+        "large": "https://images.pokemontcg.io/pop3/1_hires.png"
+      }
+    },
+    {
+      "number": "02/17",
+      "localId": "2",
+      "name": "Flareon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage."
+        },
+        {
+          "name": "Fire Spin",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "Discard 2 basic Energy cards attached to Flareon or this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32507,
+        "url": "https://limitlesstcg.com/cards/P3/2",
+        "deckCode": "P3 2",
+        "printGroup": [
+          "P3 2"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/2.png",
+        "large": "https://images.pokemontcg.io/pop3/2_hires.png"
+      }
+    },
+    {
+      "number": "03/17",
+      "localId": "3",
+      "name": "Jolteon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Pin Missile",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20×",
+          "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32508,
+        "url": "https://limitlesstcg.com/cards/P3/3",
+        "deckCode": "P3 3",
+        "printGroup": [
+          "P3 3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/3.png",
+        "large": "https://images.pokemontcg.io/pop3/3_hires.png"
+      }
+    },
+    {
+      "number": "04/17",
+      "localId": "4",
+      "name": "Minun",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Cheer Up",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card. If you have Plusle in play, draw 2 cards instead."
+        },
+        {
+          "name": "Negative Ion",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "During your opponent's next turn, any damage done by attacks from the Defending Pokémon is reduced by 10 (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Power Bolt",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon that has any Poké-Powers. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sumiyoshi Kizuki",
+      "secret": false,
+      "limitless": {
+        "id": 32509,
+        "url": "https://limitlesstcg.com/cards/P3/4",
+        "deckCode": "P3 4",
+        "printGroup": [
+          "P3 4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/4.png",
+        "large": "https://images.pokemontcg.io/pop3/4_hires.png"
+      }
+    },
+    {
+      "number": "05/17",
+      "localId": "5",
+      "name": "Plusle",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Cheer Up",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card. If you have Minun in play, draw 2 cards instead."
+        },
+        {
+          "name": "Positive Ion",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage."
+        },
+        {
+          "name": "Body Bolt",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon that has any Poké-Bodies. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Sumiyoshi Kizuki",
+      "secret": false,
+      "limitless": {
+        "id": 32510,
+        "url": "https://limitlesstcg.com/cards/P3/5",
+        "deckCode": "P3 5",
+        "printGroup": [
+          "P3 5"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/5.png",
+        "large": "https://images.pokemontcg.io/pop3/5_hires.png"
+      }
+    },
+    {
+      "number": "06/17",
+      "localId": "6",
+      "name": "Vaporeon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Eevee",
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Does 30 damage plus 20 more damage for each Water Energy attached to Vaporeon but not used to pay for this attack's Energy cost. You can't add more than 40 damage in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32511,
+        "url": "https://limitlesstcg.com/cards/P3/6",
+        "deckCode": "P3 6",
+        "printGroup": [
+          "P3 6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/6.png",
+        "large": "https://images.pokemontcg.io/pop3/6_hires.png"
+      }
+    },
+    {
+      "number": "07/17",
+      "localId": "7",
+      "name": "Combusken",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Torchic",
+      "evolvesTo": [
+        "Blaziken"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flamethrower",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Discard a Fire Energy attached to Combusken."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32512,
+        "url": "https://limitlesstcg.com/cards/P3/7",
+        "deckCode": "P3 7",
+        "printGroup": [
+          "P3 7"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/7.png",
+        "large": "https://images.pokemontcg.io/pop3/7_hires.png"
+      }
+    },
+    {
+      "number": "08/17",
+      "localId": "8",
+      "name": "Donphan",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Phanpy",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Sniff Out",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put any 1 card from your discard pile into your hand."
+        },
+        {
+          "name": "Fury Attack",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30×",
+          "text": "Flip 3 coins. This attack does 30 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Tomoaki Imakuni",
+      "secret": false,
+      "limitless": {
+        "id": 32513,
+        "url": "https://limitlesstcg.com/cards/P3/8",
+        "deckCode": "P3 8",
+        "printGroup": [
+          "P3 8"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/8.png",
+        "large": "https://images.pokemontcg.io/pop3/8_hires.png"
+      }
+    },
+    {
+      "number": "09/17",
+      "localId": "9",
+      "name": "Forretress",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Pineco",
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Toxic",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20",
+          "text": "The Defending Pokémon is now Poisoned. Put 2 damage counters instead of 1 on the Defending Pokémon between turns."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Midori Harada",
+      "secret": false,
+      "limitless": {
+        "id": 32514,
+        "url": "https://limitlesstcg.com/cards/P3/9",
+        "deckCode": "P3 9",
+        "printGroup": [
+          "P3 9"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/9.png",
+        "large": "https://images.pokemontcg.io/pop3/9_hires.png"
+      }
+    },
+    {
+      "number": "10/17",
+      "localId": "10",
+      "name": "High Pressure System",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card.",
+        "Each player pays Colorless less to retreat his or her Fire and Water Pokémon."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Ikuji",
+      "secret": false,
+      "limitless": {
+        "id": 32647,
+        "url": "https://limitlesstcg.com/cards/P3/10",
+        "deckCode": "P3 10",
+        "printGroup": [
+          "DR 85",
+          "P3 10"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/10.png",
+        "large": "https://images.pokemontcg.io/pop3/10_hires.png"
+      }
+    },
+    {
+      "number": "11/17",
+      "localId": "11",
+      "name": "Low Pressure System",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card.",
+        "Each Grass and Lightning Pokémon in play (both yours and your opponent's) gets +10 HP."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin-ichi Yoshikawa",
+      "secret": false,
+      "limitless": {
+        "id": 32648,
+        "url": "https://limitlesstcg.com/cards/P3/11",
+        "deckCode": "P3 11",
+        "printGroup": [
+          "DR 86",
+          "P3 11"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/11.png",
+        "large": "https://images.pokemontcg.io/pop3/11_hires.png"
+      }
+    },
+    {
+      "number": "12/17",
+      "localId": "12",
+      "name": "Ditto",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "abilities": [
+        {
+          "name": "Duplicate",
+          "text": "Once during your turn (before your attack), you may search your deck for another Ditto and switch it with Ditto. (Any cards attached to Ditto, damage counters, Special Conditions, and effects on it are now on the new Pokémon.) If you do, put Ditto on top of your deck. Shuffle your deck afterward. You can't use more than 1 Duplicate Poké-Power each turn.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Psybeam",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Yuka Morii",
+      "secret": false,
+      "limitless": {
+        "id": 32515,
+        "url": "https://limitlesstcg.com/cards/P3/12",
+        "deckCode": "P3 12",
+        "printGroup": [
+          "P3 12"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/12.png",
+        "large": "https://images.pokemontcg.io/pop3/12_hires.png"
+      }
+    },
+    {
+      "number": "13/17",
+      "localId": "13",
+      "name": "Eevee",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Take Down",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Eevee does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32516,
+        "url": "https://limitlesstcg.com/cards/P3/13",
+        "deckCode": "P3 13",
+        "printGroup": [
+          "P3 13"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/13.png",
+        "large": "https://images.pokemontcg.io/pop3/13_hires.png"
+      }
+    },
+    {
+      "number": "14/17",
+      "localId": "14",
+      "name": "Ivysaur",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Bulbasaur",
+      "evolvesTo": [
+        "Venusaur"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Gouge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage."
+        },
+        {
+          "name": "Poisonpowder",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "The Defending Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "secret": false,
+      "limitless": {
+        "id": 32517,
+        "url": "https://limitlesstcg.com/cards/P3/14",
+        "deckCode": "P3 14",
+        "printGroup": [
+          "P3 14"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/14.png",
+        "large": "https://images.pokemontcg.io/pop3/14_hires.png"
+      }
+    },
+    {
+      "number": "15/17",
+      "localId": "15",
+      "name": "Marshtomp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Mudkip",
+      "evolvesTo": [
+        "Swampert"
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Mud Slap",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Double-edge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": "Marshtomp does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "secret": false,
+      "limitless": {
+        "id": 32518,
+        "url": "https://limitlesstcg.com/cards/P3/15",
+        "deckCode": "P3 15",
+        "printGroup": [
+          "P3 15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/15.png",
+        "large": "https://images.pokemontcg.io/pop3/15_hires.png"
+      }
+    },
+    {
+      "number": "16/17",
+      "localId": "16",
+      "name": "Pichu Bros.",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Pikachu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Bustle",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads. If either coin is heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kagemaru Himeno",
+      "secret": false,
+      "limitless": {
+        "id": 32519,
+        "url": "https://limitlesstcg.com/cards/P3/16",
+        "deckCode": "P3 16",
+        "printGroup": [
+          "P3 16"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/16.png",
+        "large": "https://images.pokemontcg.io/pop3/16_hires.png"
+      }
+    },
+    {
+      "number": "17/17",
+      "localId": "17",
+      "name": "Ho-Oh ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 110,
+      "rules": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Golden Wing",
+          "text": "If Ho-Oh ex would be Knocked Out by damage from an opponent's attack, you may move up to 2 Energy attached to Ho-Oh ex to your Pokémon in any way you like.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Rainbow Burn",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "10+",
+          "text": "Does 10 damage plus 20 more damage for each type of basic Energy card attached to Ho-Oh ex."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32649,
+        "url": "https://limitlesstcg.com/cards/P3/17",
+        "deckCode": "P3 17",
+        "printGroup": [
+          "P3 17",
+          "UF 104"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop3/17.png",
+        "large": "https://images.pokemontcg.io/pop3/17_hires.png"
+      }
+    }
+  ]
+}

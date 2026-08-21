@@ -2215,3 +2215,14 @@ eligible for both, genuine.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op for
 both — expected, since every card's `limitless` is `null`.
+
+## POP Series 3 (`pop3` → `P3`)
+
+Thirty-sixth stop. Limitless code `P3` confirmed against
+`limitlesstcg.com/cards/P3` (17 cards, 1 April 2006) before starting.
+`fetch-set.mjs pop3 P3` ran clean. Same EX-era no-Pokédex template,
+confirmed against Blastoise 1/17; added `data/no-pokedex/P3.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P3.json`
+(1 card).
