@@ -2056,3 +2056,20 @@ as `["*"]`. Flavor text 0/0 eligible, genuine.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `MA.json`
 (7 cards).
+
+## EX Trainer Kit Latias / Latios (`tk1a`/`tk1b` → `TK1A`/`TK1B`)
+
+Twenty-second and twenty-third stops, the two-deck EX Trainer Kit. Neither
+half is on Limitless at all — checked `TK1a`, `TK1b`, `EXTK`, `tk`, and the
+full EX-era listing, all 404/absent — so both used `NONE` as the
+`<limitlessUrlCode>` (per-card `artist` from pokemon-tcg-data, `limitless:
+null`). Bulbapedia confirms all 20 cards (both halves) print no rarity
+symbol at all, consistent with other trainer/starter-deck exclusives; added
+`data/no-rarity/TK1A.json` and `data/no-rarity/TK1B.json` as `["*"]`. Same
+EX-era no-Pokédex template as every set since Ruby & Sapphire, confirmed
+against Bagon (TK1A 1/10) and Latios (TK1B 2/10); added
+`data/no-pokedex/TK1A.json`/`TK1B.json` as `["*"]`. Flavor text 0/0 eligible
+for both, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op for both —
+expected, since every card's `limitless` is `null`.
