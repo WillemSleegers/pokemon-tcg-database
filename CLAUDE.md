@@ -1946,7 +1946,26 @@ Cacnea (missing "for" before "30 days"), and Poochyena (missing "a" before
 "persistent nature", and "chosen" before "prey") — each confirmed against
 the card image and fixed via the `data/flavor-text/PL.json` overlay.
 
-The remaining chronological gap is `pl2`–`pl4`, plus everything older than
+`data/sets/RR.json` (Rising Rivals, Limitless code `RR`, 120 cards) is
+also done — its flavor text also came from pokemon-tcg-data directly. 25
+cards (Arcanine, Flygon, both Gastrodon sea forms, all 5 Rotom appliance
+forms, and 19 others) repeated PL's "3 rule-text blocks leave no room for
+flavor text" pattern, confirmed against the card images and expected to
+stay flagged blank. Its verification sweep on the rest flagged 4 more
+cards: Carvanha ("any foes that invades" — grammatically broken — for the
+card's "any foe that invades"), a real upstream error confirmed against
+the card image and fixed via the `data/flavor-text/RR.json` overlay; both
+Shellos sea-form prints (East Sea, West Sea), a `speciesName()` lookup gap
+of the usual kind — no separate Bulbapedia page for the "East Sea"/"West
+Sea" suffix, fixed by stripping it in both `speciesName()` copies (the
+Gastrodon sea forms hit the same category but were already excluded by
+the "no room" case above, so the fix only visibly cleared Shellos here);
+and Flying Pikachu/Surfing Pikachu, confirmed correct as printed — the
+same card-specific, no-Pokédex-source text as EVO's own Flying Pikachu/
+Surfing Pikachu precedent (see "Flavor text has no structured source"
+above).
+
+The remaining chronological gap is `pl3`–`pl4`, plus everything older than
 Platinum (Diamond & Pearl, and back) and eight more McDonald's
 collections. As always, re-derive the actual next step from `sets/en.json`
 against `data/sets/` rather than trusting this note by the time it's acted

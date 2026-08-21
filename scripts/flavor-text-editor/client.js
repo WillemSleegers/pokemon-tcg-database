@@ -47,6 +47,7 @@ function speciesName(cardName) {
     .replace(/^(Ultra|Dawn\s+Wings|Dusk\s+Mane)\s+(?=Necrozma)/, '')
     .replace(/\s*◇$/, '')
     .replace(/\s+LEGEND$/, '')
+    .replace(/\s+(East|West)\s+Sea$/, '')
     .replace(/\s+([♀♂])/, '$1')
 }
 

@@ -59,6 +59,10 @@ export function speciesName(cardName) {
     // LEGEND cards (HGSS era) suffix the name with "LEGEND" — not part of
     // the species name. Found while adding HS (HeartGold & SoulSilver).
     .replace(/\s+LEGEND$/, "")
+    // Shellos/Gastrodon's East Sea/West Sea forms share the base species'
+    // Bulbapedia page, same category as regional/appliance/mask forms
+    // above. Found while adding Rising Rivals (pl2).
+    .replace(/\s+(East|West)\s+Sea$/, "")
     .replace(/\s+([♀♂])/, "$1")
 }
 
