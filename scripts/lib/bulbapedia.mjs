@@ -41,6 +41,15 @@ export function speciesName(cardName) {
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, "")
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, "")
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, "Castform")
+    // DP-era Castform prints spell its weather forms differently ("Rain
+    // Form", "Snow-Cloud Form" instead of "Rainy"/"Snowy") — same base
+    // "Castform (Pokémon)" page either way. Found while adding Legends
+    // Awakened (dp6).
+    .replace(/^Castform\s+(Rain|Snow-Cloud)\s+Form$/, "Castform")
+    // Deoxys's four Formes share the base "Deoxys (Pokémon)" page too, same
+    // category as regional/appliance/mask forms above. Found while adding
+    // Legends Awakened (dp6).
+    .replace(/^Deoxys\s+(Normal|Attack|Defense|Speed)\s+Forme$/, "Deoxys")
     // The Van Gogh Museum promo (svp 85) names the card after the painting it
     // recreates; its flavor text is still a plain Pikachu Pokédex entry.
     .replace(/^Pikachu\s+with\s+Grey\s+Felt\s+Hat$/, "Pikachu")

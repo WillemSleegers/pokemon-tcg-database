@@ -41,6 +41,8 @@ function speciesName(cardName) {
     .replace(/^(Teal|Wellspring|Hearthflame|Cornerstone)\s+Mask\s+(?=Ogerpon)/, '')
     .replace(/^Bloodmoon\s+(?=Ursaluna)/, '')
     .replace(/^Castform\s+(Sunny|Rainy|Snowy)\s+Form$/, 'Castform')
+    .replace(/^Castform\s+(Rain|Snow-Cloud)\s+Form$/, 'Castform')
+    .replace(/^Deoxys\s+(Normal|Attack|Defense|Speed)\s+Forme$/, 'Deoxys')
     .replace(/^Pikachu\s+with\s+Grey\s+Felt\s+Hat$/, 'Pikachu')
     .replace(/^(Rapid|Single)\s+Strike\s+(?=Urshifu)/, '')
     .replace(/^(Black|White)\s+(?=Kyurem)/, '')
