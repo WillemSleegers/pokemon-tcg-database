@@ -80,6 +80,10 @@ export function speciesName(cardName) {
     // (Pokémon)" page too. Found while adding Diamond & Pearl (dp1).
     .replace(/\s+\[[A-Z!?]\]$/, "")
     .replace(/\s+([♀♂])/, "$1")
+    // Bulbapedia's page title capitalizes the second "oh" ("Ho-Oh
+    // (Pokémon)") where the card's own printed name doesn't — found while
+    // adding Neo Revelation (neo3).
+    .replace(/^Ho-oh$/, "Ho-Oh")
 }
 
 // Bulbapedia's wikitext and pokemon-tcg-data's own flavorText disagree on

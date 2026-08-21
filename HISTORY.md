@@ -1837,3 +1837,28 @@ backfill, just hitting 100% of the set instead of a handful of cards. No
 fixes made; this is expected, not a gap.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
+
+## Neo Revelation (`neo3` → `N3`)
+
+Eleventh stop, back to the Neo series proper. Limitless code `N3` confirmed
+against `limitlesstcg.com/cards/N3` (66 cards) before starting.
+`fetch-set.mjs neo3 N3` ran clean — no rarity or Pokédex gaps.
+
+Flavor text: 61/61 already covered by pokemon-tcg-data. `check-flavor-text.mjs`
+initially flagged 6/61, two of them (both Ho-oh prints, 7 and 18) with *no*
+Bulbapedia candidates listed at all rather than a normal near-miss list —
+traced to a real tooling bug in `speciesName()`: Bulbapedia's page title is
+`Ho-Oh_(Pokémon)` (capital second O), but the card's own printed name and
+`speciesName()`'s output are both `Ho-oh`, a 404. Fixed by adding a
+`Ho-oh`→`Ho-Oh` rewrite to `speciesName()` in both
+`scripts/lib/bulbapedia.mjs` and its `scripts/flavor-text-editor/client.js`
+duplicate (per CLAUDE.md, always edit both). Re-ran clean at 5/61 remaining
+(one of the two Ho-oh entries now resolves to an exact Silver match) — the
+other four (Magneton, Octillery, Goldeen, Snubbull) are the same established
+minor-punctuation/hyphenation WotC-vs-Bulbapedia drift pattern as every other
+set in this backfill (e.g. Magneton's saved "Three Magnemites" vs Bulbapedia's
+"Three Magnemite"), confirmed via the diff text alone, no card-image checks
+needed. No further fixes made.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `N3.json`
+(3 cards).

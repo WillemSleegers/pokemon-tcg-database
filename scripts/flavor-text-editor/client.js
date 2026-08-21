@@ -53,6 +53,7 @@ function speciesName(cardName) {
     .replace(/\s+(Plant|Sandy|Trash)\s+Cloak$/, '')
     .replace(/\s+\[[A-Z!?]\]$/, '')
     .replace(/\s+([♀♂])/, '$1')
+    .replace(/^Ho-oh$/, 'Ho-Oh')
 }
 
 // A card counts as "unmatched" if it's blank, or its saved text isn't a
