@@ -2287,3 +2287,14 @@ eligible, genuine.
 This closes out the EX era (`RS`, `SS`, `DR`, `MA`, `TK1A`/`TK1B`, `HL`,
 `RG`, `TRR`, `DX`, `EM`, `UF`, `DS`, `LM`, `TK2A`/`TK2B`, `HP`, `CG`, `DF`,
 `PK`).
+
+## POP Series 5 (`pop5` → `P5`)
+
+Forty-second stop. Limitless code `P5` confirmed against
+`limitlesstcg.com/cards/P5` (17 cards, 1 March 2007) before starting.
+`fetch-set.mjs pop5 P5` ran clean. Still the EX-era no-Pokédex template
+despite this releasing after `ex16` — confirmed against Ho-Oh 1/17; added
+`data/no-pokedex/P5.json` as `["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P5.json`
+(6 cards).

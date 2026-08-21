@@ -1,0 +1,932 @@
+{
+  "set": {
+    "code": "P5",
+    "ptcgDataId": "pop5",
+    "name": "POP Series 5",
+    "series": "POP",
+    "printedTotal": 17,
+    "secretTotal": 0,
+    "total": 17,
+    "releaseDate": "2007-03-01",
+    "copyright": "©2007 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/pop5/symbol.png",
+      "logo": "https://images.pokemontcg.io/pop5/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/17",
+      "localId": "1",
+      "name": "Ho-Oh",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Fire Wing",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Fire Blast",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60",
+          "text": "Discard a Fire Energy attached to Ho-Oh."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32529,
+        "url": "https://limitlesstcg.com/cards/P5/1",
+        "deckCode": "P5 1",
+        "printGroup": [
+          "P5 1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/1.png",
+        "large": "https://images.pokemontcg.io/pop5/1_hires.png"
+      }
+    },
+    {
+      "number": "02/17",
+      "localId": "2",
+      "name": "Lugia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Super Psy Bolt",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Aerowing",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": "Before doing damage, you may flip a coin. If tails, this attack does nothing. If heads, this attack does 60 damage instead."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32530,
+        "url": "https://limitlesstcg.com/cards/P5/2",
+        "deckCode": "P5 2",
+        "printGroup": [
+          "P5 2"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/2.png",
+        "large": "https://images.pokemontcg.io/pop5/2_hires.png"
+      }
+    },
+    {
+      "number": "03/17",
+      "localId": "3",
+      "name": "Mew δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Copy",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Choose 1 of the Defending Pokémon's attacks. Copy copies that attack. This attack does nothing if Mew doesn't have the Energy necessary to use that attack. (You must still do anything else required for that attack.) Mew performs that attack."
+        },
+        {
+          "name": "Extra Draw",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "If your opponent has any Pokémon-ex in play, search your deck for up to 2 basic Energy cards and attach them to Mew. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32531,
+        "url": "https://limitlesstcg.com/cards/P5/3",
+        "deckCode": "P5 3",
+        "printGroup": [
+          "P5 3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/3.png",
+        "large": "https://images.pokemontcg.io/pop5/3_hires.png"
+      }
+    },
+    {
+      "number": "04/17",
+      "localId": "4",
+      "name": "Double Rainbow Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "Double Rainbow Energy can be attached only to an Evolved Pokémon (excluding Pokémon-ex). While in play, Double Rainbow Energy provides every type of Energy but provides 2 Energy at a time. (Has no effect other than providing Energy.) Damage done to your opponent's Pokémon by the Pokémon Double Rainbow Energy is attached to is reduced by 10 (before applying Weakness and Resistance). When the Pokémon Double Rainbow Energy is attached to is no longer an Evolved Pokémon, discard Double Rainbow Energy."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Takumi Akabane",
+      "secret": false,
+      "limitless": {
+        "id": 32656,
+        "url": "https://limitlesstcg.com/cards/P5/4",
+        "deckCode": "P5 4",
+        "printGroup": [
+          "CG 88",
+          "EM 87",
+          "MA 88",
+          "P5 4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/4.png",
+        "large": "https://images.pokemontcg.io/pop5/4_hires.png"
+      }
+    },
+    {
+      "number": "05/17",
+      "localId": "5",
+      "name": "Charmeleon δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Charmander",
+      "evolvesTo": [
+        "Charizard"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Thunder Jolt",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Flip a coin. If tails, Charmeleon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32664,
+        "url": "https://limitlesstcg.com/cards/P5/5",
+        "deckCode": "P5 5",
+        "printGroup": [
+          "CG 30",
+          "P5 5"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/5.png",
+        "large": "https://images.pokemontcg.io/pop5/5_hires.png"
+      }
+    },
+    {
+      "number": "06/17",
+      "localId": "6",
+      "name": "Bill's Maintenance",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
+        "If you have any cards in your hand, shuffle 1 of them into your deck, then draw 3 cards."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ken Sugimori",
+      "secret": false,
+      "limitless": {
+        "id": 32657,
+        "url": "https://limitlesstcg.com/cards/P5/6",
+        "deckCode": "P5 6",
+        "printGroup": [
+          "CES 126",
+          "CES 162",
+          "CG 71",
+          "E1 137",
+          "P5 6",
+          "RG 87"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/6.png",
+        "large": "https://images.pokemontcg.io/pop5/6_hires.png"
+      }
+    },
+    {
+      "number": "07/17",
+      "localId": "7",
+      "name": "Rare Candy",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Choose 1 of your Basic Pokémon in play. If you have a Stage 1 or Stage 2 card that evolves from that Pokémon in your hand, put that card on the Basic Pokémon. (This counts as evolving that Pokémon.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "limitless": {
+        "id": 32658,
+        "url": "https://limitlesstcg.com/cards/P5/7",
+        "deckCode": "P5 7",
+        "printGroup": [
+          "CES 142",
+          "CRZ 141",
+          "DEX 100",
+          "EM 83",
+          "GE 102",
+          "GRI 165",
+          "HP 90",
+          "MEG 125",
+          "MEG 175",
+          "P5 7",
+          "P8 10",
+          "PAF 89",
+          "PGO 69",
+          "PLB 85",
+          "PLB 105",
+          "PRC 135",
+          "SS 88",
+          "SSH 180",
+          "SUM 129",
+          "SVI 191",
+          "SVI 256",
+          "UL 82"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/7.png",
+        "large": "https://images.pokemontcg.io/pop5/7_hires.png"
+      }
+    },
+    {
+      "number": "08/17",
+      "localId": "8",
+      "name": "Boost Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "Boost Energy can be attached only to an Evolved Pokémon. Discard Boost Energy at the end of the turn it was attached. Boost Energy provides ColorlessColorlessColorless Energy. The Pokémon Boost Energy is attached to can't retreat. If the Pokémon Boost Energy is attached to isn't an Evolved Pokémon, discard Boost Energy."
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Shin-ichi Yoshikawa",
+      "secret": false,
+      "limitless": {
+        "id": 32659,
+        "url": "https://limitlesstcg.com/cards/P5/8",
+        "deckCode": "P5 8",
+        "printGroup": [
+          "DF 87",
+          "DX 93",
+          "E2 145",
+          "P5 8",
+          "UF 98"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/8.png",
+        "large": "https://images.pokemontcg.io/pop5/8_hires.png"
+      }
+    },
+    {
+      "number": "09/17",
+      "localId": "9",
+      "name": "δ Rainbow Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "δ Rainbow Energy provides Colorless Energy. While attached to a Pokémon that has δ on its card, δ Rainbow Energy provides every type of Energy but provides only 1 Energy at a time. (Has no effect other than providing Energy.)"
+      ],
+      "weaknesses": [],
+      "resistances": [],
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Takumi Akabane",
+      "secret": false,
+      "limitless": {
+        "id": 32665,
+        "url": "https://limitlesstcg.com/cards/P5/9",
+        "deckCode": "P5 9",
+        "printGroup": [
+          "DF 88",
+          "HP 98",
+          "P5 9"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/9.png",
+        "large": "https://images.pokemontcg.io/pop5/9_hires.png"
+      }
+    },
+    {
+      "number": "10/17",
+      "localId": "10",
+      "name": "Charmander δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32666,
+        "url": "https://limitlesstcg.com/cards/P5/10",
+        "deckCode": "P5 10",
+        "printGroup": [
+          "CG 49",
+          "P5 10"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/10.png",
+        "large": "https://images.pokemontcg.io/pop5/10_hires.png"
+      }
+    },
+    {
+      "number": "11/17",
+      "localId": "11",
+      "name": "Meowth δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Persian"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Feint Attack",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 10 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32532,
+        "url": "https://limitlesstcg.com/cards/P5/11",
+        "deckCode": "P5 11",
+        "printGroup": [
+          "P5 11"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/11.png",
+        "large": "https://images.pokemontcg.io/pop5/11_hires.png"
+      }
+    },
+    {
+      "number": "12/17",
+      "localId": "12",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Lightning Ball",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Discard all Energy cards attached to Pikachu."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Naoyo Kimura",
+      "secret": false,
+      "limitless": {
+        "id": 32533,
+        "url": "https://limitlesstcg.com/cards/P5/12",
+        "deckCode": "P5 12",
+        "printGroup": [
+          "P5 12"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/12.png",
+        "large": "https://images.pokemontcg.io/pop5/12_hires.png"
+      }
+    },
+    {
+      "number": "13/17",
+      "localId": "13",
+      "name": "Pikachu δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 40,
+      "attacks": [
+        {
+          "name": "Electric Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Heavy Metal",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip a coin for each Metal Energy attached to Pikachu. This attack does 10 damage plus 20 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Ryo Ueda",
+      "secret": false,
+      "limitless": {
+        "id": 32534,
+        "url": "https://limitlesstcg.com/cards/P5/13",
+        "deckCode": "P5 13",
+        "printGroup": [
+          "P5 13"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/13.png",
+        "large": "https://images.pokemontcg.io/pop5/13_hires.png"
+      }
+    },
+    {
+      "number": "14/17",
+      "localId": "14",
+      "name": "Pelipper δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Wingull",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Mist",
+          "text": "Any damage done to Pelipper by attacks from Stage 2 Evolved Pokémon (both yours and your opponent's) is reduced by 30 (after applying Weakness and Resistance).",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Lightning Wing",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Does 10 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Mitsuhiro Arita",
+      "secret": false,
+      "limitless": {
+        "id": 32535,
+        "url": "https://limitlesstcg.com/cards/P5/14",
+        "deckCode": "P5 14",
+        "printGroup": [
+          "P5 14"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/14.png",
+        "large": "https://images.pokemontcg.io/pop5/14_hires.png"
+      }
+    },
+    {
+      "number": "15/17",
+      "localId": "15",
+      "name": "Zangoose δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Metal"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Detect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all effects of an attack, including damage, done to Zangoose during your opponent's next turn."
+        },
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "secret": false,
+      "limitless": {
+        "id": 32536,
+        "url": "https://limitlesstcg.com/cards/P5/15",
+        "deckCode": "P5 15",
+        "printGroup": [
+          "P5 15"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/15.png",
+        "large": "https://images.pokemontcg.io/pop5/15_hires.png"
+      }
+    },
+    {
+      "number": "16/17",
+      "localId": "16",
+      "name": "Espeon ★",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Star"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 70,
+      "rules": [
+        "You can't have more than 1 Pokémon Star in your deck."
+      ],
+      "abilities": [
+        {
+          "name": "Purple Ray",
+          "text": "Once during your turn, when you put Espeon Star from your hand onto your Bench, you may use this power. Each Active Pokémon (both yours and your opponent's) is now Confused.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Psychic Boom",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "Does 30 damage plus 10 more damage for each Energy attached to the Defending Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32537,
+        "url": "https://limitlesstcg.com/cards/P5/16",
+        "deckCode": "P5 16",
+        "printGroup": [
+          "P5 16"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/16.png",
+        "large": "https://images.pokemontcg.io/pop5/16_hires.png"
+      }
+    },
+    {
+      "number": "17/17",
+      "localId": "17",
+      "name": "Umbreon ★",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Star"
+      ],
+      "types": [
+        "Darkness"
+      ],
+      "hp": 70,
+      "rules": [
+        "You can't have more than 1 Pokémon Star in your deck."
+      ],
+      "abilities": [
+        {
+          "name": "Dark Ray",
+          "text": "Once during your turn, when you put Umbreon Star from your hand onto your Bench, you may choose 1 card from your opponent's hand without looking and discard it.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Feint Attack",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any other effects on that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Masakazu Fukuda",
+      "secret": false,
+      "limitless": {
+        "id": 32660,
+        "url": "https://limitlesstcg.com/cards/P5/17",
+        "deckCode": "P5 17",
+        "printGroup": [
+          "CEL CC15",
+          "P5 17"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/17.png",
+        "large": "https://images.pokemontcg.io/pop5/17_hires.png"
+      }
+    }
+  ]
+}
