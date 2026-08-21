@@ -2325,3 +2325,22 @@ mismatch is the ordinary drift pattern, no fix needed.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated `P6.json`
 (4 cards).
+
+## POP Series 7 (`pop7` → `P7`)
+
+Forty-fourth stop. Limitless code `P7` confirmed against
+`limitlesstcg.com/cards/P7` (17 cards, 1 March 2008) before starting.
+`fetch-set.mjs pop7 P7` ran clean — Pokédex and flavor text both fully
+covered automatically (17/17 and 17/17), no overlays needed this time.
+
+`check-flavor-text.mjs` flagged 3/17, and all three turned out to be
+genuine upstream typos rather than the usual wording drift — confirmed
+against each card image and fixed directly in `data/sets/P7.json`:
+Gallade 2/17 ("on it elbows" → "on its elbows"), Flaaffy 7/17 ("It fire
+hair" → "It fires hair"), Wormadam Sandy Cloak 10/17 ("it cloak became" →
+"its cloak became"). Three real errors in one set is unusually many for
+this backfill — worth noting in case `pop7`'s source data has more
+issues than most.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `P7.json`
+(14 cards).

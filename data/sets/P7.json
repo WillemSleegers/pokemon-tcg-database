@@ -1,0 +1,1197 @@
+{
+  "set": {
+    "code": "P7",
+    "ptcgDataId": "pop7",
+    "name": "POP Series 7",
+    "series": "POP",
+    "printedTotal": 17,
+    "secretTotal": 0,
+    "total": 17,
+    "releaseDate": "2008-03-01",
+    "copyright": "©2008 Pokémon / Nintendo / Creatures / GAME FREAK",
+    "images": {
+      "symbol": "https://images.pokemontcg.io/pop7/symbol.png",
+      "logo": "https://images.pokemontcg.io/pop7/logo.png"
+    }
+  },
+  "cards": [
+    {
+      "number": "01/17",
+      "localId": "1",
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "types": [
+        "Lightning"
+      ],
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Jamming",
+          "text": "After your opponent plays a Supporter card from his or her hand, put 1 damage counter on each of your opponent's Pokémon. You can't use more than 1 Jamming Poké-Body each turn.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Cluster Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "You may discard all Lightning Energy attached to Ampharos. If you do, this attack does 20 damage to each of your opponent's Benched Pokémon that has any Energy cards attached to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+30"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 3,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 181,
+        "genus": "Light Pokémon",
+        "height": "4'7\"",
+        "weight": "135.6 lbs"
+      },
+      "flavorText": "The tip of its tail shines brightly. In the olden days, people sent signals using the tail's light.",
+      "secret": false,
+      "limitless": {
+        "id": 34135,
+        "url": "https://limitlesstcg.com/cards/P7/1",
+        "deckCode": "P7 1",
+        "printGroup": [
+          "P7 1",
+          "SW 1"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/1.png",
+        "large": "https://images.pokemontcg.io/pop7/1_hires.png"
+      }
+    },
+    {
+      "number": "02/17",
+      "localId": "2",
+      "name": "Gallade",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "evolvesFrom": "Kirlia",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 130,
+      "attacks": [
+        {
+          "name": "Sonic Blade",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put damage counters on the Defending Pokémon until it is 50 HP away from being Knocked Out. If you do, your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Psychic Cut",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "You may choose as many of your face-down Prize cards as you like and put them face up. If you do, this attack does 60 damage plus 20 more damage for each Prize card you chose. (These cards remain face up for the rest of the game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "+30"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Daisuke Ito",
+      "pokedex": {
+        "number": 475,
+        "genus": "Blade Pokémon",
+        "height": "5'3\"",
+        "weight": "114.6 lbs"
+      },
+      "flavorText": "A master of courtesy and swordsmanship, it fights using extending swords on its elbows.",
+      "secret": false,
+      "limitless": {
+        "id": 34136,
+        "url": "https://limitlesstcg.com/cards/P7/2",
+        "deckCode": "P7 2",
+        "printGroup": [
+          "P7 2",
+          "SW 6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/2.png",
+        "large": "https://images.pokemontcg.io/pop7/2_hires.png"
+      }
+    },
+    {
+      "number": "03/17",
+      "localId": "3",
+      "name": "Latias",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Miraculous Light",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Remove 2 damage counters and all Special Conditions from Latias."
+        },
+        {
+          "name": "Mist Ball",
+          "cost": [
+            "Fire",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Discard a Fire and a Water Energy attached to Latias."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Colorless",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Daisuke Ito",
+      "pokedex": {
+        "number": 380,
+        "genus": "Eon Pokémon",
+        "height": "4'7\"",
+        "weight": "88.2 lbs"
+      },
+      "flavorText": "Its body is covered with a down that can refract light in such a way that it becomes invisible.",
+      "secret": false,
+      "limitless": {
+        "id": 34137,
+        "url": "https://limitlesstcg.com/cards/P7/3",
+        "deckCode": "P7 3",
+        "printGroup": [
+          "GE 22",
+          "P7 3"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/3.png",
+        "large": "https://images.pokemontcg.io/pop7/3_hires.png"
+      }
+    },
+    {
+      "number": "04/17",
+      "localId": "4",
+      "name": "Latios",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 90,
+      "attacks": [
+        {
+          "name": "Energy Draw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, search your deck for a basic Energy card and attach it to Latios. Shuffle your deck afterward."
+        },
+        {
+          "name": "Luster Purge",
+          "cost": [
+            "Grass",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "Discard 3 Energy attached to Latios."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Colorless",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 2,
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Daisuke Ito",
+      "pokedex": {
+        "number": 381,
+        "genus": "Eon Pokémon",
+        "height": "6'7\"",
+        "weight": "132.3 lbs"
+      },
+      "flavorText": "A highly intelligent Pokémon. By folding back its wings in flight, it can overtake jet planes.",
+      "secret": false,
+      "limitless": {
+        "id": 34138,
+        "url": "https://limitlesstcg.com/cards/P7/4",
+        "deckCode": "P7 4",
+        "printGroup": [
+          "GE 23",
+          "P7 4"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/4.png",
+        "large": "https://images.pokemontcg.io/pop7/4_hires.png"
+      }
+    },
+    {
+      "number": "05/17",
+      "localId": "5",
+      "name": "Mothim",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Burmy",
+      "types": [
+        "Grass"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Silver Wind",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "",
+          "text": "During your next turn, if an attack does damage to the Defending Pokémon (after applying Weakness and Resistance), that attack does 40 more damage."
+        },
+        {
+          "name": "Raging Scales",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "If Mothim has any damage counters on it, this attack does 30 damage plus 40 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "regulationMark": null,
+      "rarity": "Rare",
+      "artist": "Kazuyuki Kano",
+      "pokedex": {
+        "number": 414,
+        "genus": "Moth Pokémon",
+        "height": "2'11\"",
+        "weight": "51.4 lbs"
+      },
+      "flavorText": "It loves the honey of flowers and steals honey collected by COMBEE.",
+      "secret": false,
+      "limitless": {
+        "id": 34139,
+        "url": "https://limitlesstcg.com/cards/P7/5",
+        "deckCode": "P7 5",
+        "printGroup": [
+          "P7 5",
+          "SW 33"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/5.png",
+        "large": "https://images.pokemontcg.io/pop7/5_hires.png"
+      }
+    },
+    {
+      "number": "06/17",
+      "localId": "6",
+      "name": "Delibird",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Present",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "",
+          "text": "Flip a coin. If heads, search your deck for any 1 card and put it into your hand. Shuffle your deck afterward."
+        },
+        {
+          "name": "Ice Ball",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "+20"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 225,
+        "genus": "Delivery Pokémon",
+        "height": "2'11\"",
+        "weight": "35.3 lbs"
+      },
+      "flavorText": "It carries food rolled up in its tail. It has the habit of sharing food with people lost in mountains.",
+      "secret": false,
+      "limitless": {
+        "id": 34140,
+        "url": "https://limitlesstcg.com/cards/P7/6",
+        "deckCode": "P7 6",
+        "printGroup": [
+          "GE 36",
+          "P7 6"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/6.png",
+        "large": "https://images.pokemontcg.io/pop7/6_hires.png"
+      }
+    },
+    {
+      "number": "07/17",
+      "localId": "7",
+      "name": "Flaaffy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Mareep",
+      "evolvesTo": [
+        "Ampharos"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Attract Current",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Search your deck for a Lightning Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Electromagnetic Kick",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Flip a coin. If tails, Flaaffy does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 180,
+        "genus": "Wool Pokémon",
+        "height": "2'7\"",
+        "weight": "29.3 lbs"
+      },
+      "flavorText": "If its coat becomes fully charged with electricity, its tail lights up. It fires hair that zaps on impact.",
+      "secret": false,
+      "limitless": {
+        "id": 34141,
+        "url": "https://limitlesstcg.com/cards/P7/7",
+        "deckCode": "P7 7",
+        "printGroup": [
+          "P7 7",
+          "SW 50"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/7.png",
+        "large": "https://images.pokemontcg.io/pop7/7_hires.png"
+      }
+    },
+    {
+      "number": "08/17",
+      "localId": "8",
+      "name": "Kirlia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Ralts",
+      "evolvesTo": [
+        "Gardevoir",
+        "Gallade"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 80,
+      "attacks": [
+        {
+          "name": "Psychic Research",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your discard pile for a Supporter card and use the effect of that card as the effect of this attack. (The Supporter card remains in your discard pile.)"
+        },
+        {
+          "name": "Telekinesis",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 40 damage to that Pokémon. This attack's damage isn't affected by Weakness or Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "+20"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Masakazu Fukuda",
+      "pokedex": {
+        "number": 281,
+        "genus": "Emotion Pokémon",
+        "height": "2'7\"",
+        "weight": "44.5 lbs"
+      },
+      "flavorText": "It is highly perceptive of its Trainer's feelings. It dances when it is feeling happy.",
+      "secret": false,
+      "limitless": {
+        "id": 34142,
+        "url": "https://limitlesstcg.com/cards/P7/8",
+        "deckCode": "P7 8",
+        "printGroup": [
+          "P7 8",
+          "SW 53"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/8.png",
+        "large": "https://images.pokemontcg.io/pop7/8_hires.png"
+      }
+    },
+    {
+      "number": "09/17",
+      "localId": "9",
+      "name": "Stantler",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Lead",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "",
+          "text": "Search your deck for a Supporter card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+        },
+        {
+          "name": "Frighten Horn",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "If the Defending Pokémon isn't an Evolved Pokémon, that Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+20"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 234,
+        "genus": "Big Horn Pokémon",
+        "height": "4'7\"",
+        "weight": "157.0 lbs"
+      },
+      "flavorText": "Staring at its antlers creates an odd sensation as if one were being drawn into their centers.",
+      "secret": false,
+      "limitless": {
+        "id": 34143,
+        "url": "https://limitlesstcg.com/cards/P7/9",
+        "deckCode": "P7 9",
+        "printGroup": [
+          "P7 9",
+          "SW 113"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/9.png",
+        "large": "https://images.pokemontcg.io/pop7/9_hires.png"
+      }
+    },
+    {
+      "number": "10/17",
+      "localId": "10",
+      "name": "Wormadam Sandy Cloak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "evolvesFrom": "Burmy Sandy Cloak",
+      "types": [
+        "Fighting"
+      ],
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Sandy Cloak",
+          "text": "Prevent all effects, excluding damage, done to Wormadam Sandy Cloak.",
+          "type": "Poké-Body"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Push Over",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Does 40 damage plus 10 more damage for each Fighting Energy attached to Wormadam Sandy Cloak."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+20"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Uncommon",
+      "artist": "Kagemaru Himeno",
+      "pokedex": {
+        "number": 413,
+        "genus": "Bagworm Pokémon",
+        "height": "1'8\"",
+        "weight": "14.3 lbs"
+      },
+      "flavorText": "When BURMY evolved, its cloak became a part of this Pokémon's body. The cloak is never shed.",
+      "secret": false,
+      "limitless": {
+        "id": 34144,
+        "url": "https://limitlesstcg.com/cards/P7/10",
+        "deckCode": "P7 10",
+        "printGroup": [
+          "P7 10",
+          "SW 42"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/10.png",
+        "large": "https://images.pokemontcg.io/pop7/10_hires.png"
+      }
+    },
+    {
+      "number": "11/17",
+      "localId": "11",
+      "name": "Burmy Plant Cloak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Wormadam",
+        "Mothim"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "abilities": [
+        {
+          "name": "Wear Cloak",
+          "text": "Once during your turn (before your attack), if Burmy Plant Cloak is your Active Pokémon, you may search your discard pile for a basic Grass Energy card and attach it to Burmy Plant Cloak.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Plant Cloak Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If Burmy Plant Cloak has any Grass Energy attached to it, this attack does 10 damage plus 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+10"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Kouki Saitou",
+      "pokedex": {
+        "number": 412,
+        "genus": "Bagworm Pokémon",
+        "height": "0'8\"",
+        "weight": "7.5 lbs"
+      },
+      "flavorText": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
+      "secret": false,
+      "limitless": {
+        "id": 34145,
+        "url": "https://limitlesstcg.com/cards/P7/11",
+        "deckCode": "P7 11",
+        "printGroup": [
+          "P7 11",
+          "SW 78"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/11.png",
+        "large": "https://images.pokemontcg.io/pop7/11_hires.png"
+      }
+    },
+    {
+      "number": "12/17",
+      "localId": "12",
+      "name": "Burmy Sandy Cloak",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Wormadam",
+        "Mothim"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "hp": 40,
+      "abilities": [
+        {
+          "name": "Wear Cloak",
+          "text": "Once during your turn (before your attack), if Burmy Sandy Cloak is your Active Pokémon, you may search your discard pile for a basic Fighting Energy card and attach it to Burmy Sandy Cloak.",
+          "type": "Poké-Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sandy Cloak Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If Burmy Sandy Cloak has any Fighting Energy attached to it, this attack does 10 damage plus 10 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "+10"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 412,
+        "genus": "Bagworm Pokémon",
+        "height": "0'8\"",
+        "weight": "7.5 lbs"
+      },
+      "flavorText": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
+      "secret": false,
+      "limitless": {
+        "id": 34146,
+        "url": "https://limitlesstcg.com/cards/P7/12",
+        "deckCode": "P7 12",
+        "printGroup": [
+          "P7 12",
+          "SW 79"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/12.png",
+        "large": "https://images.pokemontcg.io/pop7/12_hires.png"
+      }
+    },
+    {
+      "number": "13/17",
+      "localId": "13",
+      "name": "Corsola",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Cursola"
+      ],
+      "types": [
+        "Water"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Rally",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 different types of Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Hook",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "+20"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 222,
+        "genus": "Coral Pokémon",
+        "height": "2'0\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "Many live in the clean seas of the south. They apparently can't live in polluted waters.",
+      "secret": false,
+      "limitless": {
+        "id": 34147,
+        "url": "https://limitlesstcg.com/cards/P7/13",
+        "deckCode": "P7 13",
+        "printGroup": [
+          "P7 13",
+          "SW 84"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/13.png",
+        "large": "https://images.pokemontcg.io/pop7/13_hires.png"
+      }
+    },
+    {
+      "number": "14/17",
+      "localId": "14",
+      "name": "Mareep",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Flaaffy"
+      ],
+      "types": [
+        "Lightning"
+      ],
+      "hp": 50,
+      "attacks": [
+        {
+          "name": "Thundershock",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Static Shock",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 179,
+        "genus": "Wool Pokémon",
+        "height": "2'0\"",
+        "weight": "17.2 lbs"
+      },
+      "flavorText": "Its fluffy coat swells to double when static electricity builds up. Touching it can be shocking.",
+      "secret": false,
+      "limitless": {
+        "id": 34148,
+        "url": "https://limitlesstcg.com/cards/P7/14",
+        "deckCode": "P7 14",
+        "printGroup": [
+          "P7 14",
+          "SW 94"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/14.png",
+        "large": "https://images.pokemontcg.io/pop7/14_hires.png"
+      }
+    },
+    {
+      "number": "15/17",
+      "localId": "15",
+      "name": "Ralts",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Kirlia"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Smack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Confuse Ray",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "+10"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Sumiyoshi Kizuki",
+      "pokedex": {
+        "number": 280,
+        "genus": "Feeling Pokémon",
+        "height": "1'4\"",
+        "weight": "14.6 lbs"
+      },
+      "flavorText": "It uses the horns on its head to sense human emotions. It is said to appear in front of cheerful people.",
+      "secret": false,
+      "limitless": {
+        "id": 34149,
+        "url": "https://limitlesstcg.com/cards/P7/15",
+        "deckCode": "P7 15",
+        "printGroup": [
+          "P7 15",
+          "SW 102"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/15.png",
+        "large": "https://images.pokemontcg.io/pop7/15_hires.png"
+      }
+    },
+    {
+      "number": "16/17",
+      "localId": "16",
+      "name": "Sentret",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "evolvesTo": [
+        "Furret"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 60,
+      "attacks": [
+        {
+          "name": "Grope",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Look at the top 2 cards of your deck, choose 1 of them, and put it into your hand. Put the other card on the bottom of your deck."
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+10"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Midori Harada",
+      "pokedex": {
+        "number": 161,
+        "genus": "Scout Pokémon",
+        "height": "2'7\"",
+        "weight": "13.2 lbs"
+      },
+      "flavorText": "It has a very nervous nature. It stands up high on its tail so it can scan wide areas.",
+      "secret": false,
+      "limitless": {
+        "id": 34150,
+        "url": "https://limitlesstcg.com/cards/P7/16",
+        "deckCode": "P7 16",
+        "printGroup": [
+          "P7 16",
+          "SW 104"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/16.png",
+        "large": "https://images.pokemontcg.io/pop7/16_hires.png"
+      }
+    },
+    {
+      "number": "17/17",
+      "localId": "17",
+      "name": "Spinda",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "types": [
+        "Colorless"
+      ],
+      "hp": 70,
+      "attacks": [
+        {
+          "name": "Dish Out",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card from the top and the bottom of your deck."
+        },
+        {
+          "name": "Synchro Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10+",
+          "text": "If any basic Energy card attached to Spinda is the same type as any Energy attached to the Defending Pokémon, this attack does 10 damage plus 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "+20"
+        }
+      ],
+      "resistances": [],
+      "retreatCost": 1,
+      "regulationMark": null,
+      "rarity": "Common",
+      "artist": "Atsuko Nishida",
+      "pokedex": {
+        "number": 327,
+        "genus": "Spot Panda Pokémon",
+        "height": "3'7\"",
+        "weight": "11.0 lbs"
+      },
+      "flavorText": "No two SPINDA have the same pattern of spots. Its tottering step fouls the aim of foes.",
+      "secret": false,
+      "limitless": {
+        "id": 34151,
+        "url": "https://limitlesstcg.com/cards/P7/17",
+        "deckCode": "P7 17",
+        "printGroup": [
+          "P7 17",
+          "SW 111"
+        ]
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop7/17.png",
+        "large": "https://images.pokemontcg.io/pop7/17_hires.png"
+      }
+    }
+  ]
+}
