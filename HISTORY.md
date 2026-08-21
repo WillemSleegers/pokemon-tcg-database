@@ -2105,3 +2105,14 @@ no-Pokédex template, confirmed against Blaziken 1/17; added
 `data/no-pokedex/P1.json` as `["*"]`. Flavor text 0/0 eligible, genuine.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` was a no-op.
+
+## EX Team Rocket Returns (`ex7` → `TRR`)
+
+Twenty-seventh stop. Limitless code `TRR` confirmed against
+`limitlesstcg.com/cards/TRR` (111 cards, 8 November 2004) before starting.
+`fetch-set.mjs ex7 TRR` ran clean. Same EX-era no-Pokédex template,
+confirmed against Azumarill 1/109; added `data/no-pokedex/TRR.json` as
+`["*"]`. Flavor text 0/0 eligible, genuine.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated `TRR.json`
+(4 cards).
