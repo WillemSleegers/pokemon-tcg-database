@@ -1011,6 +1011,81 @@ async function resolveSequentialLocalIds(code, limitlessUrlCode, sequentialPrefi
 // (30CCC's Erika's Jigglypuff, whose own face prints "#39").
 const OVERRIDE_FORBIDDEN = new Set(["localId", "limitless", "name", "supertype"])
 
+// A throwback-reprint subset's cards print their *original* set's collector
+// number and nothing else — 30th Celebration: Classic Collection's Pikachu
+// prints "58/102" (Base Set), Celebrations': Classic Collection's Blastoise
+// prints "2/102". The `CC<n>` numbering is Limitless's and PTCGL's, and
+// appears nowhere on the card, so it belongs in `localId` (which is defined as
+// exactly that) and must not be left in `number` (defined as the phrasing
+// printed on the card).
+//
+// The printed string is taken verbatim from the original print already in
+// data/sets/, rather than rebuilt as `${number}/${printedTotal}`: the original
+// is already verified against its own card, and copying it carries that set's
+// era-specific zero-padding convention for free (see buildNumber).
+//
+// The original print is identified by intersecting two independent facts —
+// pokemon-tcg-data's `number` for this card (the original numerator) and the
+// card's own Limitless prints table — rather than trusting either alone. An
+// ambiguous or absent match throws rather than guessing.
+async function applyThrowbackNumbers(cards, originalNumberByLocalId) {
+  const setCache = new Map()
+  const loadSet = async (code) => {
+    if (!setCache.has(code)) {
+      setCache.set(
+        code,
+        readFile(resolve(OUT_DIR, `${code}.json`), "utf8")
+          .then((raw) => JSON.parse(raw))
+          .catch(() => null),
+      )
+    }
+    return setCache.get(code)
+  }
+
+  const unresolved = []
+  for (const card of cards) {
+    const original = originalNumberByLocalId.get(card.localId)
+    if (!original) throw new Error(`no pokemon-tcg-data number recorded for ${card.localId}`)
+    let matches = (card.limitless?.printGroup ?? []).filter((entry) => entry.slice(entry.indexOf(" ") + 1) === original)
+    // A species reprinted at the same number in two sets (Charizard is Base Set
+    // 4/102 *and* Base Set 2 4/130) leaves the print group alone unable to say
+    // which one a throwback reprint reproduces. The subset reprints the
+    // original, so the earliest-released candidate wins — but only the
+    // denominator actually differs between them, so the choice is verifiable
+    // against the card image, and each one has been (see HISTORY.md).
+    if (matches.length > 1) {
+      const dated = await Promise.all(
+        matches.map(async (entry) => ({ entry, set: await loadSet(entry.slice(0, entry.indexOf(" "))) })),
+      )
+      const known = dated.filter((d) => d.set?.set?.releaseDate)
+      if (known.length === matches.length) {
+        known.sort((a, b) => a.set.set.releaseDate.localeCompare(b.set.set.releaseDate))
+        if (known[0].set.set.releaseDate !== known[1].set.set.releaseDate) matches = [known[0].entry]
+      }
+    }
+    if (matches.length !== 1) {
+      unresolved.push(
+        `  ${card.localId} (${card.name}): ${matches.length} print(s) numbered "${original}"` +
+          `${matches.length ? ` — ${matches.join(", ")}` : ""}`,
+      )
+      continue
+    }
+    const sourceCode = matches[0].slice(0, matches[0].indexOf(" "))
+    const sourceSet = await loadSet(sourceCode)
+    if (!sourceSet) throw new Error(`${card.localId}: reprints ${matches[0]}, but data/sets/${sourceCode}.json isn't in this database`)
+    const sourceCard = sourceSet.cards.find((c) => c.localId === original)
+    if (!sourceCard?.number) throw new Error(`${card.localId}: ${matches[0]} has no stored number to copy`)
+    card.number = sourceCard.number
+  }
+  if (unresolved.length) {
+    throw new Error(
+      `can't tell which print ${unresolved.length} throwback card(s) reproduce, so can't tell what number they print:\n` +
+        `${unresolved.join("\n")}\n` +
+        `Check each against its card image and set the printed number in data/card-overrides/.`,
+    )
+  }
+}
+
 async function applyCardOverrides(code, cards) {
   let overrides
   try {
@@ -1033,14 +1108,28 @@ async function applyCardOverrides(code, cards) {
 
 // ---- assembly -------------------------------------------------------------
 
-function buildNumber(localId, printedTotal, numberPad) {
+// The TCG only started zero-padding the collector number to the denominator's
+// width with the Sword & Shield era. Cosmic Eclipse (2019/11, the last Sun &
+// Moon set) prints "50/236"; Sword & Shield (2020/02/07) prints "050/202".
+// Verified against original scans on both sides of that line, and further back
+// — Base Set prints "58/102", XY "50/146", Sun & Moon "50/149".
+//
+// `number` is documented as the exact phrasing printed on the card, so padding
+// unconditionally was wrong for every pre-2020 set. See HISTORY.md — it was
+// stored that way for 7,065 cards across 115 sets before this was caught.
+const PADDED_NUMBER_FROM = "2020/02/07"
+
+function buildNumber(localId, printedTotal, numberPad, releaseDate) {
   const n = Number(localId)
   if (!Number.isInteger(n)) return localId // suffixed numbers (e.g. "68a") stay as-is
   // A promo prints a bare padded number with no denominator ("MEP 046"), the
   // same as the SWSH/XY promo sets already store ("SWSH001", "XY01") — those
   // just get it for free from pokemon-tcg-data's own prefixed number field.
+  // That padding is the promo's own printed format and unrelated to the
+  // era-dependent denominator padding below.
   if (numberPad) return String(n).padStart(numberPad, "0")
-  return `${String(n).padStart(String(printedTotal).length, "0")}/${printedTotal}`
+  const padded = releaseDate.replace(/-/g, "/") >= PADDED_NUMBER_FROM
+  return `${padded ? String(n).padStart(String(printedTotal).length, "0") : String(n)}/${printedTotal}`
 }
 
 async function main() {
@@ -1204,7 +1293,7 @@ async function main() {
     }
 
     const card = /** @type {import("../types/card.js").Card} */ (/** @type {any} */ ({
-      number: buildNumber(localId, printedTotal, numberPad),
+      number: buildNumber(localId, printedTotal, numberPad, setMeta.releaseDate),
       localId,
       name: primary.name,
       supertype: primary.supertype,
@@ -1263,6 +1352,13 @@ async function main() {
     if (done % 20 === 0 || done === primaryCards.length) console.log(`  ${done}/${primaryCards.length}`)
     return card
   })
+
+  if (sequentialPrefix) {
+    await applyThrowbackNumbers(
+      cards,
+      new Map(primaryCards.map((p, i) => [/** @type {string[]} */ (sequentialLocalIds)[i], p.number])),
+    )
+  }
 
   await applyCardOverrides(limitlessCode, cards)
 

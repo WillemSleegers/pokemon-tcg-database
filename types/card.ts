@@ -31,6 +31,10 @@ export interface SetImages {
 
 export interface Card {
   number: string | null // exact phrasing printed on the card, e.g. "003/132" — null if the card prints no number at all (e.g. an unnumbered jumbo/oversized promo)
+  subsetNumber?: string // a *second* collector number printed alongside `number`, for a
+  // separately-numbered subset within the set. 30th Celebration's 30 Pikachu rare cards
+  // each print "01/30".."30/30" under their normal "023/128" (see HISTORY.md). Absent for
+  // the overwhelming majority of cards, which print one number.
   localId: string // bare number — Limitless/PTCGL URLs and IDs use this
   name: string
   supertype: "Pokémon" | "Trainer" | "Energy"

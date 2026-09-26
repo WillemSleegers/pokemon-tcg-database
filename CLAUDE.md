@@ -64,6 +64,27 @@ narrower initial-literal shape and reject every later assignment; casting only a
 `return` wouldn't catch anything since `card`'s type during the function body would
 still be inferred from that narrow initial shape.
 
+### `number` is what the card prints — everything on a card gets stored
+
+`number` is defined as the exact phrasing printed on the card, and that's a real
+constraint, not a loose description. Four separate ways it had drifted, all found
+at once while adding 30th Celebration (see HISTORY.md):
+
+- **Zero-padding is era-dependent.** The TCG only began padding the numerator to
+  the denominator's width with Sword & Shield (2020/02/07). Base Set prints
+  `58/102`, XY `50/146`, Cosmic Eclipse (2019/11) `50/236`; Sword & Shield prints
+  `050/202`. `buildNumber` padded everything, so 7,065 cards across 115 pre-2020
+  sets stored a number their card doesn't show. Fixed, and `buildNumber` now takes
+  the set's release date. **Verify against a card image before assuming padding.**
+- **A throwback-reprint subset prints its original set's number**, not the
+  `CC<n>` Limitless files it under — 30CCC's Pikachu prints `58/102`, CELCC's
+  Blastoise `2/102`. `CC<n>` is `localId`'s job (defined as exactly the
+  Limitless/PTCGL id) and was wrongly duplicated into `number`. See
+  `applyThrowbackNumbers`.
+- **A card can print more than one number.** 30th Celebration's 30 Pikachu rares
+  print `01/30`…`30/30` alongside the normal `023/128`, which is what the optional
+  `subsetNumber` field holds.
+
 ## Pipeline
 
 `scripts/fetch-set.mjs <ptcgDataSetId> <code> [<limitlessUrlCode>]` merges three

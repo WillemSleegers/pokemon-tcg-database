@@ -2553,3 +2553,55 @@ primary collector number (`023/128`) in the first case and the printed
 `R/RGB` in the second.
 
 `npm run typecheck` clean. `refresh-print-groups.mjs` updated 174 cards.
+
+### `number` fidelity: three drifts found at once (30th Celebration follow-up)
+
+Prompted by the standing rule that everything printed on a card gets stored.
+`types/card.ts` already defined `number` as "exact phrasing printed on the card";
+checking 30th Celebration against that turned up three separate ways it wasn't.
+
+**1. Era-dependent zero-padding — 7,065 cards across 115 sets.** `buildNumber`
+padded the numerator to the denominator's width for every set. The TCG only
+started doing that with Sword & Shield. Verified against original scans on both
+sides of the line and further back: Base Set `58/102` and `4/102`, Gym Challenge
+`69/132`, Ancient Origins `1/98`, XY `50/146`, Sun & Moon `50/149`, Cosmic
+Eclipse (2019/11, the last SM set) `50/236` — all unpadded; Sword & Shield
+(2020/02/07) `050/202` and Vivid Voltage `050/185` — padded. So the cutoff is
+exactly the SWSH era boundary, now `PADDED_NUMBER_FROM` in `fetch-set.mjs`.
+
+Corrected in place by a one-off migration rather than re-fetching all 115 sets:
+the transformation is purely local (strip leading zeros from the numerator when
+the set predates the cutoff), so nothing else in those files could shift. It
+matches only `^0+(\d+)(/\d+)$`, leaving `SWSH001`, `H1`, `R/RGB`, `68a` and
+already-unpadded values alone. Spot-checked across eras afterwards against the
+same card images.
+
+**2. Throwback subsets stored Limitless's `CC<n>` as the printed number.** A
+Classic Collection card prints its *original* set's number and nothing else —
+Bulbapedia says so outright for Celebrations ("The cards retain the original
+numbering, rarity, and copyright information of their original print"), and the
+card images confirm it. `CC<n>` is what `localId` is for. New
+`applyThrowbackNumbers` copies the printed string verbatim from the original
+print already in `data/sets/`, rather than rebuilding `${number}/${printedTotal}`
+— the original is already verified against its own card, and copying carries that
+set's era-specific padding for free, which is what makes CC27 Raikou correctly
+come out `050/185` (Vivid Voltage, post-cutoff) while CC1 Pikachu is `58/102`.
+
+The original print is identified by intersecting two independent facts —
+pokemon-tcg-data's `number` for the card, and the card's own Limitless prints
+table — never either alone. Two cards needed a tiebreak, both in CELCC, because a
+species can be reprinted at the same number in two sets: Blastoise is Base Set
+`2/102` *and* Base Set 2 `2/130`, Charizard `4/102` and `4/130`. Only the
+denominator differs, so the earliest-released candidate wins, and both were
+confirmed against their card images (`2/102`, `4/102`). Anything still ambiguous
+throws with every candidate named.
+
+Cross-checked in full against Bulbapedia's own set lists: all 30 of 30CCC match,
+and 24 of 25 of CELCC — the one difference being CC8's `24/53`, which turned out
+to be drift #3 rather than a mismatch.
+
+**3. A card can print two numbers.** 30th Celebration's 30 Pikachu rares each
+print `01/30`…`30/30` under the normal `023/128`. New optional `subsetNumber`
+field; values recorded in `data/card-overrides/30C.json`, read off the card
+faces. (The RGB rares' `R/RGB`, by contrast, *is* the primary number and was
+already correct.)
