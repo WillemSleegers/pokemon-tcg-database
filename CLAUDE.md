@@ -412,6 +412,35 @@ for, so don't treat the extras as drift:
 - **Subset- and set-specific tiers.** `PAF`'s `Shiny Rare`/`Shiny Ultra Rare`,
   `BLK`/`WHT`'s `Black White Rare`, `30C`'s `Pikachu Rare`/`RGB Rare`/
   `Futuristic Rare`, `MEP`'s `Promo`, `MEE`'s `None`.
+- **`Rare Shiny GX`** (35 cards) is left verbatim while bare `Rare Shiny` was
+  folded to `Shiny Rare`, because the `GX` makes it mechanic-specific — same
+  reasoning as the `Rare Holo *` family, but it does mean the two sit in the
+  database spelled opposite ways round.
+
+#### Open: `Rare Holo *` is a finish and a tier in one string
+
+**Worth revisiting; deliberately not touched yet.** Holo was never a rarity tier
+in the TCG's symbol system — it's a *print finish*. A Holofoil Rare and a
+non-holo Rare print the same ★ symbol, and Bulbapedia describes Holofoil Rare as
+a print variant within the Rare tier ("A small amount of rare cards within each
+expansion are available as both Regular Rare and Holofoil Rare"), not a tier of
+its own. That's why `Holo` appears nowhere on pokemon.com's nine-name list: it
+was never on it to drop. It also stopped mattering from Scarlet & Violet on,
+where every Rare in a booster pack is guaranteed to be a Holofoil Rare, so the
+holo/non-holo distinction has nothing left to distinguish.
+
+pokemon-tcg-data folded the finish into the `rarity` string anyway, which is
+where the whole `Rare Holo`/`Rare Holo EX`/`GX`/`V`/`VMAX`/`VSTAR`/`LV.X`/`Star`
+family comes from, and why its naming was never canonical enough to normalize
+(see above). **So a `Rare Holo *` value is a finish+tier composite, not a tier —
+don't reconcile it against pokemon.com's list and conclude the data is wrong.**
+
+The strictly-correct representation is `rarity: "Rare"` plus a separate finish
+field. That's a schema change (`types/card.ts`, `fetch-set.mjs`, and ~2,400
+cards across most of `data/sets/`), not a naming pass, so it's left as is for
+now. If it gets done, revisit `data/card-overrides/30CCC.json`'s three
+`Rare Holo V`/`VMAX`/`VSTAR` pins at the same time — those only exist to make
+that set consistent with the rest of the family, and the family would be gone.
 
 ### `data/card-overrides/<CODE>.json` — upstream is wrong and we know better
 
