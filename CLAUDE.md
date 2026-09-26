@@ -347,7 +347,71 @@ via this overlay — see HISTORY.md's DRV entry).
 
 Every `rarity` value also runs through `normalizeRarity()`, which title-cases a
 SCREAMING_SNAKE_CASE upstream constant (`MEGA_ATTACK_RARE` → `Mega Attack Rare`)
-rather than special-casing individual strings.
+rather than special-casing individual strings, and folds three upstream aliases
+via `RARITY_ALIASES`: `Rare Secret`/`Rare Ultra`/`Rare Shiny` → `Secret Rare`/
+`Ultra Rare`/`Shiny Rare`. pokemon-tcg-data spelled the tier noun first up to
+Sword & Shield and switched to the noun-last form the TCG itself uses (and that
+Bulbapedia's [Rarity](https://bulbapedia.bulbagarden.net/wiki/Rarity) page
+names) once Scarlet & Violet added new tiers — **one upstream convention
+abandoned mid-stream, not two eras of official naming.** Don't reconstruct an
+era distinction from the split.
+
+Two limits, both deliberate. `Rare Secret` is *not* merged into `Hyper Rare`:
+Bulbapedia lists Secret Rare and Hyper Rare as distinct tiers, not a rename.
+And the mechanic-specific holo tiers (`Rare Holo EX`/`GX`/`V`/`VMAX`/`VSTAR`,
+`Rare BREAK`, `Rare Prime`, `Rare Holo LV.X`, `Rare Prism Star`, `Rare ACE`)
+are left verbatim — Bulbapedia's own wording for those is inconsistent in both
+order and case ("rare Holo EX", "Rare Prime", "holo rare V", "Amazing rare"),
+so there's no canonical target and a mechanical flip would invent names nobody
+uses. Note `data/card-overrides/30CCC.json` pins that set's three
+`Holo Rare V`/`VMAX`/`VSTAR` cards to the `Rare Holo *` form the other 434 such
+cards use; that makes the database self-consistent, but Bulbapedia arguably
+favours upstream's original ordering, so revisit it if this family ever does
+get normalized.
+
+#### Known rarity-spelling inconsistencies — noted, not flipped
+
+Upstream's spelling of these tiers is inconsistent and the policy is to store it
+verbatim and write the inconsistency down, rather than normalize toward a name
+nobody uses. Current state, so a future reader doesn't mistake any of it for a
+bug in this pipeline:
+
+- **`Rare Holo ex` vs `Rare Holo EX`** — the only same-words-different-case
+  collision left in `data/sets/`. It's tempting to read the case as the mechanic
+  (`ex` is the EX-era/Scarlet & Violet lowercase Pokémon-ex; `EX` is the
+  BW/XY-era Pokémon-EX), but **upstream doesn't maintain that distinction**: 133
+  cards with the lowercase `ex` *subtype* carry `Rare Holo EX`, and exactly one
+  (30CCC's Scizor ex) carries `Rare Holo ex`. The rarity string's case tells you
+  nothing about which mechanic the card is — read `subtypes` for that.
+- **Ordering across the `Rare Holo *` family** is upstream's, and Bulbapedia's
+  own page disagrees with itself on it (see above). Don't "fix" one member of the
+  family in isolation.
+- **`Secret Rare` and `Hyper Rare` coexist by design** — distinct tiers, and the
+  pre-SV/SV split in which sets use which is real, unlike the noun-order split
+  that `RARITY_ALIASES` folds away.
+
+To re-derive this list rather than trusting it: group every stored `rarity` by
+its lowercased word-set and print any group with more than one spelling.
+
+**pokemon.com's own current tier list** (Mega Evolution era) is exactly nine
+names: Common, Uncommon, Rare, Double Rare, Ultra Rare, Illustration Rare,
+Special Illustration Rare, Mega Attack Rare, Mega Hyper Rare. Audited against
+`data/sets/`, everything this database stores outside those nine is accounted
+for, so don't treat the extras as drift:
+
+- **Earlier-era tiers, on purpose.** All of `30CCC`'s oddities (`Rare Holo`,
+  `Rare Holo EX`/`GX`/`ex`/`LV.X`/`V`/`VMAX`/`VSTAR`, `Rare Prime`, `Rare BREAK`,
+  `Amazing Rare`, `Legend`, `Secret Rare`) are a throwback-reprint subset whose
+  cards each carry their *original* era's tier — correct by definition.
+- **Tiers pokemon.com's current list has dropped rather than never had.**
+  `Hyper Rare` (74 cards, 14 Scarlet & Violet sets) is the SV-era name for the
+  gold cards, superseded by `Mega Hyper Rare`; `ACE SPEC Rare` (33) is likewise
+  a real SV tier. Their absence from a Mega-era page isn't evidence against them.
+  Note `Secret Rare` isn't on the list either — it's the *pre-SV* tier that
+  `Hyper Rare` succeeded, which is the substantive reason not to merge the two.
+- **Subset- and set-specific tiers.** `PAF`'s `Shiny Rare`/`Shiny Ultra Rare`,
+  `BLK`/`WHT`'s `Black White Rare`, `30C`'s `Pikachu Rare`/`RGB Rare`/
+  `Futuristic Rare`, `MEP`'s `Promo`, `MEE`'s `None`.
 
 ### `data/card-overrides/<CODE>.json` — upstream is wrong and we know better
 

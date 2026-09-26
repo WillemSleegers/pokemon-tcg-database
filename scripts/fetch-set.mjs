@@ -157,6 +157,57 @@ async function loadNoRarityOverlay(code) {
   }
 }
 
+// pokemon-tcg-data spelled the tier noun first for everything up to Sword &
+// Shield ("Rare Ultra", "Rare Secret", "Rare Shiny") and then quietly switched
+// to the noun-last form the TCG itself uses when Scarlet & Violet added new
+// tiers ("Ultra Rare", "Illustration Rare"). That's one upstream convention
+// abandoned mid-stream, not two eras of official naming — Bulbapedia's Rarity
+// page names all three of these noun-last — so they're folded together here.
+// Deliberately NOT extended to the mechanic-specific holo tiers ("Rare Holo
+// EX", "Rare BREAK", "Rare Prime"): Bulbapedia's own wording for those is
+// itself inconsistent in both order and case, so there's no canonical target
+// to normalize toward and a mechanical flip would invent names nobody uses.
+// Also not merging "Rare Secret" into "Hyper Rare" — Bulbapedia lists Secret
+// Rare and Hyper Rare as distinct tiers, not a rename.
+// Every rarity spelling this database stores, keyed by its lowercased form, so
+// normalizeRarity can recover the exact casing of a tier that upstream handed
+// over as a SCREAMING_SNAKE_CASE constant. Case is meaningful in these names and
+// is never folded away.
+//
+// `Rare Holo ex` is deliberately absent even though the database stores it: it
+// lowercases to the same key as `Rare Holo EX`, and a SCREAMING_SNAKE constant
+// carries no case to tell them apart, so there's no honest answer for that key.
+// `Rare Holo EX` wins it because that's what all 132 EX-era Pokémon-ex cards
+// store; the lone `Rare Holo ex` (30CCC's Scizor ex) is untouched on disk since
+// it never arrives as a constant. The map is built with a collision guard rather
+// than an object literal so a future addition can't silently shadow another
+// spelling the way that pair would have.
+const RARITY_CANONICAL = /** @type {Record<string, string>} */ ({})
+for (const r of [
+  "Common", "Uncommon", "Rare", "Double Rare", "Ultra Rare", "Secret Rare",
+  "Illustration Rare", "Special Illustration Rare", "Hyper Rare",
+  "Mega Attack Rare", "Mega Hyper Rare", "ACE SPEC Rare", "Shiny Rare",
+  "Shiny Ultra Rare", "Radiant Rare", "Amazing Rare", "Black White Rare",
+  "Futuristic Rare", "Pikachu Rare", "RGB Rare", "Trainer Gallery Rare Holo",
+  "Classic Collection", "Legend", "Promo", "None",
+  "Rare Holo", "Rare Holo EX", "Rare Holo GX", "Rare Holo V", "Rare Holo VMAX",
+  "Rare Holo VSTAR", "Rare Holo LV.X", "Rare Holo Star", "Rare Prime",
+  "Rare BREAK", "Rare ACE", "Rare Prism Star", "Rare Rainbow", "Rare Shining",
+  "Rare Shiny GX",
+]) {
+  const key = r.toLowerCase()
+  if (RARITY_CANONICAL[key]) {
+    throw new Error(`RARITY_CANONICAL: ${r} and ${RARITY_CANONICAL[key]} differ only by case`)
+  }
+  RARITY_CANONICAL[key] = r
+}
+
+const RARITY_ALIASES = {
+  "Rare Secret": "Secret Rare",
+  "Rare Ultra": "Ultra Rare",
+  "Rare Shiny": "Shiny Rare",
+}
+
 // pokemon-tcg-data's rarity field is normally already the title-cased name
 // this database stores verbatim ("Rare Holo VMAX"), but Ascended Heroes'
 // Mega Attack Rare cards carry the raw upstream constant "MEGA_ATTACK_RARE"
@@ -165,8 +216,16 @@ async function loadNoRarityOverlay(code) {
 // rather than as a one-off string replacement, so any future set with the
 // same upstream slip is caught too.
 function normalizeRarity(rarity) {
+  if (RARITY_ALIASES[rarity]) return RARITY_ALIASES[rarity]
   if (!/^[A-Z]+(_[A-Z]+)*$/.test(rarity)) return rarity
-  return rarity.split("_").map((word) => word[0] + word.slice(1).toLowerCase()).join(" ")
+  const titled = rarity.split("_").map((word) => word[0] + word.slice(1).toLowerCase()).join(" ")
+  // Title-casing is wrong for any tier whose name contains an acronym or a
+  // mechanic label that isn't title case — "ACE_SPEC_RARE" is "ACE SPEC Rare",
+  // not "Ace Spec Rare", and "RGB_RARE" is "RGB Rare", not "Rgb Rare". Rather
+  // than keep a second list of exceptions in step with the first, resolve the
+  // title-cased guess case-insensitively against the spellings this database
+  // already stores; an unrecognized tier keeps the title-cased form.
+  return RARITY_CANONICAL[titled.toLowerCase()] ?? titled
 }
 
 const CONCURRENCY = 6
