@@ -2605,3 +2605,44 @@ print `01/30`…`30/30` under the normal `023/128`. New optional `subsetNumber`
 field; values recorded in `data/card-overrides/30C.json`, read off the card
 faces. (The RGB rares' `R/RGB`, by contrast, *is* the primary number and was
 already correct.)
+
+**4. Black Star Promos printed a bare number; we invented a denominator.** `WP`,
+`NP` and `SVP` — 311 cards — stored `/53`, `/40`, `/102` that no card shows.
+Verified per set and across digit widths: WP prints `1`, `9`, `24` (unpadded);
+NP prints `001`, `009`, `040`; SVP prints `SVP EN 001 ★`, `009`, `150`. So WP is
+`numberPad: 1` and NP/SVP are `3`, in `data/set-meta/`. `numberPad` already meant
+exactly this but only reached `buildNumber` on the `"NONE"` path, so it never
+applied to a pokemon-tcg-data-sourced set; it's now read on both. Checked and
+ruled out as fine: the McDonald's collections, POP series, theme decks, `RU`,
+`FUT`, `KSS` and Dragon Vault (`1/20`, confirmed against the card) all genuinely
+print a denominator.
+
+Re-fetching those three turned up two further problems.
+
+**A third Bulbapedia `action=raw` call site.** `fetchBulbapediaSetList` in
+`fetch-set.mjs` still used the Cloudflare-blocked URL — the two in `scripts/lib/`
+had been moved to the API, this one hadn't, so SVP's `--fill-from-limitless` run
+died on HTTP 403. Now on `fetchWikitext` like the others. Worth noting SVP had
+therefore been un-re-fetchable for as long as the block had been up.
+
+**Re-fetching SVP silently dropped 8 cards** (190–192, 213–215, 225, 226), all
+`limitless: null`. They're in neither pokemon-tcg-data nor Limitless — hand-added
+earlier, the same way SP's Jirachi V/Unown V/Lugia V were — and the assembled
+card list is only ever pokemon-tcg-data's set plus the ids Limitless's index
+adds, so nothing could regenerate them. The database was their only record.
+Caught by diffing card counts before/after (226 → 218) rather than by any check
+in the script, which is the uncomfortable part: this had been a latent
+data-loss bug on every `--fill-from-limitless` run.
+
+Fixed by `carryOverUnsourcedCards`, which re-reads the existing set file and
+carries such cards over, opt-in via `data/no-limitless/<CODE>.json`; an orphan
+not listed there is now a hard error naming every card, since the other thing
+that produces one is an id-normalization bug. Proved by running it before adding
+the ids (it named exactly the 8) and after (carried all 8, 226 cards restored).
+A carried card's `number` is recomputed rather than copied, so the 8 picked up
+the corrected bare-promo form. `--fill-from-limitless` also now recomputes
+`total` after the carry-over — it had written 218 against 226 cards.
+
+The same audit found `SP` with 2 and `MEP` with 9 `limitless: null` cards not
+listed in their overlays; both files are now complete, so a future re-fetch of
+either won't hit the new error.

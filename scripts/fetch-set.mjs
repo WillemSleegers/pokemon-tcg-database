@@ -81,6 +81,7 @@ import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
 import { fetchCardWikitext, parseCardWikitext } from "./lib/bulbapedia-card.mjs"
+import { fetchWikitext } from "./lib/bulbapedia.mjs"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..")
 const OUT_DIR = resolve(ROOT, "data/sets")
@@ -135,6 +136,18 @@ async function loadNoLimitlessOverlay(code) {
 // genuine data gap looks like. So far this is whole theme-deck/promo-collection
 // sets rather than individual cards (Kalos Starter Set, the McDonald's
 // Collections), listed with a lone "*" the same as data/no-pokedex/.
+// `numberPad` lives in data/set-meta/<CODE>.json, which a "NONE" run reads in
+// full. A pokemon-tcg-data-sourced set reads only this one key from it, so the
+// file can be just `{ "numberPad": 3 }` for a set that needs nothing else.
+// Undefined means "print a denominator", the normal case.
+async function loadNumberPad(code) {
+  try {
+    return JSON.parse(await readFile(resolve(ROOT, "data/set-meta", `${code}.json`), "utf8")).numberPad
+  } catch {
+    return undefined
+  }
+}
+
 async function loadNoRarityOverlay(code) {
   try {
     const ids = JSON.parse(await readFile(resolve(ROOT, "data/no-rarity", `${code}.json`), "utf8"))
@@ -548,9 +561,11 @@ async function fetchLimitlessSetIndex(urlCode) {
 // its card page lives at ("Meganium (MEP Promo 1)"), which beats guessing at
 // one from the card name.
 async function fetchBulbapediaSetList(pageTitle) {
-  const wikitext = await get(
-    `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(pageTitle.replace(/ /g, "_"))}&action=raw`,
-  )
+  // Via the MediaWiki API, not index.php?action=raw — Cloudflare 403s that one.
+  // See fetchWikitext's comment; this was the third call site and the only one
+  // outside scripts/lib/, so it kept 403ing after the other two were moved.
+  const wikitext = await fetchWikitext(pageTitle, "pokemon-tcg-database (personal reference dataset)")
+  if (wikitext === null) throw new Error(`Bulbapedia has no page "${pageTitle}" (data/set-meta bulbapediaSetPage)`)
   const byLocalId = new Map()
   // How Bulbapedia names this set inside a card-page title ("SVP Promo", from
   // "Sprigatito (SVP Promo 1)"). Read off the entries rather than derived from
@@ -987,6 +1002,50 @@ async function resolveSequentialLocalIds(code, limitlessUrlCode, sequentialPrefi
   return localIds
 }
 
+// ---- cards this database is the only record of ----------------------------
+
+// A long-running promo set can contain cards that *neither* pokemon-tcg-data
+// nor Limitless carries — hand-added after confirming against Bulbapedia that
+// the print is a reprint of a card already verified here (see HISTORY.md's SP
+// entry). Nothing in a re-fetch can regenerate those: the assembled card list
+// is pokemon-tcg-data's set, plus at most the ids Limitless's index adds. So
+// they exist only in data/sets/<CODE>.json, and a plain re-run silently drops
+// them — SVP lost 8 cards (190-192, 213-215, 225, 226) exactly this way.
+//
+// Carrying them over is opt-in via data/no-limitless/<CODE>.json, the same
+// file that already means "this card has no Limitless page". An orphan that
+// *isn't* listed there is a hard error rather than a silent drop, because the
+// other thing that produces one is a genuine id-normalization bug, and losing
+// a card to that quietly is the failure mode this whole script is built to
+// avoid. `number` is recomputed rather than copied, so a carried card still
+// follows the set's current printed-number rules.
+async function carryOverUnsourcedCards(code, cards, noLimitlessCards, printedTotal, numberPad, releaseDate) {
+  let existing
+  try {
+    existing = JSON.parse(await readFile(resolve(OUT_DIR, `${code}.json`), "utf8"))
+  } catch {
+    return // first fetch of this set — nothing to carry over
+  }
+  const assembled = new Set(cards.map((c) => c.localId))
+  const orphans = existing.cards.filter((c) => !assembled.has(c.localId))
+  if (!orphans.length) return
+
+  const carried = orphans.filter((c) => c.limitless === null && noLimitlessCards.has(c.localId))
+  const unexplained = orphans.filter((c) => !carried.includes(c))
+  if (unexplained.length) {
+    throw new Error(
+      `${unexplained.length} card(s) already in data/sets/${code}.json would be dropped by this run:\n` +
+        unexplained.map((c) => `  ${c.localId} ${c.name}${c.limitless ? ` (${c.limitless.deckCode})` : " (limitless: null)"}`).join("\n") +
+        `\nIf neither pokemon-tcg-data nor Limitless carries them, they exist only here — confirm each\n` +
+        `is genuinely still in the set, then list it in data/no-limitless/${code}.json to carry it over.\n` +
+        `If one *should* have been found, this is an id-normalization bug, not a missing overlay entry.`,
+    )
+  }
+  for (const card of carried) card.number = buildNumber(card.localId, printedTotal, numberPad, releaseDate)
+  cards.push(...carried)
+  console.log(`Carried over ${carried.length} card(s) that only this database has: ${carried.map((c) => c.localId).join(", ")}`)
+}
+
 // ---- per-card corrections -------------------------------------------------
 
 // data/card-overrides/<CODE>.json — { "<localId>": { <field>: <value> } } —
@@ -1145,15 +1204,23 @@ async function main() {
   } else {
     console.log(`Fetching ${ptcgDataSetId} from pokemon-tcg-data...`)
     ;({ setMeta, cards: primaryCards } = await fetchPrimarySet(ptcgDataSetId))
+    // A Black Star Promo set prints a bare promo number and no denominator, and
+    // that's just as true when pokemon-tcg-data is the primary source as it is
+    // on the "NONE" path — WP prints "24", NP "040", SVP "150". Without this,
+    // buildNumber invents a denominator out of printedTotal ("24/53", "040/40",
+    // "150/102"), none of which appears on the card. numberPad is the existing
+    // way to say "bare padded number"; it just wasn't reachable from here.
+    numberPad = await loadNumberPad(limitlessCode)
     if (fillFromLimitless) {
       const fill = await buildFillCards(limitlessCode, limitlessUrlCode, primaryCards)
       trainerEffectsByLocalId = fill.trainerEffectsByLocalId
       for (const card of fill.cards) fallbackLocalIds.add(card.number)
       primaryCards = [...primaryCards, ...fill.cards]
       // sets/en.json's own total counts what pokemon-tcg-data has, which is the
-      // number this run just went past. printedTotal is the number printed on
-      // the cards and stays as-is (a promo set's is a denominator that stopped
-      // matching reality long ago — svp prints "/102" on card 165).
+      // number this run just went past. printedTotal stays as-is: for a promo
+      // set it's a set-size figure that no card actually prints (svp's cards
+      // print a bare "150", never "150/102" — see numberPad above), and it's
+      // still what the secret-rare threshold is measured against.
       setMeta = { ...setMeta, total: primaryCards.length }
     }
   }
@@ -1352,6 +1419,13 @@ async function main() {
     if (done % 20 === 0 || done === primaryCards.length) console.log(`  ${done}/${primaryCards.length}`)
     return card
   })
+
+  await carryOverUnsourcedCards(limitlessCode, cards, noLimitlessCards, printedTotal, numberPad, setMeta.releaseDate)
+
+  // A carried-over card is still a card in the set, so it has to count. The
+  // fill path set `total` from the merged pokemon-tcg-data + Limitless list
+  // before this point, which is one source short of the real total.
+  if (fillFromLimitless) setMeta = { ...setMeta, total: cards.length }
 
   if (sequentialPrefix) {
     await applyThrowbackNumbers(

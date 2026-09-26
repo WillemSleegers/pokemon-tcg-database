@@ -67,7 +67,7 @@ still be inferred from that narrow initial shape.
 ### `number` is what the card prints — everything on a card gets stored
 
 `number` is defined as the exact phrasing printed on the card, and that's a real
-constraint, not a loose description. Four separate ways it had drifted, all found
+constraint, not a loose description. Three separate ways it had drifted, all found
 at once while adding 30th Celebration (see HISTORY.md):
 
 - **Zero-padding is era-dependent.** The TCG only began padding the numerator to
@@ -84,6 +84,15 @@ at once while adding 30th Celebration (see HISTORY.md):
 - **A card can print more than one number.** 30th Celebration's 30 Pikachu rares
   print `01/30`…`30/30` alongside the normal `023/128`, which is what the optional
   `subsetNumber` field holds.
+- **A Black Star Promo prints a bare number, no denominator.** `WP` prints `24`,
+  `NP` `040`, `SVP` `150` — all three used to store a fabricated `/53`, `/40`,
+  `/102` (311 cards). `numberPad` in `data/set-meta/<CODE>.json` says "bare
+  padded number"; it now reaches `buildNumber` on the pokemon-tcg-data path too,
+  not just `"NONE"`. `WP` is `numberPad: 1` (unpadded), `NP`/`SVP` are `3`. A
+  set that needs nothing else from that file can have just `{ "numberPad": 3 }`.
+  Most promo-ish sets are _fine_ and print a real denominator — the McDonald's
+  collections, POP series, theme decks, `RU`, `FUT`, `KSS` and Dragon Vault
+  (`1/20`), all verified against images.
 
 ## Pipeline
 
@@ -668,3 +677,26 @@ ids) and prints what's missing, grouped by `series`, oldest first. Use this inst
 of walking a numeric id range — a numeric walk is what hid `dc1`, `dv1`, and `g1`
 for years.
 
+## Cards only this database has
+
+A long-running promo set can hold cards that **neither pokemon-tcg-data nor
+Limitless carries** — hand-added after confirming on Bulbapedia that the print
+redirects to a card already verified here (see HISTORY.md's SP and SVP entries).
+A re-fetch can't regenerate those: the assembled list is pokemon-tcg-data's set
+plus at most the ids Limitless's index adds, so they exist only in
+`data/sets/<CODE>.json` and a plain re-run used to drop them silently. SVP lost
+8 cards (190–192, 213–215, 225, 226) exactly this way.
+
+`carryOverUnsourcedCards` now re-reads the existing file and carries them over,
+**opt-in via `data/no-limitless/<CODE>.json`** — the same file that already
+means "this card has no Limitless page". An orphan that _isn't_ listed there is
+a hard error naming every card, because the other thing that produces one is an
+id-normalization bug, and losing a card to that quietly is the failure mode this
+script exists to prevent. A carried card's `number` is recomputed, not copied,
+so it still follows the set's current printed-number rules.
+
+So: **if you hand-add a card to `data/sets/<CODE>.json`, list its localId in
+`data/no-limitless/<CODE>.json` too**, or the next fetch of that set will refuse
+to run. `SP` (15), `SVP` (9) and `MEP` (9) are fully listed as of this writing.
+`--fill-from-limitless` recomputes `total` after the carry-over, so carried
+cards are counted.
