@@ -868,12 +868,15 @@ function limitlessMismatches(primary, text) {
     }
   }
   const noneToNull = (v) => (v && v !== "none" ? v : null)
+  // Limitless writes "Nidoran♀"; the card, and this database, print
+  // "Nidoran ♀" (see scripts/lib/bulbapedia.mjs). Spelling, not a mismatch.
+  const genderSpace = (v) => v?.replace(/(\S)([♀♂])/, "$1 $2")
 
-  check("name", primary.name, text.name)
+  check("name", primary.name, genderSpace(text.name))
   check("supertype", primary.supertype, text.supertype)
   check("hp", primary.hp, text.hp)
   check("types", primary.types?.[0], text.types)
-  check("evolvesFrom", primary.evolvesFrom, text.evolvesFrom)
+  check("evolvesFrom", primary.evolvesFrom, genderSpace(text.evolvesFrom))
   check("weakness", primary.weaknesses?.[0]?.type, noneToNull(text.weakness))
   check("resistance", primary.resistances?.[0]?.type, noneToNull(text.resistance))
   if (primary.supertype === "Pokémon") check("retreatCost", primary.convertedRetreatCost ?? 0, Number(text.retreat ?? 0))

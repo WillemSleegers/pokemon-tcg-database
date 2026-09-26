@@ -2693,3 +2693,24 @@ naming the card and its three offending fields) and by feeding it
 `30CCC` rewrote every card's `printGroup` back to its bare Limitless snapshot,
 as a fresh fetch always does; `refresh-print-groups.mjs` restored them, leaving
 a one-line diff.
+
+## MEP re-fetch: 88 → 100 cards
+
+Limitless's MEP page grew to `101` (no `093`), adding `089`–`092` and
+`094`–`101`, and now also has pages for `055`–`063`, the First Partner
+Illustration Collection Series 3 cards that had been hand-added as
+`limitless: null`. `data/no-limitless/MEP.json` listed exactly those nine, so
+it was deleted: the cards are Limitless-sourced now, and keeping the overlay
+made the `"NONE"` run fail ("55 has no Limitless page"), since a fallback-built
+card depends on its Limitless page for verification. Nothing else on `001`–`088`
+changed.
+
+`101` Nidorina failed the Limitless cross-check on `evolvesFrom`: Limitless
+writes `Nidoran♀`, while the card and every other record here print
+`Nidoran ♀` (see `scripts/lib/bulbapedia.mjs`). `limitlessMismatches` now
+inserts that space on Limitless's side for `name` and `evolvesFrom`.
+
+`data/set-meta/MEP.json`'s `printedTotal` went 88 → 100. It is the card count
+(`secretTotal` is derived as `total − printedTotal`), not the highest number,
+so 101 would give −1. Flavor text on the twelve new cards hasn't been swept
+against card images yet.
