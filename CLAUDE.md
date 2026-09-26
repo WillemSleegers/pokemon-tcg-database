@@ -366,10 +366,16 @@ It exists rather than hand-editing `data/sets/<CODE>.json` because the normal
 pipeline re-runs `fetch-set.mjs` after the flavor-text pass, which rewrites that
 file and would silently drop a hand-edit. (The older DRV/HS-era precedent of
 editing the output directly predates this and only survives because those sets
-were never re-fetched.) Guards: `localId`, `limitless`, `name` and `supertype`
-are refused outright — a wrong localId or a fabricated `limitless` block is the
-exact class of bug the rest of the script works to make impossible — and a key
-naming a card that isn't in the set throws.
+were never re-fetched.) Guards: `localId`, `limitless` and `name` are refused
+outright — a wrong localId or a fabricated `limitless` block is the exact class
+of bug the rest of the script works to make impossible — and a key naming a card
+that isn't in the set throws. `supertype` used to be refused alongside them and
+isn't any more (it names no card and claims no provenance, and it's right there
+on the card's face); it's checked against the three legal values instead.
+`assertSupertypeConsistency` is the real guard there: a non-Pokémon card
+carrying `weaknesses`, `resistances`, `retreatCost` or `evolvesFrom` fails the
+run. Deliberately *not* `hp`/`attacks` — a Fossil prints HP and a Technical
+Machine prints an attack, both legitimately Trainers (95 such cards).
 
 `pokedexNumber` is the one key that isn't a plain field assignment: it takes a
 National Pokédex number and builds the whole `pokedex` box from PokeAPI, for a

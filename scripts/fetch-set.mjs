@@ -1063,12 +1063,22 @@ async function carryOverUnsourcedCards(code, cards, noLimitlessCards, printedTot
 // `limitless` block is exactly the class of bug the rest of this script
 // works to make impossible.
 //
+// `supertype` used to be refused alongside them, but it doesn't belong in that
+// company: it names no card and claims no provenance, it's right there on the
+// card's face, and upstream does get it wrong — pokemon-tcg-data files 30CCC's
+// Erika's Jigglypuff as a Trainer despite the 50 HP and two attacks it prints
+// (the same card's original Gym Challenge print, `G2 69`, is correctly a
+// Pokémon upstream, so it's a one-off slip in that file). It's allowed now,
+// checked against the three legal values, and assertSupertypeConsistency below
+// is what actually catches this class of error.
+//
 // `pokedexNumber` is the one key that isn't a plain field assignment: it
 // takes a National Pokédex number and builds the whole box from PokeAPI, the
 // same as a card that had the number upstream. Needed for a card that prints
 // a dex line but that pokemon-tcg-data gives no nationalPokedexNumbers for
 // (30CCC's Erika's Jigglypuff, whose own face prints "#39").
-const OVERRIDE_FORBIDDEN = new Set(["localId", "limitless", "name", "supertype"])
+const OVERRIDE_FORBIDDEN = new Set(["localId", "limitless", "name"])
+const SUPERTYPES = new Set(["Pokémon", "Trainer", "Energy"])
 
 // A throwback-reprint subset's cards print their *original* set's collector
 // number and nothing else — 30th Celebration: Classic Collection's Pikachu
@@ -1159,9 +1169,42 @@ async function applyCardOverrides(code, cards) {
     if (!card) throw new Error(`data/card-overrides/${code}.json overrides "${localId}", which is not a card in this set`)
     for (const [key, value] of Object.entries(fields)) {
       if (OVERRIDE_FORBIDDEN.has(key)) throw new Error(`data/card-overrides/${code}.json: "${key}" can't be overridden (${localId})`)
+      if (key === "supertype" && !SUPERTYPES.has(value)) {
+        throw new Error(`data/card-overrides/${code}.json: "${value}" is not a supertype (${localId})`)
+      }
       if (key === "pokedexNumber") card.pokedex = await fetchPokedexInfo(value)
       else card[key] = value
     }
+  }
+}
+
+// Weakness, resistance, retreat cost and evolvesFrom belong to a Pokémon and
+// nothing else, so a Trainer or Energy card carrying one means the supertype is
+// wrong — which is exactly how pokemon-tcg-data's Erika's Jigglypuff error got
+// written out to data/sets/30CCC.json unnoticed. Checked after the overrides
+// are applied, so fixing it in data/card-overrides/ clears the error; a genuine
+// new upstream slip fails the run loudly instead of landing in a set file.
+//
+// `hp` and `attacks` are deliberately NOT in this list, though they look like
+// equally good tells: a Fossil is a Trainer that prints HP (it becomes a
+// Pokémon), and a Technical Machine, a Scroll or a Z-Crystal is a Trainer that
+// prints an attack. Including them flagged 95 perfectly correct cards.
+function assertSupertypeConsistency(cards) {
+  const POKEMON_ONLY = ["weaknesses", "resistances", "retreatCost", "evolvesFrom"]
+  const bad = []
+  for (const card of cards) {
+    if (card.supertype === "Pokémon") continue
+    const present = POKEMON_ONLY.filter((f) => {
+      const v = card[f]
+      return Array.isArray(v) ? v.length > 0 : v !== undefined && v !== null
+    })
+    if (present.length > 0) bad.push(`${card.localId} ${card.name} (${card.supertype}) has ${present.join(", ")}`)
+  }
+  if (bad.length > 0) {
+    throw new Error(
+      `${bad.length} card(s) have a supertype that contradicts their own fields:\n${bad.join("\n")}\n` +
+        `Check each against its card image. If upstream has it wrong, correct it in data/card-overrides/<CODE>.json.`,
+    )
   }
 }
 
@@ -1435,6 +1478,7 @@ async function main() {
   }
 
   await applyCardOverrides(limitlessCode, cards)
+  assertSupertypeConsistency(cards)
 
   cards.sort((a, b) => a.localId.localeCompare(b.localId, undefined, { numeric: true }))
 

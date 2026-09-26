@@ -2646,3 +2646,50 @@ the corrected bare-promo form. `--fill-from-limitless` also now recomputes
 The same audit found `SP` with 2 and `MEP` with 9 `limitless: null` cards not
 listed in their overlays; both files are now complete, so a future re-fetch of
 either won't hit the new error.
+
+## A Pokémon filed as a Trainer, found while building the collection CSV
+
+Adding `scripts/collection-csv.mjs` (a tab-separated `mark`/`number`/`name`/
+`supertype`/`type`/`subtype`/`rarity` dump for pasting into a Google Sheets
+collection tracker) meant deciding where a Trainer's `Item` belongs. A Trainer
+or Energy card has no `types` at all — the card's kind sits in `subtypes`
+alongside the mechanic labels — so the script splits `subtypes` on a
+`CARD_KINDS` list: `Item`/`Supporter`/`Stadium`/`Pokémon Tool`/`Technical
+Machine`/`Rocket's Secret Machine`/`Goldenrod Game Corner` and Energy's
+`Basic`/`Special` go in the `type` column, leaving `ACE SPEC`, `Prism Star`,
+`Single Strike` and friends in `subtype`. Anything unrecognized falls through
+to `subtype`, so a new mechanic label can't quietly land in `type`. Energy's
+own `types` value is dropped — seven cards have one (`MEW 207`, `SFA 98`/`99`,
+some `PAL` specials) and the energy type is in the card's name anyway.
+
+Surveying every non-Pokémon card in the database to build `CARD_KINDS` turned
+up `30CCC`'s Erika's Jigglypuff (`CC4`) filed as `supertype: "Trainer"` —
+despite 50 HP, two attacks, a Fighting weakness, a resistance and a retreat
+cost. Verified as upstream's own error, verbatim in pokemon-tcg-data's
+`me55c.json` (`"id": "me55c-69"`). It's a one-off slip in that file, not a
+pattern: the *same card's* original Gym Challenge print, `G2 69`, is correctly
+a Pokémon upstream, and the two sit in one print group (`['30C CC4', 'G2 69']`),
+so they're definitionally the same card.
+
+Two changes came out of it:
+
+- **`supertype` removed from `OVERRIDE_FORBIDDEN`.** It had been refused
+  alongside `localId`/`limitless`/`name`, but it doesn't belong in that
+  company — it names no card and claims no provenance, and it's right there on
+  the card's face. It's allowed now, validated against the three legal values,
+  and `data/card-overrides/30CCC.json` carries the fix so a re-fetch keeps it.
+- **`assertSupertypeConsistency`**, run after the overrides are applied: a
+  non-Pokémon card carrying `weaknesses`, `resistances`, `retreatCost` or
+  `evolvesFrom` fails the run. The useful part is what's *not* in that list.
+  `hp` and `attacks` look like equally good tells and are not: a Fossil is a
+  Trainer that prints HP (it becomes a Pokémon), and a Technical Machine, a
+  Scroll or a Z-Crystal is a Trainer that prints an attack — including them
+  flagged 95 perfectly correct cards across the database. The four that
+  remain flagged exactly one card: `CC4`.
+
+Both checks were re-proved by reverting the override (the assertion fires,
+naming the card and its three offending fields) and by feeding it
+`"supertype": "Pokemon"` without the accent (the value check fires). Re-fetching
+`30CCC` rewrote every card's `printGroup` back to its bare Limitless snapshot,
+as a fresh fetch always does; `refresh-print-groups.mjs` restored them, leaving
+a one-line diff.
