@@ -333,9 +333,20 @@ Pokédex entry** — usually the species' **Pokémon Scarlet** entry, falling ba
 earlier game (varies per species — Shield, Legends: Z-A, even the Pokopia spinoff have
 all shown up) when there's no Scarlet/Violet entry. PokeAPI does **not** have
 Scarlet/Violet data at all, so it undershoots this — Bulbapedia's raw wikitext does,
-in a clean template: `{{Dex/EntryN|v=Scarlet|entry=...}}`. Fetch a species page with
-`?action=raw` and parse those templates (see `parseDexEntries` in
-`scripts/flavor-text-editor.mjs`) to get every game's entry for that species.
+in a clean template: `{{Dex/EntryN|v=Scarlet|entry=...}}`. Fetch a species page and
+parse those templates (see `parseDexEntries` in `scripts/flavor-text-editor.mjs`)
+to get every game's entry for that species.
+
+**Fetch wikitext through `fetchWikitext()` (`scripts/lib/bulbapedia.mjs`), which
+goes through the MediaWiki API — not `index.php?action=raw`.** Cloudflare started
+answering `action=raw` with a 403 "Just a moment..." interstitial; `api.php` on the
+same host isn't challenged. This mattered more than it sounds: `fetchFlavorCandidates`
+swallows a non-ok response (`if (!res.ok) return []`), so the block failed _silently_
+— `check-flavor-text.mjs` reported every card unmatched rather than erroring, and the
+editor's "Show unmatched only" sweep was equally worthless. **If a whole set suddenly
+comes back unmatched, check Bulbapedia is actually reachable before touching the
+text.** `node scripts/fetch-flavor-candidates.mjs Pikachu` returning "(no candidates
+found)" is the quickest tell.
 
 This isn't 100% automatable (the correct fallback game varies per card), but it turns
 manual transcription from "read every card image" into "read a short list of ~15
@@ -572,3 +583,4 @@ database's codes are Limitless's and deliberately don't track pokemon-tcg-data's
 ids) and prints what's missing, grouped by `series`, oldest first. Use this instead
 of walking a numeric id range — a numeric walk is what hid `dc1`, `dv1`, and `g1`
 for years.
+

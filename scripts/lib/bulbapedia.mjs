@@ -253,17 +253,38 @@ export function parseDexEntries(wikitext) {
   return [...byText.entries()].map(([text, versions]) => ({ text, versions }))
 }
 
+// Bulbapedia's `index.php?action=raw` sits behind Cloudflare, which started
+// answering it with a 403 "Just a moment..." interstitial rather than the
+// wikitext. The MediaWiki API on the same host isn't challenged, so every
+// wikitext fetch goes through it instead. Same bytes, different door.
+//
+// Deliberately *not* passing the API's `redirects` parameter: like a raw
+// fetch, this returns a redirect page's own `#REDIRECT [[...]]` wikitext
+// rather than resolving it, which fetchCardWikitext depends on to tell "this
+// print has no page of its own" from "this is the page for this print".
+//
+// Returns null for a page that doesn't exist (the API reports that as a
+// "missing" page rather than an HTTP error).
+export async function fetchWikitext(title, userAgent = "pokemon-tcg-database") {
+  const url =
+    `https://bulbapedia.bulbagarden.net/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&titles=` +
+    encodeURIComponent(title.replace(/_/g, " "))
+  const res = await fetch(url, { headers: { "user-agent": userAgent } })
+  if (!res.ok) throw new Error(`Bulbapedia ${title}: HTTP ${res.status}`)
+  const pages = (await res.json())?.query?.pages ?? {}
+  const page = Object.values(pages)[0]
+  if (!page || "missing" in page) return null
+  return page.revisions?.[0]?.slots?.main?.["*"] ?? null
+}
+
 const flavorCandidateCache = new Map()
 export async function fetchFlavorCandidates(name) {
   if (flavorCandidateCache.has(name)) return flavorCandidateCache.get(name)
   const promise = (async () => {
     try {
-      const res = await fetch(
-        `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(name)}_(Pok%C3%A9mon)&action=raw`,
-        { headers: { "user-agent": "pokemon-tcg-database (flavor-text-editor)" } }
-      )
-      if (!res.ok) return []
-      return parseDexEntries(await res.text())
+      const wikitext = await fetchWikitext(`${name} (Pokémon)`, "pokemon-tcg-database (flavor-text-editor)")
+      if (wikitext === null) return []
+      return parseDexEntries(wikitext)
     } catch (err) {
       // A transient network hiccup (e.g. ETIMEDOUT) shouldn't permanently
       // cache a failure — clear the cache entry so the next request retries.

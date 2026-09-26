@@ -24,7 +24,7 @@
 // is why the reprint path has to be tried first — following the redirect would
 // land on a page describing a different print of the card.
 
-import { cleanDexEntry, extractTemplates, splitTemplateParams } from "./bulbapedia.mjs"
+import { cleanDexEntry, extractTemplates, fetchWikitext, splitTemplateParams } from "./bulbapedia.mjs"
 
 // Every modern-era (Scarlet & Violet onward) card prints the same two values,
 // which is why Bulbapedia's infobox records only the type and not the amount —
@@ -212,12 +212,8 @@ export function parseCardWikitext(wikitext) {
  *   print of the card, which is what this guards against.
  */
 export async function fetchCardWikitext(title) {
-  const res = await fetch(
-    `https://bulbapedia.bulbagarden.net/w/index.php?title=${encodeURIComponent(title.replace(/ /g, "_"))}&action=raw`,
-    { headers: { "user-agent": "pokemon-tcg-database (personal reference dataset)" } },
-  )
-  if (!res.ok) throw new Error(`Bulbapedia ${title}: HTTP ${res.status}`)
-  const text = await res.text()
+  const text = await fetchWikitext(title, "pokemon-tcg-database (personal reference dataset)")
+  if (text === null) throw new Error(`Bulbapedia ${title}: no such page`)
   const redirect = text.match(/^#REDIRECT\s*\[\[([^\]]+)\]\]/i)
   if (redirect) return { wikitext: null, redirect: redirect[1].trim() }
   return { wikitext: text, redirect: null }
