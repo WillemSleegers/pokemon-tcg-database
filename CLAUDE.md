@@ -21,6 +21,7 @@ Done, oldest era first (see HISTORY.md for per-set detail):
 - **HGSS era** (`hgss1`–`hgss4`, `col1`) — 5 files.
 - **Platinum era** (`pl1`–`pl4`) — 4 files.
 - **Mega Evolution series** (MEG, PFL, ASC, POR, CRI, PBL) and **Scarlet & Violet** (SVI, SVE, PAL, OBF, MEW, PAR, PAF, TEF, TWM, SFA, SCR, SSP, PRE, JTG, DRI, BLK, WHT) — done, predates this file's HISTORY.md split.
+- **30th Celebration** (`me55` → `30C`, 161 cards) and its **Classic Collection** (`me55c` → `30CCC`, 30 cards) — 2 files. The subset shares `30C`'s Limitless page and needs both the third and fourth arguments, plus `data/local-id-map/` for its LEGEND pair; see HISTORY.md.
 - **Diamond & Pearl era** (`dp1`–`dp7`) — `DP`, `MT`, `SW`, `GE`, `MD`, `LA`, `SF` — 7 files.
 - **Every McDonald's Collection through 2024** (`MCD11`, `MCD12`, `MCD14`–`MCD19`, `MCD21`–`MCD24`) — 12 files. `MCD23`/`MCD24` are in neither pokemon-tcg-data nor Limitless — see HISTORY.md for how those two were hand-built entirely from Bulbapedia/reprint data instead.
 
@@ -133,6 +134,30 @@ artist/deckCode/printGroup. Fixed by `resolveSequentialLocalIds()`
 with whichever page's own name actually matches it — throwing loudly on an
 unmatched or ambiguous name rather than falling back to position. See HISTORY.md
 for the full incident.
+
+#### `data/local-id-map/<CODE>.json` — when name-matching genuinely can't decide
+
+Name-matching has one blind spot it can't resolve on its own: two Limitless pages
+under the prefix that really do share a name. An HGSS-era LEGEND card is split
+across two physical halves, and pokemon-tcg-data stores them as two entries with
+identical name _and_ identical game text — 30th Celebration: Classic Collection's
+Darkrai & Cresselia LEGEND (`CC16`/`CC17`). `resolveSequentialLocalIds` throws
+naming both pages rather than guessing; pin them by hand in
+`data/local-id-map/<CODE>.json` as `{ "<pokemon-tcg-data card id>": "<localId>" }`.
+
+Keyed on pokemon-tcg-data's **`id`** (`me55c-99`), not its `number`, because
+`number` is exactly the field that isn't unique in this kind of subset — `me55c`
+has three cards numbered 106, upstream-disambiguated as `me55c-106`/`-106p`/`-106m`.
+Both sides of every entry are checked against what was actually fetched, so a
+stale pin fails loudly instead of silently shadowing a name match that now works.
+
+**Decide the mapping from the card images, never from array order.** A throwback
+reprint still prints its _original_ collector number on its face, which is what
+pokemon-tcg-data's `number` holds — `CC16` reads `99/102`, `CC17` reads `100/102`,
+and that pairs them. Bulbapedia's set list (its entries run in subset order and
+name each card's source set and number) is a good second opinion, and after the
+fact `refresh-print-groups.mjs` is a third: it derived `CC16 → TM 99` and
+`CC17 → TM 100` independently.
 
 ### Card numbers with the set code baked in
 
@@ -293,6 +318,35 @@ via this overlay — see HISTORY.md's DRV entry).
 Every `rarity` value also runs through `normalizeRarity()`, which title-cases a
 SCREAMING_SNAKE_CASE upstream constant (`MEGA_ATTACK_RARE` → `Mega Attack Rare`)
 rather than special-casing individual strings.
+
+### `data/card-overrides/<CODE>.json` — upstream is wrong and we know better
+
+`{ "<localId>": { <field>: <value> } }`, shallow-merged onto the assembled card.
+For the case where pokemon-tcg-data carries a field that's simply _wrong_ and the
+right value is established from the card image, Bulbapedia or Limitless —
+30th Celebration's three RGB Rare Mew cards are filed upstream as `"Common"`
+where the card, the wiki and Limitless all agree they're a secret rarity.
+
+**Reach for this only when the value is wrong, not when the pipeline is.** A
+card slipping through a subtype exclusion, a mis-normalized localId or a bad
+crop is a bug to fix in `fetch-set.mjs`; this file is for upstream's own errors,
+and using it to paper over the former is how it turns into a dumping ground.
+
+It exists rather than hand-editing `data/sets/<CODE>.json` because the normal
+pipeline re-runs `fetch-set.mjs` after the flavor-text pass, which rewrites that
+file and would silently drop a hand-edit. (The older DRV/HS-era precedent of
+editing the output directly predates this and only survives because those sets
+were never re-fetched.) Guards: `localId`, `limitless`, `name` and `supertype`
+are refused outright — a wrong localId or a fabricated `limitless` block is the
+exact class of bug the rest of the script works to make impossible — and a key
+naming a card that isn't in the set throws.
+
+`pokedexNumber` is the one key that isn't a plain field assignment: it takes a
+National Pokédex number and builds the whole `pokedex` box from PokeAPI, for a
+card that prints a dex line but that pokemon-tcg-data gives no
+`nationalPokedexNumbers` for (`30CCC`'s Erika's Jigglypuff, whose own face
+prints `#39`). Note this is the _opposite_ direction from `data/no-pokedex/`,
+which suppresses a box that shouldn't be there.
 
 ### `limitless.printGroup` goes stale, and that's fine
 
@@ -489,6 +543,7 @@ Known-good boxes so far (all in the script's 1024-height reference space):
 | Era / template                               | Box                                     |
 | -------------------------------------------- | --------------------------------------- |
 | Mega Evolution                               | `top=900 height=95 left=220 width=513`  |
+| 30th Celebration (652×914 — see note below)  | `top=900 height=95 left=220 width=505`  |
 | Scarlet & Violet / Sun & Moon onward         | `top=905 height=95 left=260 width=473`  |
 | WotC/Base-era                                | `top=910 height=70 left=55 width=625`   |
 | Diamond & Pearl                              | `top=800 height=95 left=45 width=600`   |
@@ -501,6 +556,14 @@ Known-good boxes so far (all in the script's 1024-height reference space):
 
 `crop-flavor-text.mjs` scales the box by height alone and skips (rather than aborts)
 images whose box would run off the edge — long promo sets mix in oversized/jumbo scans.
+
+**A mass "non-standard-shaped" skip usually means the box is 2px too wide, not that
+the set is odd.** 30th Celebration's images come back 652×914 — very slightly
+narrower than the 733-wide reference the boxes above are written against — so the
+standard Scarlet & Violet box's right edge (`left + width` = 733, exactly the
+reference width) overflowed and 131 of 134 cards were skipped. Trimming `width` by
+8 fixed it. If nearly a whole set skips, check `left + width` against the actual
+image width before concluding the template is different.
 
 Then, for each card: Claude reads the cropped image (`.local/card-images-cropped/
 <CODE>/<localId>.png`) inline — no subagents, see Lessons below. Cross-check the

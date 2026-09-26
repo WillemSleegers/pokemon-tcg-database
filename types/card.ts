@@ -114,6 +114,13 @@ export interface CardImages {
 // flow into `card` as `any` and bypass the output checks entirely.
 
 export interface PrimaryCard {
+  id?: string // pokemon-tcg-data's own unique card id, e.g. "me55c-106p" — unlike
+  // `number`, unique even within a throwback-reprint subset, so it's what
+  // data/local-id-map/ keys on (see fetch-set.mjs's loadLocalIdOverlay).
+  // Optional because the "NONE" <ptcgDataSetId> mode assembles this shape from
+  // Limitless and Bulbapedia, where no such id exists and inventing one would
+  // be fabricating provenance. That mode can't reach data/local-id-map/
+  // anyway — it has no pokemon-tcg-data `number` field to collide in.
   number: string
   name: string
   supertype: "Pokémon" | "Trainer" | "Energy"

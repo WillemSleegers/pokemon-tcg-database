@@ -2418,3 +2418,138 @@ matched.
 This closes out every set `missing-sets.mjs` reported at the start of this
 session — every WotC/e-Card/EX/POP-era and misc set through 2020 is now
 in `data/sets/`.
+
+## 30th Celebration (`me55` → `30C`) and its Classic Collection (`me55c` → `30CCC`)
+
+The 30th-anniversary set, released 2026/09/16 — the first set to go out
+globally on one day. 161 cards in the base set plus a 30-card Classic
+Collection of reprints spanning Base Set to Paldea Evolved.
+
+**Naming.** No external source gives the Classic Collection a code. Limitless
+files its cards under the base set's page as `30C/CC1`…`CC30` and labels them
+"30th Celebration (30C) #CC1"; `sets/en.json` gives both sets `ptcgoCode: "30C"`,
+so PTCG Live decklists read `30C CC1` with no subset code either — same as
+Celebrations, where `CELCC` was this database's own coinage. TCGdex is the only
+source with a distinct subset id (`30th`/`30th-c`), and that's their id scheme,
+which this database deliberately doesn't track. So `30CCC` by the `CELCC`
+precedent. Worth noting `30C` is the first deck code in this database that
+starts with a digit.
+
+**Bulbapedia went behind Cloudflare mid-session**, which is how this set's work
+started. `index.php?action=raw` — what both `scripts/lib/bulbapedia.mjs` and
+`scripts/lib/bulbapedia-card.mjs` used — began returning a 403 "Just a moment..."
+interstitial. `fetchFlavorCandidates` swallows a non-ok response (`if (!res.ok)
+return []`), so this failed *silently*: `check-flavor-text.mjs` reported every
+card unmatched rather than erroring, and the editor's "Show unmatched only" sweep
+was equally worthless. The MediaWiki API on the same host isn't challenged, so
+both fetchers now go through a shared `fetchWikitext()` in `bulbapedia.mjs`. It
+deliberately omits the API's `redirects` parameter, because `fetchCardWikitext`
+depends on seeing a redirect page's own `#REDIRECT` wikitext to tell "this print
+has no page of its own" from "this is the page for this print". A missing page
+comes back as `null` (the API reports that as a "missing" page, not an HTTP
+error) rather than as an empty-but-successful fetch. **This was breaking every
+set's flavor-text verification, not just this one.**
+
+**The LEGEND pair needed a manual localId mapping.** `me55c`'s `number` field is
+each card's original print number, so the set needs `<sequentialPrefix>` (`CC`)
+like `cel25c` — but `resolveSequentialLocalIds` matches on card *name*, and
+Triumphant's Darkrai & Cresselia LEGEND is split across two physical halves that
+pokemon-tcg-data stores as two entries with identical name and identical game
+text (numbers 99 and 100). It threw rather than guessing, which is the behavior
+that comment was written for. New overlay `data/local-id-map/<CODE>.json` pins
+those by hand, keyed on pokemon-tcg-data's `id` (`me55c-99`) rather than its
+`number`, since `number` is exactly the field that isn't unique here — `me55c`
+has three cards numbered 106 (Shining Celebi, Palkia LV.X, M Gardevoir-EX,
+disambiguated upstream as `me55c-106`/`-106p`/`-106m`).
+
+The mapping was resolved from the card faces, not from array order: a Classic
+Collection reprint prints its *original* collector number, so CC16 reads
+`99/102` and CC17 reads `100/102`. Confirmed three independent ways — the card
+images, Bulbapedia's Classic Collection set list (whose entries are in CC order
+and name the source set and number), and, after the fact,
+`refresh-print-groups.mjs` deriving `CC16 → TM 99` and `CC17 → TM 100`.
+
+**Tag Team GX attack costs.** Limitless renders Pikachu & Zekrom-GX's Tag
+Bolt-GX cost as `LLL+`, and `parseLimitlessCardText` threw on `"+"` as an unknown
+energy symbol. The `+` is the "does more with extra energy attached" marker
+printed on the cost line, not a fourth energy — confirmed against the stored
+Team Up original (`TEU` 33), which has a three-Lightning cost. Stripped before
+symbol mapping.
+
+**Upstream data was unusually sloppy for this set**, needing a new
+`data/card-overrides/<CODE>.json` overlay — a general "upstream is wrong and we
+know better" file, which exists rather than hand-editing `data/sets/<CODE>.json`
+because the pipeline re-runs `fetch-set.mjs` after the flavor-text pass and would
+silently drop a hand-edit. It refuses to touch `localId`/`limitless`/`name`/
+`supertype`, and throws on a key naming a card that isn't in the set:
+
+- The three RGB Rare Mew cards (`30C` R/G/B) are filed upstream as `"Common"`.
+  Bulbapedia calls the rarity "RGB Rare", Limitless "Secret Rare". Stored as
+  `RGB Rare`, with `number` set to the printed `R/RGB`/`G/RGB`/`B/RGB` and
+  `secret: true` — they sit past the printed total of 128, and `secret` had come
+  out `false` only because `Number("R")` is `NaN`. Set secret count went 30 → 33,
+  matching `secretTotal`.
+- `me55c` has no `printedTotal` at all, which left `secretTotal` as `NaN` → `null`.
+  A throwback subset has no printed denominator of its own (every card prints its
+  original set's), so `printedTotal` now falls back to the card count — but only
+  when `<sequentialPrefix>` is in play, so an upstream gap in an ordinary set,
+  where the denominator is real and load-bearing, still fails loudly. Stored
+  30/0/30, the shape `CELCC` already uses.
+- `30CCC` CC4 Erika's Jigglypuff prints a dex line ("Balloon Pokémon. Length:
+  1' 8", Weight: 12 lbs.") but upstream gives it no `nationalPokedexNumbers`, so
+  the box was skipped entirely. Supplied via the overrides file's one special
+  key, `pokedexNumber`, which builds the whole box from PokeAPI the same as a
+  card that had the number upstream. Result matches the original `G2` print's
+  stored box exactly.
+
+**Pokédex boxes in the Classic Collection needed checking card by card**, since
+these are faithful reprints and the *original* era's template governs. Eight went
+into `data/no-pokedex/30CCC.json`, each confirmed against the card image:
+CC8 Delcatty and CC11 Metagross δ (EX-era template — the TCG dropped the dex line
+for the e-Card era and didn't bring it back until Diamond & Pearl), CC9 Dark
+Tyranitar (same), CC14 Crobat G (the "Team Galactic's Pokémon" SP banner sits
+where the box would go, and upstream tags it only `"Basic"`, so the `SP` subtype
+exclusion couldn't catch it), CC15 Gengar Prime (no `Prime` subtype upstream
+either), CC16/CC17 (the LEGEND halves — a dual-species pair prints no box on
+*either* half), and CC30 Magikarp (a full-art Illustration Rare, which prints
+flavor text but no dex line — `no-pokedex` suppresses only the `pokedex` field,
+so its `flavorText` survives). Note CC7 Lugia (Aquapolis, e-Card era) *keeps* its
+box: that template prints the dex line and drops only the flavor sentence.
+
+**A subtype casing slip.** CC12 Palkia LV.X came through with a dex box its
+LEVEL-UP banner leaves no room for, because upstream spells the subtype
+`"LEVEL-UP"` here where the other 78 Level-Up cards in this database are
+`"Level-Up"`. The exclusion list now compares case-insensitively; every entry on
+it excludes the box in any casing ("ex" and "EX" are distinct subtypes but both
+listed), so folding case can't change the outcome for a real subtype.
+
+**Flavor text** was 0/134 and 0/16 from pokemon-tcg-data — nothing upstream for
+either set. Transcribed from cropped images. The base set's crop box needed a 2px
+narrowing off the standard Scarlet & Violet one (`top=900 height=95 left=220
+width=505`, not `513`): these images come back 652×914, very slightly narrower
+than the 733-wide reference, so the standard box overflowed the right edge by two
+pixels and `crop-flavor-text.mjs` skipped 131 of 134 cards as "non-standard-shaped".
+
+All 30 Pikachu rare cards (`23`–`52`, printing their own `01/30`…`30/30` subset
+numbering alongside the normal `023/128` collector number) share one flavor text
+— read individually rather than assumed. The three Eevee prints (`116`–`118`) and
+the three RGB Mews likewise share theirs, and the Illustration Rare reprints
+(`129`–`146`) repeat the text of their base-numbered counterparts.
+`check-flavor-text.mjs` came back 134/134 clean, which is real evidence here: the
+text came from card images and the check from Bulbapedia.
+
+The Classic Collection's 5 flagged cards are all the expected permanent state:
+CC1 Pikachu, CC2 Charizard and CC6 Shining Celebi are WotC/Neo-era paraphrases
+predating the verbatim-Pokédex-reuse convention, and CC4 Erika's Jigglypuff and
+CC7 Lugia are genuinely blank (Gym-era and e-Card-era cards print a dex line but
+no flavor sentence). For reprints there's a better cross-check than Bulbapedia
+anyway — the originals are already verified in this database, and all seven
+transcriptions matched `BS` 58/4, `N1` 25, `N4` 106, `LA` 43, `VIV` 50 and
+`PAL` 203 exactly, with `G2` 69 storing `null` like its reprint.
+
+One thing recorded nowhere: the Pikachu rares' `01/30` subset numbering and the
+RGB rares' `RGB` denominator have no field in this schema. `number` holds the
+primary collector number (`023/128`) in the first case and the printed
+`R/RGB` in the second.
+
+`npm run typecheck` clean. `refresh-print-groups.mjs` updated 174 cards.

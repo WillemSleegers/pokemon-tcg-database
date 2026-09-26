@@ -343,7 +343,12 @@ function parseLimitlessCardText(html) {
   const attacks = []
   for (const [, block] of section.matchAll(/<div class="card-text-attack">([\s\S]*?)<\/div>/g)) {
     const info = block.match(/<p class="card-text-attack-info">([\s\S]*?)<\/p>/)?.[1] ?? ""
-    const symbols = info.match(/<span class="ptcg-symbol">([^<]*)<\/span>/)?.[1]?.trim() ?? ""
+    // A Tag Team GX attack prints its cost with a trailing "+" (Limitless
+    // renders "LLL+" for Pikachu & Zekrom-GX's Tag Bolt-GX) — the marker for
+    // "does more if you have extra energy attached", not a fourth energy.
+    // pokemon-tcg-data stores the three-energy cost, so drop it before mapping
+    // symbols, or the cross-check reports a cost disagreement that isn't one.
+    const symbols = (info.match(/<span class="ptcg-symbol">([^<]*)<\/span>/)?.[1]?.trim() ?? "").replace(/\+$/, "")
     // Everything after the symbol span is "<name> <damage>", with damage
     // optional and always last ("110", "20+", "20×").
     const rest = textOnly(info.replace(/<span class="ptcg-symbol">[\s\S]*?<\/span>/, ""))
@@ -898,7 +903,29 @@ async function fetchPokedexInfo(dexNumber) {
 // name instead of trusting position: fetch every Limitless page under this
 // prefix up front, and pair each pokemon-tcg-data card with whichever page's
 // name actually matches it.
-async function resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, primaryCards) {
+// Name-matching can't disambiguate two Limitless pages under the same prefix
+// that share a name — the HGSS-era LEGEND cards, split across two physical
+// halves that pokemon-tcg-data stores as two entries with identical name and
+// identical game text (30th Celebration: Classic Collection's Darkrai &
+// Cresselia LEGEND, CC16/CC17). data/local-id-map/<CODE>.json pins those by
+// hand: { "<pokemon-tcg-data card id>": "<localId>" }. Keyed on pokemon-tcg-data's
+// `id` rather than its `number`, since `number` is exactly the field that isn't
+// unique in this kind of subset (me55c has three cards numbered 106).
+//
+// Decide the mapping from the card images, never from array order — a LEGEND
+// half reprinted in a throwback subset still prints its *original* collector
+// number on its face ("99/102", "100/102"), which is what pokemon-tcg-data's
+// `number` holds, so the two can be paired by reading it off the artwork.
+async function loadLocalIdOverlay(code) {
+  try {
+    return new Map(Object.entries(JSON.parse(await readFile(resolve(ROOT, "data/local-id-map", `${code}.json`), "utf8"))))
+  } catch {
+    return new Map()
+  }
+}
+
+async function resolveSequentialLocalIds(code, limitlessUrlCode, sequentialPrefix, primaryCards) {
+  const overlay = await loadLocalIdOverlay(code)
   const n = primaryCards.length
   const pages = await mapWithConcurrency(
     Array.from({ length: n }, (_, i) => i + 1),
@@ -912,8 +939,22 @@ async function resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, pri
     },
   )
 
+  // A stale overlay is worse than none — it would silently pin a card to a
+  // localId that no longer exists, or shadow a name match that now works — so
+  // both sides of every entry are checked against what was actually fetched.
+  const pageLocalIds = new Set(pages.map((p) => p.localId))
+  const primaryIds = new Set(primaryCards.map((p) => p.id))
+  for (const [primaryId, localId] of overlay) {
+    if (!primaryIds.has(primaryId))
+      throw new Error(`data/local-id-map/${code}.json pins "${primaryId}", which is not a card in this set`)
+    if (!pageLocalIds.has(localId))
+      throw new Error(`data/local-id-map/${code}.json pins "${primaryId}" to ${localId}, which is not a Limitless page under ${sequentialPrefix}`)
+  }
+  const pinnedLocalIds = new Set(overlay.values())
+
   const byName = new Map()
   for (const { localId, name } of pages) {
+    if (pinnedLocalIds.has(localId)) continue // claimed by hand; not up for name-matching
     const key = simplifyCardName(name)
     if (byName.has(key)) {
       throw new Error(
@@ -925,6 +966,8 @@ async function resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, pri
   }
 
   const localIds = primaryCards.map((primary) => {
+    const pinned = overlay.get(primary.id)
+    if (pinned) return pinned
     const key = simplifyCardName(primary.name)
     const localId = byName.get(key)
     if (!localId) {
@@ -942,6 +985,50 @@ async function resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, pri
   }
 
   return localIds
+}
+
+// ---- per-card corrections -------------------------------------------------
+
+// data/card-overrides/<CODE>.json — { "<localId>": { <field>: <value> } } —
+// for the case where pokemon-tcg-data carries a field that is simply wrong,
+// and the right value is known from the card image, Bulbapedia or Limitless.
+// 30th Celebration's three RGB Rare Mew cards are the motivating example:
+// upstream files them as "Common", where the card, the wiki ("RGB Rare") and
+// Limitless ("Secret Rare") all agree they're a secret rarity.
+//
+// This exists rather than hand-editing data/sets/<CODE>.json because the
+// normal pipeline re-runs fetch-set.mjs after the flavor-text pass, which
+// rewrites that file and would silently drop a hand-edit. It's deliberately
+// narrow: every key must name a card that exists, and identity/provenance
+// fields are refused outright, since a wrong localId or a fabricated
+// `limitless` block is exactly the class of bug the rest of this script
+// works to make impossible.
+//
+// `pokedexNumber` is the one key that isn't a plain field assignment: it
+// takes a National Pokédex number and builds the whole box from PokeAPI, the
+// same as a card that had the number upstream. Needed for a card that prints
+// a dex line but that pokemon-tcg-data gives no nationalPokedexNumbers for
+// (30CCC's Erika's Jigglypuff, whose own face prints "#39").
+const OVERRIDE_FORBIDDEN = new Set(["localId", "limitless", "name", "supertype"])
+
+async function applyCardOverrides(code, cards) {
+  let overrides
+  try {
+    overrides = JSON.parse(await readFile(resolve(ROOT, "data/card-overrides", `${code}.json`), "utf8"))
+  } catch {
+    return
+  }
+
+  const byLocalId = new Map(cards.map((c) => [c.localId, c]))
+  for (const [localId, fields] of Object.entries(overrides)) {
+    const card = byLocalId.get(localId)
+    if (!card) throw new Error(`data/card-overrides/${code}.json overrides "${localId}", which is not a card in this set`)
+    for (const [key, value] of Object.entries(fields)) {
+      if (OVERRIDE_FORBIDDEN.has(key)) throw new Error(`data/card-overrides/${code}.json: "${key}" can't be overridden (${localId})`)
+      if (key === "pokedexNumber") card.pokedex = await fetchPokedexInfo(value)
+      else card[key] = value
+    }
+  }
 }
 
 // ---- assembly -------------------------------------------------------------
@@ -1010,7 +1097,7 @@ async function main() {
   let sequentialLocalIds = null
   if (sequentialPrefix) {
     console.log(`Matching ${primaryCards.length} cards against Limitless's own ${sequentialPrefix}-numbering by name...`)
-    sequentialLocalIds = await resolveSequentialLocalIds(limitlessUrlCode, sequentialPrefix, primaryCards)
+    sequentialLocalIds = await resolveSequentialLocalIds(limitlessCode, limitlessUrlCode, sequentialPrefix, primaryCards)
   }
 
   const sourceMismatches = []
@@ -1019,6 +1106,19 @@ async function main() {
   const noLimitlessCards = await loadNoLimitlessOverlay(limitlessCode)
   const noRarity = await loadNoRarityOverlay(limitlessCode)
   const missingFromLimitless = []
+  // A throwback-reprint subset has no printed denominator of its own — every
+  // card prints its *original* set's ("58/102", "5/109", "99/102") — and
+  // pokemon-tcg-data reflects that by omitting printedTotal for me55c
+  // entirely, which left secretTotal as NaN. Fall back to the card count, the
+  // shape Celebrations: Classic Collection is already stored in (25/0/25):
+  // none of these cards is a secret *within the subset*. Guarded on
+  // <sequentialPrefix> so an upstream gap in an ordinary set, where the
+  // printed denominator is real and load-bearing, still fails loudly below.
+  const printedTotal = setMeta.printedTotal ?? (sequentialPrefix ? setMeta.total : undefined)
+  if (printedTotal === undefined) {
+    throw new Error(`pokemon-tcg-data has no printedTotal for ${setMeta.id} — it's needed to mark secret cards`)
+  }
+
   console.log(`Found ${primaryCards.length} cards. Fetching per-card data from Limitless + PokeAPI...`)
 
   let done = 0
@@ -1060,9 +1160,16 @@ async function main() {
       primary.supertype === "Pokémon" &&
       primary.nationalPokedexNumbers?.length &&
       !(noPokedex.all || noPokedex.ids.has(localId)) &&
+      // Compared case-insensitively: pokemon-tcg-data spells Level-Up as
+      // "LEVEL-UP" for 30th Celebration: Classic Collection's Palkia LV.X and
+      // as "Level-Up" for the other 78 Level-Up cards in this database, and a
+      // case-sensitive list silently let that one card through with a dex box
+      // its LEVEL-UP banner leaves no room for. Every entry here excludes the
+      // box in any casing ("ex" and "EX" are distinct subtypes but both
+      // listed), so folding case can't change the outcome for a real subtype.
       !primary.subtypes?.some((s) =>
-        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime", "BREAK", "SP"].includes(
-          s,
+        ["ex", "MEGA", "V", "VMAX", "VSTAR", "V-UNION", "EX", "GX", "Star", "Level-Up", "Prime", "BREAK", "SP"].some(
+          (excluded) => excluded.toLowerCase() === s.toLowerCase(),
         ),
       )
         ? fetchPokedexInfo(primary.nationalPokedexNumbers[0])
@@ -1097,7 +1204,7 @@ async function main() {
     }
 
     const card = /** @type {import("../types/card.js").Card} */ (/** @type {any} */ ({
-      number: buildNumber(localId, setMeta.printedTotal, numberPad),
+      number: buildNumber(localId, printedTotal, numberPad),
       localId,
       name: primary.name,
       supertype: primary.supertype,
@@ -1142,7 +1249,7 @@ async function main() {
     // treatment MEP's NONE mode already gives an ongoing promo set (see
     // CLAUDE.md). Found on svp: 123 of 225 numbered cards were coming out
     // secret:true off a printedTotal (102) more than a hundred cards stale.
-    card.secret = fillFromLimitless ? false : Number(localId) > setMeta.printedTotal
+    card.secret = fillFromLimitless ? false : Number(localId) > printedTotal
     // null whenever the Limitless scrape was skipped — either for the whole
     // set ("NONE") or for a single card Limitless has no page for. Never
     // synthesize a deckCode/printGroup here: a placeholder would falsely
@@ -1157,6 +1264,8 @@ async function main() {
     return card
   })
 
+  await applyCardOverrides(limitlessCode, cards)
+
   cards.sort((a, b) => a.localId.localeCompare(b.localId, undefined, { numeric: true }))
 
   /** @type {import("../types/card.js").CardSet} */
@@ -1166,11 +1275,11 @@ async function main() {
       ptcgDataId: noPrimary ? null : setMeta.id,
       name: setMeta.name,
       series: setMeta.series,
-      printedTotal: setMeta.printedTotal,
+      printedTotal,
       // See the matching card.secret comment above — a --fill-from-limitless
       // set's printedTotal is a stale printed denominator, not a real
       // secret-rare threshold, so it can't be subtracted from total here.
-      secretTotal: fillFromLimitless ? 0 : setMeta.total - setMeta.printedTotal,
+      secretTotal: fillFromLimitless ? 0 : setMeta.total - printedTotal,
       total: setMeta.total,
       releaseDate: setMeta.releaseDate.replace(/\//g, "-"),
       // The year matches the set's release year for original artwork; sets
